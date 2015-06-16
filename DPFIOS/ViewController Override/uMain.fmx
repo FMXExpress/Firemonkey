@@ -1,0 +1,42 @@
+object FViewControllerOverride: TFViewControllerOverride
+  Left = 0
+  Top = 0
+  Caption = 'ViewController Override'
+  ClientHeight = 480
+  ClientWidth = 320
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 2
+  object DPFUIViewController1: TDPFUIViewController
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claYellowgreen
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 88.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Destroy It!'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claSteelblue
+      OnClick = DPFButton1Click
+    end
+  end
+end

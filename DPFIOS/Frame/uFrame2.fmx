@@ -1,0 +1,43 @@
+object Frame2: TFrame2
+  Height = 240.000000000000000000
+  Width = 320.000000000000000000
+  object DPFUITableView1: TDPFUITableView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    Align = alClient
+    Width = 320.000000000000000000
+    Height = 240.000000000000000000
+    Options.TextFont.FontName = ios_Helvetica_Bold
+    Options.TextFont.FontSize = 18
+    Options.DescriptionFont.FontName = ios_Helvetica
+    Options.ViewStyle = tvsGrouped
+    Sections = <
+      item
+        Header.Font.FontName = ios_Helvetica_Bold
+        Header.Font.FontSize = 18
+        Header.Alpha = 0.899999976158142100
+        Footer.Font.FontName = ios_Helvetica_Bold
+        Footer.Font.FontSize = 18
+        Footer.Alpha = 0.899999976158142100
+        TableItems = <
+          item
+            ItemText.Text = 'Text 0'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Text 1'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Text 2'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Text 3'
+            ItemDescription.Color = claGray
+          end>
+      end>
+  end
+end

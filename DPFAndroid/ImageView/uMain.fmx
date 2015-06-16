@@ -1,0 +1,94 @@
+object FImageView: TFImageView
+  Left = 0
+  Top = 0
+  Caption = 'ImageView'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claSteelblue
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJImageView1: TDPFJImageView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = alTop
+      Position.X = 10.000000000000000000
+      Position.Y = 67.000000000000000000
+      Width = 364.000000000000000000
+      Height = 200.000000000000000000
+      FileName = 'DPF.png'
+    end
+    object DPFJImageView2: TDPFJImageView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = alBottom
+      Position.X = 10.000000000000000000
+      Position.Y = 357.000000000000000000
+      Width = 364.000000000000000000
+      Height = 200.000000000000000000
+      URL = 'https://www.google.com/images/srpr/logo11w.png'
+    end
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claSteelblue
+      BorderWidth = 1
+      BorderCornerRadius = 10.000000000000000000
+      DrawType = dtCustom
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Align = alTop
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Width = 374.000000000000000000
+      Height = 47.000000000000000000
+      Text.Strings = (
+        'Load Image From File ')
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJTextView2: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claSteelblue
+      BorderWidth = 1
+      BorderCornerRadius = 10.000000000000000000
+      DrawType = dtCustom
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Align = alBottom
+      Position.X = 5.000000000000000000
+      Position.Y = 300.000000000000000000
+      Width = 374.000000000000000000
+      Height = 42.000000000000000000
+      Text.Strings = (
+        'Load From URL ')
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+end

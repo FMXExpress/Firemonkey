@@ -1,0 +1,115 @@
+object ActiveForm: TActiveForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'ActiveForm'
+  ClientHeight = 201
+  ClientWidth = 351
+  Padding.Left = 8.000000000000000000
+  Padding.Top = 8.000000000000000000
+  Padding.Right = 8.000000000000000000
+  Padding.Bottom = 8.000000000000000000
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [dkDesktop]
+  FormFamily = 'TForm'
+  OnClose = FormClose
+  object Label1: TLabel
+    Align = alTop
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Screen.ActiveForm.Name'
+    Width = 335.000000000000000000
+  end
+  object Label2: TLabel
+    Align = alTop
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 45.000000000000000000
+    Text = 'Screen.ActiveForm.Caption'
+    Width = 335.000000000000000000
+  end
+  object Label3: TLabel
+    Align = alTop
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 82.000000000000000000
+    Text = 'Screen.FocusControl.Name'
+    Width = 335.000000000000000000
+  end
+  object Label4: TLabel
+    Align = alTop
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 119.000000000000000000
+    Text = 'Screen.FocusControl.ClassName'
+    Width = 335.000000000000000000
+  end
+  object Edit1: TEdit
+    Align = alTop
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    ReadOnly = True
+    Position.X = 8.000000000000000000
+    Position.Y = 23.000000000000000000
+    Width = 335.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object Edit2: TEdit
+    Align = alTop
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    ReadOnly = True
+    Position.X = 8.000000000000000000
+    Position.Y = 60.000000000000000000
+    Width = 335.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object Edit3: TEdit
+    Align = alTop
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    ReadOnly = True
+    Position.X = 8.000000000000000000
+    Position.Y = 97.000000000000000000
+    Width = 335.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object Edit4: TEdit
+    Align = alTop
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    ReadOnly = True
+    Position.X = 8.000000000000000000
+    Position.Y = 134.000000000000000000
+    Width = 335.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = alBottom
+    Height = 25.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 168.000000000000000000
+    Width = 335.000000000000000000
+    object SpeedButton1: TSpeedButton
+      Align = alRight
+      Height = 25.000000000000000000
+      Position.X = 255.000000000000000000
+      Text = 'Close'
+      Width = 80.000000000000000000
+      OnClick = SpeedButton1Click
+    end
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 272
+    Top = 64
+  end
+end

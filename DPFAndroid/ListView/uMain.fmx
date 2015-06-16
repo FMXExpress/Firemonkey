@@ -1,0 +1,40 @@
+object FListView: TFListView
+  Left = 0
+  Top = 0
+  Caption = 'ListView'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claLightsteelblue
+    OnKey = DPFJView1Key
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJListView1: TDPFJListView
+      Alpha = 1.000000000000000000
+      FocusableInTouchMode = False
+      BackgroundColor1 = claLightsteelblue
+      Align = alClient
+      Width = 384.000000000000000000
+      Height = 567.000000000000000000
+      SelectedColor = claOrange
+      OnItemClick = DPFJListView1ItemClick
+      OnDrawCell = DPFJListView1DrawCell
+      OnRowCount = DPFJListView1RowCount
+    end
+  end
+  object DPFJToast1: TDPFJToast
+    Left = 280
+    Top = 120
+  end
+end

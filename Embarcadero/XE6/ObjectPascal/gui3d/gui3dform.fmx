@@ -1,0 +1,82 @@
+object Form29: TForm29
+  Left = 0
+  Top = 0
+  Caption = 'FireMonkey 3D Gui'
+  Color = claBlack
+  ClientHeight = 739
+  ClientWidth = 588
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Layer3D1: TLayer3D
+    Align = Client
+    Height = 739.000000000000000000
+    Position.X = 294.000000000000000000
+    Position.Y = 369.000000000000000000
+    Projection = Screen
+    Resolution = 50
+    StyleBook = Resources1
+    StyleLookup = 'backgroundstyle'
+    Width = 588.000000000000000000
+    object Button1: TButton
+      Align = Center
+      Height = 22.000000000000000000
+      Margins.Top = -300.000000000000000000
+      TabOrder = 0
+      Text = 'Flip'
+      Width = 80.000000000000000000
+      OnClick = Button1Click
+    end
+    object AniIndicator1: TAniIndicator
+      Align = Center
+      Enabled = True
+      Height = 113.000000000000000000
+      StyleLookup = 'labelstyle'
+      Margins.Bottom = -300.000000000000000000
+      Width = 105.000000000000000000
+    end
+    object Panel1: TPanel
+      Align = Center
+      Height = 200.000000000000000000
+      StyleLookup = 'Panel1Style1'
+      Width = 393.000000000000000000
+      TabOrder = 2
+      object Label1: TLabel
+        Align = Center
+        Height = 154.000000000000000000
+        StyleLookup = 'Panel11'
+        TextSettings.HorzAlign = Center
+        Text = 
+          'All 2D objects inside TLayer3D. TLayer3D projected to screen pla' +
+          'ne (Projection = Screen). When layer projected to screen plane, ' +
+          'Align property works.  But this layer is a still real 3D object.'
+        Width = 241.000000000000000000
+      end
+    end
+    object Ellipse1: TEllipse
+      Height = 50.000000000000000000
+      Position.X = 264.000000000000000000
+      Position.Y = 112.000000000000000000
+      Width = 50.000000000000000000
+      object GlowEffect1: TGlowEffect
+        Softness = 1.000000000000000000
+        GlowColor = claHotpink
+        Opacity = 0.899999976158142100
+        Trigger = 'IsMouseOver=true'
+        Enabled = False
+      end
+    end
+  end
+  object Resources1: TStyleBook
+    ResourcesBin = {464D585F5354594C4520322E350100}
+  end
+  object RectAnimation1: TRectAnimation
+    Duration = 0.200000002980232200
+  end
+end

@@ -1,0 +1,840 @@
+object TabSlideTransitionFrmBase: TTabSlideTransitionFrmBase
+  Left = 0
+  Top = 0
+  Caption = 'BaseForm'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1016
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  OnKeyUp = FormKeyUp
+  OnFocusChanged = FormFocusChanged
+  OnVirtualKeyboardShown = FormVirtualKeyboardShown
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object VertScrollBox1: TVertScrollBox
+    Touch.InteractiveGestures = []
+    Align = alContents
+    Height = 567.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object MainLayout1: TLayout
+      Align = alClient
+      Height = 567.000000000000000000
+      Width = 384.000000000000000000
+      object TabControl1: TTabControl
+        Touch.GestureManager = GestureManager1
+        OnGesture = TabControl1Gesture
+        Align = alClient
+        FullSize = True
+        Height = 567.000000000000000000
+        TabHeight = 49.000000000000000000
+        TabIndex = 0
+        TabOrder = 0
+        TabPosition = tpNone
+        Width = 384.000000000000000000
+        object TabItem1: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = True
+          Position.X = 168.000000000000000000
+          Position.Y = 548.000000000000000000
+          TabOrder = 0
+          Text = 'TabItem1'
+          Width = 8.000000000000000000
+          object ToolBar1: TToolBar
+            Height = 48.000000000000000000
+            TabOrder = 0
+            Width = 384.000000000000000000
+            object Label2: TLabel
+              Align = alContents
+              Height = 48.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Tab 1'
+              TextAlign = taCenter
+              Width = 384.000000000000000000
+              Trimming = ttCharacter
+            end
+            object Button1: TButton
+              Action = ChangeTabAction1
+              Align = alRight
+              Enabled = False
+              Height = 48.000000000000000000
+              Margins.Right = 7.000000000000000000
+              Position.X = 320.000000000000000000
+              StyleLookup = 'speedbuttonstyle'
+              TabOrder = 1
+              Width = 57.000000000000000000
+            end
+          end
+          object NameList: TListBox
+            Align = alTop
+            Anchors = []
+            Height = 137.000000000000000000
+            Padding.Top = 20.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 30.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 78.000000000000000000
+            ShowScrollBars = False
+            StyleLookup = 'transparentlistboxstyle'
+            TabOrder = 1
+            Width = 374.000000000000000000
+            DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            GroupingKind = gsGrouped
+            object ListBoxGroupHeader1: TListBoxGroupHeader
+              Height = 30.000000000000000000
+              StyleLookup = 'listboxgroupheader'
+              Text = 'Personal Information - Part 1'
+              Width = 334.000000000000000000
+            end
+            object firstName: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 30.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'First Name'
+              Width = 334.000000000000000000
+              object efirstName: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = eUserChangeTracking
+              end
+            end
+            object LastName: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 74.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Last Name'
+              Width = 334.000000000000000000
+              object eLastName: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = eUserChangeTracking
+              end
+            end
+          end
+        end
+        object TabItem2: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = False
+          Position.X = 178.000000000000000000
+          Position.Y = 548.000000000000000000
+          TabOrder = 1
+          Text = 'TabItem2'
+          Width = 8.000000000000000000
+          object ToolBar2: TToolBar
+            Height = 48.000000000000000000
+            Padding.Left = 7.000000000000000000
+            Padding.Right = 7.000000000000000000
+            TabOrder = 0
+            Width = 384.000000000000000000
+            object Label4: TLabel
+              Align = alContents
+              Height = 48.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Tab 2'
+              TextAlign = taCenter
+              Width = 384.000000000000000000
+              Trimming = ttCharacter
+            end
+            object Button3: TButton
+              Action = ChangeTabAction3
+              Align = alRight
+              Enabled = False
+              Height = 48.000000000000000000
+              Position.X = 320.000000000000000000
+              StyleLookup = 'speedbuttonstyle'
+              TabOrder = 1
+              Width = 57.000000000000000000
+            end
+            object Button2: TButton
+              Action = ChangeTabAction2
+              Align = alLeft
+              Height = 48.000000000000000000
+              Position.X = 7.000000000000000000
+              StyleLookup = 'backtoolbutton'
+              TabOrder = 2
+              Width = 65.000000000000000000
+            end
+          end
+          object PersonalInfoList: TListBox
+            Align = alTop
+            Height = 217.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 30.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 78.000000000000000000
+            StyleLookup = 'transparentlistboxstyle'
+            TabOrder = 1
+            Width = 374.000000000000000000
+            DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            GroupingKind = gsGrouped
+            object PersonalInformation: TListBoxGroupHeader
+              Height = 30.000000000000000000
+              StyleLookup = 'listboxgroupheader'
+              Text = 'Personal Information - Part 2'
+              Width = 334.000000000000000000
+            end
+            object Address: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 30.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Address'
+              Width = 334.000000000000000000
+              object infoAddress: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = infoChangeTracking
+              end
+            end
+            object Phone: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 74.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Phone'
+              Width = 334.000000000000000000
+              object infoTelephone: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                KeyboardType = vktPhonePad
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = infoChangeTracking
+              end
+            end
+            object Email: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 118.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Email'
+              Width = 334.000000000000000000
+              object infoEmail: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                KeyboardType = vktEmailAddress
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = infoChangeTracking
+              end
+            end
+            object BirthDate: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 162.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Date of Birth'
+              Width = 334.000000000000000000
+              object infoDate: TCalendarEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                Cursor = crIBeam
+                Date = 28172.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+              end
+            end
+          end
+        end
+        object TabItem3: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = False
+          Position.X = 188.000000000000000000
+          Position.Y = 548.000000000000000000
+          TabOrder = 2
+          Text = 'TabItem3'
+          Width = 8.000000000000000000
+          object ToolBar3: TToolBar
+            Height = 48.000000000000000000
+            Padding.Left = 7.000000000000000000
+            Padding.Right = 7.000000000000000000
+            TabOrder = 0
+            Width = 384.000000000000000000
+            object Label5: TLabel
+              Align = alContents
+              Height = 48.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Tab 3'
+              TextAlign = taCenter
+              Width = 384.000000000000000000
+              Trimming = ttCharacter
+            end
+            object Button4: TButton
+              Action = ChangeTabAction4
+              Align = alLeft
+              Height = 48.000000000000000000
+              Position.X = 7.000000000000000000
+              StyleLookup = 'backtoolbutton'
+              TabOrder = 1
+              Width = 65.000000000000000000
+            end
+            object Button5: TButton
+              Action = ChangeTabAction5
+              Align = alRight
+              Enabled = False
+              Height = 48.000000000000000000
+              Position.X = 320.000000000000000000
+              StyleLookup = 'speedbuttonstyle'
+              TabOrder = 2
+              Width = 57.000000000000000000
+            end
+          end
+          object EducationList: TListBox
+            Align = alTop
+            Height = 241.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 30.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 78.000000000000000000
+            StyleLookup = 'transparentlistboxstyle'
+            TabOrder = 1
+            Width = 374.000000000000000000
+            DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            GroupingKind = gsGrouped
+            object Education: TListBoxGroupHeader
+              Height = 30.000000000000000000
+              StyleLookup = 'listboxgroupheader'
+              Text = 'Education'
+              Width = 334.000000000000000000
+            end
+            object Institution: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 30.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Institution'
+              Width = 334.000000000000000000
+              object edInstitution: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = edChangeTracking
+              end
+            end
+            object City: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 74.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'City'
+              Width = 334.000000000000000000
+              object edCity: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = edChangeTracking
+              end
+            end
+            object AdmissionDate: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 118.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Admission Date'
+              Width = 334.000000000000000000
+              object edAdmissionDate: TComboBox
+                Align = alVertCenter
+                DisableFocusEffect = False
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                TabOrder = 0
+                Width = 174.000000000000000000
+                OnChange = edChangeTracking
+                object ListBoxItem5: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2013'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem6: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2012'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem7: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2011'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem8: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2010'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem9: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2009'
+                  Width = 19.000000000000000000
+                end
+              end
+            end
+            object GraduationDate: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 162.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Graduation Date'
+              Width = 334.000000000000000000
+              object edGraduationDate: TComboBox
+                Align = alVertCenter
+                DisableFocusEffect = False
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                TabOrder = 0
+                Width = 174.000000000000000000
+                OnChange = edChangeTracking
+                object ListBoxItem10: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2013'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem11: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2012'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem12: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2011'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem13: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2010'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem14: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2009'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem1: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = 'In progress'
+                  Width = 19.000000000000000000
+                end
+              end
+            end
+          end
+        end
+        object TabItem4: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = False
+          Position.X = 198.000000000000000000
+          Position.Y = 548.000000000000000000
+          TabOrder = 3
+          Text = 'TabItem4'
+          Width = 8.000000000000000000
+          object ToolBar4: TToolBar
+            Height = 48.000000000000000000
+            Padding.Left = 7.000000000000000000
+            Padding.Right = 7.000000000000000000
+            TabOrder = 0
+            Width = 384.000000000000000000
+            object Label6: TLabel
+              Align = alContents
+              Height = 48.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Tab 4'
+              TextAlign = taCenter
+              Width = 384.000000000000000000
+              Trimming = ttCharacter
+            end
+            object Button6: TButton
+              Action = ChangeTabAction6
+              Align = alLeft
+              Height = 48.000000000000000000
+              Position.X = 7.000000000000000000
+              StyleLookup = 'backtoolbutton'
+              TabOrder = 1
+              Width = 65.000000000000000000
+            end
+            object Button7: TButton
+              Action = ChangeTabAction7
+              Align = alRight
+              Enabled = False
+              Height = 48.000000000000000000
+              Position.X = 320.000000000000000000
+              StyleLookup = 'speedbuttonstyle'
+              TabOrder = 2
+              Width = 57.000000000000000000
+            end
+          end
+          object WorkList: TListBox
+            Align = alTop
+            Height = 273.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 30.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 78.000000000000000000
+            StyleLookup = 'transparentlistboxstyle'
+            TabOrder = 1
+            Width = 374.000000000000000000
+            DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            GroupingKind = gsGrouped
+            object WorkExperience: TListBoxGroupHeader
+              Height = 30.000000000000000000
+              StyleLookup = 'listboxgroupheader'
+              Text = 'Work Experience'
+              Width = 334.000000000000000000
+            end
+            object Employer: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 30.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Employer'
+              Width = 334.000000000000000000
+              object weEmpName: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = weChangeTracking
+              end
+            end
+            object EmployerCity: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 74.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'City'
+              Width = 334.000000000000000000
+              object weCity: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = weChangeTracking
+              end
+            end
+            object CurrentJob: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 118.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'Current Job'
+              Width = 334.000000000000000000
+              object weOccupiedJob: TEdit
+                Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+                Align = alVertCenter
+                TabOrder = 0
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                Width = 174.000000000000000000
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                KillFocusByReturn = False
+                OnChangeTracking = weChangeTracking
+              end
+            end
+            object FromDate: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 162.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'From'
+              Width = 334.000000000000000000
+              object weFrom: TComboBox
+                Align = alVertCenter
+                DisableFocusEffect = False
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                TabOrder = 0
+                Width = 174.000000000000000000
+                OnChange = weChangeTracking
+                object ListBoxItem18: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2013'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem19: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2012'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem20: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2011'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem21: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2010'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem22: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2010'
+                  Width = 19.000000000000000000
+                end
+              end
+            end
+            object ToDate: TListBoxItem
+              Height = 44.000000000000000000
+              Position.Y = 206.000000000000000000
+              StyleLookup = 'listboxitemnodetail'
+              Text = 'To'
+              Width = 334.000000000000000000
+              object weTo: TComboBox
+                Align = alVertCenter
+                DisableFocusEffect = False
+                Height = 32.000000000000000000
+                Margins.Left = 150.000000000000000000
+                Margins.Right = 10.000000000000000000
+                Position.X = 150.000000000000000000
+                Position.Y = 6.000000000000000000
+                TabOrder = 0
+                Width = 174.000000000000000000
+                OnChange = weChangeTracking
+                object ListBoxItem23: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2013'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem24: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2012'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem25: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2011'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem26: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2010'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem27: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = '2009'
+                  Width = 19.000000000000000000
+                end
+                object ListBoxItem2: TListBoxItem
+                  Height = 19.000000000000000000
+                  Text = 'still working'
+                  Width = 19.000000000000000000
+                end
+              end
+            end
+          end
+        end
+        object TabItem5: TTabItem
+          WordWrap = False
+          Height = 8.000000000000000000
+          IsSelected = False
+          Position.X = 208.000000000000000000
+          Position.Y = 548.000000000000000000
+          TabOrder = 4
+          Text = 'TabItem5'
+          Width = 8.000000000000000000
+          object Memo1: TMemo
+            Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+            Align = alTop
+            Anchors = []
+            Height = 321.000000000000000000
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 102.000000000000000000
+            TabOrder = 0
+            Width = 374.000000000000000000
+          end
+          object ToolBar5: TToolBar
+            Height = 48.000000000000000000
+            Padding.Left = 7.000000000000000000
+            Padding.Right = 7.000000000000000000
+            TabOrder = 1
+            Width = 384.000000000000000000
+            object Label8: TLabel
+              Align = alContents
+              Height = 48.000000000000000000
+              StyleLookup = 'toollabel'
+              Text = 'Tab 5'
+              TextAlign = taCenter
+              Width = 384.000000000000000000
+              Trimming = ttCharacter
+            end
+            object Button8: TButton
+              Action = ChangeTabAction8
+              Align = alLeft
+              Height = 48.000000000000000000
+              Position.X = 7.000000000000000000
+              StyleLookup = 'backtoolbutton'
+              TabOrder = 1
+              Width = 65.000000000000000000
+            end
+          end
+          object PersonalInfoSummary: TLabel
+            Align = alTop
+            Height = 37.000000000000000000
+            Margins.Top = 12.000000000000000000
+            Position.Y = 60.000000000000000000
+            StyleLookup = 'embossedlabel'
+            Text = 'Personal Information Summary'
+            Width = 384.000000000000000000
+            Trimming = ttCharacter
+          end
+        end
+      end
+    end
+  end
+  object GestureManager1: TGestureManager
+    Left = 168
+    Top = 352
+    GestureData = <
+      item
+        Control = TabControl1
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+  object ActionList1: TActionList
+    Left = 56
+    Top = 384
+    object ChangeTabAction1: TChangeTabAction
+      Category = 'Tab'
+      CustomText = 'Next'
+      Tab = TabItem2
+      Transition = ttSlide
+    end
+    object ChangeTabAction2: TChangeTabAction
+      Category = 'Tab'
+      CustomText = ' Back'
+      Tab = TabItem1
+      Transition = ttSlide
+    end
+    object ChangeTabAction3: TChangeTabAction
+      Category = 'Tab'
+      CustomText = 'Next'
+      Tab = TabItem3
+      Transition = ttSlide
+    end
+    object ChangeTabAction4: TChangeTabAction
+      Category = 'Tab'
+      CustomText = ' Back'
+      Tab = TabItem2
+      Transition = ttSlide
+    end
+    object ChangeTabAction5: TChangeTabAction
+      Category = 'Tab'
+      CustomText = 'Next'
+      Tab = TabItem4
+      Transition = ttSlide
+    end
+    object ChangeTabAction6: TChangeTabAction
+      Category = 'Tab'
+      CustomText = ' Back'
+      Tab = TabItem3
+      Transition = ttSlide
+    end
+    object ChangeTabAction7: TChangeTabAction
+      Category = 'Tab'
+      CustomText = 'Next'
+      Tab = TabItem5
+      Transition = ttSlide
+    end
+    object ChangeTabAction8: TChangeTabAction
+      Category = 'Tab'
+      CustomText = ' Back'
+      Tab = TabItem4
+      Transition = ttSlide
+    end
+  end
+end

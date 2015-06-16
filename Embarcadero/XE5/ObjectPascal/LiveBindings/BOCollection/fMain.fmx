@@ -1,0 +1,312 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 480
+  ClientWidth = 887
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object ListBox1: TListBox
+    Touch.InteractiveGestures = [igPan]
+    Height = 441.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 0
+    Width = 265.000000000000000000
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = ListBox1Change
+  end
+  object Edit1: TEdit
+    TabOrder = 1
+    Font.Family = 'Calibri'
+    Font.Size = 16.000000000000000000
+    Position.X = 384.000000000000000000
+    Position.Y = 16.000000000000000000
+    Width = 297.000000000000000000
+    Height = 22.000000000000000000
+    OnChange = Edit1Change
+  end
+  object Edit2: TEdit
+    TabOrder = 2
+    Font.Family = 'Calibri'
+    Font.Size = 16.000000000000000000
+    Position.X = 384.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 193.000000000000000000
+    Height = 22.000000000000000000
+    OnChange = Edit1Change
+  end
+  object Edit3: TEdit
+    TabOrder = 3
+    Font.Family = 'Calibri'
+    Font.Size = 16.000000000000000000
+    Position.X = 384.000000000000000000
+    Position.Y = 96.000000000000000000
+    Width = 49.000000000000000000
+    Height = 22.000000000000000000
+    OnChange = Edit1Change
+  end
+  object Edit4: TEdit
+    TabOrder = 4
+    Font.Family = 'Calibri'
+    Font.Size = 16.000000000000000000
+    Position.X = 384.000000000000000000
+    Position.Y = 136.000000000000000000
+    Width = 193.000000000000000000
+    Height = 22.000000000000000000
+    OnChange = Edit1Change
+  end
+  object Label1: TLabel
+    AutoSize = True
+    Font.Family = 'Calibri'
+    Font.Size = 16.000000000000000000
+    Height = 18.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = 'Subject:'
+    Width = 45.000000000000000000
+    WordWrap = False
+  end
+  object Label2: TLabel
+    AutoSize = True
+    Font.Family = 'Calibri'
+    Font.Size = 16.000000000000000000
+    Height = 18.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'Start:'
+    Width = 31.000000000000000000
+    WordWrap = False
+  end
+  object Label3: TLabel
+    AutoSize = True
+    Font.Family = 'Calibri'
+    Font.Size = 16.000000000000000000
+    Height = 18.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = 'Duration:'
+    Width = 51.000000000000000000
+    WordWrap = False
+  end
+  object Label4: TLabel
+    AutoSize = True
+    Font.Family = 'Calibri'
+    Font.Size = 16.000000000000000000
+    Height = 18.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 136.000000000000000000
+    Text = 'End:'
+    Width = 26.000000000000000000
+    WordWrap = False
+  end
+  object Label5: TLabel
+    Height = 49.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 176.000000000000000000
+    Text = 'Label5'
+    Width = 441.000000000000000000
+    object CheckBoxLog: TCheckBox
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 320.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 0
+      Text = 'Log Assignments'
+      Width = 120.000000000000000000
+    end
+  end
+  object ListBox2: TListBox
+    Touch.InteractiveGestures = [igPan]
+    Height = 233.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 10
+    Width = 569.000000000000000000
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object Button1: TButton
+    Height = 22.000000000000000000
+    Position.X = 792.000000000000000000
+    Position.Y = 200.000000000000000000
+    TabOrder = 11
+    Text = 'Clear'
+    Width = 80.000000000000000000
+    OnClick = Button1Click
+  end
+  object TrackBar1: TTrackBar
+    Frequency = 1.000000000000000000
+    Height = 20.000000000000000000
+    Orientation = orHorizontal
+    Position.X = 480.000000000000000000
+    Position.Y = 96.000000000000000000
+    TabOrder = 12
+    Value = 50.000000000000000000
+    Width = 161.000000000000000000
+    OnChange = TrackBar1Change
+  end
+  object CheckBoxNotify: TCheckBox
+    Height = 19.000000000000000000
+    IsChecked = True
+    Position.X = 664.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 13
+    Text = 'Notify Outputs'
+    Width = 120.000000000000000000
+    OnChange = CheckBoxNotifyChange
+  end
+  object BindScopeCollection: TBindScope
+    ScopeMappings = <>
+    Left = 344
+    Top = 272
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 328
+    Top = 176
+    object bndlstMeetingsToListbox: TBindList
+      Category = 'Lists'
+      ControlComponent = ListBox1
+      SourceComponent = BindScopeCollection
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'Current.Subject'
+        end>
+      FormatControlExpressions = <>
+      ClearControlExpressions = <>
+      AutoFill = False
+      OnAssigningValue = bndlstMeetingsToListboxAssignValue
+    end
+    object BindExprItemsSubject: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Edit1
+      SourceComponent = BindScopeForm
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'CurrentMeeting.Subject'
+          Direction = dirBidirectional
+        end>
+      ClearExpressions = <>
+      NotifyOutputs = True
+      OnAssigningValue = bndlstMeetingsToListboxAssignValue
+    end
+    object BindExprItemsStart: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Edit2
+      SourceComponent = BindScopeForm
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'FormatDateTime('#39't'#39', CurrentMeeting.StartTime)'
+        end
+        item
+          ControlExpression = 'StrToDateTime(Text)'
+          SourceExpression = 'CurrentMeeting.StartTime'
+          Direction = dirControlToSource
+        end>
+      ClearExpressions = <>
+      NotifyOutputs = True
+      OnAssigningValue = bndlstMeetingsToListboxAssignValue
+    end
+    object BindExprItemsDuration: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Edit3
+      SourceComponent = BindScopeForm
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'ToStr(CurrentMeeting.Duration)'
+        end
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'CurrentMeeting.Duration'
+          Direction = dirControlToSource
+        end>
+      ClearExpressions = <>
+      NotifyOutputs = True
+      OnAssigningValue = bndlstMeetingsToListboxAssignValue
+    end
+    object BindExprItemsEnd: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Edit4
+      SourceComponent = BindScopeForm
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'FormatDateTime('#39't'#39',  CurrentMeeting.EndTime)'
+        end>
+      ClearExpressions = <>
+      NotifyOutputs = True
+      OnAssigningValue = bndlstMeetingsToListboxAssignValue
+    end
+    object BindExprItemsLabel: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Label5
+      SourceComponent = BindScopeForm
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 
+            'Format('#39'Subject: %s, StartTime: %s, StopTime: %s, Duration: %s '#39 +
+            ', ToStr(CurrentMeeting.Subject), FormatDateTime('#39'c'#39', CurrentMeet' +
+            'ing.StartTime), FormatDateTime('#39'c'#39', CurrentMeeting.EndTime), '#13#10'T' +
+            'oStr(CurrentMeeting.Duration))'
+        end>
+      ClearExpressions = <>
+      NotifyOutputs = True
+      OnAssigningValue = bndlstMeetingsToListboxAssignValue
+    end
+    object BindExprItemsListBox: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = ListBox1
+      SourceComponent = BindScopeForm
+      FormatExpressions = <
+        item
+          ControlExpression = 'Selected.Text'
+          SourceExpression = 'CurrentMeeting.Subject'
+        end>
+      ClearExpressions = <>
+      NotifyOutputs = True
+      OnAssigningValue = bndlstMeetingsToListboxAssignValue
+    end
+    object BindExprItemsTrackBar11: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = TrackBar1
+      SourceComponent = BindScopeForm
+      FormatExpressions = <
+        item
+          ControlExpression = 'Value'
+          SourceExpression = 'CurrentMeeting.Duration'
+        end
+        item
+          ControlExpression = 'Round(Value)'
+          SourceExpression = 'CurrentMeeting.Duration'
+          Direction = dirControlToSource
+        end>
+      ClearExpressions = <>
+      NotifyOutputs = True
+    end
+  end
+  object BindScopeForm: TBindScope
+    Component = Owner
+    AutoActivate = False
+    ScopeMappings = <>
+    Left = 512
+    Top = 176
+  end
+end

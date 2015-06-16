@@ -1,0 +1,67 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'Form4'
+  ClientHeight = 339
+  ClientWidth = 538
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [Desktop]
+  FormFamily = 'TForm'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object lblLatitude: TLabel
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 80.000000000000000000
+    Text = 'Latitude'
+    Width = 129.000000000000000000
+  end
+  object etLatitude: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Width = 129.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object lblLongitude: TLabel
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 128.000000000000000000
+    Text = 'Longitude'
+    Width = 129.000000000000000000
+  end
+  object etLongitude: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 8.000000000000000000
+    Position.Y = 144.000000000000000000
+    Width = 129.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object chkActivateManager: TCheckBox
+    Height = 19.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 4
+    Text = 'Activate Manager'
+    Width = 120.000000000000000000
+    OnChange = chkActivateManagerChange
+  end
+  object chkActivateSensor: TCheckBox
+    Enabled = False
+    Height = 19.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 5
+    Text = 'Activate Sensor'
+    Width = 120.000000000000000000
+    OnChange = chkActivateSensorChange
+  end
+end

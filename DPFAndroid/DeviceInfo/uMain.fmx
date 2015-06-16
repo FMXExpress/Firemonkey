@@ -1,0 +1,35 @@
+object FDeviceInfo: TFDeviceInfo
+  Left = 0
+  Top = 0
+  Caption = 'DeviceInfo'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnShow = FormShow
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claGray
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      Align = alClient
+      Width = 384.000000000000000000
+      Height = 567.000000000000000000
+      TextSize = 18.000000000000000000
+      NumberOfLines = 0
+      Scrollable = True
+    end
+  end
+end

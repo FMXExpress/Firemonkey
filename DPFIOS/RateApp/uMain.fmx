@@ -1,0 +1,77 @@
+object FRateApp: TFRateApp
+  Left = 0
+  Top = 0
+  Caption = 'Rate App'
+  ClientHeight = 460
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 30.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = Top
+      Position.X = 20.000000000000000000
+      Position.Y = 30.000000000000000000
+      Size.Width = 280.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Unknown'
+      TextColor = claWhite
+      BackgroundColor = claRoyalblue
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claYellowgreen
+      TagNative = 0
+      Position.X = 64.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Force Rate'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton1Click
+    end
+  end
+  object DPFRateApp1: TDPFRateApp
+    AppID = 733449578
+    RateTitle = 'Rate DPF Components'
+    RateMessage = 
+      'If you enjoy this app, would you mind taking a moment to rate it' +
+      '? It won'#39't take more than a minute. '#10#13'Thanks for your support!'
+    RateItButtonCaption = 'Rate It Now'
+    RemindMeButtonCaption = 'Remind Me Later'
+    NoThanksButtonCaption = 'No, Thanks'
+    Left = 248
+    Top = 56
+  end
+end

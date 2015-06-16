@@ -1,0 +1,105 @@
+object FActionMessages: TFActionMessages
+  Left = 0
+  Top = 0
+  Caption = 'Action Messages'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Orientations = [Portrait]
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claBlack
+      TagNative = 0
+      Position.X = 40.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Show Message'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton1Click
+    end
+    object DPFButton2: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claBlack
+      TagNative = 0
+      Position.X = 40.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Multi Action Default Buttons'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton2Click
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFButton3: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claBlack
+      TagNative = 0
+      Position.X = 40.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 240.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Multi Action Custom Buttons'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton3Click
+    end
+  end
+  object DPFUIActionSheet1: TDPFUIActionSheet
+    OnClick = DPFUIActionSheet1Click
+    TitleColor = claBlack
+    Buttons = <>
+    Left = 240
+    Top = 16
+  end
+end

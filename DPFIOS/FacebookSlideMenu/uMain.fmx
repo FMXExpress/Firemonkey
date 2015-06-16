@@ -1,0 +1,207 @@
+object FPanGestureRecognizer: TFPanGestureRecognizer
+  Left = 0
+  Top = 0
+  Caption = 'PanGestureRecognizer'
+  ClientHeight = 460
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIViewController1: TDPFUIViewController
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    OnDidRotateFromInterfaceOrientation = DPFUIViewController1DidRotateFromInterfaceOrientation
+    object DPFUIView1: TDPFUIView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 460.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = xFFDDDDDD
+      object DPFImageView1: TDPFImageView
+        ContentMode = vcmScaleAspectFit
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 460.000000000000000000
+        Size.PlatformDefault = False
+        ImageList.Strings = (
+          'DPF1.png')
+        AnimationDuration = 1.000000000000000000
+        IndicatorAlpha = 0.699999988079071000
+      end
+      object DPFUIView2: TDPFUIView
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        PanGestureDirections = [pgdRight]
+        OnPanGestureRecognizer = DPFUIView2PanGestureRecognizer
+        Position.X = 40.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 249.000000000000000000
+        Size.Height = 297.000000000000000000
+        Size.PlatformDefault = False
+        BackgroundColor = xFF7094C4
+        object DPFToolbar1: TDPFToolbar
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Align = Top
+          Size.Width = 249.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          BarItems = <
+            item
+              Font.FontName = ios_Helvetica_Bold
+              Font.FontSize = 32
+              Title = '='
+              ButtonItemKind = bkTitle
+              ButtonItemStyle = bbisDone
+              ButtonSystemItem = bbsiReply
+              OnClick = DPFToolbar1BarItems0Click
+              ModalResult = 0
+              Width = 40.000000000000000000
+            end>
+        end
+        object DPFUITableView1: TDPFUITableView
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Align = Client
+          Size.Width = 249.000000000000000000
+          Size.Height = 247.000000000000000000
+          Size.PlatformDefault = False
+          Options.Edition.CellEdit = True
+          Options.TextFont.FontName = ios_Helvetica_Bold
+          Options.TextFont.FontSize = 18
+          Options.DescriptionFont.FontName = ios_Helvetica
+          Options.RowHeight = 44.000000000000000000
+          Sections = <
+            item
+              Header.Font.FontName = ios_Helvetica_Bold
+              Header.Font.FontSize = 18
+              Header.Alpha = 0.899999976158142100
+              Footer.Font.FontName = ios_Helvetica_Bold
+              Footer.Font.FontSize = 18
+              Footer.Alpha = 0.899999976158142100
+              TableItems = <
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ItemText.Text = 'Item Text'
+                  ItemDescription.Text = 'Item Desciption'
+                  ItemDescription.Color = claGray
+                end>
+            end>
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,202 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'TBindExpression Example'
+  ClientHeight = 475
+  ClientWidth = 593
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object EditOutput: TEdit
+    TabOrder = 0
+    Text = 'ABC'
+    Position.X = 8.000000000000000000
+    Position.Y = 214.000000000000000000
+    Width = 329.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object EditSource: TEdit
+    TabOrder = 1
+    Text = 'ABC'
+    Position.X = 8.000000000000000000
+    Position.Y = 267.000000000000000000
+    Width = 273.000000000000000000
+    Height = 22.000000000000000000
+    OnChange = EditSourceChange
+  end
+  object CheckBoxActive: TCheckBox
+    Height = 18.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 2
+    Text = 'Active'
+    Width = 89.000000000000000000
+    OnChange = CheckBoxActiveChange
+  end
+  object LabelEditControl: TLabel
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 198.000000000000000000
+    Text = 'EditOutput: TEdit'
+    Width = 120.000000000000000000
+  end
+  object LabelEditSource: TLabel
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 251.000000000000000000
+    Text = 'EditSource: TEdit'
+    Width = 120.000000000000000000
+  end
+  object ButtonEvaluate: TButton
+    Height = 22.000000000000000000
+    Position.X = 128.000000000000000000
+    Position.Y = 167.000000000000000000
+    TabOrder = 5
+    Text = 'Evaluate'
+    Width = 113.000000000000000000
+    OnClick = ButtonEvaluateClick
+  end
+  object ListBoxComponents: TListBox
+    Touch.InteractiveGestures = [igPan]
+    Height = 129.000000000000000000
+    Position.X = 408.000000000000000000
+    Position.Y = 210.000000000000000000
+    TabOrder = 6
+    Width = 161.000000000000000000
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object Label1: TLabel
+    Height = 40.000000000000000000
+    Position.X = 408.000000000000000000
+    Position.Y = 169.000000000000000000
+    Text = 'Components (to use in source expression):'
+    Width = 161.000000000000000000
+  end
+  object ListBox1: TListBox
+    Touch.InteractiveGestures = [igPan]
+    Height = 100.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 340.000000000000000000
+    TabOrder = 8
+    Width = 265.000000000000000000
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = ListBox1Change
+  end
+  object LabelListBox: TLabel
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 323.000000000000000000
+    Text = 'ListBox1: TListBox'
+    Width = 120.000000000000000000
+  end
+  object LabelSourceExpressions: TLabel
+    Height = 15.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 108.000000000000000000
+    Text = 'Source Expression:'
+    Width = 120.000000000000000000
+  end
+  object LabelControlExpression: TLabel
+    Height = 15.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 43.000000000000000000
+    Text = 'Control Expression:'
+    Width = 120.000000000000000000
+  end
+  object EditControlExpression: TEdit
+    TabOrder = 12
+    Position.X = 128.000000000000000000
+    Position.Y = 40.000000000000000000
+    Width = 241.000000000000000000
+    Height = 22.000000000000000000
+    Enabled = False
+  end
+  object LabelControlComponent: TLabel
+    Height = 15.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 11.000000000000000000
+    Text = 'Control Component:'
+    Width = 120.000000000000000000
+  end
+  object EditControlComponent: TEdit
+    TabOrder = 14
+    Position.X = 128.000000000000000000
+    Position.Y = 8.000000000000000000
+    Width = 129.000000000000000000
+    Height = 22.000000000000000000
+    Enabled = False
+  end
+  object LabelSourceComponent: TLabel
+    Height = 15.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 75.000000000000000000
+    Text = 'Source Component:'
+    Width = 120.000000000000000000
+  end
+  object EditSourceComponentName: TEdit
+    TabOrder = 16
+    Position.X = 128.000000000000000000
+    Position.Y = 72.000000000000000000
+    Width = 129.000000000000000000
+    Height = 22.000000000000000000
+    Enabled = False
+  end
+  object LabelEditEnter: TLabel
+    Height = 15.000000000000000000
+    Position.X = 7.000000000000000000
+    Position.Y = 292.000000000000000000
+    Text = 'Modify and press Enter to cause expression evaluation'
+    Width = 282.000000000000000000
+  end
+  object LabelClickList: TLabel
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 446.000000000000000000
+    Text = 'Click on an item to cause expression evaluation'
+    Width = 265.000000000000000000
+  end
+  object MemoSourceExpression: TMemo
+    Touch.InteractiveGestures = [igPan]
+    Height = 49.000000000000000000
+    Position.X = 128.000000000000000000
+    Position.Y = 104.000000000000000000
+    TabOrder = 19
+    Width = 441.000000000000000000
+    WordWrap = True
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 544
+    Top = 41
+    object BindEdits: TBindExpression
+      Category = 'Property Bindings'
+      ControlComponent = EditOutput
+      SourceComponent = BindScopeComponent1
+      SourceExpression = 
+        '"EditSource: " + '#39'"'#39' + EditSource.Text + '#39'"'#39' + '#39' '#39#13#10' + Format('#39'L' +
+        'istBox1: "%s"'#39',  SelectedText(ListBox1))'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+      OnEvalError = BindEditsEvalError
+      OnActivating = BindEditsActivating
+    end
+  end
+  object BindScopeComponent1: TBindScope
+    AutoActivate = False
+    ScopeMappings = <>
+    Left = 440
+    Top = 41
+  end
+end

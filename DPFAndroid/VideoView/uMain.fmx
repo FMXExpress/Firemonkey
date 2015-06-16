@@ -1,0 +1,50 @@
+object FVideoView: TFVideoView
+  Left = 0
+  Top = 0
+  Caption = 'VideoView'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJLinearLayout1: TDPFJLinearLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claLightsteelblue
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    Gravity = 0
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      Focusable = False
+      FocusableInTouchMode = False
+      OnClick = DPFJButton1Click
+      Margins.Left = 40.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 40.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = alBottom
+      Position.X = 40.000000000000000000
+      Position.Y = 507.000000000000000000
+      Width = 304.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Play'
+      TextSize = 18.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJVideoView1: TDPFJVideoView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      DrawType = dtCustom
+      Align = alClient
+      Width = 384.000000000000000000
+      Height = 497.000000000000000000
+    end
+  end
+end

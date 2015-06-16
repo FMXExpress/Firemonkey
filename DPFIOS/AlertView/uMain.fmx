@@ -1,0 +1,166 @@
+object FAlertView: TFAlertView
+  Left = 0
+  Top = 0
+  Caption = 'Alert View'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIViewController1: TDPFUIViewController
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claWhite
+    RootViewController = True
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      Font.FontName = ios_Verdana_BoldItalic
+      Font.FontSize = 16
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = Top
+      Position.X = 50.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btInfoDark
+      Text = 'Default Alert'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claTan
+      BackgroundColorHighlight = claSienna
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton1Click
+    end
+    object DPFButton2: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = Top
+      Position.X = 50.000000000000000000
+      Position.Y = 117.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Secure Text Alert'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claChartreuse
+      BackgroundColorHighlight = claGreen
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton2Click
+    end
+    object DPFButton3: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = Top
+      Position.X = 50.000000000000000000
+      Position.Y = 214.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Plain Text Alert'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claKhaki
+      BackgroundColorHighlight = claRosybrown
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton3Click
+    end
+    object DPFButton4: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = Top
+      Position.X = 50.000000000000000000
+      Position.Y = 311.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Login And Password Alert'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claRoyalblue
+      BackgroundColorHighlight = claPaleturquoise
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton4Click
+    end
+    object DPFButton5: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = Top
+      Position.X = 50.000000000000000000
+      Position.Y = 408.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Plain Text Alert With Pre Defined Text'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claRoyalblue
+      BackgroundColorHighlight = claPaleturquoise
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton5Click
+    end
+  end
+  object DPFAlertView1: TDPFAlertView
+    OnShow = DPFAlertView1Show
+    Left = 256
+    Top = 232
+  end
+end

@@ -1,0 +1,75 @@
+object FDatePicker: TFDatePicker
+  Left = 0
+  Top = 0
+  Caption = 'DatePicker'
+  ClientHeight = 567
+  ClientWidth = 384
+  Fill.Color = claYellow
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claSteelblue
+    DrawType = dtCustom
+    Align = Client
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claYellowgreen
+      DrawType = dtCustom
+      Align = Bottom
+      Position.Y = 437.000000000000000000
+      Width = 384.000000000000000000
+      Height = 130.000000000000000000
+      Text.Strings = (
+        'Hello')
+      TextSize = 18.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJView2: TDPFJRelativeLayout
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      DrawType = dtCustom
+      Align = Top
+      Width = 384.000000000000000000
+      Height = 130.000000000000000000
+    end
+    object DPFJView3: TDPFJRelativeLayout
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claRed
+      DrawType = dtCustom
+      Align = Left
+      Position.Y = 130.000000000000000000
+      Width = 96.000000000000000000
+      Height = 307.000000000000000000
+    end
+    object DPFJView4: TDPFJRelativeLayout
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claDarkorange
+      DrawType = dtCustom
+      Align = Right
+      Position.X = 288.000000000000000000
+      Position.Y = 130.000000000000000000
+      Width = 96.000000000000000000
+      Height = 307.000000000000000000
+    end
+    object DPFJView5: TDPFJRelativeLayout
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      BackgroundColor2 = claWhite
+      DrawType = dtCustom
+      Align = Center
+      Width = 168.000000000000000000
+      Height = 118.000000000000000000
+    end
+  end
+end

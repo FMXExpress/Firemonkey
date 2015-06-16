@@ -1,0 +1,110 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claPalegoldenrod
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claYellowgreen
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 154.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Set Alarm'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton1Click
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      Visible = False
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 49.000000000000000000
+      Position.Y = 296.000000000000000000
+      Size.Width = 219.000000000000000000
+      Size.Height = 121.000000000000000000
+      Size.PlatformDefault = False
+      LineBreak = lbWordWrap
+      Text = 'Please wait 10 second to view alarm alert !'
+      NumberOfLines = 2
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFLabel2: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = Top
+      Position.X = 5.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 310.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Click button to set Alarm'
+      NumberOfLines = 0
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFButton2: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claYellowgreen
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 226.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Remove Alarm'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton2Click
+    end
+  end
+  object DPFEKCalendar1: TDPFEKCalendar
+    OnRequestAccess = DPFEKCalendar1RequestAccess
+    Left = 264
+    Top = 48
+  end
+end

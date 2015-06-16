@@ -1,0 +1,149 @@
+object OrientationSensorForm: TOrientationSensorForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnActivate = FormActivate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object OrientationSensor1: TOrientationSensor
+    OnDataChanged = OrientationSensor1DataChanged
+    OnSensorChoosing = OrientationSensor1SensorChoosing
+    Left = 208
+    Top = 320
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object Label1: TLabel
+      Align = alContents
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Orientation Sensor'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+    end
+  end
+  object ListBox1: TListBox
+    Align = alClient
+    Height = 345.000000000000000000
+    Margins.Top = 10.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = gsGrouped
+    object lbOrientationSensor: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Orientation Sensor:'
+      Width = 320.000000000000000000
+      object swOrientationSensorActive: TSwitch
+        Anchors = [akTop, akRight]
+        Height = 35.000000000000000000
+        IsChecked = False
+        Position.X = 232.000000000000000000
+        Position.Y = 9.000000000000000000
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        Width = 55.000000000000000000
+        OnSwitch = swOrientationSensorActiveSwitch
+      end
+    end
+    object lbTiltX: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Tilt X:'
+      Width = 320.000000000000000000
+    end
+    object lbTiltY: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 88.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Tilt Y:'
+      Width = 320.000000000000000000
+    end
+    object lbTiltZ: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 132.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Tilt Z:'
+      Width = 320.000000000000000000
+    end
+    object lbHeadingX: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 176.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Heading X:'
+      Width = 320.000000000000000000
+    end
+    object lbHeadingY: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 220.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Heading Y:'
+      Width = 320.000000000000000000
+    end
+    object lbHeadingZ: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 264.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Heading Z:'
+      Width = 320.000000000000000000
+    end
+  end
+  object Layout1: TLayout
+    Align = alTop
+    Height = 61.000000000000000000
+    Position.Y = 44.000000000000000000
+    Width = 320.000000000000000000
+    object TiltButton: TSpeedButton
+      StaysPressed = True
+      Align = alCenter
+      GroupName = 'Type'
+      Height = 29.000000000000000000
+      IsPressed = True
+      Margins.Right = 100.000000000000000000
+      StyleLookup = 'segmentedbuttonleft'
+      Text = 'Tilt'
+      Trimming = ttCharacter
+      Width = 100.000000000000000000
+      OnClick = TiltButtonClick
+    end
+    object HeadingButton: TSpeedButton
+      StaysPressed = True
+      Align = alCenter
+      GroupName = 'Type'
+      Height = 29.000000000000000000
+      Margins.Right = -100.000000000000000000
+      StyleLookup = 'segmentedbuttonright'
+      Text = 'Heading'
+      Trimming = ttCharacter
+      Width = 100.000000000000000000
+      OnClick = HeadingButtonClick
+    end
+  end
+end

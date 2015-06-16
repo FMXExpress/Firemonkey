@@ -1,0 +1,60 @@
+object FTimePickerDialog: TFTimePickerDialog
+  Left = 0
+  Top = 0
+  Caption = 'TimePickerDialog'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      OnClick = DPFJButton1Click
+      Align = alCenter
+      Width = 169.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Show Time Picker'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claKhaki
+      BackgroundColor2 = claWheat
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = alTop
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Width = 364.000000000000000000
+      Height = 87.000000000000000000
+      Text.Strings = (
+        '00/00/00')
+      TextSize = 48.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+  object DPFJDatePickerDialog1: TDPFJDatePickerDialog
+    OnDateSet = DPFJDatePickerDialog1DateSet
+    Left = 304
+    Top = 144
+  end
+end

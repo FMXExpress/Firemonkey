@@ -1,0 +1,217 @@
+object FTabBar: TFTabBar
+  Left = 0
+  Top = 0
+  Caption = 'D.P.F TabBar'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFTabBarController1: TDPFTabBarController
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    ActivePageIndex = 1
+    TabBarPanel.Alpha = 1.000000000000000000
+    TabBarPanel.TintColor = claLightsalmon
+    TabBarPanel.BarTintColor = claLightcyan
+    OnSelectPage = DPFTabBarController1SelectPage
+    OnChangingPage = DPFTabBarController1ChangingPage
+    object DPFTabBarItem4: TDPFTabBarItem
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 411.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claWhite
+      TabBarSystemItem = tbsiMore
+      AnimationDuration = 1.000000000000000000
+    end
+    object DPFTabBarItem3: TDPFTabBarItem
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 411.000000000000000000
+      Size.PlatformDefault = False
+      ItemTitle = 'WebPage'
+      AnimationDuration = 1.000000000000000000
+      object DPFMapView1: TDPFMapView
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 411.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object DPFTabBarItem1: TDPFTabBarItem
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 411.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claSkyblue
+      TabBarSystemItem = tbsiRecents
+      AnimationDuration = 1.000000000000000000
+      object DPFMPVolume1: TDPFMPVolume
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 48.000000000000000000
+        Position.Y = 104.000000000000000000
+        Size.Width = 233.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object DPFSegmentedControl1: TDPFSegmentedControl
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 16.000000000000000000
+        Position.Y = 160.000000000000000000
+        Size.Width = 297.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TintColor = claTomato
+        Style = scsBordered
+        Segments = <
+          item
+            Title = 'D'
+          end
+          item
+            Title = 'P'
+          end
+          item
+            Title = 'P'
+          end>
+        SelectedIndex = 1
+      end
+    end
+    object DPFTabBarItem2: TDPFTabBarItem
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 411.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claLightblue
+      BadgeValue = '1'
+      TabBarSystemItem = tbsiSearch
+      AnimationDuration = 1.000000000000000000
+      object DPFSlider1: TDPFSlider
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 72.000000000000000000
+        Position.Y = 160.000000000000000000
+        Size.Width = 190.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        Value = 41.578948974609380000
+        Enabled = False
+        Orientation = trHorizontal
+      end
+      object DPFToolbar1: TDPFToolbar
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Top
+        Size.Width = 320.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        BarItems = <
+          item
+            Font.FontName = ios_Helvetica_Bold
+            ButtonSystemItem = bbsiRefresh
+            ModalResult = 0
+            Width = 50.000000000000000000
+          end
+          item
+            Font.FontName = ios_Helvetica_Bold
+            ButtonSystemItem = bbsiFlexibleSpace
+            ModalResult = 0
+            Width = 50.000000000000000000
+          end
+          item
+            Font.FontName = ios_Helvetica_Bold
+            ButtonSystemItem = bbsiTrash
+            ModalResult = 0
+            Width = 50.000000000000000000
+          end
+          item
+            Font.FontName = ios_Helvetica_Bold
+            ButtonSystemItem = bbsiFlexibleSpace
+            ModalResult = 0
+            Width = 50.000000000000000000
+          end
+          item
+            Font.FontName = ios_Helvetica_Bold
+            ButtonSystemItem = bbsiSave
+            ModalResult = 0
+            Width = 50.000000000000000000
+          end>
+      end
+      object DPFSwitch1: TDPFSwitch
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 120.000000000000000000
+        Position.Y = 232.000000000000000000
+        Size.Width = 77.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object DPFStepper1: TDPFStepper
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 112.000000000000000000
+        Position.Y = 312.000000000000000000
+        Size.Width = 94.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        MaximumValue = 100.000000000000000000
+        Value = 1.000000000000000000
+        StepValue = 1.000000000000000000
+        OnChanged = DPFStepper1Changed
+      end
+    end
+  end
+end

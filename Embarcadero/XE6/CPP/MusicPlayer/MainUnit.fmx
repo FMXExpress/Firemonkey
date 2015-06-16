@@ -1,0 +1,127 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'FireMonkey Music Player (C++)'
+  ClientHeight = 274
+  ClientWidth = 619
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object SelectButton: TButton
+    Height = 22.000000000000000000
+    Position.X = 64.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 0
+    Text = 'Select and Play Song'
+    Width = 128.000000000000000000
+    OnClick = SelectButtonClick
+  end
+  object Label1: TLabel
+    Height = 15.000000000000000000
+    Position.X = 128.000000000000000000
+    Position.Y = 168.000000000000000000
+    Text = 'Duration:'
+    Width = 57.000000000000000000
+  end
+  object DurationLabel: TLabel
+    Height = 15.000000000000000000
+    Position.X = 192.000000000000000000
+    Position.Y = 168.000000000000000000
+    Text = '0'
+    Width = 120.000000000000000000
+  end
+  object VolumeTrackBar: TTrackBar
+    Height = 65.000000000000000000
+    Max = 1.000000000000000000
+    Orientation = orVertical
+    Position.X = 276.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 3
+    Width = 20.000000000000000000
+    OnChange = VolumeTrackBarChange
+  end
+  object DurationTrackBar: TTrackBar
+    Height = 20.000000000000000000
+    Orientation = orHorizontal
+    Position.X = 24.000000000000000000
+    Position.Y = 200.000000000000000000
+    TabOrder = 4
+    Width = 577.000000000000000000
+    OnChange = DurationTrackBarChange
+  end
+  object Label3: TLabel
+    Height = 15.000000000000000000
+    Position.X = 264.000000000000000000
+    Position.Y = 32.000000000000000000
+    Text = 'Volume'
+    Width = 120.000000000000000000
+  end
+  object Label4: TLabel
+    Height = 15.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 168.000000000000000000
+    Text = 'Playing:'
+    Width = 57.000000000000000000
+  end
+  object PauseButton: TButton
+    Enabled = False
+    Height = 22.000000000000000000
+    Position.X = 64.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 7
+    Text = 'Pause'
+    Width = 57.000000000000000000
+    OnClick = PauseButtonClick
+  end
+  object ClearButton: TButton
+    Enabled = False
+    Height = 22.000000000000000000
+    Position.X = 128.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 8
+    Text = 'Clear'
+    Width = 65.000000000000000000
+    OnClick = ClearButtonClick
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 432
+    Top = 64
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 352
+    Top = 64
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 528
+    Top = 64
+  end
+  object PlayingLabel: TLabel
+    Height = 15.000000000000000000
+    Position.X = 80.000000000000000000
+    Position.Y = 168.000000000000000000
+    Text = '0'
+    Width = 120.000000000000000000
+  end
+  object Label2: TLabel
+    Height = 15.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 136.000000000000000000
+    Text = 'FileName:'
+    Width = 65.000000000000000000
+  end
+  object FileNameLabel: TLabel
+    Height = 15.000000000000000000
+    Position.X = 88.000000000000000000
+    Position.Y = 136.000000000000000000
+    Text = '<none>'
+    Width = 385.000000000000000000
+  end
+end

@@ -1,0 +1,70 @@
+object FEmbForm2: TFEmbForm2
+  Left = 0
+  Top = 0
+  Caption = 'FEmbForm2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 460
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object Form2MainView: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    Align = alClient
+    Width = 320.000000000000000000
+    Height = 460.000000000000000000
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      Position.X = 56.000000000000000000
+      Position.Y = 160.000000000000000000
+      Width = 217.000000000000000000
+      Height = 49.000000000000000000
+      Text = 'Test Button'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      Align = alTop
+      Width = 320.000000000000000000
+      Height = 49.000000000000000000
+      Text = 'This is Form 2'
+      BackgroundColor = claLightblue
+      TextAlignment = taCenter
+    end
+    object DPFSegmentedControl1: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      Align = alTop
+      Position.Y = 49.000000000000000000
+      Width = 320.000000000000000000
+      Height = 96.000000000000000000
+      Segments = <
+        item
+          Title = 'Seg 1'
+        end
+        item
+          Title = 'Seg 2'
+        end
+        item
+          Title = 'Seg 3'
+        end>
+    end
+  end
+end

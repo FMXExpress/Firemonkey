@@ -1,0 +1,52 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 64.000000000000000000
+      Position.Y = 66.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFSwitch1: TDPFSwitch
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 122.000000000000000000
+      Position.Y = 138.000000000000000000
+      Size.Width = 77.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      OnChanged = DPFSwitch1Changed
+    end
+  end
+end

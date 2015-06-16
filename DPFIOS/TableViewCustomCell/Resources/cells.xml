@@ -1,0 +1,66 @@
+<xml>
+  <cells>
+  	<cell>
+		<type>label</type>
+		<text>Item 1</text>
+	</cell>
+	<cell>
+		<type>label</type>
+		<text>Item 2</text>
+	</cell>
+	<cell>
+		<type>label</type>
+		<text>Item 3</text>
+	</cell>
+	<cell>
+		<type>label</type>
+		<text>Item 4</text>
+	</cell>
+	<cell>
+		<type>label</type>
+		<text>Item 5</text>
+	</cell>
+	<cell>
+		<type>label</type>
+		<text>Item 6</text>
+	</cell>
+	<cell>
+		<type>label</type>
+		<text>Item 7</text>
+	</cell>
+	<cell>
+		<type>label</type>
+		<text>Item 8</text>
+	</cell>
+	<cell>
+		<type>label</type>
+		<text>Item 9</text>
+	</cell>
+	<cell>
+		<type>label</type>
+		<text>Item 10</text>
+	</cell>
+    <cell>
+		<type>label</type>
+		<text>This is a label</text>
+	</cell>
+	<cell>
+		<type>button</type>
+		<text>This is a button</text>
+	</cell>
+	<cell>
+		<type>list</type>
+	    <text>
+			<line>line 1</line>
+			<line>line 2</line>
+			<line>line 3</line>
+			<line>line 4</line>
+			<line>line 5</line>
+		</text>
+	</cell>
+	<cell>
+		<type>view</type>
+		<text>My View</text>
+	</cell>
+  </cells>
+</xml>

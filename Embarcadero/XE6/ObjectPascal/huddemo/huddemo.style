@@ -1,0 +1,2411 @@
+object _1: TLayout
+  Align = alClient
+  Height = 715.000000000000000000
+  Width = 1172.000000000000000000
+  object TLayout
+    StyleName = 'calendarstyle'
+    DesignVisible = False
+    Height = 50.000000000000000000
+    Position.X = 396.000000000000000000
+    Position.Y = 476.000000000000000000
+    Width = 50.000000000000000000
+  end
+  object TLayout
+    StyleName = 'calendarlabelstyle'
+    DesignVisible = False
+    Height = 20.000000000000000000
+    Position.X = 396.000000000000000000
+    Position.Y = 491.000000000000000000
+    Width = 49.000000000000000000
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = xFFE0E0E0
+      Locked = True
+      Height = 20.000000000000000000
+      HitTest = False
+      Text = 'label'
+      Width = 49.000000000000000000
+    end
+  end
+  object TSwitchObject
+    StyleName = 'switchstyle'
+    Height = 51.000000000000000000
+    Position.X = 512.000000000000000000
+    Position.Y = 332.000000000000000000
+    TabOrder = 2
+    TrackingThumbScale = 1.000000000000000000
+    ThumbPadding.Left = 1.000000000000000000
+    ThumbPadding.Top = 1.000000000000000000
+    ThumbPadding.Right = 1.000000000000000000
+    ThumbPadding.Bottom = 1.000000000000000000
+    Width = 148.000000000000000000
+    Fill.Color = x82000000
+    FillOn.Color = x82525252
+    FillOn.Kind = bkSolid
+    Stroke.Color = claBlack
+    Thumb.Color = xFF525252
+    ThumbStroke.Color = x82000000
+    ThumbStroke.Thickness = 2.000000000000000000
+    Shape = ssOval
+  end
+  object TLayout
+    StyleName = 'trackbarstyle'
+    DesignVisible = False
+    Height = 14.000000953674320000
+    Position.X = 291.000000000000000000
+    Position.Y = 339.000000000000000000
+    Width = 130.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = x82000000
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = claNull
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 6.000000953674317000
+      HitTest = False
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 4.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Stroke.Color = x82000000
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 122.000000000000000000
+    end
+    object TThumb
+      StyleName = 'thumb'
+      Locked = True
+      Height = 14.000000953674320000
+      Margins.Left = -2.000000000000000000
+      Margins.Top = -2.000000000000000000
+      Margins.Right = -2.000000000000000000
+      Margins.Bottom = -2.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 1.000000000000000000
+      StyleLookup = 'thumbbarstyle'
+      TabOrder = 1
+      Width = 15.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'numberboxstyle'
+    DesignVisible = False
+    Height = 24.000000000000000000
+    Position.X = 310.000000000000000000
+    Position.Y = 335.000000000000000000
+    Width = 91.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x82000000
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = x82000000
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 24.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 91.000000000000000000
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = claNull
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x80000000
+        StopValue = claNull
+        Trigger = 'IsMouseOver=false'
+      end
+    end
+    object TContent
+      StyleName = 'content'
+      Align = alContents
+      Locked = True
+      Height = 16.000000000000000000
+      HitTest = False
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 4.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Width = 83.000000000000000000
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+    end
+  end
+  object TLayout
+    StyleName = 'editstyle'
+    DesignVisible = False
+    Height = 24.000000000000000000
+    Position.X = 310.000000000000000000
+    Position.Y = 335.000000000000000000
+    Width = 91.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Color = claBlack
+      Locked = True
+      Height = 24.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      Width = 91.000000000000000000
+    end
+    object TContent
+      StyleName = 'content'
+      Align = alContents
+      Locked = True
+      Height = 18.000000000000000000
+      HitTest = False
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Width = 85.000000000000000000
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+    end
+  end
+  object TLayout
+    StyleName = 'roundeditstyle'
+    DesignVisible = False
+    Height = 24.000000000000000000
+    Position.X = 310.000000000000000000
+    Position.Y = 335.000000000000000000
+    Width = 91.000000000000000000
+    object TRoundRect
+      StyleName = 'background'
+      Align = alContents
+      Fill.Color = claBlack
+      Locked = True
+      Height = 24.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      Width = 91.000000000000000000
+    end
+    object TContent
+      StyleName = 'content'
+      Align = alContents
+      Locked = True
+      Height = 16.000000000000000000
+      HitTest = False
+      Margins.Left = 8.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 8.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Width = 75.000000000000000000
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+    end
+  end
+  object TLayout
+    StyleName = 'spinboxstyle'
+    DesignVisible = False
+    Height = 24.000000000000000000
+    Position.X = 310.000000000000000000
+    Position.Y = 335.000000000000000000
+    Width = 91.000000000000000000
+    object TRoundRect
+      StyleName = 'background'
+      Align = alContents
+      Fill.Color = claBlack
+      Locked = True
+      Height = 24.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      Width = 91.000000000000000000
+    end
+    object TContent
+      StyleName = 'content'
+      Align = alContents
+      Locked = True
+      Height = 16.000000000000000000
+      HitTest = False
+      Margins.Left = 23.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 23.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Width = 45.000000000000000000
+    end
+    object TButton
+      StyleName = 'minusbutton'
+      Align = alFitLeft
+      CanFocus = False
+      Height = 20.000000000000000000
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 2.000000000000000000
+      Position.Y = 2.000000000000000000
+      TabOrder = 2
+      Text = '-'
+      Width = 20.000000000000000000
+    end
+    object TButton
+      StyleName = 'plusbutton'
+      Align = alFitRight
+      CanFocus = False
+      Height = 20.000000000000000000
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 69.000000000000000000
+      Position.Y = 2.000000000000000000
+      TabOrder = 3
+      Text = '+'
+      Width = 20.000000000000000000
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+    end
+  end
+  object TLayout
+    StyleName = 'memostyle'
+    DesignVisible = False
+    Height = 131.000000000000000000
+    Position.X = 189.000000000000000000
+    Position.Y = 281.000000000000000000
+    Width = 334.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Color = x82000000
+      Locked = True
+      Height = 131.000000000000000000
+      HitTest = False
+      Padding.Left = 3.000000000000000000
+      Padding.Top = 3.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Stroke.Color = x80FFFFFF
+      Width = 334.000000000000000000
+      object TLayout
+        StyleName = 'content'
+        Align = alClient
+        Height = 110.000000000000000000
+        Width = 313.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = alRight
+        Height = 110.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orVertical
+        Position.X = 316.000000000000000000
+        Position.Y = 3.000000000000000000
+        Width = 16.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = alBottom
+        Height = 16.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orHorizontal
+        Position.X = 3.000000000000000000
+        Position.Y = 113.000000000000000000
+        Width = 329.000000000000000000
+      end
+      object TLayout
+        Align = alContents
+        Height = 131.000000000000000000
+        Width = 334.000000000000000000
+        object TLayout
+          Align = alBottom
+          Height = 20.000000000000000000
+          Position.Y = 111.000000000000000000
+          Width = 334.000000000000000000
+          object TSizeGrip
+            StyleName = 'sizegrip'
+            Align = alRight
+            Locked = True
+            Height = 20.000000000000000000
+            Position.X = 314.000000000000000000
+            Width = 20.000000000000000000
+          end
+        end
+      end
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = xFFEAEAEA
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x30FFFFFF
+    end
+  end
+  object TLayout
+    StyleName = 'scrollbarstyle'
+    DesignVisible = False
+    Height = 53.000000000000000000
+    Position.X = 268.000000000000000000
+    Position.Y = 320.000000000000000000
+    Width = 176.000000000000000000
+    object TSpeedButton
+      StyleName = 'leftbutton'
+      Align = alLeft
+      Height = 17.000000000000000000
+      Locked = True
+      Position.Y = 18.000000000000000000
+      StyleLookup = 'scrollbarleftbutton'
+      Width = 18.000000000000000000
+    end
+    object TTrack
+      StyleName = 'htrack'
+      Align = alClient
+      Locked = True
+      Height = 17.000000000000000000
+      Max = 1.000000000000000000
+      Orientation = orHorizontal
+      StyleLookup = 'scrollbarhtrackstyle'
+      TabOrder = 1
+      ViewportSize = 0.100000001490116100
+      Width = 140.000000000000000000
+    end
+    object TSpeedButton
+      StyleName = 'rightbutton'
+      Align = alRight
+      Height = 17.000000000000000000
+      Locked = True
+      Position.X = 158.000000000000000000
+      Position.Y = 18.000000000000000000
+      StyleLookup = 'scrollbarrightbutton'
+      Width = 18.000000000000000000
+    end
+    object TTrack
+      StyleName = 'vtrack'
+      Align = alClient
+      Locked = True
+      Height = 17.000000000000000000
+      Max = 1.000000000000000000
+      Orientation = orHorizontal
+      StyleLookup = 'scrollbarvtrackstyle'
+      TabOrder = 3
+      ViewportSize = 0.100000001490116100
+      Width = 140.000000000000000000
+    end
+    object TSpeedButton
+      StyleName = 'topbutton'
+      Align = alTop
+      Height = 18.000000000000000000
+      Locked = True
+      StyleLookup = 'scrollbartopbutton'
+      Width = 176.000000000000000000
+    end
+    object TSpeedButton
+      StyleName = 'bottombutton'
+      Align = alBottom
+      Height = 18.000000000000000000
+      Locked = True
+      Position.Y = 35.000000000000000000
+      StyleLookup = 'scrollbarbottombutton'
+      Width = 176.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'windowstyle'
+    DesignVisible = False
+    Height = 300.000000000000000000
+    Position.X = 139.000000000000000000
+    Position.Y = 197.000000000000000000
+    Width = 434.000000000000000000
+    object TRectangle
+      StyleName = 'back'
+      Align = alContents
+      Fill.Color = xFF1F1F1F
+      Locked = True
+      Height = 276.000000000000000000
+      HitTest = False
+      Opacity = 0.899999976158142100
+      Margins.Left = 12.000000000000000000
+      Margins.Top = 12.000000000000000000
+      Margins.Right = 12.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      Stroke.Kind = bkNone
+      XRadius = 9.000000000000000000
+      YRadius = 9.000000000000000000
+      Width = 410.000000000000000000
+    end
+    object TLayout
+      Align = alContents
+      Height = 276.000000000000000000
+      Margins.Left = 12.000000000000000000
+      Margins.Top = 12.000000000000000000
+      Margins.Right = 12.000000000000000000
+      Margins.Bottom = 12.000000000000000000
+      Width = 410.000000000000000000
+      object TImage
+        StyleName = 'shadow'
+        MultiResBitmap = <
+          item
+            Width = 101
+            Height = 78
+            PNG = {
+              89504E470D0A1A0A0000000D49484452000000650000004E08060000003917D8
+              3A000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              068549444154785EED9DEB8ED44610852190704B02898490E047488892FC084F
+              C05BF02F79833C6F1E200221048808412EE4B6903A561FEB6CB9DA9A4BEF4EAF
+              5D23956CBC76BBE77CAEAAEE1EA6E6DCB97CA502A9402A900AA4026D1438DFA6
+              99A195966D35ECD6C19A7ABFEB9DB71552CFDF649FFDDAF63EBBBE9FD3BE2E12
+              5E8F71DF9F370B6C13B1BCF8FC37B69179AFD9E41EA72D66ABFBCD01C0DF22C3
+              BD6BB0360A3911800F0A0C6C75DF035A53485391B1FF4E80609FFFD6E304A690
+              66A1D46010C48502845B1E57504BF718EF25EA1504715480F86D04676C2F0A2D
+              1E88820004D8C562DCF790D46B5A858A5EDBA198EA0DD80708D87FC5B8CFE304
+              E7018523260AAA4F3FC5FFB0C0C0964640D8AAE7B01D8AB9B4DCE2F3828AAC30
+              FE2D50B0A529280D6F83B779A1F409A7C014FD23BB40ED52B90944C74D783EDA
+              60AEF14FF752C0D446531F171DF0C0421340F8A7D8DFB2F57014E8C453282844
+              55EF000C4080E1F8AF66AFCA8D7B0D2B87ECD72776F3BB66770A98BF6CEB8DB0
+              004843DA7B08CC97862D0FE4B29D74C5EC4FB35FCCFE3003DD7CC50A40F01766
+              CFCCBE30BB66E6A3871F2EA3A5E19887A2491D610B1E42206F6CFF6952D84A01
+              C0796CF6A519BC87E1BB368719C2A2428980205C010AE2E393ADBA9327530144
+              143CCCDF9B21D78C1E613B9A4BC65118A1F8D0858B994700E59119E25EBE7653
+              0079030FFD57669C5C56E72E3891AF28A7000CF207DC305FFB29F07379D03142
+              BB6A861C8D48C469061C6460A050704B8EBE904FE82DC825F9DA5F0184A7E766
+              848208C42986CEF18E4121109DB503CCDBFDFB932D140530958097C000453D65
+              5CA2AA852F1CA7B764E86AF74CE1018F80D011866133A1F8F52E9E044FC9F948
+              3B28D0991E82D0A5F984F39849F8F2337A1D32B7EBDA7A5B829ECC2304325933
+              8C12BD07B35E09DBBF7368AB300044177E27A32F5D8CD413DB776DBD2D4263FD
+              D8630204D2784FC131BF74BF5E09DBBF738D421190EA3C4597D797B2D4DE5EDE
+              DD5AD46814ED0FAD469EA2DE925076137FEE2A0F837A8F5B1D122780F600A216
+              09857FD3E9C8ACA79C4EF7D67D979A134CD6BE54A6F49C937F68428D6B39E5E4
+              BB9377A82A501B12A7640754203DE580E2D76E9D50124A870A74D8A5F49484D2
+              A1021D76293D25A174A840875D4A4F49281D2AD06197D253124A870A74D8A5F4
+              9484D2A1021D76293D25A174A840875D4A4F49281D2AD06197D253CE08949D4B
+              2275F8FECE6497E63C25E11C086986AF03096FB7D52A46C77A4128E915A707A7
+              A6F558EB453D253A39619D0CACD9E26C51F88ACA539C4CD7D6D7AA2FD0161662
+              F3507C85B7F494F60F4E54E78BDF2B1D20F9F0155577C3D78AF3D54601D467A9
+              1561631990F0FB29743156774365847CB551E0336B8605D8B065299063D5F122
+              4FD1FA87B8E8669BFE642BA6C0B766ACF315C13916BEB40EA2AF7F78DB1ACAAF
+              45ECFF4C7D571E7054C863953C5F806DF098394F61B93D7CC5F8DEFE7D5A750B
+              D0F9A1198AD8A1EA04C1B06C21F3CC24D143352D7B44286800946FAD5AD6FDDE
+              FC0F7639220E2A42C13C18683D16F88CEA7DF1ABC4BEDCEDD7A5C1D7FBF56F55
+              5743CB1FCD1E984137D89B62BF3BCF6155D6238502B56ADFF3C679086348549F
+              9BBD34CB423AF3CFD737F6E79F4A942190080A0A7E221A11CA3B4DE0F410562F
+              62A94214A5448DAA4F8B5DB72DC6DB0083C295684CABF0A01DFF0DD8A5BB87CE
+              CC315ABD6F76C30C610A1E01A38728188432E41980C1433E247E5FC80082B2D2
+              AA962B44392480010CDD02D86CEDAA0268C9500884A356266F080D28101DE203
+              CC6FC5B01F0119E62E1E0AC3971688A6C760124908DC1208ABBC21C4CD55F15E
+              221C0F4507480403384CF280C451183D045E3226FB080A8E6992672924C00118
+              96C4650D44051295562788A5CD75A275420E6DE92D1CFA2A1C168DD6B90A67F7
+              B8BE5A565D47602C85A47058CD5B6B57D14BB4BCFAA49AC2825C45176BFDD214
+              67EB9CBD634B400A631C71D9DFC7A516FFF4AA880A86E14C7F78402BBB79206B
+              4AF6BA1A827DFF6B10FAC3034CE6BAC4C25C342E06472185C7282C933FB6FA0B
+              100C55DC46B9646921ABE6E89A57148CFE3A84FFC90EC2D0C548B43F095F3EFE
+              33F1EBFC85F9C6FF660A3D2BAAD2B3A0A815BE15FFC1A05FD4D5F544F58C0910
+              B43EF7246B2853A129BE7A92862B3D77E930F4FD456034D7F8DF49D10FB6060F
+              D96644E4E110A67A51ED9CB541A1B8D167F07A4C214C3EDDDD26E6FBE1B37A5A
+              F4B76DC09F65785E543F2AAB01A87ED4BE0D9448B84DAFDFF4BCB30667D3FFC3
+              B0E979C3FBFF1FD40F1A532AFE35ED0000000049454E44AE426082}
+          end>
+        Align = alContents
+        BitmapMargins.Left = 16.000000000000000000
+        BitmapMargins.Top = 20.000000000000000000
+        BitmapMargins.Right = 16.000000000000000000
+        BitmapMargins.Bottom = 18.000000000000000000
+        Locked = True
+        Height = 298.000000000000000000
+        HitTest = False
+        Opacity = 0.899999976158142100
+        Margins.Left = -8.000000000000000000
+        Margins.Top = -11.000000000000000000
+        Margins.Right = -9.000000000000000000
+        Margins.Bottom = -11.000000000000000000
+        Width = 427.000000000000000000
+      end
+      object TRectangle
+        StyleName = 'caption'
+        Align = alTop
+        Corners = [crTopLeft, crTopRight]
+        Fill.Kind = bkGradient
+        Fill.Gradient.Points = <
+          item
+            Color = xE2535353
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = xDF424242
+            Offset = 0.490000009536743200
+          end
+          item
+            Color = xDC353535
+            Offset = 0.503597140312194800
+          end
+          item
+            Color = xDC353535
+            Offset = 1.000000000000000000
+          end>
+        Locked = True
+        Height = 19.000000000000000000
+        HitTest = False
+        Sides = [sdTop, sdLeft, sdRight]
+        Stroke.Color = xDF424242
+        XRadius = 7.000000000000000000
+        YRadius = 7.000000000000000000
+        Width = 410.000000000000000000
+        object TGradientAnimation
+          Duration = 0.100000001490116100
+          PropertyName = 'Fill.Gradient'
+          StartValue.Points = <
+            item
+              Color = x601F1F1F
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = x601F1F1F
+              Offset = 0.428057551383972200
+            end
+            item
+              Color = x601F1F1F
+              Offset = 0.503597140312194800
+            end
+            item
+              Color = x601F1F1F
+              Offset = 1.000000000000000000
+            end>
+          StopValue.Points = <
+            item
+              Color = xD2535353
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xEF424242
+              Offset = 0.490000009536743200
+            end
+            item
+              Color = xDC353535
+              Offset = 0.503597140312194800
+            end
+            item
+              Color = xDC353535
+              Offset = 1.000000000000000000
+            end>
+          Trigger = 'IsActive=true'
+          TriggerInverse = 'IsActive=false'
+        end
+      end
+      object TRectangle
+        Align = alClient
+        Corners = [crBottomLeft, crBottomRight]
+        Fill.Kind = bkNone
+        Locked = True
+        Height = 257.000000000000000000
+        HitTest = False
+        Stroke.Color = xDF424242
+        XRadius = 7.000000000000000000
+        YRadius = 7.000000000000000000
+        Width = 410.000000000000000000
+      end
+      object TLayout
+        Align = alContents
+        Locked = True
+        Height = 276.000000000000000000
+        Width = 410.000000000000000000
+        object TLayout
+          Align = alTop
+          Height = 19.000000000000000000
+          Width = 410.000000000000000000
+          object TSpeedButton
+            StyleName = 'close'
+            Align = alLeft
+            Height = 14.000000000000000000
+            Locked = True
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 3.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 3.000000000000000000
+            StyleLookup = 'closeButtonStyle'
+            Width = 14.000000000000000000
+          end
+          object TText
+            StyleName = 'text'
+            Align = alClient
+            ClipChildren = True
+            Color = claWhite
+            Font.Style = [fsBold]
+            Locked = True
+            Height = 18.000000000000000000
+            HitTest = False
+            Margins.Left = 12.000000000000000000
+            Margins.Top = 1.000000000000000000
+            Margins.Right = 12.000000000000000000
+            Text = 'Text'
+            Width = 362.000000000000000000
+            WordWrap = False
+          end
+        end
+        object TLayout
+          Align = alRight
+          Locked = True
+          Height = 257.000000000000000000
+          Position.X = 393.000000000000000000
+          Position.Y = 19.000000000000000000
+          Width = 17.000000000000000000
+          object TSizeGrip
+            StyleName = 'sizegrip'
+            Align = alBottom
+            Locked = True
+            Height = 17.000000000000000000
+            Margins.Right = 2.000000000000000000
+            Margins.Bottom = 2.000000000000000000
+            Position.Y = 238.000000000000000000
+            Width = 15.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object TImage
+    StyleName = 'SizeGripStyle'
+    MultiResBitmap = <
+      item
+        Width = 15
+        Height = 15
+        PNG = {
+          89504E470D0A1A0A0000000D494844520000000F0000000F08060000003BD695
+          4A000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          003449444154384F63601812809F9FFF3F590E05699C3A752AE99A075E23D17E
+          46772AD14E1F7C1A71FA99905389F63359A988AE9A00160F3E3B7CCBF2530000
+          000049454E44AE426082}
+      end>
+    DesignVisible = False
+    Height = 22.000000000000000000
+    HitTest = False
+    Position.X = 345.000000000000000000
+    Position.Y = 336.000000000000000000
+    Width = 21.000000000000000000
+    WrapMode = iwOriginal
+  end
+  object TEllipse
+    StyleName = 'captionbuttonstyle'
+    DesignVisible = False
+    Fill.Color = xF3B5B5B5
+    Height = 19.000000000000000000
+    HitTest = False
+    Position.X = 346.000000000000000000
+    Position.Y = 337.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 20.000000000000000000
+    object TColorAnimation
+      Duration = 0.100000001490116100
+      PropertyName = 'Fill.Color'
+      StartValue = xF3B5B5B5
+      StopValue = claWhite
+      Trigger = 'IsMouseOver=true'
+      TriggerInverse = 'IsMouseOver=false'
+    end
+  end
+  object TEllipse
+    StyleName = 'closebuttonstyle'
+    DesignVisible = False
+    Fill.Color = xF3B5B5B5
+    Height = 50.000000000000000000
+    HitTest = False
+    Stroke.Kind = bkNone
+    Width = 50.000000000000000000
+    object TColorAnimation
+      Duration = 0.100000001490116100
+      PropertyName = 'Fill.Color'
+      StartValue = xF3B5B5B5
+      StopValue = claWhite
+      Trigger = 'IsMouseOver=true'
+      TriggerInverse = 'IsMouseOver=false'
+    end
+    object TPath
+      Align = alCenter
+      Data.Path = {
+        10000000000000000000A0C00000704101000000000070410000A0C001000000
+        000048420000F041010000000000AA420000A0C0010000000000D24200007041
+        0100000000008C4200004842010000000000D2420000B442010000000000AA42
+        0000DC42020000003BDF34429E6F8C4202000000FE547D427FAAB04202000000
+        000048420000964201000000000070410000DC42010000000000A0C00000B442
+        010000000000F04100005C42010000000000A0C0000070410300000000000000
+        00000000}
+      Fill.Color = xF43F3F3F
+      Locked = True
+      Height = 8.000000000000000000
+      HitTest = False
+      Stroke.Kind = bkNone
+      Width = 8.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'labelstyle'
+    DesignVisible = False
+    Height = 20.000000000000000000
+    Position.X = 331.000000000000000000
+    Position.Y = 337.000000000000000000
+    Width = 49.000000000000000000
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = xFFE0E0E0
+      Locked = True
+      Height = 20.000000000000000000
+      HitTest = False
+      Text = 'label'
+      Width = 49.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'buttonstyle'
+    DesignVisible = False
+    Height = 24.000000000000000000
+    Position.X = 310.000000000000000000
+    Position.Y = 335.000000000000000000
+    Width = 91.000000000000000000
+    object TRectangle
+      Align = alContents
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x82000000
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = x82000000
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 24.000000000000000000
+      HitTest = False
+      Stroke.Color = xDF727272
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 91.000000000000000000
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = claNull
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+      object TInnerGlowEffect
+        Softness = 0.400000005960464400
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+        Trigger = 'IsPressed=true'
+        Enabled = False
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = xFFE0E0E0
+      Locked = True
+      Height = 18.000000000000000000
+      HitTest = False
+      Margins.Left = 7.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 7.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Text = 'button'
+      Width = 77.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'roundbuttonstyle'
+    DesignVisible = False
+    Height = 24.000000000000000000
+    Position.X = 310.000000000000000000
+    Position.Y = 335.000000000000000000
+    Width = 91.000000000000000000
+    object TRoundRect
+      Align = alContents
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x82000000
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = x82000000
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 24.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      Width = 91.000000000000000000
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = claNull
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x80000000
+        StopValue = claNull
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x80000000
+        StopValue = x40000000
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x40000000
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = xFFE0E0E0
+      Locked = True
+      Height = 18.000000000000000000
+      HitTest = False
+      Margins.Left = 7.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 7.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Text = 'button'
+      Width = 77.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'circlebuttonstyle'
+    DesignVisible = False
+    Height = 24.000000000000000000
+    Position.X = 310.000000000000000000
+    Position.Y = 335.000000000000000000
+    Width = 91.000000000000000000
+    object TCircle
+      Align = alContents
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x82000000
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = x82000000
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 24.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      Width = 91.000000000000000000
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = claNull
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x80000000
+        StopValue = claNull
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x80000000
+        StopValue = x40000000
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x40000000
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = xFFE0E0E0
+      Locked = True
+      Height = 18.000000000000000000
+      HitTest = False
+      Margins.Left = 7.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 7.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Text = 'button'
+      Width = 77.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'cornerbuttonstyle'
+    DesignVisible = False
+    Height = 24.000000000000000000
+    Position.X = 310.000000000000000000
+    Position.Y = 335.000000000000000000
+    Width = 91.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x82000000
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = x82000000
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 24.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      Width = 91.000000000000000000
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = claNull
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x80000000
+        StopValue = claNull
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x80000000
+        StopValue = x40000000
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x40000000
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = xFFE0E0E0
+      Locked = True
+      Height = 18.000000000000000000
+      HitTest = False
+      Margins.Left = 7.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 7.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Text = 'button'
+      Width = 77.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'checkboxstyle'
+    DesignVisible = False
+    Height = 21.000000000000000000
+    Position.X = 295.000000000000000000
+    Position.Y = 336.000000000000000000
+    Width = 121.000000000000000000
+    object TLayout
+      Align = alLeft
+      Height = 21.000000000000000000
+      Width = 20.000000000000000000
+      object TRectangle
+        StyleName = 'background'
+        Align = alCenter
+        Fill.Kind = bkGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x82000000
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = x20FFFFFF
+            Offset = 1.000000000000000000
+          end>
+        Locked = True
+        Height = 13.000000000000000000
+        HitTest = False
+        Stroke.Color = x80FFFFFF
+        Width = 13.000000000000000000
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          PropertyName = 'Fill.Color'
+          StartValue = x82000000
+          StopValue = x42000000
+          Trigger = 'IsMouseOver=true'
+        end
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          PropertyName = 'Fill.Color'
+          StartValue = x42000000
+          StopValue = x82000000
+          Trigger = 'IsMouseOver=false'
+        end
+        object TPath
+          StyleName = 'checkmark'
+          Align = alCenter
+          Data.Path = {
+            1200000000000000000000000000000001000000CDCC4C3E0000000001000000
+            0000003F9A99993E01000000CDCC4C3F00000000010000000000803F00000000
+            010000000000803FCDCC4C3E010000003333333F0000003F010000000000803F
+            CDCC4C3F010000000000803F0000803F01000000CDCC4C3F0000803F01000000
+            0000003F3333333F01000000CDCC4C3E0000803F01000000000000000000803F
+            0100000000000000CDCC4C3F010000009A99993E0000003F0100000000000000
+            CDCC4C3E010000000000000000000000030000000000000000000000}
+          Fill.Color = claNull
+          Locked = True
+          Height = 9.000000000000000000
+          HitTest = False
+          Stroke.Kind = bkNone
+          Width = 9.000000000000000000
+          object TColorAnimation
+            Duration = 0.100000001490116100
+            PropertyName = 'Fill.Color'
+            StartValue = x00FFFFFF
+            StopValue = xE0FFFFFF
+            Trigger = 'IsChecked=true'
+          end
+          object TColorAnimation
+            Duration = 0.100000001490116100
+            Inverse = True
+            PropertyName = 'Fill.Color'
+            StartValue = x00FFFFFF
+            StopValue = xE0FFFFFF
+            Trigger = 'IsChecked=false'
+          end
+        end
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = claWhite
+      Locked = True
+      Height = 19.000000000000000000
+      HitTest = False
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Text = 'CheckBox'
+      Width = 99.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'radiobuttonstyle'
+    DesignVisible = False
+    Height = 21.000000000000000000
+    Position.X = 295.000000000000000000
+    Position.Y = 336.000000000000000000
+    Width = 121.000000000000000000
+    object TLayout
+      Align = alLeft
+      Height = 21.000000000000000000
+      Width = 20.000000000000000000
+      object TEllipse
+        StyleName = 'background'
+        Align = alCenter
+        Fill.Kind = bkGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x82000000
+            Offset = 0.000000000000000000
+          end
+          item
+            Color = x20FFFFFF
+            Offset = 1.000000000000000000
+          end>
+        Locked = True
+        Height = 13.000000000000000000
+        HitTest = False
+        Stroke.Color = x80FFFFFF
+        Width = 13.000000000000000000
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          PropertyName = 'Fill.Color'
+          StartValue = x82000000
+          StopValue = x42000000
+          Trigger = 'IsMouseOver=true'
+        end
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          PropertyName = 'Fill.Color'
+          StartValue = x42000000
+          StopValue = x82000000
+          Trigger = 'IsMouseOver=false'
+        end
+        object TEllipse
+          StyleName = 'checkmark'
+          Align = alClient
+          Fill.Color = claNull
+          Locked = True
+          Height = 7.000000000000000000
+          HitTest = False
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Stroke.Kind = bkNone
+          Width = 7.000000000000000000
+          object TColorAnimation
+            Duration = 0.100000001490116100
+            PropertyName = 'Fill.Color'
+            StartValue = x00FFFFFF
+            StopValue = xE0FFFFFF
+            Trigger = 'IsChecked=true'
+          end
+          object TColorAnimation
+            Duration = 0.100000001490116100
+            Inverse = True
+            PropertyName = 'Fill.Color'
+            StartValue = x00FFFFFF
+            StopValue = xE0FFFFFF
+            Trigger = 'IsChecked=false'
+          end
+        end
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = claWhite
+      Locked = True
+      Height = 19.000000000000000000
+      HitTest = False
+      Margins.Left = 1.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 1.000000000000000000
+      Text = 'RadioButton'
+      Width = 99.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'groupboxstyle'
+    DesignVisible = False
+    Height = 102.000000000000000000
+    Padding.Left = 2.000000000000000000
+    Padding.Top = 8.000000000000000000
+    Padding.Right = 2.000000000000000000
+    Padding.Bottom = 2.000000000000000000
+    Position.X = 288.000000000000000000
+    Position.Y = 296.000000000000000000
+    Width = 135.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alClient
+      Fill.Kind = bkNone
+      Locked = True
+      Height = 92.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 131.000000000000000000
+      object TText
+        StyleName = 'text'
+        AutoSize = True
+        ClipParent = True
+        Color = claWhite
+        Locked = True
+        Height = 19.000000000000000000
+        HitTest = False
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = -8.000000000000000000
+        Text = 'Groupbox'
+        Width = 52.000000000000000000
+        WordWrap = False
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'popupboxstyle'
+    DesignVisible = False
+    Height = 22.000000000000000000
+    Position.X = 302.000000000000000000
+    Position.Y = 336.000000000000000000
+    Width = 107.000000000000000000
+    object TRectangle
+      Align = alContents
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x82000000
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = x82000000
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 22.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 107.000000000000000000
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = claNull
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x80000000
+        StopValue = claNull
+        Trigger = 'IsMouseOver=false'
+      end
+    end
+    object TLayout
+      Align = alRight
+      Height = 22.000000000000000000
+      Position.X = 92.000000000000000000
+      Width = 15.000000000000000000
+      object TPath
+        Align = alCenter
+        Data.Path = {
+          0500000000000000000000000000803F010000000000803F0000803F01000000
+          0000003F0000000001000000000000000000803F030000000000000000000000}
+        Fill.Color = claWhite
+        Height = 5.000000000000000000
+        HitTest = False
+        Margins.Top = -9.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 8.000000000000000000
+      end
+      object TPath
+        Align = alCenter
+        Data.Path = {
+          04000000000000000000000000000000010000000000803F0000000001000000
+          0000003F0000803F030000000000000000000000}
+        Fill.Color = claWhite
+        Height = 5.000000000000000000
+        HitTest = False
+        Margins.Top = 7.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 8.000000000000000000
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = xFFE0E0E0
+      Locked = True
+      Height = 12.000000000000000000
+      HitTest = False
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Text = 'button'
+      Width = 82.000000000000000000
+      WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'arcdialstyle'
+    DesignVisible = False
+    Height = 26.000000000000000000
+    Position.X = 319.000000000000000000
+    Position.Y = 334.000000000000000000
+    Width = 73.000000000000000000
+    object TEllipse
+      StyleName = 'background'
+      Align = alFit
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x82000000
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = x82000000
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 26.000000000000000000
+      HitTest = False
+      Stroke.Color = claWhite
+      Width = 26.000000000000000000
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = claNull
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        PropertyName = 'Fill.Color'
+        StartValue = x80000000
+        StopValue = claNull
+        Trigger = 'IsMouseOver=false'
+      end
+      object TLayout
+        StyleName = 'tick'
+        Align = alClient
+        Locked = True
+        Height = 22.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Width = 22.000000000000000000
+        object TLayout
+          Align = alRight
+          Height = 22.000000000000000000
+          Position.X = 17.000000000000000000
+          Width = 5.000000000000000000
+          object TEllipse
+            Align = alCenter
+            Fill.Color = xFF505050
+            Locked = True
+            Height = 5.000000000000000000
+            HitTest = False
+            Stroke.Color = claWhite
+            Width = 5.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'thumbbarstyle'
+    DesignVisible = False
+    Height = 16.000000000000000000
+    Position.X = 348.000000000000000000
+    Position.Y = 339.000000000000000000
+    Width = 16.000000000000000000
+    object TEllipse
+      StyleName = 'background'
+      Align = alCenter
+      Fill.Color = xF3B5B5B5
+      Locked = True
+      Height = 11.999999046325680000
+      HitTest = False
+      Stroke.Color = x80000000
+      Width = 11.999999046325680000
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = xF3B5B5B5
+        StopValue = claWhite
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+      end
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarvtrackstyle'
+    DesignVisible = False
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = x20FFFFFF
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = x82000000
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StopPosition.X = 1.000000000000000000
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Height = 63.000003814697270000
+    HitTest = False
+    Position.X = 346.000000000000000000
+    Position.Y = 315.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 19.000000000000000000
+    object TRectangle
+      Align = alClient
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = x82000000
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x20FFFFFF
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StopPosition.X = 1.000000000000000000
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Locked = True
+      Height = 59.000003814697270000
+      HitTest = False
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Stroke.Kind = bkNone
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+      Width = 15.000000000000000000
+    end
+    object TThumb
+      StyleName = 'thumb'
+      Locked = True
+      Height = 46.000000000000000000
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      StyleLookup = 'vthumbstyle'
+      TabOrder = 1
+      Width = 10.000000000000000000
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarhtrackstyle'
+    DesignVisible = False
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = x20FFFFFF
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = x82000000
+        Offset = 1.000000000000000000
+      end>
+    Height = 19.000000000000000000
+    HitTest = False
+    Position.X = 296.000000000000000000
+    Position.Y = 337.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 119.999992370605500000
+    object TRectangle
+      Align = alClient
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = x82000000
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x20FFFFFF
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 15.000000000000000000
+      HitTest = False
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Stroke.Kind = bkNone
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+      Width = 115.999992370605500000
+    end
+    object TThumb
+      StyleName = 'thumb'
+      Locked = True
+      Height = 16.000000000000000000
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 4.000000000000000000
+      Position.Y = 4.000000000000000000
+      StyleLookup = 'hthumbstyle'
+      TabOrder = 1
+      Width = 51.000000000000000000
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarleftbutton'
+    DesignVisible = False
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = x20FFFFFF
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = x82000000
+        Offset = 1.000000000000000000
+      end>
+    Height = 18.000000000000000000
+    HitTest = False
+    Position.X = 346.000000000000000000
+    Position.Y = 338.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 19.000000000000000000
+    object TPath
+      Align = alCenter
+      Data.Path = {
+        05000000000000000000803F00000000010000000000803F0000803F01000000
+        000000000000003F010000000000803F00000000030000000000000000000000}
+      Fill.Color = x80FFFFFF
+      Locked = True
+      Height = 8.000000000000000000
+      HitTest = False
+      Stroke.Color = x40000000
+      Width = 7.000000000000000000
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = x80FFFFFF
+        StopValue = xB0FFFFFF
+        Trigger = 'IsMouseOver=true'
+      end
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = xB0FFFFFF
+        StopValue = x80FFFFFF
+        Trigger = 'IsMouseOver=false'
+      end
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarrightbutton'
+    DesignVisible = False
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = x20FFFFFF
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = x82000000
+        Offset = 1.000000000000000000
+      end>
+    Height = 18.000000000000000000
+    HitTest = False
+    Position.X = 347.000000000000000000
+    Position.Y = 338.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 17.000000000000000000
+    object TPath
+      Align = alCenter
+      Data.Path = {
+        0400000000000000000000000000000001000000000000000000803F01000000
+        0000803F0000003F030000000000000000000000}
+      Fill.Color = x80FFFFFF
+      Locked = True
+      Height = 8.000000000000000000
+      HitTest = False
+      Stroke.Color = x40000000
+      Width = 7.000000000000000000
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = x80FFFFFF
+        StopValue = xB0FFFFFF
+        Trigger = 'IsMouseOver=true'
+      end
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = xB0FFFFFF
+        StopValue = x80FFFFFF
+        Trigger = 'IsMouseOver=false'
+      end
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbartopbutton'
+    DesignVisible = False
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = x20FFFFFF
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = x82000000
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StopPosition.X = 1.000000000000000000
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Height = 19.000000000000000000
+    HitTest = False
+    Position.X = 348.000000000000000000
+    Position.Y = 337.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 16.000000000000000000
+    object TPath
+      Align = alCenter
+      Data.Path = {
+        0500000000000000000000000000803F010000000000803F0000803F01000000
+        0000003F0000000001000000000000000000803F030000000000000000000000}
+      Fill.Color = x80FFFFFF
+      Locked = True
+      Height = 7.000000000000000000
+      HitTest = False
+      Stroke.Color = x40000000
+      Width = 8.000000000000000000
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = x80FFFFFF
+        StopValue = xB0FFFFFF
+        Trigger = 'IsMouseOver=true'
+      end
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = xB0FFFFFF
+        StopValue = x80FFFFFF
+        Trigger = 'IsMouseOver=false'
+      end
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarbottombutton'
+    DesignVisible = False
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = x20FFFFFF
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = x82000000
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StopPosition.X = 1.000000000000000000
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Height = 17.000000000000000000
+    HitTest = False
+    Position.X = 578.000000000000000000
+    Position.Y = 349.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 17.000000000000000000
+    object TPath
+      Align = alCenter
+      Data.Path = {
+        04000000000000000000000000000000010000000000803F0000000001000000
+        0000003F0000803F030000000000000000000000}
+      Fill.Color = x80FFFFFF
+      Locked = True
+      Height = 7.000000000000000000
+      HitTest = False
+      Stroke.Color = x40000000
+      Width = 8.000000000000000000
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = x80FFFFFF
+        StopValue = xB0FFFFFF
+        Trigger = 'IsMouseOver=true'
+      end
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = xB0FFFFFF
+        StopValue = x80FFFFFF
+        Trigger = 'IsMouseOver=false'
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'hthumbstyle'
+    DesignVisible = False
+    Height = 14.000000953674320000
+    Position.X = 325.000000000000000000
+    Position.Y = 339.000000000000000000
+    Width = 60.999996185302730000
+    object TRectangle
+      StyleName = 'background'
+      Align = alClient
+      Fill.Color = x80FFFFFF
+      Locked = True
+      Height = 14.000000953674320000
+      HitTest = False
+      Stroke.Color = x40000000
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+      Width = 60.999996185302730000
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = x80FFFFFF
+        StopValue = xB0FFFFFF
+        Trigger = 'IsMouseOver=true'
+      end
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = xB0FFFFFF
+        StopValue = x80FFFFFF
+        Trigger = 'IsMouseOver=false'
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'vthumbstyle'
+    DesignVisible = False
+    Height = 47.000000000000000000
+    Position.X = 350.000000000000000000
+    Position.Y = 323.000000000000000000
+    Width = 11.999999046325680000
+    object TRectangle
+      StyleName = 'background'
+      Align = alClient
+      Fill.Color = x80FFFFFF
+      Locked = True
+      Height = 47.000000000000000000
+      HitTest = False
+      Stroke.Color = x40000000
+      XRadius = 5.999999523162842000
+      YRadius = 5.999999523162842000
+      Width = 11.999999046325680000
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = x80FFFFFF
+        StopValue = xB0FFFFFF
+        Trigger = 'IsMouseOver=true'
+      end
+      object TColorAnimation
+        Duration = 0.100000001490116100
+        PropertyName = 'Fill.Color'
+        StartValue = xB0FFFFFF
+        StopValue = x80FFFFFF
+        Trigger = 'IsMouseOver=false'
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'comboboxstyle'
+    DesignVisible = False
+    Height = 26.000000000000000000
+    Position.X = 311.000000000000000000
+    Position.Y = 334.000000000000000000
+    Width = 89.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x82000000
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = x82000000
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 26.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 89.000000000000000000
+    end
+    object TLayout
+      Align = alRight
+      Height = 26.000000000000000000
+      Position.X = 74.000000000000000000
+      Width = 15.000000000000000000
+      object TPath
+        Align = alCenter
+        Data.Path = {
+          0500000000000000000000000000803F010000000000803F0000803F01000000
+          0000003F0000000001000000000000000000803F030000000000000000000000}
+        Fill.Color = claWhite
+        Height = 5.000000000000000000
+        HitTest = False
+        Margins.Top = -9.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 8.000000000000000000
+      end
+      object TPath
+        Align = alCenter
+        Data.Path = {
+          04000000000000000000000000000000010000000000803F0000000001000000
+          0000003F0000803F030000000000000000000000}
+        Fill.Color = claWhite
+        Height = 5.000000000000000000
+        HitTest = False
+        Margins.Top = 7.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 8.000000000000000000
+      end
+    end
+    object TContent
+      StyleName = 'content'
+      Align = alContents
+      Locked = True
+      Height = 22.000000000000000000
+      HitTest = False
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 23.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Width = 64.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'comboeditstyle'
+    DesignVisible = False
+    Height = 26.000000000000000000
+    Position.X = 311.000000000000000000
+    Position.Y = 334.000000000000000000
+    Width = 89.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claNull
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x82000000
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = x82000000
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 26.000000000000000000
+      HitTest = False
+      Stroke.Color = x80FFFFFF
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 89.000000000000000000
+    end
+    object TLayout
+      Align = alRight
+      Height = 26.000000000000000000
+      Position.X = 74.000000000000000000
+      Width = 15.000000000000000000
+      object TPath
+        Align = alCenter
+        Data.Path = {
+          0500000000000000000000000000803F010000000000803F0000803F01000000
+          0000003F0000000001000000000000000000803F030000000000000000000000}
+        Fill.Color = claWhite
+        Height = 5.000000000000000000
+        HitTest = False
+        Margins.Top = -9.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 8.000000000000000000
+      end
+      object TPath
+        Align = alCenter
+        Data.Path = {
+          04000000000000000000000000000000010000000000803F0000000001000000
+          0000003F0000803F030000000000000000000000}
+        Fill.Color = claWhite
+        Height = 5.000000000000000000
+        HitTest = False
+        Margins.Top = 7.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 8.000000000000000000
+      end
+    end
+    object TContent
+      StyleName = 'content'
+      Align = alContents
+      Locked = True
+      Height = 20.000000000000000000
+      HitTest = False
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 23.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Width = 62.000000000000000000
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+    end
+  end
+  object TLayout
+    StyleName = 'combolistboxstyle'
+    DesignVisible = False
+    Height = 59.000000000000000000
+    Position.X = 310.000000000000000000
+    Position.Y = 317.000000000000000000
+    Width = 92.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Color = xC0000000
+      Locked = True
+      Height = 59.000000000000000000
+      HitTest = False
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Stroke.Color = x80FFFFFF
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 92.000000000000000000
+      object TLayout
+        StyleName = 'content'
+        Align = alClient
+        ClipChildren = True
+        Height = 37.000000000000000000
+        Width = 70.000000000000000000
+        object TRectangle
+          StyleName = 'selection'
+          Fill.Color = x17FFFFFF
+          Height = 50.000000000000000000
+          HitTest = False
+          Stroke.Color = x60FFFFFF
+          XRadius = 2.000000000000000000
+          YRadius = 2.000000000000000000
+          Width = 50.000000000000000000
+        end
+      end
+      object TBrushObject
+        StyleName = 'selection'
+        Brush.Color = x17FFFFFF
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = alRight
+        Height = 37.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orVertical
+        Margins.Left = 2.000000000000000000
+        Position.X = 74.000000000000000000
+        Position.Y = 2.000000000000000000
+        Width = 16.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = alBottom
+        Height = 16.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orHorizontal
+        Margins.Top = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 41.000000000000000000
+        Width = 88.000000000000000000
+      end
+    end
+    object TFloatAnimation
+      Duration = 0.100000001490116100
+      PropertyName = 'Parent.Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+      Trigger = 'IsOpen=true'
+    end
+    object TFloatAnimation
+      Duration = 0.100000001490116100
+      Inverse = True
+      PropertyName = 'Parent.Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+      Trigger = 'IsOpen=false'
+    end
+  end
+  object TLayout
+    StyleName = 'combopopupstyle'
+    DesignVisible = False
+    Height = 59.000000000000000000
+    Position.X = 540.000000000000000000
+    Position.Y = 328.000000000000000000
+    Width = 92.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Color = xC0000000
+      Locked = True
+      Height = 59.000000000000000000
+      HitTest = False
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Stroke.Color = x80FFFFFF
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 92.000000000000000000
+    end
+    object TFloatAnimation
+      Duration = 0.100000001490116100
+      PropertyName = 'Parent.Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+      Trigger = 'IsOpen=true'
+    end
+    object TFloatAnimation
+      Duration = 0.100000001490116100
+      Inverse = True
+      PropertyName = 'Parent.Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+      Trigger = 'IsOpen=false'
+    end
+  end
+  object TRectangle
+    StyleName = 'trackstyle'
+    DesignVisible = False
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = x20FFFFFF
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = x82000000
+        Offset = 1.000000000000000000
+      end>
+    Height = 17.000000000000000000
+    HitTest = False
+    Position.X = 288.000000000000000000
+    Position.Y = 338.000000000000000000
+    Stroke.Kind = bkNone
+    XRadius = 7.000000000000000000
+    YRadius = 7.000000000000000000
+    Width = 136.000000000000000000
+    object TRectangle
+      Align = alClient
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = x82000000
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = x20FFFFFF
+          Offset = 1.000000000000000000
+        end>
+      Locked = True
+      Height = 13.000000000000000000
+      HitTest = False
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Stroke.Kind = bkNone
+      XRadius = 6.500000000000000000
+      YRadius = 6.500000000000000000
+      Width = 132.000000000000000000
+    end
+    object TThumb
+      StyleName = 'thumb'
+      Locked = True
+      Height = 16.000000000000000000
+      Margins.Left = 2.000000000000000000
+      Margins.Top = 2.000000000000000000
+      Margins.Right = 2.000000000000000000
+      Margins.Bottom = 2.000000000000000000
+      Position.X = 4.000000000000000000
+      Position.Y = 4.000000000000000000
+      StyleLookup = 'hthumbstyle'
+      TabOrder = 1
+      Width = 51.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'tabcontrolstyle'
+    DesignVisible = False
+    Height = 100.999992370605500000
+    Position.X = 285.000000000000000000
+    Position.Y = 296.000000000000000000
+    Width = 142.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Color = x82000000
+      Locked = True
+      Height = 100.999992370605500000
+      HitTest = False
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Stroke.Color = x80FFFFFF
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 142.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'tabitemstyle'
+    ClipChildren = True
+    DesignVisible = False
+    Height = 20.000000000000000000
+    Position.X = 333.000000000000000000
+    Position.Y = 337.000000000000000000
+    Width = 46.000000000000000000
+    object TRectangle
+      Align = alContents
+      Locked = True
+      Height = 24.000000000000000000
+      HitTest = False
+      Margins.Left = 2.000000000000000000
+      Margins.Bottom = -4.000000000000000000
+      Stroke.Color = x80FFFFFF
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      Width = 44.000000000000000000
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        PropertyName = 'Fill.Color'
+        StartValue = claWhite
+        StopValue = x80000000
+        Trigger = 'IsMouseOver=true;IsSelected=false'
+      end
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        PropertyName = 'Fill.Color'
+        StartValue = claWhite
+        StopValue = claNull
+        Trigger = 'IsMouseOver=false;IsSelected=false'
+      end
+      object TColorAnimation
+        Duration = 0.000000999999997475
+        PropertyName = 'Fill.Color'
+        StartValue = claWhite
+        StopValue = x80000000
+        Trigger = 'IsSelected=true'
+      end
+      object TColorAnimation
+        Duration = 0.000009999999747379
+        PropertyName = 'Fill.Color'
+        StartValue = claWhite
+        StopValue = claNull
+        Trigger = 'IsSelected=false'
+      end
+      object TRectAnimation
+        Duration = 0.000009999999747379
+        PropertyName = 'Margins'
+        StartValue.Left = 2.000000000000000000
+        StartValue.Bottom = -4.000000000000000000
+        StopValue.Left = 2.000000000000000000
+        StopValue.Bottom = -4.000000000000000000
+        Trigger = 'IsSelected=true'
+      end
+      object TRectAnimation
+        Duration = 0.000009999999747379
+        Inverse = True
+        PropertyName = 'Margins'
+        StartValue.Left = 1.000000000000000000
+        StartValue.Top = 2.000000000000000000
+        StartValue.Bottom = -4.000000000000000000
+        StopValue.Left = 1.000000000000000000
+        StopValue.Bottom = -4.000000000000000000
+        Trigger = 'IsSelected=false'
+      end
+      object TText
+        StyleName = 'text'
+        Align = alClient
+        Color = claWhite
+        Locked = True
+        Height = 19.000000000000000000
+        HitTest = False
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Text = 'item'
+        Width = 38.000000000000000000
+        WordWrap = False
+      end
+    end
+  end
+  object TRectangle
+    StyleName = 'statusbarstyle'
+    DesignVisible = False
+    Fill.Kind = bkNone
+    Height = 50.000000000000000000
+    HitTest = False
+    Position.X = 561.000000000000000000
+    Position.Y = 332.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 50.000000000000000000
+    object TSizeGrip
+      StyleName = 'sizegrip'
+      Align = alRight
+      Locked = True
+      Height = 50.000000000000000000
+      Position.X = 30.000000000000000000
+      Width = 20.000000000000000000
+    end
+  end
+  object TRectangle
+    StyleName = 'panelstyle'
+    DesignVisible = False
+    Fill.Color = x82000000
+    Height = 50.000000000000000000
+    HitTest = False
+    Position.X = 561.000000000000000000
+    Position.Y = 332.000000000000000000
+    Stroke.Color = x80FFFFFF
+    XRadius = 3.000000000000000000
+    YRadius = 3.000000000000000000
+    Width = 50.000000000000000000
+  end
+  object TLayout
+    StyleName = 'listboxstyle'
+    DesignVisible = False
+    Height = 50.000000000000000000
+    Position.X = 331.000000000000000000
+    Position.Y = 322.000000000000000000
+    Width = 50.000000000000000000
+    object TRectangle
+      StyleName = 'background'
+      Align = alContents
+      Fill.Color = x82000000
+      Locked = True
+      Height = 50.000000000000000000
+      HitTest = False
+      Padding.Left = 2.000000000000000000
+      Padding.Top = 2.000000000000000000
+      Padding.Right = 2.000000000000000000
+      Padding.Bottom = 2.000000000000000000
+      Stroke.Color = x80FFFFFF
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      Width = 50.000000000000000000
+      object TLayout
+        StyleName = 'content'
+        Align = alClient
+        ClipChildren = True
+        Height = 28.000000000000000000
+        Width = 28.000000000000000000
+        object TRectangle
+          StyleName = 'selection'
+          Fill.Color = x17FFFFFF
+          Height = 50.000000000000000000
+          HitTest = False
+          Stroke.Color = x60FFFFFF
+          XRadius = 2.000000000000000000
+          YRadius = 2.000000000000000000
+          Width = 50.000000000000000000
+        end
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = alRight
+        Height = 28.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orVertical
+        Margins.Left = 2.000000000000000000
+        Position.X = 32.000000000000000000
+        Position.Y = 2.000000000000000000
+        Width = 16.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = alBottom
+        Height = 16.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orHorizontal
+        Margins.Top = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 32.000000000000000000
+        Width = 46.000000000000000000
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'listboxitemstyle'
+    DesignVisible = False
+    Height = 24.000000000000000000
+    Position.X = 428.000000000000000000
+    Position.Y = 415.000000000000000000
+    Width = 107.000000000000000000
+    object TCheckBox
+      StyleName = 'check'
+      Align = alLeft
+      CanFocus = False
+      DisableFocusEffect = True
+      Height = 24.000000000000000000
+      TabOrder = 0
+      Width = 20.000000000000000000
+    end
+    object TText
+      StyleName = 'text'
+      Align = alClient
+      Color = xFFEEEEEE
+      Height = 22.000000000000000000
+      HitTest = False
+      HorzTextAlign = taLeading
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 1.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 1.000000000000000000
+      Text = 'Text'
+      Width = 81.000000000000000000
+      WordWrap = False
+    end
+  end
+end

@@ -1,0 +1,5844 @@
+object _1: TLayout
+  Align = vaClient
+  Position.Point = '(0,33)'
+  Width = 549.000000000000000000
+  Height = 742.000000000000000000
+  object TRectangle
+    StyleName = 'backgroundstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Color = xFFF1F1F1
+    Stroke.Style = vgBrushNone
+  end
+  object TLayout
+    StyleName = 'imagecontrolstyle'
+    Position.Point = '(238,358)'
+    Width = 73.000000000000000000
+    Height = 26.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 73.000000000000000000
+      Height = 26.000000000000000000
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = claSilver
+      XRadius = 1.000000000000000000
+      YRadius = 1.000000000000000000
+      object TImage
+        StyleName = 'image'
+        Align = vaClient
+        Position.Point = '(3,3)'
+        Locked = True
+        Width = 67.000000000000000000
+        Height = 20.000000000000000000
+        Padding.Rect = '(3,3,3,3)'
+        HitTest = False
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000010000000108060000001F15C4
+          89000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          00097048597300000EC300000EC301C76FA8640000000B494441541857636000
+          020000050001AAD5C8510000000049454E44AE426082}
+      end
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'framedscrollboxstyle'
+    Position.Point = '(216,305)'
+    Width = 116.999992370605500000
+    Height = 131.000000000000000000
+    ClipChildren = True
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 116.999992370605500000
+      Height = 131.000000000000000000
+      Margins.Rect = '(1,1,1,1)'
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = xFF8E8E8E
+      object TLayout
+        StyleName = 'content'
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Width = 96.999992370605470000
+        Height = 111.000000000000000000
+        ClipChildren = True
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = vaRight
+        Position.Point = '(99.9999923706055,1)'
+        Width = 16.000000000000000000
+        Height = 111.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        TabOrder = 3
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = vaBottom
+        Position.Point = '(1,114)'
+        Width = 114.999992370605500000
+        Height = 16.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        TabOrder = 4
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = vaRight
+        Position.Point = '(99,2)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        Visible = False
+        TabOrder = 1
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = vaBottom
+        Position.Point = '(2,113)'
+        Width = 150.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        Visible = False
+        TabOrder = 2
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TLayout
+        Align = vaContents
+        Width = 116.999992370605500000
+        Height = 131.000000000000000000
+        object TLayout
+          Align = vaBottom
+          Position.Point = '(0,111)'
+          Width = 116.999992370605500000
+          Height = 20.000000000000000000
+          object TSizeGrip
+            StyleName = 'sizegrip'
+            Align = vaRight
+            Position.Point = '(96.9999923706055,0)'
+            Locked = True
+            Width = 20.000000000000000000
+            Height = 20.000000000000000000
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'toolbuttonstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    DesignVisible = False
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(0,28)'
+      Locked = True
+      Width = 50.000000000000000000
+      Height = 22.000000000000000000
+      HitTest = False
+      Fill.Color = xFF131313
+      Text = 'text'
+    end
+    object TImage
+      StyleName = 'image'
+      Align = vaTop
+      Locked = True
+      Width = 50.000000000000000000
+      Height = 28.000000000000000000
+      HitTest = False
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000010000000108060000001F15C4
+        89000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00097048597300000EC300000EC301C76FA8640000000B494441541857636000
+        020000050001AAD5C8510000000049454E44AE426082}
+    end
+    object TGlowEffect
+      Trigger = 'IsMouseOver=true'
+      Enabled = False
+      Softness = 0.400000005960464500
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'toolpathbuttonstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    DesignVisible = False
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(0,50)'
+      Locked = True
+      Width = 50.000000000000000000
+      HitTest = False
+      Fill.Color = xFF131313
+      Text = 'text'
+    end
+    object TLayout
+      StyleName = 'pathowner'
+      Align = vaTop
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      object TPath
+        StyleName = 'path'
+        Align = vaFit
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        HitTest = False
+      end
+    end
+    object TGlowEffect
+      Trigger = 'IsMouseOver=true'
+      Enabled = False
+      Softness = 0.400000005960464500
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TRectangle
+    StyleName = 'panelstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Color = claWhite
+    Stroke.Color = xFF8E8E8E
+  end
+  object TCalloutRectangle
+    StyleName = 'calloutpanelstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Color = claWhite
+    Stroke.Color = xFF8E8E8E
+    CalloutWidth = 23.000000000000000000
+    CalloutLength = 11.000000000000000000
+  end
+  object TRectangle
+    StyleName = 'statusbarstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    ClipChildren = True
+    DesignVisible = False
+    Fill.Style = vgBrushNone
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaClient
+      Position.Point = '(-1,0)'
+      Width = 52.000000000000000000
+      Height = 51.000000000000000000
+      Padding.Rect = '(-1,0,-1,-1)'
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFFAFAFA
+        end
+        item
+          Color = xFFF0F0F0
+          Offset = 0.165467619895935100
+        end
+        item
+          Color = xFFECECEC
+          Offset = 0.841726601123809800
+        end
+        item
+          Color = xFFD8D8D8
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xFF8E8E8E
+      object TSizeGrip
+        StyleName = 'sizegrip'
+        Align = vaRight
+        Position.Point = '(30,2)'
+        Locked = True
+        Width = 20.000000000000000000
+        Height = 47.000000000000000000
+        Padding.Rect = '(2,2,2,2)'
+        TabOrder = 0
+      end
+    end
+  end
+  object TRectangle
+    StyleName = 'toolbarstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    ClipChildren = True
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushNone
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaClient
+      Position.Point = '(-1,-1)'
+      Width = 52.000000000000000000
+      Height = 51.000000000000000000
+      Padding.Rect = '(-1,-1,-1,0)'
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFF6FBFF
+        end
+        item
+          Color = xFFE0EAF7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE7F5
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xFF9FAEC2
+    end
+  end
+  object TLayout
+    StyleName = 'expanderstyle'
+    Position.Point = '(195,310)'
+    Width = 159.000000000000000000
+    Height = 121.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      Align = vaContents
+      Width = 159.000000000000000000
+      Height = 121.000000000000000000
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = xFF8E8E8E
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaTop
+      Position.Point = '(25,0)'
+      Locked = True
+      Width = 134.000000000000000000
+      Height = 25.000000000000000000
+      Padding.Rect = '(25,0,0,0)'
+      HitTest = False
+      Fill.Color = xFF101010
+      Text = 'Expander'
+      WordWrap = False
+      object TExpanderButton
+        StyleName = 'button'
+        Align = vaLeft
+        Position.Point = '(-25,0)'
+        Locked = True
+        Width = 25.000000000000000000
+        Height = 25.000000000000000000
+        Padding.Rect = '(-25,0,0,0)'
+        TabOrder = 0
+        StaysPressed = False
+        IsPressed = False
+      end
+      object TCheckBox
+        StyleName = 'checkbox'
+        Align = vaRight
+        Position.Point = '(109,0)'
+        Locked = True
+        Width = 25.000000000000000000
+        Height = 25.000000000000000000
+        TabOrder = 1
+        IsChecked = False
+        CanFocus = False
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'groupboxstyle'
+    Position.Point = '(207,320)'
+    Width = 135.000000000000000000
+    Height = 102.000000000000000000
+    Margins.Rect = '(2,8,2,2)'
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaClient
+      Position.Point = '(2,8)'
+      Locked = True
+      Width = 131.000000000000000000
+      Height = 92.000000000000000000
+      HitTest = False
+      Fill.Style = vgBrushNone
+      Stroke.Color = xFFD5DFE5
+      XRadius = 4.000000000000000000
+      YRadius = 4.000000000000000000
+      object TText
+        StyleName = 'text'
+        Position.Point = '(15,-8)'
+        Locked = True
+        Width = 50.927082061767580000
+        Height = 16.875000000000000000
+        Padding.Rect = '(1,2,1,0)'
+        ClipParent = True
+        HitTest = False
+        AutoSize = True
+        Fill.Color = xFF040404
+        Text = 'Groupbox'
+        WordWrap = False
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'speedbuttonstyle'
+    Position.Point = '(238,358)'
+    Width = 73.000000000000000000
+    Height = 26.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 73.000000000000000000
+      Height = 26.000000000000000000
+      Opacity = 0.000099999997473788
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 73.000000000000000000
+        Height = 26.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = x484F4F4F
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TFloatAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+        StopValue = 1.000000000000000000
+        PropertyName = 'Opacity'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+        StartValue = xFFEFEFEF
+        StopValue = xFFFFD541
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+        StartValue = xFFFFD541
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+        StartValue = xFFDCAE0D
+        StopValue = xFFFFD541
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+        StartValue = xFFDCAE0D
+        StopValue = xFFFFD541
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 71.000000000000000000
+        Height = 24.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(6,2)'
+      Locked = True
+      Width = 61.000000000000000000
+      Height = 22.000000000000000000
+      Padding.Rect = '(6,2,6,2)'
+      HitTest = False
+      Text = 'button'
+    end
+  end
+  object TLayout
+    StyleName = 'splitterstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    DesignVisible = False
+    object TEllipse
+      StyleName = 'background'
+      Align = vaFit
+      Locked = True
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF414141
+        end
+        item
+          Color = xFFECECEC
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Fill.Gradient.StopPosition.Point = '(1,1)'
+      Stroke.Color = xFFA0A0A0
+    end
+  end
+  object TLayout
+    StyleName = 'labelstyle'
+    Position.Point = '(250,361)'
+    Width = 49.000000000000000000
+    Height = 20.000000000000000000
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Locked = True
+      Width = 49.000000000000000000
+      Height = 20.000000000000000000
+      HitTest = False
+      Font.Size = 12.000000000000000000
+      Text = 'label'
+    end
+  end
+  object TLayout
+    StyleName = 'valuelabelstyle'
+    Position.Point = '(227,359)'
+    Width = 95.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      Align = vaContents
+      Width = 95.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = x4E868686
+      Stroke.Color = xC84F4F4F
+      XRadius = 4.000000000000000000
+      YRadius = 4.000000000000000000
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(1,1)'
+      Width = 93.000000000000000000
+      Height = 22.000000000000000000
+      Padding.Rect = '(1,1,1,1)'
+      HitTest = False
+      Font.Size = 12.000000000000000000
+      Text = 'Text'
+    end
+  end
+  object TLayout
+    StyleName = 'tabitemstyle'
+    Position.Point = '(251,361)'
+    Width = 46.000000000000000000
+    Height = 20.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      Align = vaContents
+      Position.Point = '(0,2)'
+      Locked = True
+      Width = 49.000000000000000000
+      Height = 18.000000000000000000
+      Padding.Rect = '(0,2,-3,0)'
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = xFF898C95
+      Corners = [vgCornerTopLeft, vgCornerTopRight]
+      Sides = [vgSideTop, vgSideLeft, vgSideRight]
+      object TRectangle
+        Align = vaContents
+        Width = 49.000000000000000000
+        Height = 18.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        Corners = [vgCornerTopLeft, vgCornerTopRight]
+        Sides = [vgSideTop, vgSideLeft, vgSideRight]
+        object TFloatAnimation
+          Duration = 0.000000999999997475
+          Trigger = 'IsSelected=false'
+          StopValue = 1.000000000000000000
+          PropertyName = 'Opacity'
+        end
+        object TFloatAnimation
+          Duration = 0.000009999999747379
+          Trigger = 'IsSelected=true'
+          StartValue = 1.000000000000000000
+          StopValue = 0.001000000047497451
+          PropertyName = 'Opacity'
+        end
+      end
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Trigger = 'IsMouseOver=true;IsSelected=false'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Trigger = 'IsMouseOver=false;IsSelected=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.000000999999997475
+        Trigger = 'IsSelected=false'
+        StartValue = xFFFEFEFE
+        StopValue = claWhite
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.000009999999747379
+        Trigger = 'IsSelected=true'
+        StartValue = claWhite
+        StopValue = xFFFEFEFE
+        PropertyName = 'Fill.Color'
+      end
+      object TRectAnimation
+        Duration = 0.000009999999747379
+        Trigger = 'IsSelected=true'
+        StartValue.Rect = '(0,2,-1,0)'
+        StopValue.Rect = '(0,0,-1,-1)'
+        PropertyName = 'Padding'
+      end
+      object TRectAnimation
+        Duration = 0.000009999999747379
+        Inverse = True
+        Trigger = 'IsSelected=false'
+        StartValue.Rect = '(0,2,-1,-1)'
+        StopValue.Rect = '(0,0,-1,0)'
+        PropertyName = 'Padding'
+      end
+      object TText
+        StyleName = 'text'
+        Align = vaClient
+        Position.Point = '(3,3)'
+        Locked = True
+        Width = 43.000000000000000000
+        Height = 13.000000000000000000
+        Padding.Rect = '(3,3,3,2)'
+        HitTest = False
+        Text = 'item'
+        WordWrap = False
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'tabcontrolstyle'
+    Position.Point = '(203,320)'
+    Width = 142.000000000000000000
+    Height = 100.999992370605500000
+    DesignVisible = False
+    object TRectangle
+      Align = vaContents
+      Width = 142.000000000000000000
+      Height = 100.999992370605500000
+      HitTest = False
+      Fill.Color = claWhite
+      Stroke.Color = xFF8E8E8E
+    end
+  end
+  object TLayout
+    StyleName = 'checkboxstyle'
+    Position.Point = '(214,360)'
+    Width = 121.000000000000000000
+    Height = 21.000000000000000000
+    DesignVisible = False
+    object TLayout
+      Align = vaLeft
+      Width = 20.000000000000000000
+      Height = 21.000000000000000000
+      object TRectangle
+        StyleName = 'background'
+        Align = vaCenter
+        Position.Point = '(3,4)'
+        Locked = True
+        Width = 13.000000000000000000
+        Height = 13.000000000000000000
+        HitTest = False
+        Fill.Color = xFFEFEFEF
+        Stroke.Style = vgBrushNone
+        object TGlowEffect
+          Trigger = 'IsFocused=true'
+          Enabled = False
+          Softness = 0.200000002980232200
+          GlowColor = x82005ACC
+          Opacity = 0.899999976158142100
+        end
+        object TRectangle
+          Align = vaContents
+          Locked = True
+          Width = 13.000000000000000000
+          Height = 13.000000000000000000
+          HitTest = False
+          Fill.Style = vgBrushGradient
+          Fill.Gradient.Points = <
+            item
+              Color = x5FA7A7A7
+            end
+            item
+              Color = x5FFFFFFF
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.Style = vgLinearGradient
+          Stroke.Color = x90404040
+        end
+        object TRectangle
+          Align = vaContents
+          Position.Point = '(2,2)'
+          Locked = True
+          Width = 9.000000000000000000
+          Height = 9.000000000000000000
+          Padding.Rect = '(2,2,2,2)'
+          HitTest = False
+          Fill.Style = vgBrushNone
+          Stroke.Color = x30505050
+        end
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          Trigger = 'IsMouseOver=true'
+          StartValue = xFFEFEFEF
+          StopValue = xFFA5D9FF
+          PropertyName = 'Fill.Color'
+        end
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          Inverse = True
+          Trigger = 'IsMouseOver=false'
+          StartValue = xFFEFEFEF
+          StopValue = xFFA5D9FF
+          PropertyName = 'Fill.Color'
+        end
+        object TPath
+          StyleName = 'checkmark'
+          Align = vaCenter
+          Position.Point = '(2,2)'
+          Locked = True
+          Width = 9.000000000000000000
+          Height = 9.000000000000000000
+          HitTest = False
+          Fill.Color = claNull
+          Stroke.Style = vgBrushNone
+          Data.Path = {
+            1200000000000000000000000000000001000000CDCC4C3E0000000001000000
+            0000003F9A99993E01000000CDCC4C3F00000000010000000000803F00000000
+            010000000000803FCDCC4C3E010000003333333F0000003F010000000000803F
+            CDCC4C3F010000000000803F0000803F01000000CDCC4C3F0000803F01000000
+            0000003F3333333F01000000CDCC4C3E0000803F01000000000000000000803F
+            0100000000000000CDCC4C3F010000009A99993E0000003F0100000000000000
+            CDCC4C3E010000000000000000000000030000000000000000000000}
+          object TColorAnimation
+            Duration = 0.100000001490116100
+            Trigger = 'IsChecked=true'
+            TriggerInverse = 'IsChecked=false'
+            StartValue = x00034E9E
+            StopValue = xFF034E9E
+            PropertyName = 'Fill.Color'
+          end
+        end
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(21,2)'
+      Locked = True
+      Width = 99.000000000000000000
+      Height = 19.000000000000000000
+      Padding.Rect = '(1,2,1,0)'
+      HitTest = False
+      Text = 'CheckBox'
+    end
+  end
+  object TLayout
+    StyleName = 'pathcheckboxstyle'
+    Position.Point = '(214,360)'
+    Width = 121.000000000000000000
+    Height = 21.000000000000000000
+    DesignVisible = False
+    object TLayout
+      Align = vaLeft
+      Width = 23.000000000000000000
+      Height = 21.000000000000000000
+      object TPath
+        StyleName = 'checkmark'
+        Align = vaClient
+        Locked = True
+        Width = 23.000000000000000000
+        Height = 21.000000000000000000
+        HitTest = False
+        Fill.Color = x40FFFFFF
+        Stroke.Style = vgBrushNone
+        WrapMode = vgPathFit
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          Trigger = 'IsChecked=true'
+          StartValue = x40034E9E
+          StopValue = xFF034E9E
+          PropertyName = 'Fill.Color'
+        end
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          Inverse = True
+          Trigger = 'IsChecked=false'
+          StartValue = x40034E9E
+          StopValue = xFF034E9E
+          PropertyName = 'Fill.Color'
+        end
+      end
+      object TGlowEffect
+        Trigger = 'IsFocused=true'
+        Enabled = False
+        Softness = 0.200000002980232200
+        GlowColor = xFF65C8E0
+        Opacity = 0.899999976158142100
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(28,0)'
+      Locked = True
+      Width = 93.000000000000000000
+      Height = 21.000000000000000000
+      Padding.Rect = '(5,0,0,0)'
+      HitTest = False
+      Text = 'CheckBox'
+    end
+  end
+  object TLayout
+    StyleName = 'radiobuttonstyle'
+    Position.Point = '(214,360)'
+    Width = 121.000000000000000000
+    Height = 21.000000000000000000
+    DesignVisible = False
+    object TLayout
+      Align = vaLeft
+      Width = 20.000000000000000000
+      Height = 21.000000000000000000
+      object TEllipse
+        StyleName = 'background'
+        Align = vaCenter
+        Position.Point = '(3,4)'
+        Locked = True
+        Width = 13.000000000000000000
+        Height = 13.000000000000000000
+        HitTest = False
+        Fill.Color = xFFEFEFEF
+        Stroke.Style = vgBrushNone
+        object TEllipse
+          Align = vaContents
+          Locked = True
+          Width = 13.000000000000000000
+          Height = 13.000000000000000000
+          HitTest = False
+          Fill.Style = vgBrushGradient
+          Fill.Gradient.Points = <
+            item
+              Color = x5FA7A7A7
+            end
+            item
+              Color = x5FFFFFFF
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.Style = vgLinearGradient
+          Stroke.Color = x90404040
+        end
+        object TGlowEffect
+          Trigger = 'IsFocused=true'
+          Enabled = False
+          Softness = 0.200000002980232200
+          GlowColor = x82005ACC
+          Opacity = 0.899999976158142100
+        end
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          Trigger = 'IsMouseOver=true'
+          StartValue = xFFEFEFEF
+          StopValue = xFFA5D9FF
+          PropertyName = 'Fill.Color'
+        end
+        object TColorAnimation
+          Duration = 0.100000001490116100
+          Inverse = True
+          Trigger = 'IsMouseOver=false'
+          StartValue = xFFEFEFEF
+          StopValue = xFFA5D9FF
+          PropertyName = 'Fill.Color'
+        end
+        object TEllipse
+          StyleName = 'checkmark'
+          Align = vaClient
+          Position.Point = '(3,3)'
+          Locked = True
+          Width = 7.000000000000000000
+          Height = 7.000000000000000000
+          Padding.Rect = '(3,3,3,3)'
+          HitTest = False
+          Fill.Color = claNull
+          Stroke.Style = vgBrushNone
+          object TColorAnimation
+            Duration = 0.100000001490116100
+            Trigger = 'IsChecked=true'
+            StartValue = x00034E9E
+            StopValue = xFF034E9E
+            PropertyName = 'Fill.Color'
+          end
+          object TColorAnimation
+            Duration = 0.100000001490116100
+            Trigger = 'IsChecked=false'
+            StartValue = xFF034E9E
+            StopValue = x00034E9E
+            PropertyName = 'Fill.Color'
+          end
+        end
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(21,2)'
+      Locked = True
+      Width = 99.000000000000000000
+      Height = 19.000000000000000000
+      Padding.Rect = '(1,2,1,0)'
+      HitTest = False
+      Text = 'RadioButton'
+    end
+  end
+  object TLayout
+    StyleName = 'progressbarstyle'
+    Position.Point = '(238,340)'
+    Width = 72.000000000000000000
+    Height = 60.999996185302730000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'track'
+      Align = vaContents
+      Locked = True
+      Width = 72.000000000000000000
+      Height = 60.999996185302730000
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFEDEDED
+        end
+        item
+          Color = xFFECECEC
+          Offset = 0.248201459646225000
+        end
+        item
+          Color = xFFDEDEDE
+          Offset = 0.248201459646225000
+        end
+        item
+          Color = xFFDADADA
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xFFC7C7C7
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TRectangle
+        StyleName = 'hindicator'
+        Align = vaLeft
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 35.999996185302730000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFFCDFFCD
+          end
+          item
+            Color = xFF9CEDAC
+            Offset = 0.280575543642044100
+          end
+          item
+            Color = xFF6DE083
+            Offset = 0.280575543642044100
+          end
+          item
+            Color = xFF01C025
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Style = vgBrushNone
+        object TLayout
+          Align = vaClient
+          Position.Point = '(2,0)'
+          Locked = True
+          Width = 46.000000000000000000
+          Height = 35.999996185302730000
+          Padding.Rect = '(2,0,2,0)'
+          ClipChildren = True
+          object TRectangle
+            Align = vaVertical
+            Locked = True
+            Width = 61.999996185302730000
+            Height = 35.999996185302730000
+            HitTest = False
+            Fill.Style = vgBrushGradient
+            Fill.Gradient.Points = <
+              item
+                Color = x002672B8
+              end
+              item
+                Color = x5001C025
+                Offset = 0.500000000000000000
+              end
+              item
+                Color = x00085188
+                Offset = 1.000000000000000000
+              end>
+            Fill.Gradient.Style = vgLinearGradient
+            Fill.Gradient.StopPosition.Point = '(1,0)'
+            Stroke.Style = vgBrushNone
+            XRadius = 9.000000000000000000
+            YRadius = 9.000000000000000000
+            object TFloatAnimation
+              Duration = 4.000000000000000000
+              Loop = True
+              Trigger = 'IsVisible=true'
+              StartValue = -50.000000000000000000
+              StopValue = 800.000000000000000000
+              PropertyName = 'Position.x'
+            end
+          end
+        end
+      end
+      object TRectangle
+        StyleName = 'vindicator'
+        Align = vaBottom
+        Position.Point = '(1,38.9999961853027)'
+        Locked = True
+        Width = 70.000000000000000000
+        Height = 21.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFFCDFFCD
+          end
+          item
+            Color = xFF9CEDAC
+            Offset = 0.280575543642044100
+          end
+          item
+            Color = xFF6DE083
+            Offset = 0.280575543642044100
+          end
+          item
+            Color = xFF01C025
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Fill.Gradient.StopPosition.Point = '(1,0)'
+        Stroke.Style = vgBrushNone
+        object TLayout
+          Align = vaClient
+          Position.Point = '(0,2)'
+          Locked = True
+          Width = 70.000000000000000000
+          Height = 17.000000000000000000
+          Padding.Rect = '(0,2,0,2)'
+          ClipChildren = True
+          object TRectangle
+            Align = vaHorizontal
+            Position.Point = '(1,824)'
+            Locked = True
+            Width = 68.000000000000000000
+            Height = 50.000000000000000000
+            Padding.Rect = '(1,1,1,1)'
+            HitTest = False
+            Fill.Style = vgBrushGradient
+            Fill.Gradient.Points = <
+              item
+                Color = x002672B8
+              end
+              item
+                Color = x5001C025
+                Offset = 0.500000000000000000
+              end
+              item
+                Color = x00085188
+                Offset = 1.000000000000000000
+              end>
+            Fill.Gradient.Style = vgLinearGradient
+            Stroke.Style = vgBrushNone
+            XRadius = 9.000000000000000000
+            YRadius = 9.000000000000000000
+            object TFloatAnimation
+              Duration = 4.000000000000000000
+              Loop = True
+              Trigger = 'IsVisible=true'
+              StartValue = 800.000000000000000000
+              StopValue = -50.000000000000000000
+              PropertyName = 'Position.y'
+            end
+          end
+        end
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'sizegripstyle'
+    Position.Point = '(263,359)'
+    Width = 23.000000000000000000
+    Height = 23.000000000000000000
+    DesignVisible = False
+    object TImage
+      Align = vaCenter
+      Position.Point = '(5,5)'
+      Locked = True
+      Width = 11.000000953674320000
+      Height = 11.000000953674320000
+      HitTest = False
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D494844520000000B0000000B0806000000A9AC77
+        26000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00097048597300000EC300000EC301C76FA864000000264944415428536360A0
+        36707373FB4F5D33612652CF6474132937199789E49B4CC844B24C0600561E1B
+        40313D52790000000049454E44AE426082}
+      WrapMode = vgImageOriginal
+    end
+  end
+  object TLayout
+    StyleName = 'combolistboxstyle'
+    Position.Point = '(228,341)'
+    Width = 92.000000000000000000
+    Height = 59.000000000000000000
+    Opacity = 0.959999978542327900
+    ClipChildren = True
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 92.000000000000000000
+      Height = 59.000000000000000000
+      Margins.Rect = '(1,1,1,1)'
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = claSilver
+      object TLayout
+        StyleName = 'content'
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Width = 72.000000000000000000
+        Height = 39.000000000000000000
+        ClipChildren = True
+        object TRectangle
+          StyleName = 'selection'
+          Width = 50.000000000000000000
+          Height = 50.000000000000000000
+          HitTest = False
+          Fill.Color = x802A8ADF
+          Stroke.Style = vgBrushNone
+        end
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = vaRight
+        Position.Point = '(75,1)'
+        Width = 16.000000000000000000
+        Height = 39.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        TabOrder = 3
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = vaBottom
+        Position.Point = '(1,42)'
+        Width = 90.000000000000000000
+        Height = 16.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        TabOrder = 4
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = vaRight
+        Position.Point = '(99,2)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        Visible = False
+        TabOrder = 1
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = vaBottom
+        Position.Point = '(2,113)'
+        Width = 150.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        Visible = False
+        TabOrder = 2
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+    end
+    object TFloatAnimation
+      Duration = 0.100000001490116100
+      Trigger = 'IsDropDown=true'
+      StopValue = 1.000000000000000000
+      PropertyName = 'Parent.Opacity'
+    end
+    object TFloatAnimation
+      Duration = 0.100000001490116100
+      Inverse = True
+      Trigger = 'IsDropDown=false'
+      StopValue = 1.000000000000000000
+      PropertyName = 'Parent.Opacity'
+    end
+  end
+  object TLayout
+    StyleName = 'combopopupstyle'
+    Position.Point = '(228,341)'
+    Width = 92.000000000000000000
+    Height = 59.000000000000000000
+    Opacity = 0.959999978542327900
+    ClipChildren = True
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 92.000000000000000000
+      Height = 59.000000000000000000
+      Margins.Rect = '(1,1,1,1)'
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = claSilver
+    end
+    object TFloatAnimation
+      Duration = 0.100000001490116100
+      Trigger = 'IsDropDown=true'
+      StopValue = 1.000000000000000000
+      PropertyName = 'Parent.Opacity'
+    end
+    object TFloatAnimation
+      Duration = 0.100000001490116100
+      Inverse = True
+      Trigger = 'IsDropDown=false'
+      StopValue = 1.000000000000000000
+      PropertyName = 'Parent.Opacity'
+    end
+  end
+  object TEllipse
+    StyleName = 'CloseButtonStyle'
+    Position.Point = '(267,363)'
+    Width = 15.000000000000000000
+    Height = 15.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFFBFBFB
+      end
+      item
+        Color = xFFE5E5E5
+        Offset = 0.485611498355865500
+      end
+      item
+        Color = xFFCACACA
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Color = xFFACACAC
+    object TColorAnimation
+      Duration = 0.200000002980232200
+      Trigger = 'IsMouseOver=true'
+      StartValue = xFFFBFBFB
+      StopValue = xFFE0E0E0
+      PropertyName = 'Fill.Color'
+    end
+    object TColorAnimation
+      Duration = 0.200000002980232200
+      Inverse = True
+      Trigger = 'IsMouseOver=false'
+      StartValue = xFFE0E0E0
+      StopValue = xFFFBFBFB
+      PropertyName = 'Fill.Color'
+    end
+    object TPath
+      Align = vaScale
+      Position.Point = '(3,3)'
+      Locked = True
+      Width = 9.000000000000000000
+      Height = 9.000000000000000000
+      HitTest = False
+      Fill.Color = xFF043090
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        10000000000000000000A0C00000704101000000000070410000A0C001000000
+        000048420000F041010000000000AA420000A0C0010000000000D24200007041
+        0100000000008C4200004842010000000000D2420000B442010000000000AA42
+        0000DC42020000003BDF34429E6F8C4202000000FE547D427FAAB04202000000
+        000048420000964201000000000070410000DC42010000000000A0C00000B442
+        010000000000F04100005C42010000000000A0C0000070410300000000000000
+        00000000}
+    end
+    object TShadowEffect
+      Enabled = False
+      Distance = 2.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.299999982118606600
+      Opacity = 0.599999964237213100
+      ShadowColor = claBlack
+    end
+  end
+  object TLayout
+    StyleName = 'ExpanderButtonStyle'
+    Position.Point = '(238,358)'
+    Width = 73.000000000000000000
+    Height = 26.000000000000000000
+    Margins.Rect = '(2,2,2,2)'
+    Padding.Rect = '(4,4,4,4)'
+    DesignVisible = False
+    object TEllipse
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 73.000000000000000000
+      Height = 26.000000000000000000
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFFBFBFB
+        end
+        item
+          Color = xFFE5E5E5
+          Offset = 0.485611498355865500
+        end
+        item
+          Color = xFFCACACA
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xFFACACAC
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+        StartValue = xFFFBFBFB
+        StopValue = xFFE0E0E0
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+        StartValue = xFFE0E0E0
+        StopValue = xFFFBFBFB
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+        StartValue = xFFFBFBFB
+        StopValue = xFF707070
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+        StartValue = xFF707070
+        StopValue = xFFFBFBFB
+        PropertyName = 'Fill.Color'
+      end
+    end
+    object TPath
+      Align = vaContents
+      Position.Point = '(4,6)'
+      Locked = True
+      Width = 65.000000000000000000
+      Height = 14.000000000000000000
+      Padding.Rect = '(4,6,4,6)'
+      HitTest = False
+      Fill.Color = xFF064575
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        08000000000000001DFA7743664E0D4401000000B032464364C3034401000000
+        F668B94375C3A843010000004E92084464C303440100000019A4F74319940E44
+        01000000A4D0B9434E12D043010000001DFA7743664E0D440300000000000000
+        00000000}
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Trigger = 'IsExpanded=true'
+        StartValue = x00064575
+        StopValue = xFF064575
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Inverse = True
+        Trigger = 'IsExpanded=false'
+        StartValue = x00064575
+        StopValue = xFF064575
+        PropertyName = 'Fill.Color'
+      end
+    end
+    object TPath
+      Align = vaContents
+      Position.Point = '(4,6)'
+      Locked = True
+      Width = 65.000000000000000000
+      Height = 14.000000000000000000
+      Padding.Rect = '(4,6,4,6)'
+      HitTest = False
+      Fill.Color = x00064575
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        0800000000000000C540F843D94EAB43010000004E920844DD64BE4301000000
+        FED4BA4319940E4401000000B0324643DD64BE4301000000B633794375C3A843
+        01000000506DBA4358D9F54301000000C540F843D94EAB430300000000000000
+        00000000}
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Trigger = 'IsExpanded=false'
+        StartValue = x00064575
+        StopValue = xFF064575
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Inverse = True
+        Trigger = 'IsExpanded=true'
+        StartValue = x00064575
+        StopValue = xFF064575
+        PropertyName = 'Fill.Color'
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'treeviewstyle'
+    Position.Point = '(216,301)'
+    Width = 116.999992370605500000
+    Height = 140.000000000000000000
+    ClipChildren = True
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 116.999992370605500000
+      Height = 140.000000000000000000
+      Margins.Rect = '(1,1,1,1)'
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = xFF8E8E8E
+      object TLayout
+        StyleName = 'content'
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Width = 96.999992370605470000
+        Height = 120.000000000000000000
+        ClipChildren = True
+        object TRectangle
+          StyleName = 'selection'
+          Width = 50.000000000000000000
+          Height = 50.000000000000000000
+          HitTest = False
+          Fill.Color = x802A8ADF
+          Stroke.Style = vgBrushNone
+        end
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = vaRight
+        Position.Point = '(99.9999923706055,1)'
+        Width = 16.000000000000000000
+        Height = 120.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        TabOrder = 3
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = vaBottom
+        Position.Point = '(1,123)'
+        Width = 114.999992370605500000
+        Height = 16.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        TabOrder = 4
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = vaRight
+        Position.Point = '(99,2)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        Visible = False
+        TabOrder = 1
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = vaBottom
+        Position.Point = '(2,113)'
+        Width = 150.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        Visible = False
+        TabOrder = 2
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TRectangle
+    StyleName = 'treeviewitemstyle'
+    Position.Point = '(231,351)'
+    Width = 87.000000000000000000
+    Height = 40.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushNone
+    Stroke.Style = vgBrushNone
+    object TButton
+      StyleName = 'button'
+      Align = vaLeft
+      Position.Point = '(3,3)'
+      Width = 15.000000000000000000
+      Height = 34.000000000000000000
+      Padding.Rect = '(3,3,3,3)'
+      StyleLookup = 'treeviewexpanderbuttonstyle'
+      TabOrder = 0
+      StaysPressed = False
+      IsPressed = False
+      CanFocus = False
+    end
+    object TLayout
+      Align = vaContents
+      Position.Point = '(20,0)'
+      Width = 67.000000000000000000
+      Height = 40.000000000000000000
+      Padding.Rect = '(20,0,0,0)'
+      object TCheckBox
+        StyleName = 'check'
+        Align = vaLeft
+        Width = 20.000000000000000000
+        Height = 40.000000000000000000
+        TabOrder = 0
+        IsChecked = False
+        CanFocus = False
+        DisableFocusEffect = True
+      end
+      object TText
+        BindingName = 'text'
+        StyleName = 'text'
+        Align = vaClient
+        Position.Point = '(20,0)'
+        Locked = True
+        Width = 47.000000000000000000
+        Height = 40.000000000000000000
+        HitTest = False
+        HorzTextAlign = vgTextAlignNear
+        WordWrap = False
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'treeviewexpanderbuttonstyle'
+    Position.Point = '(263,360)'
+    Width = 22.000000000000000000
+    Height = 22.000000000000000000
+    Padding.Rect = '(0,1,0,0)'
+    DesignVisible = False
+    object TPath
+      Align = vaCenter
+      Position.Point = '(7,6)'
+      Locked = True
+      Width = 8.000000000000000000
+      Height = 9.000000000000000000
+      HitTest = False
+      Fill.Color = claBlack
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        0500000000000000D36D3F431BEF4843010000001749E043BA09E54301000000
+        C9B63943C73B344401000000D36D3F431BEF4843030000000000000000000000}
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Trigger = 'IsExpanded=false'
+        StartValue = claNull
+        StopValue = claBlack
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Inverse = True
+        Trigger = 'IsExpanded=true'
+        StartValue = claNull
+        StopValue = claBlack
+        PropertyName = 'Fill.Color'
+      end
+    end
+    object TPath
+      Align = vaCenter
+      Position.Point = '(7,7)'
+      Locked = True
+      Width = 8.000000000000000000
+      Height = 8.000000000000000000
+      HitTest = False
+      Fill.Color = claNull
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        0500000000000000CB11CF4379E93C4301000000DDB4CD4396230A4401000000
+        7DBF1E424871094401000000CB11CF4379E93C43030000000000000000000000}
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Trigger = 'IsExpanded=true'
+        StartValue = claNull
+        StopValue = claBlack
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.000099999997473788
+        Inverse = True
+        Trigger = 'IsExpanded=false'
+        StartValue = claNull
+        StopValue = claBlack
+        PropertyName = 'Fill.Color'
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'trackbarstyle'
+    Position.Point = '(209,363)'
+    Width = 130.000000000000000000
+    Height = 14.000000953674320000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Position.Point = '(4,5)'
+      Locked = True
+      Width = 122.000000000000000000
+      Height = 4.000000953674316000
+      Padding.Rect = '(4,5,4,5)'
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = claSilver
+      XRadius = 1.000000000000000000
+      YRadius = 1.000000000000000000
+      object TGlowEffect
+        Trigger = 'IsFocused=true'
+        Enabled = False
+        Softness = 0.200000002980232200
+        GlowColor = x82005ACC
+        Opacity = 0.899999976158142100
+      end
+    end
+    object TThumb
+      StyleName = 'thumb'
+      Position.Point = '(3,1)'
+      Locked = True
+      Width = 15.000000000000000000
+      Height = 14.000000953674320000
+      Padding.Rect = '(-2,-2,-2,-2)'
+      StyleLookup = 'thumbbarstyle'
+      TabOrder = 1
+    end
+  end
+  object TLayout
+    StyleName = 'numberboxstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 91.000000000000000000
+        Height = 24.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 89.000000000000000000
+        Height = 22.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TContent
+      StyleName = 'content'
+      Align = vaContents
+      Position.Point = '(4,4)'
+      Locked = True
+      Width = 83.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(4,4,4,4)'
+      HitTest = False
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'editstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = claSilver
+      XRadius = 1.000000000000000000
+      YRadius = 1.000000000000000000
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver = true'
+        StartValue = claSilver
+        StopValue = xFFA5D9FF
+        PropertyName = 'Stroke.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver = false'
+        StartValue = claSilver
+        StopValue = xFFA5D9FF
+        PropertyName = 'Stroke.Color'
+      end
+    end
+    object TLayout
+      StyleName = 'content'
+      Align = vaContents
+      Position.Point = '(4,4)'
+      Locked = True
+      Width = 83.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(4,4,4,4)'
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x802A8ADF
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TEllipse
+    StyleName = 'transparentcirclebuttonstyle'
+    Position.Point = '(267,363)'
+    Width = 15.000000000000000000
+    Height = 15.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Color = x00808080
+    Stroke.Style = vgBrushNone
+    object TColorAnimation
+      Duration = 0.100000001490116100
+      Trigger = 'IsMouseOver=true'
+      TriggerInverse = 'IsMouseOver=false'
+      StartValue = x00808080
+      StopValue = xAF808080
+      PropertyName = 'Fill.Color'
+    end
+    object TFloatAnimation
+      Duration = 0.100000001490116100
+      Trigger = 'IsMouseOver=true'
+      TriggerInverse = 'IsMouseOver=false'
+      StartValue = 1.000000000000000000
+      StopValue = 0.500000000000000000
+      PropertyName = 'Parent.Opacity'
+    end
+  end
+  object TLayout
+    StyleName = 'spinboxstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRoundRect
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = claSilver
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver = true'
+        StartValue = claSilver
+        StopValue = xFFA5D9FF
+        PropertyName = 'Stroke.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver = false'
+        StartValue = claSilver
+        StopValue = xFFA5D9FF
+        PropertyName = 'Stroke.Color'
+      end
+    end
+    object TContent
+      StyleName = 'content'
+      Align = vaContents
+      Position.Point = '(23,4)'
+      Locked = True
+      Width = 45.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(23,4,23,4)'
+      HitTest = False
+    end
+    object TButton
+      StyleName = 'minusbutton'
+      Align = vaFitLeft
+      Position.Point = '(2,2)'
+      Width = 20.000000000000000000
+      Height = 20.000000000000000000
+      Padding.Rect = '(2,2,2,2)'
+      StyleLookup = 'transparentcirclebuttonstyle'
+      TabOrder = 2
+      StaysPressed = False
+      IsPressed = False
+      CanFocus = False
+      object TPath
+        Align = vaClient
+        Position.Point = '(6,6)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(6,6,6,6)'
+        HitTest = False
+        Fill.Color = xFF101010
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          05000000000000000000803F00000000010000000000803F0000803F01000000
+          000000000000003F010000000000803F00000000030000000000803F00000000}
+      end
+    end
+    object TButton
+      StyleName = 'plusbutton'
+      Align = vaFitRight
+      Position.Point = '(69,2)'
+      Width = 20.000000000000000000
+      Height = 20.000000000000000000
+      Padding.Rect = '(2,2,2,2)'
+      StyleLookup = 'transparentcirclebuttonstyle'
+      TabOrder = 3
+      StaysPressed = False
+      IsPressed = False
+      CanFocus = False
+      object TPath
+        Align = vaClient
+        Position.Point = '(6,6)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(6,6,6,6)'
+        HitTest = False
+        Fill.Color = xFF101010
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          0400000000000000000000000000000001000000000000000000803F01000000
+          0000803F0000003F030000000000000000000000}
+      end
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x802A8ADF
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'editclearbtnstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = claSilver
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver = true'
+        StartValue = claSilver
+        StopValue = xFFA5D9FF
+        PropertyName = 'Stroke.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver = false'
+        StartValue = claSilver
+        StopValue = xFFA5D9FF
+        PropertyName = 'Stroke.Color'
+      end
+    end
+    object TContent
+      StyleName = 'content'
+      Align = vaContents
+      Position.Point = '(4,4)'
+      Locked = True
+      Width = 64.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(4,4,23,4)'
+      HitTest = False
+    end
+    object TButton
+      StyleName = 'clearbutton'
+      Align = vaFitRight
+      Position.Point = '(69,2)'
+      Width = 20.000000000000000000
+      Height = 20.000000000000000000
+      Padding.Rect = '(2,2,2,2)'
+      StyleLookup = 'transparentcirclebuttonstyle'
+      TabOrder = 2
+      StaysPressed = False
+      IsPressed = False
+      CanFocus = False
+      object TPath
+        Align = vaFit
+        Position.Point = '(4,4)'
+        Locked = True
+        Width = 12.000000000000000000
+        Height = 12.000000000000000000
+        Padding.Rect = '(4,4,4,4)'
+        HitTest = False
+        Fill.Color = xFF101010
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          10000000000000000000A0C00000704101000000000070410000A0C001000000
+          000048420000F041010000000000AA420000A0C0010000000000D24200007041
+          0100000000008C4200004842010000000000D2420000B442010000000000AA42
+          0000DC42020000003BDF34429E6F8C4202000000FE547D427FAAB04202000000
+          000048420000964201000000000070410000DC42010000000000A0C00000B442
+          010000000000F04100005C42010000000000A0C0000070410300000000000000
+          00000000}
+      end
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x802A8ADF
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'memostyle'
+    Position.Point = '(216,305)'
+    Width = 116.999992370605500000
+    Height = 131.000000000000000000
+    ClipChildren = True
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 116.999992370605500000
+      Height = 131.000000000000000000
+      Margins.Rect = '(3,3,2,2)'
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = claSilver
+      object TLayout
+        StyleName = 'content'
+        Align = vaClient
+        Position.Point = '(3,3)'
+        Width = 93.999992370605470000
+        Height = 108.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = vaRight
+        Position.Point = '(98.9999923706055,3)'
+        Width = 16.000000000000000000
+        Height = 108.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        TabOrder = 3
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = vaBottom
+        Position.Point = '(3,113)'
+        Width = 111.999992370605500000
+        Height = 16.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        TabOrder = 4
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = vaRight
+        Position.Point = '(99,2)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        Visible = False
+        TabOrder = 1
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = vaBottom
+        Position.Point = '(2,113)'
+        Width = 150.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        Visible = False
+        TabOrder = 2
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x802A8ADF
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TImage
+    StyleName = 'SizeGripStyle'
+    Position.Point = '(264,360)'
+    Width = 21.000000000000000000
+    Height = 22.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Bitmap.PNG = {
+      89504E470D0A1A0A0000000D494844520000000F0000000F08060000003BD695
+      4A000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      00097048597300000EC300000EC301C76FA8640000003449444154384F636018
+      12809F9FFF3F590E05699C3A752AE99A075E23D17E46772AD14E1F7C1A71FA99
+      905389F63359A988AE9A00160F3E3B7CCBF2530000000049454E44AE426082}
+    WrapMode = vgImageOriginal
+  end
+  object TEllipse
+    StyleName = 'CloseButtonStyle'
+    Position.Point = '(264,361)'
+    Width = 20.000000000000000000
+    Height = 19.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Color = xFFB9B9B9
+    Stroke.Style = vgBrushNone
+    object TColorAnimation
+      Duration = 0.100000001490116100
+      Trigger = 'IsMouseOver=true'
+      StartValue = xFFA5A5A5
+      StopValue = claWhite
+      PropertyName = 'Fill.Color'
+    end
+    object TColorAnimation
+      Duration = 0.100000001490116100
+      Trigger = 'IsMouseOver=false'
+      StartValue = claWhite
+      StopValue = xFFA5A5A5
+      PropertyName = 'Fill.color'
+    end
+    object TPath
+      Align = vaScale
+      Position.Point = '(4,3.79999995231628)'
+      Locked = True
+      Width = 11.999999046325680000
+      Height = 11.399990081787110000
+      HitTest = False
+      Fill.Color = xFF333333
+      Stroke.Color = xFFB9B9B9
+      Data.Path = {
+        10000000000000000000A0C00000704101000000000070410000A0C001000000
+        000048420000F041010000000000AA420000A0C0010000000000D24200007041
+        0100000000008C4200004842010000000000D2420000B442010000000000AA42
+        0000DC42020000003BDF34429E6F8C4202000000FE547D427FAAB04202000000
+        000048420000964201000000000070410000DC42010000000000A0C00000B442
+        010000000000F04100005C42010000000000A0C0000070410300000000000000
+        00000000}
+    end
+  end
+  object TLayout
+    StyleName = 'buttonstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 91.000000000000000000
+        Height = 24.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TInnerGlowEffect
+        Trigger = 'IsPressed=true'
+        Enabled = False
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 89.000000000000000000
+        Height = 22.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,3)'
+      Locked = True
+      Width = 81.000000000000000000
+      Height = 18.000000000000000000
+      Padding.Rect = '(5,3,5,3)'
+      HitTest = False
+      Text = 'button'
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'popupbuttonstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 91.000000000000000000
+        Height = 24.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 89.000000000000000000
+        Height = 22.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,2)'
+      Locked = True
+      Width = 66.000000000000000000
+      Height = 20.000000000000000000
+      Padding.Rect = '(5,2,5,2)'
+      HitTest = False
+      Text = 'button'
+    end
+    object TLayout
+      Align = vaRight
+      Position.Point = '(76,0)'
+      Width = 15.000000000000000000
+      Height = 24.000000000000000000
+      object TPath
+        Align = vaCenter
+        Position.Point = '(3,10)'
+        Width = 8.000000000000000000
+        Height = 5.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        HitTest = False
+        Fill.Color = claBlack
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          04000000000000000000000000000000010000000000803F0000000001000000
+          0000003F0000803F030000000000000000000000}
+      end
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'colorbuttonstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 91.000000000000000000
+        Height = 24.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 89.000000000000000000
+        Height = 22.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TRectangle
+      StyleName = 'fill'
+      Align = vaClient
+      Position.Point = '(6,5)'
+      Locked = True
+      Width = 79.000000000000000000
+      Height = 14.000000000000000000
+      Padding.Rect = '(6,5,6,5)'
+      HitTest = False
+      Fill.Color = claBlack
+      Stroke.Color = x96FCFCFC
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,3)'
+      Locked = True
+      Width = 81.000000000000000000
+      Height = 18.000000000000000000
+      Padding.Rect = '(5,3,5,3)'
+      HitTest = False
+      Text = 'button'
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'cornerbuttonstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claWhite
+        end
+        item
+          Color = xFFFEFEFE
+          Offset = 0.472727268934249900
+        end
+        item
+          Color = xFFDDDDDD
+          Offset = 0.512727260589599600
+        end
+        item
+          Color = xFFDBDBDB
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xFF989898
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TGradientAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+        StartValue.Points = <
+          item
+            Color = claWhite
+          end
+          item
+            Color = xFFFEFEFE
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFDDDDDD
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFDBDBDB
+            Offset = 1.000000000000000000
+          end>
+        StartValue.Style = vgLinearGradient
+        StopValue.Points = <
+          item
+            Color = xFFA5D9FF
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 1.000000000000000000
+          end>
+        StopValue.Style = vgLinearGradient
+        PropertyName = 'Fill.Gradient'
+      end
+      object TGradientAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+        StartValue.Points = <
+          item
+            Color = xFFA5D9FF
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 1.000000000000000000
+          end>
+        StartValue.Style = vgLinearGradient
+        StopValue.Points = <
+          item
+            Color = claWhite
+          end
+          item
+            Color = xFFFEFEFE
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFDDDDDD
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFDBDBDB
+            Offset = 1.000000000000000000
+          end>
+        StopValue.Style = vgLinearGradient
+        PropertyName = 'Fill.Gradient'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,3)'
+      Locked = True
+      Width = 81.000000000000000000
+      Height = 18.000000000000000000
+      Padding.Rect = '(5,3,5,3)'
+      HitTest = False
+      Text = 'button'
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'roundbuttonstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRoundRect
+      StyleName = 'background'
+      Align = vaContents
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claWhite
+        end
+        item
+          Color = xFFFEFEFE
+          Offset = 0.472727268934249900
+        end
+        item
+          Color = xFFDDDDDD
+          Offset = 0.512727260589599600
+        end
+        item
+          Color = xFFDBDBDB
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xFF989898
+      object TGradientAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+        StartValue.Points = <
+          item
+            Color = claWhite
+          end
+          item
+            Color = xFFFEFEFE
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFDDDDDD
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFDBDBDB
+            Offset = 1.000000000000000000
+          end>
+        StartValue.Style = vgLinearGradient
+        StopValue.Points = <
+          item
+            Color = xFFA5D9FF
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 1.000000000000000000
+          end>
+        StopValue.Style = vgLinearGradient
+        PropertyName = 'Fill.Gradient'
+      end
+      object TGradientAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+        StartValue.Points = <
+          item
+            Color = xFFA5D9FF
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 1.000000000000000000
+          end>
+        StartValue.Style = vgLinearGradient
+        StopValue.Points = <
+          item
+            Color = claWhite
+          end
+          item
+            Color = xFFFEFEFE
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFDDDDDD
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFDBDBDB
+            Offset = 1.000000000000000000
+          end>
+        StopValue.Style = vgLinearGradient
+        PropertyName = 'Fill.Gradient'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,3)'
+      Locked = True
+      Width = 81.000000000000000000
+      Height = 18.000000000000000000
+      Padding.Rect = '(5,3,5,3)'
+      HitTest = False
+      Text = 'button'
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'circlebuttonstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TCircle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claWhite
+        end
+        item
+          Color = xFFFEFEFE
+          Offset = 0.472727268934249900
+        end
+        item
+          Color = xFFDDDDDD
+          Offset = 0.512727260589599600
+        end
+        item
+          Color = xFFDBDBDB
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xFF989898
+      object TGradientAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+        StartValue.Points = <
+          item
+            Color = claWhite
+          end
+          item
+            Color = xFFFEFEFE
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFDDDDDD
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFDBDBDB
+            Offset = 1.000000000000000000
+          end>
+        StartValue.Style = vgLinearGradient
+        StopValue.Points = <
+          item
+            Color = xFFA5D9FF
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 1.000000000000000000
+          end>
+        StopValue.Style = vgLinearGradient
+        PropertyName = 'Fill.Gradient'
+      end
+      object TGradientAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+        StartValue.Points = <
+          item
+            Color = xFFA5D9FF
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFA5D9FF
+            Offset = 1.000000000000000000
+          end>
+        StartValue.Style = vgLinearGradient
+        StopValue.Points = <
+          item
+            Color = claWhite
+          end
+          item
+            Color = xFFFEFEFE
+            Offset = 0.472727268934249900
+          end
+          item
+            Color = xFFDDDDDD
+            Offset = 0.512727260589599600
+          end
+          item
+            Color = xFFDBDBDB
+            Offset = 1.000000000000000000
+          end>
+        StopValue.Style = vgLinearGradient
+        PropertyName = 'Fill.Gradient'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,3)'
+      Locked = True
+      Width = 81.000000000000000000
+      Height = 18.000000000000000000
+      Padding.Rect = '(5,3,5,3)'
+      HitTest = False
+      Text = 'button'
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'bitmapbuttonstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 91.000000000000000000
+        Height = 24.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 89.000000000000000000
+        Height = 22.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(0,31)'
+      Locked = True
+      Width = 91.000000000000000000
+      Height = 17.000000000000000000
+      HitTest = False
+      Text = 'text'
+    end
+    object TImage
+      StyleName = 'image'
+      Align = vaTop
+      Position.Point = '(3,3)'
+      Locked = True
+      Width = 85.000000000000000000
+      Height = 28.000000000000000000
+      Padding.Rect = '(3,3,3,0)'
+      HitTest = False
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000010000000108060000001F15C4
+        89000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00097048597300000EC300000EC301C76FA8640000000B494441541857636000
+        020000050001AAD5C8510000000049454E44AE426082}
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'pathbuttonstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 91.000000000000000000
+        Height = 24.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=false'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false;IsPressed=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Inverse = True
+        Trigger = 'IsMouseOver=false;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true;IsPressed=true'
+        StartValue = xFF34BFFE
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 89.000000000000000000
+        Height = 22.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(0,50)'
+      Locked = True
+      Width = 91.000000000000000000
+      Height = 17.000000000000000000
+      HitTest = False
+      Text = 'text'
+    end
+    object TLayout
+      StyleName = 'pathowner'
+      Align = vaTop
+      Width = 91.000000000000000000
+      Height = 50.000000000000000000
+      object TPath
+        StyleName = 'path'
+        Align = vaFit
+        Position.Point = '(20,0)'
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        HitTest = False
+      end
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'popupboxstyle'
+    Position.Point = '(221,360)'
+    Width = 107.000000000000000000
+    Height = 22.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 107.000000000000000000
+      Height = 22.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 107.000000000000000000
+        Height = 22.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 105.000000000000000000
+        Height = 20.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TLayout
+      Align = vaRight
+      Position.Point = '(92,0)'
+      Width = 15.000000000000000000
+      Height = 22.000000000000000000
+      object TPath
+        Align = vaCenter
+        Position.Point = '(3,4)'
+        Width = 8.000000000000000000
+        Height = 5.000000000000000000
+        Padding.Rect = '(0,-9,0,0)'
+        HitTest = False
+        Fill.Color = xFF040404
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          0500000000000000000000000000803F010000000000803F0000803F01000000
+          0000003F0000000001000000000000000000803F030000000000000000000000}
+      end
+      object TPath
+        Align = vaCenter
+        Position.Point = '(3,12)'
+        Width = 8.000000000000000000
+        Height = 5.000000000000000000
+        Padding.Rect = '(0,7,0,0)'
+        HitTest = False
+        Fill.Color = claBlack
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          04000000000000000000000000000000010000000000803F0000000001000000
+          0000003F0000803F030000000000000000000000}
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,3)'
+      Locked = True
+      Width = 82.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(5,3,5,3)'
+      HitTest = False
+      Fill.Color = xFF050505
+      Text = 'button'
+      WordWrap = False
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'anglebuttonstyle'
+    Position.Point = '(238,358)'
+    Width = 73.000000000000000000
+    Height = 26.000000000000000000
+    DesignVisible = False
+    object TEllipse
+      StyleName = 'background'
+      Align = vaFit
+      Position.Point = '(24,0)'
+      Locked = True
+      Width = 26.000000000000000000
+      Height = 26.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      object TEllipse
+        StyleName = 'background'
+        Align = vaFit
+        Locked = True
+        Width = 26.000000000000000000
+        Height = 26.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x90F3F3F3
+          end
+          item
+            Color = x90BABABA
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xA08E8E8E
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TLayout
+        StyleName = 'tick'
+        Align = vaClient
+        Position.Point = '(2,2)'
+        Locked = True
+        Width = 22.000000000000000000
+        Height = 22.000000000000000000
+        Padding.Rect = '(2,2,2,2)'
+        object TLayout
+          Align = vaRight
+          Position.Point = '(17,0)'
+          Width = 5.000000000000000000
+          Height = 22.000000000000000000
+          object TEllipse
+            Align = vaCenter
+            Position.Point = '(0,8)'
+            Locked = True
+            Width = 5.000000000000000000
+            Height = 5.000000000000000000
+            HitTest = False
+            Fill.Color = xFF505050
+            Stroke.Color = claWhite
+          end
+        end
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Locked = True
+      Width = 73.000000000000000000
+      Height = 26.000000000000000000
+      HitTest = False
+      Fill.Color = xFF101010
+      Font.Size = 12.000000000000000000
+      Text = 'text'
+      WordWrap = False
+    end
+    object TText
+      StyleName = 'tracktext'
+      Align = vaBottom
+      Position.Point = '(0,26)'
+      Locked = True
+      Width = 73.000000000000000000
+      Height = 10.000000000000000000
+      Padding.Rect = '(0,0,0,-10)'
+      HitTest = False
+      Fill.Color = xFF101010
+      Font.Size = 12.000000000000000000
+      Text = 'text'
+      WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'thumbbarstyle'
+    Position.Point = '(266,363)'
+    Width = 16.000000000000000000
+    Height = 16.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaCenter
+      Position.Point = '(3,0)'
+      Width = 9.000000000000000000
+      Height = 17.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 9.000000000000000000
+        Height = 17.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xA84F4F4F
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 7.000000000000000000
+        Height = 15.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarvtrackstyle'
+    Position.Point = '(265,339)'
+    Width = 19.000000000000000000
+    Height = 63.000003814697270000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFE1E1E1
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.086330935359001160
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.902877688407897900
+      end
+      item
+        Color = xFFE1E1E1
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaClient
+      Position.Point = '(2,2)'
+      Locked = True
+      Width = 15.000000000000000000
+      Height = 59.000000000000000000
+      Padding.Rect = '(2,2,2,2)'
+      HitTest = False
+      Visible = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF878787
+        end
+        item
+          Color = xFFEFEFEF
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Fill.Gradient.StopPosition.Point = '(1,0)'
+      Stroke.Style = vgBrushNone
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+    end
+    object TThumb
+      StyleName = 'thumb'
+      Position.Point = '(5,5)'
+      Locked = True
+      Width = 10.000000000000000000
+      Height = 46.000000000000000000
+      Padding.Rect = '(1,1,1,1)'
+      StyleLookup = 'vthumbstyle'
+      TabOrder = 1
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarhtrackstyle'
+    Position.Point = '(214,361)'
+    Width = 119.999992370605500000
+    Height = 19.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFE1E1E1
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.086330935359001160
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.902877688407897900
+      end
+      item
+        Color = xFFE1E1E1
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaClient
+      Position.Point = '(2,2)'
+      Locked = True
+      Width = 116.000007629394500000
+      Height = 15.000000000000000000
+      HitTest = False
+      Visible = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF878787
+        end
+        item
+          Color = xFFEFEFEF
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Style = vgBrushNone
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+    end
+    object TThumb
+      StyleName = 'thumb'
+      Position.Point = '(4,4)'
+      Locked = True
+      Width = 51.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(1,1,1,1)'
+      StyleLookup = 'hthumbstyle'
+      TabOrder = 1
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarleftbutton'
+    Position.Point = '(265,362)'
+    Width = 19.000000000000000000
+    Height = 18.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFE1E1E1
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.086330935359001160
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.902877688407897900
+      end
+      item
+        Color = xFFE1E1E1
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaContents
+      Position.Point = '(1,1)'
+      Width = 17.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(1,1,1,1)'
+      Opacity = 0.001000000047497451
+      HitTest = False
+      Fill.Color = xFFA5D9FF
+      Stroke.Style = vgBrushNone
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 17.000000000000000000
+        Height = 16.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xA84F4F4F
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 15.000000000000000000
+        Height = 14.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TFloatAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StopValue = 1.000000000000000000
+        PropertyName = 'Opacity'
+      end
+      object TFloatAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = 1.000000000000000000
+        StopValue = 0.000099999997473788
+        PropertyName = 'Opacity'
+      end
+    end
+    object TPath
+      Align = vaCenter
+      Position.Point = '(6,5)'
+      Locked = True
+      Width = 7.000000000000000000
+      Height = 8.000000000000000000
+      HitTest = False
+      Fill.Color = claGray
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        05000000000000000000803F00000000010000000000803F0000803F01000000
+        000000000000003F010000000000803F00000000030000000000000000000000}
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarrightbutton'
+    Position.Point = '(266,362)'
+    Width = 17.000000000000000000
+    Height = 18.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFE1E1E1
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.086330935359001160
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.902877688407897900
+      end
+      item
+        Color = xFFE1E1E1
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaContents
+      Position.Point = '(1,1)'
+      Width = 15.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(1,1,1,1)'
+      Opacity = 0.001000000047497451
+      HitTest = False
+      Fill.Color = xFFA5D9FF
+      Stroke.Style = vgBrushNone
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 15.000000000000000000
+        Height = 16.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xA84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 13.000000000000000000
+        Height = 14.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TFloatAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StopValue = 1.000000000000000000
+        PropertyName = 'Opacity'
+      end
+      object TFloatAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = 1.000000000000000000
+        StopValue = 0.000099999997473788
+        PropertyName = 'Opacity'
+      end
+    end
+    object TPath
+      Align = vaCenter
+      Position.Point = '(5,5)'
+      Locked = True
+      Width = 7.000000000000000000
+      Height = 8.000000000000000000
+      HitTest = False
+      Fill.Color = claGray
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        0400000000000000000000000000000001000000000000000000803F01000000
+        0000803F0000003F030000000000000000000000}
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbartopbutton'
+    Position.Point = '(266,361)'
+    Width = 16.000000000000000000
+    Height = 19.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFE1E1E1
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.086330935359001160
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.902877688407897900
+      end
+      item
+        Color = xFFE1E1E1
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaContents
+      Position.Point = '(1,1)'
+      Width = 14.000000000000000000
+      Height = 17.000000000000000000
+      Padding.Rect = '(1,1,1,1)'
+      Opacity = 0.001000000047497451
+      HitTest = False
+      Fill.Color = xFFA5D9FF
+      Stroke.Style = vgBrushNone
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 14.000000000000000000
+        Height = 17.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Fill.Gradient.StopPosition.Point = '(1,0)'
+        Stroke.Color = xA84F4F4F
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 12.000000000000000000
+        Height = 15.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TFloatAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StopValue = 1.000000000000000000
+        PropertyName = 'Opacity'
+      end
+      object TFloatAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = 1.000000000000000000
+        StopValue = 0.000099999997473788
+        PropertyName = 'Opacity'
+      end
+    end
+    object TPath
+      Align = vaCenter
+      Position.Point = '(4,6)'
+      Locked = True
+      Width = 8.000000000000000000
+      Height = 7.000000000000000000
+      HitTest = False
+      Fill.Color = claGray
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        0500000000000000000000000000803F010000000000803F0000803F01000000
+        0000003F0000000001000000000000000000803F030000000000000000000000}
+    end
+  end
+  object TRectangle
+    StyleName = 'scrollbarbottombutton'
+    Position.Point = '(266,362)'
+    Width = 17.000000000000000000
+    Height = 17.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFE1E1E1
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.086330935359001160
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.902877688407897900
+      end
+      item
+        Color = xFFE1E1E1
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaContents
+      Position.Point = '(1,1)'
+      Width = 15.000000000000000000
+      Height = 15.000000000000000000
+      Padding.Rect = '(1,1,1,1)'
+      Opacity = 0.001000000047497451
+      HitTest = False
+      Fill.Color = xFFA5D9FF
+      Stroke.Style = vgBrushNone
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 15.000000000000000000
+        Height = 15.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Fill.Gradient.StopPosition.Point = '(1,0)'
+        Stroke.Color = xA84F4F4F
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 13.000000000000000000
+        Height = 13.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TFloatAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StopValue = 1.000000000000000000
+        PropertyName = 'Opacity'
+      end
+      object TFloatAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = 1.000000000000000000
+        StopValue = 0.000099999997473788
+        PropertyName = 'Opacity'
+      end
+    end
+    object TPath
+      Align = vaCenter
+      Position.Point = '(4,5)'
+      Locked = True
+      Width = 8.000000000000000000
+      Height = 7.000000000000000000
+      HitTest = False
+      Fill.Color = claGray
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        04000000000000000000000000000000010000000000803F0000000001000000
+        0000003F0000803F030000000000000000000000}
+    end
+  end
+  object TLayout
+    StyleName = 'hthumbstyle'
+    Position.Point = '(244,363)'
+    Width = 60.999996185302730000
+    Height = 14.000000953674320000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 60.999996185302730000
+      Height = 14.000000953674320000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 60.999996185302730000
+        Height = 14.000000953674320000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xA84F4F4F
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 58.999996185302730000
+        Height = 12.000000953674320000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'vthumbstyle'
+    Position.Point = '(268,347)'
+    Width = 11.999999046325680000
+    Height = 47.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 11.999999046325680000
+      Height = 47.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 11.999999046325680000
+        Height = 47.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Fill.Gradient.StopPosition.Point = '(1,0)'
+        Stroke.Color = xA84F4F4F
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 9.999999046325684000
+        Height = 45.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'comboboxstyle'
+    Position.Point = '(230,358)'
+    Width = 89.000000000000000000
+    Height = 26.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 89.000000000000000000
+      Height = 26.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 89.000000000000000000
+        Height = 26.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=true'
+        StartValue = xFFEFEFEF
+        StopValue = xFFA5D9FF
+        PropertyName = 'Fill.Color'
+      end
+      object TColorAnimation
+        Duration = 0.200000002980232200
+        Trigger = 'IsMouseOver=false'
+        StartValue = xFFA5D9FF
+        StopValue = xFFEFEFEF
+        PropertyName = 'Fill.Color'
+      end
+      object TInnerGlowEffect
+        Trigger = 'IsOpen=true'
+        Enabled = False
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 87.000000000000000000
+        Height = 24.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TLayout
+      Align = vaRight
+      Position.Point = '(74,0)'
+      Locked = True
+      Width = 15.000000000000000000
+      Height = 26.000000000000000000
+      object TPath
+        Align = vaCenter
+        Position.Point = '(3,10)'
+        Width = 8.000000000000000000
+        Height = 5.000000000000000000
+        HitTest = False
+        Fill.Color = claBlack
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          04000000000000000000000000000000010000000000803F0000000001000000
+          0000003F0000803F030000000000000000000000}
+      end
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TContent
+      StyleName = 'content'
+      Align = vaContents
+      Position.Point = '(2,2)'
+      Locked = True
+      Width = 64.000000000000000000
+      Height = 22.000000000000000000
+      Padding.Rect = '(2,2,23,2)'
+      HitTest = False
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'comboeditstyle'
+    Position.Point = '(230,358)'
+    Width = 89.000000000000000000
+    Height = 26.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 89.000000000000000000
+      Height = 26.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 89.000000000000000000
+        Height = 26.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 87.000000000000000000
+        Height = 24.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TLayout
+      Align = vaRight
+      Position.Point = '(74,0)'
+      Locked = True
+      Width = 15.000000000000000000
+      Height = 26.000000000000000000
+      object TPath
+        Align = vaCenter
+        Position.Point = '(3,10)'
+        Width = 8.000000000000000000
+        Height = 5.000000000000000000
+        HitTest = False
+        Fill.Color = claBlack
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          04000000000000000000000000000000010000000000803F0000000001000000
+          0000003F0000803F030000000000000000000000}
+      end
+    end
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x802A8ADF
+    end
+    object TContent
+      StyleName = 'content'
+      Align = vaContents
+      Position.Point = '(4,3)'
+      Locked = True
+      Width = 62.000000000000000000
+      Height = 20.000000000000000000
+      Padding.Rect = '(4,3,23,3)'
+      HitTest = False
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'combotextstyle'
+    Position.Point = '(230,358)'
+    Width = 89.000000000000000000
+    Height = 26.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 89.000000000000000000
+      Height = 26.000000000000000000
+      HitTest = False
+      Fill.Color = xFFEFEFEF
+      Stroke.Style = vgBrushNone
+      XRadius = 3.000000000000000000
+      YRadius = 3.000000000000000000
+      object TRectangle
+        Align = vaContents
+        Width = 89.000000000000000000
+        Height = 26.000000000000000000
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = x24F4F4F4
+          end
+          item
+            Color = x24EAEAEA
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = x4E868686
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xC84F4F4F
+        XRadius = 3.000000000000000000
+        YRadius = 3.000000000000000000
+      end
+      object TRectangle
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 87.000000000000000000
+        Height = 24.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushNone
+        Stroke.Color = x96FCFCFC
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+    object TLayout
+      Align = vaRight
+      Position.Point = '(74,0)'
+      Locked = True
+      Width = 15.000000000000000000
+      Height = 26.000000000000000000
+      object TPath
+        Align = vaCenter
+        Position.Point = '(3,10)'
+        Width = 8.000000000000000000
+        Height = 5.000000000000000000
+        HitTest = False
+        Fill.Color = claBlack
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          04000000000000000000000000000000010000000000803F0000000001000000
+          0000003F0000803F030000000000000000000000}
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,3)'
+      Locked = True
+      Width = 64.000000000000000000
+      Height = 20.000000000000000000
+      Padding.Rect = '(5,3,5,3)'
+      HitTest = False
+      Fill.Color = xFF050505
+      Text = 'button'
+      WordWrap = False
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TRectangle
+    StyleName = 'trackstyle'
+    Position.Point = '(214,361)'
+    Width = 119.999992370605500000
+    Height = 19.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFE1E1E1
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.086330935359001160
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.902877688407897900
+      end
+      item
+        Color = xFFE1E1E1
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Style = vgBrushNone
+    object TThumb
+      StyleName = 'thumb'
+      Position.Point = '(4,4)'
+      Locked = True
+      Width = 51.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(1,1,1,1)'
+      StyleLookup = 'hthumbstyle'
+      TabOrder = 0
+    end
+  end
+  object TLayout
+    StyleName = 'listboxstyle'
+    Position.Point = '(216,305)'
+    Width = 116.999992370605500000
+    Height = 131.000000000000000000
+    DesignVisible = False
+    object TBrushObject
+      StyleName = 'AlternatingRowBackground'
+      Brush.Color = x202A8ADF
+    end
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 116.999992370605500000
+      Height = 131.000000000000000000
+      Margins.Rect = '(1,1,1,1)'
+      HitTest = False
+      Fill.Color = xFFFEFEFE
+      Stroke.Color = xFF8E8E8E
+      object TLayout
+        StyleName = 'content'
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Width = 98.999992370605470000
+        Height = 113.000000000000000000
+        ClipChildren = True
+        object TRectangle
+          StyleName = 'selection'
+          Width = 50.000000000000000000
+          Height = 50.000000000000000000
+          HitTest = False
+          Fill.Color = x802A8ADF
+          Stroke.Style = vgBrushNone
+        end
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = vaRight
+        Position.Point = '(99.9999923706055,1)'
+        Width = 16.000000000000000000
+        Height = 113.000000000000000000
+        TabOrder = 3
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = vaBottom
+        Position.Point = '(1,114)'
+        Width = 114.999992370605500000
+        Height = 16.000000000000000000
+        TabOrder = 4
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = vaRight
+        Position.Point = '(99,2)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        Visible = False
+        TabOrder = 1
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = vaBottom
+        Position.Point = '(2,113)'
+        Width = 150.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        Visible = False
+        TabOrder = 2
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.200000002980232200
+      GlowColor = x82005ACC
+      Opacity = 0.899999976158142100
+    end
+  end
+  object TLayout
+    StyleName = 'transparentlistboxstyle'
+    Position.Point = '(216,305)'
+    Width = 116.999992370605500000
+    Height = 131.000000000000000000
+    DesignVisible = False
+    object TBrushObject
+      StyleName = 'AlternatingRowBackground'
+      Brush.Color = x202A8ADF
+    end
+    object TLayout
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 116.999992370605500000
+      Height = 131.000000000000000000
+      object TLayout
+        StyleName = 'content'
+        Align = vaClient
+        Width = 100.999992370605500000
+        Height = 115.000000000000000000
+        ClipChildren = True
+        object TRectangle
+          StyleName = 'selection'
+          Width = 50.000000000000000000
+          Height = 50.000000000000000000
+          HitTest = False
+          Fill.Color = x802A8ADF
+          Stroke.Style = vgBrushNone
+        end
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = vaRight
+        Position.Point = '(100.999992370605,0)'
+        Width = 16.000000000000000000
+        Height = 115.000000000000000000
+        TabOrder = 3
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = vaBottom
+        Position.Point = '(0,115)'
+        Width = 116.999992370605500000
+        Height = 16.000000000000000000
+        TabOrder = 4
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = vaRight
+        Position.Point = '(99,2)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        Visible = False
+        TabOrder = 1
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = vaBottom
+        Position.Point = '(2,113)'
+        Width = 150.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        Visible = False
+        TabOrder = 2
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'listboxitemstyle'
+    Position.Point = '(230,359)'
+    Width = 88.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TText
+      BindingName = 'text'
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(23,1)'
+      Width = 62.000000000000000000
+      Height = 22.000000000000000000
+      Padding.Rect = '(3,1,3,1)'
+      HitTest = False
+      HorzTextAlign = vgTextAlignNear
+      Text = 'Text'
+      WordWrap = False
+    end
+    object TCheckBox
+      StyleName = 'check'
+      Align = vaLeft
+      Width = 20.000000000000000000
+      Height = 24.000000000000000000
+      TabOrder = 1
+      IsChecked = False
+      CanFocus = False
+      DisableFocusEffect = True
+    end
+  end
+  object TLayout
+    StyleName = 'colorlistboxitemstyle'
+    Position.Point = '(230,359)'
+    Width = 88.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'color'
+      Align = vaLeft
+      Position.Point = '(3,3)'
+      Width = 20.000000000000000000
+      Height = 18.000000000000000000
+      Padding.Rect = '(3,3,3,3)'
+      HitTest = False
+      Fill.Color = x52005ACC
+    end
+    object TText
+      BindingName = 'text'
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(49,1)'
+      Width = 36.000000000000000000
+      Height = 22.000000000000000000
+      Padding.Rect = '(3,1,3,1)'
+      HitTest = False
+      HorzTextAlign = vgTextAlignNear
+      Text = 'Text'
+      WordWrap = False
+    end
+    object TCheckBox
+      StyleName = 'check'
+      Align = vaLeft
+      Position.Point = '(26,0)'
+      Width = 20.000000000000000000
+      Height = 24.000000000000000000
+      TabOrder = 2
+      IsChecked = False
+      CanFocus = False
+      DisableFocusEffect = True
+    end
+  end
+  object TLayout
+    StyleName = 'imagelistboxitemstyle'
+    Position.Point = '(221,359)'
+    Width = 107.000000000000000000
+    Height = 24.000000000000000000
+    Padding.Rect = '(4,4,4,4)'
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'textborder'
+      Align = vaBottom
+      Position.Point = '(0,8)'
+      Width = 107.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(0,2,0,0)'
+      HitTest = False
+      Fill.Color = x52005ACC
+      Stroke.Style = vgBrushNone
+      XRadius = 5.000000000000000000
+      YRadius = 5.000000000000000000
+      object TText
+        StyleName = 'text'
+        Align = vaClient
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 105.000000000000000000
+        Height = 14.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Text = 'text'
+        WordWrap = False
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'scrollbarstyle'
+    Position.Point = '(186,344)'
+    Width = 176.000000000000000000
+    Height = 53.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 176.000000000000000000
+      Height = 53.000000000000000000
+      HitTest = False
+      Fill.Color = xFF484848
+      Stroke.Style = vgBrushNone
+    end
+    object TButton
+      StyleName = 'leftbutton'
+      Align = vaLeft
+      Position.Point = '(0,18)'
+      Locked = True
+      Width = 18.000000000000000000
+      Height = 17.000000000000000000
+      StyleLookup = 'scrollbarleftbutton'
+      TabOrder = 1
+      StaysPressed = False
+      IsPressed = False
+      CanFocus = False
+    end
+    object TTrack
+      StyleName = 'htrack'
+      Align = vaClient
+      Position.Point = '(18,18)'
+      Locked = True
+      Width = 140.000000000000000000
+      Height = 17.000000000000000000
+      StyleLookup = 'scrollbarhtrackstyle'
+      TabOrder = 2
+      Max = 1.000000000000000000
+      Orientation = vgHorizontal
+      ViewportSize = 0.100000001490116100
+      Tracking = True
+    end
+    object TButton
+      StyleName = 'rightbutton'
+      Align = vaRight
+      Position.Point = '(158,18)'
+      Locked = True
+      Width = 18.000000000000000000
+      Height = 17.000000000000000000
+      StyleLookup = 'scrollbarrightbutton'
+      TabOrder = 3
+      StaysPressed = False
+      IsPressed = False
+      CanFocus = False
+    end
+    object TTrack
+      StyleName = 'vtrack'
+      Align = vaClient
+      Position.Point = '(18,18)'
+      Locked = True
+      Width = 140.000000000000000000
+      Height = 17.000000000000000000
+      StyleLookup = 'scrollbarvtrackstyle'
+      TabOrder = 4
+      Max = 1.000000000000000000
+      Orientation = vgHorizontal
+      ViewportSize = 0.100000001490116100
+      Tracking = True
+    end
+    object TButton
+      StyleName = 'topbutton'
+      Align = vaTop
+      Locked = True
+      Width = 176.000000000000000000
+      Height = 18.000000000000000000
+      StyleLookup = 'scrollbartopbutton'
+      TabOrder = 5
+      StaysPressed = False
+      IsPressed = False
+      CanFocus = False
+    end
+    object TButton
+      StyleName = 'bottombutton'
+      Align = vaBottom
+      Position.Point = '(0,35)'
+      Locked = True
+      Width = 176.000000000000000000
+      Height = 18.000000000000000000
+      StyleLookup = 'scrollbarbottombutton'
+      TabOrder = 6
+      StaysPressed = False
+      IsPressed = False
+      CanFocus = False
+    end
+  end
+  object TRectangle
+    StyleName = 'smallscrollbarvtrackstyle'
+    Position.Point = '(265,339)'
+    Width = 19.000000000000000000
+    Height = 63.000003814697270000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFE1E1E1
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.086330935359001160
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.902877688407897900
+      end
+      item
+        Color = xFFE1E1E1
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaClient
+      Position.Point = '(2,2)'
+      Locked = True
+      Width = 15.000000000000000000
+      Height = 59.000000000000000000
+      Padding.Rect = '(2,2,2,2)'
+      HitTest = False
+      Visible = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF878787
+        end
+        item
+          Color = xFFEFEFEF
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Fill.Gradient.StopPosition.Point = '(1,0)'
+      Stroke.Style = vgBrushNone
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+    end
+    object TThumb
+      StyleName = 'thumb'
+      Position.Point = '(5,5)'
+      Locked = True
+      Width = 10.000000000000000000
+      Height = 46.000000000000000000
+      StyleLookup = 'vthumbstyle'
+      TabOrder = 1
+    end
+  end
+  object TRectangle
+    StyleName = 'smallscrollbarhtrackstyle'
+    Position.Point = '(214,361)'
+    Width = 119.999992370605500000
+    Height = 19.000000000000000000
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFE1E1E1
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.086330935359001160
+      end
+      item
+        Color = xFFEDEDED
+        Offset = 0.902877688407897900
+      end
+      item
+        Color = xFFE1E1E1
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.Style = vgLinearGradient
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaClient
+      Position.Point = '(2,2)'
+      Locked = True
+      Width = 116.000007629394500000
+      Height = 15.000000000000000000
+      HitTest = False
+      Visible = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF878787
+        end
+        item
+          Color = xFFEFEFEF
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Style = vgBrushNone
+      XRadius = 7.000000000000000000
+      YRadius = 7.000000000000000000
+    end
+    object TThumb
+      StyleName = 'thumb'
+      Position.Point = '(4,4)'
+      Locked = True
+      Width = 51.000000000000000000
+      Height = 16.000000000000000000
+      StyleLookup = 'hthumbstyle'
+      TabOrder = 1
+    end
+  end
+  object TLayout
+    StyleName = 'smallscrollbarstyle'
+    Position.Point = '(186,344)'
+    Width = 176.000000000000000000
+    Height = 53.000000000000000000
+    DesignVisible = False
+    object TTrack
+      StyleName = 'htrack'
+      Align = vaClient
+      Locked = True
+      Width = 176.000000000000000000
+      Height = 53.000000000000000000
+      StyleLookup = 'smallscrollbarhtrackstyle'
+      TabOrder = 0
+      Max = 1.000000000000000000
+      Orientation = vgHorizontal
+      ViewportSize = 0.100000001490116100
+      Tracking = True
+    end
+    object TTrack
+      StyleName = 'vtrack'
+      Align = vaClient
+      Locked = True
+      Width = 176.000000000000000000
+      Height = 53.000000000000000000
+      StyleLookup = 'smallscrollbarvtrackstyle'
+      TabOrder = 1
+      Max = 1.000000000000000000
+      Orientation = vgHorizontal
+      ViewportSize = 0.100000001490116100
+      Tracking = True
+    end
+  end
+  object TLayout
+    StyleName = 'droptargetstyle'
+    Position.Point = '(250,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      Align = vaContents
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      HitTest = False
+      Fill.Style = vgBrushNone
+      Stroke.Color = x82005ACC
+      StrokeDash = vgDashDash
+      StrokeThickness = 4.000000000000000000
+      XRadius = 11.000000953674320000
+      YRadius = 11.000000953674320000
+      object TText
+        StyleName = 'text'
+        Align = vaBottom
+        Position.Point = '(10,0)'
+        Width = 30.000000000000000000
+        Height = 50.000000000000000000
+        Padding.Rect = '(10,0,10,0)'
+        Fill.Color = x82005ACC
+        Text = 'text'
+      end
+    end
+    object TFloatKeyAnimation
+      Duration = 0.599999964237213100
+      Loop = True
+      Trigger = 'IsDragOver=true'
+      PropertyName = 'Margins.Top'
+      Keys = <
+        item
+        end
+        item
+          Key = 0.500000000000000000
+          Value = -20.000000000000000000
+        end
+        item
+          Key = 1.000000000000000000
+        end>
+      StartFromCurrent = False
+    end
+    object TPath
+      Align = vaCenter
+      Width = 50.000000000000000000
+      Height = 50.000003814697270000
+      HitTest = False
+      Fill.Color = x82005ACC
+      Stroke.Style = vgBrushNone
+      Data.Path = {
+        100000000000000008EC8343F087A4430100000008EC8343083CFB4302000000
+        35BE7143504DF9430200000012835C43A8E6F54302000000F0674943F803F143
+        0100000008EC8343FC0116440100000008EC8343FC5116440100000000408443
+        FC5116440100000010689A43FC412B4401000000081CD043F803F14302000000
+        915DC64321E0F54302000000919DBB439643F94302000000087CB043F833FB43
+        01000000087CB043F087A4430100000008EC8343F087A4430300000000000000
+        00000000}
+    end
+  end
+  object TLayout
+    StyleName = 'gridstyle'
+    Position.Point = '(216,305)'
+    Width = 116.999992370605500000
+    Height = 131.000000000000000000
+    ClipChildren = True
+    DesignVisible = False
+    object TBrushObject
+      StyleName = 'AlternatingRowBackground'
+      Brush.Color = x202A8ADF
+    end
+    object TBrushObject
+      StyleName = 'linefill'
+      Brush.Color = xFF8E8E8E
+    end
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 116.999992370605500000
+      Height = 131.000000000000000000
+      Margins.Rect = '(1,1,1,1)'
+      HitTest = False
+      Fill.Color = xFFE6EDF7
+      Stroke.Color = xFF8E8E8E
+      object THeader
+        StyleName = 'header'
+        Align = vaTop
+        Position.Point = '(1,1)'
+        Width = 114.999992370605500000
+        Height = 21.000000000000000000
+        TabOrder = 0
+        Sides = [vgSideBottom]
+      end
+      object TLayout
+        StyleName = 'content'
+        Align = vaClient
+        Position.Point = '(1,22)'
+        Width = 98.999992370605470000
+        Height = 92.000000000000000000
+        ClipChildren = True
+        object TRectangle
+          StyleName = 'selection'
+          Width = 50.000000000000000000
+          Height = 50.000000000000000000
+          HitTest = False
+          Fill.Color = x802A8ADF
+          Stroke.Style = vgBrushNone
+        end
+        object TRectangle
+          StyleName = 'focus'
+          Width = 50.000000000000000000
+          Height = 50.000000000000000000
+          Padding.Rect = '(0,1,0,1)'
+          HitTest = False
+          Fill.Color = claWhite
+          Stroke.Style = vgBrushNone
+        end
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = vaRight
+        Position.Point = '(99.9999923706055,22)'
+        Width = 16.000000000000000000
+        Height = 92.000000000000000000
+        TabOrder = 1
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = vaBottom
+        Position.Point = '(1,114)'
+        Width = 114.999992370605500000
+        Height = 16.000000000000000000
+        TabOrder = 2
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = vaRight
+        Position.Point = '(99,2)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        Visible = False
+        TabOrder = 3
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = vaBottom
+        Position.Point = '(2,113)'
+        Width = 150.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(1,1,1,1)'
+        Visible = False
+        TabOrder = 4
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+    end
+    object TGlowEffect
+      Trigger = 'IsFocused=true'
+      Enabled = False
+      Softness = 0.029999999329447750
+      GlowColor = xFF3D74B3
+      Opacity = 1.000000000000000000
+    end
+  end
+  object TLayout
+    StyleName = 'headeritemstyle'
+    Position.Point = '(229,359)'
+    Width = 91.000000000000000000
+    Height = 24.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 91.000000000000000000
+      Height = 24.000000000000000000
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = x24F4F4F4
+        end
+        item
+          Color = x24EAEAEA
+          Offset = 0.499000012874603300
+        end
+        item
+          Color = x4E868686
+          Offset = 0.500000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xC84F4F4F
+      object TInnerGlowEffect
+        Trigger = 'IsPressed=true'
+        Enabled = False
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.899999976158142100
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,2)'
+      Locked = True
+      Width = 81.000000000000000000
+      Height = 20.000000000000000000
+      Padding.Rect = '(5,2,5,2)'
+      HitTest = False
+      Text = 'button'
+    end
+  end
+  object TLayout
+    StyleName = 'textcellstyle'
+    Position.Point = '(221,360)'
+    Width = 107.000000000000000000
+    Height = 22.000000000000000000
+    DesignVisible = False
+    object TBrushObject
+      StyleName = 'foreground'
+      Brush.Color = claBlack
+    end
+    object TBrushObject
+      StyleName = 'selection'
+      Brush.Color = x802A8ADF
+    end
+    object TContent
+      StyleName = 'content'
+      Align = vaContents
+      Position.Point = '(3,3)'
+      Locked = True
+      Width = 101.000000000000000000
+      Height = 16.000000000000000000
+      Padding.Rect = '(3,3,3,3)'
+      HitTest = False
+    end
+  end
+  object TLayout
+    StyleName = 'checkcellstyle'
+    Position.Point = '(200,356)'
+    Width = 149.000000000000000000
+    Height = 30.000000000000000000
+    DesignVisible = False
+    object TLayout
+      Align = vaCenter
+      Position.Point = '(64,0)'
+      Width = 20.000000000000000000
+      Height = 30.000000000000000000
+      object TLayout
+        Align = vaCenter
+        Position.Point = '(2,7)'
+        Locked = True
+        Width = 15.000000000000000000
+        Height = 15.000000000000000000
+        object TPath
+          StyleName = 'checkmark'
+          Align = vaCenter
+          Position.Point = '(3,3)'
+          Locked = True
+          Width = 9.000000000000000000
+          Height = 9.000000000000000000
+          HitTest = False
+          Fill.Color = claNull
+          Stroke.Style = vgBrushNone
+          Data.Path = {
+            1200000000000000000000000000000001000000CDCC4C3E0000000001000000
+            0000003F9A99993E01000000CDCC4C3F00000000010000000000803F00000000
+            010000000000803FCDCC4C3E010000003333333F0000003F010000000000803F
+            CDCC4C3F010000000000803F0000803F01000000CDCC4C3F0000803F01000000
+            0000003F3333333F01000000CDCC4C3E0000803F01000000000000000000803F
+            0100000000000000CDCC4C3F010000009A99993E0000003F0100000000000000
+            CDCC4C3E010000000000000000000000030000000000000000000000}
+          object TColorAnimation
+            Duration = 0.001000000047497451
+            Trigger = 'IsChecked=true'
+            StartValue = x00034E9E
+            StopValue = xFF034E9E
+            PropertyName = 'Fill.Color'
+          end
+          object TColorAnimation
+            Duration = 0.001000000047497451
+            Trigger = 'IsChecked=false'
+            StartValue = xFF034E9E
+            StopValue = x00034E9E
+            PropertyName = 'Fill.Color'
+          end
+        end
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'popupcellstyle'
+    Position.Point = '(221,360)'
+    Width = 107.000000000000000000
+    Height = 22.000000000000000000
+    DesignVisible = False
+    object TLayout
+      Align = vaRight
+      Position.Point = '(92,0)'
+      Width = 15.000000000000000000
+      Height = 22.000000000000000000
+      object TPath
+        Align = vaCenter
+        Position.Point = '(3,4)'
+        Width = 8.000000000000000000
+        Height = 5.000000000000000000
+        Padding.Rect = '(0,-9,0,0)'
+        HitTest = False
+        Fill.Color = xFF040404
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          0500000000000000000000000000803F010000000000803F0000803F01000000
+          0000003F0000000001000000000000000000803F030000000000000000000000}
+      end
+      object TPath
+        Align = vaCenter
+        Position.Point = '(3,12)'
+        Width = 8.000000000000000000
+        Height = 5.000000000000000000
+        Padding.Rect = '(0,7,0,0)'
+        HitTest = False
+        Fill.Color = claBlack
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          04000000000000000000000000000000010000000000803F0000000001000000
+          0000003F0000803F030000000000000000000000}
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaClient
+      Position.Point = '(5,5)'
+      Locked = True
+      Width = 82.000000000000000000
+      Height = 12.000000000000000000
+      Padding.Rect = '(5,5,5,5)'
+      HitTest = False
+      Fill.Color = xFF050505
+      Text = 'button'
+      WordWrap = False
+    end
+  end
+  object TLayout
+    StyleName = 'progresscellstyle'
+    Position.Point = '(238,340)'
+    Width = 72.000000000000000000
+    Height = 60.999996185302730000
+    DesignVisible = False
+    object TLayout
+      StyleName = 'htrack'
+      Align = vaContents
+      Position.Point = '(2,2)'
+      Locked = True
+      Width = 68.000000000000000000
+      Height = 56.999996185302730000
+      Padding.Rect = '(2,2,2,2)'
+      object TRectangle
+        StyleName = 'hindicator'
+        Align = vaLeft
+        Position.Point = '(1,1)'
+        Locked = True
+        Width = 50.000000000000000000
+        Height = 54.999996185302730000
+        Padding.Rect = '(1,1,1,1)'
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFFCDFFCD
+          end
+          item
+            Color = xFF9CEDAC
+            Offset = 0.280575543642044100
+          end
+          item
+            Color = xFF6DE083
+            Offset = 0.280575543642044100
+          end
+          item
+            Color = xFF01C025
+            Offset = 1.000000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xFF8E8E8E
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'scrollboxstyle'
+    Position.Point = '(107,305)'
+    Width = 334.000000000000000000
+    Height = 131.000000000000000000
+    DesignVisible = False
+    object TLayout
+      StyleName = 'background'
+      Align = vaContents
+      Locked = True
+      Width = 334.000000000000000000
+      Height = 131.000000000000000000
+      object TLayout
+        StyleName = 'content'
+        Align = vaClient
+        Width = 318.000000000000000000
+        Height = 115.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = vaRight
+        Position.Point = '(318,0)'
+        Width = 16.000000000000000000
+        Height = 115.000000000000000000
+        TabOrder = 1
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = vaBottom
+        Position.Point = '(0,115)'
+        Width = 334.000000000000000000
+        Height = 16.000000000000000000
+        TabOrder = 2
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = vaRight
+        Position.Point = '(99,2)'
+        Width = 8.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(2,0,0,0)'
+        Visible = False
+        TabOrder = 3
+        Max = 100.000000000000000000
+        Orientation = vgVertical
+        SmallChange = 1.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = vaBottom
+        Position.Point = '(2,113)'
+        Width = 150.000000000000000000
+        Height = 8.000000000000000000
+        Padding.Rect = '(0,2,0,0)'
+        Visible = False
+        TabOrder = 4
+        Max = 100.000000000000000000
+        Orientation = vgHorizontal
+        SmallChange = 1.000000000000000000
+      end
+      object TLayout
+        Align = vaContents
+        Width = 334.000000000000000000
+        Height = 131.000000000000000000
+        object TLayout
+          Align = vaBottom
+          Position.Point = '(0,111)'
+          Width = 334.000000000000000000
+          Height = 20.000000000000000000
+          object TSizeGrip
+            StyleName = 'sizegrip'
+            Align = vaRight
+            Position.Point = '(314,0)'
+            Locked = True
+            Width = 20.000000000000000000
+            Height = 20.000000000000000000
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+  object TRectangle
+    StyleName = 'menubarstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    ClipChildren = True
+    HitTest = False
+    DesignVisible = False
+    Fill.Style = vgBrushNone
+    Stroke.Style = vgBrushNone
+    object TRectangle
+      Align = vaClient
+      Position.Point = '(-1,-1)'
+      Width = 52.000000000000000000
+      Height = 51.000000000000000000
+      Padding.Rect = '(-1,-1,-1,0)'
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFF6FBFF
+        end
+        item
+          Color = xFFE0EAF7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE7F5
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xFF9FAEC2
+    end
+    object TLayout
+      StyleName = 'content'
+      Align = vaClient
+      Position.Point = '(2,2)'
+      Width = 46.000000000000000000
+      Height = 45.000000000000000000
+      Padding.Rect = '(2,2,2,3)'
+    end
+  end
+  object TLayout
+    StyleName = 'menuviewstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    Margins.Rect = '(0,0,8,8)'
+    DesignVisible = False
+    object TRectangle
+      Align = vaClient
+      Width = 50.000000000000000000
+      Height = 50.000000000000000000
+      Padding.Rect = '(0,0,-8,-8)'
+      HitTest = False
+      Fill.Color = xFFF0F0F0
+      Stroke.Color = xFF8E8E8E
+      object TShadowEffect
+        Distance = 4.000000000000000000
+        Direction = 45.000000000000000000
+        Softness = 0.200000017881393400
+        Opacity = 0.500000000000000000
+        ShadowColor = claBlack
+      end
+    end
+    object TLayout
+      StyleName = 'content'
+      Align = vaClient
+      Position.Point = '(3,3)'
+      Width = 36.000000000000000000
+      Height = 36.000000000000000000
+      Padding.Rect = '(3,3,3,3)'
+    end
+  end
+  object TLayout
+    StyleName = 'menuitemstyle'
+    Position.Point = '(238,358)'
+    Width = 73.000000000000000000
+    Height = 26.000000000000000000
+    DesignVisible = False
+    object TRectangle
+      Align = vaContents
+      Width = 73.000000000000000000
+      Height = 26.000000000000000000
+      Opacity = 0.000099999997473788
+      HitTest = False
+      Fill.Color = xFFD7E4F4
+      Stroke.Color = xFFBBCADB
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TFloatAnimation
+        Duration = 0.000200000009499490
+        Trigger = 'IsSelected=true'
+        TriggerInverse = 'IsSelected=false'
+        StopValue = 1.000000000000000000
+        PropertyName = 'Opacity'
+      end
+      object TInnerGlowEffect
+        Trigger = 'IsSelected=true'
+        Enabled = False
+        Softness = 0.400000005960464500
+        GlowColor = xFF4F4848
+        Opacity = 0.499999970197677600
+      end
+    end
+    object TRectangle
+      StyleName = 'background'
+      Align = vaContents
+      Width = 73.000000000000000000
+      Height = 26.000000000000000000
+      Opacity = 0.000099999997473788
+      HitTest = False
+      Fill.Style = vgBrushGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFFF8FBFE
+        end
+        item
+          Color = xFFD7E4F4
+          Offset = 0.499000012874603300
+        end
+        item
+          Color = xFFC1D2E8
+          Offset = 0.500000000000000000
+        end>
+      Fill.Gradient.Style = vgLinearGradient
+      Stroke.Color = xFFBBCADB
+      XRadius = 2.000000000000000000
+      YRadius = 2.000000000000000000
+      object TFloatAnimation
+        Duration = 0.000200000009499490
+        Trigger = 'IsMouseOver=true'
+        TriggerInverse = 'IsMouseOver=false'
+        StopValue = 1.000000000000000000
+        PropertyName = 'Opacity'
+      end
+    end
+    object TLayout
+      StyleName = 'glyph'
+      Align = vaLeft
+      Width = 25.000000000000000000
+      Height = 26.000000000000000000
+      object TRectangle
+        StyleName = 'checkmark'
+        Align = vaContents
+        Width = 25.000000000000000000
+        Height = 26.000000000000000000
+        Opacity = 0.001000000047497451
+        HitTest = False
+        Fill.Style = vgBrushGradient
+        Fill.Gradient.Points = <
+          item
+            Color = xFFF8FBFE
+          end
+          item
+            Color = xFFD7E4F4
+            Offset = 0.499000012874603300
+          end
+          item
+            Color = xFFC1D2E8
+            Offset = 0.500000000000000000
+          end>
+        Fill.Gradient.Style = vgLinearGradient
+        Stroke.Color = xFFBBCADB
+        XRadius = 2.000000000000000000
+        YRadius = 2.000000000000000000
+        object TEllipse
+          Align = vaCenter
+          Position.Point = '(9,9)'
+          Locked = True
+          Width = 7.000000000000000000
+          Height = 7.000000000000000000
+          HitTest = False
+          Fill.Color = xFF034E9E
+          Stroke.Style = vgBrushNone
+        end
+        object TFloatAnimation
+          Duration = 0.100000001490116100
+          Trigger = 'IsChecked=true'
+          TriggerInverse = 'IsChecked=false'
+          StopValue = 1.000000000000000000
+          PropertyName = 'Opacity'
+        end
+      end
+      object TImage
+        StyleName = 'bitmap'
+        Align = vaContents
+        Position.Point = '(2,2)'
+        Width = 21.000000000000000000
+        Height = 22.000000000000000000
+        Padding.Rect = '(2,2,2,2)'
+      end
+    end
+    object TText
+      StyleName = 'text'
+      Align = vaLeft
+      Position.Point = '(33,0)'
+      Locked = True
+      Width = 50.000000000000000000
+      Height = 26.000000000000000000
+      Padding.Rect = '(8,0,8,0)'
+      HitTest = False
+      HorzTextAlign = vgTextAlignNear
+    end
+    object TText
+      StyleName = 'shortcut'
+      Align = vaRight
+      Position.Point = '(-3,0)'
+      Locked = True
+      Width = 50.000000000000000000
+      Height = 26.000000000000000000
+      Padding.Rect = '(12,0,6,0)'
+      HitTest = False
+      HorzTextAlign = vgTextAlignNear
+    end
+    object TLayout
+      StyleName = 'submark'
+      Align = vaRight
+      Position.Point = '(53,0)'
+      Width = 20.000000000000000000
+      Height = 26.000000000000000000
+      object TPath
+        Align = vaCenter
+        Position.Point = '(6,9)'
+        Locked = True
+        Width = 7.000000000000000000
+        Height = 8.000000000000000000
+        HitTest = False
+        Fill.Color = claGray
+        Stroke.Style = vgBrushNone
+        Data.Path = {
+          0400000000000000000000000000000001000000000000000000803F01000000
+          0000803F0000003F030000000000000000000000}
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'menuseparatorstyle'
+    Position.Point = '(249,346)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    Padding.Rect = '(1,1,1,1)'
+    DesignVisible = False
+    object TLine
+      Align = vaTop
+      Position.Point = '(3,2)'
+      Width = 44.000000000000000000
+      Height = 1.000000000000000000
+      Padding.Rect = '(3,2,3,0)'
+      Stroke.Color = claSilver
+      LineType = vgLineHorizontal
+    end
+    object TLine
+      Align = vaTop
+      Position.Point = '(3,3)'
+      Width = 44.000000000000000000
+      Height = 1.000000000000000000
+      Padding.Rect = '(3,0,3,0)'
+      Stroke.Color = claWhite
+      LineType = vgLineHorizontal
+    end
+  end
+end

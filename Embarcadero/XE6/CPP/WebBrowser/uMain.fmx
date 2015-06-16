@@ -1,0 +1,79 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Height = 475.000000000000000000
+    Width = 384.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    object btnGO: TButton
+      Align = Right
+      Height = 48.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 320.000000000000000000
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 0
+      Text = 'GO'
+      Width = 59.000000000000000000
+      OnClick = btnGOClick
+    end
+    object edtURL: TClearingEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Contents
+      TabOrder = 1
+      KeyboardType = URL
+      Text = 'http://www.embarcadero.com'
+      Width = 303.000000000000000000
+      Height = 32.000000000000000000
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 75.000000000000000000
+      OnKeyUp = edtURLKeyUp
+    end
+  end
+  object StatusBar1: TStatusBar
+    Height = 44.000000000000000000
+    Position.Y = 523.000000000000000000
+    ShowSizeGrip = True
+    Width = 384.000000000000000000
+    TabOrder = 2
+    object btnBack: TButton
+      Align = Left
+      Height = 48.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      StyleLookup = 'priortoolbuttonbordered'
+      TabOrder = 0
+      Text = 'Back'
+      Width = 48.000000000000000000
+      OnClick = btnBackClick
+    end
+    object btnForward: TButton
+      Align = Right
+      Height = 48.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 331.000000000000000000
+      StyleLookup = 'nexttoolbuttonbordered'
+      TabOrder = 1
+      Text = 'Forward'
+      Width = 48.000000000000000000
+      OnClick = btnForwardClick
+    end
+  end
+end

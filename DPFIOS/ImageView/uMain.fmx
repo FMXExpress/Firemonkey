@@ -1,0 +1,69 @@
+object FImageView: TFImageView
+  Left = 0
+  Top = 0
+  Caption = 'Images'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFImageView1: TDPFImageView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claYellowgreen
+      TagNative = 0
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 30.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 30.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 163.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claWhite
+      ImageList.Strings = (
+        'DPF1.png')
+      AnimationDuration = 1.000000000000000000
+      LoadAsync = True
+      IndicatorAlpha = 0.699999988079071000
+    end
+    object DPFImageView2: TDPFImageView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = Client
+      Size.Width = 300.000000000000000000
+      Size.Height = 237.000000000000000000
+      Size.PlatformDefault = False
+      ImageList.Strings = (
+        'DPF1.png'
+        'DPF2.png'
+        'DPF3.png')
+      AnimationDuration = 3.000000000000000000
+      IndicatorAlpha = 0.699999988079071000
+    end
+  end
+end

@@ -1,0 +1,147 @@
+object FInAppPurchase: TFInAppPurchase
+  Left = 0
+  Top = 0
+  Caption = 'In-App Purchase'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFUITableView1: TDPFUITableView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 395.000000000000000000
+      Size.PlatformDefault = False
+      OnApplyFrameData = DPFUITableView1ApplyFrameData
+      OnGetRowHeight = DPFUITableView1GetRowHeight
+      Options.AllowsSelection = False
+      Options.Scrolling.AlwaysBounceVertical = True
+      Options.TextFont.FontName = ios_Helvetica_Bold
+      Options.TextFont.FontSize = 18
+      Options.DescriptionFont.FontName = ios_Helvetica
+      Options.ViewStyle = tvsGrouped
+      Options.RowHeight = 44.000000000000000000
+      Sections = <>
+    end
+    object DPFToolbar1: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Top = 20.000000000000000000
+      Align = Top
+      Position.Y = 20.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <>
+      object DPFButton1: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        BorderWidth = 1
+        BorderColor = claYellowgreen
+        TagNative = 0
+        Position.X = 8.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 84.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        Text = '  Fetch'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        OnClick = DPFButton1Click
+      end
+      object DPFButton2: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Align = Right
+        Position.X = 232.000000000000000000
+        Position.Y = 2.000000000000000000
+        Size.Width = 83.000000000000000000
+        Size.Height = 41.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'AppStore'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        OnClick = DPFButton2Click
+      end
+    end
+    object DPFActivityIndicatorView1: TDPFActivityIndicatorView
+      Alpha = 0.699999988079071000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      CornerRadius = 5.000000000000000000
+      TagNative = 0
+      Align = Center
+      Size.Width = 146.000000000000000000
+      Size.Height = 121.000000000000000000
+      Size.PlatformDefault = False
+      Color = claWhite
+      BackgroundColor = claBlack
+      object DPFLabel1: TDPFLabel
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Bottom
+        Position.Y = 86.000000000000000000
+        Size.Width = 146.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Please wait...'
+        TextColor = claWhite
+        TextAlignment = taCenter
+        BaseLineAdjustment = blaAlignBaseLines
+      end
+    end
+  end
+  object DPFInAppPurchase1: TDPFInAppPurchase
+    OnProductsRequest = DPFInAppPurchase1ProductsRequest
+    OnProductsRequestFinished = DPFInAppPurchase1ProductsRequestFinished
+    OnProductsRequestError = DPFInAppPurchase1ProductsRequestError
+    Left = 216
+    Top = 56
+  end
+  object DPFSlideDialog1: TDPFSlideDialog
+    ParentView = DPFUIView1
+    BackgroundColor = claBlack
+    TextColor = claWhite
+    BorderWidth = 1
+    BorderColor = claBlack
+    Alpha = 0.699999988079071000
+    Left = 256
+    Top = 152
+  end
+end

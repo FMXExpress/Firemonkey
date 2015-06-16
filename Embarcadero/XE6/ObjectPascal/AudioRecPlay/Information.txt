@@ -1,0 +1,10 @@
+Title: AudioRecPlay
+
+Brief Description: This code snippet shows you how to record some sound via the microphone and then playback using the 
+device speakers or headphones.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: audio, record, play, back, microphone, speakers, headphones, iOS, Android

@@ -1,0 +1,51 @@
+object FDatePicker: TFDatePicker
+  Left = 0
+  Top = 0
+  Caption = 'DatePicker'
+  ClientHeight = 567
+  ClientWidth = 384
+  Fill.Color = claYellow
+  Fill.Kind = bkSolid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claSteelblue
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJDatePicker1: TDPFJDatePicker
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Position.X = 24.000000000000000000
+      Position.Y = 120.000000000000000000
+      Width = 345.000000000000000000
+      Height = 169.000000000000000000
+    end
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = alTop
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Width = 364.000000000000000000
+      Height = 50.000000000000000000
+      Text.Strings = (
+        '?/?/?')
+      TextColor = claWhite
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+end

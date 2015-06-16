@@ -1,0 +1,152 @@
+object IBLiteForm: TIBLiteForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 417
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '6'
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object Label1: TLabel
+      Align = alContents
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'IBLite'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+    end
+    object AddButton: TButton
+      Align = alRight
+      Height = 44.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 282.000000000000000000
+      StyleLookup = 'addtoolbuttonbordered'
+      TabOrder = 1
+      Text = 'AddButton'
+      Width = 33.000000000000000000
+      OnClick = AddButtonClick
+    end
+    object DeleteButton: TButton
+      Align = alLeft
+      Height = 44.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      StyleLookup = 'deletetoolbutton'
+      TabOrder = 2
+      Text = 'Delete'
+      Width = 73.000000000000000000
+      OnClick = DeleteButtonClick
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = alClient
+    Height = 373.000000000000000000
+    TabOrder = 1
+    Width = 320.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+    CanSwipeDelete = False
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 104
+    Top = 72
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'TASKNAME'
+      AutoFill = True
+      BufferCount = -1
+      AutoBufferCount = False
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = SQLDataSetTask
+    ScopeMappings = <>
+    Left = 208
+    Top = 80
+  end
+  object SQLQueryDelete: TSQLQuery
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftUnknown
+        Name = 'TaskName'
+        ParamType = ptInput
+      end>
+    SQL.Strings = (
+      'delete from task where TaskName = (:TaskName)')
+    SQLConnection = TaskList
+    Left = 80
+    Top = 152
+  end
+  object SQLQueryInsert: TSQLQuery
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftUnknown
+        Name = 'TaskName'
+        ParamType = ptInput
+      end>
+    SQL.Strings = (
+      'insert into task (TaskName) values (:TaskName)')
+    SQLConnection = TaskList
+    Left = 160
+    Top = 192
+  end
+  object SQLDataSetTask: TSQLDataSet
+    GetMetadata = False
+    CommandText = 'TASK'
+    CommandType = ctTable
+    DbxCommandType = 'Dbx.Table'
+    MaxBlobSize = 1
+    Params = <>
+    SQLConnection = TaskList
+    Left = 256
+    Top = 184
+  end
+  object TaskList: TSQLConnection
+    DriverName = 'IBToGo'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverName=IBToGo'
+      
+        'Database=C:\Developer\Embarcadero\Delphi\MobileCodeSnippets\IBLi' +
+        'te\tasks.gdb'
+      'RoleName=RoleName'
+      'User_Name=sysdba'
+      'Password=masterkey'
+      'ServerCharSet='
+      'SQLDialect=3'
+      'ErrorResourceFile='
+      'LocaleCode=0000'
+      'BlobSize=-1'
+      'CommitRetain=False'
+      'WaitOnLocks=True'
+      'IsolationLevel=ReadCommitted'
+      'Trim Char=False')
+    BeforeConnect = TaskListBeforeConnect
+    Left = 41
+    Top = 235
+  end
+end

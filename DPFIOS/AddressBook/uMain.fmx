@@ -1,0 +1,40 @@
+object FPeoplePicker: TFPeoplePicker
+  Left = 0
+  Top = 0
+  Caption = 'PeoplePicker'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFButtonAddressBook: TDPFButton
+    Alpha = 1.000000000000000000
+    ClipsToBounds = False
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Position.X = 56.000000000000000000
+    Position.Y = 154.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    ButtonType = btCustom
+    Text = 'Show Address Book'
+    TextLineBreak = lbCharacterWrap
+    TextAlpha = 1.000000000000000000
+    BackgroundColorNormal = claKhaki
+    BackgroundColorHighlight = claDarkkhaki
+    AdjustsImageWhenHighlighted = False
+    OnClick = DPFButtonAddressBookClick
+  end
+  object DPFAddressBook1: TDPFAddressBook
+    OnPersonSelected = DPFAddressBook1PersonSelected
+    OnPersonSelectedDetail = DPFAddressBook1PersonSelectedDetail
+    OnPersonSelectedCancel = DPFAddressBook1PersonSelectedCancel
+    OnRequestAccess = DPFAddressBook1RequestAccess
+    Left = 144
+    Top = 48
+  end
+end

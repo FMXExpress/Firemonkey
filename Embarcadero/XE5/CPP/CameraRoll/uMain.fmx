@@ -1,0 +1,60 @@
+object CameraRollForm: TCameraRollForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object imgPhotoLibraryImage: TImage
+    MultiResBitmap = <
+      item
+      end
+      item
+        Scale = 2.000000000000000000
+      end>
+    Align = alClient
+    Height = 416.000000000000000000
+    Width = 320.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object Label1: TLabel
+      Align = alContents
+      Anchors = []
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Access Camera Roll'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+    end
+    object btnPhotoLibrary: TButton
+      Action = TakePhotoFromLibraryAction1
+      Align = alRight
+      Height = 44.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 271.000000000000000000
+      StyleLookup = 'organizetoolbuttonbordered'
+      TabOrder = 1
+      Text = 'Open Photo Library'
+      Width = 44.000000000000000000
+    end
+  end
+  object alGetCameraRoll: TActionList
+    Left = 144
+    Top = 216
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromLibraryAction1DidFinishTaking
+    end
+  end
+end

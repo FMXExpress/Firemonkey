@@ -1,0 +1,88 @@
+object FHTTPContent: TFHTTPContent
+  Left = 0
+  Top = 0
+  Caption = 'HTTP Content'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object DPFTextField1: TDPFTextField
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'http://www.google.com/images/srpr/logo4w.png'
+  end
+  object DPFButton1: TDPFButton
+    Alpha = 1.000000000000000000
+    ClipsToBounds = False
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Top
+    Position.Y = 50.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    ButtonType = btCustom
+    Text = 'Start Get URL Sync'
+    TextLineBreak = lbCharacterWrap
+    TextAlpha = 1.000000000000000000
+    BackgroundColorNormal = claPaleturquoise
+    BackgroundColorHighlight = claYellowgreen
+    AdjustsImageWhenHighlighted = False
+    OnClick = DPFButton1Click
+  end
+  object DPFImageView1: TDPFImageView
+    ContentMode = vcmScaleAspectFit
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 310.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claPapayawhip
+    AnimationDuration = 1.000000000000000000
+    IndicatorAlpha = 0.600000023841857900
+  end
+  object DPFButton2: TDPFButton
+    Alpha = 1.000000000000000000
+    ClipsToBounds = False
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Top
+    Position.Y = 100.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    ButtonType = btCustom
+    Text = 'Animate!'
+    TextColorNormal = claWhite
+    TextLineBreak = lbCharacterWrap
+    TextAlpha = 1.000000000000000000
+    BackgroundColorNormal = claMidnightblue
+    BackgroundColorHighlight = claSkyblue
+    AdjustsImageWhenHighlighted = False
+    OnClick = DPFButton2Click
+  end
+  object DPFHttp1: TDPFHttp
+    ConnectionTimeout = 100
+    OnError = DPFHttp1ReceiveError
+    Left = 240
+    Top = 56
+  end
+end

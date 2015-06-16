@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3A07BF91-816A-4DEB-ACCE-1636631E3B1A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AsyncProgress\AsyncProgress.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="AnonymousThread\AnonymousThread.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="UserIniFile\UserIniFile.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="XplatServices\XplatServices.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="AsyncProgress">
+        <MSBuild Projects="AsyncProgress\AsyncProgress.dproj"/>
+    </Target>
+    <Target Name="AsyncProgress:Clean">
+        <MSBuild Projects="AsyncProgress\AsyncProgress.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AsyncProgress:Make">
+        <MSBuild Projects="AsyncProgress\AsyncProgress.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AnonymousThread">
+        <MSBuild Projects="AnonymousThread\AnonymousThread.dproj"/>
+    </Target>
+    <Target Name="AnonymousThread:Clean">
+        <MSBuild Projects="AnonymousThread\AnonymousThread.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AnonymousThread:Make">
+        <MSBuild Projects="AnonymousThread\AnonymousThread.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="UserIniFile">
+        <MSBuild Projects="UserIniFile\UserIniFile.dproj"/>
+    </Target>
+    <Target Name="UserIniFile:Clean">
+        <MSBuild Projects="UserIniFile\UserIniFile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="UserIniFile:Make">
+        <MSBuild Projects="UserIniFile\UserIniFile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XplatServices">
+        <MSBuild Projects="XplatServices\XplatServices.dproj"/>
+    </Target>
+    <Target Name="XplatServices:Clean">
+        <MSBuild Projects="XplatServices\XplatServices.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XplatServices:Make">
+        <MSBuild Projects="XplatServices\XplatServices.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="AsyncProgress;AnonymousThread;UserIniFile;XplatServices"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="AsyncProgress:Clean;AnonymousThread:Clean;UserIniFile:Clean;XplatServices:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="AsyncProgress:Make;AnonymousThread:Make;UserIniFile:Make;XplatServices:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

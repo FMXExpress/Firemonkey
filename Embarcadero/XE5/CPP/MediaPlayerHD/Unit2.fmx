@@ -1,0 +1,117 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'C++Builder XE3 FireMonkey Media Player'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 1920
+  FormFactor.Height = 1200
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Rectangle1: TRectangle
+    Align = alTop
+    Fill.Color = x5DFFFFFF
+    Height = 41.000000000000000000
+    Margins.Left = 6.000000000000000000
+    Margins.Top = 6.000000000000000000
+    Margins.Right = 6.000000000000000000
+    Margins.Bottom = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 6.000000000000000000
+    Stroke.Kind = bkNone
+    Width = 628.000000000000000000
+    object PauseButton: TSpeedButton
+      Align = alLeft
+      Enabled = False
+      Height = 41.000000000000000000
+      Padding.Right = 5.000000000000000000
+      Position.X = 93.000000000000000000
+      Text = 'Pause'
+      Width = 80.000000000000000000
+      OnClick = PauseButtonClick
+    end
+    object OpenButton: TSpeedButton
+      Align = alLeft
+      Height = 41.000000000000000000
+      Padding.Right = 10.000000000000000000
+      Text = 'Load...'
+      Width = 93.000000000000000000
+      OnClick = OpenButtonClick
+    end
+    object Label1: TLabel
+      Align = alRight
+      Height = 41.000000000000000000
+      Position.X = 506.000000000000000000
+      TextAlign = taTrailing
+      Width = 122.000000000000000000
+    end
+    object CheckBox1: TCheckBox
+      Align = alCenter
+      Height = 19.000000000000000000
+      IsChecked = True
+      TabOrder = 3
+      Text = 'Visible'
+      Width = 84.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object VolumeTrack: TTrackBar
+      Align = alRight
+      Height = 41.000000000000000000
+      Padding.Top = -4.000000000000000000
+      Padding.Bottom = -4.000000000000000000
+      Max = 1.000000000000000000
+      Orientation = orVertical
+      Position.X = 486.000000000000000000
+      TabOrder = 4
+      Width = 20.000000000000000000
+      OnChange = VolumeTrackChange
+    end
+    object ClearButton: TSpeedButton
+      Align = alLeft
+      Enabled = False
+      Height = 41.000000000000000000
+      Position.X = 173.000000000000000000
+      Text = 'Clear'
+      Width = 72.000000000000000000
+      OnClick = ClearButtonClick
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 32
+    Top = 218
+  end
+  object TrackBar1: TTrackBar
+    Align = alBottom
+    Height = 20.000000000000000000
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Orientation = orHorizontal
+    Position.Y = 460.000000000000000000
+    TabOrder = 1
+    Tracking = False
+    Width = 640.000000000000000000
+    OnChange = TrackBar1Change
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 32
+    Top = 296
+  end
+  object MediaPlayerControl1: TMediaPlayerControl
+    Align = alClient
+    Height = 407.000000000000000000
+    MediaPlayer = MediaPlayer1
+    Width = 640.000000000000000000
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 240
+    Top = 294
+  end
+end

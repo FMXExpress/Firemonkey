@@ -1,0 +1,165 @@
+object Form1: TForm1
+  BiDiMode = bdLeftToRight
+  Caption = 'Form17'
+  ClientHeight = 475
+  ClientWidth = 579
+  Left = 0
+  Top = 0
+  Transparency = False
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+  object LabelSourceExpressions: TLabel
+    Position.Point = '(6,152)'
+    Width = 120.000000000000000000
+    Height = 15.000000000000000000
+    TabOrder = 0
+    Text = 'Source Expression:'
+  end
+  object LabelControlExpression: TLabel
+    Position.Point = '(5,87)'
+    Width = 120.000000000000000000
+    Height = 15.000000000000000000
+    TabOrder = 1
+    Text = 'Control Expression:'
+  end
+  object EditControlExpression: TEdit
+    Enabled = False
+    Position.Point = '(128,84)'
+    Width = 241.000000000000000000
+    Height = 22.000000000000000000
+    TabOrder = 2
+    ReadOnly = False
+    Password = False
+  end
+  object LabelControlComponent: TLabel
+    Position.Point = '(5,55)'
+    Width = 120.000000000000000000
+    Height = 15.000000000000000000
+    TabOrder = 3
+    Text = 'Control Component:'
+  end
+  object EditControlComponent: TEdit
+    Enabled = False
+    Position.Point = '(128,52)'
+    Width = 241.000000000000000000
+    Height = 22.000000000000000000
+    TabOrder = 4
+    ReadOnly = False
+    Password = False
+  end
+  object LabelSourceComponent: TLabel
+    Position.Point = '(6,119)'
+    Width = 120.000000000000000000
+    Height = 15.000000000000000000
+    TabOrder = 5
+    Text = 'Source Component:'
+  end
+  object EditSourceExpression: TEdit
+    Position.Point = '(128,149)'
+    Width = 441.000000000000000000
+    Height = 22.000000000000000000
+    TabOrder = 6
+    ReadOnly = False
+    Password = False
+  end
+  object CheckBoxActive: TCheckBox
+    Position.Point = '(4,222)'
+    Width = 89.000000000000000000
+    Height = 19.000000000000000000
+    TabOrder = 7
+    IsChecked = False
+    Text = 'Active'
+    OnChange = CheckBoxActiveChange
+  end
+  object ButtonEvaluate: TButton
+    Position.Point = '(128,180)'
+    Width = 80.000000000000000000
+    Height = 22.000000000000000000
+    OnClick = ButtonEvaluateClick
+    TabOrder = 8
+    StaysPressed = False
+    IsPressed = False
+    Text = 'Fill'
+  end
+  object EditSourceComponentName: TEdit
+    Enabled = False
+    Position.Point = '(128,116)'
+    Width = 265.000000000000000000
+    Height = 22.000000000000000000
+    TabOrder = 9
+    ReadOnly = False
+    Password = False
+  end
+  object ListBox1: TListBox
+    Position.Point = '(7,284)'
+    Width = 561.000000000000000000
+    Height = 181.000000000000000000
+    TabOrder = 10
+  end
+  object ComboBox1: TComboBox
+    Position.Point = '(128,8)'
+    Width = 297.000000000000000000
+    Height = 22.000000000000000000
+    TabOrder = 11
+    ItemIndex = -1
+    OnChange = ComboBox1Change
+  end
+  object CheckBoxAutoFill: TCheckBox
+    Position.Point = '(4,244)'
+    Width = 120.000000000000000000
+    Height = 19.000000000000000000
+    TabOrder = 12
+    IsChecked = False
+    Text = 'Auto Fill'
+    OnChange = CheckBoxAutoFillChange
+  end
+  object ButtonClear: TButton
+    Position.Point = '(216,180)'
+    Width = 80.000000000000000000
+    Height = 22.000000000000000000
+    OnClick = ButtonClearClick
+    TabOrder = 13
+    StaysPressed = False
+    IsPressed = False
+    Text = 'Clear'
+  end
+  object Label1: TLabel
+    Position.Point = '(5,11)'
+    Width = 73.000000000000000000
+    Height = 15.000000000000000000
+    TabOrder = 14
+    Text = 'Collection:'
+  end
+  object CheckBoxAutoActivate: TCheckBox
+    Position.Point = '(4,196)'
+    Width = 105.000000000000000000
+    Height = 25.000000000000000000
+    TabOrder = 15
+    IsChecked = False
+    Text = 'Auto Activate'
+    OnChange = CheckBoxAutoActivateChange
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    UseAppManager = True
+    Left = 347
+    Top = 186
+    object BindList1: TBindList
+      Category = 'Lists'
+      ControlComponent = ListBox1
+      SourceComponent = BindScope1
+      FormatExpressions = <>
+      FormatControlExpressions = <>
+      ClearControlExpressions = <>
+      AutoFill = False
+      OnEvalError = BindList1EvalError
+      OnActivating = BindList1Activating
+    end
+  end
+  object BindScope1: TBindScope
+    Left = 480
+    Top = 16
+  end
+end

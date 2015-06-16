@@ -1,0 +1,131 @@
+object FListPicker: TFListPicker
+  Left = 0
+  Top = 0
+  Caption = 'ListPicker'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFPickerView1: TDPFPickerView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 73.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 162.000000000000000000
+      Size.PlatformDefault = False
+      PickerComponents = <
+        item
+          Items.Strings = (
+            '1390'
+            '1391'
+            '1392'
+            '1393'
+            '1394'
+            '1395'
+            '1396'
+            '1397'
+            '1398')
+        end
+        item
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12')
+        end
+        item
+          Items.Strings = (
+            '1'
+            '2'
+            '3'
+            '4'
+            '5'
+            '6'
+            '7'
+            '8'
+            '9'
+            '10'
+            '11'
+            '12'
+            '13'
+            '14'
+            '15'
+            '16'
+            '17'
+            '18'
+            '19'
+            '20'
+            '21'
+            '22'
+            '23'
+            '24'
+            '25'
+            '26'
+            '27'
+            '28'
+            '29'
+            '30'
+            '31')
+        end>
+      OnChanged = DPFPickerView1Changed
+    end
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 88.000000000000000000
+      Position.Y = 336.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Set Default'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton1Click
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 73.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = xFFCFE1E8
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+      AdjustsFontSizeToFitWidth = True
+    end
+  end
+end

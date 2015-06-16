@@ -1,0 +1,152 @@
+object FiCloud: TFiCloud
+  Left = 0
+  Top = 0
+  Caption = 'iCloud'
+  ClientHeight = 460
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFButtonCheckiCloud: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claSlategray
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Check iCloud'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButtonCheckiCloudClick
+    end
+    object DPFButtonSetValue: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claSlategray
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 275.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Set value'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButtonSetValueClick
+    end
+    object DPFLabel2: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      ShadowColor = claBurlywood
+      TagNative = 0
+      Position.X = 24.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 269.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = '---------------'
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFTextField1: TDPFTextField
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 227.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Text = '123456'
+    end
+    object DPFButtonDelete: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claSlategray
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 357.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Delete Key'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButtonDeleteClick
+    end
+    object DPFButtonSync: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claSlategray
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Sync'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButtonSyncClick
+    end
+  end
+  object DPFiCloud1: TDPFiCloud
+    OnKeyChanged = DPFiCloud1KeyChanged
+    Left = 48
+    Top = 32
+  end
+  object DPFKeyboard1: TDPFKeyboard
+    HideButtonCaption = 'Done'
+    Left = 272
+    Top = 360
+  end
+  object DPFSlideDialog1: TDPFSlideDialog
+    ParentView = DPFUIView1
+    BackgroundColor = claBlack
+    TextColor = claWhite
+    Alpha = 0.699999988079071000
+    Left = 240
+    Top = 64
+  end
+end

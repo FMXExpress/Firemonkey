@@ -1,0 +1,132 @@
+object Form49: TForm49
+  Left = 0
+  Top = 0
+  Caption = 'MobilePhoto'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object ToolBarBottom: TToolBar
+    Align = Bottom
+    Height = 44.000000000000000000
+    Position.Y = 504.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object ButtonTakePhotoFromCamera: TButton
+      Action = TakePhotoFromCameraAction1
+      Align = Center
+      Height = 44.000000000000000000
+      StyleLookup = 'cameratoolbutton'
+      TabOrder = 0
+      Width = 44.000000000000000000
+    end
+  end
+  object LbWalls: TListBox
+    Align = Bottom
+    Height = 120.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.Y = 374.000000000000000000
+    TabOrder = 14
+    Width = 320.000000000000000000
+    ItemHeight = 44.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    OnItemClick = LbWallsItemClick
+  end
+  object CalloutPanel1: TCalloutPanel
+    Align = Client
+    Height = 279.000000000000000000
+    Padding.Top = 11.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Width = 310.000000000000000000
+    TabOrder = 33
+    CalloutWidth = 23.000000000000000000
+    CalloutLength = 11.000000000000000000
+    CalloutPosition = Bottom
+    object ImCaptured: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Align = Client
+      Height = 243.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Width = 290.000000000000000000
+    end
+  end
+  object ToolBarTop: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 40
+    Width = 320.000000000000000000
+    object Label2: TLabel
+      Align = Contents
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Mobile PhotoWall'
+      Width = 320.000000000000000000
+    end
+    object BtRefresh: TButton
+      Align = Right
+      Height = 44.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 271.000000000000000000
+      StyleLookup = 'refreshtoolbutton'
+      TabOrder = 1
+      Text = 'Refresh'
+      Width = 44.000000000000000000
+      OnClick = BtRefreshClick
+    end
+  end
+  object Label1: TLabel
+    Align = Bottom
+    Height = 31.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 343.000000000000000000
+    StyleLookup = 'embossedlabel'
+    Text = 'Select Photo Wall:'
+    Width = 315.000000000000000000
+  end
+  object AcActions: TActionList
+    Left = 40
+    Top = 296
+    object TakePhotoFromCameraAction1: TTakePhotoFromCameraAction
+      OnDidFinishTaking = TakePhotoFromCameraAction1DidFinishTaking
+    end
+  end
+  object TakePhotoManager: TTetheringManager
+    OnEndManagersDiscovery = TakePhotoManagerEndManagersDiscovery
+    OnEndProfilesDiscovery = TakePhotoManagerEndProfilesDiscovery
+    OnRequestManagerPassword = TakePhotoManagerRequestManagerPassword
+    OnRemoteManagerShutdown = TakePhotoManagerRemoteManagerShutdown
+    Password = '1234'
+    Text = 'TakePhotoManager'
+    Left = 72
+    Top = 88
+  end
+  object TakePhotoAppProfile: TTetheringAppProfile
+    Manager = TakePhotoManager
+    Text = 'TakePhotoAppProfile'
+    Actions = <>
+    Resources = <>
+    Left = 216
+    Top = 88
+  end
+end

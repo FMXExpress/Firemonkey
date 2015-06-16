@@ -1,0 +1,100 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claWhite
+    object DPFUITableView1: TDPFUITableView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagBoolean = False
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 460.000000000000000000
+      Size.PlatformDefault = False
+      Options.BackgroundColor = claNull
+      Options.TextFont.FontName = ios_Helvetica_Bold
+      Options.TextFont.FontSize = 18
+      Options.DescriptionFont.FontName = ios_Helvetica
+      Options.ViewStyle = tvsGrouped
+      Options.RowHeight = 44.000000000000000000
+      Sections = <
+        item
+          Header.Text = 'Header 1'
+          Header.Font.FontName = ios_Helvetica_Bold
+          Header.Font.FontSize = 18
+          Header.Alpha = 0.899999976158142100
+          Footer.Font.FontName = ios_Helvetica_Bold
+          Footer.Font.FontSize = 18
+          Footer.Alpha = 0.899999976158142100
+          TableItems = <
+            item
+              ItemText.Text = 'Item Text 0'
+              ItemDescription.Color = claGray
+              BackgroundColor = claNull
+            end
+            item
+              ItemText.Text = 'Item Text 1'
+              ItemDescription.Color = claGray
+              BackgroundColor = claNull
+            end
+            item
+              ItemText.Text = 'Item Text 2'
+              ItemDescription.Color = claGray
+              BackgroundColor = claNull
+            end
+            item
+              ItemText.Text = 'Item Text 3'
+              ItemDescription.Color = claGray
+              BackgroundColor = claNull
+            end>
+        end
+        item
+          Header.Text = 'Header 2'
+          Header.Font.FontName = ios_Helvetica_Bold
+          Header.Font.FontSize = 18
+          Header.Alpha = 0.899999976158142100
+          Footer.Kind = kCustom
+          Footer.Text = 'Custom Footer!'
+          Footer.TextAlign = taCenter
+          Footer.Font.FontName = ios_Helvetica_Bold
+          Footer.Font.FontSize = 18
+          Footer.Alpha = 0.899999976158142100
+          TableItems = <
+            item
+              ItemText.Text = 'Item Text 0'
+              ItemDescription.Color = claGray
+              BackgroundColor = claNull
+            end
+            item
+              ItemText.Text = 'Item Text 1'
+              ItemDescription.Color = claGray
+              BackgroundColor = claNull
+            end
+            item
+              ItemText.Text = 'Item Text 2'
+              ItemDescription.Color = claGray
+              BackgroundColor = claNull
+            end>
+        end>
+    end
+  end
+end

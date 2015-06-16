@@ -1,0 +1,123 @@
+object FPDFExport: TFPDFExport
+  Left = 0
+  Top = 0
+  Caption = 'PDF Export'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIViewController1: TDPFUIViewController
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 415.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claPeachpuff
+    object DPFImageView2: TDPFImageView
+      ContentMode = vcmScaleAspectFit
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 217.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 217.000000000000000000
+      Size.PlatformDefault = False
+      ImageList.Strings = (
+        '/Documents/DPF2.png')
+      AnimationDuration = 1.000000000000000000
+      IndicatorAlpha = 0.699999988079071000
+    end
+    object DPFQLPreviewController1: TDPFQLPreviewController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 8.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 304.000000000000000000
+      Size.Height = 159.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      ShadowColor = claYellow
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'This simple PDF Export'
+      BackgroundColor = claYellowgreen
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFImageView1: TDPFImageView
+      ContentMode = vcmScaleAspectFit
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 57.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 160.000000000000000000
+      Size.PlatformDefault = False
+      ImageList.Strings = (
+        'DPF1.png')
+      AnimationDuration = 1.000000000000000000
+      IndicatorAlpha = 0.699999988079071000
+    end
+  end
+  object DPFToolbar1: TDPFToolbar
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 45.000000000000000000
+    Size.PlatformDefault = False
+    BarItems = <
+      item
+        Font.FontName = ios_Helvetica_Bold
+        Title = 'Create PDF'
+        ButtonItemKind = bkTitle
+        ButtonItemStyle = bbisBordered
+        OnClick = DPFNavigationControllerPage1BarButtons0Click
+        ModalResult = 0
+        Width = 100.000000000000000000
+      end
+      item
+        Font.FontName = ios_Helvetica_Bold
+        ButtonSystemItem = bbsiFlexibleSpace
+        ModalResult = 0
+        Width = 50.000000000000000000
+      end
+      item
+        Font.FontName = ios_Helvetica_Bold
+        Title = 'Show PDF'
+        ButtonItemKind = bkTitle
+        ButtonItemStyle = bbisBordered
+        OnClick = DPFToolbar1BarItems2Click
+        ModalResult = 0
+        Width = 100.000000000000000000
+      end>
+  end
+end

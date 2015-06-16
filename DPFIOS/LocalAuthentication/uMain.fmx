@@ -1,0 +1,50 @@
+object FLocalAuthentication: TFLocalAuthentication
+  Left = 0
+  Top = 0
+  Caption = 'Alert View'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 2
+  object DPFUIViewController1: TDPFUIViewController
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claWhite
+    RootViewController = True
+    object DPFButton2: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = Top
+      Position.X = 50.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 220.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Local Authentication'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claChartreuse
+      BackgroundColorHighlight = claGreen
+      AdjustsImageWhenHighlighted = False
+    end
+  end
+end

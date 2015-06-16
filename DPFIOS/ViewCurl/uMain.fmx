@@ -1,0 +1,77 @@
+object FViewCurl: TFViewCurl
+  Left = 0
+  Top = 0
+  Caption = 'Curl Effect'
+  ClientHeight = 460
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 410.000000000000000000
+    Size.PlatformDefault = False
+    object DPFSwitch1: TDPFSwitch
+      Alpha = 1.000000000000000000
+      Visible = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 224.000000000000000000
+      Position.Y = 364.000000000000000000
+      Size.Width = 77.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object DPFUIView2: TDPFUIView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 410.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claNull
+    end
+  end
+  object DPFToolbar1: TDPFToolbar
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    BarItems = <>
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Curl'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton1Click
+    end
+  end
+end

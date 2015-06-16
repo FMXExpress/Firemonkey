@@ -1,0 +1,187 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object ToolBar1: TToolBar
+    Align = alBottom
+    Height = 44.000000000000000000
+    Padding.Left = 7.000000000000000000
+    Padding.Right = 7.000000000000000000
+    Position.Y = 416.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object btnAdd: TButton
+      Align = alLeft
+      Height = 30.000000000000000000
+      Position.X = 7.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'speedbuttonstyle'
+      TabOrder = 0
+      Text = 'Add'
+      Width = 100.000000000000000000
+      OnClick = btnAddClick
+    end
+    object btnDelete: TButton
+      Align = alRight
+      Enabled = False
+      Height = 30.000000000000000000
+      Position.X = 213.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'speedbuttonstyle'
+      TabOrder = 1
+      Text = 'Delete'
+      Width = 100.000000000000000000
+      OnClick = btnDeleteClick
+    end
+  end
+  object ListBox1: TListBox
+    Align = alTop
+    Height = 249.000000000000000000
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = gsGrouped
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Height = 31.000000000000000000
+      StyleLookup = 'listboxgroupheader'
+      Text = 'ToolBar'
+      Width = 304.000000000000000000
+    end
+    object ListBoxItem1: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 31.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'ToolBar'
+      Width = 304.000000000000000000
+      object swToolbar: TSwitch
+        Align = alRight
+        Height = 27.000000000000000000
+        IsChecked = False
+        Margins.Right = 10.000000000000000000
+        Position.X = 216.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        Width = 78.000000000000000000
+        OnSwitch = swToolbarSwitch
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 75.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Done button'
+      Width = 304.000000000000000000
+      object swDoneButton: TSwitch
+        Align = alRight
+        Height = 27.000000000000000000
+        IsChecked = False
+        Margins.Right = 10.000000000000000000
+        Position.X = 216.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        Width = 78.000000000000000000
+        OnSwitch = swDoneButtonSwitch
+      end
+    end
+    object ListBoxGroupHeader2: TListBoxGroupHeader
+      Height = 31.000000000000000000
+      Position.Y = 119.000000000000000000
+      StyleLookup = 'listboxgroupheader'
+      Text = 'Sample Controls'
+      Width = 304.000000000000000000
+    end
+    object ListBoxItem3: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 150.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Width = 304.000000000000000000
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Align = alLeft
+        TabOrder = 0
+        Position.X = 10.000000000000000000
+        Position.Y = 6.000000000000000000
+        Width = 103.000000000000000000
+        Height = 31.000000000000000000
+        Margins.Left = 10.000000000000000000
+        KillFocusByReturn = False
+      end
+      object SpeedButton1: TSpeedButton
+        Align = alLeft
+        Height = 30.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Position.X = 123.000000000000000000
+        Position.Y = 7.000000000000000000
+        Text = 'Button'
+        Trimming = ttCharacter
+        Width = 73.000000000000000000
+      end
+      object TrackBar1: TTrackBar
+        Align = alVertCenter
+        Height = 24.000000000000000000
+        Orientation = orHorizontal
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 206.000000000000000000
+        Position.Y = 10.000000000000000000
+        TabOrder = 2
+        Width = 88.000000000000000000
+      end
+    end
+    object ListBoxHeader2: TListBoxHeader
+      Height = 44.000000000000000000
+      TabOrder = 0
+      Width = 320.000000000000000000
+      object Label2: TLabel
+        Align = alClient
+        Height = 44.000000000000000000
+        StyleLookup = 'toollabel'
+        Text = 'Keyboard ToolBar'
+        TextAlign = taCenter
+        Width = 320.000000000000000000
+        Trimming = ttCharacter
+      end
+    end
+  end
+  object lbButtons: TListBox
+    Align = alClient
+    Height = 167.000000000000000000
+    TabOrder = 2
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = lbButtonsChange
+    object ListBoxGroupHeader3: TListBoxGroupHeader
+      Height = 23.000000000000000000
+      Text = 'Custom buttons'
+      Width = 320.000000000000000000
+    end
+  end
+end

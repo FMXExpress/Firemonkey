@@ -1,0 +1,100 @@
+object FTabHost: TFTabHost
+  Left = 0
+  Top = 0
+  Caption = 'TabHost'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJRelativeLayout1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claLightsteelblue
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJTabHost1: TDPFJTabHost
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Align = alClient
+      Width = 384.000000000000000000
+      Height = 567.000000000000000000
+      TabBarPanel.Alpha = 1.000000000000000000
+      object DPFAndroidTabBarItem1: TDPFAndroidTabBarItem
+        Alpha = 1.000000000000000000
+        BackgroundColor1 = claLightsteelblue
+        DrawType = dtCustom
+        Align = alClient
+        PageIndex = 2
+        ItemTitle = 'Item 1'
+        object DPFJRadioGroup1: TDPFJRadioGroup
+          Alpha = 1.000000000000000000
+          BackgroundColor1 = claLightsteelblue
+          Align = alTop
+          Width = 384.000000000000000000
+          Height = 305.000000000000000000
+          ButtonTextSize = 16.000000000000000000
+          RadioButtons.Strings = (
+            'Radio Item 1'
+            'Radio Item 2'
+            'Radio Item 3'
+            'Radio Item 4'
+            'Radio Item 5')
+        end
+        object DPFJSeekBar1: TDPFJSeekBar
+          Alpha = 1.000000000000000000
+          BackgroundColor1 = claLightsteelblue
+          Margins.Left = 20.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 20.000000000000000000
+          Margins.Bottom = 20.000000000000000000
+          Align = alTop
+          Position.X = 20.000000000000000000
+          Position.Y = 325.000000000000000000
+          Width = 344.000000000000000000
+          Height = 30.000000000000000000
+          Progress = 60
+        end
+      end
+      object DPFAndroidTabBarItem2: TDPFAndroidTabBarItem
+        Alpha = 1.000000000000000000
+        BackgroundColor1 = claWhite
+        BackgroundColor2 = claBlack
+        DrawType = dtCustom
+        Align = alClient
+        PageIndex = 1
+        ItemTitle = 'Item 2'
+        object DPFJImageView1: TDPFJImageView
+          Alpha = 1.000000000000000000
+          BackgroundColor1 = claLightsteelblue
+          Align = alClient
+          Width = 384.000000000000000000
+          Height = 522.000000000000000000
+          FileName = 'DPF.png'
+        end
+      end
+      object DPFAndroidTabBarItem3: TDPFAndroidTabBarItem
+        Alpha = 1.000000000000000000
+        BackgroundColor1 = claRed
+        BackgroundColor2 = claBlack
+        DrawType = dtCustom
+        Align = alClient
+        PageIndex = 0
+        ItemTitle = 'Item 3'
+        object DPFJAnalogClock1: TDPFJAnalogClock
+          Alpha = 1.000000000000000000
+          Align = alClient
+          Width = 384.000000000000000000
+          Height = 522.000000000000000000
+        end
+      end
+    end
+  end
+end

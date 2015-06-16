@@ -1,0 +1,35 @@
+object MonitorGuageForm: TMonitorGuageForm
+  Left = 0
+  Top = 0
+  Caption = 'CPULoad'
+  ClientHeight = 400
+  ClientWidth = 113
+  Visible = False
+  OnCreate = FormCreate
+  OnResize = FormResize
+  StyleLookup = 'backgroundstyle'
+  object ProgressBar1: TProgressBar
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Width = 97.000000000000000000
+    Height = 352.000000000000000000
+    TabOrder = 0
+    Max = 100.000000000000000000
+    Orientation = orVertical
+  end
+  object Label1: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 368.000000000000000000
+    Width = 97.000000000000000000
+    Height = 15.000000000000000000
+    TabOrder = 1
+    TextAlign = taCenter
+    Text = 'Label1'
+  end
+  object Timer1: TTimer
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 56
+    Top = 272
+  end
+end

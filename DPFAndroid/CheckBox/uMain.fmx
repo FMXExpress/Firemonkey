@@ -1,0 +1,61 @@
+object FCheckBox: TFCheckBox
+  Left = 0
+  Top = 0
+  Caption = 'CheckBox'
+  ClientHeight = 524
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 524
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claSilver
+    BackgroundColor2 = claWhite
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 524.000000000000000000
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      Position.X = 88.000000000000000000
+      Position.Y = 32.000000000000000000
+      Width = 209.000000000000000000
+      Height = 50.000000000000000000
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claBlack
+      BackgroundColor2 = claSilver
+      BorderColor = claGray
+      BorderCornerRadius = 1.000000000000000000
+      OnClick = DPFJButton1Click
+      Position.X = 88.000000000000000000
+      Position.Y = 280.000000000000000000
+      Width = 193.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Toggle'
+      TextColor = claWhite
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+  object DPFJCheckBox1: TDPFJCheckBox
+    Alpha = 1.000000000000000000
+    Position.X = 80.000000000000000000
+    Position.Y = 128.000000000000000000
+    Width = 233.000000000000000000
+    Height = 50.000000000000000000
+    Text = 'Check Box'
+    TextSize = 21.000000000000000000
+    TextAlignment = taFill
+    Checked = True
+    OnCheckedChanged = DPFJCheckBox1CheckedChanged
+  end
+end

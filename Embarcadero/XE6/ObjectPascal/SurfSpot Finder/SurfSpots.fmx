@@ -1,0 +1,412 @@
+object SurfSpotFinder: TSurfSpotFinder
+  Left = 0
+  Top = 0
+  Caption = 'Form23'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Height = 548.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Width = 320.000000000000000000
+    object AllSurfSpotsTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 8.000000000000000000
+      IsSelected = True
+      TabOrder = 0
+      Text = 'AllSurfSpotsTab'
+      Width = 8.000000000000000000
+      object AllSurfSpotsListView: TListView
+        ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+        ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 1
+        Align = Client
+        Height = 504.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        OnItemClick = AllSurfSpotsListViewItemClick
+        SearchVisible = True
+        object TTimer
+          Interval = 17
+        end
+      end
+      object AllSurfSpotsToolbar: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 1
+        Width = 320.000000000000000000
+        object AllSurfSpotsToollabel: TLabel
+          Align = Contents
+          Height = 44.000000000000000000
+          Margins.Right = 9.000000000000000000
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'SurfSpot Finder'
+          Width = 311.000000000000000000
+        end
+        object GotoFavorites: TSpeedButton
+          Action = ChangeTabAction4
+          Align = Right
+          Height = 44.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 236.000000000000000000
+          StyleLookup = 'toolbutton'
+          TextSettings.Font.Size = 14.000000000000000000
+          Width = 79.000000000000000000
+          OnClick = GotoFavoritesClick
+        end
+      end
+    end
+    object SurfSpotDetailsTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 8.000000000000000000
+      IsSelected = False
+      TabOrder = 0
+      Text = 'SurfSpotDetailsTab'
+      Width = 8.000000000000000000
+      object WebBrowser1: TWebBrowser
+        Align = Bottom
+        Height = 340.000000000000000000
+        Position.Y = 208.000000000000000000
+        Width = 320.000000000000000000
+      end
+      object SurfSpotDetailsToolbar: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 1
+        Width = 320.000000000000000000
+        object SpotName: TLabel
+          Align = Contents
+          StyledSettings = [Family, Style, FontColor]
+          Height = 44.000000000000000000
+          Margins.Left = 65.000000000000000000
+          Margins.Right = 65.000000000000000000
+          StyleLookup = 'toollabel'
+          TextSettings.Font.Size = 15.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = '13th Street'
+          Width = 190.000000000000000000
+        end
+        object backbtn: TSpeedButton
+          Align = Left
+          Height = 44.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          StyleLookup = 'backtoolbutton'
+          Text = 'Back'
+          Width = 70.000000000000000000
+          OnClick = backbtnClick
+        end
+        object SaveasFavorite: TSpeedButton
+          Align = Right
+          Height = 44.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Position.X = 273.000000000000000000
+          StyleLookup = 'addtoolbutton'
+          Text = 'SaveasFavorite'
+          Width = 44.000000000000000000
+          OnClick = SaveasFavoriteClick
+        end
+      end
+      object SurfSpotInfoList: TListBox
+        Align = Top
+        Height = 142.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Position.Y = 59.000000000000000000
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 2
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        object LatitudeItem: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Latitude'
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 0
+          Text = '33.7368283382448'
+          Width = 304.000000000000000000
+        end
+        object LongitudeItem: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Longitude'
+          Position.Y = 44.000000000000000000
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 1
+          Text = '-118.103321819979'
+          Width = 304.000000000000000000
+        end
+        object CountyItem: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'County'
+          Position.Y = 88.000000000000000000
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 2
+          Text = 'Orange County'
+          Width = 304.000000000000000000
+        end
+      end
+    end
+    object FavoritesTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 8.000000000000000000
+      IsSelected = False
+      TabOrder = 0
+      Text = 'FavoritesTab'
+      Width = 8.000000000000000000
+      object FavoritesListBox: TListBox
+        Align = Client
+        Height = 504.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnItemClick = FavoritesListBoxItemClick
+      end
+      object FavoritesToolbar: TToolBar
+        Height = 44.000000000000000000
+        TabOrder = 1
+        Width = 320.000000000000000000
+        object FavoritesToollabel: TLabel
+          Align = Contents
+          StyledSettings = [Family, Style, FontColor, Other]
+          Height = 44.000000000000000000
+          StyleLookup = 'toollabel'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'Favorite Spots'
+          Width = 320.000000000000000000
+        end
+        object backtoHome: TSpeedButton
+          Align = Left
+          Height = 44.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Text = 'Home'
+          Width = 73.000000000000000000
+          OnClick = backtoHomeClick
+        end
+      end
+    end
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    AcceptEncoding = 'identity'
+    BaseURL = 'http://api.spitcast.com'
+    Params = <>
+    HandleRedirects = True
+    Left = 168
+    Top = 104
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Resource = 'api/spot/all'
+    Response = RESTResponse1
+    SynchronizedEvents = False
+    Left = 168
+    Top = 200
+  end
+  object RESTResponse1: TRESTResponse
+    ContentType = 'application/json'
+    Left = 248
+    Top = 192
+  end
+  object FDMemTable1: TFDMemTable
+    Active = True
+    FieldDefs = <
+      item
+        Name = 'county_name'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'latitude'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'longitude'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'spot_id'
+        DataType = ftString
+        Size = 255
+      end
+      item
+        Name = 'spot_name'
+        DataType = ftString
+        Size = 255
+      end>
+    IndexDefs = <>
+    IndexFieldNames = 'spot_name'
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 56
+    Top = 280
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Active = True
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    Response = RESTResponse1
+    Left = 208
+    Top = 296
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 64
+    Top = 184
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 244
+    Top = 101
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'spot_name'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'county_name'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'spot_name'
+      Control = AllSurfSpotsListView
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'spot_name'
+      FillHeaderCustomFormat = 'SubString(%s, 0, 1)'
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField2: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'county_name'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'spot_name'
+      Component = SpotName
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldItemDataText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'latitude'
+      Component = LatitudeItem
+      ComponentProperty = 'ItemData.Text'
+    end
+    object LinkPropertyToFieldItemDataText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'longitude'
+      Component = LongitudeItem
+      ComponentProperty = 'ItemData.Text'
+    end
+    object LinkPropertyToFieldItemDataText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'county_name'
+      Component = CountyItem
+      ComponentProperty = 'ItemData.Text'
+    end
+    object LinkFillControlToField3: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = BindSourceDB1
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField4: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'spot_name'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'county_name'
+      FillHeaderCustomFormat = '"My favorite " + UpperCase(%s)'
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      Control = FavoritesListBox
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object ActionList1: TActionList
+    Left = 72
+    Top = 112
+    object ChangeTabAction1: TChangeTabAction
+      CustomText = 'Back'
+      Tab = AllSurfSpotsTab
+    end
+    object ChangeTabAction2: TChangeTabAction
+      CustomText = 'Back'
+      Tab = AllSurfSpotsTab
+    end
+    object ChangeTabAction3: TChangeTabAction
+      CustomText = 'Home'
+      Tab = AllSurfSpotsTab
+    end
+    object ChangeTabAction4: TChangeTabAction
+      CustomText = 'Favorites'
+      Tab = FavoritesTab
+    end
+  end
+end

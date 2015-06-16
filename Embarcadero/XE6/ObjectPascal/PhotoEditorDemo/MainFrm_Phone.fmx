@@ -1,0 +1,37 @@
+inherited PhoneMainForm: TPhoneMainForm
+  Caption = 'PhoneFormMain1'
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkiPhone]
+  FormFamily = 'Main'
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  inherited ImageContainer: TImage
+    OnClick = ImageContainerClick
+  end
+  inherited ToolBarTop: TToolBar
+    inherited SpeedButton4: TSpeedButton
+      IsPressed = True
+    end
+  end
+  object TextToSelectImage: TText [4]
+    Align = alCenter
+    Color = claWhite
+    Font.Family = 'Helvetica'
+    Font.Size = 18.000000000000000000
+    Font.Style = [fsBold]
+    Height = 58.000000000000000000
+    HitTest = False
+    Text = 'Click to select existing image'
+    Width = 169.000000000000000000
+  end
+  inherited ActionList: TActionList
+    inherited ActionResetEffect: TAction
+      Checked = True
+    end
+  end
+end

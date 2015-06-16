@@ -1,0 +1,114 @@
+object FTableView: TFTableView
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUITableView1: TDPFUITableView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    OnItemDeSelect = DPFUITableView1ItemDeSelect
+    OnItemSelect = DPFUITableView1ItemSelect
+    Options.BackgroundColor = claPeachpuff
+    Options.SelectedColor = claChocolate
+    Options.TextFont.FontName = ios_Helvetica_Bold
+    Options.TextFont.FontSize = 18
+    Options.DescriptionFont.FontName = ios_Helvetica
+    Options.RowHeight = 60.000000000000000000
+    Sections = <
+      item
+        Header.Kind = kCustom
+        Header.Text = 'Header 1'
+        Header.BackgroundColor = claNull
+        Header.Font.FontName = ios_Helvetica_Bold
+        Header.Font.FontSize = 18
+        Header.Alpha = 0.899999976158142100
+        Footer.Font.FontName = ios_Helvetica_Bold
+        Footer.Font.FontSize = 18
+        Footer.Alpha = 0.899999976158142100
+        TableItems = <
+          item
+            Style = tvcsSubtitle
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'Section 0 Item 0'
+            ItemDescription.Text = 'This is Desc 0'
+            ItemDescription.Color = claGray
+            BackgroundColor = claNull
+          end
+          item
+            Style = tvcsSubtitle
+            ImageName = '/Documents/businessman.png'
+            ItemText.Text = 'Section 0 Item 1'
+            ItemText.NumberOfLines = 0
+            ItemDescription.Text = 'This is Desc 1'
+            ItemDescription.Color = claGray
+            BackgroundColor = claNull
+          end
+          item
+            Style = tvcsSubtitle
+            ImageName = '/Documents/businessmen.png'
+            ItemText.Text = 'Section 0 Item 2'
+            ItemDescription.Text = 'This is Desc 2'
+            ItemDescription.Color = claGray
+            BackgroundColor = claNull
+          end
+          item
+            ImageName = '/Documents/mail.png'
+            ItemText.Text = 'Section 0 Item 3'
+            ItemDescription.Color = claGray
+            BackgroundColor = claNull
+          end
+          item
+            ImageName = '/Documents/flower_yellow.png'
+            ItemText.Text = 'Section 0 Item 4'
+            ItemDescription.Color = claGray
+            BackgroundColor = claNull
+          end>
+      end
+      item
+        Header.Kind = kCustom
+        Header.Text = 'Header 2'
+        Header.BackgroundColor = claNull
+        Header.Font.FontName = ios_Helvetica_Bold
+        Header.Font.FontSize = 18
+        Header.Alpha = 0.899999976158142100
+        Footer.BackgroundColor = claNull
+        Footer.Font.FontName = ios_Helvetica_Bold
+        Footer.Font.FontSize = 18
+        Footer.Alpha = 0.899999976158142100
+        TableItems = <
+          item
+            ItemText.Text = 'Section 1 Item 0'
+            ItemDescription.Color = claGray
+            BackgroundColor = claNull
+          end
+          item
+            ItemText.Text = 'Section 1 Item 1'
+            ItemDescription.Color = claGray
+            BackgroundColor = claNull
+          end
+          item
+            ItemText.Text = 'Section 1 Item 2'
+            ItemDescription.Color = claGray
+            BackgroundColor = claNull
+          end
+          item
+            ItemText.Text = 'Section 1 Item 3'
+            ItemDescription.Color = claGray
+            BackgroundColor = claNull
+          end>
+      end>
+  end
+end

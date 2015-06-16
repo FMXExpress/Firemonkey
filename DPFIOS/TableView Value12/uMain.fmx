@@ -1,0 +1,75 @@
+object FTableViewValue12: TFTableViewValue12
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUITableView1: TDPFUITableView
+    Alpha = 1.000000000000000000
+    Font.FontSize = 12
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    OnCellClick = DPFUITableView1CellClick
+    Options.SeparatorColor = claCornflowerblue
+    Options.TextFont.FontName = ios_Helvetica_Bold
+    Options.TextFont.FontSize = 18
+    Options.DescriptionFont.FontName = ios_Helvetica
+    Options.RowHeight = 60.000000000000000000
+    Sections = <
+      item
+        Header.Text = 'Header 1'
+        Header.Font.FontName = ios_Helvetica_Bold
+        Header.Font.FontSize = 18
+        Header.Alpha = 0.899999976158142100
+        Footer.Font.FontName = ios_Helvetica_Bold
+        Footer.Font.FontSize = 18
+        Footer.Alpha = 0.899999976158142100
+        TableItems = <
+          item
+            Style = tvcsValue1
+            ImageName = 'admin.png'
+            ItemText.Text = 'Section 0 Item 0'
+            ItemDescription.Text = 'tvcsValue1'
+            ItemDescription.Color = claBlue
+          end
+          item
+            Style = tvcsValue1
+            ImageName = 'businessman.png'
+            ItemText.Text = 'Section 0 Item 1'
+            ItemDescription.Text = 'tvcsValue1'
+            ItemDescription.Color = claBlue
+          end
+          item
+            Style = tvcsValue1
+            ImageName = 'businessmen.png'
+            ItemText.Text = 'Section 0 Item 2'
+            ItemDescription.Text = 'tvcsValue1'
+            ItemDescription.Color = claBlue
+          end
+          item
+            Style = tvcsValue2
+            ImageName = 'mail.png'
+            ItemText.Text = 'Section 0 Item 3'
+            ItemDescription.Text = 'tvcsValue2'
+            ItemDescription.Color = claBrown
+          end
+          item
+            Style = tvcsValue2
+            ImageName = 'flower_yellow.png'
+            ItemText.Text = 'Section 0 Item 4'
+            ItemDescription.Text = 'tvcsValue2'
+            ItemDescription.Color = claBrown
+          end>
+      end>
+  end
+end

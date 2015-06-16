@@ -1,0 +1,11 @@
+Title: ShareSheet
+
+Brief Description: This snippet shows you how to use standard actions in order to open the Camera Application on your iOS device, 
+take a picture and retrieve the taken image for displaying on your FireMonkey form. Then with another standard action, you will open the 
+sharing sheet in order to share that image with other services.
+
+Language: C++
+
+Platforms supported: iOS, Android
+
+Keywords: image, Photo Library, iOS, Android, camera, sharing, share sheet

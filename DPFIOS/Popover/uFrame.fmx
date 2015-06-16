@@ -1,0 +1,49 @@
+object Frame1: TFrame1
+  Height = 200.000000000000000000
+  Width = 200.000000000000000000
+  object DPFUITableView1: TDPFUITableView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    Align = alClient
+    Width = 200.000000000000000000
+    Height = 200.000000000000000000
+    Options.BackgroundColor = claCrimson
+    Sections = <
+      item
+        Header.Font.FontName = ios_Helvetica_Bold
+        Header.Font.FontSize = 18
+        Header.Alpha = 0.899999976158142100
+        Footer.Font.FontName = ios_Helvetica_Bold
+        Footer.Font.FontSize = 18
+        Footer.Alpha = 0.899999976158142100
+        TableItems = <
+          item
+            ItemText.Text = 'Text 0'
+            ItemText.Color = claWhite
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Text 1'
+            ItemText.Color = claWhite
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Text 2'
+            ItemText.Color = claWhite
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Text 3'
+            ItemText.Color = claWhite
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Text 4'
+            ItemText.Color = claWhite
+            ItemDescription.Color = claGray
+          end>
+      end>
+  end
+end

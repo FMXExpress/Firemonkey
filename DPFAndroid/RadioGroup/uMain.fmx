@@ -1,0 +1,92 @@
+object FRadioGroup: TFRadioGroup
+  Left = 0
+  Top = 0
+  Caption = 'RadioGroup'
+  ClientHeight = 524
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 524
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claSilver
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 524.000000000000000000
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claSilver
+      BackgroundColor2 = claGray
+      BorderColor = claGray
+      BorderCornerRadius = 1.000000000000000000
+      DrawType = dtCustom
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Align = alTop
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Width = 374.000000000000000000
+      Height = 50.000000000000000000
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJRadioGroup1: TDPFJRadioGroup
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claSilver
+      DrawType = dtCustom
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = alTop
+      Position.X = 20.000000000000000000
+      Position.Y = 80.000000000000000000
+      Width = 344.000000000000000000
+      Height = 425.000000000000000000
+      ButtonTextSize = 16.000000000000000000
+      RadioButtons.Strings = (
+        'Radio 1'
+        'Radio 2'
+        'Radio 3'
+        'Radio 4'
+        'Radio 5'
+        'Radio 6'
+        'Radio 7'
+        'Radio 8'
+        'Radio 9')
+      OnCheckedChanged = DPFJRadioGroup1CheckedChanged
+    end
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      OnClick = DPFJButton1Click
+      Position.X = 24.000000000000000000
+      Position.Y = 512.000000000000000000
+      Width = 137.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Clear Check'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton2: TDPFJButton
+      Alpha = 1.000000000000000000
+      OnClick = DPFJButton2Click
+      Position.X = 192.000000000000000000
+      Position.Y = 512.000000000000000000
+      Width = 137.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Check ID3'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+end

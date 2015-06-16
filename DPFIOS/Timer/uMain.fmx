@@ -1,0 +1,64 @@
+object FTimer: TFTimer
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'Timer'
+  ClientHeight = 460
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFLabel2: TDPFLabel
+      Alpha = 1.000000000000000000
+      Font.FontSize = 24
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      ShadowColor = claBurlywood
+      TagNative = 0
+      Position.X = 24.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 269.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = '00:00:00'
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 104.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Start'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton1Click
+    end
+  end
+  object DPFNSTimer1: TDPFNSTimer
+    OnTimer = DPFNSTimer1Timer
+    Left = 144
+    Top = 128
+  end
+end

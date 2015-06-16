@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claNull
+    object DPFToolbar1: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiFlexibleSpace
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Form 1'
+          ButtonItemKind = bkTitle
+          ModalResult = 0
+          Width = 150.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiFlexibleSpace
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Go Form2'
+          ButtonItemKind = bkTitle
+          ButtonItemStyle = bbisBordered
+          ButtonSystemItem = bbsiAdd
+          OnClick = DPFToolbar1BarItems3Click
+          ModalResult = 0
+          Width = 70.000000000000000000
+        end>
+    end
+    object DPFUITableView1: TDPFUITableView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 419.000000000000000000
+      Size.PlatformDefault = False
+      OnItemSelect = DPFUITableView1ItemSelect
+      Options.TextFont.FontName = ios_Helvetica_Bold
+      Options.TextFont.FontSize = 18
+      Options.DescriptionFont.FontName = ios_Helvetica
+      Options.ViewStyle = tvsGrouped
+      Options.RowHeight = 44.000000000000000000
+      Sections = <
+        item
+          Header.Font.FontName = ios_Helvetica_Bold
+          Header.Font.FontSize = 18
+          Header.Alpha = 0.899999976158142100
+          Footer.Font.FontName = ios_Helvetica_Bold
+          Footer.Font.FontSize = 18
+          Footer.Alpha = 0.899999976158142100
+          TableItems = <
+            item
+              AccessoryType = tvcaDisclosureIndicator
+              ItemText.Text = 'Item 1'
+              ItemDescription.Color = claGray
+            end
+            item
+              AccessoryType = tvcaDisclosureIndicator
+              ItemText.Text = 'Item 2'
+              ItemDescription.Color = claGray
+            end
+            item
+              AccessoryType = tvcaDisclosureIndicator
+              ItemText.Text = 'Item 3'
+              ItemDescription.Color = claGray
+            end
+            item
+              AccessoryType = tvcaDisclosureIndicator
+              ItemText.Text = 'Item 4'
+              ItemDescription.Color = claGray
+            end>
+        end>
+    end
+  end
+end

@@ -1,0 +1,42 @@
+object RectsForm: TRectsForm
+  Left = 0
+  Top = 0
+  Caption = 'FireMonkey HD - Lot of rects'
+  ClientHeight = 400
+  ClientWidth = 600
+  FormFactor.Width = 2199
+  FormFactor.Height = 1276
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ScrollBox1: TScrollBox
+    Align = Client
+    Height = 400.000000000000000000
+    TabOrder = 0
+    Width = 600.000000000000000000
+  end
+  object Selection1: TSelection
+    GripSize = 3.000000000000000000
+    Height = 181.000000000000000000
+    HideSelection = False
+    Proportional = False
+    Position.X = 82.000000000000000000
+    Position.Y = 92.000000000000000000
+    Width = 197.000000000000000000
+    object Rectangle1: TRectangle
+      Align = Client
+      Fill.Color = xB4F85C5C
+      Height = 181.000000000000000000
+      HitTest = False
+      Stroke.Kind = None
+      XRadius = 4.000000000000000000
+      YRadius = 4.000000000000000000
+      Width = 197.000000000000000000
+    end
+  end
+end

@@ -1,0 +1,60 @@
+object FNumberPicker: TFNumberPicker
+  Left = 0
+  Top = 0
+  Caption = 'NumberPicker'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claBlack
+    BackgroundColor2 = claSilver
+    BackgroundColor3 = claBlack
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJNumberPicker1: TDPFJNumberPicker
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = alTop
+      Position.X = 20.000000000000000000
+      Position.Y = 110.000000000000000000
+      Width = 344.000000000000000000
+      Height = 145.000000000000000000
+      OnValueChange = DPFJNumberPicker1ValueChange
+    end
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGray
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 5.000000000000000000
+      DrawType = dtCustom
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = alTop
+      Position.X = 20.000000000000000000
+      Position.Y = 20.000000000000000000
+      Width = 344.000000000000000000
+      Height = 50.000000000000000000
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+end

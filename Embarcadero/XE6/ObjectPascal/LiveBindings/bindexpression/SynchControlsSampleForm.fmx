@@ -1,0 +1,822 @@
+object SynchControlsForm: TSynchControlsForm
+  Left = 0
+  Top = 0
+  Caption = 'Synchonize Controls '
+  ClientHeight = 693
+  ClientWidth = 828
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Root1: TLayout
+    Align = alClient
+    Height = 693.000000000000000000
+    Width = 828.000000000000000000
+    object ToolBar1: TToolBar
+      Height = 73.000000000000000000
+      HelpType = htKeyword
+      TabOrder = 0
+      Width = 828.000000000000000000
+      object Label4: TLabel
+        Align = alCenter
+        Font.Size = 12.000000000000000000
+        Height = 55.000000000000000000
+        HelpType = htKeyword
+        Text = 
+          'Unidirection and Bidirectional expressions are used to synchroni' +
+          'ze controls'
+        TextAlign = taCenter
+        Width = 433.000000000000000000
+      end
+    end
+    object Grid1: TGridLayout
+      Align = alClient
+      Height = 612.000000000000000000
+      ItemHeight = 200.000000000000000000
+      ItemWidth = 200.000000000000000000
+      Orientation = orHorizontal
+      Margins.Left = 4.000000000000000000
+      Margins.Top = 4.000000000000000000
+      Margins.Right = 4.000000000000000000
+      Margins.Bottom = 4.000000000000000000
+      Width = 820.000000000000000000
+      object Panel1: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 2.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 0
+        object ValueLabel1: TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = 'TrackBar <-> Edit and Label'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel1TrackBar1: TTrackBar
+          Frequency = 1.000000000000000000
+          Height = 20.000000000000000000
+          HelpType = htKeyword
+          Orientation = orHorizontal
+          Position.X = 42.000000000000000000
+          Position.Y = 45.000000000000000000
+          TabOrder = 1
+          Width = 109.000000000000000000
+          OnChange = OnControlChange
+        end
+        object Panel1Edit1: TEdit
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 2
+          Text = '0'
+          Position.X = 13.000000000000000000
+          Position.Y = 103.000000000000000000
+          Width = 110.000000000000000000
+          Height = 21.000000000000000000
+          HelpType = htKeyword
+          KillFocusByReturn = False
+          OnChange = OnControlChange
+        end
+        object Panel1Label1: TLabel
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 127.000000000000000000
+          Position.Y = 105.000000000000000000
+          Text = '0'
+          TextAlign = taCenter
+          Width = 50.000000000000000000
+        end
+        object Panel1CheckBox1: TCheckBox
+          Height = 19.000000000000000000
+          Position.X = 16.000000000000000000
+          Position.Y = 168.000000000000000000
+          TabOrder = 4
+          Text = 'Active'
+          Width = 120.000000000000000000
+          OnChange = Panel1CheckBox1Change
+        end
+      end
+      object Panel2: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 202.000000000000000000
+        Position.Y = 2.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 1
+        object TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = 'Two TrackBar <-> sync'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel2Tracker1: TTrackBar
+          Frequency = 0.500000000000000000
+          Height = 20.000000000000000000
+          HelpType = htKeyword
+          Orientation = orHorizontal
+          Position.X = 30.000000000000000000
+          Position.Y = 76.000000000000000000
+          TabOrder = 1
+          Value = 50.000000000000000000
+          Width = 135.000000000000000000
+          OnChange = OnControlChange
+        end
+        object Panel2Tracker2: TTrackBar
+          Frequency = 0.500000000000000000
+          Height = 20.000000000000000000
+          HelpType = htKeyword
+          Orientation = orHorizontal
+          Position.X = 30.000000000000000000
+          Position.Y = 110.000000000000000000
+          TabOrder = 2
+          Value = 33.000000000000000000
+          Width = 135.000000000000000000
+          OnChange = OnControlChange
+        end
+        object Panel2Label1: TLabel
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 56.000000000000000000
+          Position.Y = 41.000000000000000000
+          Text = 'Label'
+          TextAlign = taCenter
+          Width = 83.000000000000000000
+        end
+        object Panel2CheckBox: TCheckBox
+          Height = 19.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 168.000000000000000000
+          TabOrder = 4
+          Text = 'Active'
+          Width = 120.000000000000000000
+          OnChange = Panel1CheckBox1Change
+        end
+      end
+      object Panel3: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 402.000000000000000000
+        Position.Y = 2.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 2
+        object TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = 'Edit -> Label'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel3Edit1: TEdit
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 1
+          Text = 'BindingText'
+          Position.X = 27.000000000000000000
+          Position.Y = 105.000000000000000000
+          Width = 149.000000000000000000
+          Height = 21.000000000000000000
+          HelpType = htKeyword
+          KillFocusByReturn = False
+          OnChange = OnControlChange
+        end
+        object Panel3Label1: TLabel
+          Height = 38.000000000000000000
+          HelpType = htKeyword
+          Position.X = 27.000000000000000000
+          Position.Y = 46.000000000000000000
+          Text = 'binding text'
+          TextAlign = taCenter
+          Width = 149.000000000000000000
+        end
+        object Panel3CheckBox1: TCheckBox
+          Height = 19.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 168.000000000000000000
+          TabOrder = 3
+          Text = 'Active'
+          Width = 120.000000000000000000
+          OnChange = Panel1CheckBox1Change
+        end
+      end
+      object Panel4: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 602.000000000000000000
+        Position.Y = 2.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 3
+        object TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = 'NumberBox -> Label'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel4NumberBox1: TNumberBox
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 1
+          Cursor = crIBeam
+          Position.X = 48.000000000000000000
+          Position.Y = 104.000000000000000000
+          Width = 100.000000000000000000
+          Height = 21.000000000000000000
+          HelpType = htKeyword
+          VertIncrement = 5.000000000000000000
+          OnChange = OnControlChange
+        end
+        object Panel4Label1: TLabel
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 73.000000000000000000
+          Position.Y = 56.000000000000000000
+          StyleLookup = 'valuelabelstyle'
+          Text = '33'
+          TextAlign = taCenter
+          Width = 50.000000000000000000
+        end
+        object Panel4CheckBox1: TCheckBox
+          Height = 19.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 168.000000000000000000
+          TabOrder = 3
+          Text = 'Active'
+          Width = 120.000000000000000000
+          OnChange = Panel1CheckBox1Change
+        end
+      end
+      object Panel5: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 202.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 4
+        object TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = 'Edit <-> Edit'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel5Edit1: TEdit
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 1
+          Text = 'Edit'
+          Position.X = 35.000000000000000000
+          Position.Y = 66.000000000000000000
+          Width = 122.000000000000000000
+          Height = 21.000000000000000000
+          HelpType = htKeyword
+          KillFocusByReturn = False
+          OnChange = OnControlChange
+        end
+        object Panel5Edit2: TEdit
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 2
+          Text = 'Edit'
+          Position.X = 35.000000000000000000
+          Position.Y = 111.000000000000000000
+          Width = 122.000000000000000000
+          Height = 21.000000000000000000
+          HelpType = htKeyword
+          KillFocusByReturn = False
+          OnChange = OnControlChange
+        end
+      end
+      object Panel6: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 202.000000000000000000
+        Position.Y = 202.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 5
+        object TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = 'ListBox <-> Edit'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel6ListBox1: TListBox
+          Height = 87.000000000000000000
+          HelpType = htKeyword
+          Position.X = 30.000000000000000000
+          Position.Y = 74.000000000000000000
+          TabOrder = 1
+          Width = 130.000000000000000000
+          ItemIndex = 0
+          ItemHeight = 19.000000000000000000
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          OnChange = Panel6ListBox1Change
+          object TListBoxItem
+            Height = 19.000000000000000000
+            IsSelected = True
+            Text = 'lb one'
+            Width = 126.000000000000000000
+          end
+          object TListBoxItem
+            Height = 19.000000000000000000
+            Position.Y = 19.000000000000000000
+            Text = 'lb two'
+            Width = 126.000000000000000000
+          end
+          object TListBoxItem
+            Height = 19.000000000000000000
+            Position.Y = 38.000000000000000000
+            Text = 'lb three'
+            Width = 126.000000000000000000
+          end
+        end
+        object Panel6Edit1: TEdit
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 2
+          Text = 'text'
+          Position.X = 45.000000000000000000
+          Position.Y = 37.000000000000000000
+          Width = 100.000000000000000000
+          Height = 21.000000000000000000
+          HelpType = htKeyword
+          KillFocusByReturn = False
+          OnChange = OnControlChange
+        end
+        object Panel6CheckBox1: TCheckBox
+          Height = 19.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 168.000000000000000000
+          TabOrder = 3
+          Text = 'Active'
+          Width = 120.000000000000000000
+          OnChange = Panel1CheckBox1Change
+        end
+      end
+      object Panel7: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 402.000000000000000000
+        Position.Y = 202.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 6
+        object TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = 'ComboBox -> Label'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel7ComboBox1: TComboBox
+          DisableFocusEffect = False
+          Height = 23.000000000000000000
+          HelpType = htKeyword
+          ItemIndex = 3
+          ItemHeight = 19.000000000000000000
+          Position.X = 24.000000000000000000
+          Position.Y = 38.000000000000000000
+          TabOrder = 1
+          Width = 148.000000000000000000
+          OnChange = Panel7ComboBox1Change
+        end
+        object Panel7Label1: TLabel
+          Height = 18.000000000000000000
+          HelpType = htKeyword
+          Position.X = 40.000000000000000000
+          Position.Y = 106.000000000000000000
+          StyleLookup = 'valuelabelstyle'
+          TextAlign = taCenter
+          Width = 117.000000000000000000
+        end
+        object Panel7CheckBox1: TCheckBox
+          Height = 17.000000000000000000
+          Position.X = 16.000000000000000000
+          Position.Y = 168.000000000000000000
+          TabOrder = 3
+          Text = 'Active'
+          Width = 105.000000000000000000
+          OnChange = Panel1CheckBox1Change
+        end
+      end
+      object Panel8: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 602.000000000000000000
+        Position.Y = 202.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 7
+        object TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = 'TrackBar -> ProgressBar'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel8TrackBar1: TTrackBar
+          Height = 20.000000000000000000
+          HelpType = htKeyword
+          Orientation = orHorizontal
+          Position.X = 40.000000000000000000
+          Position.Y = 43.000000000000000000
+          TabOrder = 1
+          Width = 100.000000000000000000
+          OnChange = OnControlChange
+        end
+        object Panel8ProgressBar1: TProgressBar
+          Height = 17.000000000000000000
+          HelpType = htKeyword
+          Orientation = orHorizontal
+          Position.X = 16.000000000000000000
+          Position.Y = 104.000000000000000000
+          Width = 164.000000000000000000
+        end
+        object Panel8CheckBox1: TCheckBox
+          Height = 19.000000000000000000
+          Position.X = 16.000000000000000000
+          Position.Y = 168.000000000000000000
+          TabOrder = 3
+          Text = 'Active'
+          Width = 120.000000000000000000
+          OnChange = Panel1CheckBox1Change
+        end
+      end
+      object Panel9: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 402.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 8
+        object ValueLabel3: TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = 'Calendar ->'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel9Calendar1: TCalendar
+          ClipChildren = False
+          Date = 40478.000000000000000000
+          Height = 164.000000000000000000
+          HelpType = htKeyword
+          Position.X = 8.000000000000000000
+          Position.Y = 27.000000000000000000
+          TabOrder = 1
+          Width = 182.000000000000000000
+          OnChange = OnControlChange
+        end
+      end
+      object Panel10: TPanel
+        Align = alLeft
+        Height = 196.000000000000000000
+        HelpType = htKeyword
+        Padding.Left = 5.000000000000000000
+        Padding.Top = 5.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Padding.Bottom = 5.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Position.X = 202.000000000000000000
+        Position.Y = 402.000000000000000000
+        Width = 196.000000000000000000
+        TabOrder = 9
+        object Panel10Edit1: TEdit
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 0
+          Text = '10/27/2010'
+          Position.X = 27.000000000000000000
+          Position.Y = 105.000000000000000000
+          Width = 149.000000000000000000
+          Height = 21.000000000000000000
+          HelpType = htKeyword
+          KillFocusByReturn = False
+          OnChange = OnControlChange
+        end
+        object Panel10Label1: TLabel
+          Height = 38.000000000000000000
+          HelpType = htKeyword
+          Position.X = 27.000000000000000000
+          Position.Y = 46.000000000000000000
+          Text = 'Label'
+          TextAlign = taCenter
+          Width = 149.000000000000000000
+        end
+        object ValueLabel4: TLabel
+          Align = alTop
+          Height = 15.000000000000000000
+          HelpType = htKeyword
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Text = '<- Text Controls'
+          TextAlign = taCenter
+          Width = 186.000000000000000000
+        end
+        object Panel10CheckBox1: TCheckBox
+          Height = 19.000000000000000000
+          Position.X = 16.000000000000000000
+          Position.Y = 160.000000000000000000
+          TabOrder = 3
+          Text = 'Active'
+          Width = 120.000000000000000000
+          OnChange = Panel1CheckBox1Change
+        end
+      end
+    end
+  end
+  object Panel5CheckBox: TCheckBox
+    Height = 19.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 448.000000000000000000
+    TabOrder = 1
+    Text = 'Active'
+    Width = 120.000000000000000000
+    OnChange = Panel1CheckBox1Change
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 32
+    Top = 24
+    object Panel1TrackerEditExpressions: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Panel1Edit1
+      SourceComponent = Panel1TrackBar1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'Value'
+          Direction = dirBidirectional
+        end
+        item
+          ControlExpression = 'Owner.Panel1Label1.Text'
+          SourceExpression = 'Value'
+        end>
+      ClearExpressions = <
+        item
+          ControlExpression = '0'
+          SourceExpression = 'Value'
+          Direction = dirControlToSource
+        end>
+      NotifyOutputs = False
+    end
+    object Panel2TrackerExpressions: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Panel2Tracker2
+      SourceComponent = Panel2Tracker1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Value'
+          SourceExpression = 'Value'
+          Direction = dirBidirectional
+        end
+        item
+          ControlExpression = 'Owner.Panel2Label1.Text'
+          SourceExpression = 'Value'
+        end>
+      ClearExpressions = <
+        item
+          ControlExpression = '0'
+          SourceExpression = 'Value'
+          Direction = dirControlToSource
+        end>
+      NotifyOutputs = False
+    end
+    object Panel3LabelEditExpressions: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Panel3Label1
+      SourceComponent = Panel3Edit1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'Text'
+        end>
+      ClearExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = '""'
+        end>
+      NotifyOutputs = False
+    end
+    object Panel4NumberBoxLabelExpressions: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Panel4Label1
+      SourceComponent = Panel4NumberBox1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'Value'
+        end>
+      ClearExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = #39#39
+        end>
+      NotifyOutputs = False
+    end
+    object Panel5EditExpressions: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Panel5Edit2
+      SourceComponent = Panel5Edit1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'Text'
+          Direction = dirBidirectional
+        end>
+      ClearExpressions = <
+        item
+          ControlExpression = 'Text '
+          SourceExpression = '""'
+        end
+        item
+          ControlExpression = '""'
+          SourceExpression = 'Text'
+          Direction = dirControlToSource
+        end>
+      NotifyOutputs = False
+    end
+    object Panel6EditListBoxExpressions: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Panel6Edit1
+      SourceComponent = Panel6ListBox1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'Selected.Text'
+          Direction = dirBidirectional
+        end>
+      ClearExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = '""'
+        end>
+      NotifyOutputs = False
+    end
+    object Panel7ComboBoxLabelExpressions: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Panel7Label1
+      SourceComponent = Panel7ComboBox1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'SelectedText(Self)'
+        end>
+      ClearExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = '""'
+        end>
+      NotifyOutputs = False
+    end
+    object Panel8TrackBarProgressBarExpressions: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Panel8ProgressBar1
+      SourceComponent = Panel8TrackBar1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Value'
+          SourceExpression = 'Value'
+        end>
+      ClearExpressions = <
+        item
+          ControlExpression = 'Value'
+          SourceExpression = '0'
+        end>
+      NotifyOutputs = False
+    end
+    object Panel9CalendarTextControlExpressions: TBindExprItems
+      Category = 'Binding Expressions'
+      ControlComponent = Panel10Edit1
+      SourceComponent = Panel9Calendar1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 'Date'
+          Direction = dirBidirectional
+        end
+        item
+          ControlExpression = 'Owner.Panel10Label1.Text'
+          SourceExpression = 'Date'
+        end>
+      ClearExpressions = <
+        item
+          ControlExpression = 'Owner.Panel10Label1.Text'
+          SourceExpression = '""'
+        end>
+      NotifyOutputs = False
+    end
+  end
+end

@@ -1,0 +1,261 @@
+object FNavigationControllerForm: TFNavigationControllerForm
+  Left = 0
+  Top = 0
+  BorderStyle = None
+  Caption = 'D.P.F NavigationController'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIViewMain: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object DPFNavigationController1: TDPFNavigationController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      BarColor = claRoyalblue
+      BarBackgroundColor = claNull
+      ToolbarVisible = False
+      object DPFNavigationControllerPage2: TDPFNavigationControllerPage
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 406.000000000000000000
+        Size.PlatformDefault = False
+        PageIndex = 1
+        BarButtons = <>
+        ToolBarButtons = <
+          item
+            Enabled = True
+            TagNative = 0
+            ButtonSystemItem = bbsiFlexibleSpace
+          end
+          item
+            ButtonTitle = 'Centered Button'
+            ButtonItemKind = bkTitle
+            Enabled = True
+            TagNative = 0
+          end
+          item
+            Enabled = True
+            TagNative = 0
+            ButtonSystemItem = bbsiFlexibleSpace
+          end>
+        PageViewTitle = 'Page 3'
+        PagePrompt = 'Prompt 3'
+      end
+      object DPFNavigationControllerPage1: TDPFNavigationControllerPage
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 406.000000000000000000
+        Size.PlatformDefault = False
+        PageIndex = 2
+        BarButtons = <
+          item
+            ButtonTitle = 'Back to Page 1'
+            ButtonItemKind = bkTitle
+            OnClick = DPFNavigationControllerItem2BarButtons0Click
+            Enabled = True
+            TagNative = 0
+          end
+          item
+            ButtonTitle = 'Page 3'
+            ButtonItemKind = bkTitle
+            OnClick = DPFNavigationControllerItem2BarButtons1Click
+            Enabled = True
+            TagNative = 0
+            ButtonType = bkRight
+          end>
+        ToolBarButtons = <
+          item
+            Enabled = True
+            TagNative = 0
+            ButtonSystemItem = bbsiFlexibleSpace
+          end
+          item
+            OnClick = DPFNavigationControllerPage1ToolBarButtons1Click
+            Enabled = True
+            TagNative = 0
+            ButtonSystemItem = bbsiCompose
+          end>
+        PageViewTitle = 'Page 2'
+        object DPFButton2: TDPFButton
+          Alpha = 1.000000000000000000
+          ClipsToBounds = False
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 32.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 99.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Pop Prev'
+          TextLineBreak = lbCharacterWrap
+          TextAlpha = 1.000000000000000000
+          ShowsTouchWhenHighlighted = False
+          AdjustsImageWhenHighlighted = False
+          OnClick = DPFButton2Click
+        end
+        object DPFButton4: TDPFButton
+          Alpha = 1.000000000000000000
+          ClipsToBounds = False
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 18.000000000000000000
+          Position.Y = 82.000000000000000000
+          Size.Width = 113.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Dismiss'
+          TextLineBreak = lbCharacterWrap
+          TextAlpha = 1.000000000000000000
+          AdjustsImageWhenHighlighted = False
+          OnClick = DPFButton4Click
+        end
+      end
+      object DPFNavigationControllerPage0: TDPFNavigationControllerPage
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagBoolean = False
+        TagNative = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 406.000000000000000000
+        Size.PlatformDefault = False
+        PageIndex = 0
+        BarButtons = <
+          item
+            ButtonTitle = 'Next'
+            ButtonItemKind = bkTitle
+            OnClick = DPFNavigationController1BarItems0Click
+            Enabled = True
+            Width = 80.000000000000000000
+            TagNative = 0
+            ButtonType = bkRight
+          end
+          item
+            OnClick = DPFNavigationController1BarItems1Click
+            Enabled = True
+            TagNative = 0
+            ButtonSystemItem = bbsiBookmarks
+          end
+          item
+            ButtonTitle = 'Colored'
+            ButtonItemKind = bkTitle
+            OnClick = DPFNavigationController1BarItems2Click
+            Enabled = True
+            TagNative = 0
+          end
+          item
+            OnClick = DPFNavigationController1BarItems3Click
+            Enabled = True
+            TagNative = 0
+          end>
+        ToolBarButtons = <
+          item
+            ButtonTitle = 'Test Button'
+            ButtonItemStyle = bbisBordered
+            ButtonItemKind = bkTitle
+            OnClick = DPFNavigationControllerPage0ToolBarButtons0Click
+            Enabled = True
+            Width = 200.000000000000000000
+            TagNative = 0
+          end>
+        PageViewTitle = 'Page 1'
+        PagePrompt = 'Prompt 1'
+        object DPFButtonPushNext: TDPFButton
+          Alpha = 1.000000000000000000
+          ClipsToBounds = False
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 10.000000000000000000
+          Position.Y = 10.000000000000000000
+          Size.Width = 167.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Push Next'
+          TextLineBreak = lbCharacterWrap
+          TextAlpha = 1.000000000000000000
+          AdjustsImageWhenHighlighted = False
+          OnClick = DPFButtonPushNextClick
+        end
+        object DPFButton3: TDPFButton
+          Alpha = 1.000000000000000000
+          ClipsToBounds = False
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 10.000000000000000000
+          Position.Y = 146.000000000000000000
+          Size.Width = 183.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Present CrossDissolve'
+          TextLineBreak = lbCharacterWrap
+          TextAlpha = 1.000000000000000000
+          AdjustsImageWhenHighlighted = False
+          OnClick = DPFButton3Click
+        end
+        object DPFButton5: TDPFButton
+          Alpha = 1.000000000000000000
+          ClipsToBounds = False
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 10.000000000000000000
+          Position.Y = 194.000000000000000000
+          Size.Width = 183.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Present PartialCurl'
+          TextLineBreak = lbCharacterWrap
+          TextAlpha = 1.000000000000000000
+          AdjustsImageWhenHighlighted = False
+          OnClick = DPFButton5Click
+        end
+      end
+    end
+  end
+  object DPFUIActionSheet1: TDPFUIActionSheet
+    TitleColor = claBlue
+    Buttons = <>
+    Left = 256
+    Top = 104
+  end
+end

@@ -1,0 +1,23 @@
+inherited PhoneMainForm: TPhoneMainForm
+  Caption = 'BaseMainForm1'
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  inherited ImageContainer: TImage
+    OnClick = ImageContainerClick
+  end
+  object TextToSelectImage: TText [4]
+    Align = alCenter
+    Color = claWhite
+    Font.Family = 'Helvetica'
+    Font.Size = 18.000000000000000000
+    Font.Style = [fsBold]
+    Height = 58.000000000000000000
+    HitTest = False
+    Text = 'Click to select existing image'
+    Width = 169.000000000000000000
+  end
+end

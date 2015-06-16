@@ -1,0 +1,53 @@
+object frmAboutSensors: TfrmAboutSensors
+  Left = 0
+  Top = 0
+  Caption = 'Sensors'
+  ClientHeight = 510
+  ClientWidth = 962
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnResize = FormResize
+  DesignerMobile = True
+  DesignerWidth = 962
+  DesignerHeight = 553
+  DesignerDeviceName = 'Google Nexus 7'
+  DesignerOrientation = 3
+  DesignerOSVersion = ''
+  object lbMain: TListBox
+    Height = 288.000000000000000000
+    Position.X = 25.000000000000000000
+    Position.Y = 25.000000000000000000
+    TabOrder = 0
+    Width = 232.000000000000000000
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = lbMainItemClick
+  end
+  object Timer1: TTimer
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 80
+    Top = 104
+  end
+  object lInfo: TLabel
+    StyledSettings = [Family, Size, Style]
+    Height = 217.000000000000000000
+    Position.X = 296.000000000000000000
+    Position.Y = 56.000000000000000000
+    TextSettings.VertAlign = Leading
+    Width = 120.000000000000000000
+    object btnHide: TButton
+      Anchors = [akTop, akRight]
+      Height = 44.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'Return'
+      Width = 73.000000000000000000
+      OnClick = btnHideClick
+    end
+  end
+end

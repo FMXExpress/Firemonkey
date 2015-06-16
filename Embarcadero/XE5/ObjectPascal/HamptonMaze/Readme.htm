@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+  <head>
+	<title></title>
+  </head>
+
+  <body>
+	<table cellspacing="1" cellpadding="1" width="500" bgcolor="#e0ffff" border="1">
+		<tr>
+		  <td style="WIDTH: 149px" bgcolor="#fffaf0">Demo Name
+</td>
+		  <td bgcolor="#e6e6fa"><strong>Hampton Court Maze&nbsp;example
+</strong>
+</td>
+		</tr>
+		<tr>
+		  <td style="WIDTH: 149px" bgcolor="#fffaf0">Classes demonstrated
+</td>
+		  <td bgcolor="#e6e6fa">
+			<p><strong>TPath
+</strong>
+</p>
+			<p><strong>Animations
+</strong>
+</p>
+			<p><strong>2d Geometry manipulation
+</strong>
+</p></td>
+		</tr>
+		<tr>
+		  <td style="WIDTH: 149px" bgcolor="#fffaf0">Description
+</td>
+		  <td bgcolor="#e6e6fa">
+            <p>
+            <strong>Run the Hampton Court Maze, and see animation paths in action! You can start playing immediately by just dragging your mouse to the right from the entrance to enter and navigate the maze. A gold&nbsp;dot will tell you when your location is being sampled.
+</strong></p>
+            <p><strong>If you hit a wall, you'll see two sets of dots, blue to show the last segment points that got sampled, and red to show the maze line that was crossed. In that case, try again by clicking the "Clear All" button. ("Game Over" is not enforced, however.)
+</strong>
+            </p>
+            <p>The "recorded" path is constructed&nbsp;by CurveTo calls, and the Sample Rate track bar sets how often a point is added to the path. Less frequent sample rates have the effect of making things more challenging, and you can see the effect if you click Load Maze and select HamptonMaze.txt, then click Run The Path - the acute angles tend to create big loops and require more patience.
+</p>
+            <p>You can make your own maze by turning off the Use Sample check box, then clicking end points in an image you want to use as a base image, which you would set as the Bitmap property of Image1. The maze is constructed of LineTo calls instead of CurveTo calls.You would leave cbMoveTo activated for the first point of each sequence, then turn it off to add LineTo calls. You can use the Backtrack button for convenience for a single step retrace, and reactivate cbMoveTo to start a new sequence.
+</p>
+            <p>The Save Path button will save whatever the current path is, either your last game run, terminated&nbsp;by releasing the mouse, or the result of a series of endpoint clicks as above.&nbsp;
+</p>
+            <p>If you open the default maze, HamptonMaze.txt, you'll see "M" prefixes indicating the beginning of each of a number of sequences. This text files mimics the content of the TPath Data property, though there is specific code to turn the text into points rather than using a binary stream.
+</p>
+            <p><strong></strong>See the PointInLineSegment method for the intersection detection mechanism that says you've hit a wall.
+</p>
+</td>
+        </tr>
+    </table>
+
+  </body>
+</html>

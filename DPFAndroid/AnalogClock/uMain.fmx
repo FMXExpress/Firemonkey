@@ -1,0 +1,22 @@
+object FAnalogClock: TFAnalogClock
+  Left = 0
+  Top = 0
+  Caption = 'AnalogClock'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claBlack
+    BackgroundColor2 = claSilver
+    DrawType = dtCustom
+    Align = Client
+    object DPFJAnalogClock1: TDPFJAnalogClock
+      Alpha = 1.000000000000000000
+      Align = Center
+    end
+  end
+end

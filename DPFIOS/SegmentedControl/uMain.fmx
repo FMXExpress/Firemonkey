@@ -1,0 +1,210 @@
+object FSegmentedControl: TFSegmentedControl
+  Left = 0
+  Top = 0
+  Caption = 'Segmented Control'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFSegmentedControl1: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 10.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Segments = <
+        item
+          Title = 'Seg 1'
+        end
+        item
+          Title = 'Seg 2'
+        end
+        item
+          Title = 'Seg 3'
+        end>
+      OnChanged = DPFSegmentedControl1Changed
+    end
+    object DPFSegmentedControl2: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 10.000000000000000000
+      Position.Y = 30.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+      Segments = <
+        item
+          Title = 'Seg 1'
+          Image = '/Documents/Images/businessman.png'
+        end
+        item
+          Title = 'Seg 2'
+          Image = '/Documents/Images/forbidden.png'
+        end
+        item
+          Title = 'Seg 3'
+          Image = '/Documents/Images/star_blue.png'
+        end>
+      OnChanged = DPFSegmentedControl2Changed
+    end
+    object DPFSegmentedControl3: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 10.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Style = scsBar
+      Segments = <
+        item
+          Title = 'Seg 1'
+        end
+        item
+          Title = 'Seg 2'
+        end
+        item
+          Title = 'Seg 3'
+        end>
+      OnChanged = DPFSegmentedControl3Changed
+    end
+    object DPFSegmentedControl4: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 10.000000000000000000
+      Position.Y = 257.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      Style = scsBezeled
+      Segments = <
+        item
+          Title = 'Seg 1'
+        end
+        item
+          Title = 'Seg 2'
+        end
+        item
+          Title = 'Seg 3'
+        end>
+      OnChanged = DPFSegmentedControl4Changed
+    end
+    object DPFSegmentedControl5: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 10.000000000000000000
+      Position.Y = 301.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      Style = scsBordered
+      Segments = <
+        item
+          Title = 'Seg 1'
+        end
+        item
+          Title = 'Seg 2'
+        end
+        item
+          Title = 'Seg 3'
+        end>
+      OnChanged = DPFSegmentedControl5Changed
+    end
+    object DPFSegmentedControl6: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 10.000000000000000000
+      Position.Y = 365.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      Style = scsBordered
+      Segments = <
+        item
+          Title = 'Seg 1'
+        end
+        item
+          Title = 'Seg 2'
+        end
+        item
+          Title = 'Seg 3'
+        end>
+      OnChanged = DPFSegmentedControl5Changed
+    end
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 416.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 34.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'ReCreate Segment'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton1Click
+    end
+    object DPFSegmentedControl7: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 10.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 297.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TintColor = claOrangered
+      Style = scsBar
+      Segments = <
+        item
+          Title = 'Seg 1'
+        end
+        item
+          Title = 'Seg 2'
+        end
+        item
+          Title = 'Seg 3'
+        end>
+      OnChanged = DPFSegmentedControl7Changed
+    end
+  end
+end

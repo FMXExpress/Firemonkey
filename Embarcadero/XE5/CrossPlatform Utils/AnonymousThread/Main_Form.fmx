@@ -1,0 +1,115 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnShow = FormShow
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 2
+    Width = 320.000000000000000000
+    object Label2: TLabel
+      Align = alClient
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'AnonymousThread Demo'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object Layout1: TLayout
+    Align = alTop
+    Height = 97.000000000000000000
+    Position.Y = 44.000000000000000000
+    Width = 320.000000000000000000
+    object ExceptionSwitch: TSwitch
+      Height = 27.000000000000000000
+      IsChecked = False
+      Position.X = 176.000000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 0
+      TouchTargetExpansion.Left = 6.000000000000000000
+      TouchTargetExpansion.Top = 6.000000000000000000
+      TouchTargetExpansion.Right = 6.000000000000000000
+      TouchTargetExpansion.Bottom = 6.000000000000000000
+      Width = 78.000000000000000000
+      object Label1: TLabel
+        Height = 27.000000000000000000
+        Position.X = -165.000000000000000000
+        Text = 'Throw Exception'
+        Width = 137.000000000000000000
+        Trimming = ttCharacter
+      end
+    end
+    object ExecuteButton: TButton
+      Align = alTop
+      Height = 44.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      TabOrder = 1
+      Text = 'Execute'
+      Trimming = ttCharacter
+      Width = 300.000000000000000000
+      OnClick = ExecuteButtonClick
+    end
+  end
+  object ResultsMemo: TMemo
+    Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+    Align = alClient
+    Height = 255.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    TabOrder = 0
+    Width = 300.000000000000000000
+  end
+  object Layout2: TLayout
+    Align = alTop
+    Height = 44.000000000000000000
+    Position.Y = 141.000000000000000000
+    Width = 320.000000000000000000
+    object SuspendedSwitch: TSwitch
+      Height = 27.000000000000000000
+      IsChecked = False
+      Position.X = 174.000000000000000000
+      Position.Y = 7.000000000000000000
+      TabOrder = 0
+      TouchTargetExpansion.Left = 6.000000000000000000
+      TouchTargetExpansion.Top = 6.000000000000000000
+      TouchTargetExpansion.Right = 6.000000000000000000
+      TouchTargetExpansion.Bottom = 6.000000000000000000
+      Width = 78.000000000000000000
+      object Label3: TLabel
+        Height = 27.000000000000000000
+        Position.X = -165.000000000000000000
+        Text = 'Create Suspended'
+        Width = 166.000000000000000000
+        Trimming = ttCharacter
+      end
+    end
+    object StartButton: TButton
+      Align = alRight
+      Height = 44.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 254.000000000000000000
+      TabOrder = 1
+      Text = 'Start'
+      Width = 56.000000000000000000
+      OnClick = StartButtonClick
+    end
+  end
+end

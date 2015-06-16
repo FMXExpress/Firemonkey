@@ -1,0 +1,31 @@
+object LayoutPathFrom: TLayoutPathFrom
+  Left = 0
+  Top = 0
+  Caption = 'Layout path'
+  ClientHeight = 480
+  ClientWidth = 640
+  Position = poOwnerFormCenter
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object pthView: TPath
+    Align = alClient
+    Height = 344.000000000000000000
+    Width = 640.000000000000000000
+  end
+  object mPathData: TMemo
+    Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+    Align = alBottom
+    Height = 136.000000000000000000
+    Position.Y = 344.000000000000000000
+    TabOrder = 1
+    Width = 640.000000000000000000
+    ReadOnly = True
+    WordWrap = True
+  end
+end

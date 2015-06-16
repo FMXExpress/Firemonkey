@@ -1,0 +1,90 @@
+object FSettingsBundle: TFSettingsBundle
+  Left = 0
+  Top = 0
+  Caption = 'SettingsBundle'
+  ClientHeight = 460
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object te: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 26.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 269.000000000000000000
+      Size.Height = 129.000000000000000000
+      Size.PlatformDefault = False
+      LineBreak = lbWordWrap
+      Text = 'Goto Phone Setting acroll down and find your app'
+      BackgroundColor = claLavender
+      NumberOfLines = 0
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFLabel2: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFSwitch1: TDPFSwitch
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 160.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 77.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      OnChanged = DPFSwitch1Changed
+    end
+    object DPFLabel3: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Enabled'
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+  end
+  object DPFUserDefaults1: TDPFUserDefaults
+    OnUserDefaultsChanged = DPFUserDefaults1UserDefaultsChanged
+    Left = 144
+    Top = 320
+  end
+end

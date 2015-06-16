@@ -1,0 +1,133 @@
+object FButton: TFButton
+  Left = 0
+  Top = 0
+  Caption = 'Buttons'
+  ClientHeight = 567
+  ClientWidth = 384
+  Transparency = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claGray
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claRed
+      BackgroundColor2 = claBlack
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      OnClick = DPFJButton1Click
+      DrawType = dtCustom
+      Position.X = 72.000000000000000000
+      Position.Y = 64.000000000000000000
+      Width = 225.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Click Me!'
+      TextColor = claWhite
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton2: TDPFJButton
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claBlue
+      BackgroundColor2 = claWhite
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      GradientOrientation = RIGHT_LEFT
+      OnClick = DPFJButton1Click
+      DrawType = dtCustom
+      Position.X = 72.000000000000000000
+      Position.Y = 304.000000000000000000
+      Width = 225.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Click Me!'
+      TextColor = claWhite
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton3: TDPFJButton
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claRed
+      BackgroundColor2 = claGold
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      GradientOrientation = TL_BR
+      OnClick = DPFJButton1Click
+      DrawType = dtCustom
+      Position.X = 72.000000000000000000
+      Position.Y = 144.000000000000000000
+      Width = 225.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Click Me!'
+      TextColor = claWhite
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton6: TDPFJButton
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claDarkred
+      BackgroundColor2 = claBurlywood
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      GradientOrientation = BR_TL
+      OnClick = DPFJButton1Click
+      DrawType = dtCustom
+      Position.X = 72.000000000000000000
+      Position.Y = 224.000000000000000000
+      Width = 225.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Click Me!'
+      TextColor = claWhite
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton4: TDPFJButton
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      OnClick = DPFJButton1Click
+      DrawType = dtCustom
+      Position.X = 72.000000000000000000
+      Position.Y = 384.000000000000000000
+      Width = 225.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Click Me!'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton5: TDPFJButton
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      OnClick = DPFJButton1Click
+      Position.X = 72.000000000000000000
+      Position.Y = 456.000000000000000000
+      Width = 225.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Simple Button'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+  object DPFJAlertDialog1: TDPFJAlertDialog
+    Left = 320
+    Top = 112
+  end
+end

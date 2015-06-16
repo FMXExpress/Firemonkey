@@ -1,0 +1,121 @@
+object FFormEmbed: TFFormEmbed
+  Left = 0
+  Top = 0
+  Caption = 'FormEmbed '
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIViewMain: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFButton2: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Change Segment Selected Index'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claWheat
+      BackgroundColorHighlight = claTan
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton2Click
+    end
+    object DPFToolbar1: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 39.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Change label'
+          ButtonItemKind = bkTitle
+          ButtonItemStyle = bbisBordered
+          OnClick = DPFToolbar1BarItems0Click
+          ModalResult = 0
+          Width = 100.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiFlexibleSpace
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Set Form=Nil'
+          ButtonItemKind = bkTitle
+          ButtonItemStyle = bbisBordered
+          OnClick = DPFToolbar1BarItems2Click
+          ModalResult = 0
+          Width = 100.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiFlexibleSpace
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Reload'
+          ButtonItemKind = bkTitle
+          ButtonItemStyle = bbisBordered
+          OnClick = DPFToolbar1BarItems4Click
+          ModalResult = 0
+          Width = 100.000000000000000000
+        end>
+    end
+    object DPFUIView1: TDPFUIView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 89.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 218.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claAzure
+      Form = FEmbForm1.Owner
+    end
+    object DPFUIView2: TDPFUIView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 153.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claCornflowerblue
+      Form = FEmbForm2.Owner
+    end
+  end
+end

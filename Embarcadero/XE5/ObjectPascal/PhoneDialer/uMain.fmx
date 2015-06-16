@@ -1,0 +1,103 @@
+object PhoneDialerForm: TPhoneDialerForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object btnGetCarrierInfo: TButton
+    Height = 44.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 184.000000000000000000
+    TabOrder = 0
+    Text = 'Get Carrier Info'
+    Width = 353.000000000000000000
+    OnClick = btnGetCarrierInfoClick
+  end
+  object btnMakeCall: TButton
+    Height = 44.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 312.000000000000000000
+    TabOrder = 1
+    Text = 'Make Call'
+    Width = 345.000000000000000000
+    OnClick = btnMakeCallClick
+  end
+  object edtTelephoneNumber: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 2
+    KeyboardType = vktPhonePad
+    Position.X = 16.000000000000000000
+    Position.Y = 272.000000000000000000
+    Width = 345.000000000000000000
+    Height = 32.000000000000000000
+    KillFocusByReturn = False
+  end
+  object lblTelephoneNumber: TLabel
+    Height = 23.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 240.000000000000000000
+    StyleLookup = 'listboxitemlabel'
+    Text = 'Telephone Number:'
+    Width = 353.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 4
+    Width = 384.000000000000000000
+    object Label1: TLabel
+      Align = alCenter
+      Height = 40.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Phone Dialer'
+      TextAlign = taCenter
+      Width = 185.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object ListBox1: TListBox
+    Height = 121.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 5
+    Width = 353.000000000000000000
+    ItemHeight = 30.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    object CarrierNameItem: TListBoxItem
+      Height = 30.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Carrier Name:'
+      Width = 353.000000000000000000
+    end
+    object CountryCodeItem: TListBoxItem
+      Height = 30.000000000000000000
+      Position.Y = 30.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'ISO Country Code:'
+      Width = 353.000000000000000000
+    end
+    object NetworkCodeItem: TListBoxItem
+      Height = 30.000000000000000000
+      Position.Y = 60.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Network Code:'
+      Width = 353.000000000000000000
+    end
+    object MobileNetworkItem: TListBoxItem
+      Height = 30.000000000000000000
+      Position.Y = 90.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Mobile Network:'
+      Width = 353.000000000000000000
+    end
+  end
+end

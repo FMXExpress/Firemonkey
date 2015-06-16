@@ -1,0 +1,59 @@
+object CameraRollForm: TCameraRollForm
+  Left = 0
+  Top = 0
+  ClientHeight = 781
+  ClientWidth = 533
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 533
+  DesignerHeight = 803
+  DesignerDeviceName = 'Google Nexus 7'
+  DesignerOrientation = 0
+  object imgPhotoLibraryImage: TImage
+    MultiResBitmap = <
+      item
+      end
+      item
+        Scale = 2.000000000000000000
+      end>
+    Align = alClient
+    Height = 733.000000000000000000
+    Width = 533.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 1
+    Width = 533.000000000000000000
+    object Label1: TLabel
+      Align = alContents
+      Anchors = []
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Access Camera Roll'
+      TextAlign = taCenter
+      Width = 533.000000000000000000
+      Trimming = ttCharacter
+    end
+    object btnPhotoLibrary: TButton
+      Action = TakePhotoFromLibraryAction1
+      Align = alRight
+      Height = 48.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 480.000000000000000000
+      StyleLookup = 'organizetoolbuttonbordered'
+      TabOrder = 1
+      Text = 'Open Photo Library'
+      Width = 48.000000000000000000
+    end
+  end
+  object alGetCameraRoll: TActionList
+    Left = 144
+    Top = 216
+    object TakePhotoFromLibraryAction1: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = TakePhotoFromLibraryAction1DidFinishTaking
+    end
+  end
+end

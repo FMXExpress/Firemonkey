@@ -1,0 +1,212 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIViewMain: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 96.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Click Me!'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton1Click
+    end
+    object MotherView: TDPFUIView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = MostBottom
+      Position.Y = 176.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 284.000000000000000000
+      Size.PlatformDefault = False
+      object View2: TDPFUIView
+        Alpha = 1.000000000000000000
+        Visible = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 284.000000000000000000
+        Size.PlatformDefault = False
+        object Mapa: TDPFMapView
+          ContentMode = vcmScaleAspectFill
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 284.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object View1: TDPFUIView
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 284.000000000000000000
+        Size.PlatformDefault = False
+        BackgroundColor = claSilver
+        object DPFLabel1: TDPFLabel
+          Alpha = 1.000000000000000000
+          ClipsToBounds = False
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 8.000000000000000000
+          Position.Y = 32.000000000000000000
+          Size.Width = 305.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Select an animation type an press the "Click Me!" Button'
+          NumberOfLines = 2
+          BaseLineAdjustment = blaAlignBaseLines
+        end
+        object SubView: TDPFUIView
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 8.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 185.000000000000000000
+          Size.Height = 137.000000000000000000
+          Size.PlatformDefault = False
+          BackgroundColor = claNull
+          object DPFSwitch1: TDPFSwitch
+            Alpha = 1.000000000000000000
+            ShadowOffsetHeight = 10.000000000000000000
+            ShadowOpacity = 1.000000000000000000
+            ShadowRadius = 10.000000000000000000
+            TagNative = 0
+            Position.X = 32.000000000000000000
+            Position.Y = 72.000000000000000000
+            Size.Width = 77.000000000000000000
+            Size.Height = 27.000000000000000000
+            Size.PlatformDefault = False
+            OnChanged = DPFSwitch1Changed
+          end
+          object DPFButton2: TDPFButton
+            Alpha = 1.000000000000000000
+            ClipsToBounds = False
+            ShadowOffsetHeight = 10.000000000000000000
+            ShadowOpacity = 1.000000000000000000
+            ShadowRadius = 10.000000000000000000
+            TagNative = 0
+            Position.X = 18.000000000000000000
+            Position.Y = 16.000000000000000000
+            Size.Width = 145.000000000000000000
+            Size.Height = 49.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Click to move!'
+            TextLineBreak = lbCharacterWrap
+            TextAlpha = 1.000000000000000000
+            AdjustsImageWhenHighlighted = False
+            OnClick = DPFButton2Click
+          end
+          object DPFLabel2: TDPFLabel
+            Alpha = 1.000000000000000000
+            ClipsToBounds = False
+            ShadowOffsetHeight = 10.000000000000000000
+            ShadowOpacity = 1.000000000000000000
+            ShadowRadius = 10.000000000000000000
+            TagNative = 0
+            Position.X = 8.000000000000000000
+            Position.Y = 112.000000000000000000
+            Size.Width = 169.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Alpha Animation Switch'
+            BaseLineAdjustment = blaAlignBaseLines
+            AdjustsFontSizeToFitWidth = True
+          end
+        end
+      end
+    end
+    object DPFSegmentedControl1: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Horizontal
+      Position.Y = 47.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Segments = <
+        item
+          Title = 'None'
+        end
+        item
+          Title = 'Flip L.'
+        end
+        item
+          Title = 'Flip R.'
+        end
+        item
+          Title = 'Up'
+        end
+        item
+          Title = 'Down'
+        end>
+      SelectedIndex = 1
+    end
+    object DPFToolbar1: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Animation Demo'
+          ButtonItemKind = bkTitle
+          ModalResult = 0
+          Width = 320.000000000000000000
+        end>
+    end
+  end
+end

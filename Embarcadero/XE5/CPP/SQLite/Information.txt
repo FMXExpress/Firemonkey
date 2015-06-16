@@ -1,0 +1,9 @@
+Title: SQLite
+
+Brief Description: This code snippet shows you how to populate a listbox from a SQLite database using LiveBindings.
+
+Language: C++
+
+Platforms supported: iOS
+
+Keywords: SQLite, database, iOS, listbox, read, write

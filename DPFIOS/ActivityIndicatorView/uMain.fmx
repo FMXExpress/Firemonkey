@@ -1,0 +1,125 @@
+object ActivityIndicator: TActivityIndicator
+  Left = 0
+  Top = 0
+  Caption = 'Activity Indicator'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    AutoresizingMask = True
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claCornflowerblue
+    BackgroundImage = 'background.png'
+    object DPFActivityIndicatorView1: TDPFActivityIndicatorView
+      Alpha = 0.699999988079071000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 0.500000000000000000
+      ShadowRadius = 10.000000000000000000
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 133.000000000000000000
+      Size.PlatformDefault = False
+      Color = claYellow
+      BackgroundColor = claBlack
+      object DPFLabel1: TDPFLabel
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = MostBottom
+        Position.Y = 99.000000000000000000
+        Size.Width = 177.000000000000000000
+        Size.Height = 34.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Loading...'
+        TextColor = claWhite
+        TextAlignment = taCenter
+        BaseLineAdjustment = blaAlignBaseLines
+      end
+    end
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Start'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton1Click
+    end
+    object DPFButton2: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 172.000000000000000000
+      Position.Y = 255.000000000000000000
+      Size.Width = 139.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Stop & Hide'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton2Click
+    end
+    object DPFButton3: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 12.000000000000000000
+      Position.Y = 255.000000000000000000
+      Size.Width = 139.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Stop & No Hide'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton3Click
+    end
+    object DPFButton4: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 131.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 183.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Start & Hide After 5 Sec'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton4Click
+    end
+  end
+end

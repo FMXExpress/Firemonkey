@@ -1,0 +1,200 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 684
+  ClientWidth = 1280
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 1280
+  DesignerHeight = 752
+  DesignerDeviceName = 'Google Nexus 10'
+  DesignerOrientation = 1
+  DesignerOSVersion = ''
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Height = 684.000000000000000000
+    Width = 934.000000000000000000
+  end
+  object ListBox1: TListBox
+    Align = Left
+    Height = 684.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 345.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    object ListBoxItem1: TListBoxItem
+      Height = 44.000000000000000000
+      Margins.Top = 15.000000000000000000
+      Position.Y = 15.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 0
+      Text = 'Enable Location Services'
+      Width = 305.000000000000000000
+      object Switch1: TSwitch
+        Align = Right
+        Height = 26.000000000000000000
+        IsChecked = False
+        Margins.Left = 9.000000000000000000
+        Margins.Top = 9.000000000000000000
+        Margins.Right = 9.000000000000000000
+        Margins.Bottom = 9.000000000000000000
+        Position.X = 220.000000000000000000
+        Position.Y = 9.000000000000000000
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        Width = 76.000000000000000000
+        OnSwitch = Switch1Switch
+      end
+    end
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Height = 30.000000000000000000
+      Position.Y = 59.000000000000000000
+      StyleLookup = 'listboxgroupheader'
+      TabOrder = 1
+      Text = 'Your location'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemLatitude: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 89.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 2
+      Text = 'Latitude'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemLongitude: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 133.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 3
+      Text = 'Longitude'
+      Width = 305.000000000000000000
+    end
+    object ListBoxGroupHeader2: TListBoxGroupHeader
+      Height = 30.000000000000000000
+      Position.Y = 177.000000000000000000
+      StyleLookup = 'listboxgroupheader'
+      TabOrder = 4
+      Text = 'Current Address'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemAdminArea: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 207.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 5
+      Text = 'AdminArea'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemCountryCode: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 251.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 6
+      Text = 'CountryCode'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemCountryName: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 295.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 7
+      Text = 'CountryName'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemFeatureName: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 339.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 8
+      Text = 'FeatureName'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemLocality: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 383.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 9
+      Text = 'Locality'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemPostalCode: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 427.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 10
+      Text = 'PostalCode'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemSubAdminArea: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 471.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 11
+      Text = 'SubAdminArea'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemSubLocality: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 515.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 12
+      Text = 'SubLocality'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemSubThoroughfare: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 559.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 13
+      Text = 'SubThoroughfare'
+      Width = 305.000000000000000000
+    end
+    object ListBoxItemThoroughfare: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 603.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      TabOrder = 14
+      Text = 'Thoroughfare'
+      Width = 305.000000000000000000
+    end
+    object ListBoxHeader1: TListBoxHeader
+      Height = 48.000000000000000000
+      StyleLookup = 'ipadtoolbarleft'
+      TabOrder = 0
+      Width = 345.000000000000000000
+      object Label1: TLabel
+        Align = Client
+        Height = 48.000000000000000000
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Location Demo'
+        Width = 345.000000000000000000
+      end
+    end
+  end
+  object Line2: TLine
+    Align = Left
+    Height = 684.000000000000000000
+    LineType = Left
+    Position.X = 345.000000000000000000
+    Width = 1.000000000000000000
+  end
+  object LocationSensor1: TLocationSensor
+    Accuracy = 10.000000000000000000
+    Distance = 10.000000000000000000
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 144
+    Top = 656
+  end
+end

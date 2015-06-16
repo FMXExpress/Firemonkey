@@ -1,0 +1,148 @@
+object FTableView1: TFTableView1
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFUITableView1: TDPFUITableView
+      Alpha = 1.000000000000000000
+      Font.FontName = ios_Georgia
+      Font.FontSize = 18
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.Y = 39.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 421.000000000000000000
+      Size.PlatformDefault = False
+      OnGetRowHeight = DPFUITableView1GetRowHeight
+      Options.AllowsSelection = False
+      Options.BackgroundColor = claSlategray
+      Options.SeparatorColor = claCoral
+      Options.Edition.CellEdit = True
+      Options.Scrolling.Horizontal = True
+      Options.Scrolling.ShowsHorizontalScrollIndicator = False
+      Options.Scrolling.ShowsVerticalScrollIndicator = False
+      Options.Scrolling.ScrollsToTop = False
+      Options.TextFont.FontName = ios_Helvetica_Bold
+      Options.TextFont.FontSize = 18
+      Options.DescriptionFont.FontName = ios_Helvetica
+      Options.RowHeight = 80.000000000000000000
+      Options.Paging = True
+      Sections = <
+        item
+          Header.Kind = kCustom
+          Header.TextAlign = taCenter
+          Header.TextColor = claSlategray
+          Header.BackgroundColor = claNull
+          Header.Font.FontName = ios_Helvetica_Bold
+          Header.Font.FontSize = 18
+          Header.Alpha = 1.000000000000000000
+          Footer.Kind = kCustom
+          Footer.TextAlign = taCenter
+          Footer.TextColor = claSkyblue
+          Footer.BackgroundColor = claNull
+          Footer.Font.FontName = ios_Helvetica_Bold
+          Footer.Font.FontSize = 18
+          Footer.Alpha = 0.899999976158142100
+          TableItems = <
+            item
+              Style = tvcsSubtitle
+              EditingStyle = tvesInsert
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 0'
+              ItemDescription.Text = 'Desciption 0'
+              ItemDescription.Color = claGray
+              ItemDescription.BackgroundColor = claSnow
+            end
+            item
+              Style = tvcsSubtitle
+              AccessoryType = tvcaCheckmark
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 1'
+              ItemDescription.Text = 'Desciption 1'
+              ItemDescription.Color = claGray
+              ItemDescription.BackgroundColor = claSnow
+            end
+            item
+              Style = tvcsSubtitle
+              AccessoryType = tvcaDisclosureIndicator
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 2'
+              ItemDescription.Text = 'Desciption 2'
+              ItemDescription.Color = claGray
+              ItemDescription.BackgroundColor = claSnow
+            end
+            item
+              Style = tvcsSubtitle
+              AccessoryType = tvcaDetailDisclosureButton
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 3'
+              ItemDescription.Text = 'Desciption 3'
+              ItemDescription.Color = claGray
+              ItemDescription.BackgroundColor = claSnow
+            end
+            item
+              Style = tvcsSubtitle
+              AccessoryType = tvcaCheckmark
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 4'
+              ItemDescription.Text = 'Desciption 4'
+              ItemDescription.Color = claGray
+              ItemDescription.BackgroundColor = claSnow
+            end
+            item
+              ItemText.Text = 'Demo Item 5'
+              ItemDescription.Color = claGray
+            end
+            item
+              ItemText.Text = 'Demo Item 6'
+              ItemDescription.Color = claGray
+            end
+            item
+              ItemText.Text = 'Demo Item 7'
+              ItemDescription.Color = claGray
+            end
+            item
+              ItemText.Text = 'Demo Item 8'
+              ItemDescription.Color = claGray
+            end
+            item
+              ItemText.Text = 'Demo Item 9'
+              ItemDescription.Color = claGray
+            end>
+        end>
+      OnPageChanged = DPFUITableView1PageChanged
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 39.000000000000000000
+      Size.PlatformDefault = False
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+  end
+end

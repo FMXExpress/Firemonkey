@@ -1,0 +1,83 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIScrollView1: TDPFUIScrollView
+    ContentMode = vcmRedraw
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claCornflowerblue
+    MaximumZoomScale = 5.000000000000000000
+    MinimumZoomScale = 1.000000000000000000
+    OnViewForZoomingInScrollView = DPFUIScrollView1ViewForZoomingInScrollView
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Button 1'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claGold
+      BackgroundColorHighlight = xFFD3B61B
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton1Click
+    end
+    object DPFButton2: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 28.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Button 2'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claCornflowerblue
+      BackgroundColorHighlight = claBlue
+      AdjustsImageWhenHighlighted = False
+    end
+    object DPFCheckBox1: TDPFCheckBox
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderColor = claSilver
+      TagNative = 0
+      Position.X = 80.000000000000000000
+      Position.Y = 192.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'CheckBox'
+    end
+  end
+end

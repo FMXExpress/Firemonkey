@@ -1,0 +1,25 @@
+object FDrawingBitMap: TFDrawingBitMap
+  Left = 0
+  Top = 0
+  Caption = 'DrawingBitMap'
+  ClientHeight = 417
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    ContentMode = vcmRedraw
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 417.000000000000000000
+    Size.PlatformDefault = False
+    OnDrawRect = DPFUIView1DrawRect
+  end
+end

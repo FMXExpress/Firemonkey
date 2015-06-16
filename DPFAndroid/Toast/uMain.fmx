@@ -1,0 +1,59 @@
+object FToast: TFToast
+  Left = 0
+  Top = 0
+  Caption = 'Toast'
+  ClientHeight = 524
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 524
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claGray
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 524.000000000000000000
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claYellowgreen
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      OnClick = DPFJButton1Click
+      Position.X = 72.000000000000000000
+      Position.Y = 48.000000000000000000
+      Width = 225.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Toast 1'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton2: TDPFJButton
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claYellowgreen
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      OnClick = DPFJButton2Click
+      Position.X = 72.000000000000000000
+      Position.Y = 112.000000000000000000
+      Width = 225.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Toast 2'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+  object DPFJToast1: TDPFJToast
+    Left = 320
+    Top = 56
+  end
+end

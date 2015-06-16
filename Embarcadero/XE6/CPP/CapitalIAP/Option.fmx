@@ -1,0 +1,179 @@
+object OptionForm: TOptionForm
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = '6'
+  object ListBox1: TListBox
+    Align = Client
+    Height = 504.000000000000000000
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 0
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Height = 31.000000000000000000
+      StyleLookup = 'listboxgroupheader'
+      TabOrder = 0
+      Text = 'Select region of the country'
+      Width = 304.000000000000000000
+    end
+    object ListBoxItem1: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      HitTest = True
+      Position.Y = 31.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Eastern'
+      Width = 304.000000000000000000
+      object sEast: TSwitch
+        Anchors = [akTop, akRight]
+        Height = 27.000000000000000000
+        IsChecked = True
+        Position.X = 213.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 0
+        Width = 78.000000000000000000
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      HitTest = True
+      Position.Y = 75.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 2
+      Text = 'Central'
+      Width = 304.000000000000000000
+      object sCentral: TSwitch
+        Anchors = [akTop, akRight]
+        Height = 27.000000000000000000
+        IsChecked = True
+        Position.X = 213.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 0
+        Width = 78.000000000000000000
+      end
+    end
+    object ListBoxItem3: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 119.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 3
+      Text = 'Western'
+      Width = 304.000000000000000000
+      object sWest: TSwitch
+        Anchors = [akTop, akRight]
+        Height = 27.000000000000000000
+        IsChecked = True
+        Position.X = 213.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 0
+        Width = 78.000000000000000000
+      end
+    end
+    object ListBoxItem4: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 163.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 4
+      Text = 'Europe'
+      Width = 304.000000000000000000
+      Visible = False
+      object sEurope: TSwitch
+        Anchors = [akTop, akRight]
+        Height = 27.000000000000000000
+        IsChecked = True
+        Position.X = 213.000000000000000000
+        Position.Y = 8.000000000000000000
+        TabOrder = 1
+        Width = 78.000000000000000000
+      end
+    end
+    object ListBoxGroupHeader2: TListBoxGroupHeader
+      Height = 31.000000000000000000
+      Position.Y = 207.000000000000000000
+      StyleLookup = 'listboxgroupheader'
+      TabOrder = 5
+      Text = 'Advertising'
+      Width = 304.000000000000000000
+    end
+    object DisableAdsListBoxItem: TListBoxItem
+      Height = 44.000000000000000000
+      ItemData.Detail = 'A small in-app purchase will disable adverts'
+      Position.Y = 238.000000000000000000
+      StyleLookup = 'listboxitembottomdetail'
+      TabOrder = 6
+      Text = 'Disable in-app adverts'
+      Width = 304.000000000000000000
+    end
+    object EuropeListBoxItem: TListBoxItem
+      Height = 44.000000000000000000
+      ItemData.Detail = 'Purchase the Europe questions set'
+      Position.Y = 282.000000000000000000
+      StyleLookup = 'listboxitembottomdetail'
+      TabOrder = 9
+      Text = 'Europe Questions'
+      Width = 304.000000000000000000
+    end
+    object RestoreAdsListBoxItem: TListBoxItem
+      Height = 44.000000000000000000
+      ItemData.Detail = 'Use after reinstallation or on a new device'
+      Position.Y = 326.000000000000000000
+      StyleLookup = 'listboxitembottomdetail'
+      TabOrder = 7
+      Text = 'Restore purchase'
+      Width = 304.000000000000000000
+    end
+    object ConsumeListBoxItem: TListBoxItem
+      Height = 44.000000000000000000
+      ItemData.Detail = 'Use this in order to re-enable purchasing'
+      Position.Y = 370.000000000000000000
+      StyleLookup = 'listboxitembottomdetail'
+      TabOrder = 10
+      Text = 'Consume purchased Items'
+      Width = 304.000000000000000000
+    end
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      TextSettings.Font.Size = 21.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Option'
+      Width = 320.000000000000000000
+      object Button1: TButton
+        Align = Left
+        Height = 30.000000000000000000
+        Margins.Left = 6.000000000000000000
+        Position.X = 6.000000000000000000
+        Position.Y = 7.000000000000000000
+        StyleLookup = 'backtoolbutton'
+        TabOrder = 0
+        Text = 'Back'
+        Width = 73.000000000000000000
+        OnClick = Button1Click
+      end
+    end
+  end
+end

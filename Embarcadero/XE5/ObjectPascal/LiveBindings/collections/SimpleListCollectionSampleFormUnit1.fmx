@@ -1,0 +1,177 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Simple List Collection Form'
+  ClientHeight = 519
+  ClientWidth = 579
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object ListBox1: TListBox
+    Height = 181.000000000000000000
+    Position.X = 7.000000000000000000
+    Position.Y = 324.000000000000000000
+    TabOrder = 0
+    Width = 561.000000000000000000
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Width = 557.000000000000000000
+    end
+  end
+  object GroupBox1: TGroupBox
+    Height = 193.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = 'Use BindScope1 and BindingsList1'
+    Width = 561.000000000000000000
+    TabOrder = 1
+    object ButtonClear: TButton
+      Height = 22.000000000000000000
+      Position.X = 216.000000000000000000
+      Position.Y = 161.000000000000000000
+      TabOrder = 1
+      Text = 'Clear'
+      Width = 80.000000000000000000
+      OnClick = ButtonClearClick
+    end
+    object ButtonFill: TButton
+      Height = 22.000000000000000000
+      Position.X = 128.000000000000000000
+      Position.Y = 161.000000000000000000
+      TabOrder = 2
+      Text = 'Fill'
+      Width = 80.000000000000000000
+      OnClick = ButtonFillClick
+    end
+    object EditControlComponent: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 3
+      Position.X = 128.000000000000000000
+      Position.Y = 34.000000000000000000
+      Width = 241.000000000000000000
+      Height = 22.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object EditControlExpression: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 4
+      Position.X = 128.000000000000000000
+      Position.Y = 66.000000000000000000
+      Width = 241.000000000000000000
+      Height = 22.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object EditSourceComponentName: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 5
+      Position.X = 128.000000000000000000
+      Position.Y = 98.000000000000000000
+      Width = 265.000000000000000000
+      Height = 22.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object EditSourceExpression: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 0
+      Position.X = 128.000000000000000000
+      Position.Y = 133.000000000000000000
+      Width = 421.000000000000000000
+      Height = 22.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object LabelControlComponent: TLabel
+      Height = 15.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 37.000000000000000000
+      Text = 'Control Component:'
+      Width = 120.000000000000000000
+    end
+    object LabelControlExpression: TLabel
+      Height = 15.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 69.000000000000000000
+      Text = 'Control Expression:'
+      Width = 120.000000000000000000
+    end
+    object LabelSourceComponent: TLabel
+      Height = 15.000000000000000000
+      Position.X = 6.000000000000000000
+      Position.Y = 101.000000000000000000
+      Text = 'Source Component:'
+      Width = 120.000000000000000000
+    end
+    object LabelSourceExpressions: TLabel
+      Height = 15.000000000000000000
+      Position.X = 6.000000000000000000
+      Position.Y = 136.000000000000000000
+      Text = 'Source Expression:'
+      Width = 120.000000000000000000
+    end
+  end
+  object GroupBox2: TGroupBox
+    Height = 81.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 216.000000000000000000
+    Text = 'Create binding components in code'
+    Width = 561.000000000000000000
+    TabOrder = 2
+    object ButtonClearFromScratch: TButton
+      Height = 22.000000000000000000
+      Position.X = 216.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 1
+      Text = 'Clear'
+      Width = 80.000000000000000000
+      OnClick = ButtonClearFromScratchClick
+    end
+    object ButtonFillFromScratch: TButton
+      Height = 22.000000000000000000
+      Position.X = 128.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 0
+      Text = 'Fill'
+      Width = 80.000000000000000000
+      OnClick = ButtonFillFromScratchClick
+    end
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 483
+    Top = 106
+    object BindList1: TBindList
+      Category = 'Lists'
+      ControlComponent = ListBox1
+      SourceComponent = BindScope1
+      FormatExpressions = <
+        item
+          ControlExpression = 'Text'
+          SourceExpression = 
+            #39'IntegerField:  '#39' + ToStr(Current.IntegerField) + '#39' StringField:' +
+            ' '#39' + Current.StringField'
+        end>
+      FormatControlExpressions = <>
+      ClearControlExpressions = <>
+      AutoFill = False
+      OnEvalError = BindList1EvalError
+    end
+  end
+  object BindScope1: TBindScope
+    ScopeMappings = <>
+    Left = 480
+    Top = 16
+  end
+end

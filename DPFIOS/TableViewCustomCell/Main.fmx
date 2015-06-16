@@ -1,0 +1,42 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MainForm'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFUITableView1: TDPFUITableView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 460.000000000000000000
+      Size.PlatformDefault = False
+      OnNeedCellIdentifier = DPFUITableView1NeedCellIdentifier
+      OnDrawCell = DPFUITableView1DrawCell
+      OnGetRowHeight = DPFUITableView1GetRowHeight
+      Options.TextFont.FontName = ios_Helvetica_Bold
+      Options.TextFont.FontSize = 18
+      Options.DescriptionFont.FontName = ios_Helvetica
+      Options.RowHeight = 44.000000000000000000
+      Sections = <>
+    end
+  end
+end

@@ -1,0 +1,52 @@
+object Frame1: TFrame1
+  Size.Width = 320.000000000000000000
+  Size.Height = 480.000000000000000000
+  Size.PlatformDefault = False
+  TabOrder = 0
+  object DPFImageView1: TDPFImageView
+    Alpha = 1.000000000000000000
+    Shadow = True
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagBoolean = False
+    TagNative = 0
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Align = Top
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Size.Width = 310.000000000000000000
+    Size.Height = 257.000000000000000000
+    Size.PlatformDefault = False
+    ImageList.Strings = (
+      
+        'http://a.fsdn.com/con/app/proj/dpfdelphiios/screenshots/photo.PN' +
+        'G/182/137')
+    AnimationDuration = 1.000000000000000000
+    LoadFromURL = True
+    LoadAsync = True
+    ShowIndicator = True
+    IndicatorAlpha = 0.600000023841857900
+    OnClick = DPFImageView1Click
+  end
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagBoolean = False
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 213.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object DPFHttp1: TDPFHttp
+    OnReceiveData = DPFHttp1ReceiveData
+    Left = 264
+    Top = 192
+  end
+end

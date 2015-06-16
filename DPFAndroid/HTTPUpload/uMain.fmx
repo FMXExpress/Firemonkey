@@ -1,0 +1,68 @@
+object FHTTPUpload: TFHTTPUpload
+  Left = 0
+  Top = 0
+  Caption = 'HTTPUpload'
+  ClientHeight = 309
+  ClientWidth = 384
+  Transparency = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 309
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claGray
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 309.000000000000000000
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      Focusable = False
+      FocusableInTouchMode = False
+      BackgroundColor1 = claRed
+      BackgroundColor2 = claBlack
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      OnClick = DPFJButton1Click
+      DrawType = dtCustom
+      Margins.Left = 100.000000000000000000
+      Margins.Top = 50.000000000000000000
+      Margins.Right = 100.000000000000000000
+      Margins.Bottom = 50.000000000000000000
+      Align = alTop
+      Position.X = 100.000000000000000000
+      Position.Y = 50.000000000000000000
+      Width = 184.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Upload'
+      TextColor = claWhite
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+  object DPFJAlertDialog1: TDPFJAlertDialog
+    Left = 304
+    Top = 160
+  end
+  object DPFJProgressDialog1: TDPFJProgressDialog
+    OnCancel = DPFJProgressDialog1Cancel
+    Left = 120
+    Top = 160
+  end
+  object DPFJHTTP1: TDPFJHTTP
+    OnPregoressUpdate = DPFJHTTP1PregoressUpdate
+    OnCancelled = DPFJHTTP1Cancelled
+    OnStarted = DPFJHTTP1Started
+    OnFinished = DPFJHTTP1Finished
+    Left = 216
+    Top = 144
+  end
+end

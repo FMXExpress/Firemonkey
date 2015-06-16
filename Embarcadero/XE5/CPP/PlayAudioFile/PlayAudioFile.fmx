@@ -1,0 +1,53 @@
+object AudioPlayBackForm: TAudioPlayBackForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 417
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object Title: TLabel
+      Align = alContents
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Play Audio'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+    end
+    object btnStop: TSpeedButton
+      Align = alLeft
+      Height = 44.000000000000000000
+      Margins.Left = 7.000000000000000000
+      Position.X = 7.000000000000000000
+      StyleLookup = 'stoptoolbuttonbordered'
+      Text = 'btnStop'
+      Width = 44.000000000000000000
+      OnClick = btnStopClick
+    end
+    object btnPlay: TSpeedButton
+      Align = alRight
+      Height = 44.000000000000000000
+      Margins.Right = 7.000000000000000000
+      Position.X = 269.000000000000000000
+      StyleLookup = 'playtoolbuttonbordered'
+      Text = 'btnPlay'
+      Width = 44.000000000000000000
+      OnClick = btnPlayClick
+    end
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 160
+    Top = 168
+  end
+end

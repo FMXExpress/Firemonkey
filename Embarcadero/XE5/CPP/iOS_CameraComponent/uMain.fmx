@@ -1,0 +1,131 @@
+object CameraComponentForm: TCameraComponentForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object btnStartCamera: TButton
+    Align = alTop
+    Height = 44.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    TabOrder = 0
+    Text = 'Start Camera'
+    Width = 300.000000000000000000
+    OnClick = btnStartCameraClick
+  end
+  object btnStopCamera: TButton
+    Align = alTop
+    Height = 44.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 1
+    Text = 'Stop Camera'
+    Width = 300.000000000000000000
+    OnClick = btnStopCameraClick
+  end
+  object lblCameraType: TLabel
+    Height = 33.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 120.000000000000000000
+    StyleLookup = 'listboxitemlabel'
+    Text = 'Camera Type:'
+    Width = 289.000000000000000000
+  end
+  object cbCameraFlashType: TLabel
+    Height = 33.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 200.000000000000000000
+    StyleLookup = 'listboxitemlabel'
+    Text = 'Camera Flash Type:'
+    Width = 289.000000000000000000
+  end
+  object CameraComponent1: TCameraComponent
+    OnSampleBufferReady = CameraComponent1SampleBufferReady
+    Left = 48
+    Top = 408
+  end
+  object imgCameraView: TImage
+    MultiResBitmap = <
+      item
+      end
+      item
+        Scale = 2.000000000000000000
+      end>
+    Align = alBottom
+    Height = 183.000000000000000000
+    Position.Y = 277.000000000000000000
+    Width = 320.000000000000000000
+  end
+  object btnFrontCamera: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraType'
+    Height = 29.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 152.000000000000000000
+    StyleLookup = 'segmentedbuttonleft'
+    Text = 'Front'
+    Width = 73.000000000000000000
+    OnClick = btnFrontCameraClick
+  end
+  object btnBackCamera: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraType'
+    Height = 29.000000000000000000
+    Position.X = 88.000000000000000000
+    Position.Y = 152.000000000000000000
+    StyleLookup = 'segmentedbuttonright'
+    Text = 'Back'
+    Width = 73.000000000000000000
+    OnClick = btnBackCameraClick
+  end
+  object btnOn: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraFlashType'
+    Height = 29.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 232.000000000000000000
+    StyleLookup = 'segmentedbuttonleft'
+    Text = 'On'
+    Width = 73.000000000000000000
+    OnClick = btnOnClick
+  end
+  object btnOff: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraFlashType'
+    Height = 29.000000000000000000
+    Position.X = 88.000000000000000000
+    Position.Y = 232.000000000000000000
+    StyleLookup = 'segmentedbuttonmiddle'
+    Text = 'Off'
+    Width = 73.000000000000000000
+    OnClick = btnOffClick
+  end
+  object btnAuto: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraFlashType'
+    Height = 29.000000000000000000
+    Position.X = 160.000000000000000000
+    Position.Y = 232.000000000000000000
+    StyleLookup = 'segmentedbuttonright'
+    Text = 'Auto'
+    Width = 73.000000000000000000
+    OnClick = btnAutoClick
+  end
+end

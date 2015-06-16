@@ -1,0 +1,72 @@
+object FScrollView: TFScrollView
+  Left = 0
+  Top = 0
+  Caption = 'ScrollView'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claSilver
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJScrollView1: TDPFJScrollView
+      Alpha = 1.000000000000000000
+      Clickable = False
+      BackgroundColor1 = claGray
+      BackgroundColor2 = claWhite
+      GradientOrientation = TR_BL
+      DrawType = dtCustom
+      Align = alClient
+      Width = 384.000000000000000000
+      Height = 504.000000000000000000
+    end
+    object DPFJView2: TDPFJRelativeLayout
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claSilver
+      DrawType = dtCustom
+      Align = alBottom
+      Position.Y = 504.000000000000000000
+      Width = 384.000000000000000000
+      Height = 63.000000000000000000
+      object DPFJButton1: TDPFJButton
+        Alpha = 1.000000000000000000
+        OnClick = DPFJButton1Click
+        Position.X = 16.000000000000000000
+        Position.Y = 4.000000000000000000
+        Width = 145.000000000000000000
+        Height = 50.000000000000000000
+        Text = 'Add Controls'
+        TextSize = 21.000000000000000000
+        TextAlignment = taCenter
+      end
+      object DPFJButton2: TDPFJButton
+        Alpha = 1.000000000000000000
+        OnClick = DPFJButton2Click
+        Position.X = 208.000000000000000000
+        Position.Y = 4.000000000000000000
+        Width = 145.000000000000000000
+        Height = 50.000000000000000000
+        Text = 'Remove Controls'
+        TextSize = 21.000000000000000000
+        TextAlignment = taCenter
+      end
+    end
+  end
+  object DPFJAlertDialog1: TDPFJAlertDialog
+    Left = 288
+    Top = 344
+  end
+end

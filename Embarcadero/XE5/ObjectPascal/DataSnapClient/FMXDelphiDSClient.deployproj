@@ -1,0 +1,69 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+		<ProjectExtensions>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<ItemGroup Condition="'$(Platform)'=='Win64'">
+			<DeployFile Include="$(BDS)\bin64\midas.dll">
+				<RemoteDir>FMXDelphiDSClient\</RemoteDir>
+				<RemoteName>midas.dll</RemoteName>
+				<Operation>0</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+		</ItemGroup>
+		<ItemGroup Condition="'$(Platform)'=='OSX32'">
+			<DeployFile Condition="'$(Config)'=='Debug'" Include="Debug\OSX32\FMXDelphiDSClient">
+				<RemoteDir>FMXDelphiDSClient.app\Contents\MacOS\</RemoteDir>
+				<RemoteName>FMXDelphiDSClient</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+				<Required>True</Required>
+			</DeployFile>
+			<DeployFile Condition="'$(Config)'=='Debug'" Include="Debug\OSX32\FMXDelphiDSClient.info.plist">
+				<RemoteDir>FMXDelphiDSClient.app\Contents\</RemoteDir>
+				<RemoteName>Info.plist</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+			<DeployFile Condition="'$(Config)'=='Debug'" Include="Debug\OSX32\FMXDelphiDSClient.icns">
+				<RemoteDir>FMXDelphiDSClient.app\Contents\Resources\</RemoteDir>
+				<RemoteName>FMXDelphiDSClient.icns</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+			<DeployFile Condition="'$(Config)'=='Debug'" Include="Debug\OSX32\FMXDelphiDSClient.rsm">
+				<RemoteDir>FMXDelphiDSClient.app\Contents\MacOS\</RemoteDir>
+				<RemoteName>FMXDelphiDSClient.rsm</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+			<DeployFile Include="$(BDS)\redist\osx32\libmidas.dylib">
+				<RemoteDir>FMXDelphiDSClient.app\Contents\MacOS\</RemoteDir>
+				<RemoteName>libmidas.dylib</RemoteName>
+				<Operation>0</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+			<DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+				<RemoteDir>FMXDelphiDSClient.app\Contents\MacOS\</RemoteDir>
+				<RemoteName>libcgunwind.1.0.dylib</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+		</ItemGroup>
+		<ItemGroup Condition="'$(Platform)'=='Win32'">
+			<DeployFile Include="$(BDS)\bin\midas.dll">
+				<RemoteDir>FMXDelphiDSClient\</RemoteDir>
+				<RemoteName>midas.dll</RemoteName>
+				<Operation>0</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+		</ItemGroup>
+	</Project>

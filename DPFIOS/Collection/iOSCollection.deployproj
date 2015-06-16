@@ -1,0 +1,1635 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup Condition="'$(Platform)'=='Android'">
+        <DeployFile Include="..\Images\Collection\06.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>06.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\01.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>01.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\25.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>25.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\11.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>11.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\17.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>17.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\04.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>04.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\31.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>31.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\26.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>26.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\07.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>07.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\12.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>12.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\22.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>22.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\21.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>21.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\13.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>13.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\20.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>20.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\24.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>24.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\29.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>29.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\32.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>32.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\23.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>23.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\28.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>28.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\05.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>05.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\09.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>09.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\27.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>27.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\18.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>18.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\03.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>03.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\15.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>15.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\19.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>19.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\08.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>08.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\10.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>10.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\16.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>16.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\00.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>00.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\30.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>30.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\14.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>14.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\02.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>02.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\06.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>06.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\01.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>01.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\25.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>25.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice\Debug\iOSCollection.dSYM" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>iOSCollection</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\11.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>11.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\17.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>17.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\04.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>04.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\31.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>31.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice\Debug\iOSCollection" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>iOSCollection</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\26.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>26.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\07.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>07.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\12.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>12.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\22.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>22.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\21.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>21.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\13.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>13.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice\Debug\ResourceRules.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\20.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>20.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\24.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>24.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\29.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>29.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\32.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>32.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\23.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>23.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\28.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>28.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\05.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>05.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice\Debug\iOSCollection.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\09.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>09.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\27.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>27.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\18.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>18.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\03.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>03.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice\Debug\iOSCollection.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\../\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\15.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>15.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\19.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>19.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\08.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>08.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\10.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>10.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\16.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>16.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\00.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>00.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\30.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>30.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\14.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>14.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\02.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>02.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="..\Images\Collection\06.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>06.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\01.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>01.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\25.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>25.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\11.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>11.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\17.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>17.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\04.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>04.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\31.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>31.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\26.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>26.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\07.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>07.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\12.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>12.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\22.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>22.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\21.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>21.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\13.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>13.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\20.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>20.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\24.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>24.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\29.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>29.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\32.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>32.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\23.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>23.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\28.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>28.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\05.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>05.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\09.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>09.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\27.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>27.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\18.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>18.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\03.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>03.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\15.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>15.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\19.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>19.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\08.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>08.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\10.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>10.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\16.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>16.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\00.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>00.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\30.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>30.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\14.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>14.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\02.jpg">
+            <RemoteDir>iOSCollection\</RemoteDir>
+            <RemoteName>02.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>iOSCollection.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="..\Images\Collection\06.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>06.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\01.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>01.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\25.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>25.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\11.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>11.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\17.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>17.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\iOSCollection.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\04.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>04.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\31.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>31.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\26.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>26.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\07.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>07.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\12.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>12.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\22.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>22.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\21.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>21.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\13.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>13.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\iOSCollection" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>iOSCollection</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\20.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>20.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\24.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>24.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\29.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>29.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\32.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>32.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\23.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>23.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\28.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>28.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\05.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>05.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\09.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>09.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\27.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>27.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\18.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>18.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\03.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>03.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\iOSCollection.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\15.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>15.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\19.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>19.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\08.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>08.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\iOSCollection.rsm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>iOSCollection.rsm</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\10.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>10.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\16.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>16.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\00.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>00.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\30.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>30.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\14.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>14.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Collection\02.jpg">
+            <RemoteDir>iOSCollection.app\Documents\</RemoteDir>
+            <RemoteName>02.jpg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>iOSCollection.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
+</Project>

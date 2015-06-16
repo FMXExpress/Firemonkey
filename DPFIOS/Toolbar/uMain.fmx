@@ -1,0 +1,248 @@
+object FToolbar: TFToolbar
+  Left = 0
+  Top = 0
+  Caption = 'Toolbar'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claYellowgreen
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 65.000000000000000000
+      Position.Y = 81.000000000000000000
+      Size.Width = 152.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'UIButton'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claSteelblue
+      BackgroundColorHighlight = claYellowgreen
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton1Click
+    end
+    object DPFToolbar1: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Bottom
+      Position.Y = 403.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundImage = 'Head.png'
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Image = 'about.png'
+          ButtonItemKind = bkImage
+          OnClick = DPFToolbar1Items0Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end>
+    end
+    object DPFToolbar2: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiAction
+          OnClick = DPFToolbar2BarItems0Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiAdd
+          OnClick = DPFToolbar2BarItems0Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiBookmarks
+          OnClick = DPFToolbar2BarItems0Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiCamera
+          OnClick = DPFToolbar2BarItems0Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiCancel
+          OnClick = DPFToolbar2BarItems0Click
+          ModalResult = 0
+          TintColor = claTomato
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiCompose
+          OnClick = DPFToolbar2BarItems0Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          OnClick = DPFToolbar2BarItems0Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiEdit
+          OnClick = DPFToolbar2BarItems0Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end>
+    end
+    object DPFToolbar3: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 221.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'This is a Toolbar button !'
+          ButtonItemKind = bkTitle
+          OnClick = DPFToolbar3BarItems0Click
+          ModalResult = 0
+          Width = 320.000000000000000000
+        end>
+    end
+    object DPFToolbar4: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 164.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'This is a Toolbar button !'
+          ButtonItemKind = bkTitle
+          ButtonItemStyle = bbisDone
+          OnClick = DPFToolbar4BarItems0Click
+          ModalResult = 0
+          Width = 250.000000000000000000
+        end>
+    end
+    object DPFToolbar5: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 107.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          CustomView = DPFButton1
+          ButtonItemKind = bkCustomView
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end>
+    end
+    object DPFToolbar6: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 57.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiReply
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Test'
+          ButtonSystemItem = bbsiFlexibleSpace
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Center'
+          ButtonSystemItem = bbsiBookmarks
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiFlexibleSpace
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Right!'
+          ButtonSystemItem = bbsiCamera
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end>
+    end
+  end
+  object DPFAlertView1: TDPFAlertView
+    ViewStyle = avsSecureTextInput
+    Left = 240
+    Top = 128
+  end
+end

@@ -1,0 +1,241 @@
+object FAVAudioPlayer: TFAVAudioPlayer
+  Left = 0
+  Top = 0
+  Caption = 'Audio Player'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFToolbar1: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Top = 25.000000000000000000
+      Align = Top
+      Position.Y = 25.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiPlay
+          OnClick = DPFToolbar1BarItems0Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiFlexibleSpace
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiPlay
+          OnClick = DPFToolbar1BarItems1Click
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end>
+    end
+    object DPFMPVolume1: TDPFMPVolume
+      Alpha = 1.000000000000000000
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 27.000000000000000000
+      Position.Y = 296.000000000000000000
+      Size.Width = 266.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 85.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 63.000000000000000000
+      Size.PlatformDefault = False
+      TextColor = claWhite
+      BackgroundColor = claLightsteelblue
+      NumberOfLines = 0
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFProgress1: TDPFProgress
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 5.000000000000000000
+      TagNative = 0
+      Position.X = 20.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 9.000000000000000000
+      Size.PlatformDefault = False
+      Animated = False
+      ProgressTintColor = claBlue
+    end
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 31.000000000000000000
+      Position.Y = 384.000000000000000000
+      Size.Width = 106.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Tap Sound'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton1Click
+    end
+    object DPFButton2: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 183.000000000000000000
+      Position.Y = 384.000000000000000000
+      Size.Width = 106.000000000000000000
+      Size.Height = 46.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Ring Sound'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton2Click
+    end
+    object DPFButton3: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Open'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton3Click
+    end
+    object DPFButton4: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 112.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Pause'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton4Click
+    end
+    object DPFButton5: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 216.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Stopped'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton5Click
+    end
+    object DPFButton6: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Play'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton6Click
+    end
+    object DPFButton7: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 112.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Close'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton7Click
+    end
+  end
+  object DPFAVPlayer1: TDPFAVPlayer
+    PlayItems = <>
+    OnFinishPlaying = DPFAVPlayer1FinishPlaying
+    OnPlaying = DPFAVPlayer1Playing
+    OnOpenStatus = DPFAVPlayer1OpenStatus
+    Left = 248
+    Top = 96
+  end
+end

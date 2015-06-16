@@ -1,0 +1,1253 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice32'">
+        <DeployFile Include="..\Images\Others\flower_white.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flower_white.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\ResourceRules.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_yellow.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_yellow.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flag_iran.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flag_iran.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\TableViewVirtualCustomView" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>TableViewVirtualCustomView</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\businessman.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>businessman.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\news.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>news.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\lock.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>lock.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\admin.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>admin.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flower_red.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flower_red.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flower_blue.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flower_blue.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\TableViewVirtualCustomView.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\../\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\ResourceRules.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\TableViewVirtualCustomView.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\users2.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>users2.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\loudspeaker.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>loudspeaker.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\calendar.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>calendar.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\businessmen.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>businessmen.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_on.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_on.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\TableViewVirtualCustomView.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\../\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flower_yellow.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flower_yellow.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_off.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_off.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\TableViewVirtualCustomView" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>TableViewVirtualCustomView</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\mail.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>mail.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_green.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_green.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\users4.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>users4.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\table.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>table.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\shield_green.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>shield_green.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_red_yellow.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_red_yellow.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\TableViewVirtualCustomView.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Debug\TableViewVirtualCustomView.dSYM" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>TableViewCustomView</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\lock_open.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>lock_open.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSDevice32\Release\TableViewVirtualCustomView.dSYM" Condition="'$(Config)'=='Release'">
+            <RemoteDir>$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>TableViewVirtualCustomView</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_red.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_red.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\user_headphones.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>user_headphones.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Android'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="..\Images\Others\flower_white.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>flower_white.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_yellow.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>trafficlight_yellow.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flag_iran.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>flag_iran.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\businessman.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>businessman.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\news.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>news.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\lock.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>lock.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\admin.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>admin.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flower_red.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>flower_red.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flower_blue.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>flower_blue.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\users2.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>users2.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\loudspeaker.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>loudspeaker.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\calendar.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>calendar.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\businessmen.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>businessmen.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_on.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>trafficlight_on.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flower_yellow.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>flower_yellow.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_off.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>trafficlight_off.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\mail.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>mail.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_green.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>trafficlight_green.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\users4.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>users4.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\table.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>table.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\shield_green.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>shield_green.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_red_yellow.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>trafficlight_red_yellow.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\lock_open.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>lock_open.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_red.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>trafficlight_red.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\user_headphones.png">
+            <RemoteDir>TableViewVirtualCustomView\</RemoteDir>
+            <RemoteName>user_headphones.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice64'"/>
+    <ItemGroup Condition="'$(Platform)'=='Win64'"/>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>TableViewVirtualCustomView.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="..\Images\Others\flower_white.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flower_white.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\TableViewVirtualCustomView.rsm" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>TableViewVirtualCustomView.rsm</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_yellow.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_yellow.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\TableViewVirtualCustomView" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>TableViewVirtualCustomView</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flag_iran.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flag_iran.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\TableViewVirtualCustomView.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\TableViewVirtualCustomView" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>TableViewVirtualCustomView</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\businessman.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>businessman.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\news.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>news.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\lock.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>lock.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\TableViewVirtualCustomView.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\admin.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>admin.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flower_red.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flower_red.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flower_blue.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flower_blue.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\TableViewVirtualCustomView.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\users2.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>users2.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\loudspeaker.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>loudspeaker.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\calendar.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>calendar.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\businessmen.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>businessmen.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_on.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_on.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\TableViewVirtualCustomView.rsm" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>TableViewVirtualCustomView.rsm</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-667h@2x.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\flower_yellow.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>flower_yellow.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_off.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_off.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\mail.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>mail.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_green.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_green.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Landscape-736h@3x.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\users4.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>users4.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\table.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>table.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\shield_green.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>shield_green.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_red_yellow.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_red_yellow.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_180x180.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\TableViewVirtualCustomView.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\lock_open.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>lock_open.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default-736h@3x.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>TableViewVirtualCustomView.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_87x87.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\trafficlight_red.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>trafficlight_red.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="..\Images\Others\user_headphones.png">
+            <RemoteDir>TableViewVirtualCustomView.app\Documents\</RemoteDir>
+            <RemoteName>user_headphones.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>

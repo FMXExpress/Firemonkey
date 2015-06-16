@@ -1,0 +1,93 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFLabel1: TDPFLabel
+    Alpha = 1.000000000000000000
+    ClipsToBounds = False
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Position.X = 32.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'I am in Form 2!'
+    BaseLineAdjustment = blaAlignBaseLines
+  end
+  object DPFLabel2: TDPFLabel
+    Alpha = 1.000000000000000000
+    ClipsToBounds = False
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Position.X = 48.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 241.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Another label'
+    BaseLineAdjustment = blaAlignBaseLines
+  end
+  object DPFToolbar1: TDPFToolbar
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    BarItems = <
+      item
+        Font.FontName = ios_Helvetica_Bold
+        Title = 'Back Form1'
+        ButtonItemKind = bkTitle
+        ButtonItemStyle = bbisBordered
+        ButtonSystemItem = bbsiAdd
+        OnClick = DPFToolbar1BarItems0Click
+        ModalResult = 0
+        Width = 90.000000000000000000
+      end
+      item
+        Font.FontName = ios_Helvetica_Bold
+        Title = 'Form 2'
+        ButtonItemKind = bkTitle
+        ModalResult = 0
+        Width = 150.000000000000000000
+      end
+      item
+        Font.FontName = ios_Helvetica_Bold
+        ButtonSystemItem = bbsiFlexibleSpace
+        ModalResult = 0
+        Width = 50.000000000000000000
+      end>
+  end
+  object DPFButton1: TDPFButton
+    Alpha = 1.000000000000000000
+    ClipsToBounds = False
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Position.X = 48.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Button in Form 2'
+    TextLineBreak = lbCharacterWrap
+    TextAlpha = 1.000000000000000000
+    AdjustsImageWhenHighlighted = False
+  end
+end

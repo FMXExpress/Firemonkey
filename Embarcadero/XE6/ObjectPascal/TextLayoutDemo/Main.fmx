@@ -1,0 +1,164 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ActiveControl = lbLayouts
+  Caption = 'Text Layout Demo'
+  ClientHeight = 605
+  ClientWidth = 705
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [dkDesktop]
+  FormFamily = 'TForm'
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object pnlText: TPanel
+    Align = alClient
+    Height = 605.000000000000000000
+    Width = 472.000000000000000000
+    TabOrder = 0
+    OnMouseDown = pnlTextMouseDown
+    OnMouseMove = pnlTextMouseMove
+    OnMouseUp = pnlTextMouseUp
+    OnPaint = pnlTextPaint
+    OnResize = pnlTextResize
+  end
+  object Panel3: TPanel
+    Align = alMostLeft
+    Height = 605.000000000000000000
+    Width = 233.000000000000000000
+    TabOrder = 1
+    object lbLayouts: TListBox
+      Height = 177.000000000000000000
+      PopupMenu = LayoutsPopupMenu
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 0
+      Width = 217.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = lbLayoutsChange
+    end
+    object lbLayoutAttributes: TListBox
+      Height = 153.000000000000000000
+      PopupMenu = LayoutAttributesPopupMenu
+      Position.X = 8.000000000000000000
+      Position.Y = 232.000000000000000000
+      TabOrder = 1
+      Width = 217.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = lbLayoutAttributesChange
+    end
+    object Label6: TLabel
+      Height = 15.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 216.000000000000000000
+      Text = 'Attributes'
+      Width = 120.000000000000000000
+    end
+    object Label9: TLabel
+      Height = 15.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Layouts'
+      Width = 120.000000000000000000
+    end
+  end
+  object LayoutsPopupMenu: TPopupMenu
+    Left = 120
+    Top = 80
+    object MenuItem1: TMenuItem
+      Action = actAddLayout
+    end
+    object MenuItem2: TMenuItem
+      Action = actEditLayout
+      Enabled = False
+    end
+    object MenuItem3: TMenuItem
+      Action = actDeleteLayout
+      Enabled = False
+    end
+    object MenuItem10: TMenuItem
+      Text = '-'
+    end
+    object MenuItem4: TMenuItem
+      Action = actClearLayouts
+      Enabled = False
+    end
+    object MenuItem6: TMenuItem
+      Text = '-'
+    end
+    object MenuItem11: TMenuItem
+      Action = actConvertToPath
+      Enabled = False
+    end
+  end
+  object LayoutAttributesPopupMenu: TPopupMenu
+    Left = 104
+    Top = 264
+    object MenuItem5: TMenuItem
+      Action = actAddAttribute
+      Enabled = False
+    end
+    object MenuItem7: TMenuItem
+      Action = actDeleteAttribute
+      Enabled = False
+    end
+    object MenuItem9: TMenuItem
+      Text = '-'
+    end
+    object MenuItem8: TMenuItem
+      Action = actClearAttributes
+      Enabled = False
+    end
+  end
+  object FMXActionList1: TActionList
+    Left = 120
+    Top = 128
+    object actAddLayout: TAction
+      Text = 'Add layout'
+      OnExecute = actAddLayoutExecute
+    end
+    object actEditLayout: TAction
+      Text = 'Edit layout'
+      Enabled = False
+      OnExecute = actEditLayoutExecute
+    end
+    object actDeleteLayout: TAction
+      Text = 'Delete layout'
+      Enabled = False
+      OnExecute = actDeleteLayoutExecute
+    end
+    object actClearLayouts: TAction
+      Text = 'Clear layouts'
+      Enabled = False
+      OnExecute = actClearLayoutsExecute
+    end
+    object actAddAttribute: TAction
+      Text = 'Add attribute'
+      Enabled = False
+      OnExecute = actAddAttributeExecute
+    end
+    object actDeleteAttribute: TAction
+      Text = 'Delete attribute'
+      Enabled = False
+      OnExecute = actDeleteAttributeExecute
+    end
+    object actClearAttributes: TAction
+      Text = 'Clear attributes'
+      Enabled = False
+      OnExecute = actClearAttributesExecute
+    end
+    object actConvertToPath: TAction
+      Text = 'Convert to path'
+      Enabled = False
+      OnExecute = actConvertToPathExecute
+    end
+  end
+end

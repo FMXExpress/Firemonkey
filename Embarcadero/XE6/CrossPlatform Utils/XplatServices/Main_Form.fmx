@@ -1,0 +1,427 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'UserIniFile Test'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1680
+  FormFactor.Height = 1050
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object TabControl1: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 416.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = tpBottom
+    Width = 320.000000000000000000
+    object IniFileTab: TTabItem
+      WordWrap = False
+      StyledSettings = [ssFamily]
+      Height = 49.000000000000000000
+      IsSelected = True
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 0
+      Text = 'IIniFileService'
+      Width = 160.000000000000000000
+      object VertScrollBox1: TVertScrollBox
+        Align = alClient
+        Height = 367.000000000000000000
+        TabOrder = 0
+        Width = 320.000000000000000000
+        object btnReadSectionValues: TButton
+          Action = ReadSectionValuesAction
+          Align = alTop
+          Height = 44.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 404.000000000000000000
+          TabOrder = 0
+          Trimming = ttCharacter
+          Width = 289.000000000000000000
+        end
+        object btnDeleteKey: TButton
+          Action = DeleteKeyAction
+          Align = alTop
+          Height = 44.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 452.000000000000000000
+          TabOrder = 1
+          Trimming = ttCharacter
+          Width = 289.000000000000000000
+        end
+        object Layout1: TLayout
+          Align = alTop
+          Height = 45.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 12.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 12.000000000000000000
+          Width = 289.000000000000000000
+          object btnWriteString: TButton
+            Action = WriteStringAction
+            Align = alLeft
+            Height = 45.000000000000000000
+            TabOrder = 0
+            Width = 138.000000000000000000
+          end
+          object btnReadString: TButton
+            Action = ReadStringAction
+            Align = alRight
+            Height = 45.000000000000000000
+            Position.X = 152.000000000000000000
+            TabOrder = 1
+            Width = 137.000000000000000000
+          end
+        end
+        object Layout2: TLayout
+          Align = alTop
+          Height = 45.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 61.000000000000000000
+          Width = 289.000000000000000000
+          object btnWriteInteger: TButton
+            Action = WriteIntegerAction
+            Align = alLeft
+            Height = 45.000000000000000000
+            TabOrder = 0
+            Width = 138.000000000000000000
+          end
+          object btnReadInteger: TButton
+            Action = ReadIntegerAction
+            Align = alRight
+            Height = 45.000000000000000000
+            Position.X = 152.000000000000000000
+            TabOrder = 1
+            Width = 137.000000000000000000
+          end
+        end
+        object Layout3: TLayout
+          Align = alTop
+          Height = 45.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 110.000000000000000000
+          Width = 289.000000000000000000
+          object btnWriteFloat: TButton
+            Action = WriteFloatAction
+            Align = alLeft
+            Height = 45.000000000000000000
+            TabOrder = 0
+            Width = 138.000000000000000000
+          end
+          object btnReadFloat: TButton
+            Action = ReadFloatAction
+            Align = alRight
+            Height = 45.000000000000000000
+            Position.X = 152.000000000000000000
+            TabOrder = 1
+            Width = 137.000000000000000000
+          end
+        end
+        object Layout4: TLayout
+          Align = alTop
+          Height = 45.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 159.000000000000000000
+          Width = 289.000000000000000000
+          object btnWriteBool: TButton
+            Action = WriteBoolAction
+            Align = alLeft
+            Height = 45.000000000000000000
+            TabOrder = 0
+            Width = 138.000000000000000000
+          end
+          object btnReadBool: TButton
+            Action = ReadBoolAction
+            Align = alRight
+            Height = 45.000000000000000000
+            Position.X = 152.000000000000000000
+            TabOrder = 1
+            Width = 137.000000000000000000
+          end
+        end
+        object Layout5: TLayout
+          Align = alTop
+          Height = 45.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 208.000000000000000000
+          Width = 289.000000000000000000
+          object btnWriteDate: TButton
+            Action = WriteDateAction
+            Align = alLeft
+            Height = 45.000000000000000000
+            TabOrder = 0
+            Width = 138.000000000000000000
+          end
+          object btnReadDate: TButton
+            Action = ReadDateAction
+            Align = alRight
+            Height = 45.000000000000000000
+            Position.X = 152.000000000000000000
+            TabOrder = 1
+            Width = 137.000000000000000000
+          end
+        end
+        object Layout6: TLayout
+          Align = alTop
+          Height = 45.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 257.000000000000000000
+          Width = 289.000000000000000000
+          object btnWriteTime: TButton
+            Action = WriteTimeAction
+            Align = alLeft
+            Height = 45.000000000000000000
+            TabOrder = 0
+            Width = 138.000000000000000000
+          end
+          object btnReadTime: TButton
+            Action = ReadTimeAction
+            Align = alRight
+            Height = 45.000000000000000000
+            Position.X = 152.000000000000000000
+            TabOrder = 1
+            Width = 137.000000000000000000
+          end
+        end
+        object Layout7: TLayout
+          Align = alTop
+          Height = 45.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 306.000000000000000000
+          Width = 289.000000000000000000
+          object btnWriteDateTime: TButton
+            Action = WriteDateTimeAction
+            Align = alLeft
+            Height = 45.000000000000000000
+            TabOrder = 0
+            Width = 138.000000000000000000
+          end
+          object btnReadDateTime: TButton
+            Action = ReadDateTimeAction
+            Align = alRight
+            Height = 45.000000000000000000
+            Position.X = 152.000000000000000000
+            TabOrder = 1
+            Width = 137.000000000000000000
+          end
+        end
+        object Layout8: TLayout
+          Align = alTop
+          Height = 45.000000000000000000
+          Margins.Left = 12.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Margins.Right = 12.000000000000000000
+          Position.X = 12.000000000000000000
+          Position.Y = 355.000000000000000000
+          Width = 289.000000000000000000
+          object btnReadSection: TButton
+            Action = ReadSectionAction
+            Align = alRight
+            Height = 45.000000000000000000
+            Position.X = 152.000000000000000000
+            TabOrder = 0
+            Trimming = ttCharacter
+            Width = 137.000000000000000000
+          end
+          object btnReadSections: TButton
+            Action = ReadSectionsAction
+            Align = alLeft
+            Height = 45.000000000000000000
+            TabOrder = 1
+            Trimming = ttCharacter
+            Width = 137.000000000000000000
+          end
+        end
+      end
+    end
+    object PleaseWaitTab: TTabItem
+      WordWrap = False
+      StyledSettings = [ssFamily]
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 160.000000000000000000
+      StyleLookup = 'tabitemhistory'
+      TabOrder = 1
+      Text = 'IPleaseWaitService'
+      Trimming = ttCharacter
+      Width = 160.000000000000000000
+      object btnStartWait: TButton
+        Action = StartWaitAction
+        Align = alTop
+        Height = 44.000000000000000000
+        Margins.Left = 16.000000000000000000
+        Margins.Top = 16.000000000000000000
+        Margins.Right = 16.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 0
+        Trimming = ttCharacter
+        Width = 288.000000000000000000
+      end
+      object btnStopWait: TButton
+        Action = StopWaitAction
+        Align = alTop
+        Height = 44.000000000000000000
+        Margins.Left = 16.000000000000000000
+        Margins.Top = 16.000000000000000000
+        Margins.Right = 16.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 76.000000000000000000
+        TabOrder = 1
+        Trimming = ttCharacter
+        Width = 288.000000000000000000
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object Label1: TLabel
+      Align = alClient
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Xplat Services Demo'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object ActionList1: TActionList
+    OnUpdate = ActionList1Update
+    Left = 144
+    Top = 472
+    object ReadStringAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadString'
+      OnExecute = ReadStringActionExecute
+    end
+    object WriteStringAction: TAction
+      Category = 'IIniFileService'
+      Text = 'WriteString'
+      OnExecute = WriteStringActionExecute
+    end
+    object ReadIntegerAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadInteger'
+      OnExecute = ReadIntegerActionExecute
+    end
+    object WriteIntegerAction: TAction
+      Category = 'IIniFileService'
+      Text = 'WriteInteger'
+      OnExecute = WriteIntegerActionExecute
+    end
+    object ReadFloatAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadFloat'
+      OnExecute = ReadFloatActionExecute
+    end
+    object WriteFloatAction: TAction
+      Category = 'IIniFileService'
+      Text = 'WriteFloat'
+      OnExecute = WriteFloatActionExecute
+    end
+    object ReadBoolAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadBool'
+      OnExecute = ReadBoolActionExecute
+    end
+    object WriteBoolAction: TAction
+      Category = 'IIniFileService'
+      Text = 'WriteBool'
+      OnExecute = WriteBoolActionExecute
+    end
+    object ReadDateAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadDate'
+      OnExecute = ReadDateActionExecute
+    end
+    object WriteDateAction: TAction
+      Category = 'IIniFileService'
+      Text = 'WriteDate'
+      OnExecute = WriteDateActionExecute
+    end
+    object ReadTimeAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadTime'
+      OnExecute = ReadTimeActionExecute
+    end
+    object WriteTimeAction: TAction
+      Category = 'IIniFileService'
+      Text = 'WriteTime'
+      OnExecute = WriteTimeActionExecute
+    end
+    object ReadDateTimeAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadDateTime'
+      OnExecute = ReadDateTimeActionExecute
+    end
+    object WriteDateTimeAction: TAction
+      Category = 'IIniFileService'
+      Text = 'WriteDateTime'
+      OnExecute = WriteDateTimeActionExecute
+    end
+    object ReadSectionsAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadSections'
+      OnExecute = ReadSectionsActionExecute
+    end
+    object ReadSectionAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadSection'
+      OnExecute = ReadSectionActionExecute
+    end
+    object ReadSectionValuesAction: TAction
+      Category = 'IIniFileService'
+      Text = 'ReadSectionValues'
+      OnExecute = ReadSectionValuesActionExecute
+    end
+    object DeleteKeyAction: TAction
+      Category = 'IIniFileService'
+      Text = 'DeleteKey'
+      OnExecute = DeleteKeyActionExecute
+    end
+    object StartWaitAction: TAction
+      Category = 'IPleaseWaitService'
+      Text = 'Start Wait'
+      OnExecute = StartWaitActionExecute
+    end
+    object StopWaitAction: TAction
+      Category = 'IPleaseWaitService'
+      Text = 'StopWait'
+      OnExecute = StopWaitActionExecute
+    end
+  end
+end

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"     "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PreferenceSpecifiers</key>
+    <array>
+        <dict>
+            <key>Title</key>
+            <string>D.P.F iOS Native Components</string>
+            <key>Type</key>
+            <string>PSGroupSpecifier</string>
+            <key>FooterText</key>
+            <string>Copyright, 2013-2015 D.P.F.&#xA;All rights reserved.</string>
+        </dict>
+        <dict>
+            <key>DefaultValue</key>
+            <string>7.9.5</string>
+            <key>Key</key>
+            <string>version_preference</string>
+            <key>Title</key>
+            <string>Version</string>
+            <key>Type</key>
+            <string>PSTitleValueSpecifier</string>
+        </dict>
+        <dict>
+            <key>DefaultValue</key>
+            <string>Babak Yaghoobi</string>
+            <key>Key</key>
+            <string>developed_preference</string>
+            <key>Title</key>
+            <string>Developed by</string>
+            <key>Type</key>
+            <string>PSTitleValueSpecifier</string>
+        </dict>
+        <dict>
+            <key>DefaultValue</key>
+            <string>bayaghoobi@gmail.com</string>
+            <key>Key</key>
+            <string>developed_preference</string>
+            <key>Title</key>
+            <string>eMail : </string>
+            <key>Type</key>
+            <string>PSTitleValueSpecifier</string>
+        </dict>
+
+
+        <dict>
+            <key>DefaultValue</key>
+            <string>Babak Yaghoobi</string>
+            <key>Key</key>
+            <string>Enabled_preference</string>
+            <key>Title</key>
+            <string>Enabled</string>
+            <key>Type</key>
+            <string>PSToggleSwitchSpecifier</string>
+        </dict>
+
+
+    </array>
+    <key>StringsTable</key>
+    <string>Root</string>
+</dict>
+</plist>

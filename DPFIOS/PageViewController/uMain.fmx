@@ -1,0 +1,176 @@
+object FNavigationControllerForm: TFNavigationControllerForm
+  Left = 0
+  Top = 0
+  Caption = 'D.P.F NavigationController'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 2
+  object DPFUIViewController4: TDPFUIViewController
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claWhite
+    object DPFUIPageViewController1: TDPFUIPageViewController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TransitionStyle = tsScroll
+      Pages = <
+        item
+          Title = 'asdfasdfasdf'
+          Page = DPFUIViewController1
+        end
+        item
+          Title = 'asdsdfasd'
+          Page = DPFUIViewController2
+        end
+        item
+          Page = DPFUIViewController3
+        end>
+      OnPageChanged = DPFUIPageViewController1PageChanged
+    end
+    object DPFUIViewController1: TDPFUIViewController
+      ContentMode = vcmCenter
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 24.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 161.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claSteelblue
+      object DPFButton1: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Anchors = [akRight, akBottom]
+        Position.X = 16.000000000000000000
+        Position.Y = 32.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Button 1'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        AdjustsImageWhenHighlighted = False
+      end
+      object DPFButton4: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 8.000000000000000000
+        Position.Y = 96.000000000000000000
+        Size.Width = 113.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Goto Page 2'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        AdjustsImageWhenHighlighted = False
+        OnClick = DPFButton4Click
+      end
+    end
+    object DPFUIViewController2: TDPFUIViewController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 160.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 145.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claWheat
+      object DPFButton2: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Anchors = [akRight, akBottom]
+        Position.X = 24.000000000000000000
+        Position.Y = 23.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Button 2'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        AdjustsImageWhenHighlighted = False
+      end
+    end
+    object DPFUIViewController3: TDPFUIViewController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 48.000000000000000000
+      Position.Y = 215.000000000000000000
+      Size.Width = 209.000000000000000000
+      Size.Height = 178.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claTomato
+      object DPFButton3: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Anchors = [akRight, akBottom]
+        Position.X = 56.000000000000000000
+        Position.Y = 15.000000000000000000
+        Size.Width = 89.000000000000000000
+        Size.Height = 42.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Button 3'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        AdjustsImageWhenHighlighted = False
+      end
+    end
+  end
+  object DPFLabel1: TDPFLabel
+    Alpha = 1.000000000000000000
+    ClipsToBounds = False
+    Shadow = True
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claWhite
+    TextAlignment = taCenter
+    BaseLineAdjustment = blaAlignBaseLines
+  end
+end

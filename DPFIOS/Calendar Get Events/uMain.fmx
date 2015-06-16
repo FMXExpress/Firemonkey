@@ -1,0 +1,59 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFButton2: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Get Events'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButton2Click
+    end
+    object DPFTextView1: TDPFTextView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Bottom
+      Position.Y = 80.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 380.000000000000000000
+      Size.PlatformDefault = False
+      TextAlignment = taCenter
+      Editable = False
+    end
+  end
+  object DPFEKCalendar1: TDPFEKCalendar
+    OnRequestAccess = DPFEKCalendar1RequestAccess
+    Left = 144
+    Top = 96
+  end
+end

@@ -1,0 +1,86 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Search Context C++ w/ Delphi'
+  ClientHeight = 450
+  ClientWidth = 854
+  Fill.Color = claGray
+  Fill.Kind = Solid
+  FormFactor.Width = 1920
+  FormFactor.Height = 1047
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Layout1: TLayout
+    Align = Top
+    Height = 40.000000000000000000
+    Width = 854.000000000000000000
+    TabOrder = 0
+    object ReflectionEffect1: TReflectionEffect
+      Opacity = 0.500000000000000000
+      Offset = 0
+      Length = 0.500000000000000000
+    end
+    object Panel1: TPanel
+      Align = Top
+      Height = 37.000000000000000000
+      Width = 854.000000000000000000
+      TabOrder = 0
+      object Layout2: TLayout
+        Align = Right
+        Height = 37.000000000000000000
+        Position.X = 647.000000000000000000
+        Width = 207.000000000000000000
+        TabOrder = 0
+        object edtSearch: TClearingEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          TabOrder = 0
+          Width = 182.000000000000000000
+          Height = 22.000000000000000000
+          OnChange = edtSearchChange
+          OnKeyUp = edtSearchKeyUp
+        end
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 112
+    Top = 88
+  end
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Height = 410.000000000000000000
+    Padding.Top = 25.000000000000000000
+    TabOrder = 1
+    Width = 854.000000000000000000
+  end
+  object MainMenu1: TMainMenu
+    Left = 208
+    Top = 96
+    object MenuItem4: TMenuItem
+      StyleLookup = 'menubaritemstyle'
+      Text = 'Options'
+      object miLoadData: TMenuItem
+        Locked = True
+        Text = 'Load Data'
+        OnClick = LoadData
+      end
+      object miLoadImages: TMenuItem
+        Locked = True
+        Text = 'Load Images'
+        OnClick = LoadImagesClick
+      end
+      object miManageData: TMenuItem
+        Locked = True
+        Text = 'Manage Data'
+        OnClick = ManageDataClick
+      end
+    end
+  end
+end

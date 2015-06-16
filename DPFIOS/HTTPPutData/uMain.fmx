@@ -1,0 +1,68 @@
+object FHTTPPostData: TFHTTPPostData
+  Left = 0
+  Top = 0
+  Caption = 'HTTP Post Data'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFButton1: TDPFButton
+    Alpha = 1.000000000000000000
+    ClipsToBounds = False
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    BorderWidth = 1
+    BorderColor = claYellowgreen
+    TagNative = 0
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    ButtonType = btCustom
+    Text = 'Put'
+    TextLineBreak = lbCharacterWrap
+    TextAlpha = 1.000000000000000000
+    BackgroundColorNormal = claCornflowerblue
+    BackgroundColorHighlight = claYellowgreen
+    AdjustsImageWhenHighlighted = False
+    OnClick = DPFButton1Click
+  end
+  object DPFProgress1: TDPFProgress
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Top
+    Position.Y = 50.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 9.000000000000000000
+    Size.PlatformDefault = False
+    ProgressTintColor = claBlue
+  end
+  object DPFTextView1: TDPFTextView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    BorderWidth = 1
+    BorderColor = claYellowgreen
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 401.000000000000000000
+    Size.PlatformDefault = False
+    Editable = False
+  end
+  object DPFHttp1: TDPFHttp
+    ConnectionTimeout = 100
+    OnReceiveData = DPFHttp1ReceiveData
+    OnError = DPFHttp1ReceiveError
+    OnSendProgress = DPFHttp1SendProgress
+    Left = 240
+    Top = 208
+  end
+end

@@ -1,0 +1,131 @@
+object AccelerometerForm: TAccelerometerForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 32
+    Top = 368
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object Label1: TLabel
+      Align = alCenter
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Accelerometer'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object ListBox1: TListBox
+    Align = alClient
+    Height = 509.000000000000000000
+    Margins.Top = 10.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 384.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = gsGrouped
+    object lbAccelerometerSensor: TListBoxItem
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Accelerometer Sensor:'
+      Width = 344.000000000000000000
+      object swAccelerometerSensorActive: TSwitch
+        Align = alRight
+        Anchors = []
+        Height = 26.000000000000000000
+        IsChecked = False
+        Margins.Right = 5.000000000000000000
+        Position.X = 263.000000000000000000
+        Position.Y = 9.000000000000000000
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        Width = 76.000000000000000000
+        OnSwitch = swAccelerometerSensorActiveSwitch
+      end
+    end
+    object lbAccelerationX: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Acceleration X:'
+      Width = 344.000000000000000000
+    end
+    object lbAccelerationY: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 88.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Acceleration Y:'
+      Width = 344.000000000000000000
+    end
+    object lbAccelerationZ: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 132.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Acceleration Z:'
+      Width = 344.000000000000000000
+    end
+    object lbAngleAccelX: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 176.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Angle X:'
+      Width = 344.000000000000000000
+    end
+    object lbAngleAccelY: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 220.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Angle Y:'
+      Width = 344.000000000000000000
+    end
+    object lbAngleAccelZ: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 264.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Angle Z:'
+      Width = 344.000000000000000000
+    end
+    object lbMotion: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 308.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Motion:'
+      Width = 344.000000000000000000
+    end
+    object lbSpeed: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 352.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Speed:'
+      Width = 344.000000000000000000
+    end
+  end
+  object MotionSensor1: TMotionSensor
+    Left = 104
+    Top = 368
+  end
+end

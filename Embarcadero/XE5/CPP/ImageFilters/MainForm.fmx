@@ -1,0 +1,73 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'C++Builder XE3 FireMonkey Sepia Filter Effect Demo'
+  ClientHeight = 480
+  ClientWidth = 697
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Image1: TImage
+    Height = 305.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 72.000000000000000000
+    Width = 281.000000000000000000
+  end
+  object Image2: TImage
+    Height = 305.000000000000000000
+    Position.X = 376.000000000000000000
+    Position.Y = 72.000000000000000000
+    Width = 281.000000000000000000
+  end
+  object OpenButton: TButton
+    Height = 22.000000000000000000
+    Position.X = 96.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 2
+    Text = 'Open Bitmap'
+    Width = 145.000000000000000000
+    OnClick = OpenButtonClick
+  end
+  object TrackBar1: TTrackBar
+    Height = 20.000000000000000000
+    Orientation = orHorizontal
+    Position.X = 136.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 3
+    Width = 521.000000000000000000
+    OnChange = TrackBar1Change
+  end
+  object Label1: TLabel
+    Height = 15.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Sepia Filter Amount'
+    Width = 113.000000000000000000
+  end
+  object SaveButton: TButton
+    Enabled = False
+    Height = 22.000000000000000000
+    Position.X = 432.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 5
+    Text = 'Save Filtered Bitmap'
+    Width = 169.000000000000000000
+    OnClick = SaveButtonClick
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'JPeg (*.jpg)|*.jpg|Png (*.png)|*.png|All Files(*.*)|*.*'
+    Left = 328
+    Top = 80
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'JPeg (*.jpg)|*.jpg|Png (*.png)|*.png|All Files(*.*)|*.*'
+    Left = 328
+    Top = 144
+  end
+end

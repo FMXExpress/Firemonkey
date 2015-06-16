@@ -1,0 +1,85 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Context Search'
+  ClientHeight = 449
+  ClientWidth = 855
+  Fill.Color = claGray
+  Fill.Kind = Solid
+  FormFactor.Width = 1920
+  FormFactor.Height = 1047
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Layout1: TLayout
+    Align = Top
+    Height = 40.000000000000000000
+    Width = 855.000000000000000000
+    TabOrder = 0
+    object ReflectionEffect1: TReflectionEffect
+      Opacity = 0.500000000000000000
+      Offset = 0
+      Length = 0.500000000000000000
+    end
+    object Panel1: TPanel
+      Align = Top
+      Height = 37.000000000000000000
+      Width = 855.000000000000000000
+      TabOrder = 0
+      object Layout2: TLayout
+        Align = Right
+        Height = 37.000000000000000000
+        Position.X = 648.000000000000000000
+        Width = 207.000000000000000000
+        TabOrder = 0
+        object edtSearch: TClearingEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          TabOrder = 0
+          Width = 182.000000000000000000
+          Height = 22.000000000000000000
+          OnKeyUp = edtSearchKeyUp
+        end
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 112
+    Top = 88
+  end
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Height = 409.000000000000000000
+    Padding.Top = 25.000000000000000000
+    TabOrder = 1
+    Width = 855.000000000000000000
+  end
+  object MainMenu1: TMainMenu
+    Left = 208
+    Top = 96
+    object MenuItem4: TMenuItem
+      StyleLookup = 'menubaritemstyle'
+      Text = 'Options'
+      object MenuItem5: TMenuItem
+        Locked = True
+        Text = 'Load Data'
+        OnClick = LoadData
+      end
+      object MenuItem1: TMenuItem
+        Locked = True
+        Text = 'Load Images'
+        OnClick = LoadImages
+      end
+      object MenuItem6: TMenuItem
+        Locked = True
+        Text = 'Manage Data'
+        OnClick = ManageClick
+      end
+    end
+  end
+end

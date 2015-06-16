@@ -1,0 +1,86 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'MediaPlayer Remote Command'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object Button1: TButton
+    Height = 44.000000000000000000
+    Position.X = 80.000000000000000000
+    Position.Y = 321.000000000000000000
+    TabOrder = 8
+    Text = 'Play/Pause'
+    Width = 145.000000000000000000
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Height = 44.000000000000000000
+    Position.X = 56.000000000000000000
+    Position.Y = 176.000000000000000000
+    TabOrder = 10
+    Text = 'Find Players'
+    Width = 209.000000000000000000
+    OnClick = Button2Click
+  end
+  object lbPlayers: TListBox
+    Align = Top
+    Height = 137.000000000000000000
+    TabOrder = 17
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = lbPlayersItemClick
+    object lbHeader: TListBoxGroupHeader
+      Height = 22.000000000000000000
+      TabOrder = 0
+      Text = 'Available Players'
+      Width = 320.000000000000000000
+    end
+  end
+  object VolumeTrack: TTrackBar
+    Height = 145.000000000000000000
+    Max = 1.000000000000000000
+    Orientation = Vertical
+    Position.X = 248.000000000000000000
+    Position.Y = 280.000000000000000000
+    TabOrder = 20
+    Width = 36.000000000000000000
+    OnChange = VolumeTrackChange
+  end
+  object Label2: TLabel
+    Height = 21.000000000000000000
+    Position.X = 225.000000000000000000
+    Position.Y = 428.000000000000000000
+    Text = 'Volume'
+    Width = 65.000000000000000000
+  end
+  object CommandManager: TTetheringManager
+    OnEndManagersDiscovery = CommandManagerEndManagersDiscovery
+    OnEndProfilesDiscovery = CommandManagerEndProfilesDiscovery
+    OnRequestManagerPassword = CommandManagerRequestManagerPassword
+    OnRemoteManagerShutdown = CommandManagerRemoteManagerShutdown
+    Password = '1234'
+    Text = 'CommandManager'
+    Left = 48
+    Top = 384
+  end
+  object CommandApp: TTetheringAppProfile
+    Manager = CommandManager
+    Text = 'CommandApp'
+    Actions = <>
+    Resources = <>
+    Left = 144
+    Top = 384
+  end
+end

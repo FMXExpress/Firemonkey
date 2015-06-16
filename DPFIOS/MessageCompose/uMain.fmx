@@ -1,0 +1,76 @@
+object FMessageCompose: TFMessageCompose
+  Left = 0
+  Top = 0
+  Caption = 'MessageCompose'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFButtonSendTextMessage: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 50.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Send Message'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claKhaki
+      BackgroundColorHighlight = claDarkkhaki
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButtonSendMessageClick
+    end
+    object DPFTextFieldRecipient: TDPFTextField
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextPlaceholder = 'Message Recipient'
+      Text = '+98912xxxxx43'
+    end
+    object DPFTextViewBody: TDPFTextView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 234.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'This is a message from DPF.iOS.MFMessageCompose.'
+    end
+  end
+  object DPFMessageCompose1: TDPFMessageCompose
+    OnSendStatus = DPFMessageCompose1SendStatus
+    Left = 144
+    Top = 8
+  end
+end

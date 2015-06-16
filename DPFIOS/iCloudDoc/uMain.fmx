@@ -1,0 +1,81 @@
+object FiCloud: TFiCloud
+  Left = 0
+  Top = 0
+  Caption = 'iCloud'
+  ClientHeight = 460
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFButtonCheckiCloud: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claSlategray
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Check iCloud'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButtonCheckiCloudClick
+    end
+    object DPFButtonSync: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claSlategray
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 72.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Load Data'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButtonSyncClick
+    end
+  end
+  object DPFKeyboard1: TDPFKeyboard
+    HideButtonCaption = 'Done'
+    Left = 272
+    Top = 360
+  end
+  object DPFSlideDialog1: TDPFSlideDialog
+    ParentView = DPFUIView1
+    BackgroundColor = claBlack
+    TextColor = claWhite
+    Alpha = 0.699999988079071000
+    Left = 240
+    Top = 64
+  end
+  object DPFiCloudDoc1: TDPFiCloudDoc
+    DocFileName = 'DPFDocument.dox'
+    Left = 40
+    Top = 32
+  end
+end

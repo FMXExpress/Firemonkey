@@ -1,0 +1,79 @@
+object FChronometer: TFChronometer
+  Left = 0
+  Top = 0
+  Caption = 'Chronometer'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claSilver
+    BackgroundColor2 = claWhite
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claBlack
+      DrawType = dtCustom
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 50.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Align = alTop
+      Position.X = 5.000000000000000000
+      Position.Y = 50.000000000000000000
+      Width = 374.000000000000000000
+      Height = 76.000000000000000000
+      Text.Strings = (
+        'Chronometer')
+      TextSize = 32.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      BorderColor = claGray
+      BorderCornerRadius = 1.000000000000000000
+      OnClick = DPFJButton1Click
+      Position.X = 88.000000000000000000
+      Position.Y = 345.000000000000000000
+      Width = 193.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Start'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJChronometer1: TDPFJChronometer
+      Alpha = 1.000000000000000000
+      Align = alTop
+      Position.Y = 131.000000000000000000
+      Width = 384.000000000000000000
+      Height = 153.000000000000000000
+      TextSize = 64.000000000000000000
+      TextAlignment = taCenter
+      ChronometerFormat = '%s'
+    end
+    object DPFJButton2: TDPFJButton
+      Alpha = 1.000000000000000000
+      BorderColor = claGray
+      BorderCornerRadius = 1.000000000000000000
+      OnClick = DPFJButton2Click
+      Position.X = 88.000000000000000000
+      Position.Y = 425.000000000000000000
+      Width = 193.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Stop'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+end

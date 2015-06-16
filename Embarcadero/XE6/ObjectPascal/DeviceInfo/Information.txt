@@ -1,0 +1,9 @@
+Title: DeviceInfo
+
+Brief Description: This code snippet shows you how to obtain device information that includes OS version, OS name and device type.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: iOS, Android, device, info, name, version, 

@@ -1,0 +1,82 @@
+object FSlideUpDown: TFSlideUpDown
+  Left = 0
+  Top = 0
+  Caption = 'Slide Up/Down'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIViewBack: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 410.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFUIView1: TDPFUIView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 201.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claGreenyellow
+    end
+    object DPFUIView2: TDPFUIView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 152.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 201.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claSpringgreen
+    end
+  end
+  object DPFToolbar1: TDPFToolbar
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    BarItems = <
+      item
+        Font.FontName = ios_Helvetica_Bold
+        ButtonSystemItem = bbsiOrganize
+        OnClick = DPFToolbar1BarItems0Click
+        ModalResult = 0
+        Width = 50.000000000000000000
+      end
+      item
+        Font.FontName = ios_Helvetica_Bold
+        ButtonSystemItem = bbsiFlexibleSpace
+        ModalResult = 0
+        Width = 50.000000000000000000
+      end
+      item
+        Font.FontName = ios_Helvetica_Bold
+        ButtonSystemItem = bbsiReply
+        OnClick = DPFToolbar1BarItems2Click
+        ModalResult = 0
+        Width = 50.000000000000000000
+      end>
+  end
+end

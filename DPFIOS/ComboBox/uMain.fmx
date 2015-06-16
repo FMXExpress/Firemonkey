@@ -1,0 +1,159 @@
+object FComboBox: TFComboBox
+  Left = 0
+  Top = 0
+  Caption = 'Combo Box'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagBoolean = False
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFUIScrollView1: TDPFUIScrollView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagBoolean = False
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 460.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claNull
+      PagingEnabled = False
+      MaximumZoomScale = 1.000000000000000000
+      MinimumZoomScale = 1.000000000000000000
+      ScrollType = stVertical
+      object DPFDateTimeComboBox1: TDPFDateTimeComboBox
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 26.000000000000000000
+        Position.Y = 176.000000000000000000
+        Size.Width = 207.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TextPlaceholder = 'DateTime ComboBox'
+        PickerCloseTitle = 'Done'
+        PickerToolbarVisible = True
+        PickerMode = pmDate
+      end
+      object DPFLabel1: TDPFLabel
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 24.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 193.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Simple List ComboBox:'
+        BaseLineAdjustment = blaAlignBaseLines
+      end
+      object DPFLabel2: TDPFLabel
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 27.000000000000000000
+        Position.Y = 147.000000000000000000
+        Size.Width = 193.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'DateTime ComboBox:'
+        BaseLineAdjustment = blaAlignBaseLines
+      end
+      object DPFButton1: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 240.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Enabled'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        OnClick = DPFButton1Click
+      end
+      object DPFButton2: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 239.000000000000000000
+        Position.Y = 176.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Enabled'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        OnClick = DPFButton2Click
+      end
+      object DPFComboBox1: TDPFComboBox
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 24.000000000000000000
+        Position.Y = 72.000000000000000000
+        Size.Width = 209.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TextPlaceholder = 'Simple ComboBox'
+        Editable = False
+        PickerCloseTitle = 'Done'
+      end
+      object DPFButton3: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Position.X = 239.000000000000000000
+        Position.Y = 232.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Clear'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        OnClick = DPFButton3Click
+      end
+    end
+  end
+  object DPFKeyboard1: TDPFKeyboard
+    HideButtonCaption = 'Close Me!'
+    Left = 232
+    Top = 8
+  end
+end

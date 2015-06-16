@@ -1,0 +1,279 @@
+object FPopover: TFPopover
+  Left = 0
+  Top = 0
+  Caption = 'Popover'
+  ClientHeight = 1004
+  ClientWidth = 768
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 768.000000000000000000
+    Size.Height = 1004.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFNavigationController1: TDPFNavigationController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 768.000000000000000000
+      Size.Height = 1004.000000000000000000
+      Size.PlatformDefault = False
+      object DPFNavigationControllerPage1: TDPFNavigationControllerPage
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        Size.Width = 768.000000000000000000
+        Size.Height = 886.000000000000000000
+        Size.PlatformDefault = False
+        PageIndex = 0
+        BarButtons = <
+          item
+            ButtonColor = claNull
+            Enabled = True
+            TagNative = 0
+          end
+          item
+            ButtonColor = claNull
+            Enabled = True
+            TagNative = 0
+            ButtonSystemItem = bbsiFlexibleSpace
+          end
+          item
+            ButtonColor = claNull
+            OnClick = DPFNavigationControllerPage1BarButtons2Click
+            Enabled = True
+            TagNative = 0
+            ButtonSystemItem = bbsiAction
+          end
+          item
+            ButtonColor = claNull
+            Enabled = True
+            TagNative = 0
+            ButtonSystemItem = bbsiFlexibleSpace
+          end>
+        ToolBarButtons = <>
+        object DPFButton1: TDPFButton
+          Alpha = 1.000000000000000000
+          ClipsToBounds = False
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 388.000000000000000000
+          Position.Y = 64.000000000000000000
+          Size.Width = 161.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Popover here!'
+          TextLineBreak = lbCharacterWrap
+          TextAlpha = 1.000000000000000000
+          OnClick = DPFButton1Click
+        end
+        object DPFButton2: TDPFButton
+          Alpha = 1.000000000000000000
+          ClipsToBounds = False
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 396.000000000000000000
+          Position.Y = 424.000000000000000000
+          Size.Width = 161.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Popover here!'
+          TextLineBreak = lbCharacterWrap
+          TextAlpha = 1.000000000000000000
+          OnClick = DPFButton2Click
+        end
+        object DPFPopover1: TDPFPopover
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 8.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 340.000000000000000000
+          Size.Height = 305.000000000000000000
+          Size.PlatformDefault = False
+          BackgroundColor = claWhite
+          Left = 256
+          Top = 96
+          object DPFDatePicker1: TDPFDatePicker
+            Alpha = 1.000000000000000000
+            Shadow = True
+            ShadowOffsetHeight = 10.000000000000000000
+            ShadowOpacity = 1.000000000000000000
+            ShadowRadius = 10.000000000000000000
+            TagNative = 0
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Align = Bottom
+            Position.X = 10.000000000000000000
+            Position.Y = 79.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 216.000000000000000000
+            Size.PlatformDefault = False
+            PickerDate = 42029.023624699080000000
+            OnChange = DPFDatePicker1Change
+          end
+          object DPFLabel1: TDPFLabel
+            Alpha = 1.000000000000000000
+            ClipsToBounds = False
+            Shadow = True
+            ShadowOffsetHeight = 10.000000000000000000
+            ShadowOpacity = 1.000000000000000000
+            ShadowRadius = 10.000000000000000000
+            CornerRadius = 10.000000000000000000
+            TagNative = 0
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Align = Top
+            Position.X = 10.000000000000000000
+            Position.Y = 10.000000000000000000
+            Size.Width = 320.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            BackgroundColor = claLightgray
+            TextAlignment = taCenter
+            BaseLineAdjustment = blaAlignBaseLines
+          end
+        end
+        object DPFPopover2: TDPFPopover
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Position.X = 528.000000000000000000
+          Position.Y = 120.000000000000000000
+          Size.Width = 217.000000000000000000
+          Size.Height = 350.000000000000000000
+          Size.PlatformDefault = False
+          object DPFUITableView1: TDPFUITableView
+            Alpha = 1.000000000000000000
+            ShadowOffsetHeight = 10.000000000000000000
+            ShadowOpacity = 1.000000000000000000
+            ShadowRadius = 10.000000000000000000
+            TagNative = 0
+            Align = Client
+            Size.Width = 217.000000000000000000
+            Size.Height = 350.000000000000000000
+            Size.PlatformDefault = False
+            OnItemDeSelect = DPFUITableView1ItemDeSelect
+            OnItemSelect = DPFUITableView1ItemSelect
+            Options.TextFont.FontName = ios_Helvetica_Bold
+            Options.TextFont.FontSize = 18
+            Options.DescriptionFont.FontName = ios_Helvetica
+            Options.RowHeight = 44.000000000000000000
+            Sections = <
+              item
+                Header.Font.FontName = ios_Helvetica_Bold
+                Header.Font.FontSize = 18
+                Header.Alpha = 0.899999976158142100
+                Footer.Font.FontName = ios_Helvetica_Bold
+                Footer.Font.FontSize = 18
+                Footer.Alpha = 0.899999976158142100
+                TableItems = <
+                  item
+                    ItemText.Text = 'Iran'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Turkey'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'China'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Germany'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'United States'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Korea'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Japan'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Spain'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Brazil'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Italy'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Canada'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'United Kingdom'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Hungary'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Russia'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Switzerland'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'France'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Poland'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'New Zealand'
+                    ItemDescription.Color = claGray
+                  end
+                  item
+                    ItemText.Text = 'Australia'
+                    ItemDescription.Color = claGray
+                  end>
+              end>
+          end
+        end
+      end
+    end
+  end
+end

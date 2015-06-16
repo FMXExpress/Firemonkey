@@ -1,0 +1,14 @@
+object Frame2: TFrame2
+  Height = 400.000000000000000000
+  Width = 320.000000000000000000
+  object DPFDatePicker1: TDPFDatePicker
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    Align = alCenter
+    Width = 320.000000000000000000
+    Height = 216.000000000000000000
+    PickerDate = 41513.077407488420000000
+  end
+end

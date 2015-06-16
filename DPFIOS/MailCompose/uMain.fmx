@@ -1,0 +1,106 @@
+object FMailCompose: TFMailCompose
+  Left = 0
+  Top = 0
+  Caption = 'MailCompose'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFButtonSendMail: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 61.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Send Mail'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claKhaki
+      BackgroundColorHighlight = claDarkkhaki
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButtonSendMailClick
+    end
+    object DPFTextFieldRecipient: TDPFTextField
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 171.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextPlaceholder = 'eMail Recipient'
+      Text = 'b_yaghobi@yahoo.com'
+      KeyboardType = ktEmailAddress
+    end
+    object DPFTextFieldSubject: TDPFTextField
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 123.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextPlaceholder = 'eMail Subject'
+      Text = 'Hello'
+    end
+    object DPFTextViewBody: TDPFTextView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 227.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 217.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'This is a message from DPF.iOS.MFMailCompose.'
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 24.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+  end
+  object DPFMailCompose1: TDPFMailCompose
+    OnSendStatus = DPFMailCompose1SendStatus
+    Left = 152
+    Top = 192
+  end
+end

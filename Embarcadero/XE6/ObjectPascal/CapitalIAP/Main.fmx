@@ -1,0 +1,82 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = '6'
+  object Layout1: TLayout
+    Align = Client
+    Height = 548.000000000000000000
+    Width = 320.000000000000000000
+    TabOrder = 5
+    object bFiveQuestion: TButton
+      Anchors = [akLeft, akTop, akRight]
+      Height = 44.000000000000000000
+      Position.X = 31.000000000000000000
+      Position.Y = 186.000000000000000000
+      TabOrder = 0
+      Text = '5 Questions'
+      Width = 258.000000000000000000
+      OnClick = bFiveQuestionClick
+    end
+    object bTenQuestion: TButton
+      Anchors = [akLeft, akTop, akRight]
+      Height = 44.000000000000000000
+      Position.X = 31.000000000000000000
+      Position.Y = 241.000000000000000000
+      TabOrder = 1
+      Text = '10 Questions'
+      Width = 258.000000000000000000
+      OnClick = bTenQuestionClick
+    end
+    object bTwentyQuestion: TButton
+      Anchors = [akLeft, akTop, akRight]
+      Height = 44.000000000000000000
+      Position.X = 31.000000000000000000
+      Position.Y = 296.000000000000000000
+      TabOrder = 2
+      Text = '20 Questions'
+      Width = 258.000000000000000000
+      OnClick = bTwentyQuestionClick
+    end
+    object Label1: TLabel
+      Align = Top
+      Height = 97.000000000000000000
+      StyleLookup = 'embossedlabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Choose the Number of Questions you want to see:'
+      Width = 320.000000000000000000
+    end
+    object ToolBar1: TToolBar
+      Align = Bottom
+      Height = 44.000000000000000000
+      Position.Y = 504.000000000000000000
+      TabOrder = 5
+      Width = 320.000000000000000000
+      object Button4: TButton
+        Align = Right
+        Height = 30.000000000000000000
+        Margins.Right = 6.000000000000000000
+        Position.X = 281.000000000000000000
+        Position.Y = 7.000000000000000000
+        StyleLookup = 'infotoolbuttonbordered'
+        TabOrder = 0
+        Width = 33.000000000000000000
+        OnClick = Button4Click
+      end
+    end
+  end
+end

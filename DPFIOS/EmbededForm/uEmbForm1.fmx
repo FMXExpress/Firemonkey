@@ -1,0 +1,76 @@
+object FEmbForm1: TFEmbForm1
+  Left = 0
+  Top = 0
+  Caption = 'EmbForm1'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object Form1MainView: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 417.000000000000000000
+    Size.PlatformDefault = False
+    object DPFButton1InForm1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Form 1'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+    end
+    object DPFUITableView1: TDPFUITableView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 50.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 410.000000000000000000
+      Size.PlatformDefault = False
+      Options.TextFont.FontName = ios_Helvetica_Bold
+      Options.TextFont.FontSize = 18
+      Options.DescriptionFont.FontName = ios_Helvetica
+      Options.RowHeight = 44.000000000000000000
+      Sections = <
+        item
+          Header.Font.FontName = ios_Helvetica_Bold
+          Header.Font.FontSize = 18
+          Header.Alpha = 0.899999976158142100
+          Footer.Font.FontName = ios_Helvetica_Bold
+          Footer.Font.FontSize = 18
+          Footer.Alpha = 0.899999976158142100
+          TableItems = <
+            item
+              ItemText.Text = 'D.P.F iOS Native Components'
+              ItemDescription.Color = claGray
+            end
+            item
+              ItemText.Text = 'Delphi XE4'
+              ItemDescription.Color = claGray
+            end
+            item
+              ItemText.Text = 'FireMonkey'
+              ItemDescription.Color = claGray
+            end>
+        end>
+    end
+  end
+end

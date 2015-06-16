@@ -1,0 +1,204 @@
+object FLabels: TFLabels
+  Left = 0
+  Top = 0
+  Caption = 'Labels'
+  ClientHeight = 572
+  ClientWidth = 360
+  Quality = ccHighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = []
+  DesignerMobile = True
+  DesignerWidth = 360
+  DesignerHeight = 572
+  DesignerDeviceName = 'Samsung Galaxy S4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claSilver
+    DrawType = dtCustom
+    Align = alClient
+    Width = 360.000000000000000000
+    Height = 572.000000000000000000
+    object DPFANDLabel1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGold
+      DrawType = dtCustom
+      Margins.Top = 10.000000000000000000
+      Align = alTop
+      Position.Y = 60.000000000000000000
+      Width = 360.000000000000000000
+      Height = 40.000000000000000000
+      Text.Strings = (
+        'Hi, This is test text!')
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFANDLabel2: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGold
+      DrawType = dtCustom
+      Margins.Top = 10.000000000000000000
+      Align = alTop
+      Position.Y = 10.000000000000000000
+      Width = 360.000000000000000000
+      Height = 40.000000000000000000
+      Text.Strings = (
+        #1587#1604#1575#1605'. '#1575#1740#1606' '#1605#1578#1606' '#1570#1586#1605#1575#1740#1588#1740' '#1605#1740' '#1576#1575#1588#1583)
+      TextSize = 21.000000000000000000
+    end
+    object DPFJView2: TDPFJRelativeLayout
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGray
+      DrawType = dtCustom
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = alClient
+      Width = 340.000000000000000000
+      Height = 147.000000000000000000
+      object DPFJView3: TDPFJRelativeLayout
+        Alpha = 1.000000000000000000
+        BackgroundColor1 = claYellowgreen
+        DrawType = dtCustom
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Align = alClient
+        Width = 320.000000000000000000
+        Height = 127.000000000000000000
+        object DPFANDLabel4: TDPFJTextView
+          Alpha = 1.000000000000000000
+          BackgroundColor1 = claWhite
+          BackgroundColor2 = claGray
+          DrawType = dtCustom
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Align = alClient
+          Width = 300.000000000000000000
+          Height = 107.000000000000000000
+          Text.Strings = (
+            ''
+            'D.P.F Android Native Components'
+            '1. Multi Line !'
+            '2. Multi Line !'
+            ''
+            'D.P.F Android Native Components'
+            '1. Multi Line !'
+            '2. Multi Line !'
+            ''
+            'D.P.F Android Native Components'
+            '1. Multi Line !'
+            '2. Multi Line !'
+            ''
+            'D.P.F Android Native Components'
+            '1. Multi Line !'
+            '2. Multi Line !'
+            ''
+            'D.P.F Android Native Components'
+            '1. Multi Line !'
+            '2. Multi Line !'
+            '')
+          TextSize = 16.000000000000000000
+          NumberOfLines = 10
+          TextAlignment = taCenter
+          VerticalScrollBar = True
+          Scrollable = True
+        end
+      end
+    end
+    object DPFANDLabel5: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGold
+      DrawType = dtCustom
+      Margins.Top = 10.000000000000000000
+      Align = alTop
+      Position.Y = 110.000000000000000000
+      Width = 360.000000000000000000
+      Height = 40.000000000000000000
+      Text.Strings = (
+        #20320#22909#65292#36825#26159#27979#35797#25991#26412)
+      TextSize = 21.000000000000000000
+    end
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGold
+      DrawType = dtCustom
+      Margins.Top = 10.000000000000000000
+      Align = alTop
+      Position.Y = 210.000000000000000000
+      Width = 360.000000000000000000
+      Height = 40.000000000000000000
+      Text.Strings = (
+        #2361#2366#2351', '#2351#2361' '#2346#2352#2368#2325#2381#2359#2339' '#2346#2366#2336' '#2361#2376'!')
+      TextSize = 21.000000000000000000
+    end
+    object DPFJTextView2: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGold
+      DrawType = dtCustom
+      Margins.Top = 10.000000000000000000
+      Align = alTop
+      Position.Y = 260.000000000000000000
+      Width = 360.000000000000000000
+      Height = 40.000000000000000000
+      Text.Strings = (
+        #50504#45397#54616#49464#50836','#51060' '#53580#49828#53944#51032' '#53581#49828#53944#51077#45768#45796'!')
+      TextSize = 21.000000000000000000
+    end
+    object DPFJTextView3: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGold
+      DrawType = dtCustom
+      Margins.Top = 10.000000000000000000
+      Align = alTop
+      Position.Y = 160.000000000000000000
+      Width = 360.000000000000000000
+      Height = 40.000000000000000000
+      Text.Strings = (
+        #12371#12435#12395#12385#12399#12290#12371#12428#12399#12486#12473#12488#12486#12461#12473#12488#12391#12377#65281)
+      TextSize = 21.000000000000000000
+    end
+    object DPFJTextView4: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGold
+      DrawType = dtCustom
+      Margins.Top = 10.000000000000000000
+      Align = alTop
+      Position.Y = 310.000000000000000000
+      Width = 360.000000000000000000
+      Height = 40.000000000000000000
+      Text.Strings = (
+        #1055#1088#1080#1074#1077#1090', '#1069#1090#1086' '#1090#1077#1089#1090' '#1090#1077#1082#1089#1090'!')
+      TextSize = 21.000000000000000000
+    end
+    object DPFJTextView5: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claGold
+      DrawType = dtCustom
+      Margins.Top = 10.000000000000000000
+      Align = alTop
+      Position.Y = 360.000000000000000000
+      Width = 360.000000000000000000
+      Height = 40.000000000000000000
+      Text.Strings = (
+        #1605#1585#1581#1576#1575#1548' '#1608#1607#1584#1575' '#1607#1608' '#1575#1604#1606#1589' '#1575#1604#1575#1582#1578#1576#1575#1585'!')
+      TextSize = 21.000000000000000000
+    end
+  end
+end

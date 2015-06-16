@@ -1,0 +1,53 @@
+object AudioPlayBackForm: TAudioPlayBackForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object Title: TLabel
+      Align = Contents
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Play Audio'
+      Width = 384.000000000000000000
+    end
+    object btnStop: TSpeedButton
+      Align = Left
+      Height = 48.000000000000000000
+      Margins.Left = 7.000000000000000000
+      Position.X = 7.000000000000000000
+      StyleLookup = 'stoptoolbuttonbordered'
+      Text = 'btnStop'
+      Width = 48.000000000000000000
+      OnClick = btnStopClick
+    end
+    object btnPlay: TSpeedButton
+      Align = Right
+      Height = 48.000000000000000000
+      Margins.Right = 7.000000000000000000
+      Position.X = 329.000000000000000000
+      StyleLookup = 'playtoolbuttonbordered'
+      Text = 'btnPlay'
+      Width = 48.000000000000000000
+      OnClick = btnPlayClick
+    end
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 160
+    Top = 168
+  end
+end

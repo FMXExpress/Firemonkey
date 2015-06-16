@@ -1,0 +1,60 @@
+object FEditText: TFEditText
+  Left = 0
+  Top = 0
+  Caption = 'EditText'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claLightsteelblue
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJEditText1: TDPFJEditText
+      Alpha = 1.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 80.000000000000000000
+      Width = 297.000000000000000000
+      Height = 57.000000000000000000
+      Text = 'Hello'
+      TextSize = 21.000000000000000000
+    end
+    object DPFJEditText2: TDPFJEditText
+      Alpha = 1.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 216.000000000000000000
+      Width = 297.000000000000000000
+      Height = 57.000000000000000000
+      Text = #1587#1604#1575#1605
+      TextSize = 21.000000000000000000
+      EditorAction = eaGO
+      OnChanged = DPFJEditText2Changed
+    end
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 160.000000000000000000
+      Width = 289.000000000000000000
+      Height = 49.000000000000000000
+      TextSize = 21.000000000000000000
+    end
+    object DPFJTextView2: TDPFJTextView
+      Alpha = 1.000000000000000000
+      OnClick = DPFJTextView2Click
+      Position.X = 80.000000000000000000
+      Position.Y = 16.000000000000000000
+      Width = 265.000000000000000000
+      Height = 50.000000000000000000
+      TextSize = 21.000000000000000000
+    end
+  end
+end

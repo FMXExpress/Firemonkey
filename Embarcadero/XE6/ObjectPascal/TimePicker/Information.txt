@@ -1,0 +1,10 @@
+Title: TimePicker
+
+Brief Description: This code snippet shows you how to use the TTimeEdit component to invoke the native time picker at runtime, 
+select times from it and process them for use in your own applications.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: TTimeEdit, TDateTime, pick, iOS, Android

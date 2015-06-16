@@ -1,0 +1,88 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object ListBox1: TListBox
+    Align = alTop
+    Height = 93.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Position.Y = 54.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 0
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = gsGrouped
+    object ListBoxItem5: TListBoxItem
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Pick an Item'
+      Width = 320.000000000000000000
+      object ComboBox1: TComboBox
+        Align = alRight
+        Anchors = []
+        DisableFocusEffect = False
+        Height = 30.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 162.000000000000000000
+        Position.Y = 7.000000000000000000
+        TabOrder = 0
+        Width = 153.000000000000000000
+        OnChange = ComboBox1Change
+        object ListBoxItem1: TListBoxItem
+          Height = 44.000000000000000000
+          Text = 'Item One'
+          Width = 44.000000000000000000
+        end
+        object ListBoxItem2: TListBoxItem
+          Height = 44.000000000000000000
+          Text = 'Item Two'
+          Width = 44.000000000000000000
+        end
+        object ListBoxItem3: TListBoxItem
+          Height = 44.000000000000000000
+          Text = 'Item Three'
+          Width = 44.000000000000000000
+        end
+        object ListBoxItem4: TListBoxItem
+          Height = 44.000000000000000000
+          Text = 'Item Four'
+          Width = 44.000000000000000000
+        end
+      end
+    end
+    object ListBoxItem6: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Picked'
+      Width = 320.000000000000000000
+    end
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object Label1: TLabel
+      Align = alClient
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Custom Picker'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+    end
+  end
+end

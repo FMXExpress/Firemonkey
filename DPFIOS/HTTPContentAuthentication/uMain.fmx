@@ -1,0 +1,70 @@
+object FHTTPContent: TFHTTPContent
+  Left = 0
+  Top = 0
+  Caption = 'HTTP Content'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFTextField1: TDPFTextField
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagBoolean = False
+    TagNative = 0
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'http://test.webdav.org/auth-basic/'
+  end
+  object DPFTextView1: TDPFTextView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagBoolean = False
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 360.000000000000000000
+    Size.PlatformDefault = False
+    TextAlignment = taCenter
+  end
+  object DPFButton2: TDPFButton
+    Alpha = 1.000000000000000000
+    ClipsToBounds = False
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagBoolean = False
+    TagNative = 0
+    Align = Top
+    Position.Y = 50.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    ButtonType = btCustom
+    Text = 'Start Get URL ASync'
+    TextColorHighlight = claNull
+    TextLineBreak = lbCharacterWrap
+    TextAlpha = 1.000000000000000000
+    BackgroundColorNormal = claSteelblue
+    BackgroundColorHighlight = claBlue
+    AdjustsImageWhenHighlighted = False
+    OnClick = DPFButton2Click
+  end
+  object DPFHttp1: TDPFHttp
+    ConnectionTimeout = 100
+    OnReceiveData = DPFHttp1ReceiveData
+    OnError = DPFHttp1ReceiveError
+    UserName = 'user1'
+    UserPassword = 'user1'
+    Left = 240
+    Top = 56
+  end
+end

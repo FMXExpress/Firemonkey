@@ -1,0 +1,185 @@
+object FTableView1: TFTableView1
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFUITableView1: TDPFUITableView
+      Alpha = 1.000000000000000000
+      Font.FontName = ios_Georgia
+      Font.FontSize = 18
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 410.000000000000000000
+      Size.PlatformDefault = False
+      OnItemSelect = DPFUITableView1ItemSelect
+      OnAccessoryButtonTapped = DPFUITableView1AccessoryButtonTapped
+      Options.BackgroundColor = claSnow
+      Options.SeparatorColor = claDarkgray
+      Options.Edition.CellEdit = True
+      Options.TextFont.FontName = ios_Helvetica_Bold
+      Options.TextFont.FontSize = 18
+      Options.DescriptionFont.FontName = ios_Helvetica
+      Options.RowHeight = 80.000000000000000000
+      Sections = <
+        item
+          Header.Kind = kCustom
+          Header.Text = 'Header 1'
+          Header.TextAlign = taCenter
+          Header.TextColor = claSlategray
+          Header.BackgroundColor = claNull
+          Header.Font.FontName = ios_Helvetica_Bold
+          Header.Font.FontSize = 18
+          Header.Alpha = 1.000000000000000000
+          Footer.Kind = kCustom
+          Footer.Text = 'Footer 1'
+          Footer.TextAlign = taCenter
+          Footer.TextColor = claSkyblue
+          Footer.BackgroundColor = claNull
+          Footer.Font.FontName = ios_Helvetica_Bold
+          Footer.Font.FontSize = 18
+          Footer.Alpha = 0.899999976158142100
+          TableItems = <
+            item
+              Style = tvcsSubtitle
+              AccessoryType = tvcaCheckmark
+              EditingAccessoryType = tvcaDisclosureIndicator
+              EditingStyle = tvesInsert
+              Height = 120
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 0'
+              ItemDescription.Text = 'Desciption 0'
+              ItemDescription.Color = claGray
+              ItemDescription.NumberOfLines = 0
+              BackgroundColor = claSandybrown
+            end
+            item
+              Style = tvcsSubtitle
+              AccessoryType = tvcaCheckmark
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 1'
+              ItemDescription.Text = 'Desciption 1'
+              ItemDescription.Color = claGray
+              ItemDescription.BackgroundColor = claSnow
+            end
+            item
+              Style = tvcsSubtitle
+              AccessoryType = tvcaDisclosureIndicator
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 2'
+              ItemDescription.Text = 'Desciption 2'
+              ItemDescription.Color = claGray
+              ItemDescription.BackgroundColor = claSnow
+            end
+            item
+              Style = tvcsSubtitle
+              AccessoryType = tvcaDetailDisclosureButton
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 3'
+              ItemDescription.Text = 'Desciption 3'
+              ItemDescription.Color = claGray
+              ItemDescription.BackgroundColor = claSnow
+            end
+            item
+              Style = tvcsSubtitle
+              AccessoryType = tvcaCheckmark
+              ImageName = 'admin.png'
+              ItemText.Text = 'Demo Item 4'
+              ItemDescription.Text = 'Desciption 4'
+              ItemDescription.Color = claGray
+              ItemDescription.BackgroundColor = claSnow
+            end>
+        end
+        item
+          Header.Text = 'Section 2'
+          Header.Font.FontName = ios_Helvetica_Bold
+          Header.Font.FontSize = 18
+          Header.Alpha = 0.899999976158142100
+          Footer.Font.FontName = ios_Helvetica_Bold
+          Footer.Font.FontSize = 18
+          Footer.Alpha = 0.899999976158142100
+          TableItems = <
+            item
+              EditingStyle = tvesCheckBox
+              ItemText.Text = 'Item 0'
+              ItemDescription.Color = claGray
+            end
+            item
+              EditingStyle = tvesCheckBox
+              ItemText.Text = 'Item 1'
+              ItemDescription.Color = claGray
+            end>
+        end>
+    end
+    object DPFToolbar1: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonItemStyle = bbisBordered
+          ButtonSystemItem = bbsiEdit
+          OnClick = DPFToolbar1BarItems0Click
+          ModalResult = 0
+          Width = 70.000000000000000000
+        end>
+      object DPFSwitch1: TDPFSwitch
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Margins.Top = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Align = Right
+        Position.X = 178.000000000000000000
+        Position.Y = 10.000000000000000000
+        Size.Width = 77.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        ISON = False
+      end
+      object DPFLabel1: TDPFLabel
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Right
+        Position.X = 255.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Moving'
+        TextAlignment = taCenter
+        BaseLineAdjustment = blaAlignBaseLines
+      end
+    end
+  end
+end

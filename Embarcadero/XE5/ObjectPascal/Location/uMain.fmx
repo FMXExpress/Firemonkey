@@ -1,0 +1,187 @@
+object LocationForm: TLocationForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object WebBrowser1: TWebBrowser
+    Align = alClient
+    Height = 262.000000000000000000
+    Margins.Top = 20.000000000000000000
+    Width = 384.000000000000000000
+  end
+  object LocationSensor1: TLocationSensor
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 248
+    Top = 392
+  end
+  object ListBox1: TListBox
+    Align = alTop
+    Height = 227.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Position.Y = 58.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 384.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = gsGrouped
+    object lbLocationSensor: TListBoxItem
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Location Sensor'
+      Width = 344.000000000000000000
+      object swLocationSensorActive: TSwitch
+        Align = alRight
+        Anchors = []
+        Height = 26.000000000000000000
+        IsChecked = False
+        Margins.Right = 5.000000000000000000
+        Position.X = 263.000000000000000000
+        Position.Y = 9.000000000000000000
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        Width = 76.000000000000000000
+        OnSwitch = swLocationSensorActiveSwitch
+      end
+    end
+    object lbTriggerDistance: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Trigger Distance'
+      Width = 344.000000000000000000
+      object nbTriggerDistance: TNumberBox
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Anchors = [akTop, akRight]
+        TabOrder = 0
+        Cursor = crIBeam
+        KeyboardType = vktDefault
+        TextAlign = taCenter
+        Position.X = 196.000000000000000000
+        Position.Y = 6.000000000000000000
+        Width = 41.000000000000000000
+        Height = 32.000000000000000000
+        VertIncrement = 5.000000000000000000
+      end
+      object Button1: TButton
+        Align = alRight
+        Anchors = []
+        Height = 34.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 245.000000000000000000
+        Position.Y = 5.000000000000000000
+        StyleLookup = 'stepperbuttonleft'
+        TabOrder = 1
+        Text = 'btnTriggerDown'
+        Trimming = ttCharacter
+        Width = 47.000000000000000000
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Align = alRight
+        Anchors = []
+        Height = 34.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 292.000000000000000000
+        Position.Y = 5.000000000000000000
+        StyleLookup = 'stepperbuttonright'
+        TabOrder = 2
+        Text = 'btnTriggerUp'
+        Trimming = ttCharacter
+        Width = 47.000000000000000000
+        OnClick = Button2Click
+      end
+    end
+    object lbAccuracy: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 88.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Accuracy'
+      Width = 344.000000000000000000
+      object Button3: TButton
+        Align = alRight
+        Anchors = []
+        Height = 34.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 245.000000000000000000
+        Position.Y = 5.000000000000000000
+        StyleLookup = 'stepperbuttonleft'
+        TabOrder = 0
+        Text = 'btnAccuracyDown'
+        Trimming = ttCharacter
+        Width = 47.000000000000000000
+        OnClick = Button3Click
+      end
+      object Button4: TButton
+        Align = alRight
+        Anchors = []
+        Height = 34.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 292.000000000000000000
+        Position.Y = 5.000000000000000000
+        StyleLookup = 'stepperbuttonright'
+        TabOrder = 1
+        Text = 'btnAccuracyUp'
+        Trimming = ttCharacter
+        Width = 47.000000000000000000
+        OnClick = Button4Click
+      end
+      object nbAccuracy: TNumberBox
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Anchors = [akTop, akRight]
+        TabOrder = 2
+        Cursor = crIBeam
+        KeyboardType = vktDefault
+        TextAlign = taCenter
+        Position.X = 196.000000000000000000
+        Position.Y = 6.000000000000000000
+        Width = 41.000000000000000000
+        Height = 32.000000000000000000
+        VertIncrement = 5.000000000000000000
+      end
+    end
+    object lbLatitude: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 132.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Latitude'
+      Width = 344.000000000000000000
+    end
+    object lbLongitude: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 176.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Longitude'
+      Width = 344.000000000000000000
+    end
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 2
+    Width = 384.000000000000000000
+    object Label1: TLabel
+      Align = alClient
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Location'
+      TextAlign = taCenter
+      Width = 384.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+end

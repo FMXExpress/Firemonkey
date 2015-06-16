@@ -1,0 +1,89 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  BorderStyle = bsNone
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnShow = FormShow
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object DPFUIScrollView1: TDPFUIScrollView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagBoolean = False
+    Align = alContents
+    Width = 320.000000000000000000
+    Height = 480.000000000000000000
+    BackgroundColor = claCadetblue
+    ShowsHorizontalScrollIndicator = False
+    PagingEnabled = False
+    ScrollType = stVertical
+    object DPFTextField1: TDPFTextField
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagBoolean = False
+      Position.X = 24.000000000000000000
+      Position.Y = 134.000000000000000000
+      Width = 145.000000000000000000
+      Height = 25.000000000000000000
+      TextPlaceholder = 'Test Field 1'
+      OnBeginEditing = DPFTextField1BeginEditing
+    end
+    object DPFTextField2: TDPFTextField
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagBoolean = False
+      Position.X = 24.000000000000000000
+      Position.Y = 192.000000000000000000
+      Width = 145.000000000000000000
+      Height = 25.000000000000000000
+      TextPlaceholder = 'Test Field 2'
+      OnBeginEditing = DPFTextField1BeginEditing
+    end
+    object DPFTextField3: TDPFTextField
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagBoolean = False
+      Position.X = 24.000000000000000000
+      Position.Y = 337.000000000000000000
+      Width = 145.000000000000000000
+      Height = 25.000000000000000000
+      TextPlaceholder = 'Test Field 3'
+      OnBeginEditing = DPFTextField1BeginEditing
+    end
+    object DPFTextView1: TDPFTextView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      Position.X = 24.000000000000000000
+      Position.Y = 393.000000000000000000
+      Width = 281.000000000000000000
+      Height = 81.000000000000000000
+      OnBeginEditing = DPFTextField1BeginEditing
+    end
+  end
+  object DPFKeyboard1: TDPFKeyboard
+    HideButtonCaption = 'Done'
+    OnKeyBoardWillShow = DPFKeyboard1KeyBoardWillShow
+    OnKeyBoardWillHide = DPFKeyboard1KeyBoardWillHide
+    Left = 256
+    Top = 144
+  end
+end

@@ -1,0 +1,175 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 417
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object WebBrowser1: TWebBrowser
+    Align = alClient
+    Height = 136.000000000000000000
+    Width = 320.000000000000000000
+  end
+  object LocationSensor1: TLocationSensor
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 248
+    Top = 392
+  end
+  object ListBox1: TListBox
+    Align = alTop
+    Height = 227.000000000000000000
+    Padding.Top = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Position.Y = 54.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 320.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = gsGrouped
+    object lbLocationSensor: TListBoxItem
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Location Sensor'
+      Width = 320.000000000000000000
+      object swLocationSensorActive: TSwitch
+        Align = alRight
+        Anchors = []
+        Height = 44.000000000000000000
+        IsChecked = False
+        Margins.Right = 5.000000000000000000
+        Position.X = 260.000000000000000000
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        Width = 55.000000000000000000
+        OnSwitch = swLocationSensorActiveSwitch
+      end
+    end
+    object lbTriggerDistance: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Trigger Distance'
+      Width = 320.000000000000000000
+      object nbTriggerDistance: TNumberBox
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Anchors = [akTop, akRight]
+        TabOrder = 0
+        Cursor = crIBeam
+        KeyboardType = vktDefault
+        Position.X = 172.000000000000000000
+        Position.Y = 6.000000000000000000
+        Width = 41.000000000000000000
+        Height = 30.000000000000000000
+        VertIncrement = 5.000000000000000000
+      end
+      object Button1: TButton
+        Align = alRight
+        Anchors = []
+        Height = 44.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 216.000000000000000000
+        StyleLookup = 'stepperbuttonleft'
+        TabOrder = 1
+        Text = 'btnTriggerDown'
+        Width = 47.000000000000000000
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Align = alRight
+        Anchors = []
+        Height = 44.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 268.000000000000000000
+        StyleLookup = 'stepperbuttonright'
+        TabOrder = 2
+        Text = 'btnTriggerUp'
+        Width = 47.000000000000000000
+        OnClick = Button2Click
+      end
+    end
+    object lbAccuracy: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 88.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Accuracy'
+      Width = 320.000000000000000000
+      object Button3: TButton
+        Align = alRight
+        Anchors = []
+        Height = 44.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 216.000000000000000000
+        StyleLookup = 'stepperbuttonleft'
+        TabOrder = 0
+        Text = 'btnAccuracyDown'
+        Width = 47.000000000000000000
+        OnClick = Button3Click
+      end
+      object Button4: TButton
+        Align = alRight
+        Anchors = []
+        Height = 44.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 268.000000000000000000
+        StyleLookup = 'stepperbuttonright'
+        TabOrder = 1
+        Text = 'btnAccuracyUp'
+        Width = 47.000000000000000000
+        OnClick = Button4Click
+      end
+      object nbAccuracy: TNumberBox
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Anchors = [akTop, akRight]
+        TabOrder = 2
+        Cursor = crIBeam
+        KeyboardType = vktDefault
+        Position.X = 172.000000000000000000
+        Position.Y = 6.000000000000000000
+        Width = 41.000000000000000000
+        Height = 30.000000000000000000
+        VertIncrement = 5.000000000000000000
+      end
+    end
+    object lbLatitude: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 132.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Latitude'
+      Width = 320.000000000000000000
+    end
+    object lbLongitude: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 176.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Longitude'
+      Width = 320.000000000000000000
+    end
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 2
+    Width = 320.000000000000000000
+    object Label1: TLabel
+      Align = alClient
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Location'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+    end
+  end
+end

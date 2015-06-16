@@ -1,0 +1,444 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice'">
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\license.txt">
+            <RemoteDir>FireIBLite.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt">
+            <RemoteDir>FireIBLite.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\interbase.msg">
+            <RemoteDir>FireIBLite.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\admin.ib">
+            <RemoteDir>FireIBLite.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\ibconfig">
+            <RemoteDir>FireIBLite.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>ibconfig</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="TASKS.GDB">
+            <RemoteDir>FireIBLite.app\StartUp\Documents\</RemoteDir>
+            <RemoteName>TASKS.GDB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice\Debug\ResourceRules.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>ResourceRules.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice\Debug\FireIBLite.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\oss_license_notice.txt">
+            <RemoteDir>FireIBLite.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice\Debug\FireIBLite.dSYM" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF\</RemoteDir>
+            <RemoteName>FireIBLite</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice\Debug\FireIBLite.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include=".\iOSDevice\Debug\FireIBLite" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>FireIBLite</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="$(BDS)\bin\cc32140.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>FireIBLite\</RemoteDir>
+            <RemoteName>cc32140.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="TASKS.GDB">
+            <RemoteDir>FireIBLite\</RemoteDir>
+            <RemoteName>TASKS.GDB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\borlndmm.dll" Condition="'$(UsingDelphiRTL)'=='true'">
+            <RemoteDir>FireIBLite\</RemoteDir>
+            <RemoteName>borlndmm.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\cc32140mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>FireIBLite\</RemoteDir>
+            <RemoteName>cc32140mt.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgstl.dylib" Condition="'$(DynamicRTL)'=='true'">
+            <RemoteDir>FireIBLite.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgstl.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgcrtl.dylib" Condition="'$(DynamicRTL)'=='true'">
+            <RemoteDir>FireIBLite.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgcrtl.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>FireIBLite.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="$(BDS)\bin64\borlndmm.dll" Condition="'$(UsingDelphiRTL)'=='true'">
+            <RemoteDir>FireIBLite\</RemoteDir>
+            <RemoteName>borlndmm.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin64\cc64140mt.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'=='true'">
+            <RemoteDir>FireIBLite\</RemoteDir>
+            <RemoteName>cc64140mt.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin64\cc64140.dll" Condition="'$(DynamicRTL)'=='true' And '$(Multithreaded)'!='true'">
+            <RemoteDir>FireIBLite\</RemoteDir>
+            <RemoteName>cc64140.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>FireIBLite.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+        </DeployFile>
+    </ItemGroup>
+</Project>

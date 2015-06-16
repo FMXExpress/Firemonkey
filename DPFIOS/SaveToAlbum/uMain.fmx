@@ -1,0 +1,59 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 480
+  ClientWidth = 358
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 358.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 100.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 100.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = Top
+      Position.X = 100.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 158.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Save To Album'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton1Click
+    end
+    object DPFImageView1: TDPFImageView
+      ContentMode = vcmScaleAspectFit
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 358.000000000000000000
+      Size.Height = 390.000000000000000000
+      Size.PlatformDefault = False
+      AnimationDuration = 1.000000000000000000
+      IndicatorAlpha = 0.600000023841857900
+    end
+  end
+end

@@ -1,0 +1,72 @@
+object FTextSwitcher: TFTextSwitcher
+  Left = 0
+  Top = 0
+  Caption = 'TextSwitcher'
+  ClientHeight = 572
+  ClientWidth = 360
+  Quality = ccHighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = []
+  DesignerMobile = True
+  DesignerWidth = 360
+  DesignerHeight = 572
+  DesignerDeviceName = 'Samsung Galaxy S4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claGray
+    DrawType = dtCustom
+    Align = alClient
+    Width = 360.000000000000000000
+    Height = 572.000000000000000000
+    object DPFJTextSwitcher1: TDPFJTextSwitcher
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Margins.Left = 20.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = alTop
+      Position.X = 20.000000000000000000
+      Position.Y = 20.000000000000000000
+      Width = 320.000000000000000000
+      Height = 217.000000000000000000
+    end
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      OnClick = DPFJButton1Click
+      Position.X = 100.000000000000000000
+      Position.Y = 256.000000000000000000
+      Width = 160.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Fade Text 1'
+      TextSize = 18.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton2: TDPFJButton
+      Alpha = 1.000000000000000000
+      OnClick = DPFJButton2Click
+      Position.X = 100.000000000000000000
+      Position.Y = 336.000000000000000000
+      Width = 160.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Fade Text 2'
+      TextSize = 18.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton3: TDPFJButton
+      Alpha = 1.000000000000000000
+      OnClick = DPFJButton3Click
+      Position.X = 100.000000000000000000
+      Position.Y = 400.000000000000000000
+      Width = 160.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Fade Text 3'
+      TextSize = 18.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+end

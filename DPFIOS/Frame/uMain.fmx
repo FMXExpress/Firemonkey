@@ -1,0 +1,93 @@
+object FMainForm: TFMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Frame Project'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claBlack
+    BackgroundImage = 'background.png'
+    object DPFUIView2: TDPFUIView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      BackgroundColor = claWhite
+      object DPFButton1: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Align = Left
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Set Frame'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        AdjustsImageWhenHighlighted = False
+        OnClick = DPFButton1Click
+      end
+      object DPFButton2: TDPFButton
+        Alpha = 1.000000000000000000
+        ClipsToBounds = False
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Align = Right
+        Position.X = 186.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 129.000000000000000000
+        Size.Height = 38.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Remove Frame'
+        TextLineBreak = lbCharacterWrap
+        TextAlpha = 1.000000000000000000
+        AdjustsImageWhenHighlighted = False
+        OnClick = DPFButton2Click
+      end
+    end
+    object DPFUIViewController1: TDPFUIViewController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 412.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+end

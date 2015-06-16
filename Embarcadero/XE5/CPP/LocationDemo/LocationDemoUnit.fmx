@@ -1,0 +1,185 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object LocationSensor1: TLocationSensor
+    Accuracy = 10.000000000000000000
+    Distance = 10.000000000000000000
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 144
+    Top = 656
+  end
+  object WebBrowser1: TWebBrowser
+    Align = alClient
+    Height = 460.000000000000000000
+    Width = 0.000000000000000000
+  end
+  object ListBox1: TListBox
+    Align = alLeft
+    Height = 460.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 321.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = gsGrouped
+    object ListBoxItem1: TListBoxItem
+      Height = 44.000000000000000000
+      Margins.Top = 15.000000000000000000
+      Position.Y = 15.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Enable Location Services'
+      Width = 321.000000000000000000
+      object Switch1: TSwitch
+        Align = alRight
+        Height = 35.000000000000000000
+        IsChecked = False
+        Margins.Left = 9.000000000000000000
+        Margins.Top = 9.000000000000000000
+        Margins.Right = 9.000000000000000000
+        Margins.Bottom = 9.000000000000000000
+        Position.X = 257.000000000000000000
+        Position.Y = 9.000000000000000000
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        Width = 55.000000000000000000
+        OnSwitch = Switch1Switch
+      end
+    end
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Height = 56.000000000000000000
+      Position.Y = 59.000000000000000000
+      StyleLookup = 'listboxgroupheader'
+      Text = 'Your location'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemLatitude: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 115.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'Latitude'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemLongitude: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 159.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'Longitude'
+      Width = 321.000000000000000000
+    end
+    object ListBoxGroupHeader2: TListBoxGroupHeader
+      Height = 56.000000000000000000
+      Position.Y = 203.000000000000000000
+      StyleLookup = 'listboxgroupheader'
+      Text = 'Current Address'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemAdminArea: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 259.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'AdminArea'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemCountryCode: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 303.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'CountryCode'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemCountryName: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 347.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'CountryName'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemFeatureName: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 391.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'FeatureName'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemLocality: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 435.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'Locality'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemPostalCode: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 479.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'PostalCode'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemSubAdminArea: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 523.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'SubAdminArea'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemSubLocality: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 567.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'SubLocality'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemSubThoroughfare: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 611.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'SubThoroughfare'
+      Width = 321.000000000000000000
+    end
+    object ListBoxItemThoroughfare: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 655.000000000000000000
+      StyleLookup = 'listboxitemleftdetail'
+      Text = 'Thoroughfare'
+      Width = 321.000000000000000000
+    end
+    object ListBoxHeader1: TListBoxHeader
+      Height = 44.000000000000000000
+      StyleLookup = 'ipadtoolbarleft'
+      TabOrder = 0
+      Width = 321.000000000000000000
+      object Label1: TLabel
+        Align = alClient
+        Height = 44.000000000000000000
+        StyleLookup = 'toollabel'
+        Text = 'Location Demo'
+        TextAlign = taCenter
+        Width = 321.000000000000000000
+      end
+    end
+  end
+  object Line2: TLine
+    Align = alLeft
+    Height = 460.000000000000000000
+    LineType = ltLeft
+    Position.X = 321.000000000000000000
+    Width = 1.000000000000000000
+  end
+end

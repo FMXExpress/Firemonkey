@@ -1,0 +1,96 @@
+object FProgressBar: TFProgressBar
+  Left = 0
+  Top = 0
+  Caption = 'ProgressBar'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claSilver
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJSeekBar1: TDPFJSeekBar
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = alTop
+      Position.X = 50.000000000000000000
+      Position.Y = 77.000000000000000000
+      Width = 284.000000000000000000
+      Height = 97.000000000000000000
+      OnProgressChanged = DPFJSeekBar1ProgressChanged
+    end
+    object DPFJSeekBar2: TDPFJSeekBar
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Align = alTop
+      Position.X = 50.000000000000000000
+      Position.Y = 286.000000000000000000
+      Width = 284.000000000000000000
+      Height = 57.000000000000000000
+      Progress = 40
+      OnProgressChanged = DPFJSeekBar2ProgressChanged
+    end
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claSteelblue
+      BorderWidth = 1
+      BorderCornerRadius = 10.000000000000000000
+      DrawType = dtCustom
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Align = alTop
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Width = 374.000000000000000000
+      Height = 47.000000000000000000
+      Text.Strings = (
+        '0')
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJTextView2: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claWhite
+      BackgroundColor2 = claOrangered
+      BorderWidth = 1
+      BorderCornerRadius = 10.000000000000000000
+      DrawType = dtCustom
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Align = alTop
+      Position.X = 5.000000000000000000
+      Position.Y = 214.000000000000000000
+      Width = 374.000000000000000000
+      Height = 47.000000000000000000
+      Text.Strings = (
+        '0')
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+end

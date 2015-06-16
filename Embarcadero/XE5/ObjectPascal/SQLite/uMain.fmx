@@ -1,0 +1,147 @@
+object SQLiteForm: TSQLiteForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object Label1: TLabel
+      Align = alContents
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'SQLite'
+      TextAlign = taCenter
+      Width = 384.000000000000000000
+      Trimming = ttCharacter
+    end
+    object btnAdd: TButton
+      Align = alRight
+      Anchors = []
+      Height = 48.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 331.000000000000000000
+      StyleLookup = 'addtoolbuttonbordered'
+      TabOrder = 1
+      Text = 'btnAdd'
+      Width = 48.000000000000000000
+      OnClick = btnAddClick
+    end
+    object btnDelete: TButton
+      Align = alLeft
+      Height = 48.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      StyleLookup = 'deletetoolbutton'
+      TabOrder = 2
+      Text = 'Delete'
+      Trimming = ttCharacter
+      Width = 81.000000000000000000
+      OnClick = btnDeleteClick
+    end
+  end
+  object ListBox1: TListBox
+    Align = alClient
+    Height = 519.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    ItemIndex = 0
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object TaskList: TSQLConnection
+    ConnectionName = 'TaskList'
+    DriverName = 'SQLite'
+    LoginPrompt = False
+    Params.Strings = (
+      'DriverName=SQLite'
+      'DriverUnit=Data.DbxSqlite'
+      
+        'DriverPackageLoader=TDBXSqliteDriverLoader,DBXSqliteDriver170.bp' +
+        'l'
+      
+        'MetaDataPackageLoader=TDBXSqliteMetaDataCommandFactory,DbxSqlite' +
+        'Driver170.bpl'
+      'FailIfMissing=False'
+      'Database=C:\tempprojects\tasks.s3db')
+    AfterConnect = TaskListAfterConnect
+    BeforeConnect = TaskListBeforeConnect
+    Left = 250
+    Top = 99
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 244
+    Top = 253
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListBox1
+      AutoActivate = False
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'TaskName'
+      AutoFill = False
+      BufferCount = -1
+      AutoBufferCount = False
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object SQLQueryInsert: TSQLQuery
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftString
+        Name = 'TaskName'
+        ParamType = ptInput
+      end>
+    SQL.Strings = (
+      'insert into task (TaskName) values (:TaskName)')
+    SQLConnection = TaskList
+    Left = 112
+    Top = 204
+  end
+  object SQLQueryDelete: TSQLQuery
+    MaxBlobSize = -1
+    Params = <
+      item
+        DataType = ftString
+        Name = 'TaskName'
+        ParamType = ptInput
+      end>
+    SQL.Strings = (
+      'delete from task where TaskName = (:TaskName)')
+    SQLConnection = TaskList
+    Left = 56
+    Top = 360
+  end
+  object SQLDataSetTask: TSQLDataSet
+    CommandText = 'Task'
+    CommandType = ctTable
+    DbxCommandType = 'Dbx.Table'
+    MaxBlobSize = 1
+    Params = <>
+    SQLConnection = TaskList
+    Left = 248
+    Top = 176
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = SQLDataSetTask
+    ScopeMappings = <>
+    Left = 240
+    Top = 344
+  end
+end

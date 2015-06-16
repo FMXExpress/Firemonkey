@@ -1,0 +1,164 @@
+object FSLComposeView: TFSLComposeView
+  Left = 0
+  Top = 0
+  Caption = 'SLComposeView'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 417.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFToolbar1: TDPFToolbar
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      BarItems = <
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Facebook'
+          ButtonItemKind = bkTitle
+          ButtonSystemItem = bbsiCompose
+          OnClick = DPFToolbar1BarItems0Click
+          ModalResult = 0
+          Width = 100.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiFlexibleSpace
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'Twitter'
+          ButtonItemKind = bkTitle
+          ButtonSystemItem = bbsiCompose
+          OnClick = DPFToolbar1BarItems2Click
+          ModalResult = 0
+          Width = 100.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          ButtonSystemItem = bbsiFlexibleSpace
+          ModalResult = 0
+          Width = 50.000000000000000000
+        end
+        item
+          Font.FontName = ios_Helvetica_Bold
+          Title = 'SinaWeibo'
+          ButtonItemKind = bkTitle
+          ButtonSystemItem = bbsiCompose
+          OnClick = DPFToolbar1BarItems4Click
+          ModalResult = 0
+          Width = 100.000000000000000000
+        end>
+    end
+    object DPFLabelFaceBook: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 12.000000000000000000
+      Position.Y = 87.000000000000000000
+      Size.Width = 132.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Facebook Available:'
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFSwitchT: TDPFSwitch
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 180.000000000000000000
+      Position.Y = 149.000000000000000000
+      Size.Width = 77.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      Enabled = False
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 12.000000000000000000
+      Position.Y = 149.000000000000000000
+      Size.Width = 132.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Twitter Available:'
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFSwitchS: TDPFSwitch
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 180.000000000000000000
+      Position.Y = 210.000000000000000000
+      Size.Width = 77.000000000000000000
+      Size.Height = 27.000000000000000000
+      Size.PlatformDefault = False
+      Enabled = False
+    end
+    object DPFLabel2: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 17.000000000000000000
+      Position.Y = 210.000000000000000000
+      Size.Width = 148.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'SinaWeibo Available:'
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+  end
+  object DPFSwitchF: TDPFSwitch
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Position.X = 180.000000000000000000
+    Position.Y = 87.000000000000000000
+    Size.Width = 77.000000000000000000
+    Size.Height = 27.000000000000000000
+    Size.PlatformDefault = False
+    Enabled = False
+  end
+  object DPFSLComposeViewController1: TDPFSLComposeViewController
+    OnComposeEvent = DPFSLComposeViewController1ComposeEvent
+    Left = 216
+    Top = 272
+  end
+end

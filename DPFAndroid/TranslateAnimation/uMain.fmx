@@ -1,0 +1,85 @@
+object FSlideAnimation: TFSlideAnimation
+  Left = 0
+  Top = 0
+  Caption = 'SlideAnimation'
+  ClientHeight = 883
+  ClientWidth = 601
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = []
+  DesignerMobile = True
+  DesignerWidth = 601
+  DesignerHeight = 905
+  DesignerDeviceName = 'Google Nexus 7'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    DrawType = dtCustom
+    Align = Client
+    Width = 601.000000000000000000
+    Height = 883.000000000000000000
+    object DPFJAnalogClock1: TDPFJAnalogClock
+      Alpha = 1.000000000000000000
+      Position.X = 200.000000000000000000
+      Position.Y = 341.000000000000000000
+      Width = 200.000000000000000000
+      Height = 200.000000000000000000
+    end
+    object DPFJView2: TDPFJRelativeLayout
+      Tag = -1
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claRoyalblue
+      DrawType = dtCustom
+      Align = Client
+      Width = 601.000000000000000000
+      Height = 883.000000000000000000
+      object DPFJButton3: TDPFJButton
+        Tag = -1
+        Alpha = 1.000000000000000000
+        Focusable = False
+        FocusableInTouchMode = False
+        OnClick = DPFJButton3Click
+        Position.X = 31.000000000000000000
+        Position.Y = 112.000000000000000000
+        Width = 185.000000000000000000
+        Height = 65.000000000000000000
+        Text = 'Move'
+        TextSize = 18.000000000000000000
+        TextAlignment = taCenter
+      end
+      object DPFJRelativeLayout1: TDPFJRelativeLayout
+        Alpha = 1.000000000000000000
+        BackgroundColor1 = claLightslategray
+        DrawType = dtCustom
+        Align = Top
+        Width = 601.000000000000000000
+        Height = 37.000000000000000000
+        object DPFJButton1: TDPFJButton
+          Alpha = 1.000000000000000000
+          Focusable = False
+          FocusableInTouchMode = False
+          OnClick = DPFJButton1Click
+          Align = Left
+          Width = 41.000000000000000000
+          Height = 37.000000000000000000
+          Text = '||'
+          TextSize = 28.000000000000000000
+          TextAlignment = taCenter
+        end
+      end
+    end
+  end
+  object DPFJAnimation1: TDPFJAnimation
+    OnAnimationEnd = DPFJTranslateAnimation1AnimationEnd
+    Left = 368
+    Top = 280
+  end
+  object DPFJAnimation2: TDPFJAnimation
+    OnAnimationEnd = DPFJAnimation2AnimationEnd
+    Left = 520
+    Top = 104
+  end
+end

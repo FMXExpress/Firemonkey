@@ -1,0 +1,110 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Flags'
+  ClientHeight = 333
+  ClientWidth = 452
+  FormFactor.Width = 1680
+  FormFactor.Height = 1050
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object FlgViewer: TImageViewer
+    Cursor = crHandPoint
+    Height = 209.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    ShowScrollBars = False
+    TabOrder = 0
+    Width = 385.000000000000000000
+    BitmapScale = 1.000000000000000000
+  end
+  object FlagsCombo: TComboBox
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    ItemIndex = 0
+    ListBoxResource = 'transparentlistboxstyle'
+    Position.X = 16.000000000000000000
+    Position.Y = 248.000000000000000000
+    TabOrder = 1
+    Width = 137.000000000000000000
+    OnChange = FlagsComboChange
+    OnClick = FlagsComboClick
+    object ListBoxItem1: TListBoxItem
+      Height = 19.000000000000000000
+      IsSelected = True
+      TabOrder = 0
+      Text = 'United States'
+      Width = 119.000000000000000000
+    end
+    object ListBoxItem2: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 19.000000000000000000
+      TabOrder = 1
+      Text = 'Romania'
+      Width = 119.000000000000000000
+    end
+    object ListBoxItem3: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 38.000000000000000000
+      TabOrder = 2
+      Text = 'Russia'
+      Width = 119.000000000000000000
+    end
+    object ListBoxItem4: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 57.000000000000000000
+      TabOrder = 3
+      Text = 'Spain'
+      Width = 119.000000000000000000
+    end
+    object ListBoxItem5: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 76.000000000000000000
+      TabOrder = 4
+      Text = 'Japan'
+      Width = 119.000000000000000000
+    end
+    object ListBoxItem6: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 95.000000000000000000
+      TabOrder = 5
+      Text = 'Canada'
+      Width = 119.000000000000000000
+    end
+    object ListBoxItem7: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 114.000000000000000000
+      TabOrder = 6
+      Text = 'Italy'
+      Width = 119.000000000000000000
+    end
+  end
+  object CountryName: TLabel
+    Height = 15.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    TextSettings.Font.Family = 'Arial'
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.Font.Style = [fsBold]
+    Width = 120.000000000000000000
+  end
+  object PrintBtn: TButton
+    Height = 22.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 288.000000000000000000
+    TabOrder = 3
+    Text = 'Print'
+    Width = 80.000000000000000000
+    OnClick = PrintBtnClick
+  end
+  object PrintDialog1: TPrintDialog
+    Left = 298
+    Top = 274
+  end
+end

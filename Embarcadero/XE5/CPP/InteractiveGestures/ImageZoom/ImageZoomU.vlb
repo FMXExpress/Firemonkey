@@ -1,0 +1,15 @@
+﻿[ToolBar1]
+Coordinates=140,10,67,36
+
+[Image1]
+Coordinates=73,10,57,58
+
+[Label1]
+Coordinates=10,10,53,58
+
+[GestureManager1]
+Coordinates=10,78,118,36
+
+[]
+Coordinates=148,56,91,36
+

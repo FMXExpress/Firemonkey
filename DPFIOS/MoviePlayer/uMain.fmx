@@ -1,0 +1,115 @@
+object FMoviePlayer: TFMoviePlayer
+  Left = 0
+  Top = 0
+  Caption = 'Movie Player'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 417.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFButtonLocalPlay: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 80.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Play Local Movie '
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claTomato
+      BackgroundColorHighlight = claOrange
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButtonLocalPlayClick
+    end
+    object DPFButtonURLPlay: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 80.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      ButtonType = btCustom
+      Text = 'Play URL Movie '
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claTomato
+      BackgroundColorHighlight = claOrange
+      AdjustsImageWhenHighlighted = False
+      OnClick = DPFButtonURLPlayClick
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFUIView2: TDPFUIView
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Bottom
+      Position.Y = 141.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 276.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object DPFCheckBox1: TDPFCheckBox
+      Alpha = 1.000000000000000000
+      Font.FontSize = 11
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderColor = claSilver
+      TagNative = 0
+      Position.X = 80.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 169.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnClick = DPFCheckBox1Click
+      Text = 'Show in view'
+    end
+  end
+  object DPFMPMoviePlayerViewController1: TDPFMPMoviePlayerViewController
+    BackgroundColor = claLightgray
+    OnError = DPFMPMoviePlayerViewController1Error
+    OnUserExited = DPFMPMoviePlayerViewController1UserExited
+    OnPlaybackEnded = DPFMPMoviePlayerViewController1PlaybackEnded
+    Left = 48
+    Top = 216
+  end
+end

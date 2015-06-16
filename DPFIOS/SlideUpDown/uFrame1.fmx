@@ -1,0 +1,123 @@
+object Frame1: TFrame1
+  Height = 400.000000000000000000
+  Width = 320.000000000000000000
+  object DPFSearchBar1: TDPFSearchBar
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    Align = alTop
+    Width = 320.000000000000000000
+    Height = 75.000000000000000000
+    TextPlaceholder = 'Search'
+    TextPrompt = 'Search in Table'
+    TintColor = claOrange
+    TableView = DPFUITableView1
+  end
+  object DPFUITableView1: TDPFUITableView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    Align = alTop
+    Position.Y = 75.000000000000000000
+    Width = 320.000000000000000000
+    Height = 325.000000000000000000
+    Options.Edition.CellEdit = True
+    Options.TextFont.FontName = ios_Helvetica_Bold
+    Options.TextFont.FontSize = 18
+    Options.DescriptionFont.FontName = ios_Helvetica
+    Options.RowHeight = 80
+    Sections = <
+      item
+        Header.Font.FontName = ios_Helvetica_Bold
+        Header.Font.FontSize = 18
+        Header.Alpha = 0.899999976158142100
+        Footer.Font.FontName = ios_Helvetica_Bold
+        Footer.Font.FontSize = 18
+        Footer.Alpha = 0.899999976158142100
+        TableItems = <
+          item
+            Style = tvcsSubtitle
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'A Demo Item 0'
+            ItemDescription.Text = 'Desciption 0'
+            ItemDescription.Color = claGray
+          end
+          item
+            Style = tvcsSubtitle
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'A Demo Item 1'
+            ItemDescription.Text = 'Desciption 1'
+            ItemDescription.Color = claGray
+          end
+          item
+            Style = tvcsSubtitle
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'A Demo Item 2'
+            ItemDescription.Text = 'Desciption 2'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'B Demo Item 3'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'B Demo Item 4'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'C Demo Item 5'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'D Demo Item 6'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'D Demo Item 7'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'D Demo Item 8'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'A Demo Item 9'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'B Demo Item 10'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'B Demo Item 11'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'C Demo Item 12'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'D Demo Item 13'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = '/Documents/admin.png'
+            ItemText.Text = 'A Demo Item 14'
+            ItemDescription.Color = claGray
+          end>
+      end>
+  end
+end

@@ -1,0 +1,98 @@
+object Frame1: TFrame1
+  Align = Client
+  Size.Width = 320.000000000000000000
+  Size.Height = 80.000000000000000000
+  Size.PlatformDefault = False
+  TabOrder = 0
+  object DPFUIView3: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundColor = claNull
+    object DPFImageView1: TDPFImageView
+      ContentMode = vcmCenter
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Left
+      Size.Width = 97.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      AnimationDuration = 1.000000000000000000
+      IndicatorAlpha = 0.600000023841857900
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 99.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 118.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFLabel2: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Anchors = [akTop, akRight]
+      Position.X = 200.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 118.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      TextColor = claBlue
+      TextAlignment = taRight
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFLabel3: TDPFLabel
+      Alpha = 1.000000000000000000
+      Font.FontSize = 12
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 98.000000000000000000
+      Position.Y = 42.000000000000000000
+      Size.Width = 103.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      TextColor = claSlategray
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFLabel4: TDPFLabel
+      Alpha = 1.000000000000000000
+      Font.FontName = ios_AmericanTypewriter
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Anchors = [akTop, akRight]
+      Position.X = 199.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 118.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      TextColor = claRed
+      TextAlignment = taRight
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+  end
+end

@@ -1,0 +1,258 @@
+object FTableViewSearch: TFTableViewSearch
+  Left = 0
+  Top = 0
+  Caption = 'TableViewSearch'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFNavigationController1: TDPFNavigationController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 460.000000000000000000
+      Size.PlatformDefault = False
+      ToolbarVisible = False
+      object DPFNavigationControllerPage1: TDPFNavigationControllerPage
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 386.000000000000000000
+        Size.PlatformDefault = False
+        BackgroundColor = claWhite
+        PageIndex = 0
+        BarButtons = <>
+        ToolBarButtons = <>
+        PageViewTitle = 'Table Search'
+        object DPFUITableView1: TDPFUITableView
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 274.000000000000000000
+          Size.PlatformDefault = False
+          Options.Edition.CellEdit = True
+          Options.SearchBar.SearchKind = skContains
+          Options.TextFont.FontName = ios_Helvetica_Bold
+          Options.TextFont.FontSize = 18
+          Options.DescriptionFont.FontName = ios_Helvetica
+          Options.RowHeight = 80.000000000000000000
+          Sections = <
+            item
+              Header.Text = 'This is section header'
+              Header.Font.FontName = ios_Helvetica_Bold
+              Header.Font.FontSize = 18
+              Header.Alpha = 0.899999976158142100
+              Footer.Text = 'This is section footer'
+              Footer.Font.FontName = ios_Helvetica_Bold
+              Footer.Font.FontSize = 18
+              Footer.Alpha = 0.899999976158142100
+              TableItems = <
+                item
+                  Style = tvcsSubtitle
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPhone'
+                  ItemText.Text = 'A Demo Item 0'
+                  ItemDescription.Text = 'Desciption 0'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPhone'
+                  ItemText.Text = 'A Demo Item 1'
+                  ItemDescription.Text = 'Desciption 1'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  Style = tvcsSubtitle
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPhone'
+                  ItemText.Text = 'A Demo Item 2'
+                  ItemDescription.Text = 'Desciption 2'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPhone'
+                  ItemText.Text = 'A Demo Item 3'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPhone'
+                  ItemText.Text = 'A Demo Item 4'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPod'
+                  ItemText.Text = 'B Demo Item 5'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPod'
+                  ItemText.Text = 'B Demo Item 6'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPod'
+                  ItemText.Text = 'B Demo Item 7'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPod'
+                  ItemText.Text = 'B Demo Item 8'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'iPod'
+                  ItemText.Text = 'B Demo Item 9'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'Mac'
+                  ItemText.Text = 'C Demo Item 10'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'Mac'
+                  ItemText.Text = 'C Demo Item 11'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'Mac'
+                  ItemText.Text = 'C Demo Item 12'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'Mac'
+                  ItemText.Text = 'C Demo Item 13'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ImageName = '/Documents/admin.png'
+                  Category = 'Mac'
+                  ItemText.Text = 'C Demo Item 14'
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ItemText.Text = #1587#1604#1575#1605
+                  ItemText.Alignment = taRight
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ItemText.Text = #1575#1740#1606' '#1578#1587#1578#1740' '#1605#1740#1576#1575#1588#1583
+                  ItemText.Alignment = taRight
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ItemText.Text = #1576#1585#1575#1740' '#1580#1587#1578#1580#1608
+                  ItemText.Alignment = taRight
+                  ItemDescription.Color = claGray
+                end
+                item
+                  ItemText.Text = #1605#1608#1601#1602' '#1576#1575#1588#1740#1583
+                  ItemText.Alignment = taRight
+                  ItemDescription.Color = claGray
+                end>
+            end>
+          IndexList.Strings = (
+            '#'
+            'A'
+            'B'
+            'C'
+            'D'
+            'E'
+            'F'
+            'G'
+            'H'
+            'I'
+            'J'
+            'K')
+        end
+        object DPFSearchBar1: TDPFSearchBar
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Align = Top
+          Position.Y = 24.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 88.000000000000000000
+          Size.PlatformDefault = False
+          ShowsScopeBar = True
+          TextPlaceholder = 'Search'
+          BackgroundImage = 'a'
+          BackgroundColor = claNull
+          ScopeButtonTitles.Strings = (
+            'All'
+            'iPhone'
+            'iPod'
+            'Mac')
+          TableView = DPFUITableView1
+          OnChanged = DPFSearchBar1Changed
+          OnScopebarClicked = DPFSearchBar1ScopebarClicked
+        end
+        object DPFCheckBox1: TDPFCheckBox
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          BorderColor = claSilver
+          TagNative = 0
+          Margins.Right = 10.000000000000000000
+          Align = Top
+          Size.Width = 310.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          CheckReceiveTouch = False
+          OnClick = DPFCheckBox1Click
+          Checked = True
+          CheckedKind = cbkGlossy
+          Text = 'Contains Search'
+          TextAlignment = taRight
+          ImageAlignment = taRight
+        end
+      end
+    end
+  end
+  object DPFKeyboard1: TDPFKeyboard
+    HideButtonCaption = 'Done'
+    Left = 240
+    Top = 192
+  end
+end

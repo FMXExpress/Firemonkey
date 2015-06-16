@@ -1,0 +1,145 @@
+object FWebView: TFWebView
+  Left = 0
+  Top = 0
+  Caption = 'Web View'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFTabBarController1: TDPFTabBarController
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 460.000000000000000000
+      Size.PlatformDefault = False
+      ActivePageIndex = 2
+      TabBarPanel.Alpha = 1.000000000000000000
+      object DPFTabBarItem1: TDPFTabBarItem
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        ItemTitle = 'Go!'
+        AnimationDuration = 1.000000000000000000
+        object DPFWeb1: TDPFWeb
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Align = Client
+          Size.Width = 50.000000000000000000
+          Size.PlatformDefault = False
+          OnRequest = DPFWebLoadFromStringRequest
+        end
+        object DPFUIViewToolBar: TDPFUIView
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Align = Top
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          object DPFButton1: TDPFButton
+            Alpha = 1.000000000000000000
+            ClipsToBounds = False
+            ShadowOffsetHeight = 10.000000000000000000
+            ShadowOpacity = 1.000000000000000000
+            ShadowRadius = 10.000000000000000000
+            TagNative = 0
+            Align = Right
+            Size.Width = 50.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Go'
+            TextLineBreak = lbCharacterWrap
+            TextAlpha = 1.000000000000000000
+            BackgroundColorNormal = claSkyblue
+            BackgroundColorHighlight = claMidnightblue
+            AdjustsImageWhenHighlighted = False
+            OnClick = DPFButton1Click
+          end
+          object DPFTextField1: TDPFTextField
+            Alpha = 1.000000000000000000
+            ShadowOffsetHeight = 10.000000000000000000
+            ShadowOpacity = 1.000000000000000000
+            ShadowRadius = 10.000000000000000000
+            TagNative = 0
+            Align = Client
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'http://www.google.com'
+          end
+        end
+      end
+      object DPFTabBarItem3: TDPFTabBarItem
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        ItemTitle = 'RTF'
+        AnimationDuration = 1.000000000000000000
+        object DPFWebRTF: TDPFWeb
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Align = Client
+          Size.Width = 50.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          OnRequest = DPFWebLoadFromStringRequest
+        end
+      end
+      object DPFTabBarItem2: TDPFTabBarItem
+        Alpha = 1.000000000000000000
+        ShadowOffsetHeight = 10.000000000000000000
+        ShadowOpacity = 1.000000000000000000
+        ShadowRadius = 10.000000000000000000
+        TagNative = 0
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 411.000000000000000000
+        Size.PlatformDefault = False
+        ItemTitle = 'Load String'
+        AnimationDuration = 1.000000000000000000
+        object DPFWebLoadFromString: TDPFWeb
+          Alpha = 1.000000000000000000
+          ShadowOffsetHeight = 10.000000000000000000
+          ShadowOpacity = 1.000000000000000000
+          ShadowRadius = 10.000000000000000000
+          TagNative = 0
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 411.000000000000000000
+          Size.PlatformDefault = False
+          OnRequest = DPFWebLoadFromStringRequest
+        end
+      end
+    end
+  end
+end

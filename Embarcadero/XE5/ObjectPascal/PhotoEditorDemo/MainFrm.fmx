@@ -1,0 +1,176 @@
+object BaseMainForm: TBaseMainForm
+  Left = 0
+  Top = 0
+  Caption = 'BaseMainForm'
+  ClientHeight = 567
+  ClientWidth = 384
+  Fill.Color = claNull
+  Fill.Kind = bkSolid
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Orientations = [soLandscape]
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ImageContainer: TImage
+    MultiResBitmap = <
+      item
+      end
+      item
+        Scale = 2.000000000000000000
+      end>
+    Align = alClient
+    EnableDragHighlight = False
+    Height = 471.000000000000000000
+    Width = 384.000000000000000000
+  end
+  object ToolBarBottom: TToolBar
+    Align = alBottom
+    Height = 48.000000000000000000
+    Position.Y = 519.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    object ButtonTakePhotoFromCamera: TButton
+      Action = ActionTakePhotoFromCamera
+      Align = alCenter
+      Height = 48.000000000000000000
+      StyleLookup = 'cameratoolbutton'
+      TabOrder = 0
+      Width = 48.000000000000000000
+    end
+    object ButtonRemovePhoto: TButton
+      Action = ActionClearImage
+      Align = alRight
+      Height = 48.000000000000000000
+      Position.X = 336.000000000000000000
+      StyleLookup = 'trashtoolbutton'
+      TabOrder = 1
+      Width = 48.000000000000000000
+      object RemoveBtnAnimation: TFloatAnimation
+        Duration = 1.000000000000000000
+        Interpolation = itBounce
+        PropertyName = 'RotationAngle'
+        StartValue = 0.000000000000000000
+        StopValue = 360.000000000000000000
+      end
+    end
+    object ButtonSendImage: TButton
+      Action = ActionShowShareSheet
+      Align = alLeft
+      Height = 48.000000000000000000
+      StyleLookup = 'actiontoolbutton'
+      TabOrder = 2
+      Width = 48.000000000000000000
+    end
+  end
+  object ToolBarTop: TToolBar
+    Height = 48.000000000000000000
+    Padding.Left = 7.000000000000000000
+    TabOrder = 2
+    Width = 384.000000000000000000
+    object ButtonTakePhotoFromLibrary: TButton
+      Action = ActionTakePhotoFromLibrary
+      Align = alRight
+      Height = 48.000000000000000000
+      Position.X = 336.000000000000000000
+      StyleLookup = 'organizetoolbutton'
+      TabOrder = 0
+      Width = 48.000000000000000000
+    end
+    object SpeedButton1: TSpeedButton
+      Action = ActionBlurEffect
+      Align = alLeft
+      GroupName = 'effects'
+      Height = 48.000000000000000000
+      Position.X = 67.000000000000000000
+      StyleLookup = 'toolbuttonmiddle'
+      Width = 60.000000000000000000
+    end
+    object SpeedButton2: TSpeedButton
+      Action = ActionPixelateEffect
+      Align = alLeft
+      GroupName = 'effects'
+      Height = 48.000000000000000000
+      Position.X = 127.000000000000000000
+      StyleLookup = 'toolbuttonmiddle'
+      Width = 60.000000000000000000
+    end
+    object SpeedButton3: TSpeedButton
+      Action = ActionSharpenEffect
+      Align = alLeft
+      GroupName = 'effects'
+      Height = 48.000000000000000000
+      Position.X = 187.000000000000000000
+      StyleLookup = 'toolbuttonright'
+      Width = 60.000000000000000000
+    end
+    object SpeedButton4: TSpeedButton
+      Action = ActionResetEffect
+      Align = alLeft
+      GroupName = 'effects'
+      Height = 48.000000000000000000
+      Position.X = 7.000000000000000000
+      StyleLookup = 'toolbuttonleft'
+      Width = 60.000000000000000000
+    end
+  end
+  object LayoutFilterSettings: TLayout
+    Height = 345.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 289.000000000000000000
+  end
+  object ActionList: TActionList
+    OnUpdate = ActionListUpdate
+    Left = 280
+    Top = 48
+    object ActionTakePhotoFromLibrary: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      CustomText = ' '
+      OnDidFinishTaking = ActionTakePhotoFromLibraryDidFinishTaking
+    end
+    object ActionTakePhotoFromCamera: TTakePhotoFromCameraAction
+      Category = 'Media Library'
+      CustomText = ' '
+      OnDidFinishTaking = ActionTakePhotoFromLibraryDidFinishTaking
+    end
+    object ActionShowShareSheet: TShowShareSheetAction
+      Category = 'Media Library'
+      CustomText = ' '
+      TextMessage = 'Sent from an application created with #Delphi  #Embarcadero'
+      OnBeforeExecute = ActionShowShareSheetBeforeExecute
+    end
+    object ActionBlurEffect: TAction
+      Category = 'Filters'
+      Text = 'Blur'
+      GroupIndex = 1
+      OnExecute = ActionBlurEffectExecute
+    end
+    object ActionPixelateEffect: TAction
+      Category = 'Filters'
+      Text = 'Pixelate'
+      GroupIndex = 1
+      OnExecute = ActionPixelateEffectExecute
+    end
+    object ActionSharpenEffect: TAction
+      Category = 'Filters'
+      Text = 'Sharpen'
+      GroupIndex = 1
+      OnExecute = ActionSharpenEffectExecute
+    end
+    object ActionResetEffect: TAction
+      Category = 'Filters'
+      Text = 'None'
+      GroupIndex = 1
+      OnExecute = ActionResetEffectExecute
+    end
+    object ActionClearImage: TAction
+      Category = 'Media Library'
+      OnExecute = ActionClearImageExecute
+    end
+  end
+end

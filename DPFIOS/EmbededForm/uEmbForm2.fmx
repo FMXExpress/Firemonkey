@@ -1,0 +1,77 @@
+object FEmbForm2: TFEmbForm2
+  Left = 0
+  Top = 0
+  Caption = 'FEmbForm2'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object Form2MainView: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 417.000000000000000000
+    Size.PlatformDefault = False
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 160.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Test Button'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      AdjustsImageWhenHighlighted = False
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'This is Form 2'
+      BackgroundColor = claLightblue
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFSegmentedControl1: TDPFSegmentedControl
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Position.Y = 49.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 96.000000000000000000
+      Size.PlatformDefault = False
+      Segments = <
+        item
+          Title = 'Seg 1'
+        end
+        item
+          Title = 'Seg 2'
+        end
+        item
+          Title = 'Seg 3'
+        end>
+    end
+  end
+end

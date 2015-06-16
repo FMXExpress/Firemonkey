@@ -1,0 +1,1042 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{74F42407-E593-417D-9EE4-A4BAC003AEEE}</ProjectGuid>
+        <ProjectVersion>15.4</ProjectVersion>
+        <FrameworkType>FMX</FrameworkType>
+        <MainSource>CapitalTrivia.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform Condition="'$(Platform)'==''">iOSDevice</Platform>
+        <TargetedPlatforms>89</TargetedPlatforms>
+        <AppType>Application</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Android' and '$(Base)'=='true') or '$(Base_Android)'!=''">
+        <Base_Android>true</Base_Android>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice' and '$(Base)'=='true') or '$(Base_iOSDevice)'!=''">
+        <Base_iOSDevice>true</Base_iOSDevice>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Base)'=='true') or '$(Base_iOSSimulator)'!=''">
+        <Base_iOSSimulator>true</Base_iOSSimulator>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Android' and '$(Cfg_1)'=='true') or '$(Cfg_1_Android)'!=''">
+        <Cfg_1_Android>true</Cfg_1_Android>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice' and '$(Cfg_1)'=='true') or '$(Cfg_1_iOSDevice)'!=''">
+        <Cfg_1_iOSDevice>true</Cfg_1_iOSDevice>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Cfg_1)'=='true') or '$(Cfg_1_iOSSimulator)'!=''">
+        <Cfg_1_iOSSimulator>true</Cfg_1_iOSSimulator>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Android' and '$(Cfg_2)'=='true') or '$(Cfg_2_Android)'!=''">
+        <Cfg_2_Android>true</Cfg_2_Android>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice' and '$(Cfg_2)'=='true') or '$(Cfg_2_iOSDevice)'!=''">
+        <Cfg_2_iOSDevice>true</Cfg_2_iOSDevice>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Cfg_2)'=='true') or '$(Cfg_2_iOSSimulator)'!=''">
+        <Cfg_2_iOSSimulator>true</Cfg_2_iOSSimulator>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_2)'=='true') or '$(Cfg_2_Win32)'!=''">
+        <Cfg_2_Win32>true</Cfg_2_Win32>
+        <CfgParent>Cfg_2</CfgParent>
+        <Cfg_2>true</Cfg_2>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <SanitizedProjectName>CapitalTrivia</SanitizedProjectName>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <OrientationPortrait>true</OrientationPortrait>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+        <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
+        <DCC_E>false</DCC_E>
+        <DCC_N>false</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Android)'!=''">
+        <Android_LauncherIcon36>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png</Android_LauncherIcon36>
+        <PF_KeyStore>C:\Users\stefanb\AppData\Roaming\Embarcadero\BDS\14.0\release.keystore</PF_KeyStore>
+        <PF_AliasKey>stefanb</PF_AliasKey>
+        <PF_AliasKeyPass>853A47C7645855D8A342711DD129E36881D0051BA043979397B40FAB8E363C94DB04A3D7E3401C39C1CC5752FACFC338BAF83613042722C3164B45C2E5BA22DBC90AF35DEE80A8D9D3D83B02722E85CCF789</PF_AliasKeyPass>
+        <PF_KeyStorePass>853A47C75F9E5585A304712AD15DE33A81940557A005978797B40FAA8E6D3CD0DB48A3D6E3181C3AC1B85752FAB3C36BBABA361304262290166845ECE5BA2290C95DF35DD544A8D9D3D83B02722E85CCF789</PF_KeyStorePass>
+        <VerInfo_Build>1</VerInfo_Build>
+        <VerInfo_Keys>package=com.embarcadero.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=1;versionName=1.0.0;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true</VerInfo_Keys>
+        <Android_LauncherIcon96>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png</Android_LauncherIcon96>
+        <Android_LauncherIcon72>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png</Android_LauncherIcon72>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Android_LauncherIcon48>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png</Android_LauncherIcon48>
+        <Android_LauncherIcon144>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png</Android_LauncherIcon144>
+        <BT_BuildType>Debug</BT_BuildType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_iOSDevice)'!=''">
+        <DCC_LinkerOptions>-framework iAd -framework StoreKit</DCC_LinkerOptions>
+        <VerInfo_BundleId>$(MSBuildProjectName)</VerInfo_BundleId>
+        <VerInfo_UIDeviceFamily>iPhone</VerInfo_UIDeviceFamily>
+        <iPad_Launch1536x2048>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png</iPad_Launch1536x2048>
+        <iPhone_AppIcon120>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png</iPhone_AppIcon120>
+        <iPhone_Spotlight40>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png</iPhone_Spotlight40>
+        <iPad_AppIcon76>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png</iPad_AppIcon76>
+        <iPhone_AppIcon60>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png</iPhone_AppIcon60>
+        <iPad_SpotLight40>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png</iPad_SpotLight40>
+        <iPad_SpotLight80>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png</iPad_SpotLight80>
+        <iPad_Launch1024x768>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png</iPad_Launch1024x768>
+        <iPhone_Spotlight80>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png</iPhone_Spotlight80>
+        <iPad_AppIcon152>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png</iPad_AppIcon152>
+        <iPad_Launch2048x1536>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png</iPad_Launch2048x1536>
+        <iPad_Launch768x1024>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png</iPad_Launch768x1024>
+        <iPad_AppIcon72>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png</iPad_AppIcon72>
+        <DCC_UsePackage>fmxhrh;bindcompfmx;DBXSqliteDriver;fmx;rtl;dbrtl;DbxClientDriver;IndySystem;bindcomp;DataSnapClient;DataSnapCommon;DBXInterBaseDriver;DataSnapProviderClient;xmlrtl;DbxCommonDriver;IndyProtocols;dbxcds;bindengine;bindcompdbx;soaprtl;CustomIPTransport;dsnap;fmxase;IndyCore;IndyIPCommon;inet;dbexpress;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+        <iPad_Launch768>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png</iPad_Launch768>
+        <iPad_SpotLight100>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png</iPad_SpotLight100>
+        <iPad_SpotLight50>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png</iPad_SpotLight50>
+        <iPhone_Launch320>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png</iPhone_Launch320>
+        <iPhone_AppIcon57>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png</iPhone_AppIcon57>
+        <iPhone_Launch640>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png</iPhone_Launch640>
+        <iPad_AppIcon144>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png</iPad_AppIcon144>
+        <iPad_Setting29>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png</iPad_Setting29>
+        <iPhone_Spotlight29>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png</iPhone_Spotlight29>
+        <iPad_Launch1536>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png</iPad_Launch1536>
+        <iPad_Launch2048>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png</iPad_Launch2048>
+        <iPhone_AppIcon114>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png</iPhone_AppIcon114>
+        <iPad_Launch1024>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png</iPad_Launch1024>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);CFBundleResourceSpecification=ResourceRules.plist;UIDeviceFamily=iPhone</VerInfo_Keys>
+        <iPad_Setting58>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png</iPad_Setting58>
+        <iPhone_Launch640x1136>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png</iPhone_Launch640x1136>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <iPhone_Spotlight58>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_58x58.png</iPhone_Spotlight58>
+        <BT_BuildType>Debug</BT_BuildType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_iOSSimulator)'!=''">
+        <VerInfo_UIDeviceFamily>iPhone</VerInfo_UIDeviceFamily>
+        <iPad_AppIcon76>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png</iPad_AppIcon76>
+        <iPad_Launch1536x2048>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png</iPad_Launch1536x2048>
+        <iPhone_Spotlight40>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png</iPhone_Spotlight40>
+        <iPad_SpotLight80>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png</iPad_SpotLight80>
+        <iPhone_AppIcon120>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png</iPhone_AppIcon120>
+        <iPhone_AppIcon60>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png</iPhone_AppIcon60>
+        <iPad_SpotLight40>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png</iPad_SpotLight40>
+        <iPad_Launch2048x1536>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png</iPad_Launch2048x1536>
+        <iPhone_Spotlight80>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png</iPhone_Spotlight80>
+        <iPad_AppIcon152>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png</iPad_AppIcon152>
+        <iPad_Launch1024x768>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png</iPad_Launch1024x768>
+        <iPad_Launch768x1024>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png</iPad_Launch768x1024>
+        <iPad_AppIcon72>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png</iPad_AppIcon72>
+        <DCC_UsePackage>fmxhrh;bindcompfmx;DBXSqliteDriver;fmx;rtl;dbrtl;DbxClientDriver;IndySystem;bindcomp;DataSnapClient;DataSnapCommon;DBXInterBaseDriver;DataSnapProviderClient;xmlrtl;DbxCommonDriver;IndyProtocols;dbxcds;bindengine;bindcompdbx;soaprtl;CustomIPTransport;dsnap;fmxase;IndyCore;IndyIPCommon;inet;dbexpress;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+        <iPad_Launch768>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png</iPad_Launch768>
+        <iPad_SpotLight100>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png</iPad_SpotLight100>
+        <iPad_SpotLight50>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png</iPad_SpotLight50>
+        <iPhone_Launch320>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png</iPhone_Launch320>
+        <iPhone_AppIcon57>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png</iPhone_AppIcon57>
+        <iPhone_Launch640>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png</iPhone_Launch640>
+        <iPad_AppIcon144>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png</iPad_AppIcon144>
+        <iPad_Setting29>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png</iPad_Setting29>
+        <iPad_Launch1536>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png</iPad_Launch1536>
+        <iPad_Launch2048>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png</iPad_Launch2048>
+        <iPhone_AppIcon114>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png</iPhone_AppIcon114>
+        <iPad_Launch1024>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png</iPad_Launch1024>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);CFBundleResourceSpecification=ResourceRules.plist;UIDeviceFamily=iPhone</VerInfo_Keys>
+        <iPhone_Launch640x1136>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png</iPhone_Launch640x1136>
+        <iPhone_Spotlight29>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png</iPhone_Spotlight29>
+        <iPad_Setting58>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png</iPad_Setting58>
+        <iPhone_Spotlight58>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_58x58.png</iPhone_Spotlight58>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <DCC_UsePackage>fmxhrh;bindcompfmx;DBXSqliteDriver;Package2;vcldbx;fmx;rtl;dbrtl;DbxClientDriver;IndySystem;bindcomp;inetdb;vclib;inetdbbde;DataSnapClient;DataSnapServer;DataSnapCommon;DBXOdbcDriver;DBXInterBaseDriver;DataSnapProviderClient;xmlrtl;DBXSybaseASEDriver;ibxpress;DbxCommonDriver;svnui;vclimg;IndyProtocols;dbxcds;DBXMySQLDriver;DatasnapConnectorsFreePascal;MetropolisUILiveTile;bindengine;bindcompdbx;vclactnband;vcldb;soaprtl;vcldsnap;bindcompvcl;vclie;DBXDb2Driver;vcltouch;websnap;DBXOracleDriver;CustomIPTransport;vclribbon;dsnap;DBXInformixDriver;IndyIPServer;Intraweb;fmxase;vcl;DataSnapConnectors;IndyCore;CloudService;DBXMSSQLDriver;IndyIPCommon;DBXFirebirdDriver;dsnapcon;inet;fmxobj;vclx;inetdbxpress;webdsnap;svn;DBXSybaseASADriver;fmxdae;bdertl;dbexpress;DataSnapIndy10ServerTransport;adortl;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <DCC_RemoteDebug>true</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Android)'!=''">
+        <PF_AliasKeyPass>853A0DA36405559EA3757169D17BE32C819C055DA057979397B50FF08E723CD8DB05A38FE3431C4DC1CC572EFA9CC37ABAF83612047422E0166545C2E5F1228CC90AB93BEE80A8D9D3D83B02722E85CCF789</PF_AliasKeyPass>
+        <PF_KeyStorePass>853A47C7645855D8A342711DD129E36881D0051BA043979397B40FAB8E363C94DB04A3D7E3401C39C1CC5752FACFC338BAF83613042722C3164B45C2E5BA22DBC90AF35DEE80A8D9D3D83B02722E85CCF789</PF_KeyStorePass>
+        <AUP_COM_VENDING_BILLING>true</AUP_COM_VENDING_BILLING>
+        <VerInfo_Build>1</VerInfo_Build>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_iOSDevice)'!=''">
+        <Debugger_DebugSourcePath>C:\Main\runtime\rtl\sys\;C:\Main\runtime\rtl\common\;$(Debugger_DebugSourcePath)</Debugger_DebugSourcePath>
+        <VerInfo_UIDeviceFamily>iPhone</VerInfo_UIDeviceFamily>
+        <VerInfo_BundleId>com.embarcadero.$(MSBuildProjectName)</VerInfo_BundleId>
+        <VerInfo_MinorVer>3</VerInfo_MinorVer>
+        <VerInfo_Keys>CFBundleName=com.embarcadero.$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=com.embarcadero.$(MSBuildProjectName);CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.3.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);CFBundleResourceSpecification=ResourceRules.plist;UIDeviceFamily=iPhone</VerInfo_Keys>
+        <PF_Debug>iPhone Developer</PF_Debug>
+        <PF_DevDebug>iPhone Developer</PF_DevDebug>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_iOSSimulator)'!=''">
+        <VerInfo_UIDeviceFamily>iPhone</VerInfo_UIDeviceFamily>
+        <Debugger_DebugSourcePath>C:\Main\runtime\fmx\;$(Debugger_DebugSourcePath)</Debugger_DebugSourcePath>
+        <VerInfo_Keys>CFBundleName=com.embarcadero.Capitals;CFBundleDevelopmentRegion=en;CFBundleDisplayName=Capitals Trivia;CFBundleIdentifier=com.embarcadero.Capitals;CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);CFBundleResourceSpecification=ResourceRules.plist;UIDeviceFamily=iPhone</VerInfo_Keys>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <DCC_RemoteDebug>false</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Android)'!=''">
+        <PF_AliasKeyPass>853A47C7645855D8A342711DD129E36881D0051BA043979397B40FAB8E363C94DB04A3D7E3401C39C1CC5752FACFC338BAF83613042722C3164B45C2E5BA22DBC90AF35DEE80A8D9D3D83B02722E85CCF789</PF_AliasKeyPass>
+        <PF_KeyStorePass>54E50DFE644355A9A301713BD13FE36081DA0549A057979297EE0FB48E3E3CD9DB5DA38CE3371C4DC1B0577DFADEC37ABAF93641045722CE16654589E5A6228C18D7B93BEE80A8D9D3D83B02722E85CCF789</PF_KeyStorePass>
+        <VerInfo_Build>1</VerInfo_Build>
+        <AUP_COM_VENDING_BILLING>true</AUP_COM_VENDING_BILLING>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_iOSDevice)'!=''">
+        <BT_BuildType>AppStore</BT_BuildType>
+        <PF_DevTeamIdAppStore>RMAMST3F65</PF_DevTeamIdAppStore>
+        <PF_DevAdHoc>iPhone Distribution: Brian Long (RMAMST3F65)</PF_DevAdHoc>
+        <PF_AppStore>/Users/brian/Library/MobileDevice/Provisioning Profiles/US_Capitals_Quiz_App_Store.mobileprovision</PF_AppStore>
+        <PF_DevDebug>iPhone Developer: Brian Long (299RXMRF92)</PF_DevDebug>
+        <PF_DevAppStore>iPhone Distribution: Brian Long (RMAMST3F65)</PF_DevAppStore>
+        <VerInfo_Keys>CFBundleName=com.embarcadero.Capitals;CFBundleDevelopmentRegion=en;CFBundleDisplayName=Capitals Trivia;CFBundleIdentifier=com.embarcadero.Capitals;CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);CFBundleResourceSpecification=ResourceRules.plist;UIDeviceFamily=iPhone</VerInfo_Keys>
+        <PF_AdHoc>/Users/brian/Library/MobileDevice/Provisioning Profiles/US_Capitals_Quiz_Ad_Hoc.mobileprovision</PF_AdHoc>
+        <VerInfo_BundleId>com.embarcadero.Capitals</VerInfo_BundleId>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_UIDeviceFamily>iPhone</VerInfo_UIDeviceFamily>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_iOSSimulator)'!=''">
+        <VerInfo_UIDeviceFamily>iPhone</VerInfo_UIDeviceFamily>
+        <VerInfo_Keys>CFBundleName=com.embarcadero.Capitals;CFBundleDevelopmentRegion=en;CFBundleDisplayName=Capitals Trivia;CFBundleIdentifier=com.embarcadero.Capitals;CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);CFBundleResourceSpecification=ResourceRules.plist;UIDeviceFamily=iPhone</VerInfo_Keys>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2_Win32)'!=''">
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="Answered.pas">
+            <Form>AnsweredForm</Form>
+        </DCCReference>
+        <DCCReference Include="Main.pas">
+            <Form>MainForm</Form>
+        </DCCReference>
+        <DCCReference Include="Option.pas">
+            <Form>OptionForm</Form>
+        </DCCReference>
+        <DCCReference Include="Quiz.pas">
+            <Form>QuizForm</Form>
+        </DCCReference>
+        <DCCReference Include="Score.pas">
+            <Form>ScoreForm</Form>
+        </DCCReference>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Delphi.Personality>
+                <VersionInfo>
+                    <VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+                    <VersionInfo Name="AutoIncBuild">False</VersionInfo>
+                    <VersionInfo Name="MajorVer">1</VersionInfo>
+                    <VersionInfo Name="MinorVer">0</VersionInfo>
+                    <VersionInfo Name="Release">0</VersionInfo>
+                    <VersionInfo Name="Build">0</VersionInfo>
+                    <VersionInfo Name="Debug">False</VersionInfo>
+                    <VersionInfo Name="PreRelease">False</VersionInfo>
+                    <VersionInfo Name="Special">False</VersionInfo>
+                    <VersionInfo Name="Private">False</VersionInfo>
+                    <VersionInfo Name="DLL">False</VersionInfo>
+                    <VersionInfo Name="Locale">1033</VersionInfo>
+                    <VersionInfo Name="CodePage">1252</VersionInfo>
+                </VersionInfo>
+                <VersionInfoKeys>
+                    <VersionInfoKeys Name="CompanyName"/>
+                    <VersionInfoKeys Name="FileDescription"/>
+                    <VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="InternalName"/>
+                    <VersionInfoKeys Name="LegalCopyright"/>
+                    <VersionInfoKeys Name="LegalTrademarks"/>
+                    <VersionInfoKeys Name="OriginalFilename"/>
+                    <VersionInfoKeys Name="ProductName"/>
+                    <VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+                    <VersionInfoKeys Name="Comments"/>
+                    <VersionInfoKeys Name="CFBundleName"/>
+                    <VersionInfoKeys Name="CFBundleDisplayName"/>
+                    <VersionInfoKeys Name="CFBundleIdentifier"/>
+                    <VersionInfoKeys Name="CFBundleVersion"/>
+                    <VersionInfoKeys Name="CFBundlePackageType"/>
+                    <VersionInfoKeys Name="CFBundleSignature"/>
+                    <VersionInfoKeys Name="CFBundleAllowMixedLocalizations"/>
+                    <VersionInfoKeys Name="CFBundleExecutable"/>
+                    <VersionInfoKeys Name="UIDeviceFamily"/>
+                    <VersionInfoKeys Name="UISupportedInterfaceOrientations"/>
+                </VersionInfoKeys>
+                <Source>
+                    <Source Name="MainSource">CapitalTrivia.dpr</Source>
+                </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\pkgDart.bpl">(untitled)</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\FmxTesting.bpl">(untitled)</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Deployment>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57"/>
+                <DeployFile LocalName="iOSDevice\Release\Capital.entitlements" Configuration="Release" Class="ProjectiOSEntitlements"/>
+                <DeployFile LocalName="iOSDevice\Release\Capital.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug"/>
+                <DeployFile LocalName="iOSDevice\Base\ResourceRules.plist" Configuration="Base" Class="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>ResourceRules.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="c:\dev\tp\lib\android\debug\armeabi\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeArmeabiFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Configuration="Base" Class="iPhone_AppIcon114">
+                    <Platform Name="iOSDevice">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png" Configuration="Base" Class="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="All Platforms\Base\CapitalTest" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="All Platforms">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Debug\Capital" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="iOSSimulator\Debug\CapitalTest.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Release\AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Configuration="Release" Class="Android_LauncherIcon36"/>
+                <DeployFile LocalName="iOSSimulator\Debug\Capital.info.plist" Configuration="Debug" Class="ProjectiOSSimulatorInfoPList"/>
+                <DeployFile LocalName="960.png" Configuration="Debug" Class="iPhone_Launch640"/>
+                <DeployFile LocalName="29.png" Configuration="Debug" Class="iPhone_Spotlight29"/>
+                <DeployFile LocalName="iOSDevice\Debug\CapitalTest.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug"/>
+                <DeployFile LocalName="Android\Debug\libCapitalTest.so" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Configuration="Base" Class="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Base\CapitalTest" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win32\Base\CapitalTest.exe" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Release\libCapitalTest.so" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="c:\dev\tp\lib\android\debug\classes.dex" Configuration="Base" Class="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteName>classes.dex</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\ios\default2xstyle" Class="DependencyModule"/>
+                <DeployFile LocalName="c:\dev\tp\lib\android\debug\mips\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeMipsFile"/>
+                <DeployFile LocalName="C:\Users\dwilhelm\Documents\RAD Studio\Projects\Capital_AppStore_Interbase\Quiz.fsx" Configuration="Debug" Class="FormFiles"/>
+                <DeployFile LocalName="iOSSimulator\Debug\CapitalTest.info.plist" Configuration="Debug" Class="ProjectiOSSimulatorInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Base\CapitalTest.entitlements" Configuration="Base" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Debug\CapitalTest.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\CapitalTest" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\Capital.entitlements" Configuration="Release" Class="ProjectiOSEntitlements"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Configuration="Base" Class="iPhone_Spotlight29">
+                    <Platform Name="iOSDevice">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Release\ResourceRules.plist" Configuration="Release" Class="ProjectiOSDeviceResourceRules"/>
+                <DeployFile LocalName="c:\dev\tp\lib\android\debug\x86\libnative-activity.so" Configuration="Base" Class="AndroidLibnativeX86File">
+                    <Platform Name="Android">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Configuration="Debug" Class="Android_LauncherIcon72"/>
+                <DeployFile LocalName="iOSDevice\Release\CapitalTest.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\ios\iphone2xstyle_6" Class="DependencyModule"/>
+                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="1136.png" Configuration="Debug" Class="iPhone_Launch640x1136"/>
+                <DeployFile LocalName="iOSSimulator\Debug\CapitalTest" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\CapitalTest.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Base\CapitalTest.dSYM" Configuration="Base" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Debug\CapitalTest" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="c:\dev\tp\lib\android\debug\classes.dex" Configuration="Release" Class="AndroidClassesDexFile"/>
+                <DeployFile LocalName="Android\Base\AndroidManifest.xml" Configuration="Base" Class="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Base\libCapitalTest.so" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPhone_Spotlight40"/>
+                <DeployFile LocalName="iOSSimulator\Release\Capital" Configuration="Release" Class="ProjectOutput"/>
+                <DeployFile LocalName="C:\Users\dwilhelm\Documents\RAD Studio\Projects\Capital_AppStore_Interbase\Main.fsx" Configuration="Debug" Class="FormFiles"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png" Configuration="Release" Class="Android_LauncherIcon96"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>Default-568h@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="C:\Users\dwilhelm\Documents\RAD Studio\Projects\Capital_AppStore_Interbase\Answered.fsx" Configuration="Debug" Class="FormFiles"/>
+                <DeployFile LocalName="$(BDS)\bin\ios\iphonestyle" Class="DependencyModule"/>
+                <DeployFile LocalName="iOSDevice\Debug\CapitalTest" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Configuration="Debug" Class="iPhone_Spotlight29"/>
+                <DeployFile LocalName="C:\Users\dwilhelm\Documents\RAD Studio\Projects\Capital_AppStore_Interbase\dmCapitals.fsx" Configuration="Debug" Class="FormFiles"/>
+                <DeployFile LocalName="Win32\Release\CapitalTest.exe" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Release\CapitalTest" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Release\AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest"/>
+                <DeployFile LocalName="iOSDevice\Base\CapitalTest" Configuration="Base" Class="ProjectOutput">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="114.png" Configuration="Debug" Class="iPhone_AppIcon114"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Configuration="Debug" Class="iPhone_Launch320"/>
+                <DeployFile LocalName="$(BDS)\bin\ios\iphone2xstyle" Class="DependencyModule"/>
+                <DeployFile LocalName="iOSSimulator\Base\CapitalTest.entitlements" Configuration="Base" Class="ProjectiOSEntitlements">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Entitlements.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Configuration="Release" Class="iPhone_AppIcon57">
+                    <Platform Name="iOSDevice">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Release\libCapitalTest.so" Configuration="Release" Class="ProjectOutput"/>
+                <DeployFile LocalName="40.png" Configuration="Debug" Class="iPhone_Spotlight40"/>
+                <DeployFile LocalName="c:\dev\tp\lib\android\debug\armeabi\libnative-activity.so" Configuration="Base" Class="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\Capital.info.plist" Configuration="Release" Class="ProjectiOSSimulatorInfoPList"/>
+                <DeployFile LocalName="iOSDevice\Release\Capital.info.plist" Configuration="Release" Class="ProjectiOSDeviceInfoPList"/>
+                <DeployFile LocalName="iOSDevice\Debug\ResourceRules.plist" Configuration="Debug" Class="ProjectiOSDeviceResourceRules"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Configuration="Base" Class="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="D:\PersonalFolder\Development\Android\ndk\prebuilt\android-arm\gdbserver\gdbserver" Configuration="Debug" Class="AndroidGDBServer"/>
+                <DeployFile LocalName="iOSDevice\Debug\CapitalTest.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="All Platforms\Release\CapitalTest" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="All Platforms">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Debug\libCapitalTest.so" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114"/>
+                <DeployFile LocalName="iOSDevice\Debug\CapitalTest.info.plist" Configuration="Debug" Class="ProjectiOSDeviceInfoPList"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Configuration="Release" Class="iPhone_Launch320">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>Default.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="57.png" Configuration="Debug" Class="iPhone_AppIcon57"/>
+                <DeployFile LocalName="iOSDevice\Release\ResourceRules.plist" Configuration="Release" Class="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>ResourceRules.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Base\CapitalTest.info.plist" Configuration="Base" Class="ProjectiOSDeviceInfoPList">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\CapitalTest.info.plist" Configuration="Release" Class="ProjectiOSSimulatorInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Win32\Debug\CapitalTest.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="C:\Users\dwilhelm\Documents\RAD Studio\Projects\Capital_AppStore_Interbase\Score.fsx" Configuration="Debug" Class="FormFiles"/>
+                <DeployFile LocalName="480.png" Configuration="Debug" Class="iPhone_Launch320"/>
+                <DeployFile LocalName="iOSDevice\Release\CapitalTest.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="All Platforms\Debug\CapitalTest" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="All Platforms">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Configuration="Base" Class="iPhone_Launch640">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>Default@2x.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Configuration="Release" Class="Android_LauncherIcon48"/>
+                <DeployFile LocalName="Android\Debug\AndroidManifest.xml" Configuration="Debug" Class="ProjectAndroidManifest"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Configuration="Debug" Class="iPhone_Launch640"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Configuration="Release" Class="iPhone_Spotlight40">
+                    <Platform Name="iOSDevice">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Debug\Capital.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements"/>
+                <DeployFile LocalName="iOSDevice\Debug\CapitalTest.info.plist" Configuration="Debug" Class="ProjectiOSDeviceInfoPList">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Configuration="Base" Class="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Base\CapitalTest.info.plist" Configuration="Base" Class="ProjectiOSSimulatorInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Release\CapitalTest.info.plist" Configuration="Release" Class="ProjectiOSDeviceInfoPList">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>Info.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\ios\ipadstyle" Class="DependencyModule"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Configuration="Base" Class="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteName>ic_launcher.png</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="c:\dev\tp\lib\android\debug\mips\libnative-activity.so" Configuration="Base" Class="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteName>CapitalTest</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="C:\Users\dwilhelm\Documents\RAD Studio\Projects\Capital_AppStore_Interbase\Option.fsx" Configuration="Debug" Class="FormFiles"/>
+                <DeployFile LocalName="iOSDevice\Release\Capital" Configuration="Release" Class="ProjectOutput"/>
+                <DeployFile LocalName="iOSDevice\Debug\CapitalTest.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements"/>
+                <DeployFile LocalName="$(BDS)\bin\ios\ipad2xstyle" Class="DependencyModule"/>
+                <DeployFile LocalName="D:\PersonalFolder\Development\Android\ndk\prebuilt\android-arm\gdbserver\gdbserver" Configuration="Base" Class="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="c:\dev\tp\lib\android\debug\x86\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeX86File"/>
+                <DeployFile LocalName="iOSDevice\Debug\ResourceRules.plist" Configuration="Debug" Class="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>ResourceRules.plist</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\ios\iphonestyle_6" Class="DependencyModule"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Configuration="Release" Class="Android_LauncherIcon144"/>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeX86File">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\x86</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceInfoPList">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSSimulatorInfoPList">
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="iOSDevice">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="iOSDevice" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+            </Deployment>
+            <Platforms>
+                <Platform value="Android" ActiveMobileDevice="testAVD">True</Platform>
+                <Platform value="iOSDevice">True</Platform>
+                <Platform value="iOSSimulator" ActiveMobileDevice="iPhone">True</Platform>
+                <Platform value="Win32">True</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

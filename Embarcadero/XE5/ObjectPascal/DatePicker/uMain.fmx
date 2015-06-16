@@ -1,0 +1,69 @@
+object DatePickerForm: TDatePickerForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  object ListBox1: TListBox
+    Align = alTop
+    Height = 93.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Position.Y = 58.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 0
+    Width = 384.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = gsGrouped
+    object ListBoxItem5: TListBoxItem
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Pick a Date'
+      Width = 344.000000000000000000
+      object CalendarEdit1: TCalendarEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Align = alRight
+        Anchors = []
+        TabOrder = 0
+        Cursor = crIBeam
+        Date = 41316.000000000000000000
+        Height = 32.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 187.000000000000000000
+        Position.Y = 6.000000000000000000
+        Width = 152.000000000000000000
+        OnChange = CalendarEdit1Change
+      end
+    end
+    object ListBoxItem6: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Picked'
+      Width = 344.000000000000000000
+    end
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    object Label1: TLabel
+      Align = alClient
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Date Picker'
+      TextAlign = taCenter
+      Width = 384.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+end

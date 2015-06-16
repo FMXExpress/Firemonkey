@@ -1,0 +1,238 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'UserIniFile Test'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1680
+  FormFactor.Height = 1050
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object HeaderToolBar: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object ToolBarLabel: TLabel
+      Align = alCenter
+      Height = 27.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'TUserIniFile Test'
+      TextAlign = taCenter
+      Width = 271.000000000000000000
+    end
+  end
+  object TabControl1: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 416.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 1
+    TabPosition = tpBottom
+    Width = 320.000000000000000000
+    object TabItem1: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 0
+      Text = 'Read/Write'
+      Width = 160.000000000000000000
+      object btnReadBool: TButton
+        Height = 44.000000000000000000
+        Position.X = 168.000000000000000000
+        Position.Y = 157.000000000000000000
+        TabOrder = 0
+        Text = 'ReadBool'
+        Width = 137.000000000000000000
+        OnClick = btnReadBoolClick
+      end
+      object btnReadDate: TButton
+        Height = 44.000000000000000000
+        Position.X = 168.000000000000000000
+        Position.Y = 205.000000000000000000
+        TabOrder = 1
+        Text = 'ReadDate'
+        Width = 137.000000000000000000
+        OnClick = btnReadDateClick
+      end
+      object btnReadDateTime: TButton
+        Height = 44.000000000000000000
+        Position.X = 168.000000000000000000
+        Position.Y = 301.000000000000000000
+        TabOrder = 2
+        Text = 'ReadDateTime'
+        Width = 137.000000000000000000
+        OnClick = btnReadDateTimeClick
+      end
+      object btnReadFloat: TButton
+        Height = 44.000000000000000000
+        Position.X = 168.000000000000000000
+        Position.Y = 109.000000000000000000
+        TabOrder = 3
+        Text = 'ReadFloat'
+        Width = 137.000000000000000000
+        OnClick = btnReadFloatClick
+      end
+      object btnReadInteger: TButton
+        Height = 44.000000000000000000
+        Position.X = 168.000000000000000000
+        Position.Y = 61.000000000000000000
+        TabOrder = 4
+        Text = 'ReadInteger'
+        Width = 137.000000000000000000
+        OnClick = btnReadIntegerClick
+      end
+      object btnReadString: TButton
+        Height = 44.000000000000000000
+        Position.X = 168.000000000000000000
+        Position.Y = 13.000000000000000000
+        TabOrder = 5
+        Text = 'ReadString'
+        Width = 137.000000000000000000
+        OnClick = btnReadStringClick
+      end
+      object btnReadTime: TButton
+        Height = 44.000000000000000000
+        Position.X = 168.000000000000000000
+        Position.Y = 253.000000000000000000
+        TabOrder = 6
+        Text = 'ReadTime'
+        Width = 137.000000000000000000
+        OnClick = btnReadTimeClick
+      end
+      object btnWriteBool: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 157.000000000000000000
+        TabOrder = 7
+        Text = 'WriteBool'
+        Width = 138.000000000000000000
+        OnClick = btnWriteBoolClick
+      end
+      object btnWriteDate: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 205.000000000000000000
+        TabOrder = 8
+        Text = 'WriteDate'
+        Width = 138.000000000000000000
+        OnClick = btnWriteDateClick
+      end
+      object btnWriteDateTime: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 301.000000000000000000
+        TabOrder = 9
+        Text = 'WriteDateTime'
+        Width = 138.000000000000000000
+        OnClick = btnWriteDateTimeClick
+      end
+      object btnWriteFloat: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 109.000000000000000000
+        TabOrder = 10
+        Text = 'WriteFloat'
+        Width = 138.000000000000000000
+        OnClick = btnWriteFloatClick
+      end
+      object btnWriteInteger: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 61.000000000000000000
+        TabOrder = 11
+        Text = 'WriteInteger'
+        Width = 138.000000000000000000
+        OnClick = btnWriteIntegerClick
+      end
+      object btnWriteString: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 13.000000000000000000
+        TabOrder = 12
+        Text = 'WriteString'
+        Width = 138.000000000000000000
+        OnClick = btnWriteStringClick
+      end
+      object btnWriteTime: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 253.000000000000000000
+        TabOrder = 13
+        Text = 'WriteTime'
+        Width = 138.000000000000000000
+        OnClick = btnWriteTimeClick
+      end
+    end
+    object TabItem2: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 160.000000000000000000
+      StyleLookup = 'tabitemmore'
+      TabOrder = 1
+      Text = 'Other'
+      Width = 160.000000000000000000
+      object btnReadSections: TButton
+        Height = 44.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 13.000000000000000000
+        TabOrder = 0
+        Text = 'ReadSections'
+        Width = 289.000000000000000000
+        OnClick = btnReadSectionsClick
+      end
+      object btnReadSectionValues: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 109.000000000000000000
+        TabOrder = 1
+        Text = 'ReadSectionValues'
+        Width = 290.000000000000000000
+        OnClick = btnReadSectionValuesClick
+      end
+      object btnEraseSection: TButton
+        Height = 44.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 157.000000000000000000
+        TabOrder = 2
+        Text = 'EraseSection'
+        Width = 289.000000000000000000
+        OnClick = btnEraseSectionClick
+      end
+      object btnDeleteKey: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 205.000000000000000000
+        TabOrder = 3
+        Text = 'DeleteKey'
+        Width = 290.000000000000000000
+        OnClick = btnDeleteKeyClick
+      end
+      object btnUpdateFile: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 253.000000000000000000
+        TabOrder = 4
+        Text = 'UpdateFile'
+        Width = 290.000000000000000000
+        OnClick = btnUpdateFileClick
+      end
+      object btnReadSection: TButton
+        Height = 44.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 61.000000000000000000
+        TabOrder = 5
+        Text = 'ReadSection'
+        Width = 290.000000000000000000
+        OnClick = btnReadSectionClick
+      end
+    end
+  end
+end

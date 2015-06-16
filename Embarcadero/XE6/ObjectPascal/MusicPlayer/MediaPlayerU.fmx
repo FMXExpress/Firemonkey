@@ -1,0 +1,358 @@
+object FMXMusicPlayerFrm: TFMXMusicPlayerFrm
+  Left = 0
+  Top = 0
+  Caption = 'FMXMusicPlayer'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object tcUITabs: TTabControl
+    Align = Client
+    FullSize = True
+    Height = 567.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = Bottom
+    Width = 384.000000000000000000
+    object tiAlbums: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = True
+      StyleLookup = 'tabitemfavorites'
+      TabOrder = 0
+      Text = 'Albums'
+      Width = 96.000000000000000000
+      object lvAlbums: TListView
+        ItemAppearanceClassName = 'TImageListItemAppearance'
+        ItemEditAppearanceClassName = 'TImageListItemShowCheck'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Height = 518.000000000000000000
+        TabOrder = 0
+        Width = 384.000000000000000000
+        CanSwipeDelete = False
+        OnChange = lvAlbumsChange
+      end
+    end
+    object tiSongs: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      StyleLookup = 'tabitemfeatured'
+      TabOrder = 0
+      Text = 'Songs'
+      Width = 96.000000000000000000
+      object lvSongs: TListView
+        ItemAppearanceClassName = 'TCustomizeItemObjects'
+        ItemEditAppearanceClassName = 'TCustomizeItemObjects'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Height = 518.000000000000000000
+        TabOrder = 0
+        Width = 384.000000000000000000
+        CanSwipeDelete = False
+        OnChange = lvSongsChange
+      end
+    end
+    object tiNowPlaying: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      StyleLookup = 'tabitemrecent'
+      TabOrder = 0
+      Text = 'Now Playing'
+      Width = 96.000000000000000000
+      object tbNowPlaying: TToolBar
+        Align = Bottom
+        Height = 48.000000000000000000
+        Position.Y = 470.000000000000000000
+        TabOrder = 0
+        Width = 384.000000000000000000
+        object btnPrev: TButton
+          Align = Left
+          Height = 48.000000000000000000
+          StyleLookup = 'priortoolbutton'
+          TabOrder = 0
+          Text = 'btnPrev'
+          Width = 48.000000000000000000
+          OnClick = btnPrevClick
+        end
+        object btnNext: TButton
+          Align = Right
+          Height = 48.000000000000000000
+          Position.X = 336.000000000000000000
+          StyleLookup = 'nexttoolbutton'
+          TabOrder = 1
+          Text = 'btnNext'
+          Width = 48.000000000000000000
+          OnClick = btnNextClick
+        end
+        object lyState: TLayout
+          Align = Center
+          Height = 50.000000000000000000
+          Width = 153.000000000000000000
+          TabOrder = 2
+          object btnPlay: TButton
+            Align = Left
+            Enabled = False
+            Height = 48.000000000000000000
+            Position.Y = 1.000000000000000000
+            StyleLookup = 'playtoolbutton'
+            TabOrder = 0
+            Text = 'btnPlay'
+            Width = 48.000000000000000000
+            OnClick = btnPlayClick
+          end
+          object btnPause: TButton
+            Align = Center
+            Enabled = False
+            Height = 48.000000000000000000
+            StyleLookup = 'pausetoolbutton'
+            TabOrder = 1
+            Text = 'btnPause'
+            Width = 48.000000000000000000
+            OnClick = btnPauseClick
+          end
+          object btnStop: TButton
+            Align = Right
+            Enabled = False
+            Height = 48.000000000000000000
+            Position.X = 105.000000000000000000
+            Position.Y = 1.000000000000000000
+            StyleLookup = 'stoptoolbutton'
+            TabOrder = 2
+            Text = 'btnStop'
+            Width = 48.000000000000000000
+            OnClick = btnStopClick
+          end
+        end
+      end
+      object lblArtist: TLabel
+        Height = 23.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Text = 'Artist:'
+        Width = 82.000000000000000000
+      end
+      object lblTitle: TLabel
+        Height = 23.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 48.000000000000000000
+        Text = 'Title:'
+        Width = 82.000000000000000000
+      end
+      object lblAlbum: TLabel
+        Height = 23.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 80.000000000000000000
+        Text = 'Album:'
+        Width = 82.000000000000000000
+      end
+      object lblDuration: TLabel
+        Height = 23.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 112.000000000000000000
+        Text = 'Duration:'
+        Width = 82.000000000000000000
+      end
+      object lblArtistVal: TLabel
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        Height = 32.000000000000000000
+        Position.X = 96.000000000000000000
+        Position.Y = 8.000000000000000000
+        TextSettings.WordWrap = False
+        Width = 264.000000000000000000
+      end
+      object lblTitleVal: TLabel
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        Height = 32.000000000000000000
+        Position.X = 96.000000000000000000
+        Position.Y = 40.000000000000000000
+        TextSettings.WordWrap = False
+        Width = 264.000000000000000000
+      end
+      object lblAlbumVal: TLabel
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        Height = 32.000000000000000000
+        Position.X = 96.000000000000000000
+        Position.Y = 72.000000000000000000
+        TextSettings.WordWrap = False
+        Width = 264.000000000000000000
+      end
+      object lblDurationVal: TLabel
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        Height = 32.000000000000000000
+        Position.X = 96.000000000000000000
+        Position.Y = 104.000000000000000000
+        TextSettings.WordWrap = False
+        Width = 264.000000000000000000
+      end
+      object tbProgress: TTrackBar
+        Align = Bottom
+        Height = 32.000000000000000000
+        Orientation = Horizontal
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 428.000000000000000000
+        TabOrder = 9
+        Width = 364.000000000000000000
+        OnChange = tbProgressChange
+      end
+    end
+    object tiSettings: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      StyleLookup = 'tabitemmore'
+      TabOrder = 0
+      Text = 'Settings'
+      Width = 96.000000000000000000
+      object SettingsList: TListBox
+        Align = Top
+        Height = 614.000000000000000000
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 0
+        Width = 384.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        object RepeatModes: TListBoxGroupHeader
+          Height = 30.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 0
+          Text = 'Repeat Modes'
+          Width = 19.000000000000000000
+        end
+        object All: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Accessory = aCheckmark
+          Position.Y = 30.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 1
+          Text = 'All'
+          Width = 19.000000000000000000
+          OnClick = RepeatItemsClick
+        end
+        object One: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 74.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 2
+          Text = 'One'
+          Width = 19.000000000000000000
+          OnClick = RepeatItemsClick
+        end
+        object None: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 118.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 3
+          Text = 'None'
+          Width = 19.000000000000000000
+          OnClick = RepeatItemsClick
+        end
+        object Default: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 162.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 4
+          Text = 'Default'
+          Width = 19.000000000000000000
+          OnClick = RepeatItemsClick
+        end
+        object ShuffleMusic: TListBoxGroupHeader
+          Height = 30.000000000000000000
+          Position.Y = 206.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 5
+          Text = 'Shuffle Music'
+          Width = 19.000000000000000000
+        end
+        object ShufffleMode: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 236.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 6
+          Text = 'Enable Shuffle Mode'
+          Width = 19.000000000000000000
+          object swShuffleMode: TSwitch
+            Align = Right
+            Height = 34.000000000000000000
+            IsChecked = False
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = -69.000000000000000000
+            Position.Y = 5.000000000000000000
+            TabOrder = 0
+            TouchTargetExpansion.Left = 6.000000000000000000
+            TouchTargetExpansion.Top = 6.000000000000000000
+            TouchTargetExpansion.Right = 6.000000000000000000
+            TouchTargetExpansion.Bottom = 6.000000000000000000
+            Width = 78.000000000000000000
+            OnSwitch = swShuffleModeSwitch
+          end
+        end
+        object VolumeHeader: TListBoxGroupHeader
+          Height = 30.000000000000000000
+          Position.Y = 280.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 7
+          Text = 'Adjust Volume'
+          Width = 19.000000000000000000
+        end
+        object VolumeListItem: TListBoxItem
+          Selectable = False
+          Height = 57.000000000000000000
+          Position.Y = 310.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 8
+          Width = 19.000000000000000000
+          object VolumeTrackBar: TTrackBar
+            Align = Top
+            Height = 24.000000000000000000
+            Max = 1.000000000000000000
+            Orientation = Horizontal
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 15.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 15.000000000000000000
+            TabOrder = 0
+            Value = 1.000000000000000000
+            Width = 0.000000000000000000
+            OnChange = VolumeTrackBarChange
+          end
+        end
+      end
+    end
+  end
+end

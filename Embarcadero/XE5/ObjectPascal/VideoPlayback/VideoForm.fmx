@@ -1,0 +1,44 @@
+object VideoPlayBackForm: TVideoPlayBackForm
+  Left = 0
+  Top = 0
+  Caption = 'Form20'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object MediaPlayer1: TMediaPlayer
+    Left = 176
+    Top = 120
+  end
+  object videoBtn: TButton
+    Align = alCenter
+    Height = 49.000000000000000000
+    Margins.Right = 5.000000000000000000
+    TabOrder = 0
+    Text = 'Click to Play Video'
+    Trimming = ttCharacter
+    Width = 180.000000000000000000
+    OnClick = videoBtnClick
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    object Label1: TLabel
+      Align = alContents
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Video Playback'
+      TextAlign = taCenter
+      Width = 384.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+end

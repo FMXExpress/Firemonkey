@@ -1,0 +1,56 @@
+object FDatePicker: TFDatePicker
+  Left = 0
+  Top = 0
+  Caption = 'Date Picker'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [iPhone, iPad]
+  FullScreen = True
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Top
+      Size.Width = 320.000000000000000000
+      Size.Height = 28.000000000000000000
+      Size.PlatformDefault = False
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFDatePicker1: TDPFDatePicker
+      ContentMode = vcmScaleAspectFit
+      Alpha = 1.000000000000000000
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Align = Center
+      Size.Width = 320.000000000000000000
+      Size.Height = 216.000000000000000000
+      Size.PlatformDefault = False
+      PickerDate = 42030.948341250000000000
+      TimeZoneType = tztSystem
+      OnChange = DPFDatePicker1Change
+      MinimumDate = 41609.000000000000000000
+      MaximumDate = 41275.000000000000000000
+    end
+  end
+end

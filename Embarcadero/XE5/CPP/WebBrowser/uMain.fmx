@@ -1,0 +1,82 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object WebBrowser1: TWebBrowser
+    Align = alClient
+    Height = 372.000000000000000000
+    Width = 320.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 1
+    Width = 320.000000000000000000
+    object btnGO: TButton
+      Align = alRight
+      Height = 44.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 256.000000000000000000
+      StyleLookup = 'donetoolbutton'
+      TabOrder = 0
+      Text = 'GO'
+      Trimming = ttCharacter
+      Width = 59.000000000000000000
+      OnClick = btnGOClick
+    end
+    object edtURL: TClearingEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      Align = alContents
+      TabOrder = 1
+      KeyboardType = vktURL
+      Text = 'http://www.embarcadero.com'
+      Width = 239.000000000000000000
+      Height = 30.000000000000000000
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 75.000000000000000000
+      KillFocusByReturn = False
+      OnKeyUp = edtURLKeyUp
+    end
+  end
+  object StatusBar1: TStatusBar
+    Height = 44.000000000000000000
+    Position.Y = 416.000000000000000000
+    ShowSizeGrip = True
+    Width = 320.000000000000000000
+    object btnBack: TButton
+      Align = alLeft
+      Height = 44.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      StyleLookup = 'priortoolbuttonbordered'
+      TabOrder = 0
+      Text = 'Back'
+      Trimming = ttCharacter
+      Width = 44.000000000000000000
+      OnClick = btnBackClick
+    end
+    object btnForward: TButton
+      Align = alRight
+      Height = 44.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 271.000000000000000000
+      StyleLookup = 'nexttoolbuttonbordered'
+      TabOrder = 1
+      Text = 'Forward'
+      Trimming = ttCharacter
+      Width = 44.000000000000000000
+      OnClick = btnForwardClick
+    end
+  end
+end

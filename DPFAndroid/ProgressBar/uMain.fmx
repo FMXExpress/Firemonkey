@@ -1,0 +1,68 @@
+object FProgressBar: TFProgressBar
+  Left = 0
+  Top = 0
+  Caption = 'ProgressBar'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJProgressBar1: TDPFJProgressBar
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 50.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 50.000000000000000000
+      Align = alTop
+      Position.X = 50.000000000000000000
+      Position.Y = 50.000000000000000000
+      Width = 284.000000000000000000
+      Height = 41.000000000000000000
+    end
+    object DPFJProgressBar2: TDPFJProgressBar
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claLightsteelblue
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 50.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 50.000000000000000000
+      Align = alTop
+      Position.X = 50.000000000000000000
+      Position.Y = 191.000000000000000000
+      Width = 284.000000000000000000
+      Height = 41.000000000000000000
+      Progress = 50
+    end
+    object DPFJProgressBar3: TDPFJProgressBar
+      Alpha = 1.000000000000000000
+      Clickable = False
+      Focusable = False
+      FocusableInTouchMode = False
+      BackgroundColor1 = claLightsteelblue
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 50.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Margins.Bottom = 50.000000000000000000
+      Align = alTop
+      Position.X = 50.000000000000000000
+      Position.Y = 332.000000000000000000
+      Width = 284.000000000000000000
+      Height = 41.000000000000000000
+      Progress = 80
+    end
+  end
+end

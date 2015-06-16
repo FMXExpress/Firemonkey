@@ -1,0 +1,56 @@
+object FButton: TFButton
+  Left = 0
+  Top = 0
+  Caption = 'Buttons'
+  ClientHeight = 524
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 524
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    BackgroundColor2 = claSilver
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 524.000000000000000000
+    object DPFJRadioButton1: TDPFJRadioButton
+      Alpha = 1.000000000000000000
+      Position.X = 56.000000000000000000
+      Position.Y = 120.000000000000000000
+      Width = 265.000000000000000000
+      Height = 41.000000000000000000
+      Text = 'Radio Button 1'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter_Vertical
+      OnCheckedChanged = DPFJRadioButton1CheckedChanged
+    end
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      Position.X = 64.000000000000000000
+      Position.Y = 48.000000000000000000
+      Width = 233.000000000000000000
+      Height = 50.000000000000000000
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      OnClick = DPFJButton1Click
+      Position.X = 104.000000000000000000
+      Position.Y = 248.000000000000000000
+      Width = 161.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Toggle'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+end

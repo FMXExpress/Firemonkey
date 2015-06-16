@@ -1,0 +1,197 @@
+object AccelerometerForm: TAccelerometerForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 50
+    OnTimer = Timer1Timer
+    Left = 32
+    Top = 368
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object Label1: TLabel
+      Align = Center
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Accelerometer'
+      Width = 320.000000000000000000
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Height = 509.000000000000000000
+    Margins.Top = 10.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 384.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    object lbAccelerometerSensor: TListBoxItem
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 0
+      Text = 'Accelerometer Sensor:'
+      Width = 344.000000000000000000
+      object swAccelerometerSensorActive: TSwitch
+        Align = Right
+        Anchors = []
+        Height = 26.000000000000000000
+        IsChecked = False
+        Margins.Right = 5.000000000000000000
+        Position.X = 263.000000000000000000
+        Position.Y = 9.000000000000000000
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        Width = 76.000000000000000000
+        OnSwitch = swAccelerometerSensorActiveSwitch
+      end
+    end
+    object lbAccelerationX: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Acceleration X:'
+      Width = 344.000000000000000000
+    end
+    object lbAccelerationY: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 88.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 2
+      Text = 'Acceleration Y:'
+      Width = 344.000000000000000000
+    end
+    object lbAccelerationZ: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 132.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 3
+      Text = 'Acceleration Z:'
+      Width = 344.000000000000000000
+    end
+    object lbAngleAccelX: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 176.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 4
+      Text = 'Angle X:'
+      Width = 344.000000000000000000
+    end
+    object lbAngleAccelY: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 220.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 5
+      Text = 'Angle Y:'
+      Width = 344.000000000000000000
+    end
+    object lbAngleAccelZ: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 264.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 6
+      Text = 'Angle Z:'
+      Width = 344.000000000000000000
+    end
+    object lbMotion: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 308.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 7
+      Text = 'Motion:'
+      Width = 344.000000000000000000
+    end
+    object lbSpeed: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 352.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 8
+      Text = 'Speed:'
+      Width = 344.000000000000000000
+    end
+  end
+  object Layout1: TLayout
+    Align = Contents
+    Height = 567.000000000000000000
+    Width = 384.000000000000000000
+    TabOrder = 7
+    object Circle2: TCircle
+      Fill.Color = claAquamarine
+      Height = 161.000000000000000000
+      Opacity = 0.750000000000000000
+      Position.X = 200.000000000000000000
+      Position.Y = 390.000000000000000000
+      Stroke.Color = claAqua
+      Width = 161.000000000000000000
+      object Circle1: TCircle
+        Fill.Color = claAquamarine
+        Height = 42.000000000000000000
+        Position.X = 59.000000000000000000
+        Position.Y = 59.000000000000000000
+        Stroke.Color = claAqua
+        Width = 42.000000000000000000
+      end
+      object Circle3: TCircle
+        Align = Center
+        Fill.Color = claAqua
+        Height = 9.000000000000000000
+        Stroke.Color = claAqua
+        Width = 9.000000000000000000
+      end
+    end
+    object Circle5: TCircle
+      Height = 97.000000000000000000
+      Position.X = 32.000000000000000000
+      Position.Y = 456.000000000000000000
+      Width = 97.000000000000000000
+      object Left: TCircle
+        Height = 25.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 40.000000000000000000
+        Visible = False
+        Width = 25.000000000000000000
+      end
+      object Right: TCircle
+        Height = 25.000000000000000000
+        Position.X = 64.000000000000000000
+        Position.Y = 40.000000000000000000
+        Visible = False
+        Width = 25.000000000000000000
+      end
+      object Circle4: TCircle
+        Height = 25.000000000000000000
+        Position.X = 36.000000000000000000
+        Position.Y = 8.000000000000000000
+        Visible = False
+        Width = 25.000000000000000000
+      end
+    end
+  end
+  object MotionSensor1: TMotionSensor
+    Left = 104
+    Top = 368
+  end
+end

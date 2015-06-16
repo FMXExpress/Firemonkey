@@ -1,0 +1,66 @@
+object FTimePickerDialog: TFTimePickerDialog
+  Left = 0
+  Top = 0
+  Caption = 'TimePickerDialog'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    DrawType = dtCustom
+    Align = Client
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      Focusable = False
+      FocusableInTouchMode = False
+      OnClick = DPFJButton1Click
+      Margins.Left = 50.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Right = 50.000000000000000000
+      Align = Top
+      Position.X = 50.000000000000000000
+      Position.Y = 151.000000000000000000
+      Width = 284.000000000000000000
+      Height = 66.000000000000000000
+      Text = 'Show Time Picker'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+    object DPFJTextView1: TDPFJTextView
+      Alpha = 1.000000000000000000
+      BackgroundColor1 = claKhaki
+      BackgroundColor2 = claWheat
+      BorderWidth = 1
+      BorderColor = claGray
+      BorderCornerRadius = 10.000000000000000000
+      DrawType = dtCustom
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Width = 364.000000000000000000
+      Height = 111.000000000000000000
+      TextSize = 48.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+  object DPFJTimePickerDialog1: TDPFJTimePickerDialog
+    OnTimeSet = DPFJTimePickerDialog1TimeSet
+    Left = 296
+    Top = 72
+  end
+end

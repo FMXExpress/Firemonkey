@@ -1,0 +1,157 @@
+object AVAudioRecorder: TAVAudioRecorder
+  Left = 0
+  Top = 0
+  Caption = 'Audio Recorder'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUIView1: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    BackgroundImage = 'background.png'
+    object DPFMPVolume1: TDPFMPVolume
+      Alpha = 1.000000000000000000
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 27.000000000000000000
+      Position.Y = 256.000000000000000000
+      Size.Width = 266.000000000000000000
+      Size.Height = 65.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object DPFLabel1: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      CornerRadius = 10.000000000000000000
+      TagNative = 0
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Align = Top
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 300.000000000000000000
+      Size.Height = 63.000000000000000000
+      Size.PlatformDefault = False
+      TextColor = claWhite
+      BackgroundColor = claLightsteelblue
+      NumberOfLines = 0
+      TextAlignment = taCenter
+      BaseLineAdjustment = blaAlignBaseLines
+    end
+    object DPFProgress1: TDPFProgress
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      Shadow = True
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 5.000000000000000000
+      TagNative = 0
+      Position.X = 20.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 9.000000000000000000
+      Size.PlatformDefault = False
+      Animated = False
+      ProgressTintColor = claBlue
+    end
+    object DPFButtonStartRecord: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Start Record'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButtonStartRecordClick
+    end
+    object DPFButtonStopRecord: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 144.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Stop Record'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButtonStopRecordClick
+    end
+    object DPFButtonPlay: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 352.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Play'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButtonPlayClick
+    end
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      TagNative = 0
+      Position.X = 160.000000000000000000
+      Position.Y = 352.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Stop Play'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      OnClick = DPFButton1Click
+    end
+  end
+  object DPFAVAudioRecorder1: TDPFAVAudioRecorder
+    OnFinishRecording = DPFAVAudioRecorder1FinishRecording
+    OnRecording = DPFAVAudioRecorder1Recording
+    Left = 224
+    Top = 104
+  end
+  object DPFAVPlayer1: TDPFAVPlayer
+    PlayItems = <>
+    OnPlaying = DPFAVPlayer1Playing
+    Left = 64
+    Top = 120
+  end
+end

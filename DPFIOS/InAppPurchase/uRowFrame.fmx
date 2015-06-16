@@ -1,0 +1,68 @@
+object FrameRow: TFrameRow
+  Height = 85.000000000000000000
+  Width = 320.000000000000000000
+  object DPFUIViewMain: TDPFUIView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    Width = 320.000000000000000000
+    Height = 85.000000000000000000
+    BackgroundColor = claNull
+    object DPFLabelDesc: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 32.000000000000000000
+      Width = 220.000000000000000000
+      Height = 49.000000000000000000
+      TextColor = claGray
+    end
+    object DPFLabelTitle: TDPFLabel
+      Alpha = 1.000000000000000000
+      Font.FontSize = 18
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      Position.X = 5.000000000000000000
+      Width = 220.000000000000000000
+      Height = 35.000000000000000000
+    end
+    object DPFLabelPrice: TDPFLabel
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      Position.X = 220.000000000000000000
+      Width = 88.000000000000000000
+      Height = 35.000000000000000000
+      TextColor = claBlue
+      TextAlignment = taRight
+    end
+    object DPFButton1: TDPFButton
+      Alpha = 1.000000000000000000
+      ClipsToBounds = False
+      ShadowOffsetHeight = 10.000000000000000000
+      ShadowOpacity = 1.000000000000000000
+      ShadowRadius = 10.000000000000000000
+      BorderWidth = 1
+      BorderColor = claCornflowerblue
+      CornerRadius = 5.000000000000000000
+      Position.X = 264.000000000000000000
+      Position.Y = 40.000000000000000000
+      Width = 50.000000000000000000
+      Height = 36.000000000000000000
+      ButtonType = btCustom
+      Text = 'Buy!'
+      TextLineBreak = lbCharacterWrap
+      TextAlpha = 1.000000000000000000
+      BackgroundColorNormal = claWheat
+      OnClick = DPFButton1Click
+    end
+  end
+end

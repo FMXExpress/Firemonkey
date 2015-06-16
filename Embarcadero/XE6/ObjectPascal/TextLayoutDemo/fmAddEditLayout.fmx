@@ -1,0 +1,392 @@
+object AddEditLayoutForm: TAddEditLayoutForm
+  Left = 0
+  Top = 0
+  ActiveControl = mText
+  BorderIcons = [biSystemMenu]
+  BorderStyle = Single
+  Caption = 'Layout'
+  ClientHeight = 440
+  ClientWidth = 378
+  Position = OwnerFormCenter
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Label10: TLabel
+    Height = 15.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Text'
+    Width = 120.000000000000000000
+  end
+  object mText: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Height = 73.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 0
+    Width = 257.000000000000000000
+    OnChange = mTextChange
+  end
+  object GroupBox5: TGroupBox
+    Height = 89.000000000000000000
+    Position.X = 273.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Align'
+    Width = 96.000000000000000000
+    TabOrder = 1
+    object rbRight: TRadioButton
+      GroupName = 'Align'
+      Height = 19.000000000000000000
+      Position.X = 12.000000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 0
+      Text = 'Right'
+      Width = 61.000000000000000000
+    end
+    object rbLeft: TRadioButton
+      GroupName = 'Align'
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 12.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Left'
+      Width = 61.000000000000000000
+    end
+    object rbCenter: TRadioButton
+      GroupName = 'Align'
+      Height = 19.000000000000000000
+      Position.X = 12.000000000000000000
+      Position.Y = 40.000000000000000000
+      TabOrder = 2
+      Text = 'Center'
+      Width = 61.000000000000000000
+    end
+  end
+  object GroupBox6: TGroupBox
+    Height = 137.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 264.000000000000000000
+    Text = 'Padding'
+    Width = 361.000000000000000000
+    TabOrder = 3
+    object sbLeft: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 0
+      Cursor = crIBeam
+      Min = -100.000000000000000000
+      KeyboardType = Default
+      Position.X = 76.000000000000000000
+      Position.Y = 62.000000000000000000
+      Width = 69.000000000000000000
+      Height = 22.000000000000000000
+    end
+    object Label15: TLabel
+      Height = 15.000000000000000000
+      Position.X = 144.000000000000000000
+      Position.Y = 16.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Top'
+      Width = 69.000000000000000000
+    end
+    object sbRight: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Cursor = crIBeam
+      Min = -100.000000000000000000
+      KeyboardType = Default
+      Position.X = 208.000000000000000000
+      Position.Y = 64.000000000000000000
+      Width = 69.000000000000000000
+      Height = 22.000000000000000000
+    end
+    object Label12: TLabel
+      Height = 15.000000000000000000
+      Position.X = 144.000000000000000000
+      Position.Y = 86.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Bottom'
+      Width = 69.000000000000000000
+    end
+    object sbBottom: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Cursor = crIBeam
+      Min = -100.000000000000000000
+      KeyboardType = Default
+      Position.X = 144.000000000000000000
+      Position.Y = 102.000000000000000000
+      Width = 69.000000000000000000
+      Height = 22.000000000000000000
+    end
+    object Label13: TLabel
+      Height = 15.000000000000000000
+      Position.X = 208.000000000000000000
+      Position.Y = 48.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Right'
+      Width = 69.000000000000000000
+    end
+    object sbTop: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Cursor = crIBeam
+      Min = -100.000000000000000000
+      KeyboardType = Default
+      Position.X = 144.000000000000000000
+      Position.Y = 32.000000000000000000
+      Width = 69.000000000000000000
+      Height = 22.000000000000000000
+    end
+    object Label14: TLabel
+      Height = 15.000000000000000000
+      Position.X = 76.000000000000000000
+      Position.Y = 46.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Left'
+      Width = 69.000000000000000000
+    end
+  end
+  object GroupBox1: TGroupBox
+    Height = 121.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 144.000000000000000000
+    Text = 'Font'
+    Width = 361.000000000000000000
+    TabOrder = 4
+    object GroupBox3: TGroupBox
+      Height = 41.000000000000000000
+      Position.X = 12.000000000000000000
+      Position.Y = 72.000000000000000000
+      Text = 'Font style'
+      Width = 333.000000000000000000
+      TabOrder = 0
+      object cbStrikeOut: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 208.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 0
+        Text = 'StrikeOut'
+        Width = 81.000000000000000000
+      end
+      object cbBold: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 72.000000000000000000
+        Position.Y = 17.000000000000000000
+        TabOrder = 1
+        Text = 'Bold'
+        Width = 57.000000000000000000
+      end
+      object cbItalic: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 2
+        Text = 'Italic'
+        Width = 65.000000000000000000
+      end
+      object cbUnderline: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 3
+        Text = 'Underline'
+        Width = 73.000000000000000000
+      end
+    end
+    object nbSize: TNumberBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Cursor = crIBeam
+      Value = 20.000000000000000000
+      KeyboardType = Default
+      Position.X = 140.000000000000000000
+      Position.Y = 40.000000000000000000
+      Width = 45.000000000000000000
+      Height = 22.000000000000000000
+      VertIncrement = 5.000000000000000000
+    end
+    object Label11: TLabel
+      Height = 15.000000000000000000
+      Position.X = 140.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Size'
+      Width = 53.000000000000000000
+    end
+    object Label1: TLabel
+      Height = 15.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Font family'
+      Width = 120.000000000000000000
+    end
+    object Label2: TLabel
+      Height = 15.000000000000000000
+      Position.X = 264.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Opacity'
+      Width = 73.000000000000000000
+    end
+    object sbOpacity: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Cursor = crIBeam
+      Max = 1.000000000000000000
+      Value = 1.000000000000000000
+      ValueType = Float
+      Increment = 0.100000001490116100
+      KeyboardType = Default
+      Position.X = 264.000000000000000000
+      Position.Y = 40.000000000000000000
+      Width = 73.000000000000000000
+      Height = 22.000000000000000000
+    end
+    object cbxFontFamily: TComboBox
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      ItemIndex = 2
+      ListBoxResource = 'transparentlistboxstyle'
+      Position.X = 16.000000000000000000
+      Position.Y = 40.000000000000000000
+      TabOrder = 6
+      Width = 113.000000000000000000
+      object ListBoxItem1: TListBoxItem
+        Height = 19.000000000000000000
+        TabOrder = 0
+        Text = 'Areal'
+        Width = 95.000000000000000000
+      end
+      object ListBoxItem2: TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 19.000000000000000000
+        TabOrder = 1
+        Text = 'Courier New'
+        Width = 95.000000000000000000
+      end
+      object ListBoxItem4: TListBoxItem
+        Height = 19.000000000000000000
+        IsSelected = True
+        Position.Y = 38.000000000000000000
+        TabOrder = 2
+        Text = 'Segoe UI'
+        Width = 95.000000000000000000
+      end
+      object ListBoxItem6: TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 57.000000000000000000
+        TabOrder = 3
+        Text = 'System'
+        Width = 95.000000000000000000
+      end
+      object ListBoxItem5: TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 76.000000000000000000
+        TabOrder = 4
+        Text = 'Tahoma'
+        Width = 95.000000000000000000
+      end
+      object ListBoxItem3: TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 95.000000000000000000
+        TabOrder = 5
+        Text = 'Times New Roman'
+        Width = 95.000000000000000000
+      end
+    end
+    object Label6: TLabel
+      Height = 15.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Color'
+      Width = 33.000000000000000000
+    end
+    object ccbColor: TComboColorBox
+      Color = claBlack
+      Height = 22.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 40.000000000000000000
+      TabOrder = 8
+      Width = 65.000000000000000000
+    end
+  end
+  object btnApply: TButton
+    Enabled = False
+    Height = 22.000000000000000000
+    ModalResult = 1
+    Position.X = 72.000000000000000000
+    Position.Y = 408.000000000000000000
+    TabOrder = 5
+    Text = 'Apply'
+    Width = 80.000000000000000000
+  end
+  object btnCancel: TButton
+    Height = 22.000000000000000000
+    ModalResult = 2
+    Position.X = 216.000000000000000000
+    Position.Y = 408.000000000000000000
+    TabOrder = 6
+    Text = 'Cancel'
+    Width = 80.000000000000000000
+  end
+  object cbWrap: TCheckBox
+    Height = 19.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 104.000000000000000000
+    TabOrder = 2
+    Text = 'Wrap text'
+    Width = 120.000000000000000000
+    OnChange = cbWrapChange
+  end
+  object cbxTrimming: TComboBox
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    ItemIndex = 0
+    ListBoxResource = 'transparentlistboxstyle'
+    Position.X = 96.000000000000000000
+    Position.Y = 120.000000000000000000
+    TabOrder = 8
+    Width = 121.000000000000000000
+    object ListBoxItem9: TListBoxItem
+      Height = 19.000000000000000000
+      IsSelected = True
+      TabOrder = 0
+      Text = 'No trimming'
+      Width = 103.000000000000000000
+    end
+    object ListBoxItem10: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 19.000000000000000000
+      TabOrder = 1
+      Text = 'Trim by character'
+      Width = 103.000000000000000000
+    end
+    object ListBoxItem11: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 38.000000000000000000
+      TabOrder = 2
+      Text = 'Trim by word'
+      Width = 103.000000000000000000
+    end
+  end
+  object lblTrimming: TLabel
+    Height = 15.000000000000000000
+    Position.X = 96.000000000000000000
+    Position.Y = 104.000000000000000000
+    Text = 'Text trimming'
+    Width = 121.000000000000000000
+  end
+  object cbRightToLeft: TCheckBox
+    Height = 19.000000000000000000
+    Position.X = 232.000000000000000000
+    Position.Y = 104.000000000000000000
+    TabOrder = 10
+    Text = 'Right to left'
+    Width = 120.000000000000000000
+  end
+end

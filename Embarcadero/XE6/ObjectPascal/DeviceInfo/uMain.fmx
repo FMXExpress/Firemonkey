@@ -1,0 +1,77 @@
+object DeviceInfoForm: TDeviceInfoForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ListBox1: TListBox
+    Align = Top
+    Height = 175.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Position.Y = 58.000000000000000000
+    ShowScrollBars = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 0
+    Width = 384.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    object lbOSName: TListBoxItem
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 0
+      Text = 'OS Name:'
+      Width = 344.000000000000000000
+    end
+    object lbDeviceType: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Device Type:'
+      Width = 344.000000000000000000
+    end
+    object lbOSVersion: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 88.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 2
+      Text = 'OS Version:'
+      Width = 344.000000000000000000
+    end
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    object Label1: TLabel
+      Align = Contents
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Device Information'
+      Width = 384.000000000000000000
+    end
+    object btnGetDeviceInfo: TButton
+      Align = Right
+      Anchors = []
+      Height = 48.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 331.000000000000000000
+      StyleLookup = 'refreshtoolbuttonbordered'
+      TabOrder = 1
+      Text = 'Get Device Information'
+      Width = 48.000000000000000000
+      OnClick = btnGetDeviceInfoClick
+    end
+  end
+end

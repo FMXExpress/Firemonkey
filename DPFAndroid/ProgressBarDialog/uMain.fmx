@@ -1,0 +1,51 @@
+object FProgressDialog: TFProgressDialog
+  Left = 0
+  Top = 0
+  Caption = 'ProgressBarDialog'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object DPFJView1: TDPFJRelativeLayout
+    Alpha = 1.000000000000000000
+    BackgroundColor1 = claWhite
+    DrawType = dtCustom
+    Align = alClient
+    Width = 384.000000000000000000
+    Height = 567.000000000000000000
+    object DPFJButton1: TDPFJButton
+      Alpha = 1.000000000000000000
+      OnClick = DPFJButton1Click
+      Position.X = 120.000000000000000000
+      Position.Y = 72.000000000000000000
+      Width = 169.000000000000000000
+      Height = 50.000000000000000000
+      Text = 'Show'
+      TextSize = 21.000000000000000000
+      TextAlignment = taCenter
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 296
+    Top = 160
+  end
+  object DPFJProgressDialog1: TDPFJProgressDialog
+    OnCancel = DPFJProgressDialog1Cancel
+    Left = 304
+    Top = 24
+  end
+  object DPFJAlertDialog1: TDPFJAlertDialog
+    Left = 128
+    Top = 168
+  end
+end

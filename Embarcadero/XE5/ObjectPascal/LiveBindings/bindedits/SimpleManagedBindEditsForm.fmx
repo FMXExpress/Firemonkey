@@ -1,0 +1,91 @@
+object EditsForm1: TEditsForm1
+  Left = 0
+  Top = 0
+  Caption = 'TEdit Managed Binding Example'
+  ClientHeight = 259
+  ClientWidth = 539
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Edit1: TEdit
+    TabOrder = 0
+    Text = 'Edit1Text'
+    Position.X = 72.000000000000000000
+    Position.Y = 69.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    OnChange = EditChange
+  end
+  object Edit2: TEdit
+    TabOrder = 1
+    Text = 'Edit2Text'
+    Position.X = 73.000000000000000000
+    Position.Y = 102.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    OnChange = EditChange
+  end
+  object Label1: TLabel
+    Height = 15.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 72.000000000000000000
+    Text = 'Edit1:'
+    Width = 57.000000000000000000
+  end
+  object Label2: TLabel
+    Height = 15.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 105.000000000000000000
+    Text = 'Edit2:'
+    Width = 49.000000000000000000
+  end
+  object LabelHint: TLabel
+    Height = 41.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = 'LabelHint'
+    Width = 369.000000000000000000
+  end
+  object LabelControl: TLabel
+    Height = 15.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 176.000000000000000000
+    Text = 'LabelControl'
+    Width = 185.000000000000000000
+  end
+  object LabelSource: TLabel
+    Height = 15.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 152.000000000000000000
+    Text = 'LabelSource'
+    Width = 185.000000000000000000
+  end
+  object LabelDirection: TLabel
+    Height = 15.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 200.000000000000000000
+    Text = 'LabelDirection'
+    Width = 273.000000000000000000
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 444
+    Top = 5
+    object BindExpressionEdit11: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = Edit2
+      SourceComponent = Edit1
+      SourceExpression = 'Text'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirBidirectional
+    end
+  end
+end

@@ -1,0 +1,216 @@
+object VKBaseForm: TVKBaseForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  OnFocusChanged = FormFocusChanged
+  OnVirtualKeyboardShown = FormVirtualKeyboardShown
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object VertScrollBox1: TVertScrollBox
+    Align = alContents
+    Height = 460.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object MainLayout1: TLayout
+      Align = alClient
+      Height = 460.000000000000000000
+      Width = 320.000000000000000000
+      object ToolBar1: TToolBar
+        Height = 44.000000000000000000
+        StyleLookup = 'bottomtoolbar'
+        TabOrder = 0
+        Width = 320.000000000000000000
+        object Label1: TLabel
+          Align = alCenter
+          Height = 29.000000000000000000
+          StyleLookup = 'toollabel'
+          Text = 'Keyboard Types'
+          Width = 230.000000000000000000
+        end
+      end
+      object ListBox1: TListBox
+        Align = alClient
+        Height = 406.000000000000000000
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 1
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = gsGrouped
+        object ListBoxItem1: TListBoxItem
+          Height = 44.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'First Name'
+          Width = 320.000000000000000000
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alVertCenter
+            TabOrder = 0
+            Position.X = 150.000000000000000000
+            Position.Y = 7.000000000000000000
+            Width = 160.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+        object ListBoxItem2: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 44.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Last Name'
+          Width = 320.000000000000000000
+          object Edit2: TEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alVertCenter
+            TabOrder = 0
+            KeyboardType = vktAlphabet
+            Position.X = 150.000000000000000000
+            Position.Y = 7.000000000000000000
+            Width = 160.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+        object ListBoxItem3: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 88.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'City'
+          Width = 320.000000000000000000
+          object Edit3: TEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alVertCenter
+            TabOrder = 0
+            KeyboardType = vktAlphabet
+            Position.X = 150.000000000000000000
+            Position.Y = 7.000000000000000000
+            Width = 160.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+        object ListBoxItem4: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 132.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'State'
+          Width = 320.000000000000000000
+          object Edit4: TEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alVertCenter
+            TabOrder = 0
+            KeyboardType = vktAlphabet
+            Position.X = 150.000000000000000000
+            Position.Y = 7.000000000000000000
+            Width = 160.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+        object ListBoxItem5: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 176.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Zip Code'
+          Width = 320.000000000000000000
+          object Edit5: TEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alVertCenter
+            TabOrder = 0
+            KeyboardType = vktNumberPad
+            Position.X = 150.000000000000000000
+            Position.Y = 7.000000000000000000
+            Width = 160.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+        object ListBoxItem6: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 220.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Email'
+          Width = 320.000000000000000000
+          object Edit6: TEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alVertCenter
+            TabOrder = 0
+            KeyboardType = vktEmailAddress
+            Position.X = 150.000000000000000000
+            Position.Y = 7.000000000000000000
+            Width = 160.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+        object ListBoxItem7: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 264.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Phone'
+          Width = 320.000000000000000000
+          object Edit7: TEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alVertCenter
+            TabOrder = 0
+            KeyboardType = vktPhonePad
+            Position.X = 150.000000000000000000
+            Position.Y = 7.000000000000000000
+            Width = 160.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+        object ListBoxItem8: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 308.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Web Page'
+          Width = 320.000000000000000000
+          object Edit8: TEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alVertCenter
+            TabOrder = 0
+            KeyboardType = vktURL
+            Position.X = 150.000000000000000000
+            Position.Y = 7.000000000000000000
+            Width = 160.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+      end
+    end
+  end
+end

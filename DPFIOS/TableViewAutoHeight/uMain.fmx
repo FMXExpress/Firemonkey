@@ -1,0 +1,137 @@
+object FTableView: TFTableView
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 460
+  ClientWidth = 320
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object DPFUITableView1: TDPFUITableView
+    Alpha = 1.000000000000000000
+    ShadowOffsetHeight = 10.000000000000000000
+    ShadowOpacity = 1.000000000000000000
+    ShadowRadius = 10.000000000000000000
+    TagNative = 0
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    OnDrawCell = DPFUITableView1DrawCell
+    OnGetRowHeight = DPFUITableView1GetRowHeight
+    Options.TextFont.FontName = ios_Helvetica_Bold
+    Options.TextFont.FontSize = 18
+    Options.DescriptionFont.FontName = ios_Helvetica
+    Options.RowHeight = 60.000000000000000000
+    Sections = <
+      item
+        Header.Kind = kCustom
+        Header.Text = 'Header 1'
+        Header.Font.FontName = ios_Helvetica_Bold
+        Header.Font.FontSize = 18
+        Header.Alpha = 0.899999976158142100
+        Footer.Font.FontName = ios_Helvetica_Bold
+        Footer.Font.FontSize = 18
+        Footer.Alpha = 0.899999976158142100
+        TableItems = <
+          item
+            ImageName = 'admin.png'
+            ItemText.Text = 
+              'Section 0 Item 0 Section 0 Item 0 Section 0 Item 0 Section 0 Ite' +
+              'm 0 Section 0 Item 0'
+            ItemDescription.Text = 'This is Desc 0'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = 'businessman.png'
+            ItemText.Text = 
+              'Section 0 Item 1 Section 0 Item 1 Section 0 Item 1 Section 0 Ite' +
+              'm 1 Section 0 Item 1 Section 0 Item 1 Section 0 Item 1 Section 0' +
+              ' Item 1 Section 0 Item 1 Section 0 Item 1 Section 0 Item 1 Secti' +
+              'on 0 Item 1'
+            ItemText.NumberOfLines = 0
+            ItemDescription.Text = 'This is Desc 1'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = 'businessmen.png'
+            ItemText.Text = 
+              'Section 0 Item 2 Section 0 Item 2 Section 0 Item 2 Section 0 Ite' +
+              'm 2'
+            ItemDescription.Text = 'This is Desc 2'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = 'mail.png'
+            ItemText.Text = 'Section 0 Item 3'
+            ItemDescription.Color = claGray
+          end
+          item
+            ImageName = 'flower_yellow.png'
+            ItemText.Text = 
+              'Section 0 Item 4 Section 0 Item 4 Section 0 Item 4 Section 0 Ite' +
+              'm 4 Section 0 Item 4'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 
+              'Section 0 Item 5 Section 0 Item 5 Section 0 Item 5 Section 0 Ite' +
+              'm 5'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Section 0 Item 6'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Section 0 Item 7'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Section 0 Item 8 Section 0 Item 5'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 
+              'Section 0 Item 9 Section 0 Item 9 Section 0 Item 9 Section 0 Ite' +
+              'm 9 Section 0 Item 9'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 
+              'Section 0 Item 10 Section 0 Item 10 Section 0 Item 10 Section 0 ' +
+              'Item 10'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 'Section 0 Item 11 Section 0 Item 10'
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 
+              'Section 0 Item 12 Section 0 Item 12 Section 0 Item 12 Section 0 ' +
+              'Item 12 Section 0 Item 12 Section 0 Item 12 Section 0 Item 12 Se' +
+              'ction 0 Item 12 Section 0 Item 12 Section 0 Item 12 Section 0 It' +
+              'em 12 Section 0 Item 12 Section 0 Item 12 Section 0 Item 12 Sect' +
+              'ion 0 Item 12 '
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 
+              'Section 0 Item 13 Section 0 Item 13 Section 0 Item 13 Section 0 ' +
+              'Item 13 '
+            ItemDescription.Color = claGray
+          end
+          item
+            ItemText.Text = 
+              'Section 0 Item 14 Section 0 Item 14 Section 0 Item 14 Section 0 ' +
+              'Item 14 Section 0 Item 14 Section 0 Item 14 Section 0 Item 14 Se' +
+              'ction 0 Item 14 Section 0 Item 14 Section 0 Item 14 Section 0 It' +
+              'em 14 Section 0 Item 14 Section 0 Item 14 '
+            ItemDescription.Color = claGray
+          end>
+      end>
+  end
+end
