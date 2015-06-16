@@ -1,0 +1,372 @@
+object Form1175: TForm1175
+  Left = 0
+  Top = 0
+  Caption = 'Form1175'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  object TMSFMXNativeUITabBarController1: TTMSFMXNativeUITabBarController
+    Align = alClient
+    Width = 320.000000000000000000
+    Height = 548.000000000000000000
+    ClipChildren = True
+    SelectedItem = TMSFMXNativeUITabBarItem1
+    SelectedItemIndex = 0
+    object TMSFMXNativeUITabBarItem1: TTMSFMXNativeUITabBarItem
+      Width = 320.000000000000000000
+      Height = 499.000000000000000000
+      ClipChildren = True
+      Text = 'My Card'
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000280000002808060000008CFEB8
+        6D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        0178494441545847ED97414705511886A722222E111111ADA25544B48A88B6D1
+        3FE84F44DB7E408B7E44DBB8AB16915AD632DA4644699152A4DEAFDE21F5CDDC
+        F37D73E64C8BF3F0782F7731EF9D33F77C678A4C2693519962FE0BE6E1363C84
+        57F083EEC14E1983C7B02CA429DF9FC17DD88349913BA495AA720726E51A6A45
+        AA3C826686991EE698A1B896D85B7084692169C17166EB3459622BEF4C13DE82
+        D34C0B5270F4FB63FBDC40ED9F3AC83E4C8276F110EFA009EF12BF30ADBC3183
+        F116BC645A3960B6CE0494C381B68C556EC0A44CC247A895F9AD6BCCC560153E
+        43AD54A9FC8859D8194B502B56BA023B4566AC564C7C858D8831EA9E981A0F4C
+        37310AAE3135E4EE263F49FF44B68E7BA82D6FA98C37CFECFE628819CA0C5C86
+        EB34F4ED4D0E0A27F0949EC3BA47C3846CCABBD07B40A8525EA8366123640BB9
+        85DA0562298F80EB00BC08076DC2B1BC80E6D708EBAC6DEA16FC43DD36B3C04C
+        85BA5DD51594C3404AD4795D5730D99B1B71EF95994C7B14C527775FEFCE87FB
+        A0C20000000049454E44AE426082}
+      object TMSFMXNativeUILabel1: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'First Name:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUITextField2: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 16.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+        OnChanged = TMSFMXNativeUITextField2Changed
+      end
+      object TMSFMXNativeUILabel2: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 54.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'Last Name:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUITextField3: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 54.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+        OnChanged = TMSFMXNativeUITextField2Changed
+      end
+      object TMSFMXNativeUILabel3: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 92.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'Email:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUITextField4: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 92.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+        OnChanged = TMSFMXNativeUITextField2Changed
+      end
+      object TMSFMXNativeUILabel4: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 130.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'Company:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUITextField5: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 130.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+        OnChanged = TMSFMXNativeUITextField2Changed
+      end
+      object TMSFMXNativeUILabel5: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 168.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'Phone:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUITextField6: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 168.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+        OnChanged = TMSFMXNativeUITextField2Changed
+      end
+      object TMSFMXNativeUIButton2: TTMSFMXNativeUIButton
+        Anchors = [akTop, akRight]
+        Position.X = 256.000000000000000000
+        Position.Y = 207.000000000000000000
+        Width = 47.000000000000000000
+        Height = 33.000000000000000000
+        ClipChildren = True
+        Text = 'Send'
+        OnClick = TMSFMXNativeUIButton2Click
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+    end
+    object TMSFMXNativeUITabBarItem2: TTMSFMXNativeUITabBarItem
+      Width = 320.000000000000000000
+      Height = 499.000000000000000000
+      ClipChildren = True
+      Text = 'Friends Card'
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000280000002808060000008CFEB8
+        6D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        01C0494441545847ED9741470651148647111111D12A2222DA46AB68D52A22FA
+        1911D136E25B452DFB0151CB88FE414444A94D94882211514AA9F76DCECDE976
+        A699E99BFB4D8BFBF038C3DCEE3DDDCEB9774A2291482412693993F00A3EC04D
+        3805FBE1BF80893CC277CF57380F6BA701FDE49C4C720CD6CA21B492736E40CD
+        04DC17B9C323302877D04ACC790E1D83D02A876DD80183700FFD05B597D0B10A
+        AD313458BD964990BB698DA167B0106D128BF226310BFDBE47A245AFC45CCA26
+        782A318B6389955136C13589596C49AC955D68D5D50E6C870EDE36D638AABBBD
+        72583F3C94F582D7D03F3A96A11EA35D824179867A4176B74F27B40EF623D805
+        83C20F05BD2877D4EA5AEEB61E47FB6061CA3609E175E5EF006B6F267DFCC62D
+        7C4A1FBF78915839DD7016F290F57785F25A63DD0D400713F7CB611C560693E2
+        B5B407F52279B24B5720931D85AC3BF7EE04EA5FE24FB0231761DED596276B93
+        89B23EFDAEE617CE1C2C559384BBC61FD693352B77900D93F53DB90E0B77F602
+        B4266956CECB7F17AC77947F7A7DD07F6275312709016BF1227D3419863F1AC8
+        4A704862D570DE9BF431936989BF627D0557A1BB6DFC63477B00239148A47524
+        C90722CB0FC25028DC660000000049454E44AE426082}
+      object TMSFMXNativeUITextField7: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 168.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUILabel6: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 168.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'Phone:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUILabel7: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 130.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'Company:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUITextField8: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 130.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUITextField9: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 92.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUILabel8: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 92.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'Email:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUILabel9: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 54.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'Last Name:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUITextField10: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 54.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUITextField11: TTMSFMXNativeUITextField
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 112.000000000000000000
+        Position.Y = 16.000000000000000000
+        Width = 193.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+      object TMSFMXNativeUILabel10: TTMSFMXNativeUILabel
+        Position.X = 16.000000000000000000
+        Position.Y = 16.000000000000000000
+        Width = 89.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Text = 'First Name:'
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+      end
+    end
+    object TMSFMXNativeUITabBarItem3: TTMSFMXNativeUITabBarItem
+      Width = 320.000000000000000000
+      Height = 499.000000000000000000
+      ClipChildren = True
+      Text = 'Chat'
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000280000002808060000008CFEB8
+        6D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        01D2494441545847ED97C14705411CC79F222222223A454444748A4E115DFB03
+        A253748D88AE1111FD0175E914111111A53F20222222A25344948852DF4F6F37
+        3F63F6B53BBBAFDE613E7CECBED9F76666677E33F37BB54824128944FE850E39
+        23B7E495FC747C90FB725E76C93F838EADC847E9762A4BBEBB209BCE88BC91BE
+        4EE47147B6CB39B928FB64658CCB67E96BB8881B7250BE279FF7E4902C45AFBC
+        936E6321D2313A7460CADE246113CCA6B48D94755DCE3A65480804516441E491
+        553FE094A5120285E897BE8ACAC894421A8756CAC6E40F6DC9350BB695AAF948
+        AE2FC9D5C22A5FAADFE6831F54B17AADD7927A1949DF73DAE3F937BF8D206FBB
+        5DBFAD8C53392CB3668793A7BB7E9B0FE2F049FADE3644F6D465A7CC4A1C160E
+        AD4999352545E4EC66FA6E4D99EB990C625A9204F82ACDE3B1646438E67CCF53
+        A764304C77A3B7F7F92A392918391AF76D2FA9BBB23427D257B995957824D932
+        7A2430728DC2E45076CA5290813022B6E25509544E2260E1FB642F97D2FEC65A
+        FA2C4EA10376F48847CE540B714A909F4BF63BDB912CD764692624A3403E4826
+        42029A351DEC6164D2A452360BBA9717E6736AF0AA6D16C4A5DB495E9AB4AE65
+        1895A457F6FF0CB3E3C670241289445A9B5AED0B0C1A690CCEBE7A1900000000
+        49454E44AE426082}
+      object TMSFMXNativeUIView1: TTMSFMXNativeUIView
+        Align = alTop
+        Width = 320.000000000000000000
+        Height = 41.000000000000000000
+        ClipChildren = True
+        object TMSFMXNativeUITextField1: TTMSFMXNativeUITextField
+          Align = alClient
+          Width = 225.000000000000000000
+          Height = 31.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          ClipChildren = True
+          Font.Name = 'Helvetica'
+          Font.Size = 14.000000000000000000
+        end
+        object TMSFMXNativeUIButton1: TTMSFMXNativeUIButton
+          Position.X = 235.000000000000000000
+          Position.Y = 5.000000000000000000
+          Align = alRight
+          Width = 80.000000000000000000
+          Height = 31.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          ClipChildren = True
+          Text = 'Send'
+          OnClick = TMSFMXNativeUIButton1Click
+          Font.Name = 'Helvetica'
+          Font.Size = 14.000000000000000000
+        end
+      end
+      object TMSFMXNativeUITableView1: TTMSFMXNativeUITableView
+        Align = alClient
+        Width = 320.000000000000000000
+        Height = 458.000000000000000000
+        ClipChildren = True
+        Sections = <
+          item
+            LookUpID = 0
+            HeaderHeight = 22.000000000000000000
+            Items = <>
+          end>
+        Options.SectionHeaderHeight = 22.000000000000000000
+        Options.RowHeight = 44.000000000000000000
+        Options.Layout = tvlGrouped
+        Options.LookUp.Items = <>
+        OnGetItemStyle = TMSFMXNativeUITableView1GetItemStyle
+      end
+    end
+  end
+  object TMSFMXNativeMultipeerConnectivity1: TTMSFMXNativeMultipeerConnectivity
+    ServiceType = 'tms-peertopeer'
+    MyPeerID = 'tms'
+    OnBrowserViewControllerDidFinish = TMSFMXNativeMultipeerConnectivity1BrowserViewControllerDidFinish
+    OnDidChangeState = TMSFMXNativeMultipeerConnectivity1DidChangeState
+    OnDidReceiveString = TMSFMXNativeMultipeerConnectivity1DidReceiveString
+    OnDidReceiveObject = TMSFMXNativeMultipeerConnectivity1DidReceiveObject
+    Left = 144
+    Top = 440
+  end
+end

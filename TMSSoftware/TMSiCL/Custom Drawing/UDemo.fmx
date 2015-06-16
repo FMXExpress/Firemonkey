@@ -1,0 +1,23 @@
+object Form1034: TForm1034
+  Left = 0
+  Top = 0
+  Caption = 'Form1034'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object TMSFMXNativeUIView1: TTMSFMXNativeUIView
+    Align = alClient
+    Width = 320.000000000000000000
+    Height = 460.000000000000000000
+    ClipChildren = True
+    OnDrawRect = TMSFMXNativeUIView1DrawRect
+  end
+end

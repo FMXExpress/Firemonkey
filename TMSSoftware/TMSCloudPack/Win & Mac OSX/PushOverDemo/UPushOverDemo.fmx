@@ -1,0 +1,142 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'TTMSFMXCloudPushOver demo'
+  ClientHeight = 235
+  ClientWidth = 530
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Label6: TLabel
+    AutoSize = True
+    Height = 19.000000000000000000
+    Position.X = 25.000000000000000000
+    Position.Y = 19.000000000000000000
+    Text = 'User'
+    Width = 26.000000000000000000
+    WordWrap = False
+  end
+  object edUser: TEdit
+    TabOrder = 1
+    Position.X = 73.000000000000000000
+    Position.Y = 16.000000000000000000
+    Width = 246.000000000000000000
+    Height = 21.000000000000000000
+    KillFocusByReturn = False
+  end
+  object GroupBox1: TGroupBox
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 182.000000000000000000
+    Position.X = 9.000000000000000000
+    Position.Y = 43.000000000000000000
+    Text = 'Message'
+    Width = 513.000000000000000000
+    TabOrder = 0
+    object Label1: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 27.000000000000000000
+      Text = 'Title'
+      Width = 25.000000000000000000
+      WordWrap = False
+    end
+    object Label2: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 54.000000000000000000
+      Text = 'Message'
+      Width = 47.000000000000000000
+      WordWrap = False
+    end
+    object Label3: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 280.000000000000000000
+      Position.Y = 27.000000000000000000
+      Text = 'Sound'
+      Width = 35.000000000000000000
+      WordWrap = False
+    end
+    object Label4: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 280.000000000000000000
+      Position.Y = 54.000000000000000000
+      Text = 'Device'
+      Width = 36.000000000000000000
+      WordWrap = False
+    end
+    object Label5: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 149.000000000000000000
+      Text = 'URL'
+      Width = 23.000000000000000000
+      WordWrap = False
+    end
+    object edTitle: TEdit
+      TabOrder = 0
+      Position.X = 64.000000000000000000
+      Position.Y = 24.000000000000000000
+      Width = 185.000000000000000000
+      Height = 21.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edMemo: TMemo
+      Height = 89.000000000000000000
+      Position.X = 64.000000000000000000
+      Position.Y = 51.000000000000000000
+      TabOrder = 1
+      Width = 185.000000000000000000
+    end
+    object edSound: TComboBox
+      DisableFocusEffect = False
+      Height = 21.000000000000000000
+      Position.X = 318.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 2
+      Width = 185.000000000000000000
+    end
+    object edDevice: TEdit
+      TabOrder = 3
+      Position.X = 318.000000000000000000
+      Position.Y = 51.000000000000000000
+      Width = 185.000000000000000000
+      Height = 21.000000000000000000
+      KillFocusByReturn = False
+    end
+    object Button1: TButton
+      Height = 25.000000000000000000
+      Position.X = 334.000000000000000000
+      Position.Y = 144.000000000000000000
+      TabOrder = 4
+      Text = 'Send message'
+      Width = 169.000000000000000000
+      OnClick = Button1Click
+    end
+    object edURL: TEdit
+      TabOrder = 5
+      Position.X = 64.000000000000000000
+      Position.Y = 146.000000000000000000
+      Width = 185.000000000000000000
+      Height = 21.000000000000000000
+      KillFocusByReturn = False
+    end
+  end
+  object TMSFMXCloudPushOver1: TTMSFMXCloudPushOver
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+  end
+end

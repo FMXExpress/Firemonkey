@@ -1,0 +1,264 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{48DEE4AC-A93B-4449-AE9A-913D7BFAAE7B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CloudStorageDemo\CloudStorageDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FacebookAlbumDemo\FaceBookAlbumDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FacebookDemo\FaceBookDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FlickrDemo\FlickrDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GCalendarDemo\GCalendarDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GContactsDemo\GContactsDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GoogleLookupDemo\GoogleLookUpDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LinkedInDemo\LinkedInDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GTasksPhoneDemo\GTasksPhoneDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GTasksTabletDemo\GTasksTabletDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GPlacesPhoneDemo\GPlacesPhoneDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GPlacesTabletDemo\GPlacesTabletDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LiveCalendarDemo\LiveCalendarDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PicasaDemo\PicasaDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PushOverDemo\PushOverDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TwitterDemo\TwitterDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="WeatherDemo\WeatherDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="InstagramDemo\InstagramDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LiveContactsDemo\LiveContactsDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DropBoxDataStoreDemo\DropBoxDataStoreDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="YoutubeDemo\YoutubeDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GTasksPhoneDemo\GTasksPhoneDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="GTasksTabletDemo\GTasksTabletDemo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CloudStorageDemo">
+        <MSBuild Projects="CloudStorageDemo\CloudStorageDemo.dproj"/>
+    </Target>
+    <Target Name="CloudStorageDemo:Clean">
+        <MSBuild Projects="CloudStorageDemo\CloudStorageDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CloudStorageDemo:Make">
+        <MSBuild Projects="CloudStorageDemo\CloudStorageDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FaceBookAlbumDemo">
+        <MSBuild Projects="FacebookAlbumDemo\FaceBookAlbumDemo.dproj"/>
+    </Target>
+    <Target Name="FaceBookAlbumDemo:Clean">
+        <MSBuild Projects="FacebookAlbumDemo\FaceBookAlbumDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FaceBookAlbumDemo:Make">
+        <MSBuild Projects="FacebookAlbumDemo\FaceBookAlbumDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FaceBookDemo">
+        <MSBuild Projects="FacebookDemo\FaceBookDemo.dproj"/>
+    </Target>
+    <Target Name="FaceBookDemo:Clean">
+        <MSBuild Projects="FacebookDemo\FaceBookDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FaceBookDemo:Make">
+        <MSBuild Projects="FacebookDemo\FaceBookDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FlickrDemo">
+        <MSBuild Projects="FlickrDemo\FlickrDemo.dproj"/>
+    </Target>
+    <Target Name="FlickrDemo:Clean">
+        <MSBuild Projects="FlickrDemo\FlickrDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FlickrDemo:Make">
+        <MSBuild Projects="FlickrDemo\FlickrDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GCalendarDemo">
+        <MSBuild Projects="GCalendarDemo\GCalendarDemo.dproj"/>
+    </Target>
+    <Target Name="GCalendarDemo:Clean">
+        <MSBuild Projects="GCalendarDemo\GCalendarDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GCalendarDemo:Make">
+        <MSBuild Projects="GCalendarDemo\GCalendarDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GContactsDemo">
+        <MSBuild Projects="GContactsDemo\GContactsDemo.dproj"/>
+    </Target>
+    <Target Name="GContactsDemo:Clean">
+        <MSBuild Projects="GContactsDemo\GContactsDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GContactsDemo:Make">
+        <MSBuild Projects="GContactsDemo\GContactsDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GoogleLookUpDemo">
+        <MSBuild Projects="GoogleLookupDemo\GoogleLookUpDemo.dproj"/>
+    </Target>
+    <Target Name="GoogleLookUpDemo:Clean">
+        <MSBuild Projects="GoogleLookupDemo\GoogleLookUpDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GoogleLookUpDemo:Make">
+        <MSBuild Projects="GoogleLookupDemo\GoogleLookUpDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LinkedInDemo">
+        <MSBuild Projects="LinkedInDemo\LinkedInDemo.dproj"/>
+    </Target>
+    <Target Name="LinkedInDemo:Clean">
+        <MSBuild Projects="LinkedInDemo\LinkedInDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LinkedInDemo:Make">
+        <MSBuild Projects="LinkedInDemo\LinkedInDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LiveCalendarDemo">
+        <MSBuild Projects="LiveCalendarDemo\LiveCalendarDemo.dproj"/>
+    </Target>
+    <Target Name="LiveCalendarDemo:Clean">
+        <MSBuild Projects="LiveCalendarDemo\LiveCalendarDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LiveCalendarDemo:Make">
+        <MSBuild Projects="LiveCalendarDemo\LiveCalendarDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PicasaDemo">
+        <MSBuild Projects="PicasaDemo\PicasaDemo.dproj"/>
+    </Target>
+    <Target Name="PicasaDemo:Clean">
+        <MSBuild Projects="PicasaDemo\PicasaDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PicasaDemo:Make">
+        <MSBuild Projects="PicasaDemo\PicasaDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PushOverDemo">
+        <MSBuild Projects="PushOverDemo\PushOverDemo.dproj"/>
+    </Target>
+    <Target Name="PushOverDemo:Clean">
+        <MSBuild Projects="PushOverDemo\PushOverDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PushOverDemo:Make">
+        <MSBuild Projects="PushOverDemo\PushOverDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TwitterDemo">
+        <MSBuild Projects="TwitterDemo\TwitterDemo.dproj"/>
+    </Target>
+    <Target Name="TwitterDemo:Clean">
+        <MSBuild Projects="TwitterDemo\TwitterDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TwitterDemo:Make">
+        <MSBuild Projects="TwitterDemo\TwitterDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="WeatherDemo">
+        <MSBuild Projects="WeatherDemo\WeatherDemo.dproj"/>
+    </Target>
+    <Target Name="WeatherDemo:Clean">
+        <MSBuild Projects="WeatherDemo\WeatherDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="WeatherDemo:Make">
+        <MSBuild Projects="WeatherDemo\WeatherDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="InstagramDemo">
+        <MSBuild Projects="InstagramDemo\InstagramDemo.dproj"/>
+    </Target>
+    <Target Name="InstagramDemo:Clean">
+        <MSBuild Projects="InstagramDemo\InstagramDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="InstagramDemo:Make">
+        <MSBuild Projects="InstagramDemo\InstagramDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LiveContactsDemo">
+        <MSBuild Projects="LiveContactsDemo\LiveContactsDemo.dproj"/>
+    </Target>
+    <Target Name="LiveContactsDemo:Clean">
+        <MSBuild Projects="LiveContactsDemo\LiveContactsDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LiveContactsDemo:Make">
+        <MSBuild Projects="LiveContactsDemo\LiveContactsDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DropBoxDataStoreDemo">
+        <MSBuild Projects="DropBoxDataStoreDemo\DropBoxDataStoreDemo.dproj"/>
+    </Target>
+    <Target Name="DropBoxDataStoreDemo:Clean">
+        <MSBuild Projects="DropBoxDataStoreDemo\DropBoxDataStoreDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DropBoxDataStoreDemo:Make">
+        <MSBuild Projects="DropBoxDataStoreDemo\DropBoxDataStoreDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="YoutubeDemo">
+        <MSBuild Projects="YoutubeDemo\YoutubeDemo.dproj"/>
+    </Target>
+    <Target Name="YoutubeDemo:Clean">
+        <MSBuild Projects="YoutubeDemo\YoutubeDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="YoutubeDemo:Make">
+        <MSBuild Projects="YoutubeDemo\YoutubeDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GTasksPhoneDemo">
+        <MSBuild Projects="GTasksPhoneDemo\GTasksPhoneDemo.dproj"/>
+    </Target>
+    <Target Name="GTasksPhoneDemo:Clean">
+        <MSBuild Projects="GTasksPhoneDemo\GTasksPhoneDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GTasksPhoneDemo:Make">
+        <MSBuild Projects="GTasksPhoneDemo\GTasksPhoneDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GTasksTabletDemo">
+        <MSBuild Projects="GTasksTabletDemo\GTasksTabletDemo.dproj"/>
+    </Target>
+    <Target Name="GTasksTabletDemo:Clean">
+        <MSBuild Projects="GTasksTabletDemo\GTasksTabletDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GTasksTabletDemo:Make">
+        <MSBuild Projects="GTasksTabletDemo\GTasksTabletDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CloudStorageDemo;FaceBookAlbumDemo;FaceBookDemo;FlickrDemo;GCalendarDemo;GContactsDemo;GoogleLookUpDemo;LinkedInDemo;LiveCalendarDemo;PicasaDemo;PushOverDemo;TwitterDemo;WeatherDemo;InstagramDemo;LiveContactsDemo;DropBoxDataStoreDemo;YoutubeDemo;GTasksPhoneDemo;GTasksTabletDemo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CloudStorageDemo:Clean;FaceBookAlbumDemo:Clean;FaceBookDemo:Clean;FlickrDemo:Clean;GCalendarDemo:Clean;GContactsDemo:Clean;GoogleLookUpDemo:Clean;LinkedInDemo:Clean;LiveCalendarDemo:Clean;PicasaDemo:Clean;PushOverDemo:Clean;TwitterDemo:Clean;WeatherDemo:Clean;InstagramDemo:Clean;LiveContactsDemo:Clean;DropBoxDataStoreDemo:Clean;YoutubeDemo:Clean;GTasksPhoneDemo:Clean;GTasksTabletDemo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CloudStorageDemo:Make;FaceBookAlbumDemo:Make;FaceBookDemo:Make;FlickrDemo:Make;GCalendarDemo:Make;GContactsDemo:Make;GoogleLookUpDemo:Make;LinkedInDemo:Make;LiveCalendarDemo:Make;PicasaDemo:Make;PushOverDemo:Make;TwitterDemo:Make;WeatherDemo:Make;InstagramDemo:Make;LiveContactsDemo:Make;DropBoxDataStoreDemo:Make;YoutubeDemo:Make;GTasksPhoneDemo:Make;GTasksTabletDemo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

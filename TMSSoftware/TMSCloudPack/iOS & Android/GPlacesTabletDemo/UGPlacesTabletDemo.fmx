@@ -1,0 +1,327 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 682
+  ClientWidth = 933
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TabControl1: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 682.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    Width = 933.000000000000000000
+    object tabPlaces: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      Position.X = 1.000000000000000000
+      TabOrder = 0
+      Text = 'Places'
+      Width = 466.000000000000000000
+      object edSearch: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        TabOrder = 0
+        Position.X = 131.000000000000000000
+        Position.Y = 16.000000000000000000
+        Width = 262.000000000000000000
+        Height = 22.000000000000000000
+        KillFocusByReturn = False
+      end
+      object edType: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 1
+        Position.X = 520.000000000000000000
+        Position.Y = 16.000000000000000000
+        Width = 412.000000000000000000
+        Height = 22.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Label2: TLabel
+        Height = 31.000000000000000000
+        Position.X = 400.000000000000000000
+        Position.Y = 10.000000000000000000
+        Text = 'Type:'
+        Width = 120.000000000000000000
+      end
+      object Label3: TLabel
+        Height = 31.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 10.000000000000000000
+        Text = 'Search text:'
+        Width = 120.000000000000000000
+      end
+      object Button1: TButton
+        Anchors = [akTop, akRight]
+        Height = 22.000000000000000000
+        Position.X = 1501.000000000000000000
+        TabOrder = 4
+        Text = 'Search'
+        Width = 80.000000000000000000
+        OnClick = Button1Click
+      end
+      object btnSearchNearby: TButton
+        Anchors = [akTop, akRight]
+        Height = 22.000000000000000000
+        Position.X = 1581.000000000000000000
+        TabOrder = 9
+        Text = 'Nearby'
+        Width = 80.000000000000000000
+        OnClick = btnSearchNearbyClick
+      end
+      object lstPlaces: TListBox
+        Align = alBottom
+        Height = 593.000000000000000000
+        Position.Y = 40.000000000000000000
+        TabOrder = 10
+        Width = 933.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnItemClick = lstPlacesItemClick
+      end
+      object lblAutocomplete: TLabel
+        Anchors = [akTop, akRight]
+        Height = 17.000000000000000000
+        Position.X = 1061.000000000000000000
+        Position.Y = 50.000000000000000000
+        Text = 'Did You Mean:'
+        Visible = False
+        Width = 120.000000000000000000
+      end
+      object lblAutocompleteText: TLabel
+        Anchors = [akTop, akRight]
+        Height = 17.000000000000000000
+        Position.X = 1189.000000000000000000
+        Position.Y = 40.000000000000000000
+        Text = 'lblAutocompleteText'
+        Visible = False
+        Width = 120.000000000000000000
+      end
+      object btnAutocomplete: TButton
+        Anchors = [akTop, akRight]
+        Height = 22.000000000000000000
+        Position.X = 1501.000000000000000000
+        Position.Y = 48.000000000000000000
+        TabOrder = 5
+        Text = 'Yes'
+        Visible = False
+        Width = 80.000000000000000000
+        OnClick = btnAutocompleteClick
+      end
+      object btnNextPage: TButton
+        Anchors = [akTop, akRight]
+        Height = 22.000000000000000000
+        Position.X = 1565.000000000000000000
+        Position.Y = 152.000000000000000000
+        TabOrder = 6
+        Text = 'Next Page'
+        Width = 80.000000000000000000
+        OnClick = btnNextPageClick
+      end
+    end
+    object tabDetail: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 467.000000000000000000
+      TabOrder = 1
+      Text = 'Places Detail'
+      Width = 465.000000000000000000
+      object ciIcon: TTMSFMXCloudImage
+        Position.X = 8.000000000000000000
+        Position.Y = 30.000000000000000000
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        ClipChildren = True
+        Version = '1.5.0.1'
+      end
+      object lblNameTitle: TLabel
+        Height = 17.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 31.000000000000000000
+        Width = 120.000000000000000000
+      end
+      object Label6: TLabel
+        Height = 33.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 560.000000000000000000
+        Text = 'Lattitude:'
+        Width = 120.000000000000000000
+      end
+      object Label9: TLabel
+        Height = 33.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 328.000000000000000000
+        Text = 'Types:'
+        Width = 120.000000000000000000
+      end
+      object Label10: TLabel
+        Height = 33.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 296.000000000000000000
+        Text = 'Now Open:'
+        Width = 120.000000000000000000
+      end
+      object Label11: TLabel
+        Height = 49.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 232.000000000000000000
+        Text = 'Vicinity'
+        Width = 120.000000000000000000
+      end
+      object Label12: TLabel
+        Height = 49.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 176.000000000000000000
+        Text = 'Website'
+        Width = 120.000000000000000000
+      end
+      object Label13: TLabel
+        Height = 33.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 144.000000000000000000
+        Text = 'Phone:'
+        Width = 120.000000000000000000
+      end
+      object Label14: TLabel
+        Height = 33.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 88.000000000000000000
+        Text = 'Address:'
+        Width = 120.000000000000000000
+      end
+      object Label1: TLabel
+        Height = 33.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 592.000000000000000000
+        Text = 'Longitude:'
+        Width = 120.000000000000000000
+      end
+      object Label7: TLabel
+        Height = 33.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 528.000000000000000000
+        Text = 'Rating:'
+        Width = 120.000000000000000000
+      end
+      object lstTypes: TListBox
+        Height = 185.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 336.000000000000000000
+        TabOrder = 11
+        Width = 200.000000000000000000
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+      end
+      object lblOpen: TLabel
+        Height = 33.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 296.000000000000000000
+        Width = 129.000000000000000000
+      end
+      object lblVicinity: TLabel
+        Height = 65.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 232.000000000000000000
+        Width = 793.000000000000000000
+      end
+      object lblWebsite: TLabel
+        Height = 57.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 176.000000000000000000
+        Width = 785.000000000000000000
+      end
+      object lblRating: TLabel
+        Height = 33.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 528.000000000000000000
+        Width = 665.000000000000000000
+      end
+      object lblLattitude: TLabel
+        Height = 33.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 560.000000000000000000
+        Width = 785.000000000000000000
+      end
+      object lblLongtitude: TLabel
+        Height = 33.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 592.000000000000000000
+        Width = 785.000000000000000000
+      end
+      object lblPhone: TLabel
+        Height = 33.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 144.000000000000000000
+        Width = 777.000000000000000000
+      end
+      object lblAddress: TLabel
+        Height = 57.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 88.000000000000000000
+        Width = 737.000000000000000000
+      end
+    end
+  end
+  object SpeedButton1: TSpeedButton
+    Height = 22.000000000000000000
+    Position.X = -8.000000000000000000
+    Text = '< Back'
+    Visible = False
+    Width = 80.000000000000000000
+    OnClick = SpeedButton1Click
+  end
+  object btnUp: TSpeedButton
+    Anchors = [akTop, akRight]
+    Height = 22.000000000000000000
+    Position.X = 851.000000000000000000
+    Text = '<'
+    Visible = False
+    Width = 80.000000000000000000
+    OnClick = btnUpClick
+  end
+  object btnDown: TSpeedButton
+    Anchors = [akTop, akRight]
+    Height = 22.000000000000000000
+    Position.X = 891.000000000000000000
+    Text = '>'
+    Visible = False
+    Width = 80.000000000000000000
+    OnClick = btnDownClick
+  end
+  object LocationSensor1: TLocationSensor
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 336
+    Top = 168
+  end
+  object TMSFMXCloudGPlaces1: TTMSFMXCloudGPlaces
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888/'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Scopes.Strings = (
+      'https://www.googleapis.com/auth/userinfo.profile'
+      'https://www.googleapis.com/auth/userinfo.email')
+    Items = <>
+    Left = 456
+    Top = 328
+  end
+end

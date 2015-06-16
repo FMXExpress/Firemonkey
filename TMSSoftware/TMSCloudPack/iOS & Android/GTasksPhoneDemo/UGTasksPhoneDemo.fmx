@@ -1,0 +1,447 @@
+object Form98: TForm98
+  Left = 0
+  Top = 0
+  Caption = 'Task Phone Demo'
+  ClientHeight = 626
+  ClientWidth = 370
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TabControl1: TTabControl
+    FullSize = True
+    Height = 625.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 2
+    TabOrder = 0
+    Width = 369.000000000000000000
+    object tabLists: TTabItem
+      Align = alClient
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      TabOrder = 0
+      Text = 'Task Lists'
+      Width = 92.000000000000000000
+      OnClick = tabListsClick
+      object TabControl2: TTabControl
+        Align = alClient
+        FullSize = True
+        Height = 576.000000000000000000
+        TabHeight = 49.000000000000000000
+        TabIndex = 0
+        TabOrder = 0
+        TabPosition = tpBottom
+        Width = 369.000000000000000000
+        object tabShow: TTabItem
+          WordWrap = False
+          Height = 49.000000000000000000
+          IsSelected = True
+          Position.X = 1.000000000000000000
+          TabOrder = 0
+          Text = 'Show'
+          Width = 184.000000000000000000
+          object lstTaskList: TListBox
+            Align = alClient
+            Height = 527.000000000000000000
+            TabOrder = 0
+            Width = 369.000000000000000000
+            DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+            OnItemClick = lstTaskListItemClick
+            object ListBoxHeader1: TListBoxHeader
+              Height = 40.000000000000000000
+              TabOrder = 0
+              Width = 369.000000000000000000
+              object btnNextPage: TButton
+                Anchors = [akLeft, akTop, akRight, akBottom]
+                Height = 25.000000000000000000
+                Position.X = 256.000000000000000000
+                Position.Y = 8.000000000000000000
+                TabOrder = 0
+                Text = 'Next Page'
+                Width = 105.000000000000000000
+                OnClick = btnNextPageClick
+              end
+              object btnConnect: TButton
+                Anchors = [akLeft, akTop, akRight, akBottom]
+                Height = 25.000000000000000000
+                Position.X = 8.000000000000000000
+                Position.Y = 8.000000000000000000
+                TabOrder = 1
+                Text = 'Connect'
+                Width = 105.000000000000000000
+                OnClick = btnConnectClick
+              end
+            end
+            object SearchBox1: TSearchBox
+              Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+              Align = alTop
+              TabOrder = 1
+              Position.Y = 40.000000000000000000
+              Width = 369.000000000000000000
+              Height = 22.000000000000000000
+              KillFocusByReturn = False
+            end
+          end
+        end
+        object tabAdd: TTabItem
+          WordWrap = False
+          Enabled = False
+          Height = 49.000000000000000000
+          IsSelected = False
+          Position.X = 185.000000000000000000
+          TabOrder = 1
+          Text = 'Add'
+          Width = 183.000000000000000000
+          OnClick = tabAddClick
+        end
+      end
+    end
+    object tabListDetail: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 93.000000000000000000
+      TabOrder = 1
+      Text = 'Task List detail'
+      Width = 92.000000000000000000
+      object Label3: TLabel
+        Height = 25.000000000000000000
+        Position.X = 7.000000000000000000
+        Position.Y = 8.000000000000000000
+        Text = 'Title:'
+        Width = 120.000000000000000000
+      end
+      object edListTitle: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        TabOrder = 1
+        Position.X = 135.000000000000000000
+        Position.Y = 8.000000000000000000
+        Width = 210.000000000000000000
+        Height = 25.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Label4: TLabel
+        Height = 33.000000000000000000
+        Position.X = 7.000000000000000000
+        Position.Y = 48.000000000000000000
+        Text = 'Last Updated:'
+        Width = 120.000000000000000000
+      end
+      object lblLastUpdated: TLabel
+        Height = 25.000000000000000000
+        Position.X = 136.000000000000000000
+        Position.Y = 48.000000000000000000
+        Width = 209.000000000000000000
+      end
+      object lblTaskListId: TLabel
+        Height = 73.000000000000000000
+        Position.X = 136.000000000000000000
+        Position.Y = 80.000000000000000000
+        Width = 209.000000000000000000
+      end
+      object Label5: TLabel
+        Height = 25.000000000000000000
+        Position.X = 7.000000000000000000
+        Position.Y = 80.000000000000000000
+        Text = 'Id:'
+        Width = 120.000000000000000000
+      end
+      object btnRemoveTaskList: TButton
+        Height = 31.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 162.000000000000000000
+        TabOrder = 6
+        Text = 'Remove'
+        Width = 80.000000000000000000
+        OnClick = btnRemoveTaskListClick
+      end
+      object btnAddList: TButton
+        Height = 31.000000000000000000
+        Position.X = 144.000000000000000000
+        Position.Y = 162.000000000000000000
+        TabOrder = 7
+        Text = 'Add'
+        Width = 80.000000000000000000
+        OnClick = btnAddListClick
+      end
+      object btnSaveList: TButton
+        Height = 31.000000000000000000
+        Position.X = 278.000000000000000000
+        Position.Y = 162.000000000000000000
+        TabOrder = 8
+        Text = 'Save'
+        Width = 80.000000000000000000
+        OnClick = btnSaveListClick
+      end
+      object lstTasks: TListBox
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Height = 625.000000000000000000
+        Position.Y = 200.000000000000000000
+        TabOrder = 9
+        Width = 369.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnItemClick = lstTasksItemClick
+        object ListBoxHeader2: TListBoxHeader
+          Height = 50.000000000000000000
+          TabOrder = 0
+          Width = 369.000000000000000000
+          object Label1: TLabel
+            Height = 33.000000000000000000
+            Position.X = 144.000000000000000000
+            Position.Y = 8.000000000000000000
+            Text = 'Tasks'
+            Width = 120.000000000000000000
+          end
+          object btnNextPageTasks: TButton
+            Anchors = [akLeft, akTop, akRight, akBottom]
+            Height = 35.000000000000000000
+            Position.X = 272.000000000000000000
+            Position.Y = 8.000000000000000000
+            TabOrder = 1
+            Text = 'Next Page'
+            Width = 89.000000000000000000
+          end
+          object btnAddTasks: TButton
+            Height = 33.000000000000000000
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            TabOrder = 2
+            Text = 'Add'
+            Width = 80.000000000000000000
+            OnClick = btnAddTasksClick
+          end
+        end
+        object SearchBox2: TSearchBox
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          Align = alTop
+          TabOrder = 1
+          Position.Y = 50.000000000000000000
+          Width = 369.000000000000000000
+          Height = 22.000000000000000000
+          KillFocusByReturn = False
+        end
+      end
+    end
+    object tabTaskDetail: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      Position.X = 185.000000000000000000
+      TabOrder = 2
+      Text = 'Task Detail'
+      Width = 92.000000000000000000
+      object Label6: TLabel
+        Height = 25.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 32.000000000000000000
+        Text = 'Title:'
+        Width = 120.000000000000000000
+      end
+      object edTitle: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        TabOrder = 1
+        Position.X = 136.000000000000000000
+        Position.Y = 32.000000000000000000
+        Width = 217.000000000000000000
+        Height = 25.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Label7: TLabel
+        Height = 25.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 80.000000000000000000
+        Text = 'Due Date :'
+        Width = 120.000000000000000000
+      end
+      object dtDue: TCalendarEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        TabOrder = 3
+        Cursor = crIBeam
+        Date = 41928.000000000000000000
+        Height = 25.000000000000000000
+        Position.X = 136.000000000000000000
+        Position.Y = 75.000000000000000000
+        Width = 217.000000000000000000
+      end
+      object cbCompleted: TCheckBox
+        Height = 25.000000000000000000
+        Position.X = 136.000000000000000000
+        Position.Y = 118.000000000000000000
+        TabOrder = 4
+        Text = 'Completed'
+        Width = 120.000000000000000000
+      end
+      object Label8: TLabel
+        Height = 25.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 155.000000000000000000
+        Text = 'Id:'
+        Width = 120.000000000000000000
+      end
+      object lblTaskId: TLabel
+        Height = 102.000000000000000000
+        Position.X = 136.000000000000000000
+        Position.Y = 155.000000000000000000
+        Width = 225.000000000000000000
+      end
+      object btnAddTask: TButton
+        Height = 35.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 467.000000000000000000
+        TabOrder = 7
+        Text = 'Add'
+        Width = 65.000000000000000000
+        OnClick = btnAddTaskClick
+      end
+      object btnAddChildTask: TButton
+        Height = 35.000000000000000000
+        Position.X = 200.000000000000000000
+        Position.Y = 467.000000000000000000
+        TabOrder = 8
+        Text = 'Add Child'
+        Width = 89.000000000000000000
+        OnClick = btnAddChildTaskClick
+      end
+      object btnSaveTask: TButton
+        Height = 35.000000000000000000
+        Position.X = 296.000000000000000000
+        Position.Y = 467.000000000000000000
+        TabOrder = 9
+        Text = 'Save'
+        Width = 67.000000000000000000
+        OnClick = btnSaveTaskClick
+      end
+      object btnRemoveTask: TButton
+        Height = 35.000000000000000000
+        Position.X = 6.000000000000000000
+        Position.Y = 467.000000000000000000
+        TabOrder = 10
+        Text = 'Remove Task'
+        Width = 115.000000000000000000
+        OnClick = btnRemoveTaskClick
+      end
+      object lblParent: TLabel
+        Height = 25.000000000000000000
+        Position.X = 143.000000000000000000
+        Position.Y = 248.000000000000000000
+        Width = 82.000000000000000000
+      end
+      object Label2: TLabel
+        Height = 25.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 251.000000000000000000
+        Text = 'Parent:'
+        Width = 120.000000000000000000
+      end
+    end
+    object tabChild: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 277.000000000000000000
+      TabOrder = 3
+      Text = 'Add Child'
+      Width = 91.000000000000000000
+      object lblChildParent: TLabel
+        Height = 148.000000000000000000
+        Position.X = 135.000000000000000000
+        Position.Y = 261.000000000000000000
+        VertTextAlign = taLeading
+        Width = 218.000000000000000000
+      end
+      object Label10: TLabel
+        Height = 25.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 262.000000000000000000
+        Text = 'Parent:'
+        Width = 120.000000000000000000
+      end
+      object Label11: TLabel
+        Height = 25.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 80.000000000000000000
+        Text = 'Due Date :'
+        Width = 120.000000000000000000
+      end
+      object dtChildDue: TCalendarEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        TabOrder = 3
+        Cursor = crIBeam
+        Date = 41928.000000000000000000
+        Height = 25.000000000000000000
+        Position.X = 134.000000000000000000
+        Position.Y = 75.000000000000000000
+        Width = 219.000000000000000000
+      end
+      object cbChildCompleted: TCheckBox
+        Height = 25.000000000000000000
+        Position.X = 135.000000000000000000
+        Position.Y = 118.000000000000000000
+        TabOrder = 4
+        Text = 'Completed'
+        Width = 120.000000000000000000
+      end
+      object edChildTitle: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        TabOrder = 5
+        Position.X = 135.000000000000000000
+        Position.Y = 32.000000000000000000
+        Width = 218.000000000000000000
+        Height = 25.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Label12: TLabel
+        Height = 25.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 32.000000000000000000
+        Text = 'Title:'
+        Width = 120.000000000000000000
+      end
+      object btnDoAddChild: TButton
+        Height = 35.000000000000000000
+        Position.X = 124.000000000000000000
+        Position.Y = 475.000000000000000000
+        TabOrder = 7
+        Text = 'Add'
+        Width = 80.000000000000000000
+        OnClick = btnDoAddChildClick
+      end
+    end
+  end
+  object speedbtn: TSpeedButton
+    Height = 22.000000000000000000
+    Position.X = 1.000000000000000000
+    Position.Y = 1.000000000000000000
+    Text = '< Back'
+    Width = 80.000000000000000000
+    OnClick = speedbtnClick
+  end
+  object TMSFMXCloudGTasks1: TTMSFMXCloudGTasks
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888/'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudGTasks1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 300
+    AuthFormSettings.Height = 600
+    Scopes.Strings = (
+      'https://www.googleapis.com/auth/userinfo.profile'
+      'https://www.googleapis.com/auth/userinfo.email'
+      'https://www.googleapis.com/auth/tasks')
+    Left = 88
+    Top = 360
+  end
+end

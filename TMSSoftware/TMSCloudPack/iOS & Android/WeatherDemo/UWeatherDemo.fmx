@@ -1,0 +1,223 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 417
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object TabControl1: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 417.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = tpBottom
+    Width = 320.000000000000000000
+    object TabItem1: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      TabOrder = 0
+      Text = 'City'
+      Trimming = ttCharacter
+      Width = 160.000000000000000000
+      object Button1: TButton
+        Align = alTop
+        Height = 44.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        TabOrder = 0
+        Text = 'Search'
+        Trimming = ttCharacter
+        Width = 310.000000000000000000
+        OnClick = Button1Click
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Align = alTop
+        TabOrder = 1
+        Position.X = 5.000000000000000000
+        Position.Y = 54.000000000000000000
+        Width = 310.000000000000000000
+        Height = 31.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        KillFocusByReturn = False
+      end
+      object ListBox1: TListBox
+        Align = alClient
+        Height = 273.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        TabOrder = 2
+        Width = 310.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnChange = ListBox1Change
+      end
+    end
+    object TabItem2: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      Position.X = 160.000000000000000000
+      TabOrder = 1
+      Text = 'Weather Forecast'
+      Trimming = ttCharacter
+      Width = 160.000000000000000000
+      object Button2: TButton
+        Align = alTop
+        Height = 44.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        TabOrder = 0
+        Text = 'Weather Forecast'
+        Trimming = ttCharacter
+        Width = 310.000000000000000000
+        OnClick = Button2Click
+      end
+      object ComboBox1: TComboBox
+        Align = alTop
+        DisableFocusEffect = False
+        Height = 30.000000000000000000
+        ItemIndex = 0
+        Margins.Left = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 54.000000000000000000
+        TabOrder = 1
+        Width = 310.000000000000000000
+        object TListBoxItem
+          Height = 19.000000000000000000
+          IsSelected = True
+          Text = 'English'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'Spanish'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'Portuguese'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'French'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'German'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'Dutch'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'Italian'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'Polish'
+          Width = 19.000000000000000000
+        end
+      end
+      object TMSFMXCloudImage1: TTMSFMXCloudImage
+        Position.X = 8.000000000000000000
+        Position.Y = 104.000000000000000000
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        ClipChildren = True
+        Version = '1.5.0.1'
+      end
+      object TMSFMXCloudImage2: TTMSFMXCloudImage
+        Position.X = 8.000000000000000000
+        Position.Y = 216.000000000000000000
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        ClipChildren = True
+        Version = '1.5.0.1'
+      end
+      object Fore2: TLabel
+        AutoSize = True
+        Height = 21.000000000000000000
+        Position.X = 72.000000000000000000
+        Position.Y = 216.000000000000000000
+        Width = 240.000000000000000000
+        WordWrap = False
+        Trimming = ttCharacter
+      end
+      object TMSFMXCloudImage3: TTMSFMXCloudImage
+        Position.X = 8.000000000000000000
+        Position.Y = 320.000000000000000000
+        Width = 50.000000000000000000
+        Height = 50.000000000000000000
+        ClipChildren = True
+        Version = '1.5.0.1'
+      end
+      object fore3: TLabel
+        AutoSize = True
+        Height = 21.000000000000000000
+        Position.X = 72.000000000000000000
+        Position.Y = 320.000000000000000000
+        Width = 240.000000000000000000
+        WordWrap = False
+        Trimming = ttCharacter
+      end
+      object Fore1: TLabel
+        AutoSize = True
+        Height = 21.000000000000000000
+        Position.X = 72.000000000000000000
+        Position.Y = 104.000000000000000000
+        Width = 240.000000000000000000
+        WordWrap = False
+        Trimming = ttCharacter
+      end
+    end
+  end
+  object TMSFMXCloudWeather1: TTMSFMXCloudWeather
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    Left = 224
+    Top = 344
+  end
+  object TMSFMXCloudWeatherLocationLookupProvider1: TTMSFMXCloudWeatherLocationLookupProvider
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    Left = 224
+    Top = 416
+  end
+end

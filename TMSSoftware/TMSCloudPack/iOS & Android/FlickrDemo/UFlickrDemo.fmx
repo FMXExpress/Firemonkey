@@ -1,0 +1,415 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 1024.000000000000000000
+    object Button1: TButton
+      Height = 31.000000000000000000
+      Position.X = 13.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 0
+      Text = 'Connect'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Height = 31.000000000000000000
+      Position.X = 93.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 1
+      Text = 'Disconnect'
+      Trimming = ttCharacter
+      Width = 92.000000000000000000
+      OnClick = Button2Click
+    end
+  end
+  object Panel1: TPanel
+    Align = alLeft
+    Height = 704.000000000000000000
+    Position.Y = 44.000000000000000000
+    Width = 433.000000000000000000
+    TabOrder = 1
+    object Line1: TLine
+      Align = alRight
+      Height = 704.000000000000000000
+      LineType = ltLeft
+      Position.X = 432.000000000000000000
+      Width = 1.000000000000000000
+    end
+    object Button6: TButton
+      Enabled = False
+      Height = 31.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 130.000000000000000000
+      TabOrder = 0
+      Text = 'Create Set'
+      Width = 254.000000000000000000
+      OnClick = Button6Click
+    end
+    object Label3: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 94.000000000000000000
+      Text = 'Photostream:'
+      Width = 104.000000000000000000
+      WordWrap = False
+    end
+    object ComboBox1: TComboBox
+      DisableFocusEffect = False
+      Enabled = False
+      Height = 31.000000000000000000
+      Position.X = 128.000000000000000000
+      Position.Y = 91.000000000000000000
+      TabOrder = 2
+      Width = 144.000000000000000000
+      OnChange = ComboBox1Change
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+      TabOrder = 4
+      Text = 'Description'
+      Position.X = 127.000000000000000000
+      Position.Y = 57.000000000000000000
+      Width = 145.000000000000000000
+      Height = 31.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object Label2: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 61.000000000000000000
+      Text = 'Description:'
+      Width = 93.000000000000000000
+      WordWrap = False
+    end
+    object Label1: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 26.000000000000000000
+      Text = 'Title:'
+      Width = 39.000000000000000000
+      WordWrap = False
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+      TabOrder = 3
+      Text = 'Title'
+      Position.X = 127.000000000000000000
+      Position.Y = 23.000000000000000000
+      Width = 145.000000000000000000
+      Height = 31.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object SpeedButton3: TSpeedButton
+      Enabled = False
+      Height = 31.000000000000000000
+      Position.X = 287.000000000000000000
+      Position.Y = 91.000000000000000000
+      Width = 23.000000000000000000
+      OnClick = SpeedButton3Click
+      object Image3: TImage
+        Align = alClient
+        Height = 31.000000000000000000
+        HitTest = False
+        Width = 23.000000000000000000
+      end
+    end
+    object SpeedButton4: TSpeedButton
+      Enabled = False
+      Height = 31.000000000000000000
+      Position.X = 316.000000000000000000
+      Position.Y = 91.000000000000000000
+      Width = 23.000000000000000000
+      OnClick = SpeedButton4Click
+      object Image4: TImage
+        Align = alClient
+        Height = 31.000000000000000000
+        HitTest = False
+        Width = 23.000000000000000000
+      end
+    end
+    object ListView1: TListBox
+      Height = 137.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 176.000000000000000000
+      TabOrder = 10
+      Width = 393.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListView1Change
+    end
+    object Label4: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 339.000000000000000000
+      Text = 'Title:'
+      Width = 39.000000000000000000
+      WordWrap = False
+    end
+    object Label5: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 369.000000000000000000
+      Text = 'Description:'
+      Width = 93.000000000000000000
+      WordWrap = False
+    end
+    object Label6: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 403.000000000000000000
+      Text = 'Location:'
+      Width = 72.000000000000000000
+      WordWrap = False
+    end
+    object Edit4: TEdit
+      Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+      TabOrder = 6
+      Text = 'Image Description'
+      Position.X = 127.000000000000000000
+      Position.Y = 370.000000000000000000
+      Width = 145.000000000000000000
+      Height = 31.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object Edit3: TEdit
+      Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+      TabOrder = 5
+      Text = 'Image title'
+      Position.X = 127.000000000000000000
+      Position.Y = 336.000000000000000000
+      Width = 145.000000000000000000
+      Height = 31.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object Label7: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 282.000000000000000000
+      Position.Y = 317.000000000000000000
+      Text = 'Tags:'
+      Width = 42.000000000000000000
+      WordWrap = False
+    end
+    object SpeedButton6: TSpeedButton
+      Height = 31.000000000000000000
+      Position.X = 284.000000000000000000
+      Position.Y = 351.000000000000000000
+      Width = 23.000000000000000000
+      OnClick = SpeedButton6Click
+      object Image6: TImage
+        Align = alClient
+        Height = 31.000000000000000000
+        HitTest = False
+        Width = 23.000000000000000000
+      end
+    end
+    object SpeedButton7: TSpeedButton
+      Height = 31.000000000000000000
+      Position.X = 284.000000000000000000
+      Position.Y = 389.000000000000000000
+      Width = 23.000000000000000000
+      OnClick = SpeedButton7Click
+      object Image7: TImage
+        Align = alClient
+        Height = 31.000000000000000000
+        HitTest = False
+        Width = 23.000000000000000000
+      end
+    end
+    object SpeedButton8: TSpeedButton
+      Enabled = False
+      Height = 31.000000000000000000
+      Position.X = 352.000000000000000000
+      Position.Y = 443.000000000000000000
+      Width = 23.000000000000000000
+      OnClick = SpeedButton8Click
+      object Image8: TImage
+        Align = alClient
+        Height = 31.000000000000000000
+        HitTest = False
+        Width = 23.000000000000000000
+      end
+    end
+    object SpeedButton2: TSpeedButton
+      Enabled = False
+      Height = 31.000000000000000000
+      Position.X = 386.000000000000000000
+      Position.Y = 443.000000000000000000
+      Width = 23.000000000000000000
+      OnClick = SpeedButton2Click
+      object Image2: TImage
+        Align = alClient
+        Height = 31.000000000000000000
+        HitTest = False
+        Width = 23.000000000000000000
+      end
+    end
+    object Button8: TButton
+      Enabled = False
+      Height = 33.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 439.000000000000000000
+      TabOrder = 1
+      Text = 'Upload Photo to'
+      Width = 257.000000000000000000
+      OnClick = Button8Click
+    end
+    object ListView2: TListBox
+      Height = 114.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 479.000000000000000000
+      TabOrder = 8
+      Width = 393.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListView2Change
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [igPan, igDoubleTap, igLongTap]
+      Height = 89.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 599.000000000000000000
+      TabOrder = 11
+      Width = 393.000000000000000000
+      Lines.Strings = (
+        'Memo1')
+      ReadOnly = True
+    end
+    object ListBox1: TListBox
+      Height = 81.000000000000000000
+      Position.X = 312.000000000000000000
+      Position.Y = 352.000000000000000000
+      TabOrder = 24
+      Width = 97.000000000000000000
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      object TListBoxItem
+        Height = 19.000000000000000000
+        StyleLookup = 'listboxitemnodetail'
+        Text = 'Nature'
+        Width = 97.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 19.000000000000000000
+        StyleLookup = 'listboxitemnodetail'
+        Text = 'Winter'
+        Width = 97.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 38.000000000000000000
+        StyleLookup = 'listboxitemnodetail'
+        Text = 'Sport'
+        Width = 97.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 57.000000000000000000
+        StyleLookup = 'listboxitemnodetail'
+        Text = 'Animals'
+        Width = 97.000000000000000000
+      end
+    end
+    object SpeedButton5: TSpeedButton
+      Enabled = False
+      Height = 31.000000000000000000
+      Position.X = 388.000000000000000000
+      Position.Y = 139.000000000000000000
+      Trimming = ttCharacter
+      Width = 23.000000000000000000
+      OnClick = SpeedButton5Click
+      object Image5: TImage
+        Align = alClient
+        Height = 31.000000000000000000
+        HitTest = False
+        Width = 23.000000000000000000
+      end
+    end
+    object Edit5: TEdit
+      Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+      TabOrder = 26
+      Text = 'Image Location'
+      Position.X = 127.000000000000000000
+      Position.Y = 403.000000000000000000
+      Width = 145.000000000000000000
+      Height = 31.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object Edit6: TEdit
+      Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+      TabOrder = 27
+      Text = 'New Tag'
+      Position.X = 328.000000000000000000
+      Position.Y = 317.000000000000000000
+      Width = 81.000000000000000000
+      Height = 31.000000000000000000
+      KillFocusByReturn = False
+    end
+  end
+  object Panel2: TPanel
+    Align = alClient
+    Height = 704.000000000000000000
+    Width = 591.000000000000000000
+    TabOrder = 2
+    object TMSFMXCloudImage1: TTMSFMXCloudImage
+      Align = alClient
+      Width = 591.000000000000000000
+      Height = 704.000000000000000000
+      ClipChildren = True
+      Version = '1.5.0.1'
+    end
+  end
+  object TMSFMXCloudFlickr1: TTMSFMXCloudFlickr
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudFlickr1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+  end
+  object TMSFMXCloudGoogleLocationLookupProvider1: TTMSFMXCloudGoogleLocationLookupProvider
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    Language = 'en'
+    Left = 752
+    Top = 216
+  end
+end

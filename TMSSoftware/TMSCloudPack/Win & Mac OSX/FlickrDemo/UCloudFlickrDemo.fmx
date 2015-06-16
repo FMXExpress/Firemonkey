@@ -1,0 +1,504 @@
+object Form816: TForm816
+  Left = 0
+  Top = 0
+  Caption = 'TMS Cloud Flickr Demo'
+  ClientHeight = 699
+  ClientWidth = 938
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Panel2: TPanel
+    Align = alTop
+    Height = 69.000000000000000000
+    Width = 938.000000000000000000
+    TabOrder = 0
+    object Image1: TImage
+      Align = alRight
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000900000001608060000002FAF15
+        7D000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        076A494441546843ED9A5B68544718C7BFD9DD6C5402D52AE993B22949E39BC6
+        F4CD881114F264B2F421C142D35C5E2AF112F056B0C99A8A77B062A005938DFB
+        22D252D0D71A30ADFAA851A48110318BB62F36A20F5E9A6677A7F3FFCE399BB3
+        E7CCDE5C375BCAFEC2EC999973CBEEFCF9BEFFCC39827474CEAE246FBC8D84DC
+        4A0911E03E0FBD24920F68B42EA4F607C817FB92FBED605FB1E89969569F288B
+        4811A570ED65B355A604B805D43DA384131B23AA5869F6A4325A2B8CC11437CD
+        9E45B00F743DBAA904973AD8248F1524B09E1975AE18345B06099AA0B1DA6D66
+        AB4C09F0985B0344964CE29174DFAC9529C3A40AC817DB97563C40228D9529B3
+        48AA801262A3595B045127E6ADE1F4E48DF79BBD65CA30A902D2212942919A28
+        D747EA734B61F025105C4A29A2C12E5332B20BC82397C6F7C098DB4BEFB43B1A
+        161149270392BE6DB68AD137B83241C7F7631F1F54C6859A513D92663D37104D
+        DED72CCCB88EF25DD46674389151358AFD14AEBBA68ECD3E0BEB99511300E15E
+        5E20A92262DD84A4E3AEEF2AE8A888D3D0790F79F69B5D0CFA9590427192AD68
+        FB68A081779449217B042A163D33E7D530418469C4034480A4B90E950D2C3FE8
+        C503E14E980D173AF15824487E204894679E19288D808C48A11D3417B9A4502C
+        7CF2F2830344A82CDE4B279E04A9F3141E8A1F53027AE025519E3CA4C1C33FB2
+        5574601696ED987C30D29626520095B288AEA9ED65BE6FAEF8E29AB5AB859794
+        F006CDC63B21E8D84B0F1DFD4ED037857FEFFF291EF61056D121647FD663F221
+        E1F03149946846EBB05C1054DB2E0AD72ACFA1BC4BCC975948DD8F20464D1AF4
+        05D5EC31A775ABBF89D7B7BA88BC354A78AB54582E479C34BC7AF54A76757571
+        B972E58A5CFA14E632D70A443688C609BC4B2611786480C482F2524E32FB1E27
+        CB88B629D37C59D0D751441D557FEFBE676A6A2AF9C33BCB810307F29BC81499
+        BB77EF4A7B31BBB5A43E0BD3CEC88C198CD93078D759187B0BCD79520679A695
+        09DD2C4C07C4982652EA6661CAEF5CF3D2D182525D3E3C7BF64C0E0F0FD3D3A7
+        4FB93D3838488140807FB75BB76EC93B77EE70BF9D356BD6506F6F6FEA58A561
+        606080BF23AEBF76ED5AEE1B1A1AE2739D62686C6C4CB9E6C8C848F2FEF5F5F5
+        BC9D9E9EE6ED8E1D3B68D7AE5D021168CF9E3DDCD7D7D7F71F1190EE1E4E7215
+        10BC4F6C598D2E72E90484FF4B799CB4467BFECFDBF2E4A57155ABA150A833A7
+        41CC0606E1CC9933343737479B366DA29D3B77527575355F3B1A8DF2BEB76FDF
+        F220767474240566E7D4A953FC5D30C00D0DC60AC3DEBD7BF9384B08172F5EA4
+        AAAA2A81E877F5EA5516D5EAD5AB69C58A15C93A440081E29EE8DBBC7933DF13
+        E7E15AF85F712EAED7DEDE4E4D4D4D0401419C1066E9A6F176729DAA3B61A3AD
+        04938232D36CAA734518ABEC69510E893650DFE01746F33D80C1E9EEEEE6FABD
+        7BF7281C0E731D8C8F8FB37810998E1C3922209EDDBB7773AAC3D6120EF661E0
+        01AE6589C709C473F6EC59AE9F3E7D9ACE9D3B2730F010178404E14C4E4E2623
+        16229D251E803A0405EEDF5FCCECEBD7AFE7EDD20A285D94117290A7E2F98287
+        BBB2426778DB4C739D033CF3D322E71FCBF0A5DBAAF680867FF895A6C7BF97A1
+        5088CB2FBF3F949113463D742222675EC4E463DBFED085888C5C30EA3F4ECEB9
+        221F8471E8D021AE3F79F284230A0A04654F6B00038D6801201CAED84044B07B
+        2A7B1A842001446645390061202D41AC100FC07D74D8056561A5B85244208DD7
+        5111C81BBF69A4461B789CE1EC73C22F94694400738DD7530A40547E2C3ADA37
+        A8DA060A7DD52C2A16FE51F53A95CA42C2FFDBCF345BDDC2F5E655B3F4D3C48C
+        0A86AFD5AFDDC47D552F66A9735F487CDEE8A7A9E85F7C3D2776112115414868
+        DBC5035FF4E6CD1B1600061B6D73571244137B411AB2C0B9E0F9F3E7BCB58314
+        0A2086E5CB97F3FF8088C59D369012B185E02C4A2720118717722368A3FA8088
+        66D943C18F49EFA4DA93594006EE191C5299279F54A6A7B2D2A73E51C00291FF
+        43AE2DABC0678CEB31E84A1D13574D7FFD27DCA794C49F95E4577FD6F96EEC62
+        C100D9DBF01FD7AF5F678F82488241D6996C80286115B38BB1C4343A3ACAE2C3
+        3561E451BF71E306A72D9869081775A43B444288060533444445F81F1C87EB8F
+        8D8D25EFB3F402C2137DA91B700B158D7453FD4C2035EA1639711D36DF05E237
+        B7A454E367E5D0A76D9FD1477F8C23DAC8DBAF6B28D85C435EDE6388AA5060A6
+        615E113930B8F03830BC8812D887D9962526A4306BF6E5ECC7F1070F1E64B30E
+        31A2EFF0E1C304F140B0D60C0DC2451DF7407441CA44696D6D659FD4D2D2C2C7
+        415C4893A88314B5167D16667FAC008FC26B38195E6063CCF3B23D4C45BA3322
+        961B116F8070D3CCC2B615B2D23C3F3F2F2B2B2B537FC73C8139467AC26C2C18
+        0CF2B5B048879406D6AD5B47DBB76F27080A86D71AD82D5BB61474DF7701E285
+        67B2EE9DFA0F60E09DE02532E77B4018ACB8D7BD80670D261E943A5F4E131471
+        BD000FE3EC892B2151A791C21C4020425EE03522084EAAE3ECE039D968DDA289
+        86C81262ABD95AC43C2E4EC75DDF4F85E0FE622C1C66C38A303A2018ACB998CD
+        24767F02C36B4F77A581E85FCDC7B331E5FAEC240000000049454E44AE426082}
+      Height = 69.000000000000000000
+      Position.X = 745.000000000000000000
+      Width = 193.000000000000000000
+    end
+    object Button1: TButton
+      Height = 25.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'Connect'
+      Width = 75.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button3: TButton
+      Height = 25.000000000000000000
+      Position.X = 89.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Disconnect'
+      Width = 75.000000000000000000
+      OnClick = Button3Click
+    end
+    object ProgressBar1: TProgressBar
+      Height = 10.000000000000000000
+      Orientation = orHorizontal
+      Position.X = 8.000000000000000000
+      Position.Y = 47.000000000000000000
+      Visible = False
+      Width = 417.000000000000000000
+    end
+  end
+  object GroupBox1: TGroupBox
+    Align = alLeft
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 630.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Position.Y = 69.000000000000000000
+    Text = 'Sets'
+    Width = 422.000000000000000000
+    TabOrder = 1
+    object Label1: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 34.000000000000000000
+      Text = 'Title:'
+      Width = 27.000000000000000000
+      WordWrap = False
+    end
+    object Label2: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 61.000000000000000000
+      Text = 'Description:'
+      Width = 62.000000000000000000
+      WordWrap = False
+    end
+    object Label3: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 86.000000000000000000
+      Text = 'Photostream:'
+      Width = 68.000000000000000000
+      WordWrap = False
+    end
+    object Label4: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 299.000000000000000000
+      Text = 'Title:'
+      Width = 27.000000000000000000
+      WordWrap = False
+    end
+    object Label5: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 326.000000000000000000
+      Text = 'Description:'
+      Width = 62.000000000000000000
+      WordWrap = False
+    end
+    object Label6: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 352.000000000000000000
+      Text = 'Location:'
+      Width = 48.000000000000000000
+      WordWrap = False
+    end
+    object SpeedButton1: TSpeedButton
+      Enabled = False
+      Height = 22.000000000000000000
+      Position.X = 357.000000000000000000
+      Position.Y = 379.000000000000000000
+      Width = 23.000000000000000000
+      WordWrap = True
+      OnClick = Button5Click
+    end
+    object SpeedButton2: TSpeedButton
+      Enabled = False
+      Height = 22.000000000000000000
+      Position.X = 386.000000000000000000
+      Position.Y = 379.000000000000000000
+      Width = 23.000000000000000000
+      WordWrap = True
+      OnClick = Button7Click
+    end
+    object SpeedButton3: TSpeedButton
+      Enabled = False
+      Height = 22.000000000000000000
+      Position.X = 239.000000000000000000
+      Position.Y = 83.000000000000000000
+      Width = 23.000000000000000000
+      WordWrap = True
+      OnClick = Button11Click
+    end
+    object SpeedButton4: TSpeedButton
+      Enabled = False
+      Height = 22.000000000000000000
+      Position.X = 268.000000000000000000
+      Position.Y = 83.000000000000000000
+      Width = 23.000000000000000000
+      WordWrap = True
+      OnClick = Button10Click
+    end
+    object SpeedButton5: TSpeedButton
+      Enabled = False
+      Height = 22.000000000000000000
+      Position.X = 386.000000000000000000
+      Position.Y = 115.000000000000000000
+      Width = 23.000000000000000000
+      WordWrap = True
+      OnClick = Button12Click
+    end
+    object Label7: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 259.000000000000000000
+      Position.Y = 299.000000000000000000
+      Text = 'Tags:'
+      Width = 29.000000000000000000
+      WordWrap = False
+    end
+    object SpeedButton6: TSpeedButton
+      Height = 22.000000000000000000
+      Position.X = 292.000000000000000000
+      Position.Y = 295.000000000000000000
+      Width = 23.000000000000000000
+      WordWrap = True
+      OnClick = SpeedButton6Click
+    end
+    object SpeedButton7: TSpeedButton
+      Height = 22.000000000000000000
+      Position.X = 292.000000000000000000
+      Position.Y = 317.000000000000000000
+      Width = 23.000000000000000000
+      WordWrap = True
+      OnClick = SpeedButton7Click
+    end
+    object SpeedButton8: TSpeedButton
+      Enabled = False
+      Height = 22.000000000000000000
+      Position.X = 328.000000000000000000
+      Position.Y = 379.000000000000000000
+      Width = 23.000000000000000000
+      WordWrap = True
+      OnClick = Button5Click
+    end
+    object Button6: TButton
+      Enabled = False
+      Height = 23.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 114.000000000000000000
+      TabOrder = 0
+      Text = 'Create Set'
+      Width = 224.000000000000000000
+      OnClick = Button6Click
+    end
+    object Button8: TButton
+      Enabled = False
+      Height = 25.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 376.000000000000000000
+      TabOrder = 1
+      Text = 'Upload Photo to'
+      Width = 224.000000000000000000
+      OnClick = Button8Click
+    end
+    object ComboBox1: TComboBox
+      DisableFocusEffect = False
+      Enabled = False
+      Height = 21.000000000000000000
+      Position.X = 88.000000000000000000
+      Position.Y = 83.000000000000000000
+      TabOrder = 2
+      Width = 144.000000000000000000
+      OnChange = ComboBox1Change
+    end
+    object Edit1: TEdit
+      TabOrder = 3
+      Text = 'Set title'
+      Position.X = 87.000000000000000000
+      Position.Y = 31.000000000000000000
+      Width = 145.000000000000000000
+      Height = 21.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object Edit2: TEdit
+      TabOrder = 4
+      Text = 'Set Description'
+      Position.X = 87.000000000000000000
+      Position.Y = 57.000000000000000000
+      Width = 145.000000000000000000
+      Height = 21.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object Edit3: TEdit
+      TabOrder = 5
+      Text = 'Image title'
+      Position.X = 87.000000000000000000
+      Position.Y = 296.000000000000000000
+      Width = 145.000000000000000000
+      Height = 21.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object Edit4: TEdit
+      TabOrder = 6
+      Text = 'Image Description'
+      Position.X = 87.000000000000000000
+      Position.Y = 322.000000000000000000
+      Width = 145.000000000000000000
+      Height = 21.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+    object CloudListView1: TTMSFMXCloudListView
+      Height = 138.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 143.000000000000000000
+      TabOrder = 7
+      Width = 401.000000000000000000
+      OnClick = CloudListView1Click
+      RowCount = 0
+      RowHeight = 21.000000000000000000
+      Columns = <
+        item
+          Caption = 'Title'
+          Tag = 0
+        end
+        item
+          Caption = 'Description'
+          Tag = 0
+        end>
+      Items = <>
+      object TStringColumn
+        Header = 'Title'
+        Height = 0.000000000000000000
+        ReadOnly = True
+        TabOrder = 0
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Description'
+        Height = 0.000000000000000000
+        Position.X = 100.000000000000000000
+        ReadOnly = True
+        TabOrder = 1
+        Width = 100.000000000000000000
+      end
+    end
+    object CloudListView2: TTMSFMXCloudListView
+      Height = 114.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 407.000000000000000000
+      TabOrder = 8
+      Width = 399.000000000000000000
+      OnClick = CloudListView2Click
+      RowCount = 0
+      RowHeight = 21.000000000000000000
+      Columns = <
+        item
+          Caption = 'Title'
+          Tag = 0
+        end
+        item
+          Caption = 'Description'
+          Tag = 0
+        end
+        item
+          Caption = 'Geo Location'
+          Tag = 0
+        end
+        item
+          Caption = 'Tags'
+          Tag = 0
+        end>
+      Items = <>
+      object TStringColumn
+        Header = 'Title'
+        Height = 0.000000000000000000
+        ReadOnly = True
+        TabOrder = 0
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Description'
+        Height = 0.000000000000000000
+        Position.X = 100.000000000000000000
+        ReadOnly = True
+        TabOrder = 1
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Geo Location'
+        Height = 0.000000000000000000
+        Position.X = 200.000000000000000000
+        ReadOnly = True
+        TabOrder = 2
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Tags'
+        Height = 0.000000000000000000
+        Position.X = 300.000000000000000000
+        ReadOnly = True
+        TabOrder = 3
+        Width = 100.000000000000000000
+      end
+    end
+    object ListBox1: TListBox
+      Height = 75.000000000000000000
+      Position.X = 321.000000000000000000
+      Position.Y = 295.000000000000000000
+      TabOrder = 10
+      Width = 88.000000000000000000
+      ItemHeight = 13.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+    end
+    object Memo1: TMemo
+      Height = 89.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 527.000000000000000000
+      TabOrder = 11
+      Width = 399.000000000000000000
+      Lines.Strings = (
+        'Memo1')
+      ReadOnly = True
+    end
+    object Edit5: TEdit
+      TabOrder = 26
+      Text = 'Image Description'
+      Position.X = 87.000000000000000000
+      Position.Y = 348.000000000000000000
+      Width = 145.000000000000000000
+      Height = 21.000000000000000000
+      Enabled = False
+      KillFocusByReturn = False
+    end
+  end
+  object GroupBox2: TGroupBox
+    Align = alClient
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 630.000000000000000000
+    Text = 'Image view'
+    Width = 516.000000000000000000
+    TabOrder = 2
+    object TMSFMXCloudCloudImage1: TTMSFMXCloudImage
+      Align = alClient
+      Width = 516.000000000000000000
+      Height = 630.000000000000000000
+      ClipChildren = True
+      Version = '1.5.0.1'
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 432
+    Top = 96
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 392
+    Top = 96
+  end
+  object TMSFMXCloudFlickr1: TTMSFMXCloudFlickr
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnUploadProgress = TMSFMXCloudFlickr1DownloadProgress
+    OnDownloadProgress = TMSFMXCloudFlickr1DownloadProgress
+    OnReceivedAccessToken = TMSFMXCloudFlickr1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+  end
+  object TMSFMXCloudGoogleLocationLookupProvider1: TTMSFMXCloudGoogleLocationLookupProvider
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    Language = 'en'
+    Left = 456
+    Top = 336
+  end
+end

@@ -1,0 +1,467 @@
+object Form12: TForm12
+  Left = 0
+  Top = 0
+  Caption = 'TMS FMX Cloud Pack: DropBox DataStore Demo'
+  ClientHeight = 520
+  ClientWidth = 744
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Panel1: TPanel
+    Align = alTop
+    Height = 35.000000000000000000
+    Width = 744.000000000000000000
+    TabOrder = 1
+    object btConnect: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      TabOrder = 0
+      Text = 'Connect'
+      Width = 80.000000000000000000
+      OnClick = btConnectClick
+    end
+    object btRemove: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 90.000000000000000000
+      Position.Y = 5.000000000000000000
+      TabOrder = 2
+      Text = 'Disconnect'
+      Width = 127.000000000000000000
+      OnClick = btRemoveClick
+    end
+    object btSample: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 612.000000000000000000
+      Position.Y = 5.000000000000000000
+      TabOrder = 1
+      Text = 'Create Sample'
+      Width = 127.000000000000000000
+      OnClick = btSampleClick
+    end
+  end
+  object GroupBox1: TGroupBox
+    Align = alTop
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 227.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 40.000000000000000000
+    Text = 'Datastores'
+    Width = 734.000000000000000000
+    TabOrder = 0
+    object lvdatastores: TTMSFMXCloudListView
+      Height = 197.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 20.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 20.000000000000000000
+      TabOrder = 7
+      Width = 431.000000000000000000
+      OnClick = lvdatastoresClick
+      RowCount = 0
+      RowHeight = 21.000000000000000000
+      Columns = <
+        item
+          Caption = 'Name'
+          Tag = 0
+        end
+        item
+          Caption = 'Revision'
+          Tag = 0
+        end
+        item
+          Caption = 'Description'
+          Tag = 0
+        end
+        item
+          Caption = 'Timestamp'
+          Tag = 0
+        end>
+      Items = <>
+      object TStringColumn
+        Header = 'Name'
+        Height = 0.000000000000000000
+        ReadOnly = True
+        TabOrder = 0
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Revision'
+        Height = 0.000000000000000000
+        Position.X = 100.000000000000000000
+        ReadOnly = True
+        TabOrder = 1
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Description'
+        Height = 0.000000000000000000
+        Position.X = 200.000000000000000000
+        ReadOnly = True
+        TabOrder = 2
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Timestamp'
+        Height = 0.000000000000000000
+        Position.X = 300.000000000000000000
+        ReadOnly = True
+        TabOrder = 3
+        Width = 100.000000000000000000
+      end
+    end
+    object btCreate: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 449.000000000000000000
+      Position.Y = 21.000000000000000000
+      TabOrder = 4
+      Text = 'Create datastore'
+      Width = 150.000000000000000000
+      OnClick = btCreateClick
+    end
+    object edDataStore: TEdit
+      TabOrder = 8
+      Position.X = 608.000000000000000000
+      Position.Y = 22.000000000000000000
+      Width = 113.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object btSetMetaData: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 449.000000000000000000
+      Position.Y = 53.000000000000000000
+      TabOrder = 1
+      Text = 'Set metadata'
+      Width = 150.000000000000000000
+      OnClick = btSetMetaDataClick
+    end
+    object edTitle: TEdit
+      TabOrder = 5
+      Position.X = 608.000000000000000000
+      Position.Y = 54.000000000000000000
+      Width = 113.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object btDeleteDataStore: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 449.000000000000000000
+      Position.Y = 85.000000000000000000
+      TabOrder = 2
+      Text = 'Delete datastore'
+      Width = 150.000000000000000000
+      OnClick = btDeleteDataStoreClick
+    end
+    object btGetByName: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 449.000000000000000000
+      Position.Y = 189.000000000000000000
+      TabOrder = 3
+      Text = 'Datastore by name'
+      Width = 150.000000000000000000
+      OnClick = btGetByNameClick
+    end
+    object dsName: TEdit
+      TabOrder = 6
+      Text = 'default'
+      Position.X = 608.000000000000000000
+      Position.Y = 190.000000000000000000
+      Width = 113.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edId: TEdit
+      TabOrder = 0
+      Position.X = 448.000000000000000000
+      Position.Y = 120.000000000000000000
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      Visible = False
+      KillFocusByReturn = False
+    end
+  end
+  object GroupBox2: TGroupBox
+    Align = alClient
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 243.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Text = 'Data'
+    Width = 734.000000000000000000
+    TabOrder = 2
+    object cbRow: TComboBox
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      Position.X = 72.000000000000000000
+      Position.Y = 22.000000000000000000
+      TabOrder = 0
+      Width = 100.000000000000000000
+      OnChange = cbRowChange
+    end
+    object Label1: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 24.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Row:'
+      Width = 27.000000000000000000
+      WordWrap = False
+    end
+    object Label2: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 184.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Table:'
+      Width = 33.000000000000000000
+      WordWrap = False
+    end
+    object edTableName: TEdit
+      TabOrder = 17
+      Position.X = 224.000000000000000000
+      Position.Y = 22.000000000000000000
+      Width = 129.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object Label3: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 48.000000000000000000
+      Position.Y = 56.000000000000000000
+      Text = 'Fields:'
+      Width = 34.000000000000000000
+      WordWrap = False
+    end
+    object Label4: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 208.000000000000000000
+      Position.Y = 56.000000000000000000
+      Text = 'Values:'
+      Width = 38.000000000000000000
+      WordWrap = False
+    end
+    object edField1: TEdit
+      TabOrder = 16
+      Position.X = 72.000000000000000000
+      Position.Y = 78.000000000000000000
+      Width = 129.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edValue1: TEdit
+      TabOrder = 14
+      Position.X = 224.000000000000000000
+      Position.Y = 78.000000000000000000
+      Width = 129.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edField2: TEdit
+      TabOrder = 15
+      Position.X = 72.000000000000000000
+      Position.Y = 110.000000000000000000
+      Width = 129.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edValue2: TEdit
+      TabOrder = 12
+      Position.X = 224.000000000000000000
+      Position.Y = 110.000000000000000000
+      Width = 129.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edField3: TEdit
+      TabOrder = 13
+      Position.X = 72.000000000000000000
+      Position.Y = 142.000000000000000000
+      Width = 129.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edValue3: TEdit
+      TabOrder = 10
+      Position.X = 224.000000000000000000
+      Position.Y = 142.000000000000000000
+      Width = 129.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edField4: TEdit
+      TabOrder = 11
+      Position.X = 72.000000000000000000
+      Position.Y = 174.000000000000000000
+      Width = 129.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edValue4: TEdit
+      TabOrder = 9
+      Position.X = 224.000000000000000000
+      Position.Y = 174.000000000000000000
+      Width = 129.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object cb1: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 368.000000000000000000
+      Position.Y = 80.000000000000000000
+      TabOrder = 18
+      Width = 17.000000000000000000
+    end
+    object cb2: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 368.000000000000000000
+      Position.Y = 112.000000000000000000
+      TabOrder = 22
+      Width = 17.000000000000000000
+    end
+    object cb3: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 368.000000000000000000
+      Position.Y = 144.000000000000000000
+      TabOrder = 21
+      Width = 17.000000000000000000
+    end
+    object cb4: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 368.000000000000000000
+      Position.Y = 176.000000000000000000
+      TabOrder = 20
+      Width = 17.000000000000000000
+    end
+    object btDeleteRow: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 449.000000000000000000
+      Position.Y = 77.000000000000000000
+      TabOrder = 7
+      Text = 'Delete current record'
+      Width = 150.000000000000000000
+      OnClick = btDeleteRowClick
+    end
+    object btInsertRow: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 449.000000000000000000
+      Position.Y = 109.000000000000000000
+      TabOrder = 6
+      Text = 'Insert as a new record'
+      Width = 150.000000000000000000
+      OnClick = btInsertRowClick
+    end
+    object btUpdateRow: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 449.000000000000000000
+      Position.Y = 141.000000000000000000
+      TabOrder = 5
+      Text = 'Update current record'
+      Width = 150.000000000000000000
+      OnClick = btUpdateRowClick
+    end
+    object btDeleteFields: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 449.000000000000000000
+      Position.Y = 173.000000000000000000
+      TabOrder = 4
+      Text = 'Delete selected fields'
+      Width = 150.000000000000000000
+      OnClick = btDeleteFieldsClick
+    end
+    object btClear: TButton
+      Height = 25.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 449.000000000000000000
+      Position.Y = 205.000000000000000000
+      TabOrder = 3
+      Text = 'Clear values'
+      Width = 150.000000000000000000
+      OnClick = btClearClick
+    end
+    object Line1: TLine
+      Height = 1.000000000000000000
+      LineType = ltDiagonal
+      Margins.Left = 25.000000000000000000
+      Margins.Top = 50.000000000000000000
+      Margins.Right = 25.000000000000000000
+      Position.X = 25.000000000000000000
+      Position.Y = 50.000000000000000000
+      Width = 684.000000000000000000
+    end
+  end
+  object TMSFMXCloudDropBoxDataStore1: TTMSFMXCloudDropBoxDataStore
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    PersistTokens.Section = 'DATASTORE'
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudDropBoxDataStore1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Left = 200
+    Top = 136
+  end
+end

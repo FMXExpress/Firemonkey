@@ -1,0 +1,46 @@
+object Form913: TForm913
+  Left = 0
+  Top = 0
+  Caption = 'Form913'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Orientations = [soPortrait, soLandscape, soInvertedPortrait, soInvertedLandscape]
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  object TMSFMXNativeUIToolBar1: TTMSFMXNativeUIToolBar
+    Align = alTop
+    Width = 1024.000000000000000000
+    Height = 44.000000000000000000
+    Items = <>
+    OnItemClick = TMSFMXNativeUIToolBar1ItemClick
+  end
+  object TMSFMXNativeMKMapView1: TTMSFMXNativeMKMapView
+    Align = alClient
+    Width = 1024.000000000000000000
+    Height = 704.000000000000000000
+    Annotations = <>
+    Overlays = <>
+    OnDidUpdateUserLocation = TMSFMXNativeMKMapView1DidUpdateUserLocation
+    OnAnnotationRightCalloutAccessoryTapped = TMSFMXNativeMKMapView1AnnotationRightCalloutAccessoryTapped
+  end
+  object TMSFMXNativeUIImageView1: TTMSFMXNativeUIImageView
+    Position.X = 784.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 232.000000000000000000
+    Height = 297.000000000000000000
+    Visible = False
+    ClipChildren = True
+  end
+  object TMSFMXNativeUIPopoverController1: TTMSFMXNativeUIPopoverController
+    View = TMSFMXNativeUIImageView1
+    Left = 496
+    Top = 360
+  end
+end

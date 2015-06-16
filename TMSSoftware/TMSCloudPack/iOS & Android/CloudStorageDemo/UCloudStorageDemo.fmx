@@ -1,0 +1,383 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  DesignerOSVersion = '7'
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 1024.000000000000000000
+    object ConnectBtn: TButton
+      Align = Left
+      Height = 44.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 0
+      Text = 'Connect'
+      Width = 73.000000000000000000
+      OnClick = ConnectBtnClick
+    end
+    object DisconnectBtn: TButton
+      Align = Left
+      Height = 44.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 83.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 1
+      Text = 'Disconnect'
+      Width = 92.000000000000000000
+      OnClick = DisconnectBtnClick
+    end
+  end
+  object Panel1: TPanel
+    Align = Left
+    Height = 704.000000000000000000
+    Position.Y = 44.000000000000000000
+    Width = 249.000000000000000000
+    TabOrder = 1
+    object radiogroup1: TRectangle
+      Fill.Color = xC0E2F8FF
+      Height = 289.000000000000000000
+      Position.X = 32.000000000000000000
+      Position.Y = 32.000000000000000000
+      Width = 177.000000000000000000
+      object RadioButton1: TRadioButton
+        GroupName = '0'
+        Height = 19.000000000000000000
+        IsChecked = True
+        Position.X = 24.000000000000000000
+        Position.Y = 14.000000000000000000
+        TabOrder = 0
+        Text = 'DropBox'
+        Width = 120.000000000000000000
+      end
+      object RadioButton2: TRadioButton
+        GroupName = '0'
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 54.000000000000000000
+        TabOrder = 1
+        Text = 'Google Drive'
+        Width = 120.000000000000000000
+      end
+      object RadioButton3: TRadioButton
+        GroupName = '0'
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 94.000000000000000000
+        TabOrder = 3
+        Text = 'Windows SkyDrive'
+        Width = 145.000000000000000000
+      end
+      object RadioButton4: TRadioButton
+        GroupName = '0'
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 134.000000000000000000
+        TabOrder = 4
+        Text = 'Box'
+        Width = 120.000000000000000000
+      end
+      object RadioButton5: TRadioButton
+        Tag = 4
+        GroupName = '0'
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 176.000000000000000000
+        TabOrder = 5
+        Text = 'BitCasa'
+        Width = 97.000000000000000000
+      end
+      object RadioButton6: TRadioButton
+        Tag = 5
+        GroupName = '0'
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 217.000000000000000000
+        TabOrder = 2
+        Text = 'Amazon'
+        Width = 97.000000000000000000
+      end
+      object RadioButton7: TRadioButton
+        Tag = 6
+        GroupName = '0'
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 254.000000000000000000
+        TabOrder = 6
+        Text = 'Hubic'
+        Width = 97.000000000000000000
+      end
+    end
+    object Line1: TLine
+      Height = 704.000000000000000000
+      LineType = Diagonal
+      Position.X = 239.000000000000000000
+      Width = 1.000000000000000000
+    end
+  end
+  object Panel2: TPanel
+    Align = Client
+    Height = 704.000000000000000000
+    Width = 775.000000000000000000
+    TabOrder = 2
+    object TreeView1: TTreeView
+      Height = 497.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 0
+      Width = 425.000000000000000000
+      OnChange = TreeView1Change
+    end
+    object CreateFolderBtn: TButton
+      Enabled = False
+      Height = 50.000000000000000000
+      Position.X = 456.000000000000000000
+      Position.Y = 72.000000000000000000
+      TabOrder = 4
+      Text = 'Create folder'
+      Width = 180.000000000000000000
+      OnClick = CreateFolderBtnClick
+      Left = 400
+      Top = 16
+    end
+    object DownloadBtn: TButton
+      Enabled = False
+      Height = 50.000000000000000000
+      Position.X = 456.000000000000000000
+      Position.Y = 184.000000000000000000
+      TabOrder = 1
+      Text = 'Download'
+      Width = 180.000000000000000000
+      OnClick = DownloadBtnClick
+      Left = 400
+      Top = 61
+    end
+    object UploadBtn: TButton
+      Enabled = False
+      Height = 50.000000000000000000
+      Position.X = 456.000000000000000000
+      Position.Y = 128.000000000000000000
+      TabOrder = 2
+      Text = 'Upload'
+      Width = 180.000000000000000000
+      OnClick = UploadBtnClick
+      Left = 400
+      Top = 101
+    end
+    object DeleteBtn: TButton
+      Enabled = False
+      Height = 50.000000000000000000
+      Position.X = 456.000000000000000000
+      Position.Y = 240.000000000000000000
+      TabOrder = 3
+      Text = 'Delete'
+      Width = 180.000000000000000000
+      OnClick = DeleteBtnClick
+      Left = 400
+      Top = 144
+    end
+    object Label3: TLabel
+      Height = 23.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 544.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'Size:'
+      Width = 100.000000000000000000
+    end
+    object Label1: TLabel
+      Height = 23.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 576.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'Created:'
+      Width = 100.000000000000000000
+    end
+    object Label2: TLabel
+      Height = 23.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 608.000000000000000000
+      TextSettings.WordWrap = False
+      Text = 'FileName:'
+      Width = 100.000000000000000000
+    end
+    object Size: TLabel
+      AutoSize = True
+      Height = 23.000000000000000000
+      Position.X = 136.000000000000000000
+      Position.Y = 544.000000000000000000
+      Width = 0.000000000000000000
+    end
+    object Created: TLabel
+      AutoSize = True
+      Height = 23.000000000000000000
+      Position.X = 136.000000000000000000
+      Position.Y = 576.000000000000000000
+      Width = 0.000000000000000000
+    end
+    object FileName: TLabel
+      AutoSize = True
+      Height = 23.000000000000000000
+      Position.X = 136.000000000000000000
+      Position.Y = 608.000000000000000000
+      Width = 0.000000000000000000
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 11
+      Text = 'New Folder Name'
+      Position.X = 456.000000000000000000
+      Position.Y = 32.000000000000000000
+      Width = 177.000000000000000000
+      Height = 30.000000000000000000
+    end
+    object TMSFMXCloudImage1: TTMSFMXCloudImage
+      Position.X = 456.000000000000000000
+      Position.Y = 336.000000000000000000
+      Width = 297.000000000000000000
+      Height = 193.000000000000000000
+      ClipChildren = True
+      Visible = False
+      Version = '1.5.0.1'
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      Height = 193.000000000000000000
+      Position.X = 456.000000000000000000
+      Position.Y = 336.000000000000000000
+      TabOrder = 13
+      Visible = False
+      Width = 297.000000000000000000
+    end
+    object Label4: TLabel
+      Height = 21.000000000000000000
+      Position.X = 456.000000000000000000
+      Position.Y = 312.000000000000000000
+      Text = 'Preview'
+      Width = 297.000000000000000000
+    end
+  end
+  object TMSFMXCloudDropBox1: TTMSFMXCloudDropBox
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://www.tmssoftware.com/'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    PersistTokens.Section = 'TOKENS'
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudDropBox1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    OnAuthFormClose = TMSFMXCloudDropBox1AuthFormClose
+    Left = 32
+    Top = 376
+  end
+  object TMSFMXCloudGDrive1: TTMSFMXCloudGDrive
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8889/'
+    App.CallBackPort = 8889
+    PersistTokens.Location = plIniFile
+    PersistTokens.Section = 'TOKENS'
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudDropBox1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    OnAuthFormClose = TMSFMXCloudDropBox1AuthFormClose
+    Scopes.Strings = (
+      'https://www.googleapis.com/auth/drive'
+      'https://www.googleapis.com/auth/drive.file')
+    Left = 32
+    Top = 432
+  end
+  object TMSFMXCloudBoxNetDrive1: TTMSFMXCloudBoxNetDrive
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    PersistTokens.Section = 'TOKENS'
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudDropBox1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    OnAuthFormClose = TMSFMXCloudDropBox1AuthFormClose
+    Left = 168
+    Top = 376
+  end
+  object TMSFMXCloudSkyDrive1: TTMSFMXCloudSkyDrive
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    PersistTokens.Section = 'TOKENS'
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudDropBox1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    OnAuthFormClose = TMSFMXCloudDropBox1AuthFormClose
+    Scopes.Strings = (
+      'wl.signin'
+      'wl.basic'
+      'wl.offline_access'
+      'wl.skydrive'
+      'wl.skydrive_update')
+    Left = 176
+    Top = 432
+  end
+  object TMSFMXCloudBitCasa1: TTMSFMXCloudBitCasa
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888/'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudDropBox1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    OnAuthFormClose = TMSFMXCloudDropBox1AuthFormClose
+    Left = 48
+    Top = 344
+  end
+  object TMSFMXCloudAmazonCloudDrive1: TTMSFMXCloudAmazonCloudDrive
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    PersistTokens.Section = 'TOKENS'
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudDropBox1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    OnAuthFormClose = TMSFMXCloudDropBox1AuthFormClose
+    Left = 168
+    Top = 488
+  end
+  object TMSFMXCloudHubic1: TTMSFMXCloudHubic
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    PersistTokens.Section = 'TOKENS'
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudDropBox1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    OnAuthFormClose = TMSFMXCloudDropBox1AuthFormClose
+    Left = 32
+    Top = 496
+  end
+end

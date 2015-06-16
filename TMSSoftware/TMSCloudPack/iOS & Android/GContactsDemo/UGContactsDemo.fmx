@@ -1,0 +1,262 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 662
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 662
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 1024.000000000000000000
+    object Button1: TButton
+      Height = 31.000000000000000000
+      Position.X = 13.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 0
+      Text = 'Connect'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Height = 31.000000000000000000
+      Position.X = 93.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 1
+      Text = 'Disconnect'
+      Trimming = ttCharacter
+      Width = 92.000000000000000000
+      OnClick = Button2Click
+    end
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 245.000000000000000000
+    Position.Y = 44.000000000000000000
+    Width = 1024.000000000000000000
+    TabOrder = 1
+    object btGroupAdd: TButton
+      Height = 30.000000000000000000
+      Position.X = 364.000000000000000000
+      Position.Y = 162.000000000000000000
+      TabOrder = 0
+      Text = 'Add '
+      Width = 110.000000000000000000
+      OnClick = btGroupAddClick
+    end
+    object btGroupDelete: TButton
+      Height = 30.000000000000000000
+      Position.X = 364.000000000000000000
+      Position.Y = 98.000000000000000000
+      TabOrder = 1
+      Text = 'Delete'
+      Width = 110.000000000000000000
+      OnClick = btGroupDeleteClick
+    end
+    object btGroupUpdate: TButton
+      Height = 30.000000000000000000
+      Position.X = 364.000000000000000000
+      Position.Y = 130.000000000000000000
+      TabOrder = 2
+      Text = 'Update'
+      Width = 110.000000000000000000
+      OnClick = btGroupUpdateClick
+    end
+    object Button3: TButton
+      Height = 44.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 3
+      Text = 'Load Groups'
+      Trimming = ttCharacter
+      Width = 153.000000000000000000
+      OnClick = Button3Click
+    end
+    object edGroupName: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 4
+      Text = 'new group'
+      Position.X = 424.000000000000000000
+      Position.Y = 57.000000000000000000
+      Width = 209.000000000000000000
+      Height = 31.000000000000000000
+      KillFocusByReturn = False
+    end
+    object Label19: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 363.000000000000000000
+      Position.Y = 61.000000000000000000
+      Text = 'Name:'
+      Width = 53.000000000000000000
+      WordWrap = False
+    end
+    object lbGroups: TListBox
+      Height = 168.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 65.000000000000000000
+      TabOrder = 6
+      Width = 329.000000000000000000
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = lbGroupsChange
+      Left = 10
+      Top = 54
+    end
+    object Line1: TLine
+      Align = alBottom
+      Height = 3.000000000000000000
+      LineType = ltTop
+      Position.Y = 242.000000000000000000
+      Width = 1024.000000000000000000
+    end
+  end
+  object Panel2: TPanel
+    Align = alClient
+    Height = 373.000000000000000000
+    Width = 1024.000000000000000000
+    TabOrder = 2
+    object ListBox1: TListBox
+      Height = 377.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 0
+      Width = 329.000000000000000000
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListBox1Change
+    end
+    object Button4: TButton
+      Height = 44.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 1
+      Text = 'Load Contacts'
+      Trimming = ttCharacter
+      Width = 153.000000000000000000
+      OnClick = Button4Click
+    end
+    object TMSFMXCloudImage1: TTMSFMXCloudImage
+      Position.X = 368.000000000000000000
+      Position.Y = 88.000000000000000000
+      Width = 145.000000000000000000
+      Height = 89.000000000000000000
+      ClipChildren = True
+      Version = '1.5.0.1'
+    end
+    object Label11: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 364.000000000000000000
+      Position.Y = 176.000000000000000000
+      Text = 'Name:'
+      Width = 53.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object Label5: TLabel
+      AutoSize = True
+      Height = 13.000000000000000000
+      Position.X = 442.000000000000000000
+      Position.Y = 203.000000000000000000
+      Width = 3.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object Label6: TLabel
+      AutoSize = True
+      Height = 13.000000000000000000
+      Position.X = 443.000000000000000000
+      Position.Y = 230.000000000000000000
+      Width = 3.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object Label7: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 363.000000000000000000
+      Position.Y = 203.000000000000000000
+      Text = 'Birthday:'
+      Width = 70.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object Label8: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 363.000000000000000000
+      Position.Y = 230.000000000000000000
+      Text = 'Company:'
+      Width = 79.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbName: TLabel
+      AutoSize = True
+      Height = 13.000000000000000000
+      Position.X = 442.000000000000000000
+      Position.Y = 176.000000000000000000
+      Width = 3.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object meNotes: TMemo
+      Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+      Height = 89.000000000000000000
+      Position.X = 584.000000000000000000
+      Position.Y = 88.000000000000000000
+      TabOrder = 9
+      Width = 201.000000000000000000
+    end
+    object Label1: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 364.000000000000000000
+      Position.Y = 59.000000000000000000
+      Text = 'Picture:'
+      Width = 59.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object Label2: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 580.000000000000000000
+      Position.Y = 56.000000000000000000
+      Text = 'Notes:'
+      Width = 52.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+  end
+  object TMSFMXCloudGContacts1: TTMSFMXCloudGContacts
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888/'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudGContacts1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Scopes.Strings = (
+      'https://www.google.com/m8/feeds')
+    Left = 624
+    Top = 288
+  end
+end

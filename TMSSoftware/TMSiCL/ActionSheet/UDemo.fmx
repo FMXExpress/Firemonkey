@@ -1,0 +1,34 @@
+object Form1035: TForm1035
+  Left = 0
+  Top = 0
+  Caption = 'Form1035'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object TMSFMXNativeUIButton1: TTMSFMXNativeUIButton
+    Position.X = 72.000000000000000000
+    Position.Y = 208.000000000000000000
+    Width = 175.000000000000000000
+    Height = 44.000000000000000000
+    ClipChildren = True
+    Text = 'Choose Action'
+    OnClick = TMSFMXNativeUIButton1Click
+    Font.Name = 'Helvetica'
+    Font.Size = 14.000000000000000000
+  end
+  object TMSFMXNativeUIActionSheet1: TTMSFMXNativeUIActionSheet
+    CancelButtonTitle = 'Cancel'
+    DestructiveButtonTitle = 'Delete'
+    OnDidDismissWithButtonIndex = TMSFMXNativeUIActionSheet1DidDismissWithButtonIndex
+    Left = 144
+    Top = 216
+  end
+end

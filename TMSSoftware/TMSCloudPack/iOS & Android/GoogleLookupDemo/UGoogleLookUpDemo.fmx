@@ -1,0 +1,104 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 417
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    Align = alTop
+    TabOrder = 0
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Width = 310.000000000000000000
+    Height = 30.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Button1: TButton
+    Align = alTop
+    Height = 44.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 1
+    Text = 'Search'
+    Trimming = ttCharacter
+    Width = 310.000000000000000000
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Align = alClient
+    Height = 247.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    TabOrder = 2
+    Width = 310.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object Panel1: TPanel
+    Align = alBottom
+    Height = 71.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 341.000000000000000000
+    Width = 310.000000000000000000
+    TabOrder = 3
+    object RadioButton1: TRadioButton
+      GroupName = '0'
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'Google Lookup'
+      Width = 120.000000000000000000
+    end
+    object RadioButton2: TRadioButton
+      GroupName = '0'
+      Height = 19.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      TabOrder = 1
+      Text = 'Google Location Lookup'
+      Width = 209.000000000000000000
+    end
+  end
+  object TMSFMXCloudGoogleLocationLookupProvider1: TTMSFMXCloudGoogleLocationLookupProvider
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    Language = 'en'
+    Left = 704
+    Top = 288
+  end
+  object TMSFMXCloudGoogleLookupProvider1: TTMSFMXCloudGoogleLookupProvider
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    Left = 656
+    Top = 376
+  end
+end

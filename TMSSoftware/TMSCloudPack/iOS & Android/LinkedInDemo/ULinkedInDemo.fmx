@@ -1,0 +1,230 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 662
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 662
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 1024.000000000000000000
+    object Button1: TButton
+      Height = 31.000000000000000000
+      Position.X = 13.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 0
+      Text = 'Connect'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Height = 31.000000000000000000
+      Position.X = 93.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 1
+      Text = 'Disconnect'
+      Trimming = ttCharacter
+      Width = 92.000000000000000000
+      OnClick = Button2Click
+    end
+  end
+  object TMSFMXCloudImage1: TTMSFMXCloudImage
+    Position.X = 304.000000000000000000
+    Position.Y = 408.000000000000000000
+    Width = 241.000000000000000000
+    Height = 273.000000000000000000
+    ClipChildren = True
+    Version = '1.5.0.1'
+  end
+  object lbConnections: TListBox
+    Height = 249.000000000000000000
+    Position.X = 224.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 2
+    Width = 289.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = lbConnectionsChange
+  end
+  object Button3: TButton
+    Height = 44.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 3
+    Text = 'Connections'
+    Trimming = ttCharacter
+    Width = 177.000000000000000000
+    OnClick = Button3Click
+  end
+  object Title: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 4
+    Text = 'Automated LinkedIn Message'
+    Position.X = 712.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 250.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Image: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 5
+    Text = 'http://www.tmssoftware.com/site/img/tmslogo.png'
+    Position.X = 712.000000000000000000
+    Position.Y = 176.000000000000000000
+    Width = 250.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Link: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 6
+    Text = 'http://www.tmssoftware.com'
+    Position.X = 712.000000000000000000
+    Position.Y = 136.000000000000000000
+    Width = 250.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Descr: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 7
+    Text = 'Automated LinkedIn Message'
+    Position.X = 712.000000000000000000
+    Position.Y = 96.000000000000000000
+    Width = 250.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Button5: TButton
+    Height = 44.000000000000000000
+    Position.X = 888.000000000000000000
+    Position.Y = 216.000000000000000000
+    TabOrder = 8
+    Text = 'Share'
+    Trimming = ttCharacter
+    Width = 73.000000000000000000
+    OnClick = Button5Click
+  end
+  object Label1: TLabel
+    Height = 21.000000000000000000
+    Position.X = 560.000000000000000000
+    Position.Y = 59.000000000000000000
+    Text = 'Title:'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label2: TLabel
+    Height = 21.000000000000000000
+    Position.X = 560.000000000000000000
+    Position.Y = 99.000000000000000000
+    Text = 'Description:'
+    Width = 121.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label3: TLabel
+    Height = 21.000000000000000000
+    Position.X = 560.000000000000000000
+    Position.Y = 139.000000000000000000
+    Text = 'Link:'
+    Width = 121.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label4: TLabel
+    Height = 21.000000000000000000
+    Position.X = 560.000000000000000000
+    Position.Y = 179.000000000000000000
+    Text = 'Image:'
+    Width = 121.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Button4: TButton
+    Height = 44.000000000000000000
+    Position.X = 840.000000000000000000
+    Position.Y = 304.000000000000000000
+    TabOrder = 13
+    Text = 'Post Activity'
+    Trimming = ttCharacter
+    Width = 121.000000000000000000
+    OnClick = Button4Click
+  end
+  object Label6: TLabel
+    Height = 21.000000000000000000
+    Position.X = 560.000000000000000000
+    Position.Y = 267.000000000000000000
+    Text = 'Activity:'
+    Width = 121.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 15
+    Text = 'Automated LinkedIn Message'
+    Position.X = 712.000000000000000000
+    Position.Y = 264.000000000000000000
+    Width = 250.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Button6: TButton
+    Height = 44.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 320.000000000000000000
+    TabOrder = 16
+    Text = 'My Profile'
+    Trimming = ttCharacter
+    Width = 177.000000000000000000
+    OnClick = Button6Click
+  end
+  object Label5: TLabel
+    Height = 21.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 376.000000000000000000
+    Text = 'Info:'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+    Height = 273.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 408.000000000000000000
+    TabOrder = 18
+    Width = 265.000000000000000000
+  end
+  object Label7: TLabel
+    Height = 21.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 376.000000000000000000
+    Text = 'Picture:'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object TMSFMXCloudLinkedIn1: TTMSFMXCloudLinkedIn
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudLinkedIn1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Left = 504
+    Top = 432
+  end
+end

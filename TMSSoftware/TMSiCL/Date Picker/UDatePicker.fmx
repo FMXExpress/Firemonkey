@@ -1,0 +1,79 @@
+object Form935: TForm935
+  Left = 0
+  Top = 0
+  Caption = 'Form935'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object TMSFMXNativeUIDatePicker1: TTMSFMXNativeUIDatePicker
+    Position.Y = 244.000000000000000000
+    Align = alBottom
+    Width = 320.000000000000000000
+    Height = 216.000000000000000000
+    ClipChildren = True
+    DateTime = 41423.400871990740000000
+    MinuteInterval = 0
+    OnValueChanged = TMSFMXNativeUIDatePicker1ValueChanged
+  end
+  object TMSFMXNativeUIButton1: TTMSFMXNativeUIButton
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Align = alTop
+    Width = 310.000000000000000000
+    Height = 44.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    ClipChildren = True
+    Text = 'Current Date'
+    OnClick = TMSFMXNativeUIButton1Click
+    Font.Name = 'Helvetica'
+    Font.Size = 14.000000000000000000
+  end
+  object TMSFMXNativeUILabel1: TTMSFMXNativeUILabel
+    Position.X = 5.000000000000000000
+    Position.Y = 54.000000000000000000
+    Align = alTop
+    Width = 310.000000000000000000
+    Height = 44.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    ClipChildren = True
+    Text = 'TMSFMXNativeUILabel1'
+    Alignment = taCenter
+    TextColor = claSteelblue
+    Font.Name = 'Helvetica'
+    Font.Size = 20.000000000000000000
+  end
+  object TMSFMXNativeUISwitch1: TTMSFMXNativeUISwitch
+    Position.X = 72.000000000000000000
+    Position.Y = 116.000000000000000000
+    Width = 94.000000000000000000
+    Height = 27.000000000000000000
+    ClipChildren = True
+    Value = True
+    OnValueChanged = TMSFMXNativeUISwitch1ValueChanged
+  end
+  object TMSFMXNativeUILabel2: TTMSFMXNativeUILabel
+    Position.X = 8.000000000000000000
+    Position.Y = 112.000000000000000000
+    Width = 57.000000000000000000
+    Height = 33.000000000000000000
+    ClipChildren = True
+    Text = 'Time'
+    Font.Name = 'Helvetica'
+    Font.Size = 14.000000000000000000
+  end
+end

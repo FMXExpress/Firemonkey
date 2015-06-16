@@ -1,0 +1,546 @@
+object Form1175: TForm1175
+  Left = 0
+  Top = 0
+  Caption = 'TMS FMX Cloud Pack: Pryv Demo'
+  ClientHeight = 753
+  ClientWidth = 716
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Panel1: TPanel
+    Align = alTop
+    Height = 33.000000000000000000
+    Width = 716.000000000000000000
+    TabOrder = 0
+    object btConnect: TButton
+      Height = 23.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      TabOrder = 0
+      Text = 'Connect'
+      Width = 100.000000000000000000
+      OnClick = btConnectClick
+    end
+    object Image1: TImage
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+        F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        026149444154484BC5964B6B135114C7FF77928EA94ECCC3474D2C0521A52805
+        3522EAA65D44D160EB42A41BD752105C2914C4851FC1C75710DC58971AA82B31
+        6D6A94820FF01137B56AADC904F24E3A0FCFBD1D507426BD08C1DF70C99D3927
+        E73D3761360AF6E3A133E805E9E50CD8A3A184EDDCF704C5F9EC19FFCF814D17
+        6C6779E1C885AE07EE3D5018B4C430FA07E358AF54507DFB0E66A34EDA6C434E
+        467DDB34040FEC47DF760DCD952FA87D2CB806E3BB188ADE74F61B9092A2AAD8
+        377D09892B97B1E3F80974CA65D4DE7F1091D2D851000A62E72630327315B1C9
+        B374EB879ECBC136CD5F4138B897C8B260546B5002FDD046126464125BF60C88
+        E7B66D21108B214E0EB4E1047C8100D6AB557AEE5EA6BF1D50049661A070EB36
+        DECCDCA0A82C448E1EC6CEB131309F1FCCEFC7AEF1718493874866E0F5B5EBF8
+        74E72E6CFACE9FD173BC9B6C99F83E974179E915D4500803A914D448186A348A
+        DDA752E80B06517EB184B52773222B2F3C1D30C507ABD9C4E77BF7450922C78E
+        20383A8AD0C124659414CD5F2699D569095D2F3C1D08A8247AF629F4C59750C3
+        210C4E5DC0DEA9F314BD067D210F7D3E2B74BAD1D501A3ABF5A388AFB30FD15A
+        5D437C228DD8E993687E5BC5CA8359B44B25A1D38DEE1938E8CF17298B3C35DF
+        1403A0E7F254FFBC23EDCEA60E185344A4C5F90518F53A8C5A0DC5675974745D
+        C836432A03F15E5053F928F2C51BECF6D6BA21E780F3FB8CBBCCBB17D20E181D
+        0F8C1BA6C5F7B2C86992D1364D53899ACB1BDC2996A4B390FE45E34784B25515
+        7BABD1A65ED0C1268174AEBCB966A52196AC718E7C31FF91DE3BE07F2D7A457A
+        39839F0D7BF92CE949D3AE0000000049454E44AE426082}
+      Height = 23.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 674.000000000000000000
+      Position.Y = 5.000000000000000000
+      Width = 37.000000000000000000
+    end
+    object btRemove: TButton
+      Enabled = False
+      Height = 23.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 110.000000000000000000
+      Position.Y = 5.000000000000000000
+      TabOrder = 2
+      Text = 'Remove Access'
+      Width = 100.000000000000000000
+      OnClick = btRemoveClick
+    end
+  end
+  object Panel2: TPanel
+    Align = alTop
+    Height = 267.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 38.000000000000000000
+    Width = 706.000000000000000000
+    TabOrder = 1
+    object Label1: TLabel
+      Height = 16.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Text = 'Streams'
+      Width = 696.000000000000000000
+    end
+    object btStreams: TButton
+      Height = 22.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 2
+      Text = 'Get Streams'
+      Width = 89.000000000000000000
+      OnClick = btStreamsClick
+    end
+    object TreeView1: TTreeView
+      Height = 201.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      TabOrder = 1
+      Width = 209.000000000000000000
+      OnChange = TreeView1Change
+    end
+    object Label13: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 232.000000000000000000
+      Position.Y = 56.000000000000000000
+      Text = 'Name:'
+      Width = 35.000000000000000000
+      WordWrap = False
+    end
+    object edStreamName: TEdit
+      TabOrder = 5
+      Position.X = 280.000000000000000000
+      Position.Y = 56.000000000000000000
+      Width = 201.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object cbSubStream: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 224.000000000000000000
+      Position.Y = 208.000000000000000000
+      TabOrder = 6
+      Text = 'Add as substream of selected stream'
+      Width = 265.000000000000000000
+    end
+    object btAddStream: TButton
+      Height = 22.000000000000000000
+      Position.X = 224.000000000000000000
+      Position.Y = 232.000000000000000000
+      TabOrder = 4
+      Text = 'Add'
+      Width = 80.000000000000000000
+      OnClick = btAddStreamClick
+    end
+    object btDeleteStream: TButton
+      Height = 22.000000000000000000
+      Position.X = 312.000000000000000000
+      Position.Y = 232.000000000000000000
+      TabOrder = 8
+      Text = 'Delete'
+      Width = 80.000000000000000000
+      OnClick = btDeleteStreamClick
+    end
+    object btUpdateStream: TButton
+      Height = 22.000000000000000000
+      Position.X = 400.000000000000000000
+      Position.Y = 232.000000000000000000
+      TabOrder = 7
+      Text = 'Update'
+      Width = 80.000000000000000000
+      OnClick = btUpdateStreamClick
+    end
+  end
+  object Panel3: TPanel
+    Align = alClient
+    Height = 438.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Width = 706.000000000000000000
+    TabOrder = 2
+    object Label2: TLabel
+      Height = 16.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Text = 'Events'
+      Width = 696.000000000000000000
+    end
+    object btEvents: TButton
+      Height = 22.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 1
+      Text = 'Get Events'
+      Width = 89.000000000000000000
+      OnClick = btEventsClick
+    end
+    object Label3: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Max # of events:'
+      Width = 84.000000000000000000
+      WordWrap = False
+    end
+    object cbEventCount: TComboBox
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      ItemIndex = 0
+      Position.X = 216.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 5
+      Width = 57.000000000000000000
+      object TListBoxItem
+        Height = 19.000000000000000000
+        IsSelected = True
+        Text = '25'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = '50'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = '100'
+        Width = 19.000000000000000000
+      end
+    end
+    object cbStream: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 280.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 26
+      Text = 'Show events for selected stream only'
+      Width = 233.000000000000000000
+    end
+    object TMSFMXCloudListView1: TTMSFMXCloudListView
+      Height = 169.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 64.000000000000000000
+      TabOrder = 3
+      Width = 673.000000000000000000
+      OnClick = TMSFMXCloudListView1Change
+      AlternatingRowBackground = True
+      RowCount = 0
+      RowHeight = 21.000000000000000000
+      Columns = <
+        item
+          Caption = 'Value'
+          Tag = 0
+        end
+        item
+          Caption = 'Type'
+          Tag = 0
+        end
+        item
+          Caption = 'Description'
+          Tag = 0
+        end
+        item
+          Caption = 'Date'
+          Tag = 0
+        end
+        item
+          Caption = 'Stream'
+          Tag = 0
+        end>
+      Items = <>
+      object TStringColumn
+        Header = 'Value'
+        Height = 0.000000000000000000
+        ReadOnly = True
+        TabOrder = 0
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Type'
+        Height = 0.000000000000000000
+        Position.X = 100.000000000000000000
+        ReadOnly = True
+        TabOrder = 1
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Description'
+        Height = 0.000000000000000000
+        Position.X = 200.000000000000000000
+        ReadOnly = True
+        TabOrder = 2
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Date'
+        Height = 0.000000000000000000
+        Position.X = 300.000000000000000000
+        ReadOnly = True
+        TabOrder = 3
+        Width = 100.000000000000000000
+      end
+      object TStringColumn
+        Header = 'Stream'
+        Height = 0.000000000000000000
+        Position.X = 400.000000000000000000
+        ReadOnly = True
+        TabOrder = 4
+        Width = 100.000000000000000000
+      end
+    end
+    object Label4: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 247.000000000000000000
+      Text = 'Type:'
+      Width = 30.000000000000000000
+      WordWrap = False
+    end
+    object cbEventType: TComboBox
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      ItemIndex = 0
+      Position.X = 56.000000000000000000
+      Position.Y = 244.000000000000000000
+      TabOrder = 4
+      Width = 217.000000000000000000
+      OnChange = cbEventTypeChange
+      object TListBoxItem
+        Height = 19.000000000000000000
+        IsSelected = True
+        Text = 'Text'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'Picture'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'Position'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'Value'
+        Width = 19.000000000000000000
+      end
+    end
+    object Label5: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 275.000000000000000000
+      Text = 'Date:'
+      Width = 29.000000000000000000
+      WordWrap = False
+    end
+    object Label6: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 301.000000000000000000
+      Text = 'Tags:'
+      Width = 29.000000000000000000
+      WordWrap = False
+    end
+    object Label7: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 329.000000000000000000
+      Text = 'Unit:'
+      Width = 27.000000000000000000
+      WordWrap = False
+    end
+    object Label8: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 356.000000000000000000
+      Text = 'Lon:'
+      Width = 24.000000000000000000
+      WordWrap = False
+    end
+    object Label9: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 380.000000000000000000
+      Text = 'Lat:'
+      Width = 21.000000000000000000
+      WordWrap = False
+    end
+    object btAddEvent: TButton
+      Height = 22.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 408.000000000000000000
+      TabOrder = 12
+      Text = 'Add'
+      Width = 80.000000000000000000
+      OnClick = btAddEventClick
+    end
+    object btDeleteEvent: TButton
+      Height = 22.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = 408.000000000000000000
+      TabOrder = 10
+      Text = 'Delete'
+      Width = 80.000000000000000000
+      OnClick = btDeleteEventClick
+    end
+    object btUpdateEvent: TButton
+      Height = 22.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 408.000000000000000000
+      TabOrder = 8
+      Text = 'Update'
+      Width = 80.000000000000000000
+      OnClick = btUpdateEventClick
+    end
+    object edTags: TEdit
+      TabOrder = 21
+      Position.X = 56.000000000000000000
+      Position.Y = 299.000000000000000000
+      Width = 217.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object cbUnit: TComboEdit
+      TabOrder = 22
+      ItemHeight = 19.000000000000000000
+      ItemIndex = -1
+      Position.X = 56.000000000000000000
+      Position.Y = 326.000000000000000000
+      Width = 217.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edLongitude: TEdit
+      TabOrder = 18
+      Position.X = 56.000000000000000000
+      Position.Y = 353.000000000000000000
+      Width = 217.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edLatitude: TEdit
+      TabOrder = 19
+      Position.X = 56.000000000000000000
+      Position.Y = 379.000000000000000000
+      Width = 217.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object Label10: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 288.000000000000000000
+      Position.Y = 247.000000000000000000
+      Text = 'Value:'
+      Width = 33.000000000000000000
+      WordWrap = False
+    end
+    object meValue: TMemo
+      Height = 68.000000000000000000
+      Position.X = 336.000000000000000000
+      Position.Y = 245.000000000000000000
+      TabOrder = 16
+      Width = 185.000000000000000000
+    end
+    object meDescription: TMemo
+      Height = 68.000000000000000000
+      Position.X = 336.000000000000000000
+      Position.Y = 333.000000000000000000
+      TabOrder = 17
+      Width = 185.000000000000000000
+    end
+    object Label11: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 288.000000000000000000
+      Position.Y = 335.000000000000000000
+      Text = 'Desc:'
+      Width = 30.000000000000000000
+      WordWrap = False
+    end
+    object Label12: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 536.000000000000000000
+      Position.Y = 247.000000000000000000
+      Text = 'Picture:'
+      Width = 40.000000000000000000
+      WordWrap = False
+    end
+    object TMSFMXCloudImage1: TTMSFMXCloudImage
+      Position.X = 536.000000000000000000
+      Position.Y = 272.000000000000000000
+      Width = 153.000000000000000000
+      Height = 129.000000000000000000
+      ClipChildren = True
+      Version = '1.5.0.1'
+    end
+    object btDownload: TButton
+      Height = 22.000000000000000000
+      Position.X = 616.000000000000000000
+      Position.Y = 408.000000000000000000
+      TabOrder = 7
+      Text = 'Download'
+      Width = 80.000000000000000000
+      OnClick = btDownloadClick
+    end
+    object dpDate: TCalendarEdit
+      TabOrder = 27
+      Cursor = crIBeam
+      Date = 41850.000000000000000000
+      Height = 22.000000000000000000
+      Position.X = 56.000000000000000000
+      Position.Y = 272.000000000000000000
+      Width = 217.000000000000000000
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 344
+    Top = 360
+  end
+  object TMSFMXCloudPryv1: TTMSFMXCloudPryv
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888/?pryv'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudPryv1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Left = 96
+    Top = 168
+  end
+end

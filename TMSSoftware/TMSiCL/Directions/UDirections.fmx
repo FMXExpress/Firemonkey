@@ -1,0 +1,132 @@
+object Form1135: TForm1135
+  Left = 0
+  Top = 0
+  Caption = 'Form1135'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Orientations = [soLandscape]
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 3
+  object TMSFMXNativeUIToolBar1: TTMSFMXNativeUIToolBar
+    Align = alTop
+    Width = 1024.000000000000000000
+    Height = 44.000000000000000000
+    ClipChildren = True
+    Items = <
+      item
+        Text = 'Calculate'
+      end>
+    OnItemClick = TMSFMXNativeUIToolBar1ItemClick
+    TintColor = claBlue
+    object TMSFMXNativeUIActivityIndicatorView1: TTMSFMXNativeUIActivityIndicatorView
+      Align = alCenter
+      Width = 80.000000000000000000
+      Height = 80.000000000000000000
+      ClipChildren = True
+      Style = vsActivityIndicatorViewStyleGray
+    end
+  end
+  object TMSFMXNativeUITableView1: TTMSFMXNativeUITableView
+    Position.Y = 137.000000000000000000
+    Align = alLeft
+    Width = 320.000000000000000000
+    Height = 611.000000000000000000
+    ClipChildren = True
+    Sections = <>
+    Options.Header = 'Routes'
+    Options.ToolBar = True
+    Options.RowHeight = 44.000000000000000000
+    Options.LookUp.Items = <>
+    OnItemBeforeShowDetailView = TMSFMXNativeUITableView1ItemBeforeShowDetailView
+    OnGetNumberOfSections = TMSFMXNativeUITableView1GetNumberOfSections
+    OnGetNumberOfRowsInSection = TMSFMXNativeUITableView1GetNumberOfRowsInSection
+    OnGetItemSubDetailView = TMSFMXNativeUITableView1GetItemSubDetailView
+    OnGetItemAccessoryType = TMSFMXNativeUITableView1GetItemAccessoryType
+    OnGetItemText = TMSFMXNativeUITableView1GetItemText
+    object TMSFMXNativeUITableView2: TTMSFMXNativeUITableView
+      Align = alClient
+      Width = 320.000000000000000000
+      Height = 611.000000000000000000
+      Visible = False
+      ClipChildren = True
+      Sections = <>
+      Options.ToolBar = True
+      Options.RowHeight = 44.000000000000000000
+      Options.LookUp.Items = <>
+      OnGetNumberOfSections = TMSFMXNativeUITableView2GetNumberOfSections
+      OnGetNumberOfRowsInSection = TMSFMXNativeUITableView2GetNumberOfRowsInSection
+      OnGetItemText = TMSFMXNativeUITableView2GetItemText
+      MasterTableView = TMSFMXNativeUITableView1
+    end
+  end
+  object TMSFMXNativeMKMapView1: TTMSFMXNativeMKMapView
+    Align = alClient
+    Width = 704.000000000000000000
+    Height = 611.000000000000000000
+    ClipChildren = True
+    Annotations = <>
+    Overlays = <>
+    OnGetDirections = TMSFMXNativeMKMapView1GetDirections
+  end
+  object TMSFMXNativeUIView1: TTMSFMXNativeUIView
+    Position.Y = 44.000000000000000000
+    Align = alTop
+    Width = 1024.000000000000000000
+    Height = 93.000000000000000000
+    ClipChildren = True
+    object TMSFMXNativeUITextField1: TTMSFMXNativeUITextField
+      Position.X = 80.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 929.000000000000000000
+      Height = 31.000000000000000000
+      ClipChildren = True
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+      OnShouldReturn = TMSFMXNativeUITextField2ShouldReturn
+    end
+    object TMSFMXNativeUITextField2: TTMSFMXNativeUITextField
+      Position.X = 80.000000000000000000
+      Position.Y = 48.000000000000000000
+      Width = 929.000000000000000000
+      Height = 31.000000000000000000
+      ClipChildren = True
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+      OnShouldReturn = TMSFMXNativeUITextField2ShouldReturn
+    end
+    object TMSFMXNativeUILabel1: TTMSFMXNativeUILabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 57.000000000000000000
+      Height = 31.000000000000000000
+      ClipChildren = True
+      Text = 'From:'
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+    end
+    object TMSFMXNativeUILabel2: TTMSFMXNativeUILabel
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Width = 57.000000000000000000
+      Height = 31.000000000000000000
+      ClipChildren = True
+      Text = 'To:'
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+    end
+  end
+  object TMSFMXNativeCLGeoCoder1: TTMSFMXNativeCLGeoCoder
+    OnGetGeocodeLocationError = TMSFMXNativeCLGeoCoder1GetGeocodeLocationError
+    OnGetGeocodeLocation = TMSFMXNativeCLGeoCoder1GetGeocodeLocation
+    Left = 496
+    Top = 360
+  end
+end

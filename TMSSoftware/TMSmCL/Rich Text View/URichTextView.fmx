@@ -1,0 +1,53 @@
+object Form1121: TForm1121
+  Left = 0
+  Top = 0
+  Caption = 'TMS Native Rich Text Editing Demo'
+  ClientHeight = 750
+  ClientWidth = 1085
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object TMSFMXNativeNSRichTextView1: TTMSFMXNativeNSRichTextView
+    Hint = ''
+    Align = alClient
+    Width = 1085.000000000000000000
+    Height = 660.000000000000000000
+    ClipChildren = True
+    Text = 'TMSFMXNativeNSRichTextView1'
+    Font.Name = 'Helvetica'
+    Font.Size = 13.000000000000000000
+  end
+  object TMSFMXNativeNSToolbar1: TTMSFMXNativeNSToolbar
+    Hint = ''
+    Width = 1085.000000000000000000
+    Height = 50.000000000000000000
+    ClipChildren = True
+    Items = <
+      item
+        Text = 'Button 1'
+        Kind = ikSystem
+        SystemItem = siToolbarShowColorsItemIdentifier
+      end
+      item
+        Text = 'Button 2'
+        Kind = ikSystem
+        SystemItem = siToolbarShowFontsItemIdentifier
+      end>
+    ShowsBaseLineSeparator = False
+  end
+  object TMSFMXNativeNSRichTextViewToolBar1: TTMSFMXNativeNSRichTextViewToolBar
+    Hint = ''
+    Position.Y = 50.000000000000000000
+    Align = alTop
+    Width = 1085.000000000000000000
+    Height = 40.000000000000000000
+    ClipChildren = True
+    RichTextView = TMSFMXNativeNSRichTextView1
+  end
+end

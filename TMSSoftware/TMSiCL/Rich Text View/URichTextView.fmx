@@ -1,0 +1,31 @@
+object Form1119: TForm1119
+  Left = 0
+  Top = 0
+  Caption = 'Form1119'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 3
+  object TMSFMXNativeUIRichTextView1: TTMSFMXNativeUIRichTextView
+    Align = alClient
+    Width = 1024.000000000000000000
+    Height = 708.000000000000000000
+    ClipChildren = True
+    Font.Name = 'Helvetica'
+    Font.Size = 14.000000000000000000
+  end
+  object TMSFMXNativeUIRichTextViewToolBar1: TTMSFMXNativeUIRichTextViewToolBar
+    Align = alTop
+    Width = 1024.000000000000000000
+    Height = 40.000000000000000000
+    ClipChildren = True
+    RichTextView = TMSFMXNativeUIRichTextView1
+  end
+end

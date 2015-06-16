@@ -1,0 +1,171 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 705
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 705
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  DesignerOSVersion = '7'
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 1024.000000000000000000
+    object Button1: TButton
+      Height = 44.000000000000000000
+      Position.X = 13.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 0
+      Text = 'Connect'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Height = 44.000000000000000000
+      Position.X = 93.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 1
+      Text = 'Disconnect'
+      Trimming = ttCharacter
+      Width = 92.000000000000000000
+      OnClick = Button2Click
+    end
+  end
+  object ListBox1: TListBox
+    Height = 561.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 160.000000000000000000
+    TabOrder = 1
+    Width = 265.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object ListBox2: TListBox
+    Height = 561.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 160.000000000000000000
+    TabOrder = 2
+    Width = 265.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object ListBox3: TListBox
+    Height = 561.000000000000000000
+    Position.X = 592.000000000000000000
+    Position.Y = 160.000000000000000000
+    TabOrder = 3
+    Width = 417.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object Button6: TButton
+    Height = 44.000000000000000000
+    Position.X = 712.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 4
+    Text = 'Tweet Sample'
+    Trimming = ttCharacter
+    Width = 113.000000000000000000
+    OnClick = Button6Click
+  end
+  object Button7: TButton
+    Height = 44.000000000000000000
+    Position.X = 832.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 5
+    Text = 'Tweet Sample Media'
+    Trimming = ttCharacter
+    Width = 169.000000000000000000
+    OnClick = Button7Click
+  end
+  object SpeedButton1: TSpeedButton
+    Height = 44.000000000000000000
+    Position.X = 248.000000000000000000
+    Position.Y = 120.000000000000000000
+    StyleLookup = 'refreshtoolbuttonbordered'
+    Text = 'SpeedButton1'
+    Trimming = ttCharacter
+    Width = 44.000000000000000000
+    OnClick = Button3Click
+  end
+  object SpeedButton2: TSpeedButton
+    Height = 44.000000000000000000
+    Position.X = 536.000000000000000000
+    Position.Y = 120.000000000000000000
+    StyleLookup = 'refreshtoolbuttonbordered'
+    Text = 'SpeedButton1'
+    Trimming = ttCharacter
+    Width = 44.000000000000000000
+    OnClick = Button4Click
+  end
+  object Label1: TLabel
+    Height = 21.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 128.000000000000000000
+    Text = 'Followers'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label2: TLabel
+    Height = 21.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 128.000000000000000000
+    Text = 'Friends'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label3: TLabel
+    Height = 21.000000000000000000
+    Position.X = 592.000000000000000000
+    Position.Y = 128.000000000000000000
+    Text = 'Tweets'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object SpeedButton3: TSpeedButton
+    Height = 44.000000000000000000
+    Position.X = 976.000000000000000000
+    Position.Y = 120.000000000000000000
+    StyleLookup = 'refreshtoolbuttonbordered'
+    Text = 'SpeedButton1'
+    Trimming = ttCharacter
+    Width = 44.000000000000000000
+    OnClick = Button5Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 12
+    Text = 'Hello World'
+    Position.X = 16.000000000000000000
+    Position.Y = 72.000000000000000000
+    Width = 665.000000000000000000
+    Height = 30.000000000000000000
+    KillFocusByReturn = False
+  end
+  object TMSFMXCloudTwitter1: TTMSFMXCloudTwitter
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudTwitter1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Left = 496
+    Top = 360
+  end
+end

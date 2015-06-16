@@ -1,0 +1,192 @@
+object Form1144: TForm1144
+  Left = 0
+  Top = 0
+  Caption = 'iCloud Document Demo'
+  ClientHeight = 580
+  ClientWidth = 934
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Panel1: TPanel
+    Align = alTop
+    Height = 52.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Width = 924.000000000000000000
+    TabOrder = 0
+    object Label1: TLabel
+      Align = alClient
+      Font.Size = 20.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      Height = 42.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Text = 'iCloud Demo: Note Editor'
+      Width = 914.000000000000000000
+    end
+  end
+  object Panel2: TPanel
+    Align = alLeft
+    Height = 513.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 62.000000000000000000
+    Width = 340.000000000000000000
+    TabOrder = 1
+    object ListView1: TListView
+      ItemAppearanceClassName = 'TImageListItemAppearance'
+      ItemEditAppearanceClassName = 'TImageListItemShowCheck'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      EditModeOptions = [DisallowSelection, HideSelection, ClearWhenStart]
+      EditMode = False
+      AlternatingColors = True
+      Align = alClient
+      Enabled = False
+      Height = 454.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      TabOrder = 0
+      Width = 330.000000000000000000
+      OnItemClick = ListView1ItemClick
+    end
+    object Panel3: TPanel
+      Align = alTop
+      Height = 49.000000000000000000
+      Width = 340.000000000000000000
+      TabOrder = 1
+      object Button1: TButton
+        Align = alLeft
+        Enabled = False
+        Height = 39.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        TabOrder = 0
+        Text = 'New Note'
+        Width = 100.000000000000000000
+        OnClick = Button1Click
+      end
+      object Button2: TButton
+        Align = alLeft
+        Enabled = False
+        Height = 39.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 110.000000000000000000
+        Position.Y = 5.000000000000000000
+        TabOrder = 1
+        Text = 'Delete Note'
+        Width = 100.000000000000000000
+        OnClick = Button2Click
+      end
+    end
+  end
+  object Panel4: TPanel
+    Align = alClient
+    Height = 513.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Width = 579.000000000000000000
+    TabOrder = 2
+    object Panel5: TPanel
+      Align = alTop
+      Height = 49.000000000000000000
+      Width = 579.000000000000000000
+      TabOrder = 0
+      object Button3: TButton
+        Align = alRight
+        Enabled = False
+        Height = 39.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 441.000000000000000000
+        Position.Y = 5.000000000000000000
+        TabOrder = 0
+        Text = 'Update Note'
+        Width = 133.000000000000000000
+        OnClick = Button3Click
+      end
+    end
+    object Memo1: TMemo
+      Align = alClient
+      Enabled = False
+      Height = 454.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      TabOrder = 1
+      Width = 569.000000000000000000
+    end
+  end
+  object Image1: TImage
+    Bitmap.PNG = {
+      89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+      F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      036A494441545847B5564B6B1351143E339367D3445B4849444A29846E521B17
+      52B54885820A455A5C2A88C55AAB0BD76EDC88FFC0D7D282204508366ADAAD1B
+      2BC5824A372E7C349020A5D2360FD2BC66C6736772939B994933A9930F4EEF3D
+      77CEE39B7B4ECE94030D52A9D4B4CD660B56D5B691CD662191486C4D4C4CBC45
+      B5A29E9A078701D6E4FF40A5529193C9A4BCB4B4F40CE339D4B0CDC157D71A30
+      86EE56DA812008D0DDDD0D43434377A2D1684B123A0256C06EB72B242291C8CD
+      582CF6148F9A92E80801BC458584CFE783919191D9E5E5E527786C48A22304CA
+      E5326023D74884C3E15B2B2B2B8FF1918E44C76EA0542AC1CECE0EECEEEE42B1
+      5884FEFEFEB9783CFE081F0BAA950A6DC371994C66CDEBF59EAAEA6D83242F14
+      0A90CFE7958624374109211931140A0DA05952B5B6F806482202A7D3093D3D3D
+      802F026EB75B11528A603048F2D914A32A2C2340931BAD74CFF3FA746D95E0C7
+      16D635CF01C7D5DD687002B20F786538DEABBE244D4E6DC890F2783C83B8DD54
+      0E10A608E44B12DC7B9581D55F52F5E4605C1EE6E1E19407788CAE2580F3A181
+      80A912BCF8B86F3A39C1BB0D09DE7F2B362467F72C4C1158FFDDF63705D61362
+      2D292B5A982220737A333BFE9AAF8DBA6066CC0537CEBAA0CBD1584D19AB6B19
+      01163E170777CFBB61F69C1BE21B452C4F015EAF1715122C482ACB0908687D7B
+      DCAD247CFE611FF6F26AC07C4986D49E04932798496B90FCD004A8E3F5332E58
+      582DC0DF9CBE21635F8BF0FD8F08D3279D8A6ED90DB04E768183ED6CF35FC3CF
+      6D117ABB1A678456B4684AC0C889349EC7A91D1D75F8BD3C94293FC6DF281685
+      E120C261A10C22EA30B39083CF9B15A5D3A7220E90F471D01694F3375F8A2022
+      89C9300F0F2EF1B518642583C8EFF7B79E848400EB38F7320B9FDA18440453C3
+      00F72F083A027D7D7DAD2721EB44646CB0E1136E0AA707EA574EE3509D45CB1E
+      20B83AEA842B111E044E1F400B8720C3CCA804E321F5EDB5A285AE04E9747A0D
+      BF584A09A803DDE70A22A4F751AF9EE11FF519A31F7549E0B4D7A720EB2F8AA2
+      1C0804CC9540EB4C843461F0088A0F140950C14F30D59B2567CF58E808204B9D
+      931542405716A69AF030C2FA6BF72C0E2C81D562848E106063D03DBBB2D011A0
+      8EED48333F7ACEAE5AE806FBE2E2E245FC1FFE9824D5271F694C23B0362C9AD9
+      23A4F9F9F928AE395505F8072A0BC02FCE00DC850000000049454E44AE426082}
+    Height = 50.000000000000000000
+    Position.X = 296.000000000000000000
+    Position.Y = 8.000000000000000000
+    Visible = False
+    Width = 50.000000000000000000
+  end
+  object TMSFMXNativeMaciCloudDocument1: TTMSFMXNativeMaciCloudDocument
+    OnDocumentDataChanged = TMSFMXNativeMaciCloudDocument1DocumentDataChanged
+    OnDocumentsLoaded = TMSFMXNativeMaciCloudDocument1DocumentsLoaded
+    OnDocumentsRefreshed = TMSFMXNativeMaciCloudDocument1DocumentsRefreshed
+    OnDocumentAdded = TMSFMXNativeMaciCloudDocument1DocumentAdded
+    OnDocumentDeleted = TMSFMXNativeMaciCloudDocument1DocumentDeleted
+    OnInitialized = TMSFMXNativeMaciCloudDocument1Initialized
+    Left = 456
+    Top = 280
+  end
+end

@@ -1,0 +1,30 @@
+object Form1033: TForm1033
+  Left = 0
+  Top = 0
+  Caption = 'Form1033'
+  ClientHeight = 1004
+  ClientWidth = 768
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 768
+  DesignerHeight = 1024
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 0
+  object TMSFMXNativeUIButton1: TTMSFMXNativeUIButton
+    Align = alCenter
+    Width = 175.000000000000000000
+    Height = 44.000000000000000000
+    ClipChildren = True
+    Text = 'Send Mail'
+    OnClick = TMSFMXNativeUIButton1Click
+    Font.Name = 'Helvetica'
+    Font.Size = 14.000000000000000000
+  end
+  object TMSFMXNativeMFMailComposeViewController1: TTMSFMXNativeMFMailComposeViewController
+    IsHTML = False
+    Left = 368
+    Top = 488
+  end
+end

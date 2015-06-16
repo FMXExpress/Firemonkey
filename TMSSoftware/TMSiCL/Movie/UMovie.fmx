@@ -1,0 +1,25 @@
+object Form1073: TForm1073
+  Left = 0
+  Top = 0
+  Caption = 'Form1073'
+  ClientHeight = 300
+  ClientWidth = 480
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 480
+  DesignerHeight = 320
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 3
+  object TMSFMXNativeMPMoviePlayerViewController1: TTMSFMXNativeMPMoviePlayerViewController
+    Align = alClient
+    Width = 480.000000000000000000
+    Height = 300.000000000000000000
+    ClipChildren = True
+    InitialPlaybackTime = -1.000000000000000000
+    EndPlaybackTime = -1.000000000000000000
+    ShouldAutoPlay = False
+  end
+end

@@ -1,0 +1,89 @@
+object Form936: TForm936
+  Left = 0
+  Top = 0
+  Caption = 'Form936'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  object TMSFMXNativeUIView1: TTMSFMXNativeUIView
+    Position.X = 336.000000000000000000
+    Position.Y = 96.000000000000000000
+    Width = 673.000000000000000000
+    Height = 585.000000000000000000
+    ClipChildren = True
+    object TMSFMXNativeFMXWrapper2: TTMSFMXNativeFMXWrapper
+      Width = 217.000000000000000000
+      Height = 200.000000000000000000
+      Visible = False
+      ClipChildren = True
+      Form = Form2.Owner
+    end
+  end
+  object TMSFMXNativeFMXWrapper1: TTMSFMXNativeFMXWrapper
+    Position.X = 600.000000000000000000
+    Position.Y = 104.000000000000000000
+    Width = 400.000000000000000000
+    Height = 300.000000000000000000
+    ClipChildren = True
+    Form = Form1.Owner
+  end
+  object TMSFMXNativeUITableView1: TTMSFMXNativeUITableView
+    Align = alMostLeft
+    Width = 320.000000000000000000
+    Height = 748.000000000000000000
+    ClipChildren = True
+    Sections = <
+      item
+        LookUpID = 0
+        Items = <
+          item
+            Height = -1.000000000000000000
+            Text = 'FMX Form Wrapper'
+            DetailView = TMSFMXNativeFMXWrapper2
+          end
+          item
+            AccessoryType = atTableViewCellAccessoryDisclosureIndicator
+            Height = -1.000000000000000000
+            Text = 'FMX Form Wrapper Detail'
+            SubDetailView = TMSFMXNativeFMXWrapper3
+          end>
+      end>
+    Options.ToolBar = True
+    Options.RowHeight = 44.000000000000000000
+    Options.LookUp.Items = <>
+    DetailView = TMSFMXNativeUIView1
+  end
+  object TMSFMXNativeFMXWrapper3: TTMSFMXNativeFMXWrapper
+    Position.X = 344.000000000000000000
+    Position.Y = 312.000000000000000000
+    Width = 200.000000000000000000
+    Height = 200.000000000000000000
+    Visible = False
+    ClipChildren = True
+    Form = Form3.Owner
+  end
+  object TMSFMXNativeUIToolBar1: TTMSFMXNativeUIToolBar
+    Position.X = 320.000000000000000000
+    Align = alTop
+    Width = 704.000000000000000000
+    Height = 44.000000000000000000
+    ClipChildren = True
+    Items = <
+      item
+        Text = 'Popup Grid'
+      end>
+    OnItemClick = TMSFMXNativeUIToolBar1ItemClick
+  end
+  object TMSFMXNativeUIPopoverController1: TTMSFMXNativeUIPopoverController
+    View = TMSFMXNativeFMXWrapper1
+    Left = 792
+    Top = 48
+  end
+end

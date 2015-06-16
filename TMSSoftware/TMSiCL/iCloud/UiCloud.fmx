@@ -1,0 +1,187 @@
+object Form1144: TForm1144
+  Left = 0
+  Top = 0
+  Caption = 'Form1144'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object TabControl1: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 548.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object TabItem1: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      TabOrder = 0
+      Text = 'Password Manager'
+      Trimming = ttCharacter
+      Width = 160.000000000000000000
+      object Label1: TLabel
+        AutoSize = True
+        Height = 27.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 15.000000000000000000
+        Text = 'Name:'
+        Width = 53.000000000000000000
+        WordWrap = False
+        Trimming = ttCharacter
+      end
+      object Label2: TLabel
+        AutoSize = True
+        Height = 27.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 51.000000000000000000
+        Text = 'Value:'
+        Width = 50.000000000000000000
+        WordWrap = False
+        Trimming = ttCharacter
+      end
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 2
+        Position.X = 104.000000000000000000
+        Position.Y = 48.000000000000000000
+        Width = 201.000000000000000000
+        Height = 30.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Edit2: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 3
+        Position.X = 104.000000000000000000
+        Position.Y = 16.000000000000000000
+        Width = 201.000000000000000000
+        Height = 30.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Button1: TButton
+        Height = 44.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 160.000000000000000000
+        TabOrder = 4
+        Text = 'Add'
+        Trimming = ttCharacter
+        Width = 73.000000000000000000
+        OnClick = Button1Click
+      end
+      object ListBox2: TListBox
+        Align = alBottom
+        Height = 268.000000000000000000
+        Margins.Left = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 216.000000000000000000
+        TabOrder = 5
+        Width = 290.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnChange = ListBox2Change
+      end
+      object Button2: TButton
+        Enabled = False
+        Height = 44.000000000000000000
+        Position.X = 192.000000000000000000
+        Position.Y = 160.000000000000000000
+        TabOrder = 6
+        Text = 'Delete'
+        Trimming = ttCharacter
+        Width = 89.000000000000000000
+        OnClick = Button2Click
+      end
+      object Button3: TButton
+        Enabled = False
+        Height = 44.000000000000000000
+        Position.X = 96.000000000000000000
+        Position.Y = 160.000000000000000000
+        TabOrder = 7
+        Text = 'Update'
+        Trimming = ttCharacter
+        Width = 89.000000000000000000
+        OnClick = Button3Click
+      end
+      object RadioButton1: TRadioButton
+        Height = 19.000000000000000000
+        Position.X = 104.000000000000000000
+        Position.Y = 88.000000000000000000
+        TabOrder = 8
+        Text = 'Integer'
+        Width = 120.000000000000000000
+      end
+      object Label3: TLabel
+        AutoSize = True
+        Height = 27.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 84.000000000000000000
+        Text = 'Storage:'
+        Width = 66.000000000000000000
+        WordWrap = False
+        Trimming = ttCharacter
+      end
+      object RadioButton2: TRadioButton
+        Height = 19.000000000000000000
+        Position.X = 104.000000000000000000
+        Position.Y = 115.000000000000000000
+        TabOrder = 10
+        Text = 'Boolean'
+        Width = 120.000000000000000000
+      end
+      object RadioButton3: TRadioButton
+        Height = 19.000000000000000000
+        Position.X = 104.000000000000000000
+        Position.Y = 142.000000000000000000
+        TabOrder = 11
+        Text = 'String'
+        Width = 120.000000000000000000
+      end
+    end
+    object TabItem2: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 160.000000000000000000
+      TabOrder = 1
+      Text = 'Event Logger'
+      Trimming = ttCharacter
+      Width = 160.000000000000000000
+      object ListBox1: TListBox
+        Align = alClient
+        Height = 469.000000000000000000
+        Margins.Left = 15.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 15.000000000000000000
+        TabOrder = 0
+        Width = 290.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+      end
+    end
+  end
+  object TMSFMXNativeiCloud1: TTMSFMXNativeiCloud
+    OnKeyUpdate = TMSFMXNativeiCloud1KeyUpdate
+    OnKeysChanged = TMSFMXNativeiCloud1KeysChanged
+    OnKeyRemoved = TMSFMXNativeiCloud1KeyRemoved
+    OnKeyAdded = TMSFMXNativeiCloud1KeyAdded
+    Left = 144
+    Top = 264
+  end
+end

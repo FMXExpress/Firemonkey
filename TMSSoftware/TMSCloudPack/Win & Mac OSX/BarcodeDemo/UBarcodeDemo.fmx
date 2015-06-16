@@ -1,0 +1,203 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'TMS Barcode Demo'
+  ClientHeight = 692
+  ClientWidth = 449
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Button1: TButton
+    Height = 22.000000000000000000
+    Position.X = 72.000000000000000000
+    Position.Y = 352.000000000000000000
+    TabOrder = 4
+    Text = 'Get barcode'
+    Width = 137.000000000000000000
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Height = 22.000000000000000000
+    Position.X = 72.000000000000000000
+    Position.Y = 648.000000000000000000
+    TabOrder = 5
+    Text = 'Save to file'
+    Width = 137.000000000000000000
+    OnClick = Button2Click
+  end
+  object Label1: TLabel
+    Height = 17.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = 'Generate a Barcode:'
+    Width = 305.000000000000000000
+  end
+  object Panel1: TPanel
+    Height = 250.000000000000000000
+    Position.X = 72.000000000000000000
+    Position.Y = 384.000000000000000000
+    Width = 350.000000000000000000
+    TabOrder = 10
+    object TMSFMXCloudImage1: TTMSFMXCloudImage
+      Align = Client
+      Width = 350.000000000000000000
+      Height = 250.000000000000000000
+      ClipChildren = True
+      Version = '1.5.0.1'
+    end
+  end
+  object Label2: TLabel
+    Height = 17.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    Text = 'Value:'
+    Width = 120.000000000000000000
+  end
+  object Label3: TLabel
+    Height = 17.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 88.000000000000000000
+    Text = 'Format:'
+    Width = 120.000000000000000000
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 13
+    Text = '12345'
+    Position.X = 72.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 137.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object cbCodeType: TComboBox
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    Items.Strings = (
+      'Barcode'
+      'QR code')
+    ItemIndex = 0
+    Position.X = 72.000000000000000000
+    Position.Y = 88.000000000000000000
+    TabOrder = 14
+    Width = 137.000000000000000000
+    OnChange = cbCodeTypeChange
+  end
+  object GroupBox1: TGroupBox
+    Height = 153.000000000000000000
+    Position.X = 72.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Barcode options'
+    Width = 217.000000000000000000
+    TabOrder = 15
+    object Label4: TLabel
+      Height = 17.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Type:'
+      Width = 57.000000000000000000
+    end
+    object Label5: TLabel
+      Height = 17.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      Text = 'Width:'
+      Width = 57.000000000000000000
+    end
+    object Label6: TLabel
+      Height = 17.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 88.000000000000000000
+      Text = 'Height:'
+      Width = 57.000000000000000000
+    end
+    object cbType: TComboBox
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      Items.Strings = (
+        'Code 39'
+        'Code 128a'
+        'Code 128b'
+        'Code 128c'
+        '2 of 5 Interleaved')
+      ItemIndex = 0
+      Position.X = 64.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 4
+      Width = 137.000000000000000000
+    end
+    object edWidth: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Text = '250'
+      Position.X = 64.000000000000000000
+      Position.Y = 56.000000000000000000
+      Width = 137.000000000000000000
+      Height = 22.000000000000000000
+    end
+    object edHeight: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Text = '100'
+      Position.X = 64.000000000000000000
+      Position.Y = 88.000000000000000000
+      Width = 137.000000000000000000
+      Height = 22.000000000000000000
+    end
+    object cbShowText: TCheckBox
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 64.000000000000000000
+      Position.Y = 120.000000000000000000
+      TabOrder = 7
+      Text = 'Show text'
+      Width = 120.000000000000000000
+    end
+  end
+  object GroupBox2: TGroupBox
+    Height = 65.000000000000000000
+    Position.X = 72.000000000000000000
+    Position.Y = 280.000000000000000000
+    Text = 'QR code options:'
+    Width = 217.000000000000000000
+    TabOrder = 16
+    object Label7: TLabel
+      Height = 17.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Size:'
+      Width = 49.000000000000000000
+    end
+    object cbSize: TComboBox
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      Items.Strings = (
+        '42x42'
+        '105x105'
+        '210x210')
+      ItemIndex = 1
+      Position.X = 64.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 2
+      Width = 137.000000000000000000
+    end
+  end
+  object TMSFMXCloudBarcode1: TTMSFMXCloudBarcode
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Left = 312
+    Top = 16
+  end
+end

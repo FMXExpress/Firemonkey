@@ -1,0 +1,77 @@
+object Form1073: TForm1073
+  Left = 0
+  Top = 0
+  Caption = 'Form1073'
+  ClientHeight = 1004
+  ClientWidth = 768
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 768
+  DesignerHeight = 1024
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 0
+  object TMSFMXNativeUIToolBar1: TTMSFMXNativeUIToolBar
+    Align = alTop
+    Width = 768.000000000000000000
+    Height = 44.000000000000000000
+    ClipChildren = True
+    Items = <
+      item
+        CustomView = TMSFMXNativeUIView1
+        Text = 'Button 1'
+        Kind = ikCustom
+      end
+      item
+        Text = 'Button 2'
+        Kind = ikSystem
+        SystemItem = siBarButtonSystemItemSearch
+      end
+      item
+        Text = 'Button 3'
+        Kind = ikSystem
+        SystemItem = siBarButtonSystemItemRewind
+      end
+      item
+        Text = 'Button 4'
+        Kind = ikSystem
+        SystemItem = siBarButtonSystemItemFastForward
+      end
+      item
+        Text = 'Load HTML'
+      end
+      item
+        Text = 'Javascript Alert'
+      end
+      item
+        Text = 'Load PDF File'
+      end>
+    OnItemClick = TMSFMXNativeUIToolBar1ItemClick
+    object TMSFMXNativeUIView1: TTMSFMXNativeUIView
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 250.000000000000000000
+      Height = 31.000000000000000000
+      ClipChildren = True
+      Color = claNull
+      object TMSFMXNativeUITextField1: TTMSFMXNativeUITextField
+        Align = alClient
+        Width = 250.000000000000000000
+        Height = 31.000000000000000000
+        ClipChildren = True
+        Font.Name = 'Helvetica'
+        Font.Size = 14.000000000000000000
+        OnDidEndEditing = TMSFMXNativeUITextField1DidEndEditing
+      end
+    end
+  end
+  object TMSFMXNativeUIWebView1: TTMSFMXNativeUIWebView
+    Align = alClient
+    Width = 768.000000000000000000
+    Height = 960.000000000000000000
+    ClipChildren = True
+    OnDidFinishLoad = TMSFMXNativeUIWebView1DidFinishLoad
+  end
+end

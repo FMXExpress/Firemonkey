@@ -1,0 +1,320 @@
+object Form98: TForm98
+  Left = 0
+  Top = 0
+  Caption = 'TMS GTasks Demo'
+  ClientHeight = 513
+  ClientWidth = 1037
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object btnConnect: TButton
+    Height = 22.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 0
+    Text = 'Connect'
+    Width = 80.000000000000000000
+    OnClick = btnConnectClick
+  end
+  object lstTaskList: TListBox
+    Height = 121.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 80.000000000000000000
+    TabOrder = 1
+    Width = 449.000000000000000000
+    OnClick = lstTaskListClick
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    object Label1: TLabel
+      Height = 17.000000000000000000
+      Position.Y = -24.000000000000000000
+      Text = 'My Lists'
+      Width = 120.000000000000000000
+    end
+    object btnNextPage: TButton
+      Height = 22.000000000000000000
+      Position.X = 368.000000000000000000
+      Position.Y = 128.000000000000000000
+      TabOrder = 1
+      Text = 'Next Page'
+      Width = 80.000000000000000000
+      OnClick = btnNextPageClick
+    end
+    object Label2: TLabel
+      Height = 17.000000000000000000
+      Position.Y = 152.000000000000000000
+      Text = 'My Tasks'
+      Width = 120.000000000000000000
+    end
+    object btnNextPageTasks: TButton
+      Height = 22.000000000000000000
+      Position.X = 365.000000000000000000
+      Position.Y = 375.000000000000000000
+      TabOrder = 3
+      Text = 'Next Page'
+      Width = 80.000000000000000000
+      OnClick = btnNextPageTasksClick
+    end
+    object btnRemoveTaskList: TButton
+      Height = 22.000000000000000000
+      Position.X = 511.000000000000000000
+      Position.Y = 127.000000000000000000
+      TabOrder = 4
+      Text = 'Remove'
+      Width = 80.000000000000000000
+      OnClick = btnRemoveTaskListClick
+    end
+    object btnRemoveTask: TButton
+      Height = 22.000000000000000000
+      Position.X = 511.000000000000000000
+      Position.Y = 375.000000000000000000
+      TabOrder = 5
+      Text = 'Remove Task'
+      Width = 80.000000000000000000
+      OnClick = btnRemoveTaskClick
+    end
+  end
+  object lstvTaskLists: TTMSFMXCloudListView
+    Height = 193.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 256.000000000000000000
+    TabOrder = 2
+    Width = 449.000000000000000000
+    OnClick = lstvTaskListsClick
+    RowCount = 0
+    RowHeight = 21.000000000000000000
+    ShowHorzLines = False
+    ShowVertLines = False
+    Columns = <
+      item
+        Caption = 'Description'
+        Tag = 0
+      end
+      item
+        Caption = 'Due Date'
+        Tag = 0
+      end
+      item
+        Caption = 'Completed'
+        Tag = 0
+      end
+      item
+        Caption = 'Parent'
+        Tag = 0
+      end>
+    Items = <>
+    OnChange = lstvTaskListsChange
+    object TStringColumn
+      Header = 'Description'
+      Height = 0.000000000000000000
+      ReadOnly = True
+      TabOrder = 0
+      Width = 100.000000000000000000
+    end
+    object TStringColumn
+      Header = 'Due Date'
+      Height = 0.000000000000000000
+      Position.X = 100.000000000000000000
+      ReadOnly = True
+      TabOrder = 1
+      Width = 100.000000000000000000
+    end
+    object TStringColumn
+      Header = 'Completed'
+      Height = 0.000000000000000000
+      Position.X = 200.000000000000000000
+      ReadOnly = True
+      TabOrder = 2
+      Width = 100.000000000000000000
+    end
+    object TStringColumn
+      Header = 'Parent'
+      Height = 0.000000000000000000
+      Position.X = 300.000000000000000000
+      ReadOnly = True
+      TabOrder = 3
+      Width = 100.000000000000000000
+    end
+  end
+  object GroupBox1: TGroupBox
+    Height = 130.000000000000000000
+    Position.X = 520.000000000000000000
+    Position.Y = 72.000000000000000000
+    Text = 'Task List Detail'
+    Width = 489.000000000000000000
+    TabOrder = 3
+  end
+  object btnAddList: TButton
+    Height = 22.000000000000000000
+    Position.X = 840.000000000000000000
+    Position.Y = 208.000000000000000000
+    TabOrder = 4
+    Text = 'Add'
+    Width = 80.000000000000000000
+    OnClick = btnAddListClick
+  end
+  object btnSaveList: TButton
+    Height = 22.000000000000000000
+    Position.X = 928.000000000000000000
+    Position.Y = 208.000000000000000000
+    TabOrder = 5
+    Text = 'Save'
+    Width = 80.000000000000000000
+    OnClick = btnSaveListClick
+  end
+  object GroupBox2: TGroupBox
+    Height = 201.000000000000000000
+    Position.X = 520.000000000000000000
+    Position.Y = 248.000000000000000000
+    Text = 'Task Detail'
+    Width = 489.000000000000000000
+    TabOrder = 6
+    object Label3: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = -152.000000000000000000
+      Text = 'Title:'
+      Width = 73.000000000000000000
+    end
+    object Label4: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = -120.000000000000000000
+      Text = 'Last Updated:'
+      Width = 81.000000000000000000
+    end
+    object Label5: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = -88.000000000000000000
+      Text = 'Id:'
+      Width = 73.000000000000000000
+    end
+    object Label6: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 40.000000000000000000
+      Text = 'Title:'
+      Width = 57.000000000000000000
+    end
+    object Label7: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      Text = 'Due Date :'
+      Width = 65.000000000000000000
+    end
+    object Label8: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 136.000000000000000000
+      Text = 'Id:'
+      Width = 65.000000000000000000
+    end
+    object edListTitle: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 6
+      Position.X = 96.000000000000000000
+      Position.Y = -152.000000000000000000
+      Width = 201.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edTitle: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 7
+      Position.X = 88.000000000000000000
+      Position.Y = 40.000000000000000000
+      Width = 201.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+    end
+    object cbCompleted: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 89.000000000000000000
+      Position.Y = 102.000000000000000000
+      TabOrder = 8
+      Text = 'Completed'
+      Width = 120.000000000000000000
+    end
+    object dtDue: TCalendarEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 9
+      Cursor = crIBeam
+      Date = 41928.000000000000000000
+      Height = 22.000000000000000000
+      Position.X = 88.000000000000000000
+      Position.Y = 75.000000000000000000
+      Width = 201.000000000000000000
+    end
+    object lblLastUpdated: TLabel
+      Height = 17.000000000000000000
+      Position.X = 96.000000000000000000
+      Position.Y = -120.000000000000000000
+      Width = 377.000000000000000000
+    end
+    object lblTaskListId: TLabel
+      Height = 17.000000000000000000
+      Position.X = 96.000000000000000000
+      Position.Y = -88.000000000000000000
+      Width = 385.000000000000000000
+    end
+    object lblTaskId: TLabel
+      Height = 17.000000000000000000
+      Position.X = 88.000000000000000000
+      Position.Y = 136.000000000000000000
+      Width = 393.000000000000000000
+    end
+  end
+  object btnAddTask: TButton
+    Height = 22.000000000000000000
+    Position.X = 752.000000000000000000
+    Position.Y = 456.000000000000000000
+    TabOrder = 7
+    Text = 'Add'
+    Width = 80.000000000000000000
+    OnClick = btnAddTaskClick
+  end
+  object btnSaveTask: TButton
+    Height = 22.000000000000000000
+    Position.X = 928.000000000000000000
+    Position.Y = 456.000000000000000000
+    TabOrder = 8
+    Text = 'Save'
+    Width = 80.000000000000000000
+    OnClick = btnSaveTaskClick
+  end
+  object btnAddChildTask: TButton
+    Height = 22.000000000000000000
+    Position.X = 840.000000000000000000
+    Position.Y = 456.000000000000000000
+    TabOrder = 9
+    Text = 'Add Child'
+    Width = 80.000000000000000000
+    OnClick = btnAddChildTaskClick
+  end
+  object TMSFMXCloudGTasks1: TTMSFMXCloudGTasks
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888/'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudGTasks1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Scopes.Strings = (
+      'https://www.googleapis.com/auth/userinfo.profile'
+      'https://www.googleapis.com/auth/userinfo.email'
+      'https://www.googleapis.com/auth/tasks')
+    Left = 144
+    Top = 8
+  end
+end

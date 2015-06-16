@@ -1,0 +1,132 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  DesignerOSVersion = '7'
+  object Panel1: TPanel
+    Align = alLeft
+    Height = 704.000000000000000000
+    Position.Y = 44.000000000000000000
+    Width = 449.000000000000000000
+    TabOrder = 1
+    object btnLoad: TButton
+      Height = 49.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'Load Albums'
+      Trimming = ttCharacter
+      Width = 121.000000000000000000
+      OnClick = btnLoadClick
+    end
+    object ListView1: TListBox
+      Height = 265.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      TabOrder = 1
+      Width = 401.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListView1Change
+    end
+    object btAdd: TButton
+      Height = 49.000000000000000000
+      Position.X = 152.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 2
+      Text = 'Upload Image'
+      Trimming = ttCharacter
+      Width = 121.000000000000000000
+      OnClick = btAddClick
+    end
+    object edAdd: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 3
+      Text = 'new image'
+      Position.X = 288.000000000000000000
+      Position.Y = 16.000000000000000000
+      Width = 129.000000000000000000
+      Height = 30.000000000000000000
+      KillFocusByReturn = False
+    end
+    object ListView2: TListBox
+      Height = 280.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 376.000000000000000000
+      TabOrder = 4
+      Width = 401.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListView2Change
+    end
+    object Label1: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 349.000000000000000000
+      Text = 'Images'
+      Width = 58.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 1024.000000000000000000
+    object Button1: TButton
+      Height = 44.000000000000000000
+      Position.X = 13.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 0
+      Text = 'Connect'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+    object btRemove: TButton
+      Height = 44.000000000000000000
+      Position.X = 93.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 1
+      Text = 'Remove Access'
+      Trimming = ttCharacter
+      Width = 140.000000000000000000
+      OnClick = btRemoveClick
+    end
+  end
+  object TMSFMXCloudImage1: TTMSFMXCloudImage
+    Align = alClient
+    Width = 575.000000000000000000
+    Height = 704.000000000000000000
+    ClipChildren = True
+    Version = '1.5.0.1'
+  end
+  object TMSFMXCloudFaceBook1: TTMSFMXCloudFaceBook
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudFaceBook1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Left = 264
+    Top = 208
+  end
+end

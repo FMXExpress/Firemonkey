@@ -1,0 +1,45 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 748
+  ClientWidth = 1024
+  Visible = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  object Button1: TButton
+    Height = 44.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 0
+    Text = 'Add'
+    Trimming = ttCharacter
+    Width = 201.000000000000000000
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Height = 200.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 104.000000000000000000
+    TabOrder = 1
+    Width = 200.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object Edit1: TEdit
+    TabOrder = 2
+    Text = 'Item Text'
+    Position.X = 24.000000000000000000
+    Position.Y = 64.000000000000000000
+    Width = 201.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+end

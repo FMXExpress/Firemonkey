@@ -1,0 +1,376 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 705
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 705
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  DesignerOSVersion = ''
+  object Label2: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 13.000000000000000000
+    Position.Y = 362.000000000000000000
+    Text = 'Message:'
+    Width = 74.000000000000000000
+    WordWrap = False
+  end
+  object Label1: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 13.000000000000000000
+    Position.Y = 399.000000000000000000
+    Text = 'Link:'
+    Width = 38.000000000000000000
+    WordWrap = False
+  end
+  object Label3: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 13.000000000000000000
+    Position.Y = 431.000000000000000000
+    Text = 'Image:'
+    Width = 54.000000000000000000
+    WordWrap = False
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 2
+    Text = 'http://www.tmssoftware.com/site/img/tmslogo.png'
+    Position.X = 96.000000000000000000
+    Position.Y = 431.000000000000000000
+    Width = 321.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 1
+    Text = 'http://www.tmssoftware.com'
+    Position.X = 96.000000000000000000
+    Position.Y = 396.000000000000000000
+    Width = 321.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 5
+    Text = 'TMS Cloud Pack automated Facebook message'
+    Position.X = 96.000000000000000000
+    Position.Y = 361.000000000000000000
+    Width = 321.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Button3: TButton
+    Height = 32.000000000000000000
+    Position.X = 423.000000000000000000
+    Position.Y = 362.000000000000000000
+    TabOrder = 3
+    Text = 'Post'
+    Width = 114.000000000000000000
+    OnClick = Button3Click
+  end
+  object Button2: TButton
+    Height = 36.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 429.000000000000000000
+    TabOrder = 4
+    Text = 'Upload image'
+    Width = 113.000000000000000000
+    OnClick = Button2Click
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 1024.000000000000000000
+    object Button1: TButton
+      Height = 31.000000000000000000
+      Position.X = 13.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 0
+      Text = 'Connect'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = Button1Click
+    end
+    object btRemove: TButton
+      Height = 31.000000000000000000
+      Position.X = 92.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 1
+      Text = 'Disconnect'
+      Trimming = ttCharacter
+      Width = 125.000000000000000000
+      OnClick = btRemoveClick
+    end
+  end
+  object TMSFMXCloudImage1: TTMSFMXCloudImage
+    Position.X = 276.000000000000000000
+    Position.Y = 108.000000000000000000
+    Width = 54.000000000000000000
+    Height = 54.000000000000000000
+    ClipChildren = True
+    Version = '1.5.0.1'
+  end
+  object Label10: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 275.000000000000000000
+    Position.Y = 303.000000000000000000
+    Text = 'Updated:'
+    Width = 73.000000000000000000
+    WordWrap = False
+  end
+  object Label11: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 276.000000000000000000
+    Position.Y = 168.000000000000000000
+    Text = 'Name:'
+    Width = 53.000000000000000000
+    WordWrap = False
+  end
+  object Label4: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 275.000000000000000000
+    Position.Y = 249.000000000000000000
+    Text = 'Gender:'
+    Width = 63.000000000000000000
+    WordWrap = False
+  end
+  object Label5: TLabel
+    AutoSize = True
+    Height = 13.000000000000000000
+    Position.X = 354.000000000000000000
+    Position.Y = 195.000000000000000000
+    Width = 3.000000000000000000
+    WordWrap = False
+  end
+  object Label6: TLabel
+    AutoSize = True
+    Height = 13.000000000000000000
+    Position.X = 355.000000000000000000
+    Position.Y = 222.000000000000000000
+    Width = 3.000000000000000000
+    WordWrap = False
+  end
+  object Label7: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 275.000000000000000000
+    Position.Y = 195.000000000000000000
+    Text = 'Birthday:'
+    Width = 70.000000000000000000
+    WordWrap = False
+  end
+  object Label8: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 275.000000000000000000
+    Position.Y = 222.000000000000000000
+    Text = 'Location:'
+    Width = 72.000000000000000000
+    WordWrap = False
+  end
+  object Label9: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 275.000000000000000000
+    Position.Y = 276.000000000000000000
+    Text = 'Website:'
+    Width = 68.000000000000000000
+    WordWrap = False
+  end
+  object lbGender: TLabel
+    AutoSize = True
+    Height = 13.000000000000000000
+    Position.X = 354.000000000000000000
+    Position.Y = 249.000000000000000000
+    Width = 3.000000000000000000
+    WordWrap = False
+  end
+  object lbName: TLabel
+    AutoSize = True
+    Height = 13.000000000000000000
+    Position.X = 354.000000000000000000
+    Position.Y = 168.000000000000000000
+    Width = 3.000000000000000000
+    WordWrap = False
+  end
+  object lbUpdated: TLabel
+    AutoSize = True
+    Height = 13.000000000000000000
+    Position.X = 354.000000000000000000
+    Position.Y = 303.000000000000000000
+    Width = 3.000000000000000000
+    WordWrap = False
+  end
+  object lbWebsite: TLabel
+    AutoSize = True
+    Height = 13.000000000000000000
+    Position.X = 354.000000000000000000
+    Position.Y = 276.000000000000000000
+    Width = 187.000000000000000000
+    WordWrap = False
+  end
+  object ListBox1: TListBox
+    Height = 225.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 104.000000000000000000
+    TabOrder = 15
+    Width = 241.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = ListBox1Change
+  end
+  object Button4: TButton
+    Height = 44.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 51.000000000000000000
+    TabOrder = 23
+    Text = 'Load Friends'
+    Trimming = ttCharacter
+    Width = 161.000000000000000000
+    OnClick = Button4Click
+  end
+  object ListBox2: TListBox
+    Height = 209.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 520.000000000000000000
+    TabOrder = 24
+    Width = 249.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = ListBox2Change
+  end
+  object Button5: TButton
+    Height = 44.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 467.000000000000000000
+    TabOrder = 25
+    Text = 'Load Feed'
+    Trimming = ttCharacter
+    Width = 161.000000000000000000
+    OnClick = Button5Click
+  end
+  object TMSFMXCloudImage2: TTMSFMXCloudImage
+    Position.X = 560.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 449.000000000000000000
+    Height = 449.000000000000000000
+    ClipChildren = True
+    Version = '1.5.0.1'
+  end
+  object Label12: TLabel
+    Height = 21.000000000000000000
+    Position.X = 280.000000000000000000
+    Position.Y = 520.000000000000000000
+    Text = 'Title:'
+    Width = 129.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label13: TLabel
+    AutoSize = True
+    Height = 21.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 520.000000000000000000
+    Width = 129.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object Label14: TLabel
+    AutoSize = True
+    Height = 21.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 552.000000000000000000
+    Width = 129.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object Label15: TLabel
+    Height = 21.000000000000000000
+    Position.X = 280.000000000000000000
+    Position.Y = 552.000000000000000000
+    Text = 'Summary:'
+    Width = 129.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label16: TLabel
+    AutoSize = True
+    Height = 21.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 584.000000000000000000
+    Width = 129.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object Label17: TLabel
+    Height = 21.000000000000000000
+    Position.X = 280.000000000000000000
+    Position.Y = 584.000000000000000000
+    Text = 'Description:'
+    Width = 129.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label18: TLabel
+    Height = 21.000000000000000000
+    Position.X = 280.000000000000000000
+    Position.Y = 616.000000000000000000
+    Text = 'Story:'
+    Width = 129.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label19: TLabel
+    AutoSize = True
+    Height = 21.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 616.000000000000000000
+    Width = 129.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object Label20: TLabel
+    AutoSize = True
+    Height = 21.000000000000000000
+    Position.X = 424.000000000000000000
+    Position.Y = 648.000000000000000000
+    Width = 129.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object Label21: TLabel
+    Height = 21.000000000000000000
+    Position.X = 280.000000000000000000
+    Position.Y = 648.000000000000000000
+    Text = 'Link:'
+    Width = 129.000000000000000000
+    Trimming = ttCharacter
+  end
+  object TMSFMXCloudFaceBook1: TTMSFMXCloudFaceBook
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudFaceBook1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Left = 688
+    Top = 256
+  end
+end

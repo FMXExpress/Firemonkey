@@ -1,0 +1,1662 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'TMS Cloud Pack: TTMSFMXCloudGContacts Demo'
+  ClientHeight = 697
+  ClientWidth = 904
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object GroupBox2: TGroupBox
+    Align = alTop
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 128.000000000000000000
+    Position.Y = 41.000000000000000000
+    Text = 'Groups'
+    Width = 904.000000000000000000
+    TabOrder = 1
+    object Button6: TButton
+      Height = 25.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 22.000000000000000000
+      TabOrder = 0
+      Text = 'Load Groups'
+      Width = 110.000000000000000000
+      OnClick = Button6Click
+    end
+    object lbGroups: TListBox
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Height = 71.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 54.000000000000000000
+      TabOrder = 1
+      Width = 331.000000000000000000
+      OnClick = lbGroupsClick
+      ItemHeight = 13.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+    end
+    object GroupBox4: TGroupBox
+      Align = alRight
+      StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+      Height = 128.000000000000000000
+      Position.X = 349.000000000000000000
+      Text = 'Group details'
+      Width = 555.000000000000000000
+      TabOrder = 2
+      object Label19: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 13.000000000000000000
+        Position.Y = 22.000000000000000000
+        Text = 'Name:'
+        Width = 35.000000000000000000
+        WordWrap = False
+      end
+      object edGroupName: TEdit
+        TabOrder = 0
+        Text = 'new group'
+        Position.X = 56.000000000000000000
+        Position.Y = 19.000000000000000000
+        Width = 209.000000000000000000
+        Height = 21.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Panel3: TPanel
+        Align = alBottom
+        Height = 41.000000000000000000
+        Position.Y = 87.000000000000000000
+        Width = 555.000000000000000000
+        TabOrder = 1
+        object btGroupAdd: TButton
+          Height = 25.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 0
+          Text = 'Add '
+          Width = 110.000000000000000000
+          OnClick = btGroupAddClick
+        end
+        object btGroupUpdate: TButton
+          Height = 25.000000000000000000
+          Position.X = 124.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 1
+          Text = 'Update'
+          Width = 110.000000000000000000
+          OnClick = btGroupUpdateClick
+        end
+        object btGroupDelete: TButton
+          Height = 25.000000000000000000
+          Position.X = 240.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 2
+          Text = 'Delete'
+          Width = 110.000000000000000000
+          OnClick = btGroupDeleteClick
+        end
+      end
+    end
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 41.000000000000000000
+    Width = 904.000000000000000000
+    TabOrder = 0
+    object Image1: TImage
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+        F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        06AC49444154484B35966B8C546719C77FE73EE7CCEEECEC85651704818872B1
+        B18D97842A911A4BE2122C893151638C910FD5184DFAD1A41FB0F18B9F341A6C
+        488BC6D4185363AC2D244D688A9502D2228A5CBB5B6077D90BEC057676AEE7CC
+        39E7F57F9638BB6F66E6EC7B799EFFED5DEBC663DF327DEB1C62EF0E89B9871F
+        81311659AB84EDF5923B869404CBB4F07D8F6E3BD6BB4F1E77711C1BCFB249D2
+        6C6D8DB17C523B224F4322D6B17CBF8E6D0FBA34BC8415571387D633673CEE66
+        2ECDC18DCC5801F35E9939A7C46ADF100BDAA4EBF5D08E1D72D7C70E7C6293D3
+        4913DCA8A44232020F54AE0EAC3338E463FDEB6B874CECE60C7D721BDB9ED88D
+        335885912D90F703AE46AA153134E6C0D2D78BE38C9F3841DA79409AD4710357
+        55DA9A9F62D48993E810BB042AB2548AB0A67EFE9CD97CE0004CCF72E5EA1516
+        9B0D767D662F234F8E69E340C370EDE2596EBC73927071116EDC667314E2391D
+        D2AC459CE4843D2171B78D9DA6AC2F47B41FD6049F4B2789056DEDB2593EF126
+        FF79F575CA99B08F1C16BA16DB9EDCCFA79EFD11087701CFCD632F72FFDDD30C
+        E731597D09AFA4B982CCA222980C6D3B21082CFC568BD0323AC0C1A8619B8EC5
+        BB67CE2360A8B457A8AC2CB1D9EA72F7DCDB3C78EB849E0A1EF1B363EC00E572
+        59DF3BD86E4C6EE5B485F685C9391E3F7A9C3DC77FCF3B1393349C9076EEF3B0
+        D1A19B5B3A60AA855533749326C66961BA35DCFA7D46931A374EBD2649B585AF
+        C6A651D67FFE734C7796E8B85256187176FA1EDF3D770E46D743B59FE7CEFE93
+        CBF76BA807FA0636D26E1B1D2069B985C4EC94D4A46B120C6CB5DA5EA533334D
+        77FC06940A693854B66E21ACF463729B7A2BE7C7A74E432042C589F134278878
+        F68D3789F5F785C565A2A84707F465D26E5B5ACEC973578A2F114B0176662371
+        3173FB437521640447C9EFC36D050471849B4A00A65099A4956558AE0E400B34
+        6C07C2924FD269EA80F503543F32821D56C8649258442722B99B3908665AAB75
+        6DD45D237AF6C3096D2678548C9D67BC3426A5B53BA225816653EF1D8E1F1CC3
+        6A376540151E1707089E5DFB9E66A165D49AAB6232E95AE229F7516BCB03B9CA
+        EF8803E97EE6CA7912AB4D1A14CEADB36330E295A7BE088B0FE0C10A2FEEFB12
+        BBAB7DF40A6AAF2B2C04B5653231ACD3CFBCF002ABD72E1326AB85F489AD0AAD
+        4A95433FFD096CD9C8FC1F7ECBC537FE46A9D961A014D0AC3708A32A4D41658B
+        F0965184A8E572A3458F0A4C93C65A9458729F7A6EC1FC24E75F3ECAE2D54B64
+        82A0160DB3FFEBDF60C3BE2FF0C1ABAF307EF2CF8C144CA89954E6B2FC90BA72
+        684504D78DDCEB3A1422F6576A84794E8F2B981329F4BD3FFDD17CF6A9BDD2BA
+        0037C2F3839B8804D8F938F454B974EC28B7FE718A6869927EB933EE4A356195
+        3B0F6A7C4F1D151EA1AC672AAA205BE4F1F23307A97A0EEB2A3D5847F77EC28C
+        F40F321C55A88C6E6470CF1E361EFCAA30CA49676778EDC8F304F7A688D25505
+        9CCBB42039FC1719B0ACACF2B5B1365A7B15242B0049559C02906ECCCFBE3286
+        BD436A0B97E6B0EECF72F5C279E1DA2BE569A234ED4AF349266F38F28A5235D1
+        38FCD7D7652AF95E3C640AB344CE6D4A1C5486F4AC479ED07A4FEBE581E74FFF
+        5D926D1A3C69BE15AFE2BB190FEF4C415DF1E0E9621818E299EFFF906C64032B
+        6989E5585A2F5754B98CE507F28CD4A0DF5261B2C22BE204112B133C3267E8E3
+        1C1AEE3F52EAEFA726DD3604C1723366F7139FD6044D0A02FCD111B6EFD8C9EC
+        D4B452C8E2B1FD5F5EDBC4920FBC229E0589ADFB40F92DEE2496542AC854A042
+        914C2BCEFEE03B6668D30636EFFA38A50D1B147FAA60EBF64744ABCDB5CAE44A
+        16E679EB37BF62E6DF1789B4B9935A325C4A5E14AFF42C5E4670DAFA6C59C5C5
+        A1EF4A59CB8C5F324CDDE1FD7367B83D39C1DDC95BE22923EC1D60EC9BDF66FB
+        7EB9B5146ABA4C27E2AEFFFA174CBC7D0ABFDE22F26CBAEABCF8D14ED82257BD
+        E1FCFF00A5A973D8ED1C39F9BB97A8DFBA46BE30CD689053493A8CE27155E9B8
+        32BBC4D68FED14B1035AE1B24E9F6FFEF72A8DE54535E629C3CCDA7DACFCD6D6
+        C5F68F3EE7CAB3B5039E6E27477A954E5EB741A47B206D34E8970AB2E506BDB6
+        CBFCDD29DE7FEF021FDDB98B48722E54D2989BA539A34E57977195B2C54BA9A0
+        2178B5A9D1E69644612B386DBFD187D528E1B93D0241296A85B4EACA124D0E44
+        D260B248307F9D53C77E09BA8C68D4A9286F9A2B0B84C55D9D3544B8885554E4
+        22D7C8E526F170BA558274187BA4BA492AF09567B2BF2D3205832F8906EAC256
+        82F6EA46AB644D9627AEC33D5DFC0ABFD9F979C153284977AECAB2C483AD51F4
+        62AB6B4FFF8D949C1E1530C0FF00BA6D11D9712CD6190000000049454E44AE42
+        6082}
+      Height = 24.000000000000000000
+      Position.X = 875.000000000000000000
+      Position.Y = 11.000000000000000000
+      Width = 24.000000000000000000
+    end
+    object Button1: TButton
+      Height = 25.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      TabOrder = 0
+      Text = 'Connect'
+      Width = 110.000000000000000000
+      OnClick = Button1Click
+    end
+    object btRemove: TButton
+      Height = 25.000000000000000000
+      Position.X = 126.000000000000000000
+      Position.Y = 9.000000000000000000
+      TabOrder = 1
+      Text = 'Remove access'
+      Width = 110.000000000000000000
+      OnClick = btRemoveClick
+    end
+  end
+  object GroupBox3: TGroupBox
+    Align = alClient
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 528.000000000000000000
+    Text = 'Contacts'
+    Width = 904.000000000000000000
+    TabOrder = 2
+    object ListBox1: TListBox
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Height = 473.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 52.000000000000000000
+      TabOrder = 0
+      Width = 329.000000000000000000
+      OnClick = ListBox1Click
+      ItemHeight = 13.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+    end
+    object Button2: TButton
+      Height = 25.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 20.000000000000000000
+      TabOrder = 1
+      Text = 'Load Contacts'
+      Width = 110.000000000000000000
+      OnClick = Button2Click
+    end
+    object GroupBox1: TGroupBox
+      Align = alRight
+      StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+      Height = 528.000000000000000000
+      Position.X = 347.000000000000000000
+      Text = 'Contact details'
+      Width = 557.000000000000000000
+      TabOrder = 2
+      object Label1: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 96.000000000000000000
+        Text = 'First Name:'
+        Width = 59.000000000000000000
+        WordWrap = False
+      end
+      object Label3: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 287.000000000000000000
+        Position.Y = 150.000000000000000000
+        Text = 'Notes:'
+        Width = 35.000000000000000000
+        WordWrap = False
+      end
+      object Label4: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 287.000000000000000000
+        Position.Y = 96.000000000000000000
+        Text = 'Company:'
+        Width = 53.000000000000000000
+        WordWrap = False
+      end
+      object Label5: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 287.000000000000000000
+        Position.Y = 123.000000000000000000
+        Text = 'Job title:'
+        Width = 45.000000000000000000
+        WordWrap = False
+      end
+      object TMSFMXCloudCloudImage1: TTMSFMXCloudImage
+        Position.X = 72.000000000000000000
+        Position.Y = 22.000000000000000000
+        Width = 57.000000000000000000
+        Height = 59.000000000000000000
+        ClipChildren = True
+        Version = '1.5.0.1'
+      end
+      object Label9: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 177.000000000000000000
+        Text = 'Birthday:'
+        Width = 47.000000000000000000
+        WordWrap = False
+      end
+      object Label10: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 150.000000000000000000
+        Text = 'Nickname:'
+        Width = 55.000000000000000000
+        WordWrap = False
+      end
+      object Label17: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 123.000000000000000000
+        Text = 'Last Name:'
+        Width = 58.000000000000000000
+        WordWrap = False
+      end
+      object Label31: TLabel
+        AutoSize = True
+        Height = 19.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 27.000000000000000000
+        Text = 'Image:'
+        Width = 37.000000000000000000
+        WordWrap = False
+      end
+      object edFirstName: TEdit
+        TabOrder = 2
+        Position.X = 72.000000000000000000
+        Position.Y = 93.000000000000000000
+        Width = 209.000000000000000000
+        Height = 21.000000000000000000
+        KillFocusByReturn = False
+      end
+      object edCompany: TEdit
+        TabOrder = 6
+        Position.X = 343.000000000000000000
+        Position.Y = 93.000000000000000000
+        Width = 209.000000000000000000
+        Height = 21.000000000000000000
+        KillFocusByReturn = False
+      end
+      object edJob: TEdit
+        TabOrder = 7
+        Position.X = 343.000000000000000000
+        Position.Y = 120.000000000000000000
+        Width = 209.000000000000000000
+        Height = 21.000000000000000000
+        KillFocusByReturn = False
+      end
+      object dpBirthDay: TCalendarEdit
+        TabOrder = 5
+        Cursor = crIBeam
+        Date = 41259.000000000000000000
+        Height = 21.000000000000000000
+        Position.X = 72.000000000000000000
+        Position.Y = 174.000000000000000000
+        Width = 209.000000000000000000
+      end
+      object edNickName: TEdit
+        TabOrder = 4
+        Position.X = 72.000000000000000000
+        Position.Y = 147.000000000000000000
+        Width = 209.000000000000000000
+        Height = 21.000000000000000000
+        KillFocusByReturn = False
+      end
+      object edLastName: TEdit
+        TabOrder = 3
+        Position.X = 72.000000000000000000
+        Position.Y = 120.000000000000000000
+        Width = 209.000000000000000000
+        Height = 21.000000000000000000
+        KillFocusByReturn = False
+      end
+      object meNotes: TMemo
+        Height = 48.000000000000000000
+        Position.X = 343.000000000000000000
+        Position.Y = 147.000000000000000000
+        TabOrder = 8
+        Width = 209.000000000000000000
+      end
+      object PageControl1: TTabControl
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Height = 266.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 213.000000000000000000
+        TabIndex = 0
+        TabOrder = 9
+        Width = 538.000000000000000000
+        object TabSheet1: TTabItem
+          WordWrap = False
+          Height = 23.000000000000000000
+          IsSelected = True
+          Position.X = 1.000000000000000000
+          TabOrder = 0
+          Text = 'Emails'
+          Width = 51.000000000000000000
+          object Label2: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 6.000000000000000000
+            Text = 'Email:'
+            Width = 32.000000000000000000
+            WordWrap = False
+          end
+          object Label6: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 33.000000000000000000
+            Text = 'Type:'
+            Width = 30.000000000000000000
+            WordWrap = False
+          end
+          object Label7: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 60.000000000000000000
+            Text = 'Custom:'
+            Width = 44.000000000000000000
+            WordWrap = False
+          end
+          object lvEmail: TTMSFMXCloudListView
+            Anchors = [akLeft, akTop, akBottom]
+            Height = 232.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            TabOrder = 0
+            Width = 269.000000000000000000
+            ReadOnly = True
+            RowCount = 0
+            RowHeight = 21.000000000000000000
+            Columns = <
+              item
+                Caption = 'Email'
+                Tag = 0
+              end
+              item
+                Caption = 'Type'
+                Tag = 0
+              end
+              item
+                Caption = 'Primary'
+                Tag = 0
+              end>
+            Items = <>
+            OnChange = lvEmailChange
+            object TStringColumn
+              Header = 'Email'
+              Height = 0.000000000000000000
+              ReadOnly = True
+              TabOrder = 0
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Type'
+              Height = 0.000000000000000000
+              Position.X = 100.000000000000000000
+              ReadOnly = True
+              TabOrder = 1
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Primary'
+              Height = 0.000000000000000000
+              Position.X = 200.000000000000000000
+              ReadOnly = True
+              TabOrder = 2
+              Width = 100.000000000000000000
+            end
+          end
+          object cbEmailType: TComboBox
+            DisableFocusEffect = False
+            Height = 21.000000000000000000
+            ItemIndex = 0
+            Position.X = 318.000000000000000000
+            Position.Y = 30.000000000000000000
+            TabOrder = 2
+            Width = 209.000000000000000000
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Work'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Home'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Custom'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Width = 19.000000000000000000
+            end
+          end
+          object edEmail: TEdit
+            TabOrder = 1
+            Position.X = 318.000000000000000000
+            Position.Y = 3.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object edEmailCustom: TEdit
+            TabOrder = 3
+            Position.X = 318.000000000000000000
+            Position.Y = 57.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object cbEmailPrimary: TCheckBox
+            Height = 17.000000000000000000
+            Position.X = 321.000000000000000000
+            Position.Y = 84.000000000000000000
+            TabOrder = 4
+            Text = 'Primary'
+            Width = 97.000000000000000000
+          end
+          object btAddEmail: TButton
+            Height = 25.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 5
+            Text = 'Add'
+            Width = 75.000000000000000000
+            OnClick = btAddEmailClick
+          end
+          object btUpdateEmail: TButton
+            Height = 25.000000000000000000
+            Position.X = 359.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 6
+            Text = 'Update'
+            Width = 75.000000000000000000
+            OnClick = btUpdateEmailClick
+          end
+          object btDeleteEmail: TButton
+            Height = 25.000000000000000000
+            Position.X = 440.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 7
+            Text = 'Delete'
+            Width = 75.000000000000000000
+            OnClick = btDeleteEmailClick
+          end
+        end
+        object TabSheet2: TTabItem
+          WordWrap = False
+          Height = 23.000000000000000000
+          IsSelected = False
+          Position.X = 52.000000000000000000
+          TabOrder = 1
+          Text = 'Phones'
+          Width = 55.000000000000000000
+          object Label8: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 6.000000000000000000
+            Text = 'Phone:'
+            Width = 37.000000000000000000
+            WordWrap = False
+          end
+          object Label11: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 33.000000000000000000
+            Text = 'Type:'
+            Width = 30.000000000000000000
+            WordWrap = False
+          end
+          object Label12: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 60.000000000000000000
+            Text = 'Custom:'
+            Width = 44.000000000000000000
+            WordWrap = False
+          end
+          object lvPhone: TTMSFMXCloudListView
+            Anchors = [akLeft, akTop, akBottom]
+            Height = 232.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            TabOrder = 0
+            Width = 269.000000000000000000
+            ReadOnly = True
+            RowCount = 0
+            RowHeight = 21.000000000000000000
+            Columns = <
+              item
+                Caption = 'Phonenumber'
+                Tag = 0
+              end
+              item
+                Caption = 'Type'
+                Tag = 0
+              end
+              item
+                Caption = 'Primary'
+                Tag = 0
+              end>
+            Items = <>
+            OnChange = lvPhoneChange
+            object TStringColumn
+              Header = 'Phonenumber'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 0
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Type'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 1
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Primary'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 2
+              Width = 100.000000000000000000
+            end
+          end
+          object edPhone: TEdit
+            TabOrder = 1
+            Position.X = 318.000000000000000000
+            Position.Y = 3.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object cbPhoneType: TComboBox
+            DisableFocusEffect = False
+            Height = 21.000000000000000000
+            ItemIndex = 0
+            Position.X = 318.000000000000000000
+            Position.Y = 30.000000000000000000
+            TabOrder = 2
+            Width = 209.000000000000000000
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Mobile'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Work'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Home'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Main'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Custom'
+              Width = 19.000000000000000000
+            end
+          end
+          object edPhoneCustom: TEdit
+            TabOrder = 3
+            Position.X = 318.000000000000000000
+            Position.Y = 57.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object btAddPhone: TButton
+            Height = 25.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 5
+            Text = 'Add'
+            Width = 75.000000000000000000
+            OnClick = btAddPhoneClick
+          end
+          object btUpdatePhone: TButton
+            Height = 25.000000000000000000
+            Position.X = 359.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 6
+            Text = 'Update'
+            Width = 75.000000000000000000
+            OnClick = btUpdatePhoneClick
+          end
+          object btDeletePhone: TButton
+            Height = 25.000000000000000000
+            Position.X = 440.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 7
+            Text = 'Delete'
+            Width = 75.000000000000000000
+            OnClick = btDeletePhoneClick
+          end
+          object cbPhonePrimary: TCheckBox
+            Height = 17.000000000000000000
+            Position.X = 321.000000000000000000
+            Position.Y = 84.000000000000000000
+            TabOrder = 4
+            Text = 'Primary'
+            Width = 97.000000000000000000
+          end
+        end
+        object TabSheet3: TTabItem
+          WordWrap = False
+          Height = 23.000000000000000000
+          IsSelected = False
+          Position.X = 107.000000000000000000
+          TabOrder = 2
+          Text = 'Addresses'
+          Width = 69.000000000000000000
+          object Label13: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 277.000000000000000000
+            Position.Y = 146.000000000000000000
+            Text = 'Custom:'
+            Width = 44.000000000000000000
+            WordWrap = False
+          end
+          object Label14: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 277.000000000000000000
+            Position.Y = 119.000000000000000000
+            Text = 'Type:'
+            Width = 30.000000000000000000
+            WordWrap = False
+          end
+          object Label15: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 6.000000000000000000
+            Text = 'Street:'
+            Width = 35.000000000000000000
+            WordWrap = False
+          end
+          object Label16: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 33.000000000000000000
+            Text = 'Zip:'
+            Width = 22.000000000000000000
+            WordWrap = False
+          end
+          object lbCity: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 60.000000000000000000
+            Text = 'City:'
+            Width = 25.000000000000000000
+            WordWrap = False
+          end
+          object lbCountry: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 92.000000000000000000
+            Text = 'Country:'
+            Width = 45.000000000000000000
+            WordWrap = False
+          end
+          object btAddAddress: TButton
+            Height = 25.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 8
+            Text = 'Add'
+            Width = 75.000000000000000000
+            OnClick = btAddAddressClick
+          end
+          object btDeleteAddress: TButton
+            Height = 25.000000000000000000
+            Position.X = 440.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 10
+            Text = 'Delete'
+            Width = 75.000000000000000000
+            OnClick = btDeleteAddressClick
+          end
+          object btUpdateAddress: TButton
+            Height = 25.000000000000000000
+            Position.X = 359.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 9
+            Text = 'Update'
+            Width = 75.000000000000000000
+            OnClick = btUpdateAddressClick
+          end
+          object cbAddressPrimary: TCheckBox
+            Height = 17.000000000000000000
+            Position.X = 320.000000000000000000
+            Position.Y = 170.000000000000000000
+            TabOrder = 7
+            Text = 'Primary'
+            Width = 97.000000000000000000
+          end
+          object edAddressCustom: TEdit
+            TabOrder = 6
+            Position.X = 317.000000000000000000
+            Position.Y = 143.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object cbAddressType: TComboBox
+            DisableFocusEffect = False
+            Height = 21.000000000000000000
+            ItemIndex = 0
+            Position.X = 317.000000000000000000
+            Position.Y = 116.000000000000000000
+            TabOrder = 5
+            Width = 209.000000000000000000
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Work'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Home'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Custom'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Width = 19.000000000000000000
+            end
+          end
+          object edStreet: TEdit
+            TabOrder = 1
+            Position.X = 318.000000000000000000
+            Position.Y = 3.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object lvAddress: TTMSFMXCloudListView
+            Anchors = [akLeft, akTop, akBottom]
+            Height = 232.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            TabOrder = 0
+            Width = 269.000000000000000000
+            ReadOnly = True
+            RowCount = 0
+            RowHeight = 21.000000000000000000
+            Columns = <
+              item
+                Caption = 'Address'
+                Tag = 0
+              end
+              item
+                Caption = 'Type'
+                Tag = 0
+              end
+              item
+                Caption = 'Primary'
+                Tag = 0
+              end>
+            Items = <>
+            OnChange = lvAddressChange
+            object TStringColumn
+              Header = 'Address'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 0
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Type'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 1
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Primary'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 2
+              Width = 100.000000000000000000
+            end
+          end
+          object edZip: TEdit
+            TabOrder = 2
+            Position.X = 318.000000000000000000
+            Position.Y = 30.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object edCity: TEdit
+            TabOrder = 3
+            Position.X = 318.000000000000000000
+            Position.Y = 57.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object edCountry: TEdit
+            TabOrder = 4
+            Position.X = 318.000000000000000000
+            Position.Y = 89.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+        object TabSheet4: TTabItem
+          WordWrap = False
+          Height = 23.000000000000000000
+          IsSelected = False
+          Position.X = 176.000000000000000000
+          TabOrder = 3
+          Text = 'Relations'
+          Width = 64.000000000000000000
+          object Label18: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 60.000000000000000000
+            Text = 'Custom:'
+            Width = 44.000000000000000000
+            WordWrap = False
+          end
+          object Label20: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 33.000000000000000000
+            Text = 'Relation:'
+            Width = 46.000000000000000000
+            WordWrap = False
+          end
+          object Label21: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 6.000000000000000000
+            Text = 'Name:'
+            Width = 35.000000000000000000
+            WordWrap = False
+          end
+          object lvRelation: TTMSFMXCloudListView
+            Anchors = [akLeft, akTop, akBottom]
+            Height = 232.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            TabOrder = 0
+            Width = 269.000000000000000000
+            ReadOnly = True
+            RowCount = 0
+            RowHeight = 21.000000000000000000
+            Columns = <
+              item
+                Caption = 'Name'
+                Tag = 0
+              end
+              item
+                Caption = 'Relation'
+                Tag = 0
+              end>
+            Items = <>
+            OnChange = lvRelationChange
+            object TStringColumn
+              Header = 'Name'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 0
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Relation'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 1
+              Width = 100.000000000000000000
+            end
+          end
+          object edRelation: TEdit
+            TabOrder = 1
+            Position.X = 318.000000000000000000
+            Position.Y = 3.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object cbRelation: TComboBox
+            DisableFocusEffect = False
+            Height = 21.000000000000000000
+            ItemIndex = 0
+            Position.X = 318.000000000000000000
+            Position.Y = 30.000000000000000000
+            TabOrder = 2
+            Width = 209.000000000000000000
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Spouse'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Child'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Mother'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Father'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Parent'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Brother'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Sister'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Partner'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Custom'
+              Width = 19.000000000000000000
+            end
+          end
+          object edCustomRelation: TEdit
+            TabOrder = 3
+            Position.X = 318.000000000000000000
+            Position.Y = 57.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object btAddRelation: TButton
+            Height = 25.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 4
+            Text = 'Add'
+            Width = 75.000000000000000000
+            OnClick = btAddRelationClick
+          end
+          object btUpdateRelation: TButton
+            Height = 25.000000000000000000
+            Position.X = 359.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 5
+            Text = 'Update'
+            Width = 75.000000000000000000
+            OnClick = btUpdateRelationClick
+          end
+          object btDeleteRelation: TButton
+            Height = 25.000000000000000000
+            Position.X = 440.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 6
+            Text = 'Delete'
+            Width = 75.000000000000000000
+            OnClick = btDeleteRelationClick
+          end
+        end
+        object TabSheet5: TTabItem
+          WordWrap = False
+          Height = 23.000000000000000000
+          IsSelected = False
+          Position.X = 240.000000000000000000
+          TabOrder = 4
+          Text = 'IM'
+          Width = 33.000000000000000000
+          object Label22: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 6.000000000000000000
+            Text = 'ID:'
+            Width = 17.000000000000000000
+            WordWrap = False
+          end
+          object Label23: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 33.000000000000000000
+            Text = 'IM Type:'
+            Width = 46.000000000000000000
+            WordWrap = False
+          end
+          object Label24: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 60.000000000000000000
+            Text = 'Custom:'
+            Width = 44.000000000000000000
+            WordWrap = False
+          end
+          object lvIM: TTMSFMXCloudListView
+            Anchors = [akLeft, akTop, akBottom]
+            Height = 232.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            TabOrder = 0
+            Width = 269.000000000000000000
+            ReadOnly = True
+            RowCount = 0
+            RowHeight = 21.000000000000000000
+            Columns = <
+              item
+                Caption = 'ID'
+                Tag = 0
+              end
+              item
+                Caption = 'Type'
+                Tag = 0
+              end>
+            Items = <>
+            OnChange = lvIMChange
+            object TStringColumn
+              Header = 'ID'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 0
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Type'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 1
+              Width = 100.000000000000000000
+            end
+          end
+          object edIM: TEdit
+            TabOrder = 1
+            Position.X = 318.000000000000000000
+            Position.Y = 3.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object cbIMType: TComboBox
+            DisableFocusEffect = False
+            Height = 21.000000000000000000
+            ItemIndex = 0
+            Position.X = 318.000000000000000000
+            Position.Y = 30.000000000000000000
+            TabOrder = 2
+            Width = 209.000000000000000000
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'GoogleTalk'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'AIM'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Yahoo'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Skype'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'GQ'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'MSN'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'ICQ'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Jabber'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Custom'
+              Width = 19.000000000000000000
+            end
+          end
+          object edIMCustom: TEdit
+            TabOrder = 3
+            Position.X = 318.000000000000000000
+            Position.Y = 57.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object btAddIM: TButton
+            Height = 25.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 4
+            Text = 'Add'
+            Width = 75.000000000000000000
+            OnClick = btAddIMClick
+          end
+          object btUpdateIM: TButton
+            Height = 25.000000000000000000
+            Position.X = 359.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 5
+            Text = 'Update'
+            Width = 75.000000000000000000
+            OnClick = btUpdateIMClick
+          end
+          object btDeleteIM: TButton
+            Height = 25.000000000000000000
+            Position.X = 440.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 6
+            Text = 'Delete'
+            Width = 75.000000000000000000
+            OnClick = btDeleteRelationClick
+          end
+        end
+        object TabSheet6: TTabItem
+          WordWrap = False
+          Height = 23.000000000000000000
+          IsSelected = False
+          Position.X = 273.000000000000000000
+          TabOrder = 5
+          Text = 'Custom fields'
+          Width = 86.000000000000000000
+          object Label26: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 6.000000000000000000
+            Text = 'Key:'
+            Width = 24.000000000000000000
+            WordWrap = False
+          end
+          object Label28: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 33.000000000000000000
+            Text = 'Value:'
+            Width = 33.000000000000000000
+            WordWrap = False
+          end
+          object lvCustom: TTMSFMXCloudListView
+            Anchors = [akLeft, akTop, akBottom]
+            Height = 232.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            TabOrder = 0
+            Width = 269.000000000000000000
+            ReadOnly = True
+            RowCount = 0
+            RowHeight = 21.000000000000000000
+            Columns = <
+              item
+                Caption = 'Key'
+                Tag = 0
+              end
+              item
+                Caption = 'Value'
+                Tag = 0
+              end>
+            Items = <>
+            OnChange = lvCustomChange
+            object TStringColumn
+              Header = 'Key'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 0
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Value'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 1
+              Width = 100.000000000000000000
+            end
+          end
+          object edCustomKey: TEdit
+            TabOrder = 1
+            Position.X = 318.000000000000000000
+            Position.Y = 3.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object btAddCustom: TButton
+            Height = 25.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 3
+            Text = 'Add'
+            Width = 75.000000000000000000
+            OnClick = btAddCustomClick
+          end
+          object btUpdateCustom: TButton
+            Height = 25.000000000000000000
+            Position.X = 359.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 4
+            Text = 'Update'
+            Width = 75.000000000000000000
+            OnClick = btUpdateCustomClick
+          end
+          object btDeleteCustom: TButton
+            Height = 25.000000000000000000
+            Position.X = 440.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 5
+            Text = 'Delete'
+            Width = 75.000000000000000000
+            OnClick = btDeleteRelationClick
+          end
+          object edCustomValue: TEdit
+            TabOrder = 2
+            Position.X = 318.000000000000000000
+            Position.Y = 30.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+        end
+        object TabSheet7: TTabItem
+          WordWrap = False
+          Height = 23.000000000000000000
+          IsSelected = False
+          Position.X = 359.000000000000000000
+          TabOrder = 6
+          Text = 'Groups'
+          Width = 55.000000000000000000
+          object Label30: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 3.000000000000000000
+            Text = 'Available groups:'
+            Width = 87.000000000000000000
+            WordWrap = False
+          end
+          object lvGroup: TTMSFMXCloudListView
+            Anchors = [akLeft, akTop, akBottom]
+            Height = 232.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            TabOrder = 0
+            Width = 269.000000000000000000
+            ReadOnly = True
+            RowCount = 0
+            RowHeight = 21.000000000000000000
+            Columns = <
+              item
+                Caption = 'Group'
+                Tag = 0
+              end>
+            Items = <>
+            object TStringColumn
+              Header = 'Group'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 0
+              Width = 100.000000000000000000
+            end
+          end
+          object cbGroups: TComboBox
+            DisableFocusEffect = False
+            Height = 21.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 22.000000000000000000
+            TabOrder = 1
+            Width = 246.000000000000000000
+          end
+          object btAddGroup: TButton
+            Height = 25.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 2
+            Text = 'Add'
+            Width = 75.000000000000000000
+            OnClick = btAddGroupClick
+          end
+          object btDeleteGroup: TButton
+            Height = 25.000000000000000000
+            Position.X = 359.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 3
+            Text = 'Delete'
+            Width = 75.000000000000000000
+            OnClick = btDeleteGroupClick
+          end
+        end
+        object TabSheet8: TTabItem
+          WordWrap = False
+          Height = 23.000000000000000000
+          IsSelected = False
+          Position.X = 414.000000000000000000
+          TabOrder = 7
+          Text = 'Websites'
+          Width = 64.000000000000000000
+          object Label25: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 33.000000000000000000
+            Text = 'Type:'
+            Width = 30.000000000000000000
+            WordWrap = False
+          end
+          object Label27: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 60.000000000000000000
+            Text = 'Custom:'
+            Width = 44.000000000000000000
+            WordWrap = False
+          end
+          object Label29: TLabel
+            AutoSize = True
+            Height = 19.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 6.000000000000000000
+            Text = 'URL:'
+            Width = 26.000000000000000000
+            WordWrap = False
+          end
+          object edWebsite: TEdit
+            TabOrder = 1
+            Position.X = 318.000000000000000000
+            Position.Y = 3.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object btDeleteWebsite: TButton
+            Height = 25.000000000000000000
+            Position.X = 440.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 6
+            Text = 'Delete'
+            Width = 75.000000000000000000
+            OnClick = btDeleteWebsiteClick
+          end
+          object btUpdateWebsite: TButton
+            Height = 25.000000000000000000
+            Position.X = 359.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 5
+            Text = 'Update'
+            Width = 75.000000000000000000
+            OnClick = btUpdateWebsiteClick
+          end
+          object btAddWebsite: TButton
+            Height = 25.000000000000000000
+            Position.X = 278.000000000000000000
+            Position.Y = 193.000000000000000000
+            TabOrder = 4
+            Text = 'Add'
+            Width = 75.000000000000000000
+            OnClick = btAddWebsiteClick
+          end
+          object edCustomWebsite: TEdit
+            TabOrder = 3
+            Position.X = 318.000000000000000000
+            Position.Y = 57.000000000000000000
+            Width = 209.000000000000000000
+            Height = 21.000000000000000000
+            KillFocusByReturn = False
+          end
+          object cbCustomWebsite: TComboBox
+            DisableFocusEffect = False
+            Height = 21.000000000000000000
+            ItemIndex = 0
+            Position.X = 318.000000000000000000
+            Position.Y = 30.000000000000000000
+            TabOrder = 2
+            Width = 209.000000000000000000
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Profile'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Blog'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'HomePage'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Work'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Text = 'Custom'
+              Width = 19.000000000000000000
+            end
+            object TListBoxItem
+              Height = 19.000000000000000000
+              Width = 19.000000000000000000
+            end
+          end
+          object lvWebsite: TTMSFMXCloudListView
+            Anchors = [akLeft, akTop, akBottom]
+            Height = 232.000000000000000000
+            Position.X = 3.000000000000000000
+            Position.Y = 3.000000000000000000
+            TabOrder = 0
+            Width = 269.000000000000000000
+            ReadOnly = True
+            RowCount = 0
+            RowHeight = 21.000000000000000000
+            Columns = <
+              item
+                Caption = 'URL'
+                Tag = 0
+              end
+              item
+                Caption = 'Type'
+                Tag = 0
+              end>
+            Items = <>
+            OnChange = lvWebsiteChange
+            object TStringColumn
+              Header = 'URL'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 0
+              Width = 100.000000000000000000
+            end
+            object TStringColumn
+              Header = 'Type'
+              Height = 50.000000000000000000
+              ReadOnly = True
+              TabOrder = 1
+              Width = 100.000000000000000000
+            end
+          end
+        end
+      end
+      object Panel2: TPanel
+        Align = alBottom
+        Height = 41.000000000000000000
+        Position.Y = 487.000000000000000000
+        Width = 557.000000000000000000
+        TabOrder = 10
+        object btAddContact: TButton
+          Height = 25.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 0
+          Text = 'New'
+          Width = 110.000000000000000000
+          OnClick = btAddContactClick
+        end
+        object btUpdateContact: TButton
+          Height = 25.000000000000000000
+          Position.X = 124.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 1
+          Text = 'Update'
+          Width = 110.000000000000000000
+          OnClick = btUpdateContactClick
+        end
+        object btDeleteContact: TButton
+          Height = 25.000000000000000000
+          Position.X = 240.000000000000000000
+          Position.Y = 8.000000000000000000
+          TabOrder = 2
+          Text = 'Delete'
+          Width = 110.000000000000000000
+          OnClick = btDeleteContactClick
+        end
+      end
+      object btUpdateImage: TButton
+        Height = 25.000000000000000000
+        Position.X = 135.000000000000000000
+        Position.Y = 22.000000000000000000
+        TabOrder = 0
+        Text = 'Update ...'
+        Width = 75.000000000000000000
+        OnClick = btUpdateImageClick
+      end
+      object btDeleteImage: TButton
+        Height = 25.000000000000000000
+        Position.X = 216.000000000000000000
+        Position.Y = 22.000000000000000000
+        TabOrder = 1
+        Text = 'Delete'
+        Width = 75.000000000000000000
+        OnClick = btDeleteImageClick
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 376
+    Top = 8
+  end
+  object TMSFMXCloudGContacts1: TTMSFMXCloudGContacts
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888/'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    PersistTokens.Section = 'contacts'
+    PersistTokens.Key = '.\contacts.ini'
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudGContacts1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Scopes.Strings = (
+      'https://www.google.com/m8/feeds')
+  end
+end

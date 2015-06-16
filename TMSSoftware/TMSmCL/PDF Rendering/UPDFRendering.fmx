@@ -1,0 +1,34 @@
+object Form1147: TForm1147
+  Left = 0
+  Top = 0
+  Caption = 'Form1147'
+  ClientHeight = 762
+  ClientWidth = 761
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object TMSFMXNativeWebView1: TTMSFMXNativeWebView
+    Hint = ''
+    Align = alClient
+    Width = 761.000000000000000000
+    Height = 762.000000000000000000
+    ClipChildren = True
+  end
+  object TMSFMXNativeMacPDFLib1: TTMSFMXNativeMacPDFLib
+    LineWidth = 1.000000000000000000
+    Font.Name = 'Helvetica'
+    Font.Size = 13.000000000000000000
+    Header = 'Header'
+    HeaderSize = 30.000000000000000000
+    Footer = 'Footer'
+    FooterSize = 30.000000000000000000
+    Left = 304
+    Top = 224
+  end
+end

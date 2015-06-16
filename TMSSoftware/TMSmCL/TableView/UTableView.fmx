@@ -1,0 +1,348 @@
+object Form1087: TForm1087
+  Left = 0
+  Top = 0
+  Caption = 'Form1087'
+  ClientHeight = 681
+  ClientWidth = 935
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object TMSFMXNativeNSTableView1: TTMSFMXNativeNSTableView
+    Hint = ''
+    Align = alClient
+    Width = 632.000000000000000000
+    Height = 468.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    ClipChildren = True
+    Columns = <>
+    Items = <>
+    Options.Layout.RowHeight = 16.000000000000000000
+    Options.Layout.ColumnSpacing = 3.000000000000000000
+    Options.Layout.RowSpacing = 2.000000000000000000
+    OnColumnClick = TMSFMXNativeNSTableView1ColumnClick
+    OnColumnDidMove = TMSFMXNativeNSTableView1ColumnDidMove
+    OnSelectionDidChange = TMSFMXNativeNSTableView1SelectionDidChange
+    OnCellEditingDidChange = TMSFMXNativeNSTableView1CellEditingDidChange
+    OnCellEditingDidBegin = TMSFMXNativeNSTableView1CellEditingDidBegin
+    OnCellEditingDidEnd = TMSFMXNativeNSTableView1CellEditingDidEnd
+    OnCellEditingCheckboxClick = TMSFMXNativeNSTableView1CellEditingCheckboxClick
+  end
+  object TMSFMXNativeNSView1: TTMSFMXNativeNSView
+    Hint = ''
+    Position.X = 10.000000000000000000
+    Position.Y = 59.000000000000000000
+    Align = alMostLeft
+    Width = 273.000000000000000000
+    Height = 612.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    ClipChildren = True
+    object TMSFMXNativeNSComboBox1: TTMSFMXNativeNSComboBox
+      Hint = ''
+      Position.X = 152.000000000000000000
+      Position.Y = 16.000000000000000000
+      Width = 113.000000000000000000
+      Height = 26.000000000000000000
+      ClipChildren = True
+      Items.Strings = (
+        'None'
+        'Regular'
+        'Source List')
+      ItemIndex = 1
+      Editable = False
+      OnChange = TMSFMXNativeNSComboBox1Change
+    end
+    object TMSFMXNativeNSLabel1: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 17.000000000000000000
+      Width = 105.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'Selection Style'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+    object TMSFMXNativeNSCheckBox1: TTMSFMXNativeNSCheckBox
+      Hint = ''
+      Position.X = 240.000000000000000000
+      Position.Y = 49.000000000000000000
+      Width = 25.000000000000000000
+      Height = 25.000000000000000000
+      ClipChildren = True
+      Style = bsSwitchButton
+      OnClick = TMSFMXNativeNSCheckBox1Click
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+    end
+    object TMSFMXNativeNSLabel2: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 52.000000000000000000
+      Width = 105.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'Banding'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+    object TMSFMXNativeNSCheckBox2: TTMSFMXNativeNSCheckBox
+      Hint = ''
+      Position.X = 240.000000000000000000
+      Position.Y = 86.000000000000000000
+      Width = 25.000000000000000000
+      Height = 25.000000000000000000
+      ClipChildren = True
+      Style = bsSwitchButton
+      OnClick = TMSFMXNativeNSCheckBox2Click
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      State = bstOnState
+      Checked = True
+    end
+    object TMSFMXNativeNSLabel4: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 87.000000000000000000
+      Width = 105.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'Column Headers'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+    object TMSFMXNativeNSLabel3: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 123.000000000000000000
+      Width = 105.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'Row Style'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+    object TMSFMXNativeNSComboBox2: TTMSFMXNativeNSComboBox
+      Hint = ''
+      Position.X = 152.000000000000000000
+      Position.Y = 120.000000000000000000
+      Width = 113.000000000000000000
+      Height = 26.000000000000000000
+      ClipChildren = True
+      Items.Strings = (
+        'Default'
+        'Small'
+        'Medium'
+        'Large')
+      ItemIndex = 0
+      Editable = False
+      OnChange = TMSFMXNativeNSComboBox2Change
+    end
+    object TMSFMXNativeNSTableView2: TTMSFMXNativeNSTableView
+      Hint = ''
+      Position.X = 10.000000000000000000
+      Position.Y = 368.000000000000000000
+      Align = alBottom
+      Width = 253.000000000000000000
+      Height = 234.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      ClipChildren = True
+      Columns = <
+        item
+          ReadOnly = True
+          Width = 100.000000000000000000
+          MaximumWidth = 400.000000000000000000
+          ResizingMask = rmTableColumnAutoresizingMask
+        end>
+      Items = <>
+      Options.Layout.ColumnAutoresizingStyle = asTableViewUniformColumnAutoresizingStyle
+      Options.Layout.ColumnHeaders = False
+      Options.Layout.RowHeight = 16.000000000000000000
+      Options.Layout.ColumnSpacing = 3.000000000000000000
+      Options.Layout.RowSpacing = 2.000000000000000000
+      Options.Appearance.SortIndicator = False
+    end
+    object TMSFMXNativeNSLabel5: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 336.000000000000000000
+      Width = 145.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'Event handling:'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+    object TMSFMXNativeNSComboBox3: TTMSFMXNativeNSComboBox
+      Hint = ''
+      Position.X = 152.000000000000000000
+      Position.Y = 152.000000000000000000
+      Width = 113.000000000000000000
+      Height = 26.000000000000000000
+      ClipChildren = True
+      Items.Strings = (
+        '')
+      ItemIndex = 0
+      Editable = False
+      OnChange = TMSFMXNativeNSComboBox2Change
+    end
+    object TMSFMXNativeNSLabel6: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 155.000000000000000000
+      Width = 105.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'Sorting'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+    object TMSFMXNativeNSButton1: TTMSFMXNativeNSButton
+      Hint = ''
+      Position.X = 184.000000000000000000
+      Position.Y = 184.000000000000000000
+      Width = 82.000000000000000000
+      Height = 32.000000000000000000
+      ClipChildren = True
+      Text = 'Sort'
+      OnClick = TMSFMXNativeNSButton1Click
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+    end
+  end
+  object TMSFMXNativeNSView2: TTMSFMXNativeNSView
+    Hint = ''
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Align = alMostTop
+    Width = 915.000000000000000000
+    Height = 39.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    ClipChildren = True
+    object TMSFMXNativeNSLabel9: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 889.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 
+        'Click and drag to move a column / Click and release to sort a co' +
+        'lumn / Click between 2 columns and drag to resize.'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+  end
+  object TMSFMXNativeNSView3: TTMSFMXNativeNSView
+    Hint = ''
+    Position.X = 293.000000000000000000
+    Position.Y = 537.000000000000000000
+    Align = alBottom
+    Width = 632.000000000000000000
+    Height = 134.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    ClipChildren = True
+    object TMSFMXNativeNSImageView2: TTMSFMXNativeNSImageView
+      Hint = ''
+      Position.X = 184.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 97.000000000000000000
+      Height = 92.000000000000000000
+      ClipChildren = True
+    end
+    object TMSFMXNativeNSLabel11: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 104.000000000000000000
+      Width = 153.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'TMSFMXNativeNSLabel2'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+    object TMSFMXNativeNSLabel12: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Width = 153.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'TMSFMXNativeNSLabel2'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+    object TMSFMXNativeNSLabel13: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Width = 153.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'TMSFMXNativeNSLabel2'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+    object TMSFMXNativeNSLabel14: TTMSFMXNativeNSLabel
+      Hint = ''
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 153.000000000000000000
+      Height = 22.000000000000000000
+      ClipChildren = True
+      Text = 'TMSFMXNativeNSLabel2'
+      Font.Name = 'Helvetica'
+      Font.Size = 13.000000000000000000
+      Editable = False
+      DrawsBackGround = False
+      Bordered = False
+    end
+  end
+end

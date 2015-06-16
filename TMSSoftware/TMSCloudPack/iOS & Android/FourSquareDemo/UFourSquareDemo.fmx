@@ -1,0 +1,356 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 1024.000000000000000000
+    object btConnect: TButton
+      Height = 31.000000000000000000
+      Position.X = 13.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 0
+      Text = 'Connect'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = btConnectClick
+    end
+    object btDisconnect: TButton
+      Height = 31.000000000000000000
+      Position.X = 93.000000000000000000
+      Position.Y = 7.000000000000000000
+      StyleLookup = 'toolbutton'
+      TabOrder = 1
+      Text = 'Disconnect'
+      Trimming = ttCharacter
+      Width = 92.000000000000000000
+      OnClick = btDisconnectClick
+    end
+  end
+  object Panel1: TPanel
+    Align = alClient
+    Height = 704.000000000000000000
+    Width = 1024.000000000000000000
+    TabOrder = 1
+    object ciUser: TTMSFMXCloudImage
+      Position.X = 527.000000000000000000
+      Position.Y = 39.000000000000000000
+      Width = 106.000000000000000000
+      Height = 130.000000000000000000
+      ClipChildren = True
+      Version = '1.5.0.0'
+    end
+    object lbBio: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 668.000000000000000000
+      Position.Y = 151.000000000000000000
+      Text = 'Bio'
+      Width = 28.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbCity: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 668.000000000000000000
+      Position.Y = 91.000000000000000000
+      Text = 'City'
+      Width = 33.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbEmail: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 668.000000000000000000
+      Position.Y = 61.000000000000000000
+      Text = 'Email'
+      Width = 44.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbGender: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 668.000000000000000000
+      Position.Y = 121.000000000000000000
+      Text = 'Gender'
+      Width = 59.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbPhone: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 668.000000000000000000
+      Position.Y = 181.000000000000000000
+      Text = 'Phone'
+      Width = 52.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbCheckins: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 668.000000000000000000
+      Position.Y = 242.000000000000000000
+      Text = 'CheckIns:'
+      Width = 74.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbFriends: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 668.000000000000000000
+      Position.Y = 212.000000000000000000
+      Text = 'Friends:'
+      Width = 62.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbUserName: TLabel
+      AutoSize = True
+      Font.Size = 22.000000000000000000
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 33.000000000000000000
+      Position.X = 668.000000000000000000
+      Position.Y = 27.000000000000000000
+      Text = 'User Name'
+      Width = 118.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object Line1: TLine
+      Align = alCenter
+      Height = 704.000000000000000000
+      LineType = ltLeft
+      Width = 13.000000000000000000
+    end
+    object btGetCheckIns: TButton
+      Height = 44.000000000000000000
+      Position.X = 527.000000000000000000
+      Position.Y = 215.000000000000000000
+      TabOrder = 10
+      Text = 'Get CheckIns'
+      Trimming = ttCharacter
+      Width = 114.000000000000000000
+      OnClick = btGetCheckInsClick
+    end
+    object ListBox2: TListBox
+      Height = 306.000000000000000000
+      Position.X = 524.000000000000000000
+      Position.Y = 287.000000000000000000
+      TabOrder = 11
+      Width = 482.000000000000000000
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListBox2Change
+    end
+    object Label1: TLabel
+      AutoSize = True
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssSize, ssFontColor]
+      Height = 27.000000000000000000
+      Position.X = 520.000000000000000000
+      Text = 'Authenticated User Profile'
+      Width = 216.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object Label2: TLabel
+      AutoSize = True
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssSize, ssFontColor]
+      Height = 27.000000000000000000
+      Position.X = 8.000000000000000000
+      Text = 'Search'
+      Width = 57.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbKeyword: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 39.000000000000000000
+      Text = 'Keyword:'
+      Width = 73.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbCat: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 125.000000000000000000
+      Text = 'Categories:'
+      Width = 88.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbLocation: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 79.000000000000000000
+      Text = 'Location:'
+      Width = 72.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object ListBox3: TListBox
+      Height = 241.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 448.000000000000000000
+      TabOrder = 17
+      Width = 329.000000000000000000
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListBox3Change
+    end
+    object edKeyword: TEdit
+      TabOrder = 18
+      Position.X = 112.000000000000000000
+      Position.Y = 40.000000000000000000
+      Width = 292.000000000000000000
+      Height = 31.000000000000000000
+      KillFocusByReturn = False
+    end
+    object edSearch: TEdit
+      TabOrder = 19
+      Text = 'Berlin'
+      Position.X = 112.000000000000000000
+      Position.Y = 80.000000000000000000
+      Width = 292.000000000000000000
+      Height = 31.000000000000000000
+      KillFocusByReturn = False
+    end
+    object btSearch: TButton
+      Height = 44.000000000000000000
+      Position.X = 414.000000000000000000
+      Position.Y = 72.000000000000000000
+      TabOrder = 20
+      Text = 'Search'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = btSearchClick
+    end
+    object lbUserFriends: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 748.000000000000000000
+      Position.Y = 212.000000000000000000
+      Width = 40.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbUserCheckins: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 748.000000000000000000
+      Position.Y = 242.000000000000000000
+      Width = 40.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object Label3: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 410.000000000000000000
+      Text = 'Search results:'
+      Width = 111.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object TreeView1: TTreeView
+      Height = 217.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 160.000000000000000000
+      TabOrder = 24
+      Width = 465.000000000000000000
+      MultiSelect = True
+      OnChange = TreeView1Change
+    end
+    object lbCategories: TLabel
+      AutoSize = True
+      Height = 27.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 381.000000000000000000
+      Text = 'Selected Category:'
+      Width = 144.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object lbResult: TLabel
+      AutoSize = True
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssSize, ssFontColor]
+      Height = 27.000000000000000000
+      Position.X = 136.000000000000000000
+      Position.Y = 410.000000000000000000
+      Text = 'Location'
+      Width = 73.000000000000000000
+      WordWrap = False
+      Trimming = ttCharacter
+    end
+    object btCheckIn: TButton
+      Height = 44.000000000000000000
+      Position.X = 526.000000000000000000
+      Position.Y = 648.000000000000000000
+      TabOrder = 27
+      Text = 'Check-in'
+      Trimming = ttCharacter
+      Width = 483.000000000000000000
+      OnClick = btCheckInClick
+    end
+    object edCheckin: TEdit
+      TabOrder = 28
+      Text = 'Hello World !'
+      Position.X = 528.000000000000000000
+      Position.Y = 608.000000000000000000
+      Width = 473.000000000000000000
+      Height = 31.000000000000000000
+      KillFocusByReturn = False
+    end
+    object TMSFMXCloudImage1: TTMSFMXCloudImage
+      Position.X = 360.000000000000000000
+      Position.Y = 448.000000000000000000
+      Width = 129.000000000000000000
+      Height = 129.000000000000000000
+      ClipChildren = True
+      Version = '1.5.0.0'
+    end
+  end
+  object TMSFMXCloudFourSquare1: TTMSFMXCloudFourSquare
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudFourSquare1ReceivedAccessToken
+    Venues = <>
+    UserProfile.CheckIns = <>
+    Categories = <>
+    Left = 520
+    Top = 80
+  end
+end

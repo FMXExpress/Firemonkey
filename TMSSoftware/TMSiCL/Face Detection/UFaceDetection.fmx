@@ -1,0 +1,95 @@
+object Form1136: TForm1136
+  Left = 0
+  Top = 0
+  Caption = 'Form1136'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TMSFMXNativeUIView1: TTMSFMXNativeUIView
+    Align = alClient
+    Width = 320.000000000000000000
+    Height = 548.000000000000000000
+    ClipChildren = True
+    object TMSFMXNativeUIImageView1: TTMSFMXNativeUIImageView
+      Align = alClient
+      Width = 310.000000000000000000
+      Height = 442.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      ClipChildren = True
+      ContentMode = cmViewContentModeScaleAspectFit
+    end
+    object TMSFMXNativeUIView2: TTMSFMXNativeUIView
+      Position.Y = 44.000000000000000000
+      Align = alTop
+      Width = 320.000000000000000000
+      Height = 57.000000000000000000
+      ClipChildren = True
+      object TMSFMXNativeUILabel1: TTMSFMXNativeUILabel
+        Align = alClient
+        Width = 211.000000000000000000
+        Height = 47.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        ClipChildren = True
+        Text = 
+          'To enable face detection, pick an image with recognizable faces ' +
+          'by clicking on the toolbar button'
+        Font.Name = 'Helvetica'
+        Font.Size = 12.000000000000000000
+        NumberOfLines = 0
+      end
+      object TMSFMXNativeUISwitch1: TTMSFMXNativeUISwitch
+        Position.X = 5.000000000000000000
+        Position.Y = 25.000000000000000000
+        Align = alLeft
+        Width = 94.000000000000000000
+        Height = 27.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 25.000000000000000000
+        Margins.Right = 5.000000000000000000
+        ClipChildren = True
+        OnValueChanged = TMSFMXNativeUISwitch1ValueChanged
+      end
+    end
+    object TMSFMXNativeUIToolBar1: TTMSFMXNativeUIToolBar
+      Align = alTop
+      Width = 320.000000000000000000
+      Height = 44.000000000000000000
+      ClipChildren = True
+      Items = <
+        item
+          Text = 'Button 1'
+          Kind = ikSystem
+          SystemItem = siBarButtonSystemItemAction
+        end>
+      OnItemClick = TMSFMXNativeUIToolBar1ItemClick
+    end
+  end
+  object TMSFMXNativeUILabel2: TTMSFMXNativeUILabel
+    Position.X = 5.000000000000000000
+    Position.Y = 48.000000000000000000
+    Width = 89.000000000000000000
+    Height = 20.000000000000000000
+    ClipChildren = True
+    Text = 'Detect'
+    Font.Name = 'Helvetica'
+    Font.Size = 12.000000000000000000
+  end
+  object TMSFMXNativeUIImagePickerController1: TTMSFMXNativeUIImagePickerController
+    ShowCameraControls = False
+    Left = 144
+    Top = 264
+  end
+end

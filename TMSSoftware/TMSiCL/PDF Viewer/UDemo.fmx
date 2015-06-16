@@ -1,0 +1,23 @@
+object Form1027: TForm1027
+  Left = 0
+  Top = 0
+  Caption = 'Form1027'
+  ClientHeight = 1004
+  ClientWidth = 768
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 768
+  DesignerHeight = 1024
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 0
+  object TMSFMXNativeUIPDFViewController1: TTMSFMXNativeUIPDFViewController
+    Align = alClient
+    Width = 768.000000000000000000
+    Height = 1004.000000000000000000
+    ClipChildren = True
+    Pages = <>
+  end
+end

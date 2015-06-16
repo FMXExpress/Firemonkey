@@ -1,0 +1,157 @@
+object Form82: TForm82
+  Left = 0
+  Top = 0
+  Caption = 'Form82'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 417
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object edUser: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 0
+    Position.X = 88.000000000000000000
+    Position.Y = 17.000000000000000000
+    Width = 227.000000000000000000
+    Height = 30.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Button1: TButton
+    Align = alBottom
+    Height = 44.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 368.000000000000000000
+    TabOrder = 1
+    Text = 'Send Message'
+    Trimming = ttCharacter
+    Width = 310.000000000000000000
+    OnClick = Button1Click
+  end
+  object edTitle: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 2
+    Position.X = 88.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 227.000000000000000000
+    Height = 30.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Label1: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 19.000000000000000000
+    Text = 'User:'
+    Width = 41.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object Label2: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 59.000000000000000000
+    Text = 'Title:'
+    Width = 39.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object Label3: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = 'Message:'
+    Width = 74.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object edMemo: TMemo
+    Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+    Height = 113.000000000000000000
+    Position.X = 93.000000000000000000
+    Position.Y = 104.000000000000000000
+    TabOrder = 6
+    Width = 219.000000000000000000
+  end
+  object Label4: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 12.000000000000000000
+    Position.Y = 235.000000000000000000
+    Text = 'URL:'
+    Width = 38.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object edURL: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 8
+    Position.X = 88.000000000000000000
+    Position.Y = 232.000000000000000000
+    Width = 227.000000000000000000
+    Height = 30.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Label5: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 12.000000000000000000
+    Position.Y = 274.000000000000000000
+    Text = 'Device:'
+    Width = 57.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object edDevice: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 10
+    Position.X = 89.000000000000000000
+    Position.Y = 271.000000000000000000
+    Width = 227.000000000000000000
+    Height = 30.000000000000000000
+    KillFocusByReturn = False
+  end
+  object edSound: TComboBox
+    DisableFocusEffect = False
+    Height = 30.000000000000000000
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 90.000000000000000000
+    Position.Y = 310.000000000000000000
+    TabOrder = 11
+    Width = 226.000000000000000000
+  end
+  object Label6: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 12.000000000000000000
+    Position.Y = 312.000000000000000000
+    Text = 'Sound:'
+    Width = 56.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object TMSFMXCloudPushOver1: TTMSFMXCloudPushOver
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    Left = 176
+    Top = 288
+  end
+end

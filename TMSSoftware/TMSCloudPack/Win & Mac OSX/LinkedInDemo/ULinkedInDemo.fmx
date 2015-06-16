@@ -1,0 +1,774 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'TMS Cloud Pack: TTMSFMXCloudLinkedIn Demo'
+  ClientHeight = 714
+  ClientWidth = 702
+  Position = poScreenCenter
+  StyleBook = StyleBook1
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object GroupBox1: TGroupBox
+    Align = alBottom
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 83.000000000000000000
+    Position.Y = 466.000000000000000000
+    Text = 'Activity'
+    Width = 702.000000000000000000
+    TabOrder = 0
+    object Label2: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 20.000000000000000000
+      Text = 'Activity:'
+      Width = 42.000000000000000000
+      WordWrap = False
+    end
+    object btPostActivity: TButton
+      Height = 25.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 44.000000000000000000
+      TabOrder = 1
+      Text = 'Post activity'
+      Width = 110.000000000000000000
+      OnClick = btPostActivityClick
+    end
+    object edActivity: TEdit
+      TabOrder = 0
+      Text = 'Automated LinkedIn message'
+      Position.X = 78.000000000000000000
+      Position.Y = 17.000000000000000000
+      Width = 321.000000000000000000
+      Height = 21.000000000000000000
+      KillFocusByReturn = False
+    end
+  end
+  object GroupBox2: TGroupBox
+    Align = alBottom
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 165.000000000000000000
+    Position.Y = 549.000000000000000000
+    Text = 'Share'
+    Width = 702.000000000000000000
+    TabOrder = 1
+    object Label1: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 20.000000000000000000
+      Text = 'Title:'
+      Width = 27.000000000000000000
+      WordWrap = False
+    end
+    object Label3: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 47.000000000000000000
+      Text = 'Descr:'
+      Width = 33.000000000000000000
+      WordWrap = False
+    end
+    object Label4: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 74.000000000000000000
+      Text = 'Hyperlink:'
+      Width = 53.000000000000000000
+      WordWrap = False
+    end
+    object Label5: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 101.000000000000000000
+      Text = 'Image:'
+      Width = 37.000000000000000000
+      WordWrap = False
+    end
+    object btShare: TButton
+      Height = 25.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 125.000000000000000000
+      TabOrder = 4
+      Text = 'Post share'
+      Width = 110.000000000000000000
+      OnClick = btShareClick
+    end
+    object Title: TEdit
+      TabOrder = 0
+      Text = 'Automated LinkedIn message'
+      Position.X = 78.000000000000000000
+      Position.Y = 17.000000000000000000
+      Width = 321.000000000000000000
+      Height = 21.000000000000000000
+      KillFocusByReturn = False
+    end
+    object Descr: TEdit
+      TabOrder = 1
+      Text = 'Automated LinkedIn message'
+      Position.X = 78.000000000000000000
+      Position.Y = 44.000000000000000000
+      Width = 321.000000000000000000
+      Height = 21.000000000000000000
+      KillFocusByReturn = False
+    end
+    object Hyperlink: TEdit
+      TabOrder = 2
+      Text = 'http://www.tmssoftware.com'
+      Position.X = 78.000000000000000000
+      Position.Y = 71.000000000000000000
+      Width = 321.000000000000000000
+      Height = 21.000000000000000000
+      KillFocusByReturn = False
+    end
+    object ImageLink: TEdit
+      TabOrder = 3
+      Text = 'http://www.tmssoftware.com/site/img/tmslogo.png'
+      Position.X = 78.000000000000000000
+      Position.Y = 98.000000000000000000
+      Width = 321.000000000000000000
+      Height = 21.000000000000000000
+      KillFocusByReturn = False
+    end
+  end
+  object GroupBox3: TGroupBox
+    Align = alTop
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 251.000000000000000000
+    Position.Y = 41.000000000000000000
+    Text = 'Lookup'
+    Width = 702.000000000000000000
+    TabOrder = 2
+    object pSearch: TTabControl
+      Anchors = [akLeft, akTop, akRight]
+      Height = 222.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 23.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      Width = 696.000000000000000000
+      OnChange = pSearchChange
+      object Profiles: TTabItem
+        WordWrap = False
+        Height = 23.000000000000000000
+        IsSelected = True
+        Position.X = 1.000000000000000000
+        TabOrder = 0
+        Text = 'Profiles'
+        Width = 56.000000000000000000
+        object btConnections: TButton
+          Height = 25.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 16.000000000000000000
+          TabOrder = 0
+          Text = 'Get my connections'
+          Width = 139.000000000000000000
+          OnClick = btConnectionsClick
+        end
+        object DefProf: TButton
+          Enabled = False
+          Height = 25.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 47.000000000000000000
+          TabOrder = 1
+          Text = 'Get my default profile'
+          Width = 139.000000000000000000
+          OnClick = DefProfClick
+        end
+        object lbConnections: TListBox
+          Anchors = [akLeft, akTop, akBottom]
+          Height = 141.000000000000000000
+          Position.X = 398.000000000000000000
+          Position.Y = 16.000000000000000000
+          TabOrder = 2
+          Width = 287.000000000000000000
+          OnClick = lbConnectionsClick
+          ItemHeight = 13.000000000000000000
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+        end
+      end
+      object TabSheet1: TTabItem
+        WordWrap = False
+        Height = 23.000000000000000000
+        IsSelected = False
+        Position.X = 57.000000000000000000
+        TabOrder = 1
+        Text = 'People'
+        Width = 53.000000000000000000
+        object Label6: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 20.000000000000000000
+          Text = 'Keywords:'
+          Width = 51.000000000000000000
+          WordWrap = False
+        end
+        object Label7: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 47.000000000000000000
+          Text = 'First name:'
+          Width = 54.000000000000000000
+          WordWrap = False
+        end
+        object Label8: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 73.000000000000000000
+          Text = 'Last name:'
+          Width = 53.000000000000000000
+          WordWrap = False
+        end
+        object Label9: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 100.000000000000000000
+          Text = 'Company:'
+          Width = 49.000000000000000000
+          WordWrap = False
+        end
+        object Label10: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 127.000000000000000000
+          Text = 'Country:'
+          Width = 43.000000000000000000
+          WordWrap = False
+        end
+        object lbTotalPeople: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 490.000000000000000000
+          Position.Y = 175.000000000000000000
+          Text = 'Results:'
+          Width = 39.000000000000000000
+          WordWrap = False
+        end
+        object edKeywords: TEdit
+          TabOrder = 0
+          Position.X = 71.000000000000000000
+          Position.Y = 16.000000000000000000
+          Width = 321.000000000000000000
+          Height = 21.000000000000000000
+          KillFocusByReturn = False
+        end
+        object edFirstName: TEdit
+          TabOrder = 1
+          Position.X = 71.000000000000000000
+          Position.Y = 43.000000000000000000
+          Width = 321.000000000000000000
+          Height = 21.000000000000000000
+          KillFocusByReturn = False
+        end
+        object edLastName: TEdit
+          TabOrder = 2
+          Position.X = 71.000000000000000000
+          Position.Y = 70.000000000000000000
+          Width = 321.000000000000000000
+          Height = 21.000000000000000000
+          KillFocusByReturn = False
+        end
+        object edCompany: TEdit
+          TabOrder = 3
+          Position.X = 71.000000000000000000
+          Position.Y = 97.000000000000000000
+          Width = 321.000000000000000000
+          Height = 21.000000000000000000
+          KillFocusByReturn = False
+        end
+        object cbCountries: TComboBox
+          DisableFocusEffect = False
+          Height = 21.000000000000000000
+          Position.X = 71.000000000000000000
+          Position.Y = 124.000000000000000000
+          TabOrder = 4
+          Width = 321.000000000000000000
+        end
+        object btPeopleSearch: TButton
+          Height = 25.000000000000000000
+          Position.X = 9.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 5
+          Text = 'Search'
+          Width = 110.000000000000000000
+          OnClick = btPeopleSearchClick
+        end
+        object lbPeople: TListBox
+          Anchors = [akLeft, akTop, akRight]
+          Height = 141.000000000000000000
+          Position.X = 398.000000000000000000
+          Position.Y = 16.000000000000000000
+          TabOrder = 6
+          Width = 287.000000000000000000
+          OnClick = lbPeopleClick
+          ItemHeight = 13.000000000000000000
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+        end
+        object btNextPeople: TButton
+          Height = 25.000000000000000000
+          Position.X = 444.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 8
+          Text = 'Next'
+          Width = 40.000000000000000000
+          OnClick = btNextPeopleClick
+        end
+        object btPrevPeople: TButton
+          Height = 25.000000000000000000
+          Position.X = 398.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 7
+          Text = 'Prev'
+          Width = 40.000000000000000000
+          OnClick = btPrevPeopleClick
+        end
+      end
+      object Companies: TTabItem
+        WordWrap = False
+        Height = 23.000000000000000000
+        IsSelected = False
+        Position.X = 110.000000000000000000
+        TabOrder = 2
+        Text = 'Companies'
+        Width = 74.000000000000000000
+        object Label11: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 20.000000000000000000
+          Text = 'Keywords:'
+          Width = 51.000000000000000000
+          WordWrap = False
+        end
+        object lbTotalCompanies: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 490.000000000000000000
+          Position.Y = 175.000000000000000000
+          Text = 'Results:'
+          Width = 39.000000000000000000
+          WordWrap = False
+        end
+        object Label16: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 73.000000000000000000
+          Text = 'Country:'
+          Width = 43.000000000000000000
+          WordWrap = False
+        end
+        object Label17: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 47.000000000000000000
+          Text = 'Industry:'
+          Width = 45.000000000000000000
+          WordWrap = False
+        end
+        object btSearchCompanies: TButton
+          Height = 25.000000000000000000
+          Position.X = 9.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 3
+          Text = 'Search'
+          Width = 110.000000000000000000
+          OnClick = btSearchCompaniesClick
+        end
+        object edCompKeywords: TEdit
+          TabOrder = 0
+          Position.X = 71.000000000000000000
+          Position.Y = 16.000000000000000000
+          Width = 321.000000000000000000
+          Height = 21.000000000000000000
+          KillFocusByReturn = False
+        end
+        object lbCompanies: TListBox
+          Anchors = [akLeft, akTop, akRight]
+          Height = 141.000000000000000000
+          Position.X = 398.000000000000000000
+          Position.Y = 16.000000000000000000
+          TabOrder = 4
+          Width = 287.000000000000000000
+          OnClick = lbCompaniesClick
+          ItemHeight = 13.000000000000000000
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+        end
+        object btNextCompanies: TButton
+          Height = 25.000000000000000000
+          Position.X = 444.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 6
+          Text = 'Next'
+          Width = 40.000000000000000000
+          OnClick = btNextCompaniesClick
+        end
+        object btPrevCompanies: TButton
+          Height = 25.000000000000000000
+          Position.X = 398.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 5
+          Text = 'Prev'
+          Width = 40.000000000000000000
+          OnClick = btPrevCompaniesClick
+        end
+        object cbCompanyCountries: TComboBox
+          DisableFocusEffect = False
+          Height = 21.000000000000000000
+          Position.X = 71.000000000000000000
+          Position.Y = 70.000000000000000000
+          TabOrder = 2
+          Width = 321.000000000000000000
+        end
+        object cbIndustryCode: TComboBox
+          DisableFocusEffect = False
+          Height = 21.000000000000000000
+          Position.X = 71.000000000000000000
+          Position.Y = 43.000000000000000000
+          TabOrder = 1
+          Width = 321.000000000000000000
+        end
+      end
+      object Jobs: TTabItem
+        WordWrap = False
+        Height = 23.000000000000000000
+        IsSelected = False
+        Position.X = 184.000000000000000000
+        TabOrder = 3
+        Text = 'Jobs'
+        Width = 42.000000000000000000
+        object Label12: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 20.000000000000000000
+          Text = 'Keywords:'
+          Width = 51.000000000000000000
+          WordWrap = False
+        end
+        object lbJobResults: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 490.000000000000000000
+          Position.Y = 175.000000000000000000
+          Text = 'Results:'
+          Width = 39.000000000000000000
+          WordWrap = False
+        end
+        object Label13: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 47.000000000000000000
+          Text = 'Job title:'
+          Width = 42.000000000000000000
+          WordWrap = False
+        end
+        object Label14: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 73.000000000000000000
+          Text = 'Company:'
+          Width = 49.000000000000000000
+          WordWrap = False
+        end
+        object Label15: TLabel
+          AutoSize = True
+          Height = 13.000000000000000000
+          Position.X = 14.000000000000000000
+          Position.Y = 100.000000000000000000
+          Text = 'Country:'
+          Width = 43.000000000000000000
+          WordWrap = False
+        end
+        object edJobKeywords: TEdit
+          TabOrder = 0
+          Position.X = 71.000000000000000000
+          Position.Y = 16.000000000000000000
+          Width = 321.000000000000000000
+          Height = 21.000000000000000000
+          KillFocusByReturn = False
+        end
+        object btSearchJobs: TButton
+          Height = 25.000000000000000000
+          Position.X = 9.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 4
+          Text = 'Search'
+          Width = 110.000000000000000000
+          OnClick = btSearchJobsClick
+        end
+        object lbJobs: TListBox
+          Anchors = [akLeft, akTop, akRight]
+          Height = 141.000000000000000000
+          Position.X = 398.000000000000000000
+          Position.Y = 16.000000000000000000
+          TabOrder = 5
+          Width = 287.000000000000000000
+          OnClick = lbJobsClick
+          ItemHeight = 13.000000000000000000
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+        end
+        object edJobTitle: TEdit
+          TabOrder = 1
+          Position.X = 71.000000000000000000
+          Position.Y = 43.000000000000000000
+          Width = 321.000000000000000000
+          Height = 21.000000000000000000
+          KillFocusByReturn = False
+        end
+        object edJobCompany: TEdit
+          TabOrder = 2
+          Position.X = 71.000000000000000000
+          Position.Y = 70.000000000000000000
+          Width = 321.000000000000000000
+          Height = 21.000000000000000000
+          KillFocusByReturn = False
+        end
+        object cbJobCountries: TComboBox
+          DisableFocusEffect = False
+          Height = 21.000000000000000000
+          Position.X = 71.000000000000000000
+          Position.Y = 97.000000000000000000
+          TabOrder = 3
+          Width = 321.000000000000000000
+        end
+        object btNextJobs: TButton
+          Height = 25.000000000000000000
+          Position.X = 444.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 7
+          Text = 'Next'
+          Width = 40.000000000000000000
+          OnClick = btNextJobsClick
+        end
+        object btPrevJobs: TButton
+          Height = 25.000000000000000000
+          Position.X = 398.000000000000000000
+          Position.Y = 163.000000000000000000
+          TabOrder = 6
+          Text = 'Prev'
+          Width = 40.000000000000000000
+          OnClick = btPrevJobsClick
+        end
+      end
+    end
+  end
+  object GroupBox4: TGroupBox
+    Align = alClient
+    StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+    Height = 174.000000000000000000
+    Text = 'Details'
+    Width = 702.000000000000000000
+    TabOrder = 3
+    object Label18: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 575.000000000000000000
+      Position.Y = 27.000000000000000000
+      Text = 'Picture:'
+      Width = 40.000000000000000000
+      WordWrap = False
+    end
+    object Memo1: TMemo
+      Anchors = [akLeft, akTop, akBottom]
+      Height = 139.000000000000000000
+      Position.X = 14.000000000000000000
+      Position.Y = 22.000000000000000000
+      TabOrder = 0
+      Width = 555.000000000000000000
+    end
+    object Panel2: TPanel
+      Height = 115.000000000000000000
+      Position.X = 575.000000000000000000
+      Position.Y = 46.000000000000000000
+      Width = 115.000000000000000000
+      TabOrder = 1
+      object TMSFMXCloudCloudImage1: TTMSFMXCloudImage
+        Align = alClient
+        Width = 115.000000000000000000
+        Height = 115.000000000000000000
+        ClipChildren = True
+        Version = '1.5.0.1'
+      end
+    end
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 41.000000000000000000
+    Width = 702.000000000000000000
+    TabOrder = 4
+    object Image1: TImage
+      Anchors = [akTop, akRight]
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+        F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        061149444154484B2D95CB8F655515C6BFBDCFF3DEAA5B55B7BBBA84C22E846E
+        443B3C264D8231CA409C38200E8DC61E6A6208C63F809913E3CC819A1813E3DC
+        C80085041248687550135B22A0A4312D45437755DDBA8F73CFFB9CED6F9FF226
+        2BE79EB3F75E8F6F7DEBDBE6C68FFEEC0E1E3F90BD1468D19F29DD4C54D78D42
+        6DCAD5E269D4DB4A6DB8521D76AA0223C96AD4843CC55A20C71E5306DA88C7EA
+        9A567169345E491FFDE34399177F76E89EBCFE94729BA9D45A6D5728084236C6
+        8A6C2A6B9C641AF5E15A8DED31EF3850F2FF006DD04BCE4AB5D3284CD5B6AD12
+        176AAB4DF5C9ED23991BBFFBBBDB996EAAEB4BA92BF5E0744B655EAA6A03C5E3
+        89AAAA1A0204AAC814872625ED446117F3BD5717D6EA4DCB16436281EAB65260
+        232551AAE3CFEECBDE294E3523EBBC293449224D49EC992F3DAADDED91EEDD3F
+        D2A2CA34AB0BCDAA466765AF79E1B4CAB1A2E1D968B9AE9517BD8AAA555E365A
+        97ADCEEA529FD62BDD3395CC73BF7EDBED24A17603A7A7F72FE87BDFB806EE12
+        10EA37AFDFD27BC77315413264DF53875CA2A8B34A5BDE9C534D15C6903DFF23
+        FAD3F7BE2A47AFA4B33C935DAD2BD59D74325BE981FD03EF4225CDF5BFF138D5
+        8ACC97347DC9A655DD0F36A7918BB61C2C6BBB617DDE549A950515B75A954E4B
+        AAADFB4096352D297B6EC63AFCF8542738AE80F71ECF8F3E5B503659E63437AF
+        7956BC63435082E074D103495F61854E9A52277C9F01599611A0B4325FFEE91B
+        2E8A2279B3E54C5FBD32D5FEA56DBDF79FBBBA739A2937100008A2BE9183A1B5
+        3D872B1099019AA76C07BB049BBADECAF55B9036A1FF4ED65A7C52720FEAF48B
+        8DB16EDFF9AFDE7EE71D9DAD566AC0D975604DC6176DA75D98B4911F2B5CDED5
+        C4AC74F573233DB1BFA3FDC8292C665478AA9E405943B5C0DCD7CCC7DECBAFB9
+        514C4472F9CAB503BDF4ED2B9A40EBA3B5F4ABDFBFA6DB1F2FF4C31BDFD1F503
+        691BE86EFD7BAE7FFEEB033DFFAD67B5954823CEF9961D7E785FBFFDC3ABFAB4
+        DD51175C54C8B0F9B9B0A72A94C1E5AAC914D44B7D1EE77B1CB8BA21A5AE54E8
+        183CB0BD32961E865ECF1DECE807DF7C56D7704E4C3D843D82BDF0D89EBEFFFC
+        D73581413DF334CC485B33A85138606BC139654A3927D77A64B1BE93C3F92832
+        0375FDDAC54D6982CD99BF82778A524FB57CD2D79EBACA199F6C09EC1D43D9C9
+        0645A5F274A17A55D3A768A0E906DE8821A054430F5A1FD1BF630BEC97AFFC55
+        DF7DF9177AE1C73FD75BEF1E29A1DA88EFBB44BBB87749354E4EF3E530A43635
+        8C75980CE67584611CFA61A14AC45A9E154A1204906F24AD1CFBE35F0E756C2E
+        E82C9AEA959B7F1BD6FC19CFAE384E95AF8136C6EFE69839688D2A8628EF72F4
+        AA143A3754E1E168974B4DD30DADE7D9E0608187BB785B2074A779A032D8E65B
+        A2256B402EDAA47130E27C04CC46672773A03630DA3148182248D6E7997855F6
+        3C6E10BE84A8FE5BCAB7A5C7BE0F156FEEA8AC1C109EF7ABE2E99328172B6606
+        5FF420F5157468900B0D987BDD3F1F1FF60E657781551433EE5D33D0D1E34C3E
+        F484206546324873C300F20E9A038413FCC54848DEAD55448D6C832099AE855A
+        CD70D1F800A8C3F06BC9A328D60C1BEBBCFBC0296AEDF1E0C640A209E0A599D4
+        8784BCD147E3BA617FCDD36EF17782A52CC740E2E94841C3AFC8D64A93581BF0
+        D27FF271917B75048DA0631A06C8753F64EE29EB9F0D9794B3E77D884C4CF534
+        A361A41D1A5312C68B9CA7E231B6B9FFB09634E693ACD68C77DFCC2551C6BB0F
+        222BE1A0B0E185FD4120BDBCFB3D59902A43CE414E69BC2193FEE44FB09C96D0
+        D587A6633D737947133A3DE7863A7CF77D155C855F7CE4B21EDB43F400FB8834
+        6FDE7A9F32398CA05D4EADAE5FFB0277C14A1554BFF9C1B14ED680D5394DA653
+        99F14B6FBA0AACBA082E7003A5E552E3D0C214F678CE72A8A94A6D9A9A89375A
+        0731E9D0E988E9620847A8AC6916347AA10A17FD08F1301BB20CF03614B7C892
+        B63AA3986C021721CD23556EA4D64F35B0755CE82E885471A8015B0BAE9E98FE
+        06F39D2C18F23699289AEE2948766814EB70F9012EFDC783A9EC18DE8DB8AC03
+        4AF2258764D67A073E737FFD3530261A41E190775A17E100800DFBA117B48D61
+        1EFD58556AB8C5225835E28A9D302B3A5BEB7F5E912DEF4D218FAD0000000049
+        454E44AE426082}
+      Height = 24.000000000000000000
+      Position.X = 668.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 24.000000000000000000
+    end
+    object btConnect: TButton
+      Height = 25.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'Connect'
+      Width = 110.000000000000000000
+      OnClick = btConnectClick
+    end
+    object btRemove: TButton
+      Font.Family = 'Tahoma'
+      StyledSettings = [ssFontColor]
+      Height = 25.000000000000000000
+      Position.X = 127.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyleLookup = 'btRemoveStyle1'
+      TabOrder = 1
+      Text = 'Remove access'
+      Width = 110.000000000000000000
+      OnClick = btRemoveClick
+    end
+  end
+  object StyleBook1: TStyleBook
+    Left = 8
+    Top = 8
+    ResourcesBin = {
+      464D585F5354594C4520322E3501060E627452656D6F76655374796C65310318
+      06005450463007544C61796F757400095374796C654E616D65060E627452656D
+      6F76655374796C6531064865696768740500000000000000C003400A506F7369
+      74696F6E2E580500000000000000BC07400A506F736974696F6E2E5905000000
+      00000080BB07400557696474680500000000000000B60540000A545265637461
+      6E676C6500095374796C654E616D65060A6261636B67726F756E6405416C6967
+      6E070A616C436F6E74656E74730A46696C6C2E436F6C6F720709784646454645
+      464546064865696768740500000000000000C003400748697454657374080B53
+      74726F6B652E4B696E640706626B4E6F6E650758526164697573050000000000
+      0000C0004007595261646975730500000000000000C000400557696474680500
+      000000000000B60540000A5452656374616E676C650005416C69676E070A616C
+      436F6E74656E74730946696C6C2E4B696E64070A626B4772616469656E741446
+      696C6C2E4772616469656E742E506F696E74730E0105436F6C6F720709783234
+      463446344634064F66667365740500000000000000000000000105436F6C6F72
+      0709783234454145414541064F6666736574050000000000EE7CFFFD3F000105
+      436F6C6F720709783445383638363836064F6666736574050000000000000080
+      FE3F0000064865696768740500000000000000C003400748697454657374080C
+      5374726F6B652E436F6C6F720709784338344634463446075852616469757305
+      00000000000000C0004007595261646975730500000000000000C00040055769
+      6474680500000000000000B6054000000F54436F6C6F72416E696D6174696F6E
+      00084475726174696F6E050000000000CDCCCCFC3F0C50726F70657274794E61
+      6D65060A46696C6C2E436F6C6F720A537461727456616C756507097846464546
+      454645460953746F7056616C7565070978464641354439464607547269676765
+      72061049734D6F7573654F7665723D7472756500000F54436F6C6F72416E696D
+      6174696F6E00084475726174696F6E050000000000CDCCCCFC3F0C50726F7065
+      7274794E616D65060A46696C6C2E436F6C6F720A537461727456616C75650709
+      7846464135443946460953746F7056616C756507097846464546454645460754
+      726967676572061149734D6F7573654F7665723D66616C736500001054496E6E
+      6572476C6F774566666563740008536F66746E657373050000000000CDCCCCFD
+      3F09476C6F77436F6C6F720709784646344634383438074F7061636974790500
+      000000006666E6FE3F0754726967676572060E4973507265737365643D747275
+      6507456E61626C65640800000A5452656374616E676C650005416C69676E0708
+      616C436C69656E740946696C6C2E4B696E640706626B4E6F6E65064C6F636B65
+      6409064865696768740500000000000000C003400748697454657374080C5061
+      6464696E672E4C656674050000000000000080FF3F0B50616464696E672E546F
+      70050000000000000080FF3F0D50616464696E672E5269676874050000000000
+      000080FF3F0E50616464696E672E426F74746F6D050000000000000080FF3F0C
+      5374726F6B652E436F6C6F720709783936464346434643075852616469757305
+      0000000000000080004007595261646975730500000000000000800040055769
+      6474680500000000000000B6054000000005545465787400095374796C654E61
+      6D6506047465787405416C69676E0708616C436C69656E7405436F6C6F720708
+      636C61426C61636B064C6F636B656409064865696768740500000000000000C0
+      03400748697454657374080C50616464696E672E4C6566740500000000000000
+      A001400B50616464696E672E546F700500000000000000C000400D5061646469
+      6E672E52696768740500000000000000A001400E50616464696E672E426F7474
+      6F6D0500000000000000C0004004546578740606627574746F6E055769647468
+      0500000000000000B6054000000B54476C6F774566666563740008536F66746E
+      657373050000000000CDCCCCFC3F09476C6F77436F6C6F720709783832303035
+      414343074F7061636974790500000000006666E6FE3F0754726967676572060E
+      4973466F63757365643D7472756507456E61626C656408000000}
+  end
+  object TMSFMXCloudLinkedIn1: TTMSFMXCloudLinkedIn
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudLinkedIn1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+  end
+end

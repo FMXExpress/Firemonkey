@@ -1,0 +1,72 @@
+object Form1185: TForm1185
+  Left = 0
+  Top = 0
+  Caption = 'Form1185'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  object Button1: TButton
+    Height = 44.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 0
+    Text = 'Start'
+    Trimming = ttCharacter
+    Width = 73.000000000000000000
+    OnClick = Button1Click
+  end
+  object Panel1: TPanel
+    Height = 473.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 64.000000000000000000
+    Width = 305.000000000000000000
+    TabOrder = 1
+    object Rectangle1: TRectangle
+      Fill.Color = claLimegreen
+      Height = 50.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 208.000000000000000000
+      Width = 50.000000000000000000
+    end
+    object Ellipse1: TEllipse
+      Fill.Color = claOldlace
+      Height = 25.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Width = 25.000000000000000000
+    end
+  end
+  object Label1: TLabel
+    Height = 49.000000000000000000
+    Position.X = 88.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Tilt the Device to move the ellipse inside the rectangle.'
+    Width = 209.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label2: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 504.000000000000000000
+    Text = '0'
+    Width = 13.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object TMSFMXNativeCMMotionManager1: TTMSFMXNativeCMMotionManager
+    AccelerometerUpdateInterval = 0.010000000000000000
+    GyroUpdateInterval = 0.010000000000000000
+    DeviceMotionUpdateInterval = 0.010000000000000000
+    MagnetometerUpdateInterval = 0.010000000000000000
+    Left = 192
+    Top = 88
+  end
+end

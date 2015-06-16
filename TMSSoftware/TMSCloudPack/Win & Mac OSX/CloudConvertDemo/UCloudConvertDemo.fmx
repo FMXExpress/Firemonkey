@@ -1,0 +1,217 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  BorderStyle = Single
+  Caption = 'TMS CloudConvert Demo'
+  ClientHeight = 504
+  ClientWidth = 590
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object GroupBox1: TGroupBox
+    Align = Left
+    Height = 276.000000000000000000
+    Text = 'Conversion Configuration:'
+    Width = 297.000000000000000000
+    TabOrder = 6
+    object Label2: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Input: PDF file:'
+      Width = 241.000000000000000000
+    end
+    object lbInputFile: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 48.000000000000000000
+      Text = 'OrderTMScomponents.pdf'
+      Width = 249.000000000000000000
+    end
+    object Label4: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      Text = 'Convert file to:'
+      Width = 241.000000000000000000
+    end
+    object cbOutput: TComboBox
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      Items.Strings = (
+        'PNG'
+        'JPG'
+        'BMP'
+        'TXT')
+      ItemIndex = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 96.000000000000000000
+      TabOrder = 1
+      Width = 150.000000000000000000
+    end
+    object btConvert: TButton
+      Height = 22.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 123.000000000000000000
+      TabOrder = 2
+      Text = 'Convert'
+      Width = 150.000000000000000000
+      OnClick = btConvertClick
+    end
+  end
+  object GroupBox2: TGroupBox
+    Align = Client
+    Height = 276.000000000000000000
+    Text = 'Output'
+    Width = 293.000000000000000000
+    TabOrder = 7
+    object Image1: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Height = 241.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Visible = False
+      Width = 273.000000000000000000
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      Height = 241.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 1
+      Visible = False
+      Width = 273.000000000000000000
+    end
+  end
+  object GroupBox3: TGroupBox
+    Align = Bottom
+    Height = 97.000000000000000000
+    Position.Y = 276.000000000000000000
+    Text = 'Conversion Status'
+    Width = 590.000000000000000000
+    TabOrder = 8
+    object lbProgress: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'ProgressLabel'
+      Width = 545.000000000000000000
+    end
+    object ProgressBar1: TProgressBar
+      Height = 20.000000000000000000
+      Orientation = Horizontal
+      Position.X = 16.000000000000000000
+      Position.Y = 56.000000000000000000
+      Width = 545.000000000000000000
+    end
+  end
+  object GroupBox4: TGroupBox
+    Align = Bottom
+    Height = 131.000000000000000000
+    Position.Y = 373.000000000000000000
+    Text = 'Conversion Results'
+    Width = 590.000000000000000000
+    TabOrder = 9
+    object Label1: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Conversion start time:'
+      Width = 200.000000000000000000
+    end
+    object Label5: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 40.000000000000000000
+      Text = 'Conversion end time:'
+      Width = 200.000000000000000000
+    end
+    object Label6: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 56.000000000000000000
+      Text = 'Input file size:'
+      Width = 200.000000000000000000
+    end
+    object Label7: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      Text = 'Output file size:'
+      Width = 200.000000000000000000
+    end
+    object Label8: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 88.000000000000000000
+      Text = 'Output file name:'
+      Width = 200.000000000000000000
+    end
+    object Label9: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 104.000000000000000000
+      Text = 'Output file download expires:'
+      Width = 200.000000000000000000
+    end
+    object lbStartTime: TLabel
+      Height = 17.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 24.000000000000000000
+      Width = 369.000000000000000000
+    end
+    object lbEndTime: TLabel
+      Height = 17.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 40.000000000000000000
+      Width = 369.000000000000000000
+    end
+    object lbInputFileSize: TLabel
+      Height = 17.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 56.000000000000000000
+      Width = 369.000000000000000000
+    end
+    object lbOutputFileSize: TLabel
+      Height = 17.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 72.000000000000000000
+      Width = 369.000000000000000000
+    end
+    object lbOutputFileName: TLabel
+      Height = 17.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 88.000000000000000000
+      Width = 369.000000000000000000
+    end
+    object lbOutputDownload: TLabel
+      Height = 17.000000000000000000
+      Position.X = 192.000000000000000000
+      Position.Y = 104.000000000000000000
+      Width = 369.000000000000000000
+    end
+  end
+  object TMSFMXCloudConvert1: TTMSFMXCloudConvert
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackPort = 80
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnUploadProgress = TMSFMXCloudConvert1UploadProgress
+    OnDownloadProgress = TMSFMXCloudConvert1DownloadProgress
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Left = 96
+    Top = 192
+  end
+end

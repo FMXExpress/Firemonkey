@@ -1,0 +1,548 @@
+object Form7: TForm7
+  Left = 0
+  Top = 0
+  Caption = 'TMS PayPal Demo'
+  ClientHeight = 545
+  ClientWidth = 559
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Button1: TButton
+    Height = 22.000000000000000000
+    Position.X = 80.000000000000000000
+    Position.Y = 496.000000000000000000
+    TabOrder = 3
+    Text = 'Order'
+    Width = 121.000000000000000000
+    OnClick = Button1Click
+  end
+  object GroupBox1: TGroupBox
+    Height = 305.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 40.000000000000000000
+    Text = 'Products'
+    Width = 537.000000000000000000
+    TabOrder = 8
+    object CheckBox1: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 48.000000000000000000
+      TabOrder = 11
+      Width = 17.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object SpinBox1: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 13
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Max = 5.000000000000000000
+      Value = 1.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 48.000000000000000000
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object Label2: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Height = 17.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      Text = 'Quantity'
+      Width = 120.000000000000000000
+    end
+    object Label3: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Height = 17.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      Text = 'Name'
+      Width = 120.000000000000000000
+    end
+    object Label4: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Height = 17.000000000000000000
+      Position.X = 296.000000000000000000
+      Position.Y = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      Text = 'Description'
+      Width = 120.000000000000000000
+    end
+    object Label5: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Height = 17.000000000000000000
+      Position.X = 440.000000000000000000
+      Position.Y = 24.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.HorzAlign = Trailing
+      Text = 'Unit Price'
+      Width = 81.000000000000000000
+    end
+    object lbName1: TLabel
+      Height = 17.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 48.000000000000000000
+      Text = 'Embarcadero'
+      Width = 120.000000000000000000
+    end
+    object lbDesc1: TLabel
+      Height = 17.000000000000000000
+      Position.X = 296.000000000000000000
+      Position.Y = 48.000000000000000000
+      Text = 'Delphi XE8 Professional'
+      Width = 169.000000000000000000
+    end
+    object lbPrice1: TLabel
+      Height = 17.000000000000000000
+      Position.X = 472.000000000000000000
+      Position.Y = 48.000000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = '1200'
+      Width = 49.000000000000000000
+    end
+    object lbPrice2: TLabel
+      Height = 17.000000000000000000
+      Position.X = 472.000000000000000000
+      Position.Y = 80.000000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = '300'
+      Width = 49.000000000000000000
+    end
+    object lbDesc2: TLabel
+      Height = 17.000000000000000000
+      Position.X = 296.000000000000000000
+      Position.Y = 80.000000000000000000
+      Text = 'InterBase XE7 Server'
+      Width = 169.000000000000000000
+    end
+    object lbName2: TLabel
+      Height = 17.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 80.000000000000000000
+      Text = 'Embarcadero'
+      Width = 120.000000000000000000
+    end
+    object SpinBox2: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 12
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Max = 5.000000000000000000
+      Value = 1.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 80.000000000000000000
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object CheckBox2: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 80.000000000000000000
+      TabOrder = 9
+      Width = 17.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object lbPrice3: TLabel
+      Height = 17.000000000000000000
+      Position.X = 472.000000000000000000
+      Position.Y = 112.000000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = '676'
+      Width = 49.000000000000000000
+    end
+    object lbDesc3: TLabel
+      Height = 17.000000000000000000
+      Position.X = 296.000000000000000000
+      Position.Y = 112.000000000000000000
+      Text = 'FireDAC Client/Server Pack'
+      Width = 169.000000000000000000
+    end
+    object lbName3: TLabel
+      Height = 17.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 112.000000000000000000
+      Text = 'Embarcadero'
+      Width = 120.000000000000000000
+    end
+    object SpinBox3: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 10
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Max = 5.000000000000000000
+      Value = 1.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 112.000000000000000000
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object CheckBox3: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 112.000000000000000000
+      TabOrder = 6
+      Width = 17.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object lbPrice4: TLabel
+      Height = 17.000000000000000000
+      Position.X = 472.000000000000000000
+      Position.Y = 144.000000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = '1199'
+      Width = 49.000000000000000000
+    end
+    object lbDesc4: TLabel
+      Height = 17.000000000000000000
+      Position.X = 296.000000000000000000
+      Position.Y = 144.000000000000000000
+      Text = 'Visual Studio Professional'
+      Width = 169.000000000000000000
+    end
+    object lbName4: TLabel
+      Height = 17.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 144.000000000000000000
+      Text = 'Microsoft'
+      Width = 120.000000000000000000
+    end
+    object SpinBox4: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 8
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Max = 5.000000000000000000
+      Value = 1.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 144.000000000000000000
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object CheckBox4: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 144.000000000000000000
+      TabOrder = 3
+      Width = 17.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object lbPrice7: TLabel
+      Height = 17.000000000000000000
+      Position.X = 472.000000000000000000
+      Position.Y = 240.000000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = '19'
+      Width = 49.000000000000000000
+    end
+    object lbDesc7: TLabel
+      Height = 17.000000000000000000
+      Position.X = 296.000000000000000000
+      Position.Y = 240.000000000000000000
+      Text = 'Mac OSX 10'
+      Width = 169.000000000000000000
+    end
+    object lbName7: TLabel
+      Height = 17.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 240.000000000000000000
+      Text = 'Apple'
+      Width = 120.000000000000000000
+    end
+    object SpinBox7: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 4
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Max = 5.000000000000000000
+      Value = 1.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 240.000000000000000000
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object CheckBox7: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 240.000000000000000000
+      TabOrder = 0
+      Width = 17.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object lbPrice5: TLabel
+      Height = 17.000000000000000000
+      Position.X = 472.000000000000000000
+      Position.Y = 176.000000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = '399'
+      Width = 49.000000000000000000
+    end
+    object lbDesc5: TLabel
+      Height = 17.000000000000000000
+      Position.X = 296.000000000000000000
+      Position.Y = 176.000000000000000000
+      Text = 'Office Professional 2013'
+      Width = 169.000000000000000000
+    end
+    object lbName5: TLabel
+      Height = 17.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 176.000000000000000000
+      Text = 'Microsoft'
+      Width = 120.000000000000000000
+    end
+    object SpinBox5: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 7
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Max = 5.000000000000000000
+      Value = 1.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 176.000000000000000000
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object CheckBox5: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 176.000000000000000000
+      TabOrder = 2
+      Width = 17.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object lbPrice6: TLabel
+      Height = 17.000000000000000000
+      Position.X = 472.000000000000000000
+      Position.Y = 208.000000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = '119'
+      Width = 49.000000000000000000
+    end
+    object lbDesc6: TLabel
+      Height = 17.000000000000000000
+      Position.X = 296.000000000000000000
+      Position.Y = 208.000000000000000000
+      Text = 'Windows 8.1'
+      Width = 169.000000000000000000
+    end
+    object lbName6: TLabel
+      Height = 17.000000000000000000
+      Position.X = 160.000000000000000000
+      Position.Y = 208.000000000000000000
+      Text = 'Microsoft'
+      Width = 120.000000000000000000
+    end
+    object SpinBox6: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 5
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Max = 5.000000000000000000
+      Value = 1.000000000000000000
+      Position.X = 40.000000000000000000
+      Position.Y = 208.000000000000000000
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object CheckBox6: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 208.000000000000000000
+      TabOrder = 1
+      Width = 17.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object Label6: TLabel
+      StyledSettings = [Family, Size, FontColor]
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 272.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      Text = 'Subtotal:'
+      Width = 120.000000000000000000
+    end
+    object lbSubTotal: TLabel
+      Height = 17.000000000000000000
+      Position.X = 440.000000000000000000
+      Position.Y = 272.000000000000000000
+      TextSettings.HorzAlign = Trailing
+      Text = '0'
+      Width = 81.000000000000000000
+    end
+  end
+  object Label9: TLabel
+    Height = 17.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = 'Select required products and quantity:'
+    Width = 305.000000000000000000
+  end
+  object GroupBox2: TGroupBox
+    Height = 169.000000000000000000
+    Position.X = 248.000000000000000000
+    Position.Y = 352.000000000000000000
+    Text = 'Last order customer details'
+    Width = 297.000000000000000000
+    TabOrder = 10
+    object Label1: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Status:'
+      Width = 81.000000000000000000
+    end
+    object Label12: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 48.000000000000000000
+      Text = 'ID:'
+      Width = 81.000000000000000000
+    end
+    object Label13: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      Text = 'Name:'
+      Width = 81.000000000000000000
+    end
+    object Label14: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 96.000000000000000000
+      Text = 'Address:'
+      Width = 81.000000000000000000
+    end
+    object Label15: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 120.000000000000000000
+      Text = 'Country:'
+      Width = 81.000000000000000000
+    end
+    object Label16: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 144.000000000000000000
+      Text = 'Total:'
+      Width = 81.000000000000000000
+    end
+    object lbStatus: TLabel
+      Height = 17.000000000000000000
+      Position.X = 72.000000000000000000
+      Position.Y = 24.000000000000000000
+      Width = 217.000000000000000000
+    end
+    object lbID: TLabel
+      Height = 17.000000000000000000
+      Position.X = 72.000000000000000000
+      Position.Y = 48.000000000000000000
+      Width = 217.000000000000000000
+    end
+    object lbName: TLabel
+      Height = 17.000000000000000000
+      Position.X = 72.000000000000000000
+      Position.Y = 72.000000000000000000
+      Width = 217.000000000000000000
+    end
+    object lbAddress: TLabel
+      Height = 17.000000000000000000
+      Position.X = 72.000000000000000000
+      Position.Y = 96.000000000000000000
+      Width = 217.000000000000000000
+    end
+    object lbCountry: TLabel
+      Height = 17.000000000000000000
+      Position.X = 72.000000000000000000
+      Position.Y = 120.000000000000000000
+      Width = 217.000000000000000000
+    end
+    object lbTotal: TLabel
+      Height = 17.000000000000000000
+      Position.X = 72.000000000000000000
+      Position.Y = 144.000000000000000000
+      Width = 217.000000000000000000
+    end
+  end
+  object Label10: TLabel
+    Height = 17.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 360.000000000000000000
+    Text = 'Currency:'
+    Width = 120.000000000000000000
+  end
+  object Label11: TLabel
+    Height = 17.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 392.000000000000000000
+    Text = 'Shipping:'
+    Width = 120.000000000000000000
+  end
+  object cbCurrency: TComboBox
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    Items.Strings = (
+      'EUR'
+      'USD'
+      'NOK'
+      'HKD')
+    ItemIndex = 0
+    Position.X = 80.000000000000000000
+    Position.Y = 360.000000000000000000
+    TabOrder = 13
+    Width = 121.000000000000000000
+    OnChange = cbCurrencyChange
+  end
+  object cbShipping: TComboBox
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    Items.Strings = (
+      'Europe (5 EUR)'
+      'USA (5 USD)'
+      'Asia (5 HKD)')
+    ItemIndex = 0
+    Position.X = 80.000000000000000000
+    Position.Y = 392.000000000000000000
+    TabOrder = 14
+    Width = 121.000000000000000000
+  end
+  object cbInsurance: TCheckBox
+    Height = 19.000000000000000000
+    Position.X = 80.000000000000000000
+    Position.Y = 424.000000000000000000
+    TabOrder = 15
+    Text = 'Insurance (5 EUR)'
+    Width = 153.000000000000000000
+  end
+  object TMSFMXCloudPayPal1: TTMSFMXCloudPayPal
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'https://www.paypal.com/home'
+    App.CallBackPort = 0
+    PersistTokens.Location = plIniFile
+    Logging = False
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 1000
+    AuthFormSettings.Height = 900
+    OnAuthFormClose = TMSFMXCloudPayPal1AuthFormClose
+    OnPaymentCancelled = TMSFMXCloudPayPal1PaymentCancelled
+    OnPaymentFailed = TMSFMXCloudPayPal1PaymentFailed
+    OnPaymentAccepted = TMSFMXCloudPayPal1PaymentAccepted
+    Left = 472
+    Top = 8
+  end
+end

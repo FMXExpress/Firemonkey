@@ -1,0 +1,319 @@
+object Form1171: TForm1171
+  Left = 0
+  Top = 0
+  Caption = 'Form1171'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  object Panel1: TPanel
+    Height = 49.000000000000000000
+    Width = 1024.000000000000000000
+    TabOrder = 0
+    object btConnect: TButton
+      Height = 39.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      TabOrder = 0
+      Text = 'Connect'
+      Width = 80.000000000000000000
+      OnClick = btConnectClick
+    end
+    object btRemove: TButton
+      Height = 39.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 90.000000000000000000
+      Position.Y = 5.000000000000000000
+      TabOrder = 1
+      Text = 'Remove Access'
+      Width = 119.000000000000000000
+    end
+  end
+  object btGetVideos: TButton
+    Height = 33.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 1
+    Text = 'First Page'
+    Width = 80.000000000000000000
+    OnClick = btGetVideosClick
+  end
+  object btNext: TButton
+    Height = 33.000000000000000000
+    Position.X = 96.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 2
+    Text = 'Next Page'
+    Width = 105.000000000000000000
+    OnClick = btNextClick
+  end
+  object lvVideos: TTMSFMXCloudListView
+    Height = 473.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 128.000000000000000000
+    TabOrder = 3
+    Width = 641.000000000000000000
+    OnClick = lvVideosChange
+    RowCount = 0
+    RowHeight = 21.000000000000000000
+    Columns = <
+      item
+        Caption = '#'
+        Tag = 0
+      end
+      item
+        Caption = 'Title'
+        Tag = 0
+      end
+      item
+        Caption = 'Description'
+        Tag = 0
+      end
+      item
+        Caption = 'Date'
+        Tag = 0
+      end>
+    Items = <>
+    object TStringColumn
+      Header = '#'
+      Height = 0.000000000000000000
+      ReadOnly = True
+      TabOrder = 0
+      Width = 100.000000000000000000
+    end
+    object TStringColumn
+      Header = 'Title'
+      Height = 0.000000000000000000
+      Position.X = 100.000000000000000000
+      ReadOnly = True
+      TabOrder = 1
+      Width = 100.000000000000000000
+    end
+    object TStringColumn
+      Header = 'Description'
+      Height = 0.000000000000000000
+      Position.X = 200.000000000000000000
+      ReadOnly = True
+      TabOrder = 2
+      Width = 100.000000000000000000
+    end
+    object TStringColumn
+      Header = 'Date'
+      Height = 0.000000000000000000
+      Position.X = 300.000000000000000000
+      ReadOnly = True
+      TabOrder = 3
+      Width = 100.000000000000000000
+    end
+  end
+  object cbPageSize: TComboBox
+    DisableFocusEffect = False
+    Height = 31.000000000000000000
+    ItemIndex = 0
+    Position.X = 544.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 4
+    Width = 100.000000000000000000
+    OnChange = cbPageSizeChange
+    object TListBoxItem
+      Height = 19.000000000000000000
+      IsSelected = True
+      Text = '5'
+      Width = 19.000000000000000000
+    end
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = '10'
+      Width = 19.000000000000000000
+    end
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = '20'
+      Width = 19.000000000000000000
+    end
+  end
+  object Label1: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 464.000000000000000000
+    Position.Y = 72.000000000000000000
+    Text = 'Pagesize:'
+    Width = 73.000000000000000000
+    WordWrap = False
+  end
+  object Label2: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 616.000000000000000000
+    Text = 'Link:'
+    Width = 38.000000000000000000
+    WordWrap = False
+  end
+  object lbLink: TLabel
+    AutoSize = True
+    Height = 23.000000000000000000
+    Position.X = 64.000000000000000000
+    Position.Y = 624.000000000000000000
+    Width = 0.000000000000000000
+  end
+  object Label4: TLabel
+    AutoSize = True
+    Height = 27.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 656.000000000000000000
+    Text = 'Rating:'
+    Width = 56.000000000000000000
+    WordWrap = False
+  end
+  object cbRating: TComboBox
+    DisableFocusEffect = False
+    Height = 31.000000000000000000
+    ItemIndex = 3
+    Position.X = 72.000000000000000000
+    Position.Y = 656.000000000000000000
+    TabOrder = 9
+    Width = 145.000000000000000000
+    Left = 54
+    Top = 222
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = 'Dislike'
+      Width = 19.000000000000000000
+    end
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = 'Like'
+      Width = 19.000000000000000000
+    end
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = 'None'
+      Width = 19.000000000000000000
+    end
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = 'Unspecified'
+      Width = 19.000000000000000000
+    end
+  end
+  object btSetRating: TButton
+    Height = 33.000000000000000000
+    Position.X = 72.000000000000000000
+    Position.Y = 696.000000000000000000
+    TabOrder = 10
+    Text = 'Set Rating'
+    Width = 97.000000000000000000
+    OnClick = btSetRatingClick
+  end
+  object btDelete: TButton
+    Height = 33.000000000000000000
+    Position.X = 555.000000000000000000
+    Position.Y = 696.000000000000000000
+    TabOrder = 11
+    Text = 'Delete'
+    Width = 97.000000000000000000
+    OnClick = btDeleteClick
+  end
+  object edTitle: TEdit
+    TabOrder = 12
+    Text = 'Title'
+    Position.X = 320.000000000000000000
+    Position.Y = 616.000000000000000000
+    Width = 332.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+    Left = 76
+    Top = 14
+  end
+  object Label3: TLabel
+    Height = 13.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Width = 24.000000000000000000
+    Left = 14
+    Top = 17
+  end
+  object edDescription: TEdit
+    TabOrder = 14
+    Text = 'Description'
+    Position.X = 320.000000000000000000
+    Position.Y = 656.000000000000000000
+    Width = 332.000000000000000000
+    Height = 31.000000000000000000
+    KillFocusByReturn = False
+    Left = 76
+    Top = 41
+  end
+  object btUpload: TButton
+    Height = 33.000000000000000000
+    Position.X = 323.000000000000000000
+    Position.Y = 696.000000000000000000
+    TabOrder = 15
+    Text = 'Upload'
+    Width = 99.000000000000000000
+    OnClick = btUploadClick
+    Left = 13
+    Top = 68
+  end
+  object btUpdate: TButton
+    Height = 33.000000000000000000
+    Position.X = 439.000000000000000000
+    Position.Y = 696.000000000000000000
+    TabOrder = 16
+    Text = 'Update'
+    Width = 99.000000000000000000
+    OnClick = btUpdateClick
+    Left = 118
+    Top = 68
+  end
+  object Panel2: TPanel
+    Height = 601.000000000000000000
+    Position.X = 664.000000000000000000
+    Position.Y = 128.000000000000000000
+    Width = 353.000000000000000000
+    TabOrder = 17
+    object TMSFMXCloudImage1: TTMSFMXCloudImage
+      Width = 353.000000000000000000
+      Height = 601.000000000000000000
+      ClipChildren = True
+      Version = '1.5.0.1'
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 376
+    Top = 176
+  end
+  object TMSFMXCloudYouTube1: TTMSFMXCloudYouTube
+    Agent = 'Mozilla/5.001 (windows; U; NT4.0; en-US; rv:1.0) Gecko/25250101'
+    App.CallBackURL = 'http://127.0.0.1:8888/'
+    App.CallBackPort = 8888
+    PersistTokens.Location = plIniFile
+    Logging = False
+    OnReceivedAccessToken = TMSFMXCloudYouTube1ReceivedAccessToken
+    AuthFormSettings.Caption = 'Authorize'
+    AuthFormSettings.Width = 900
+    AuthFormSettings.Height = 600
+    Scopes.Strings = (
+      'https://www.googleapis.com/auth/userinfo.profile'
+      'https://www.googleapis.com/auth/userinfo.email'
+      'https://www.googleapis.com/auth/youtube.upload'
+      'https://www.googleapis.com/auth/youtube'
+      'https://www.googleapis.com/auth/youtubepartner')
+    OnAfterAddVideo = TMSFMXCloudYouTube1AfterAddVideo
+    Left = 304
+    Top = 224
+  end
+end

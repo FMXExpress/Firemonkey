@@ -1,0 +1,114 @@
+object Form907: TForm907
+  Left = 0
+  Top = 0
+  Caption = 'Form907'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 568
+  DesignerDeviceName = 'iPhone5'
+  DesignerOrientation = 0
+  object TMSFMXNativeUIView1: TTMSFMXNativeUIView
+    Width = 321.000000000000000000
+    Height = 545.000000000000000000
+    Visible = False
+    ClipChildren = True
+    object TMSFMXNativeUILabel1: TTMSFMXNativeUILabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 81.000000000000000000
+      Height = 44.000000000000000000
+      ClipChildren = True
+      Text = 'Sender:'
+      TextColor = claOrange
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+    end
+    object TMSFMXNativeUILabel2: TTMSFMXNativeUILabel
+      Position.X = 8.000000000000000000
+      Position.Y = 64.000000000000000000
+      Width = 81.000000000000000000
+      Height = 44.000000000000000000
+      ClipChildren = True
+      Text = 'Title:'
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+    end
+    object lblTitle: TTMSFMXNativeUILabel
+      Position.X = 96.000000000000000000
+      Position.Y = 64.000000000000000000
+      Width = 217.000000000000000000
+      Height = 44.000000000000000000
+      ClipChildren = True
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+    end
+    object lblSender: TTMSFMXNativeUILabel
+      Position.X = 96.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 217.000000000000000000
+      Height = 44.000000000000000000
+      ClipChildren = True
+      TextColor = claOrange
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+    end
+    object TMSFMXNativeUILabel3: TTMSFMXNativeUILabel
+      Position.X = 8.000000000000000000
+      Position.Y = 120.000000000000000000
+      Width = 81.000000000000000000
+      Height = 44.000000000000000000
+      ClipChildren = True
+      Text = 'Description:'
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+    end
+    object lblDesc: TTMSFMXNativeUITextView
+      Position.X = 8.000000000000000000
+      Position.Y = 176.000000000000000000
+      Width = 305.000000000000000000
+      Height = 225.000000000000000000
+      ClipChildren = True
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+    end
+    object TMSFMXNativeUIButton1: TTMSFMXNativeUIButton
+      Position.X = 8.000000000000000000
+      Position.Y = 408.000000000000000000
+      Width = 305.000000000000000000
+      Height = 44.000000000000000000
+      ClipChildren = True
+      Text = 'Mark as unread'
+      OnClick = TMSFMXNativeUIButton1Click
+      Font.Name = 'Helvetica'
+      Font.Size = 14.000000000000000000
+    end
+  end
+  object TMSFMXNativeUIView2: TTMSFMXNativeUIView
+    Align = alClient
+    Width = 320.000000000000000000
+    Height = 548.000000000000000000
+    Visible = False
+    ClipChildren = True
+  end
+  object TMSFMXNativeUITableViewMail1: TTMSFMXNativeUITableViewMail
+    Align = alClient
+    Width = 320.000000000000000000
+    Height = 548.000000000000000000
+    ClipChildren = True
+    Sections = <>
+    Options.Header = 'Mail'
+    Options.ToolBar = True
+    Options.Searching.Mode = smFiltering
+    Options.Editing.Enabled = True
+    Options.RowHeight = 44.000000000000000000
+    Options.LookUp.Items = <>
+    OnItemSelect = TMSFMXNativeUITableViewMail1ItemSelect
+    OnGetItemFilterText = TMSFMXNativeUITableViewMail1GetItemFilterText
+  end
+end
