@@ -1,0 +1,311 @@
+object Form1185: TForm1185
+  Left = 0
+  Top = 0
+  Caption = 'TMS FMX Rich Editor Demo'
+  ClientHeight = 755
+  ClientWidth = 1057
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TMSFMXRichEditor1: TTMSFMXRichEditor
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    Align = alClient
+    Cursor = crIBeam
+    DisableFocusEffect = False
+    Height = 650.000000000000000000
+    TabOrder = 0
+    Width = 752.000000000000000000
+    OnMouseMove = TMSFMXRichEditor1MouseMove
+    Font.Size = 14.000000000000000000
+    Fill.Kind = bkSolid
+    Stroke.Color = claGray
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    CanFocus = True
+    OnCorrectWord = TMSFMXRichEditor1CorrectWord
+  end
+  object TMSFMXDockPanel1: TTMSFMXDockPanel
+    Version = '1.0.0.0'
+    DisableFocusEffect = False
+    Height = 51.000000000000000000
+    TabOrder = 1
+    Width = 1057.000000000000000000
+    object TMSFMXRichEditorProofingToolBar1: TTMSFMXRichEditorProofingToolBar
+      Version = '1.0.0.1'
+      Appearance.Fill.Gradient.Points = <
+        item
+          Color = claWhite
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6E6E6
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HorizontalSpacing = 3.000000000000000000
+      Appearance.VerticalSpacing = 3.000000000000000000
+      OptionsMenu.ItemBitmapWidth = 50.000000000000000000
+      DisableFocusEffect = False
+      Height = 30.000000000000000000
+      Position.X = 891.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 2
+      Width = 137.000000000000000000
+      RichEditor = TMSFMXRichEditor1
+      SpellCheck = TMSFMXRichEditorSpellCheck1
+    end
+    object TMSFMXRichEditorFormatToolBar1: TTMSFMXRichEditorFormatToolBar
+      Version = '1.0.0.1'
+      Appearance.Fill.Gradient.Points = <
+        item
+          Color = claWhite
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6E6E6
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HorizontalSpacing = 3.000000000000000000
+      Appearance.VerticalSpacing = 3.000000000000000000
+      OptionsMenu.ItemBitmapWidth = 50.000000000000000000
+      DisableFocusEffect = False
+      Height = 30.000000000000000000
+      Position.X = 236.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 0
+      Width = 652.000000000000000000
+      RichEditor = TMSFMXRichEditor1
+    end
+    object TMSFMXRichEditorEditToolBar1: TTMSFMXRichEditorEditToolBar
+      Version = '1.0.0.1'
+      Appearance.Fill.Gradient.Points = <
+        item
+          Color = claWhite
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6E6E6
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HorizontalSpacing = 3.000000000000000000
+      Appearance.VerticalSpacing = 3.000000000000000000
+      OptionsMenu.ItemBitmapWidth = 50.000000000000000000
+      DisableFocusEffect = False
+      Height = 30.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 1
+      Width = 230.000000000000000000
+      RichEditor = TMSFMXRichEditor1
+    end
+  end
+  object Panel1: TPanel
+    Align = alBottom
+    Height = 54.000000000000000000
+    Position.Y = 701.000000000000000000
+    Width = 1057.000000000000000000
+    TabOrder = 2
+    object chkSpellCheck: TCheckBox
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 24.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'Spell check'
+      Width = 89.000000000000000000
+    end
+    object chkAutoCorrect: TCheckBox
+      Height = 19.000000000000000000
+      Position.X = 24.000000000000000000
+      Position.Y = 24.000000000000000000
+      TabOrder = 1
+      Text = 'Auto correct'
+      Width = 89.000000000000000000
+    end
+    object ComboBox1: TComboBox
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      Position.X = 344.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 2
+      Width = 137.000000000000000000
+      OnChange = ComboBox1Change
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'English text'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'German text'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'French text'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'Dutch text'
+        Width = 19.000000000000000000
+      end
+    end
+    object Label1: TLabel
+      Height = 17.000000000000000000
+      Position.X = 288.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Load text:'
+      Width = 57.000000000000000000
+    end
+    object RadioButton1: TRadioButton
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 134.000000000000000000
+      Position.Y = 25.000000000000000000
+      TabOrder = 4
+      Text = 'Panel'
+      Width = 73.000000000000000000
+      OnChange = RadioButton1Change
+    end
+    object RadioButton2: TRadioButton
+      Height = 19.000000000000000000
+      Position.X = 208.000000000000000000
+      Position.Y = 25.000000000000000000
+      TabOrder = 5
+      Text = 'Dialog'
+      Width = 81.000000000000000000
+      OnChange = RadioButton2Change
+    end
+    object Label2: TLabel
+      Height = 17.000000000000000000
+      Position.X = 136.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Spell check via:'
+      Width = 137.000000000000000000
+    end
+  end
+  object TMSFMXRichEditorSpellCheckPanel1: TTMSFMXRichEditorSpellCheckPanel
+    Align = alRight
+    Height = 650.000000000000000000
+    Position.X = 752.000000000000000000
+    Position.Y = 51.000000000000000000
+    Width = 305.000000000000000000
+    TabOrder = 3
+    UI.ShowIgnore = True
+    UI.ShowIgnoreAll = True
+    UI.ShowAdd = True
+    UI.ShowChange = True
+    UI.ShowChangeAll = True
+    UI.ShowNext = True
+    UI.ShowPrevious = True
+    UI.CaptionIgnore = '&Ignore'
+    UI.CaptionIgnoreAll = 'I&gnore all'
+    UI.CaptionAdd = '&Add'
+    UI.CaptionChange = '&Change'
+    UI.CaptionChangeAll = 'C&hange all'
+    UI.CaptionNext = '&Next'
+    UI.CaptionPrevious = '&Previous'
+    UI.HintIgnore = 'Ignore current spell check error'
+    UI.HintIgnoreAll = 'Ignore all spell check error'
+    UI.HintAdd = 'Add new word to word list'
+    UI.HintChange = 'Change spelling of current word'
+    UI.HintChangeAll = 'Change spelling of all words'
+    UI.HintNext = 'Go to next spell check error'
+    UI.HintPrevious = 'Go to previous spell check error'
+    UI.QueryAdd = 'Add new word'
+    UI.QueryWord = 'Word'
+    SpellCheck = TMSFMXRichEditorSpellCheck1
+    RichEditor = TMSFMXRichEditor1
+  end
+  object TMSFMXRichEditorSpellCheckDialog1: TTMSFMXRichEditorSpellCheckDialog
+    Caption = 'Correct spelling'
+    SpellCheck = TMSFMXRichEditorSpellCheck1
+    UI.ShowIgnore = True
+    UI.ShowIgnoreAll = True
+    UI.ShowAdd = True
+    UI.ShowChange = True
+    UI.ShowChangeAll = True
+    UI.ShowNext = True
+    UI.ShowPrevious = True
+    UI.CaptionIgnore = '&Ignore'
+    UI.CaptionIgnoreAll = 'I&gnore all'
+    UI.CaptionAdd = '&Add'
+    UI.CaptionChange = '&Change'
+    UI.CaptionChangeAll = 'C&hange all'
+    UI.CaptionNext = '&Next'
+    UI.CaptionPrevious = '&Previous'
+    UI.HintIgnore = 'Ignore current spell check error'
+    UI.HintIgnoreAll = 'Ignore all spell check error'
+    UI.HintAdd = 'Add new word to word list'
+    UI.HintChange = 'Change spelling of current word'
+    UI.HintChangeAll = 'Change spelling of all words'
+    UI.HintNext = 'Go to next spell check error'
+    UI.HintPrevious = 'Go to previous spell check error'
+    UI.QueryAdd = 'Add new word'
+    UI.QueryWord = 'Word'
+    RichEditor = TMSFMXRichEditor1
+    Left = 512
+    Top = 288
+  end
+  object TMSFMXRichEditorSpellCheck1: TTMSFMXRichEditorSpellCheck
+    OnRequestsProcessed = TMSFMXRichEditorSpellCheck1RequestsProcessed
+    AutoUpdate = True
+    Languages = <
+      item
+        AffixFileName = 'English.aff'
+        SoundexProcess = spStandard
+        SoundexName = 'ENGLISH'
+        Guid = '{1B8BB27F-15FD-4184-9381-ADC0570D0661}'
+        Enabled = True
+        LanguageCode = lcEnglish
+        SourceFileName = 'English.lat'
+        Description = 'English Dictionary'
+      end
+      item
+        AffixFileName = 'german.aff'
+        SoundexProcess = spGerman
+        SoundexName = 'GERMAN'
+        Guid = '{A23BA923-479D-48CE-BD5E-5C24149A969C}'
+        Enabled = True
+        LanguageCode = lcGerman
+        SourceFileName = 'german.lat'
+        Description = 'German dictionary'
+      end
+      item
+        AffixFileName = 'french.aff'
+        SoundexProcess = spFrench
+        SoundexName = 'FRENCH'
+        Guid = '{324B7DEA-7C71-444A-8A81-BD287CFDF181}'
+        Enabled = True
+        LanguageCode = lcFrench
+        SourceFileName = 'french.lat'
+        Description = 'French dictionary'
+      end
+      item
+        AffixFileName = 'dutch.aff'
+        SoundexProcess = spDutch
+        SoundexName = 'DUTCH'
+        Guid = '{ACCEC73E-C9A5-4155-8F7E-0D3D7E5BDC9D}'
+        Enabled = True
+        LanguageCode = lcDutch
+        SourceFileName = 'dutch.lat'
+        Description = 'Dutch dictionary'
+      end>
+    InMemoryDatabaseName = 'TMSSPELLCHECK'
+    DatabaseFilename = 'TMSSPELLCHECK'
+    StoreElements = [sseSpellcheckDB, sseIgnoreList]
+    Active = True
+    Version = '1.0.0.2'
+    MultiLanguageValidation = False
+    RichEditor = TMSFMXRichEditor1
+    Left = 512
+    Top = 176
+  end
+end

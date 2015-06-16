@@ -1,0 +1,289 @@
+object Form832: TForm832
+  Left = 0
+  Top = 0
+  Caption = 'TMS FireMonkey syntax highlighting memo auto completion demo'
+  ClientHeight = 703
+  ClientWidth = 803
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object PopupMenu1: TPopupMenu
+    Left = 496
+    Top = 192
+    object MenuItem1: TMenuItem
+      Text = 'MenuItem1'
+    end
+    object MenuItem2: TMenuItem
+      Text = 'MenuItem2'
+    end
+    object MenuItem3: TMenuItem
+      Text = 'MenuItem3'
+    end
+    object MenuItem4: TMenuItem
+      Text = 'MenuItem4'
+    end
+    object MenuItem5: TMenuItem
+      Text = 'MenuItem5'
+    end
+    object MenuItem6: TMenuItem
+      Text = 'MenuItem6'
+    end
+    object MenuItem7: TMenuItem
+      Text = 'MenuItem7'
+    end
+    object MenuItem8: TMenuItem
+      Text = 'MenuItem8'
+    end
+    object MenuItem9: TMenuItem
+      Text = 'MenuItem9'
+    end
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 41.000000000000000000
+    Width = 803.000000000000000000
+    TabOrder = 0
+    object Button1: TButton
+      Height = 22.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'Sample bookmarks & breakpoints'
+      Width = 201.000000000000000000
+      OnClick = Button1Click
+    end
+    object Label1: TLabel
+      Height = 33.000000000000000000
+      Position.X = 216.000000000000000000
+      Position.Y = 4.000000000000000000
+      Text = 
+        'See autocompletion for classes button, edit, form. Type Edit., B' +
+        'utton. or Form. or Crtl-Space'
+      Width = 465.000000000000000000
+    end
+  end
+  object TMSFMXMemo2: TTMSFMXMemo
+    Align = alClient
+    Cursor = crIBeam
+    DisableFocusEffect = False
+    Height = 662.000000000000000000
+    TabOrder = 1
+    Width = 803.000000000000000000
+    ActiveLineSettings.ShowActiveLine = False
+    ActiveLineSettings.ShowActiveLineIndicator = False
+    ActiveLineSettings.ActiveLineAtCursor = True
+    AutoCompletion.StartToken = '(.'
+    CaseSensitive = False
+    Font.Family = 'COURIER NEW'
+    Font.Size = 12.000000000000000000
+    Gutter.Font.Family = 'Courier New'
+    Gutter.Font.Size = 12.000000000000000000
+    KeyboardType = vktDefault
+    ReadOnly = False
+    SyntaxStyles = TMSFMXMemoPascalStyler1
+    TabSize = 4
+    TrimTrailingSpaces = False
+    UseStyler = True
+    Version = '1.5.0.2'
+    OnGetAutoCompletionList = TMSFMXMemo1GetAutoCompletionList
+  end
+  object TMSFMXMemoPascalStyler1: TTMSFMXMemoPascalStyler
+    BlockStart = 'begin,try,case,class,record'
+    BlockEnd = 'end'
+    HighlightStyle.TextColor = claWhite
+    HighlightStyle.BkColor = claGreen
+    HighlightStyle.Style = []
+    LineComment = '//'
+    MultiCommentLeft = '{'
+    MultiCommentRight = '}'
+    CommentStyle.TextColor = claNavy
+    CommentStyle.BkColor = claNull
+    CommentStyle.Style = [fsItalic]
+    NumberStyle.TextColor = claFuchsia
+    NumberStyle.BkColor = claNull
+    NumberStyle.Style = [fsBold]
+    URLStyle.TextColor = claBlue
+    URLStyle.BkColor = claNull
+    URLStyle.Style = [fsUnderline]
+    AllStyles = <
+      item
+        KeyWords.Strings = (
+          'UNIT'
+          'INTERFACE'
+          'IMPLEMENTATION'
+          'USES'
+          'CONST'
+          'PROGRAM'
+          'PRIVATE'
+          'PUBLIC'
+          'PUBLISHED'
+          'PROTECTED'
+          'PROPERTY'
+          'FUNCTION'
+          'FINALISE'
+          'INITIALISE'
+          'VAR'
+          'BEGIN'
+          'WITH'
+          'END'
+          'FOR'
+          'TO'
+          'DO'
+          'NOT'
+          'IF'
+          'THEN'
+          'ELSE'
+          'TYPE'
+          'WHILE'
+          'REPEAT'
+          'UNTIL'
+          'BREAK'
+          'CONTINUE'
+          'VIRTUAL'
+          'OVERRIDE'
+          'DEFAULT'
+          'CLASS'
+          'STORED'
+          'INHERITED'
+          'PROCEDURE'
+          'CONSTRUCTOR'
+          'DESTRUCTOR'
+          'FINALLY'
+          'RAISE'
+          'STRING'
+          'TRY'
+          'EXCEPT'
+          'STDCALL'
+          'CDECL'
+          'PASCAL'
+          'NIL'
+          'CASE'
+          'REINTRODUCE'
+          'PACKED'
+          'RECORD'
+          'MESSAGE'
+          'IN'
+          'IS'
+          'SHL'
+          'SHR'
+          'MOD'
+          'DIV'
+          'XOR'
+          'OR'
+          'AND'
+          'OF'
+          'SET'
+          'DOWNTO'
+          'EXPORTS'
+          'LIBRARY'
+          'AS'
+          'ASM'
+          'DYNAMIC'
+          'OBJECT'
+          'THREADVAR'
+          'FILE'
+          'ABSTRACT'
+          'OVERLOAD'
+          'ASSEMBLER'
+          'ABSOLUTE'
+          'AUTOMATED'
+          'EXTERNAL'
+          'REGISTER'
+          'DISPINTERFACE'
+          'RESOURCESTRING'
+          'NEAR'
+          'FAR'
+          'LABEL'
+          'OUT'
+          'SAFECALL'
+          'DISPID'
+          'ARRAY'
+          'INLINE'
+          'FORWARD'
+          'PLATFORM'
+          'DEPRECATED')
+        Font.Family = 'Courier New'
+        Font.Size = 8.000000000000000000
+        Font.Style = [fsBold]
+        FontColor = claGreen
+        BGColor = claNull
+        StyleType = stKeyword
+        BracketStart = #0
+        BracketEnd = #0
+        Info = 'Pascal Standard Default'
+      end
+      item
+        Font.Family = 'Courier New'
+        Font.Size = 8.000000000000000000
+        FontColor = claBlue
+        BGColor = claNull
+        StyleType = stBracket
+        BracketStart = #39
+        BracketEnd = #39
+        Info = 'Simple Quote'
+      end
+      item
+        Font.Family = 'Courier New'
+        Font.Size = 8.000000000000000000
+        FontColor = claBlue
+        BGColor = claNull
+        StyleType = stBracket
+        BracketStart = '"'
+        BracketEnd = '"'
+        Info = 'Double Quote'
+      end
+      item
+        Font.Family = 'Courier New'
+        Font.Size = 8.000000000000000000
+        FontColor = claRed
+        BGColor = claNull
+        StyleType = stSymbol
+        BracketStart = #0
+        BracketEnd = #0
+        Symbols = ' ,;:.(){}[]=+-*/^%<>#'#13#10
+        Info = 'Symbols Delimiters'
+      end
+      item
+        CommentLeft = '(*'
+        CommentRight = '*)'
+        Font.Family = 'Courier New'
+        Font.Size = 8.000000000000000000
+        FontColor = claBlack
+        BGColor = claNull
+        StyleType = stComment
+        BracketStart = #0
+        BracketEnd = #0
+        Info = 'Multi line comment'
+      end>
+    AutoCompletion.Strings = (
+      'ShowMessage()'
+      'MessageDlg()')
+    HintParameter.TextColor = claBlack
+    HintParameter.BkColor = claYellow
+    HintParameter.HintCharStart = '('
+    HintParameter.HintCharEnd = ')'
+    HintParameter.HintCharDelimiter = ';'
+    HintParameter.HintClassDelimiter = '.'
+    HintParameter.HintCharWriteDelimiter = ','
+    HintParameter.Parameters.Strings = (
+      'ShowMessage(const Msg: string);'
+      
+        'MessageDlg(const Msg: string; DlgType: TMsgDlgType; Buttons: TMs' +
+        'gDlgButtons; HelpCtx: Longint): Integer);')
+    HexIdentifier = '$'
+    Description = 'Pascal'
+    Filter = 'Pascal Files (*.pas,*.dpr,*.dpk,*.inc)|*.pas;*.dpr;*.dpk;*.inc'
+    DefaultExtension = '.pas'
+    StylerName = 'Pascal'
+    Extensions = 'pas;dpr;dpk;inc'
+    Left = 496
+    Top = 128
+  end
+end

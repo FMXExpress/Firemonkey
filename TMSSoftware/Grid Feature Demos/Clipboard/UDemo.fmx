@@ -1,0 +1,51 @@
+object Form719: TForm719
+  Left = 0
+  Top = 0
+  Caption = 'TMS software FMX Grid: clipboard demo'
+  ClientHeight = 645
+  ClientWidth = 938
+  Position = poScreenCenter
+  Visible = False
+  OnCreate = FormCreate
+  ActiveControl = TMSFMXGrid1
+  StyleLookup = 'backgroundstyle'
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    Position.Point = '(6,54)'
+    Width = 926.000000000000000000
+    Height = 585.000000000000000000
+    Padding.Rect = '(6,0,6,6)'
+    TabOrder = 0
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '1.1.0.0'
+    Fill.Kind = bkSolid
+    Stroke.Color = claBlack
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Position.Point = '(5,5)'
+    Width = 928.000000000000000000
+    Height = 49.000000000000000000
+    Padding.Rect = '(5,5,5,0)'
+    TabOrder = 1
+    object Label1: TLabel
+      Position.Point = '(16,16)'
+      Width = 609.000000000000000000
+      Height = 15.000000000000000000
+      TabOrder = 0
+      Text = 
+        'Edit grid and/or use Ctrl-C,  Ctrl-V, Ctrl-X for clipboard actio' +
+        'ns on single cell or range of cells'
+    end
+  end
+end

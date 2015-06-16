@@ -1,0 +1,160 @@
+object Form1185: TForm1185
+  Left = 0
+  Top = 0
+  Caption = 'TMS FMX Rich Editor Demo'
+  ClientHeight = 718
+  ClientWidth = 1057
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TMSFMXRichEditor1: TTMSFMXRichEditor
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    Align = alClient
+    Cursor = crIBeam
+    DisableFocusEffect = False
+    Height = 667.000000000000000000
+    TabOrder = 0
+    Width = 888.000000000000000000
+    OnMouseMove = TMSFMXRichEditor1MouseMove
+    Font.Size = 14.000000000000000000
+    Fill.Kind = bkSolid
+    Stroke.Color = claGray
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    OnDrawGraphic = TMSFMXRichEditor1DrawGraphic
+    CanFocus = True
+  end
+  object TMSFMXDockPanel1: TTMSFMXDockPanel
+    Version = '1.0.0.0'
+    DisableFocusEffect = False
+    Height = 51.000000000000000000
+    TabOrder = 1
+    Width = 1057.000000000000000000
+    object TMSFMXRichEditorFormatToolBar1: TTMSFMXRichEditorFormatToolBar
+      Version = '1.0.0.1'
+      Appearance.Fill.Gradient.Points = <
+        item
+          Color = claWhite
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6E6E6
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HorizontalSpacing = 3.000000000000000000
+      Appearance.VerticalSpacing = 3.000000000000000000
+      OptionsMenu.ItemBitmapWidth = 50.000000000000000000
+      DisableFocusEffect = False
+      Height = 30.000000000000000000
+      Position.X = 236.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 0
+      Width = 652.000000000000000000
+      RichEditor = TMSFMXRichEditor1
+    end
+    object TMSFMXRichEditorEditToolBar1: TTMSFMXRichEditorEditToolBar
+      Version = '1.0.0.1'
+      Appearance.Fill.Gradient.Points = <
+        item
+          Color = claWhite
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6E6E6
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HorizontalSpacing = 3.000000000000000000
+      Appearance.VerticalSpacing = 3.000000000000000000
+      OptionsMenu.ItemBitmapWidth = 50.000000000000000000
+      DisableFocusEffect = False
+      Height = 30.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 1
+      Width = 230.000000000000000000
+      RichEditor = TMSFMXRichEditor1
+    end
+  end
+  object Panel1: TPanel
+    Align = alRight
+    Height = 667.000000000000000000
+    Position.X = 888.000000000000000000
+    Position.Y = 51.000000000000000000
+    Width = 169.000000000000000000
+    TabOrder = 2
+    object Label1: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Samples'
+      Width = 44.000000000000000000
+      WordWrap = False
+    end
+    object ListBox1: TListBox
+      Height = 161.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 1
+      Width = 153.000000000000000000
+      OnClick = ListBox1Click
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'File Test'
+        Width = 149.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 19.000000000000000000
+        Text = 'Indent'
+        Width = 149.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 38.000000000000000000
+        Text = 'Bullet'
+        Width = 149.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 57.000000000000000000
+        Text = 'Alignment'
+        Width = 149.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 76.000000000000000000
+        Text = 'Format'
+        Width = 149.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 95.000000000000000000
+        Text = 'Many Lines'
+        Width = 149.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 114.000000000000000000
+        Text = 'Images'
+        Width = 149.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Position.Y = 133.000000000000000000
+        Text = 'Clear'
+        Width = 149.000000000000000000
+      end
+    end
+  end
+end

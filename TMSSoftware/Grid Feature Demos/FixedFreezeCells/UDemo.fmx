@@ -1,0 +1,91 @@
+object Form719: TForm719
+  Left = 0
+  Top = 0
+  Caption = 'TMS software FMX Grid: Fixed & freeze cells demo'
+  ClientHeight = 645
+  ClientWidth = 938
+  Position = poScreenCenter
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    Position.Point = '(6,54)'
+    Width = 926.000000000000000000
+    Height = 585.000000000000000000
+    Padding.Rect = '(6,0,6,6)'
+    TabOrder = 0
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '1.1.0.0'
+    Fill.Kind = bkSolid
+    Stroke.Color = claBlack
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Position.Point = '(5,5)'
+    Width = 928.000000000000000000
+    Height = 49.000000000000000000
+    Padding.Rect = '(5,5,5,0)'
+    TabOrder = 1
+    object CheckBox1: TCheckBox
+      Position.Point = '(16,8)'
+      Width = 120.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 0
+      Text = 'Fixed right column'
+      OnChange = CheckBox1Change
+    end
+    object CheckBox2: TCheckBox
+      Position.Point = '(16,28)'
+      Width = 120.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 1
+      Text = 'Fixed footer'
+      OnChange = CheckBox2Change
+    end
+    object CheckBox3: TCheckBox
+      Position.Point = '(192,8)'
+      Width = 120.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 2
+      Text = 'Freeze columns 1,2'
+      OnChange = CheckBox3Change
+    end
+    object CheckBox4: TCheckBox
+      Position.Point = '(193,28)'
+      Width = 120.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 3
+      Text = 'Freeze rows 1,2'
+      OnChange = CheckBox4Change
+    end
+    object RadioButton1: TRadioButton
+      Position.Point = '(408,16)'
+      Width = 120.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 4
+      IsChecked = True
+      Text = 'Cell scrolling'
+      GroupName = 'SCROLL'
+      OnChange = RadioButton1Change
+    end
+    object RadioButton2: TRadioButton
+      Position.Point = '(528,16)'
+      Width = 120.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 5
+      Text = 'Pixel scrolling'
+      GroupName = 'SCROLL'
+    end
+  end
+end

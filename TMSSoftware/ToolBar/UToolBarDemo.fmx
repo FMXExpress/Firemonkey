@@ -1,0 +1,934 @@
+object Form88: TForm88
+  Left = 0
+  Top = 0
+  Caption = 'TMS FMX ToolBar Demo'
+  ClientHeight = 482
+  ClientWidth = 692
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TMSFMXToolBar1: TTMSFMXToolBar
+    Version = '1.0.0.0'
+    Appearance.Fill.Gradient.Points = <
+      item
+        Color = claWhite
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFE6E6E6
+        Offset = 1.000000000000000000
+      end>
+    Appearance.HorizontalSpacing = 3.000000000000000000
+    Appearance.VerticalSpacing = 3.000000000000000000
+    Appearance.DragGrip = False
+    OptionsMenu.ShowButton = False
+    OptionsMenu.ItemBitmapWidth = 50.000000000000000000
+    Align = alTop
+    DisableFocusEffect = False
+    Height = 30.000000000000000000
+    TabOrder = 0
+    Width = 692.000000000000000000
+    object TMSFMXToolBarButton1: TTMSFMXToolBarButton
+      ClipChildren = True
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 1
+      Width = 30.000000000000000000
+      OnClick = TMSFMXToolBarButton1Click
+      FontColor = claBlack
+      DropDownHeight = 135.000000000000000000
+      DropDownWidth = 135.000000000000000000
+      BitmapVisible = True
+      BitmapContainer = TMSFMXBitmapContainer1
+      BitmapName = 'new'
+      BitmapNameLarge = 'newlarge'
+      Appearance.XRadius = 3.000000000000000000
+      Appearance.YRadius = 3.000000000000000000
+      Appearance.NormalFill.Gradient.Points = <
+        item
+          Color = xFFF9FBFC
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6EBEB
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCDCEC
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE1EC
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HoverFill.Gradient.Points = <
+        item
+          Color = xFFE5E7E8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFD2D7D7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8C8D8
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8CDD8
+          Offset = 1.000000000000000000
+        end>
+      Appearance.DownFill.Gradient.Points = <
+        item
+          Color = xFFDBDDDE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFC8CDCD
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEBECE
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEC3CE
+          Offset = 1.000000000000000000
+        end>
+    end
+    object TMSFMXToolBarButton2: TTMSFMXToolBarButton
+      ClipChildren = True
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 36.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 2
+      Width = 30.000000000000000000
+      OnClick = TMSFMXToolBarButton2Click
+      FontColor = claBlack
+      DropDownHeight = 135.000000000000000000
+      DropDownWidth = 135.000000000000000000
+      BitmapVisible = True
+      BitmapContainer = TMSFMXBitmapContainer1
+      BitmapName = 'save'
+      BitmapNameLarge = 'savelarge'
+      Appearance.XRadius = 3.000000000000000000
+      Appearance.YRadius = 3.000000000000000000
+      Appearance.NormalFill.Gradient.Points = <
+        item
+          Color = xFFF9FBFC
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6EBEB
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCDCEC
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE1EC
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HoverFill.Gradient.Points = <
+        item
+          Color = xFFE5E7E8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFD2D7D7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8C8D8
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8CDD8
+          Offset = 1.000000000000000000
+        end>
+      Appearance.DownFill.Gradient.Points = <
+        item
+          Color = xFFDBDDDE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFC8CDCD
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEBECE
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEC3CE
+          Offset = 1.000000000000000000
+        end>
+    end
+    object TMSFMXToolBarSeparator1: TTMSFMXToolBarSeparator
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 69.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 5
+      Width = 3.000000000000000000
+    end
+    object TMSFMXToolBarColorPicker1: TTMSFMXToolBarColorPicker
+      ClipChildren = True
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 75.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 3
+      Width = 40.000000000000000000
+      OnClick = TMSFMXToolBarColorPicker1Click
+      FontColor = claBlack
+      AutoOptionsMenuText = 'Color'
+      DropDownKind = ddkDropDownButton
+      DropDownHeight = 130.000000000000000000
+      DropDownWidth = 150.000000000000000000
+      Appearance.XRadius = 3.000000000000000000
+      Appearance.YRadius = 3.000000000000000000
+      Appearance.NormalFill.Gradient.Points = <
+        item
+          Color = xFFF9FBFC
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6EBEB
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCDCEC
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE1EC
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HoverFill.Gradient.Points = <
+        item
+          Color = xFFE5E7E8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFD2D7D7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8C8D8
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8CDD8
+          Offset = 1.000000000000000000
+        end>
+      Appearance.DownFill.Gradient.Points = <
+        item
+          Color = xFFDBDDDE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFC8CDCD
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEBECE
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEC3CE
+          Offset = 1.000000000000000000
+        end>
+      OnColorSelected = TMSFMXToolBarColorPicker1ColorSelected
+      SelectedColor = claBlack
+      SelectedItemIndex = 0
+      Items = <
+        item
+          ColumnSpan = 8
+          SeparatorHeight = 5.000000000000000000
+          Text = 'Automatic'
+          Color = claBlack
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claBlack
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF003399
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF003333
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF003300
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF663300
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claNavy
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF353333
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF333333
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claMaroon
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFFFF6600
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claOlive
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claGreen
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claTeal
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claBlue
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF666699
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claGray
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claRed
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFFFF9900
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF99CC00
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF339966
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF33CCCC
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF3366FF
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claPurple
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF999999
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claFuchsia
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFFFFCC00
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claYellow
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claLime
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claAqua
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF00CCFF
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF993366
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claSilver
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFFFF99CC
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFFFFCC99
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFFFFFF99
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFFCCFFCC
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFFCCFFFF
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFF99CCFF
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = xFFCC99FF
+        end
+        item
+          SeparatorHeight = 5.000000000000000000
+          Color = claWhite
+        end
+        item
+          CanSelect = False
+          ColumnSpan = 8
+          SeparatorHeight = 5.000000000000000000
+          Text = 'More Colors...'
+        end
+        item
+          Visible = False
+          SeparatorHeight = 5.000000000000000000
+        end>
+    end
+    object TMSFMXToolBarFontSizePicker1: TTMSFMXToolBarFontSizePicker
+      ClipChildren = True
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 118.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 4
+      Width = 40.000000000000000000
+      FontColor = claBlack
+      AutoOptionsMenuText = 'Font Size'
+      DropDownKind = ddkDropDownButton
+      DropDownHeight = 150.000000000000000000
+      DropDownWidth = 100.000000000000000000
+      Appearance.XRadius = 3.000000000000000000
+      Appearance.YRadius = 3.000000000000000000
+      Appearance.NormalFill.Gradient.Points = <
+        item
+          Color = xFFF9FBFC
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6EBEB
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCDCEC
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE1EC
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HoverFill.Gradient.Points = <
+        item
+          Color = xFFE5E7E8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFD2D7D7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8C8D8
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8CDD8
+          Offset = 1.000000000000000000
+        end>
+      Appearance.DownFill.Gradient.Points = <
+        item
+          Color = xFFDBDDDE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFC8CDCD
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEBECE
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEC3CE
+          Offset = 1.000000000000000000
+        end>
+      OnFontSizeSelected = TMSFMXToolBarFontSizePicker1FontSizeSelected
+    end
+    object TMSFMXToolBarButton3: TTMSFMXToolBarButton
+      ClipChildren = True
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 161.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 6
+      Width = 30.000000000000000000
+      OnClick = TMSFMXToolBarButton3Click
+      FontColor = claBlack
+      DropDownHeight = 135.000000000000000000
+      DropDownWidth = 135.000000000000000000
+      BitmapVisible = True
+      BitmapContainer = TMSFMXBitmapContainer1
+      BitmapName = 'clear'
+      BitmapNameLarge = 'clearlarge'
+      Appearance.XRadius = 3.000000000000000000
+      Appearance.YRadius = 3.000000000000000000
+      Appearance.NormalFill.Gradient.Points = <
+        item
+          Color = xFFF9FBFC
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6EBEB
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCDCEC
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE1EC
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HoverFill.Gradient.Points = <
+        item
+          Color = xFFE5E7E8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFD2D7D7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8C8D8
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8CDD8
+          Offset = 1.000000000000000000
+        end>
+      Appearance.DownFill.Gradient.Points = <
+        item
+          Color = xFFDBDDDE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFC8CDCD
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEBECE
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEC3CE
+          Offset = 1.000000000000000000
+        end>
+    end
+    object TMSFMXToolBarSeparator2: TTMSFMXToolBarSeparator
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 194.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 7
+      Width = 3.000000000000000000
+    end
+    object TMSFMXToolBarFontNamePicker1: TTMSFMXToolBarFontNamePicker
+      ClipChildren = True
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 200.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 8
+      Width = 100.000000000000000000
+      FontColor = claBlack
+      AutoOptionsMenuText = 'Font Name'
+      DropDownKind = ddkDropDownButton
+      DropDownHeight = 150.000000000000000000
+      DropDownWidth = 200.000000000000000000
+      Appearance.XRadius = 3.000000000000000000
+      Appearance.YRadius = 3.000000000000000000
+      Appearance.NormalFill.Gradient.Points = <
+        item
+          Color = xFFF9FBFC
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6EBEB
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCDCEC
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE1EC
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HoverFill.Gradient.Points = <
+        item
+          Color = xFFE5E7E8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFD2D7D7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8C8D8
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8CDD8
+          Offset = 1.000000000000000000
+        end>
+      Appearance.DownFill.Gradient.Points = <
+        item
+          Color = xFFDBDDDE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFC8CDCD
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEBECE
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEC3CE
+          Offset = 1.000000000000000000
+        end>
+    end
+    object TMSFMXToolBarFontSizePicker2: TTMSFMXToolBarFontSizePicker
+      ClipChildren = True
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 303.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 9
+      Width = 40.000000000000000000
+      FontColor = claBlack
+      AutoOptionsMenuText = 'Font Size'
+      DropDownKind = ddkDropDownButton
+      DropDownHeight = 150.000000000000000000
+      DropDownWidth = 100.000000000000000000
+      Appearance.XRadius = 3.000000000000000000
+      Appearance.YRadius = 3.000000000000000000
+      Appearance.NormalFill.Gradient.Points = <
+        item
+          Color = xFFF9FBFC
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6EBEB
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCDCEC
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE1EC
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HoverFill.Gradient.Points = <
+        item
+          Color = xFFE5E7E8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFD2D7D7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8C8D8
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8CDD8
+          Offset = 1.000000000000000000
+        end>
+      Appearance.DownFill.Gradient.Points = <
+        item
+          Color = xFFDBDDDE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFC8CDCD
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEBECE
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEC3CE
+          Offset = 1.000000000000000000
+        end>
+    end
+    object TMSFMXToolBarButton4: TTMSFMXToolBarButton
+      ClipChildren = True
+      DisableFocusEffect = False
+      Height = 24.000000000000000000
+      Position.X = 346.000000000000000000
+      Position.Y = 3.000000000000000000
+      TabOrder = 10
+      Width = 30.000000000000000000
+      OnClick = TMSFMXToolBarButton4Click
+      FontColor = claBlack
+      DropDownHeight = 135.000000000000000000
+      DropDownWidth = 135.000000000000000000
+      BitmapVisible = True
+      BitmapContainer = TMSFMXBitmapContainer1
+      BitmapName = 'text'
+      BitmapNameLarge = 'textlarge'
+      Appearance.XRadius = 3.000000000000000000
+      Appearance.YRadius = 3.000000000000000000
+      Appearance.NormalFill.Gradient.Points = <
+        item
+          Color = xFFF9FBFC
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFE6EBEB
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCDCEC
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFDCE1EC
+          Offset = 1.000000000000000000
+        end>
+      Appearance.HoverFill.Gradient.Points = <
+        item
+          Color = xFFE5E7E8
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFD2D7D7
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8C8D8
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFC8CDD8
+          Offset = 1.000000000000000000
+        end>
+      Appearance.DownFill.Gradient.Points = <
+        item
+          Color = xFFDBDDDE
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFC8CDCD
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEBECE
+          Offset = 0.500000000000000000
+        end
+        item
+          Color = xFFBEC3CE
+          Offset = 1.000000000000000000
+        end>
+    end
+  end
+  object PaintBox1: TPaintBox
+    Align = alClient
+    Height = 452.000000000000000000
+    Width = 692.000000000000000000
+    OnMouseDown = PaintBox1MouseDown
+    OnMouseMove = PaintBox1MouseMove
+    OnMouseUp = PaintBox1MouseUp
+    OnPaint = PaintBox1Paint
+  end
+  object TMSFMXBitmapContainer1: TTMSFMXBitmapContainer
+    Items = <
+      item
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          007949444154384F63A01430426930282A2AFA0F65A2830F7FFFFE759C3871E2
+          05281F3B0019800D80C481F87D7E7EBE0154291C304169822028284880999979
+          3FBA21441B606D6D8DD510A20D282E2E6658B76E1D880936042C880E7085013A
+          400E6CA25D800B8C1A30180C2036336180BEBE3E14BD64020606006D0B5D7756
+          B29DED0000000049454E44AE426082}
+        Name = 'new'
+        Tag = 0
+      end
+      item
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+          87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          00D0494441546843EDD8BD0DC3201845514845E99231B24226611460B2AC9051
+          52D21140B80B123F891EB2DE693072615F7FB22C5910AD91756D72CEC57AF80F
+          EF18E3C37BFFAAFB61B7BAA21C52CAA7B5F65EF7C3BA27902E52F6BF909E7859
+          95522284900FA727019D8031A64424D393800668AD9723D0EFC072043C205B89
+          D822209B8DD826209B89D82A20FB16514E3440BF03BDD23D34EF73BB098C824C
+          A0D739A94B4F8001680C4063001A03D01880C6003406A031008D01680C406300
+          1A03D01880D6FD6F14E9D2FF46899608F101F47E46BE4B71D90F000000004945
+          4E44AE426082}
+        Name = 'newlarge'
+        Tag = 0
+      end
+      item
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          006E49444154384F63A014308288CEC8D5FFC13C1241F9F2504616281B0CCA96
+          854059F84157D41A288B8181094A930D869B0147D75E83B270037435144723C5
+          5E4049072040282D20A70110A05D2C806C42B70D1BA0D805E058E888583D9F91
+          9121012C420200C50294492E6060000082CC19CEBDFD685C0000000049454E44
+          AE426082}
+        Name = 'save'
+        Tag = 0
+      end
+      item
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+          87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          00D5494441546843EDD8310AC2301406E017CF68419DF412EA11D413B8290E2A
+          D4D9CDC55507876E4E2E5E23127C74B0C150A5FC49F9BF252F4BE9DFD7472042
+          F41FA36B69DECFAD96D19AECB2F2BD3BBA262BD881F1B6AB15CE6270D0EAAD55
+          1D60003406406300340640630034064063003406406B7F80FBF5A91546717E68
+          E5170C705C5E820F698AFB78A7CD4D777EBC56416300B4E403D41EE2A66FEA3E
+          6FE17C38C431E10C38DFFEDBBA33C319480D03A031005A2580B5B2D632099573
+          C099F5F2953132D46D7482E7C0749F8D52EB04D14F445EF9BC39B1BEBCC06D00
+          00000049454E44AE426082}
+        Name = 'savelarge'
+        Tag = 0
+      end
+      item
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          010B49444154384FA5933D4E03311085DF582415CA920BD052023740E22061A5
+          28A2E306D8CB09B60C11C5DE007183B47440C72550125121F0E0B19C056FB001
+          E56BEC67FB3D8DFFB02D14DA24AF7A76F40ED4002F18FDB361552EC294271B20
+          660BCCDDAA4234331E2D7A27DF4392015DF39A6E88F2A31D526681088784B726
+          C8CD809CF90BDA0B9D38E06F66BFEFB682F60C96573707F461EF7F33BB33288B
+          6A126FE1455FEF1797E36790BDF5A309BA664149D93BA0A7A5998E06E6BC046C
+          B460CD4F6641F947E2CA26A8261592320B8AC0F3D077399B2139B3A02CFAB565
+          BE0B3A0A21C669CE2CB4B7B0D2B3C6A95190508CE3DD6AF2106492E8296BAD6B
+          22BA08328B3126F90DFE01F009B156786F9A90B4BA0000000049454E44AE4260
+          82}
+        Name = 'clear'
+        Tag = 0
+      end
+      item
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+          87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          022C494441546843ED984D4EC2401840BF62D842BC814B777A043D8089371012
+          43882B6F407B0336268498086BB71E8095AE34720637BAD0008685513BF62B33
+          686B7F66A6DF8C35E923A44C48E03D66A66D808A8A6238FC689D456FD807F00F
+          57A3DAE413EAA79B5E7BB61ACBF3270181FC28F8E6233E0C610CA63ED4F75423
+          AC0724C90B7422AC0664C90B5423AC05C8C80B5422AC04A8C80B64238C07E8C8
+          0B64228C06149117E445180BA0901764451809A09417A44590079890172445D4
+          F8910493F288E3C0CE06BC07B720DF900598965F13FB0E92006BF20883397F15
+          5238C0AAFC8A113F8614DAC4D6E5198C1B5EA7C54721DA01659047B402CA228F
+          280794491E510A289B3C227D165AF406C7659347D466C01D5C04CDB91F5A1849
+          79447D0F988E509047329710AEF9B93B882C9B86DB6D03F8918B09198AF248EA
+          0CFCDCB00CFC56D3ED8EC33738E433A1218F2406249D6D8C4668CA23BF02B24E
+          9546220AC823913D10C8F7D3E411076AB47BA2A03C12DFC4B91F461641208F68
+          DD4E178E209247E201D2BFA27604A13CA2B4899350DAD8C4F288F469340BA908
+          03F288D4854C86CC0843F2486A00421211DCC536BCEE391F9293198050449824
+          3700297384D475205CBFC13AE6C35C1C56DBE72F8D23350302A99930B8619350
+          0A40E6BDE13DFE47C98711EE600993E81F6746705D77EDAD7C2BD1F43ABB2FEC
+          E3E096CD9E6EE015F07909CF70068F56E4E368DD0B6D79275713586E5FB3C514
+          031EE02D78F8FCDD8A8A7F04C017AF656BD4525C4ECB0000000049454E44AE42
+          6082}
+        Name = 'clearlarge'
+        Tag = 0
+      end
+      item
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000300000003008060000005702F9
+          87000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          0202494441546843ED973F4802511CC75F515010413868D06244A00D4634652D
+          3514E4E616415B4BB49C44935363E8D2162D41B4B5844B432D692D11B92844E4
+          1264830411143494DF9FEFD525A7DDE9FDD3DE078EDFEFDEDDF0FBF3FDBD77C7
+          241289C4513AB8251445F9E4AEAB492693DF717772DBB26876209148D0BDDB88
+          C56264DBAA03FF5742D94289C50FAEC8EFEBE966BBEB33646B914AA5B8678C48
+          24C23D932594CE15B9C7D8EBFB07CBDE97F89DBD34DC81A5ED330A3CE4F75037
+          C2411FDB8C86F8536B30AD039972F5113C24B33031F46BCD6E1A4A209D7F221B
+          0E7AA9F242FB27D70F64EDA48B5BDDA0CAA836182FCB0784863DB476539E83E8
+          949FD6AA316388B530DC814CAE527D541DD507D3012F59CC42F1F98D7CBB303C
+          C4D83AAB87165D59DD3927BB32375AB30BCDD2F410A3BA081E88AA0374033202
+          425E766128814CFE273811B040CCC3DDE30B5D76614842CADEA5AEE020214849
+          8DE327B191CAAA3B6535BA3BB07F7ACB8E2E0AE41F6ECC6A7EF7E039DE035BCB
+          93744A9B49531D10551D19ECD70C1E8403956D15A8BF95AC445702EAFD5DECFD
+          5AF8067A294120CE0BABD17512ABABF9972C902066459CD82261474FE2B5C531
+          761C9FA74B54B816D881C4BBF5BA651686B651A731F587C62DB47C027525D4E8
+          E0998965FFC46E410EB1D3C821B61A39C46E420EB11BD19490DB692B09492492
+          9686B12F7A510260EEABB1F80000000049454E44AE426082}
+        Name = 'textlarge'
+        Tag = 0
+      end
+      item
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          009849444154384F631870C0585454F41FCA260F800C201780F43241CD018397
+          1FBE312CDD7F134C130B58A034182CDD779361EF85C70C2FDF7F63280A32048B
+          6DD9B2054CA3031F1F1F0803E6852FDF7FFDF7AADD08668368109F1040F1C286
+          E3F7C0B477DD26300DE31302702F2C03FA3DCD5387C1DF52091C0E207EB4A33A
+          F15E200760C4023900EE055C4EC505068F1728CF0B940106060068671BCE1970
+          0BDE0000000049454E44AE426082}
+        Name = 'text'
+        Tag = 0
+      end>
+    Version = '1.5.0.0'
+    Left = 64
+    Top = 48
+  end
+end

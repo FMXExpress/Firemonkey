@@ -1,0 +1,121 @@
+object Form719: TForm719
+  Left = 0
+  Top = 0
+  Caption = 'TMS software FMX Grid: filtering demo'
+  ClientHeight = 645
+  ClientWidth = 938
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    DisableFocusEffect = False
+    Height = 585.000000000000000000
+    Padding.Left = 6.000000000000000000
+    Padding.Right = 6.000000000000000000
+    Padding.Bottom = 6.000000000000000000
+    TabOrder = 0
+    Width = 926.000000000000000000
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '2.0.1.3'
+    Fill.Kind = bkSolid
+    Stroke.Color = claBlack
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 0
+    LeftCol = 0
+    Columns = <
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end>
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 49.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Width = 928.000000000000000000
+    TabOrder = 1
+    object Button1: TButton
+      Height = 22.000000000000000000
+      Position.X = 272.000000000000000000
+      Position.Y = 20.000000000000000000
+      TabOrder = 1
+      Text = 'Filter brands starting with A'
+      Width = 169.000000000000000000
+      OnClick = Button1Click
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 0
+      Position.X = 68.000000000000000000
+      Position.Y = 21.000000000000000000
+      Width = 100.000000000000000000
+      Height = 22.000000000000000000
+      KillFocusByReturn = False
+      OnChangeTracking = Edit1ChangeTracking
+    end
+    object Label1: TLabel
+      Height = 15.000000000000000000
+      Position.X = 68.000000000000000000
+      Position.Y = 5.000000000000000000
+      Text = 'Type brand name to start filtering'
+      Width = 185.000000000000000000
+    end
+  end
+end

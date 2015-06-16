@@ -1,0 +1,55 @@
+object Form719: TForm719
+  Left = 0
+  Top = 0
+  Caption = 'TMS software FMX Grid: Cell Controls Demo'
+  ClientHeight = 645
+  ClientWidth = 938
+  Position = poScreenCenter
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    Position.Point = '(6,54)'
+    Width = 926.000000000000000000
+    Height = 585.000000000000000000
+    Padding.Rect = '(6,0,6,6)'
+    TabOrder = 0
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '1.1.0.0'
+    Fill.Kind = bkSolid
+    Stroke.Color = claBlack
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+    OnGetCellClass = TMSFMXGrid1GetCellClass
+    OnGetCellProperties = TMSFMXGrid1GetCellProperties
+    OnCellAnchorClick = TMSFMXGrid1CellAnchorClick
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Position.Point = '(5,5)'
+    Width = 928.000000000000000000
+    Height = 49.000000000000000000
+    Padding.Rect = '(5,5,5,0)'
+    TabOrder = 1
+    object Label1: TLabel
+      Position.Point = '(16,16)'
+      Width = 385.500000000000000000
+      Height = 19.500000000000000000
+      TabOrder = 0
+      AutoSize = True
+      Text = 
+        'Clicking the anchor in the cell with HTML formatting triggers On' +
+        'AnchorClick'
+      WordWrap = False
+    end
+  end
+end

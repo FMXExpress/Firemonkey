@@ -1,0 +1,13 @@
+1;Bordeaux;1
+2;Languedoc;1
+3;Loire;1
+4;Valencia;2
+5;Murcia;2
+6;Castilla Y Leon;2
+7;Douro;3
+8;Terras do Sado;3
+9;Estremandura;3
+10;Piemonte;4
+11;Sardinia;4
+12;Tuscany;4
+13;Kamptal;5

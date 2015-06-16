@@ -1,0 +1,82 @@
+object Form719: TForm719
+  Left = 0
+  Top = 0
+  Caption = 
+    'TMS software FMX Grid: sorting, column sizing, column dragging, ' +
+    'dyn. highlight'
+  ClientHeight = 645
+  ClientWidth = 938
+  Position = poScreenCenter
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    Position.Point = '(6,54)'
+    Width = 926.000000000000000000
+    Height = 585.000000000000000000
+    Padding.Rect = '(6,0,6,6)'
+    TabOrder = 0
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Options.Sorting.Mode = gsmNormal
+    Version = '1.1.0.0'
+    Fill.Kind = bkSolid
+    Stroke.Color = claBlack
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+    OnGetCellLayout = TMSFMXGrid1GetCellLayout
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Position.Point = '(5,5)'
+    Width = 928.000000000000000000
+    Height = 49.000000000000000000
+    Padding.Rect = '(5,5,5,0)'
+    TabOrder = 1
+    object RadioButton1: TRadioButton
+      Position.Point = '(8,8)'
+      Width = 81.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 0
+      Text = 'No sort'
+      GroupName = 'SORT'
+      OnChange = RadioButton1Change
+    end
+    object RadioButton2: TRadioButton
+      Position.Point = '(88,8)'
+      Width = 105.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 1
+      IsChecked = True
+      Text = 'Single col sort'
+      GroupName = 'SORT'
+      OnChange = RadioButton1Change
+    end
+    object RadioButton3: TRadioButton
+      Position.Point = '(192,8)'
+      Width = 120.000000000000000000
+      Height = 19.000000000000000000
+      TabOrder = 2
+      Text = 'Multi col sort'
+      GroupName = 'SORT'
+      OnChange = RadioButton1Change
+    end
+    object Label1: TLabel
+      Position.Point = '(336,8)'
+      Width = 305.000000000000000000
+      Height = 33.000000000000000000
+      TabOrder = 3
+      Text = 
+        'Click column header to perform sort. Shift click for additional ' +
+        'sort columns in Multi col sort mode.'
+    end
+  end
+end

@@ -1,0 +1,2044 @@
+object TStyleContainer
+  object TRectangle
+    StyleName = 'TMSFMXTileList1Style1'
+    DesignVisible = False
+    Fill.Color = claWhite
+    Height = 257.000000000000000000
+    Position.X = 356.000000000000000000
+    Position.Y = 280.000000000000000000
+    Stroke.Color = xFF66686A
+    Width = 449.000000000000000000
+    object TRectangle
+      StyleName = 'header'
+      Align = alTop
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF5B6167
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF71767C
+          Offset = 0.464743584394455000
+        end
+        item
+          Color = xFF7B8085
+          Offset = 0.474358975887298600
+        end
+        item
+          Color = xFF9498A2
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.500000000000000000
+      Fill.Gradient.StopPosition.Y = 0.000000000000000036
+      Height = 41.000000000000000000
+      Stroke.Color = xFF66686A
+      Visible = False
+      Width = 449.000000000000000000
+      object TTMSFMXTileListArrowShape
+        StyleName = 'headerarrowleft'
+        Align = alLeft
+        Cursor = crHandPoint
+        Fill.Kind = bkNone
+        Height = 41.000000000000000000
+        Sides = [sdRight]
+        Stroke.Color = xFF535353
+        Width = 50.000000000000000000
+        ArrowSize = 15.000000000000000000
+      end
+      object TTMSFMXTileListArrowShape
+        StyleName = 'headerarrowright'
+        Align = alRight
+        Cursor = crHandPoint
+        Fill.Kind = bkNone
+        Height = 41.000000000000000000
+        Position.X = 399.000000000000000000
+        Sides = [sdLeft]
+        Stroke.Color = xFF535353
+        Width = 50.000000000000000000
+        Direction = sdRight
+        ArrowSize = 15.000000000000000000
+      end
+      object TRectangle
+        StyleName = 'headerbulletlist'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 41.000000000000000000
+        HitTest = False
+        Stroke.Kind = bkNone
+        Width = 349.000000000000000000
+        object TTMSFMXTileListBulletShape
+          StyleName = 'headerbullet'
+          Align = alCenter
+          Cursor = crHandPoint
+          Height = 10.000000000000000000
+          Visible = False
+          Width = 10.000000000000000000
+          FillSelected.Kind = bkGradient
+          FillSelected.Gradient.Points = <
+            item
+              Color = xFFC2DAF2
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF51ADE0
+              Offset = 1.000000000000000000
+            end>
+          FillSelected.Gradient.StartPosition.X = 0.149896234273910500
+          FillSelected.Gradient.StartPosition.Y = 0.000000015645508000
+          FillSelected.Gradient.StopPosition.X = 0.850103735923767100
+        end
+      end
+    end
+    object TRectangle
+      StyleName = 'footer'
+      Align = alBottom
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF5B6167
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF71767C
+          Offset = 0.464743584394455000
+        end
+        item
+          Color = xFF7B8085
+          Offset = 0.474358975887298600
+        end
+        item
+          Color = xFF9498A2
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.500000000000000000
+      Fill.Gradient.StopPosition.Y = 0.000000000000000036
+      Height = 41.000000000000000000
+      Position.Y = 216.000000000000000000
+      Stroke.Color = xFF66686A
+      Visible = False
+      Width = 449.000000000000000000
+      object TTMSFMXTileListArrowShape
+        StyleName = 'footerarrowleft'
+        Align = alLeft
+        Cursor = crHandPoint
+        Fill.Kind = bkNone
+        Height = 41.000000000000000000
+        Sides = [sdRight]
+        Stroke.Color = xFF535353
+        Width = 50.000000000000000000
+        ArrowSize = 15.000000000000000000
+      end
+      object TTMSFMXTileListArrowShape
+        StyleName = 'footerarrowright'
+        Align = alRight
+        Cursor = crHandPoint
+        Fill.Kind = bkNone
+        Height = 41.000000000000000000
+        Position.X = 399.000000000000000000
+        Sides = [sdLeft]
+        Stroke.Color = xFF535353
+        Width = 50.000000000000000000
+        Direction = sdRight
+        ArrowSize = 15.000000000000000000
+      end
+      object TRectangle
+        StyleName = 'footerbulletlist'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 41.000000000000000000
+        HitTest = False
+        Stroke.Kind = bkNone
+        Width = 349.000000000000000000
+        object TTMSFMXTileListBulletShape
+          StyleName = 'footerbullet'
+          Align = alCenter
+          Cursor = crHandPoint
+          Height = 10.000000000000000000
+          Visible = False
+          Width = 10.000000000000000000
+          FillSelected.Kind = bkGradient
+          FillSelected.Gradient.Points = <
+            item
+              Color = xFFC2DAF2
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF51ADE0
+              Offset = 1.000000000000000000
+            end>
+          FillSelected.Gradient.StartPosition.X = 0.149896234273910500
+          FillSelected.Gradient.StartPosition.Y = 0.000000015645508000
+          FillSelected.Gradient.StopPosition.X = 0.850103735923767100
+        end
+      end
+    end
+    object TTMSFMXClipRectangle
+      StyleName = 'content'
+      Align = alClient
+      ClipChildren = True
+      Fill.Kind = bkNone
+      Height = 257.000000000000000000
+      Stroke.Kind = bkNone
+      Width = 449.000000000000000000
+      object TTMSFMXScrollBox
+        StyleName = 'contentscroll'
+        Align = alClient
+        ClipChildren = True
+        Height = 257.000000000000000000
+        Width = 449.000000000000000000
+        object TRectangle
+          StyleName = 'contentlist'
+          ClipChildren = True
+          Fill.Kind = bkNone
+          Height = 351.000000000000000000
+          HitTest = False
+          Sides = [sdLeft, sdRight]
+          Stroke.Kind = bkNone
+          Width = 481.000000000000000000
+          object TFloatAnimation
+            StyleName = 'contentlistanim'
+            Enabled = True
+            Duration = 0.000009999999747379
+            PropertyName = 'Position.X'
+            StartValue = 0.000000000000000000
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+    end
+    object TTMSFMXTileShape
+      StyleName = 'defaulttile'
+      DisableFocusEffect = False
+      Height = 153.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 263.000000000000000000
+      TabOrder = 3
+      Visible = False
+      Width = 154.000000000000000000
+      Fill.Color = xFFF0F0F0
+      Fill.Kind = bkSolid
+      Stroke.Color = claGray
+      Stroke.Kind = bkSolid
+      StrokeThickness = 1.000000000000000000
+      object TRectangle
+        StyleName = 'defaulttilecontentwrapper'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 151.000000000000000000
+        HitTest = False
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 152.000000000000000000
+        object TTMSFMXBitmap
+          StyleName = 'defaulttilebitmap'
+          Align = alClient
+          Width = 152.000000000000000000
+          Height = 151.000000000000000000
+          ClipChildren = True
+          HitTest = False
+          AspectRatio = False
+          Version = '1.5.1.0'
+          Cropping = True
+        end
+        object TRectangle
+          StyleName = 'defaultdetailtile'
+          Fill.Color = xFFF6F5F5
+          Height = 153.000000000000000000
+          Position.Y = 165.000000000000000000
+          Sides = [sdTop]
+          Stroke.Color = xFF7F7F7F
+          Width = 154.000000000000000000
+          object TRectangle
+            StyleName = 'defaultdetailtilecontentwrapper'
+            Align = alClient
+            ClipChildren = True
+            Fill.Kind = bkNone
+            Height = 153.000000000000000000
+            HitTest = False
+            Stroke.Kind = bkNone
+            Width = 154.000000000000000000
+            object TTMSFMXBitmap
+              StyleName = 'defaultdetailtilebitmap'
+              Align = alLeft
+              Position.X = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Width = 50.000000000000000000
+              Height = 143.000000000000000000
+              ClipChildren = True
+              HitTest = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Version = '1.5.1.0'
+            end
+            object TRectangle
+              StyleName = 'defaultdetailtilecontent'
+              Align = alClient
+              ClipChildren = True
+              Fill.Kind = bkNone
+              Height = 153.000000000000000000
+              HitTest = False
+              Stroke.Kind = bkNone
+              Width = 94.000000000000000000
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilecaption'
+                Align = alTop
+                Color = claBlack
+                Font.Size = 14.000000000000000000
+                Font.Style = [fsBold]
+                Height = 41.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilenotes'
+                Align = alClient
+                Color = claBlack
+                Height = 96.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+            end
+          end
+          object TFloatAnimation
+            StyleName = 'defaultdetailtileanim'
+            Duration = 0.400000005960464500
+            PropertyName = 'Position.Y'
+            StartValue = 0.000000000000000000
+            StartFromCurrent = True
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimx'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.X'
+        StartValue = 3.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimy'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.Y'
+        StartValue = 263.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimw'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Width'
+        StartValue = 154.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimh'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Height'
+        StartValue = 153.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+    end
+    object TTMSFMXBadge
+      StyleName = 'defaulttilebadge'
+      DisableFocusEffect = False
+      Height = 27.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      StyleLookup = 'TMSFMXTileList1defaulttilebadge1'
+      TabOrder = 4
+      Visible = False
+      Width = 27.000000000000000000
+      Version = '1.5.0.0'
+    end
+    object TTMSFMXTileShape
+      StyleName = '[custom]defaulttile1'
+      DisableFocusEffect = False
+      Height = 153.000000000000000000
+      Position.X = 162.000000000000000000
+      Position.Y = 263.000000000000000000
+      TabOrder = 5
+      Visible = False
+      Width = 154.000000000000000000
+      FillHover.Color = xFF0BD6F2
+      StrokeHover.Color = xFF0BD6F2
+      FillDown.Color = xFF08A9BF
+      StrokeDown.Color = xFF08A9BF
+      Fill.Color = xFF0ABED7
+      Fill.Kind = bkSolid
+      Stroke.Color = xFF0ABED7
+      Stroke.Kind = bkSolid
+      StrokeThickness = 1.000000000000000000
+      object TRectangle
+        StyleName = 'defaulttilecontentwrapper'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 151.000000000000000000
+        HitTest = False
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 152.000000000000000000
+        object TTMSFMXBitmap
+          StyleName = 'defaulttilebitmap'
+          Align = alClient
+          Width = 142.000000000000000000
+          Height = 91.000000000000000000
+          ClipChildren = True
+          HitTest = False
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Version = '1.5.1.0'
+        end
+        object TRectangle
+          StyleName = 'defaulttilecontent'
+          Align = alBottom
+          ClipChildren = True
+          Fill.Kind = bkNone
+          Height = 50.000000000000000000
+          HitTest = False
+          Position.Y = 101.000000000000000000
+          Stroke.Kind = bkNone
+          Width = 152.000000000000000000
+          object TTMSFMXHTMLText
+            StyleName = 'defaulttilecaption'
+            Align = alClient
+            Color = xFF035B67
+            Font.Size = 14.000000000000000000
+            Font.Style = [fsBold]
+            Height = 40.000000000000000000
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Text = 'TTMSFMXHTMLText'
+            VertTextAlign = taTrailing
+            Width = 142.000000000000000000
+            Fill.Color = xFF035B67
+            Version = '1.5.1.0'
+          end
+        end
+        object TRectangle
+          StyleName = 'defaultdetailtile'
+          Fill.Color = x96FFFFFF
+          Height = 153.000000000000000000
+          Position.Y = 165.000000000000000000
+          Sides = []
+          Stroke.Color = xFF7F7F7F
+          Width = 154.000000000000000000
+          object TRectangle
+            StyleName = 'defaultdetailtilecontentwrapper'
+            Align = alClient
+            ClipChildren = True
+            Fill.Kind = bkNone
+            Height = 153.000000000000000000
+            HitTest = False
+            Stroke.Kind = bkNone
+            Width = 154.000000000000000000
+            object TTMSFMXBitmap
+              StyleName = 'defaultdetailtilebitmap'
+              Align = alLeft
+              Position.X = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Width = 50.000000000000000000
+              Height = 143.000000000000000000
+              ClipChildren = True
+              HitTest = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Version = '1.5.1.0'
+            end
+            object TRectangle
+              StyleName = 'defaultdetailtilecontent'
+              Align = alClient
+              ClipChildren = True
+              Fill.Kind = bkNone
+              Height = 153.000000000000000000
+              HitTest = False
+              Stroke.Kind = bkNone
+              Width = 94.000000000000000000
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilecaption'
+                Align = alTop
+                Color = claBlack
+                Font.Size = 14.000000000000000000
+                Font.Style = [fsBold]
+                Height = 41.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilenotes'
+                Align = alClient
+                Color = claBlack
+                Height = 96.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+            end
+          end
+          object TFloatAnimation
+            StyleName = 'defaultdetailtileanim'
+            Duration = 0.400000005960464500
+            PropertyName = 'Position.Y'
+            StartValue = 0.000000000000000000
+            StartFromCurrent = True
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimx'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.X'
+        StartValue = 162.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimy'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.Y'
+        StartValue = 263.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimw'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Width'
+        StartValue = 154.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimh'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Height'
+        StartValue = 153.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+    end
+    object TTMSFMXTileShape
+      StyleName = '[custom]defaulttile2'
+      DisableFocusEffect = False
+      Height = 153.000000000000000000
+      Position.X = 321.000000000000000000
+      Position.Y = 263.000000000000000000
+      TabOrder = 6
+      Visible = False
+      Width = 154.000000000000000000
+      FillHover.Color = xFFF69961
+      StrokeHover.Color = xFFF69961
+      FillDown.Color = xFFD95D12
+      StrokeDown.Color = xFFD95D12
+      Fill.Color = xFFEB7126
+      Fill.Kind = bkSolid
+      Stroke.Color = xFFEB7126
+      Stroke.Kind = bkSolid
+      StrokeThickness = 1.000000000000000000
+      object TRectangle
+        StyleName = 'defaulttilecontentwrapper'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 151.000000000000000000
+        HitTest = False
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 152.000000000000000000
+        object TTMSFMXBitmap
+          StyleName = 'defaulttilebitmap'
+          Align = alClient
+          Width = 142.000000000000000000
+          Height = 61.000000000000000000
+          ClipChildren = True
+          HitTest = False
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Version = '1.5.1.0'
+        end
+        object TRectangle
+          StyleName = 'defaulttilecontent'
+          Align = alTop
+          ClipChildren = True
+          Fill.Kind = bkNone
+          Height = 80.000000000000000000
+          HitTest = False
+          Stroke.Kind = bkNone
+          Width = 152.000000000000000000
+          object TTMSFMXHTMLText
+            StyleName = 'defaulttilecaption'
+            Align = alTop
+            Color = xFF7A2E00
+            Font.Size = 14.000000000000000000
+            Font.Style = [fsBold]
+            Height = 41.500000000000000000
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Text = 'TTMSFMXHTMLText'
+            Width = 142.000000000000000000
+            Fill.Color = xFF7A2E00
+            Version = '1.5.1.0'
+          end
+          object TTMSFMXHTMLText
+            StyleName = 'defaulttilenotes'
+            Align = alClient
+            Color = xFF7A2E00
+            Height = 23.500000000000000000
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Text = 'TTMSFMXHTMLText'
+            Width = 142.000000000000000000
+            Fill.Color = xFF7A2E00
+            Version = '1.5.1.0'
+          end
+        end
+        object TRectangle
+          StyleName = 'defaultdetailtile'
+          Fill.Color = x64FFFFFF
+          Height = 153.000000000000000000
+          Position.Y = 165.000000000000000000
+          Sides = [sdTop]
+          Stroke.Color = xFF7F7F7F
+          Width = 154.000000000000000000
+          object TRectangle
+            StyleName = 'defaultdetailtilecontentwrapper'
+            Align = alClient
+            ClipChildren = True
+            Fill.Kind = bkNone
+            Height = 153.000000000000000000
+            HitTest = False
+            Stroke.Kind = bkNone
+            Width = 154.000000000000000000
+            object TTMSFMXBitmap
+              StyleName = 'defaultdetailtilebitmap'
+              Align = alLeft
+              Position.X = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Width = 50.000000000000000000
+              Height = 143.000000000000000000
+              ClipChildren = True
+              HitTest = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Version = '1.5.1.0'
+            end
+            object TRectangle
+              StyleName = 'defaultdetailtilecontent'
+              Align = alClient
+              ClipChildren = True
+              Fill.Kind = bkNone
+              Height = 153.000000000000000000
+              HitTest = False
+              Stroke.Kind = bkNone
+              Width = 94.000000000000000000
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilecaption'
+                Align = alTop
+                Color = claBlack
+                Font.Size = 14.000000000000000000
+                Font.Style = [fsBold]
+                Height = 41.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilenotes'
+                Align = alClient
+                Color = claBlack
+                Height = 96.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+            end
+          end
+          object TFloatAnimation
+            StyleName = 'defaultdetailtileanim'
+            Duration = 0.400000005960464500
+            PropertyName = 'Position.Y'
+            StartValue = 0.000000000000000000
+            StartFromCurrent = True
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimx'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.X'
+        StartValue = 321.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimy'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.Y'
+        StartValue = 263.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimw'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Width'
+        StartValue = 154.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimh'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Height'
+        StartValue = 153.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+    end
+    object TTMSFMXTileShape
+      StyleName = '[custom]defaulttile3'
+      DisableFocusEffect = False
+      Height = 153.000000000000000000
+      Position.X = 480.000000000000000000
+      Position.Y = 263.000000000000000000
+      TabOrder = 7
+      Visible = False
+      Width = 154.000000000000000000
+      FillHover.Color = xFF6FD60E
+      StrokeHover.Color = xFF6FD60E
+      FillDown.Color = xFF539F0B
+      StrokeDown.Color = xFF539F0B
+      Fill.Color = xFF65BF0F
+      Fill.Kind = bkSolid
+      Stroke.Color = xFF65BF0F
+      Stroke.Kind = bkSolid
+      StrokeThickness = 1.000000000000000000
+      object TRectangle
+        StyleName = 'defaulttilecontentwrapper'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 151.000000000000000000
+        HitTest = False
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 152.000000000000000000
+        object TRectangle
+          StyleName = 'defaulttilecontent'
+          Align = alTop
+          ClipChildren = True
+          Fill.Kind = bkNone
+          Height = 68.000000000000000000
+          HitTest = False
+          Stroke.Kind = bkNone
+          Width = 152.000000000000000000
+          object TTMSFMXHTMLText
+            StyleName = 'defaulttilecaption'
+            Align = alLeft
+            Color = xFF295103
+            Font.Size = 14.000000000000000000
+            Font.Style = [fsBold]
+            Height = 58.000000000000000000
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Text = 'TTMSFMXHTMLText'
+            Width = 91.000000000000000000
+            Fill.Color = xFF295103
+            Version = '1.5.1.0'
+          end
+          object TTMSFMXBitmap
+            StyleName = 'defaulttilebitmap'
+            Align = alClient
+            Width = 41.000000000000000000
+            Height = 58.000000000000000000
+            ClipChildren = True
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Version = '1.5.1.0'
+            Stretch = True
+          end
+        end
+        object TRectangle
+          StyleName = 'defaultdetailtile'
+          Fill.Color = x64FFFFFF
+          Height = 153.000000000000000000
+          Position.Y = 165.000000000000000000
+          Sides = [sdTop]
+          Stroke.Color = xFF7F7F7F
+          Width = 154.000000000000000000
+          object TRectangle
+            StyleName = 'defaultdetailtilecontentwrapper'
+            Align = alClient
+            ClipChildren = True
+            Fill.Kind = bkNone
+            Height = 153.000000000000000000
+            HitTest = False
+            Stroke.Kind = bkNone
+            Width = 154.000000000000000000
+            object TTMSFMXBitmap
+              StyleName = 'defaultdetailtilebitmap'
+              Align = alLeft
+              Position.X = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Width = 50.000000000000000000
+              Height = 143.000000000000000000
+              ClipChildren = True
+              HitTest = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Version = '1.5.1.0'
+            end
+            object TRectangle
+              StyleName = 'defaultdetailtilecontent'
+              Align = alClient
+              ClipChildren = True
+              Fill.Kind = bkNone
+              Height = 153.000000000000000000
+              HitTest = False
+              Stroke.Kind = bkNone
+              Width = 94.000000000000000000
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilecaption'
+                Align = alTop
+                Color = claBlack
+                Font.Size = 14.000000000000000000
+                Font.Style = [fsBold]
+                Height = 41.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilenotes'
+                Align = alClient
+                Color = claBlack
+                Height = 96.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+            end
+          end
+          object TFloatAnimation
+            StyleName = 'defaultdetailtileanim'
+            Duration = 0.400000005960464500
+            PropertyName = 'Position.Y'
+            StartValue = 0.000000000000000000
+            StartFromCurrent = True
+            StopValue = 0.000000000000000000
+          end
+        end
+        object TTMSFMXHTMLText
+          StyleName = 'defaulttilenotes'
+          Align = alClient
+          Color = claBlack
+          Height = 78.000000000000000000
+          HitTest = False
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Text = 'TTMSFMXHTMLText'
+          Width = 142.000000000000000000
+          Version = '1.5.1.0'
+        end
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimx'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.X'
+        StartValue = 480.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimy'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.Y'
+        StartValue = 263.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimw'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Width'
+        StartValue = 154.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimh'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Height'
+        StartValue = 153.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+    end
+    object TTMSFMXTileShape
+      StyleName = '[custom]defaulttile4'
+      DisableFocusEffect = False
+      Height = 153.000000000000000000
+      Position.X = 639.000000000000000000
+      Position.Y = 263.000000000000000000
+      TabOrder = 8
+      Visible = False
+      Width = 154.000000000000000000
+      FillHover.Color = xFF0971D4
+      StrokeHover.Color = xFF0971D4
+      FillDown.Color = xFF01315F
+      StrokeDown.Color = xFF01315F
+      Fill.Color = xFF03417C
+      Fill.Kind = bkSolid
+      Stroke.Color = xFF03417C
+      Stroke.Kind = bkSolid
+      StrokeThickness = 1.000000000000000000
+      object TRectangle
+        StyleName = 'defaulttilecontentwrapper'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 151.000000000000000000
+        HitTest = False
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 152.000000000000000000
+        object TTMSFMXBitmap
+          StyleName = 'defaulttilebitmap'
+          Align = alLeft
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Width = 50.000000000000000000
+          Height = 141.000000000000000000
+          ClipChildren = True
+          HitTest = False
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Version = '1.5.1.0'
+        end
+        object TRectangle
+          StyleName = 'defaulttilecontent'
+          Align = alClient
+          ClipChildren = True
+          Fill.Kind = bkNone
+          Height = 151.000000000000000000
+          HitTest = False
+          Stroke.Kind = bkNone
+          Width = 92.000000000000000000
+          object TTMSFMXHTMLText
+            StyleName = 'defaulttilecaption'
+            Align = alTop
+            Color = claWhite
+            Font.Size = 14.000000000000000000
+            Font.Style = [fsBold]
+            Height = 41.500000000000000000
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Text = 'TTMSFMXHTMLText'
+            Width = 82.000000000000000000
+            Fill.Color = claWhite
+            Version = '1.5.1.0'
+          end
+          object TTMSFMXHTMLText
+            StyleName = 'defaulttilenotes'
+            Align = alClient
+            Color = claWhite
+            Height = 94.500000000000000000
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Margins.Bottom = 5.000000000000000000
+            Text = 'TTMSFMXHTMLText'
+            Width = 82.000000000000000000
+            Fill.Color = claWhite
+            Version = '1.5.1.0'
+          end
+        end
+        object TRectangle
+          StyleName = 'defaultdetailtile'
+          Fill.Color = x64FFFFFF
+          Height = 153.000000000000000000
+          Position.Y = 165.000000000000000000
+          Sides = [sdTop]
+          Stroke.Color = xFF7F7F7F
+          Width = 154.000000000000000000
+          object TRectangle
+            StyleName = 'defaultdetailtilecontentwrapper'
+            Align = alClient
+            ClipChildren = True
+            Fill.Kind = bkNone
+            Height = 153.000000000000000000
+            HitTest = False
+            Stroke.Kind = bkNone
+            Width = 154.000000000000000000
+            object TTMSFMXBitmap
+              StyleName = 'defaultdetailtilebitmap'
+              Align = alLeft
+              Position.X = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Width = 50.000000000000000000
+              Height = 143.000000000000000000
+              ClipChildren = True
+              HitTest = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Version = '1.5.1.0'
+            end
+            object TRectangle
+              StyleName = 'defaultdetailtilecontent'
+              Align = alClient
+              ClipChildren = True
+              Fill.Kind = bkNone
+              Height = 153.000000000000000000
+              HitTest = False
+              Stroke.Kind = bkNone
+              Width = 94.000000000000000000
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilecaption'
+                Align = alTop
+                Color = claBlack
+                Font.Size = 14.000000000000000000
+                Font.Style = [fsBold]
+                Height = 41.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilenotes'
+                Align = alClient
+                Color = claBlack
+                Height = 96.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+            end
+          end
+          object TFloatAnimation
+            StyleName = 'defaultdetailtileanim'
+            Duration = 0.400000005960464500
+            PropertyName = 'Position.Y'
+            StartValue = 0.000000000000000000
+            StartFromCurrent = True
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimx'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.X'
+        StartValue = 639.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimy'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.Y'
+        StartValue = 263.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimw'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Width'
+        StartValue = 154.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimh'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Height'
+        StartValue = 153.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+    end
+    object TTMSFMXTileShape
+      StyleName = '[custom]defaulttile5'
+      DisableFocusEffect = False
+      Height = 153.000000000000000000
+      Position.X = 798.000000000000000000
+      Position.Y = 263.000000000000000000
+      TabOrder = 9
+      Visible = False
+      Width = 154.000000000000000000
+      FillHover.Color = xFFE63456
+      StrokeHover.Color = xFFE63456
+      FillDown.Color = xFFA91B36
+      StrokeDown.Color = xFFA91B36
+      Fill.Color = xFFC1203F
+      Fill.Kind = bkSolid
+      Stroke.Color = xFFC1203F
+      Stroke.Kind = bkSolid
+      StrokeThickness = 1.000000000000000000
+      object TRectangle
+        StyleName = 'defaulttilecontentwrapper'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 151.000000000000000000
+        HitTest = False
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 152.000000000000000000
+        object TTMSFMXBitmap
+          StyleName = 'defaulttilebitmap'
+          Align = alClient
+          Width = 142.000000000000000000
+          Height = 93.000000000000000000
+          ClipChildren = True
+          HitTest = False
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Version = '1.5.1.0'
+        end
+        object TRectangle
+          StyleName = 'defaulttilecontent'
+          Align = alTop
+          ClipChildren = True
+          Fill.Kind = bkNone
+          Height = 48.000000000000000000
+          HitTest = False
+          Stroke.Kind = bkNone
+          Width = 152.000000000000000000
+          object TTMSFMXHTMLText
+            StyleName = 'defaulttilecaption'
+            Align = alTop
+            Color = claWhite
+            Font.Size = 14.000000000000000000
+            Font.Style = [fsBold]
+            Height = 41.500000000000000000
+            HitTest = False
+            Margins.Left = 5.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Margins.Right = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Position.Y = 5.000000000000000000
+            Text = 'TTMSFMXHTMLText'
+            Width = 142.000000000000000000
+            Fill.Color = claWhite
+            Version = '1.5.1.0'
+          end
+        end
+        object TRectangle
+          StyleName = 'defaultdetailtile'
+          Fill.Color = x64FFFFFF
+          Height = 153.000000000000000000
+          Position.Y = 165.000000000000000000
+          Sides = [sdTop]
+          Stroke.Color = xFF7F7F7F
+          Width = 154.000000000000000000
+          object TRectangle
+            StyleName = 'defaultdetailtilecontentwrapper'
+            Align = alClient
+            ClipChildren = True
+            Fill.Kind = bkNone
+            Height = 153.000000000000000000
+            HitTest = False
+            Stroke.Kind = bkNone
+            Width = 154.000000000000000000
+            object TTMSFMXBitmap
+              StyleName = 'defaultdetailtilebitmap'
+              Align = alLeft
+              Position.X = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Width = 50.000000000000000000
+              Height = 143.000000000000000000
+              ClipChildren = True
+              HitTest = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Version = '1.5.1.0'
+            end
+            object TRectangle
+              StyleName = 'defaultdetailtilecontent'
+              Align = alClient
+              ClipChildren = True
+              Fill.Kind = bkNone
+              Height = 153.000000000000000000
+              HitTest = False
+              Stroke.Kind = bkNone
+              Width = 94.000000000000000000
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilecaption'
+                Align = alTop
+                Color = claBlack
+                Font.Size = 14.000000000000000000
+                Font.Style = [fsBold]
+                Height = 41.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilenotes'
+                Align = alClient
+                Color = claBlack
+                Height = 96.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+            end
+          end
+          object TFloatAnimation
+            StyleName = 'defaultdetailtileanim'
+            Duration = 0.400000005960464500
+            PropertyName = 'Position.Y'
+            StartValue = 0.000000000000000000
+            StartFromCurrent = True
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimx'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.X'
+        StartValue = 798.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimy'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.Y'
+        StartValue = 263.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimw'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Width'
+        StartValue = 154.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimh'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Height'
+        StartValue = 153.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+    end
+  end
+  object TLayout
+    StyleName = 'TMSFMXTileList1contentscroll1'
+    DesignVisible = False
+    Height = 131.000000000000000000
+    Position.X = 254.000000000000000000
+    Position.Y = 343.000000000000000000
+    Width = 334.000000000000000000
+    object TLayout
+      StyleName = 'background'
+      Align = alContents
+      Locked = True
+      Height = 131.000000000000000000
+      Width = 334.000000000000000000
+      object TLayout
+        StyleName = 'content'
+        Align = alClient
+        Height = 115.000000000000000000
+        Width = 318.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = alRight
+        Height = 115.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orVertical
+        Position.X = 318.000000000000000000
+        Width = 16.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = alBottom
+        Height = 16.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orHorizontal
+        Position.Y = 115.000000000000000000
+        Width = 334.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = alRight
+        Height = 8.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orVertical
+        Margins.Left = 2.000000000000000000
+        Position.X = 99.000000000000000000
+        Position.Y = 2.000000000000000000
+        Visible = False
+        Width = 8.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = alBottom
+        Height = 8.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orHorizontal
+        Margins.Top = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 113.000000000000000000
+        Visible = False
+        Width = 150.000000000000000000
+      end
+      object TLayout
+        Align = alContents
+        Height = 131.000000000000000000
+        Width = 334.000000000000000000
+        object TLayout
+          Align = alBottom
+          Height = 20.000000000000000000
+          Position.Y = 111.000000000000000000
+          Width = 334.000000000000000000
+          object TSizeGrip
+            StyleName = 'sizegrip'
+            Align = alRight
+            Locked = True
+            Height = 20.000000000000000000
+            Position.X = 314.000000000000000000
+            Width = 20.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object TRoundRect
+    StyleName = 'TMSFMXTileList2defaulttilebadge1'
+    DesignVisible = False
+    Fill.Color = xFF21241C
+    Height = 30.000000000000000000
+    Position.X = 406.000000000000000000
+    Position.Y = 394.000000000000000000
+    Stroke.Color = xFFADADAD
+    Width = 30.000000000000000000
+    object TRoundRect
+      StyleName = 'badge'
+      Align = alClient
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF8AD726
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFF8AD726
+          Offset = 0.471153855323791500
+        end
+        item
+          Color = xFFDDFCB5
+          Offset = 0.474358975887298600
+        end
+        item
+          Color = xFFDDFCB5
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.499999970197677600
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Height = 24.000000000000000000
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Stroke.Color = xFF4D7A13
+      Width = 24.000000000000000000
+      object TTMSFMXHTMLText
+        StyleName = 'text'
+        Align = alClient
+        Color = claBlack
+        Font.Size = 14.000000000000000000
+        Font.Style = [fsBold]
+        Height = 20.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Text = '0'
+        Width = 20.000000000000000000
+        WordWrap = False
+        Version = '1.5.1.0'
+      end
+    end
+  end
+  object TRectangle
+    StyleName = 'TMSFMXTileList2Style1'
+    DesignVisible = False
+    Fill.Color = xFFEFF7DD
+    Height = 257.000000000000000000
+    Position.X = 356.000000000000000000
+    Position.Y = 280.000000000000000000
+    Stroke.Color = xFF66686A
+    Width = 449.000000000000000000
+    object TRectangle
+      StyleName = 'header'
+      Align = alTop
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF95C75D
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFDDFCB5
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.500000000000000000
+      Fill.Gradient.StopPosition.Y = 0.000000000000000036
+      Height = 28.000000000000000000
+      Stroke.Color = xFF66686A
+      Width = 449.000000000000000000
+      object TTMSFMXTileListArrowShape
+        StyleName = 'headerarrowleft'
+        Align = alLeft
+        Cursor = crHandPoint
+        Fill.Kind = bkNone
+        Height = 28.000000000000000000
+        Sides = [sdRight]
+        Stroke.Color = xFF535353
+        Width = 50.000000000000000000
+        ArrowSize = 15.000000000000000000
+      end
+      object TTMSFMXTileListArrowShape
+        StyleName = 'headerarrowright'
+        Align = alRight
+        Cursor = crHandPoint
+        Fill.Kind = bkNone
+        Height = 28.000000000000000000
+        Position.X = 399.000000000000000000
+        Sides = [sdLeft]
+        Stroke.Color = xFF535353
+        Width = 50.000000000000000000
+        Direction = sdRight
+        ArrowSize = 15.000000000000000000
+      end
+      object TRectangle
+        StyleName = 'headerbulletlist'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 28.000000000000000000
+        HitTest = False
+        Stroke.Kind = bkNone
+        Width = 349.000000000000000000
+        object TTMSFMXTileListBulletShape
+          StyleName = 'headerbullet'
+          Align = alCenter
+          Cursor = crHandPoint
+          Height = 15.000000000000000000
+          Visible = False
+          Width = 15.000000000000000000
+        end
+      end
+    end
+    object TRectangle
+      StyleName = 'footer'
+      Align = alBottom
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = xFF95C75D
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = xFFDDFCB5
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.500000000000000000
+      Fill.Gradient.StopPosition.Y = 0.000000000000000036
+      Height = 28.000000000000000000
+      Position.Y = 229.000000000000000000
+      Stroke.Color = xFF66686A
+      Width = 449.000000000000000000
+      object TTMSFMXTileListArrowShape
+        StyleName = 'footerarrowleft'
+        Align = alLeft
+        Cursor = crHandPoint
+        Fill.Kind = bkNone
+        Height = 28.000000000000000000
+        Sides = [sdRight]
+        Stroke.Color = xFF535353
+        Width = 50.000000000000000000
+        ArrowSize = 15.000000000000000000
+      end
+      object TTMSFMXTileListArrowShape
+        StyleName = 'footerarrowright'
+        Align = alRight
+        Cursor = crHandPoint
+        Fill.Kind = bkNone
+        Height = 28.000000000000000000
+        Position.X = 399.000000000000000000
+        Sides = [sdLeft]
+        Stroke.Color = xFF535353
+        Width = 50.000000000000000000
+        Direction = sdRight
+        ArrowSize = 15.000000000000000000
+      end
+      object TRectangle
+        StyleName = 'footerbulletlist'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 28.000000000000000000
+        HitTest = False
+        Stroke.Kind = bkNone
+        Width = 349.000000000000000000
+        object TTMSFMXTileListBulletShape
+          StyleName = 'footerbullet'
+          Align = alCenter
+          Cursor = crHandPoint
+          Height = 15.000000000000000000
+          Visible = False
+          Width = 15.000000000000000000
+        end
+      end
+    end
+    object TTMSFMXClipRectangle
+      StyleName = 'content'
+      Align = alClient
+      ClipChildren = True
+      Fill.Kind = bkNone
+      Height = 201.000000000000000000
+      Stroke.Kind = bkNone
+      Width = 449.000000000000000000
+      object TTMSFMXScrollBox
+        StyleName = 'contentscroll'
+        Align = alClient
+        ClipChildren = True
+        Height = 201.000000000000000000
+        Width = 449.000000000000000000
+        object TRectangle
+          StyleName = 'contentlist'
+          ClipChildren = True
+          Fill.Kind = bkNone
+          Height = 351.000000000000000000
+          HitTest = False
+          Sides = [sdLeft, sdRight]
+          Stroke.Kind = bkNone
+          Width = 481.000000000000000000
+          object TFloatAnimation
+            StyleName = 'contentlistanim'
+            Enabled = True
+            Duration = 0.000009999999747379
+            PropertyName = 'Position.X'
+            StartValue = 0.000000000000000000
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+    end
+    object TTMSFMXTileShape
+      StyleName = 'defaulttile'
+      DisableFocusEffect = False
+      Height = 153.000000000000000000
+      Position.X = 3.000000000000000000
+      Position.Y = 263.000000000000000000
+      TabOrder = 3
+      Visible = False
+      Width = 154.000000000000000000
+      FillSelected.Color = xFFA9DA81
+      FillHover.Color = x96D6F8CD
+      FillDown.Color = xFF78C03E
+      Fill.Color = x00F0F0F0
+      Fill.Kind = bkSolid
+      Stroke.Color = x00808080
+      Stroke.Kind = bkSolid
+      StrokeThickness = 1.000000000000000000
+      object TRectangle
+        StyleName = 'defaulttilecontentwrapper'
+        Align = alClient
+        Fill.Kind = bkNone
+        Height = 151.000000000000000000
+        HitTest = False
+        Margins.Left = 1.000000000000000000
+        Margins.Top = 1.000000000000000000
+        Margins.Right = 1.000000000000000000
+        Margins.Bottom = 1.000000000000000000
+        Stroke.Kind = bkNone
+        Width = 152.000000000000000000
+        object TRectangle
+          StyleName = 'defaulttilecontent'
+          Align = alClient
+          ClipChildren = True
+          Fill.Kind = bkNone
+          Height = 151.000000000000000000
+          HitTest = False
+          Stroke.Kind = bkNone
+          Width = 152.000000000000000000
+          object TTMSFMXBitmap
+            StyleName = 'defaulttilebitmap'
+            Align = alClient
+            Width = 152.000000000000000000
+            Height = 119.000000000000000000
+            ClipChildren = True
+            HitTest = False
+            Version = '1.5.1.0'
+          end
+          object TTMSFMXHTMLText
+            StyleName = 'defaulttilecaption'
+            Align = alTop
+            Color = claBlack
+            Height = 32.000000000000000000
+            HitTest = False
+            Text = 'TTMSFMXHTMLText'
+            Width = 152.000000000000000000
+            Version = '1.5.1.0'
+          end
+        end
+        object TRectangle
+          StyleName = 'defaultdetailtile'
+          Fill.Color = xFFF6F5F5
+          Height = 153.000000000000000000
+          Position.Y = 165.000000000000000000
+          Sides = [sdTop]
+          Stroke.Color = xFF7F7F7F
+          Width = 154.000000000000000000
+          object TRectangle
+            StyleName = 'defaultdetailtilecontentwrapper'
+            Align = alClient
+            ClipChildren = True
+            Fill.Kind = bkNone
+            Height = 153.000000000000000000
+            HitTest = False
+            Stroke.Kind = bkNone
+            Width = 154.000000000000000000
+            object TTMSFMXBitmap
+              StyleName = 'defaultdetailtilebitmap'
+              Align = alLeft
+              Position.X = 5.000000000000000000
+              Position.Y = 5.000000000000000000
+              Width = 50.000000000000000000
+              Height = 143.000000000000000000
+              ClipChildren = True
+              HitTest = False
+              Margins.Left = 5.000000000000000000
+              Margins.Top = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Margins.Bottom = 5.000000000000000000
+              Version = '1.5.1.0'
+            end
+            object TRectangle
+              StyleName = 'defaultdetailtilecontent'
+              Align = alClient
+              ClipChildren = True
+              Fill.Kind = bkNone
+              Height = 153.000000000000000000
+              HitTest = False
+              Stroke.Kind = bkNone
+              Width = 94.000000000000000000
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilecaption'
+                Align = alTop
+                Color = claBlack
+                Font.Size = 14.000000000000000000
+                Font.Style = [fsBold]
+                Height = 41.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Position.X = 5.000000000000000000
+                Position.Y = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+              object TTMSFMXHTMLText
+                StyleName = 'defaultdetailtilenotes'
+                Align = alClient
+                Color = claBlack
+                Height = 96.500000000000000000
+                HitTest = False
+                Margins.Left = 5.000000000000000000
+                Margins.Top = 5.000000000000000000
+                Margins.Right = 5.000000000000000000
+                Margins.Bottom = 5.000000000000000000
+                Text = 'TTMSFMXHTMLText'
+                Width = 84.000000000000000000
+                Version = '1.5.1.0'
+              end
+            end
+          end
+          object TFloatAnimation
+            StyleName = 'defaultdetailtileanim'
+            Duration = 0.400000005960464500
+            PropertyName = 'Position.Y'
+            StartValue = 0.000000000000000000
+            StartFromCurrent = True
+            StopValue = 0.000000000000000000
+          end
+        end
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimx'
+        Enabled = True
+        Duration = 0.800000011920929000        
+        PropertyName = 'Position.X'
+        StartValue = 3.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimy'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Position.Y'
+        StartValue = 263.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimw'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Width'
+        StartValue = 154.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+      object TFloatAnimation
+        StyleName = 'defaulttileanimh'
+        Enabled = True
+        Duration = 0.800000011920929000
+        PropertyName = 'Height'
+        StartValue = 153.000000000000000000
+        StartFromCurrent = True
+        StopValue = 0.000000000000000000
+      end
+    end
+    object TTMSFMXBadge
+      StyleName = 'defaulttilebadge'
+      DisableFocusEffect = False
+      Height = 27.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      StyleLookup = 'TMSFMXTileList2defaulttilebadge1'
+      TabOrder = 4
+      Visible = False
+      Width = 27.000000000000000000
+      Version = '1.5.0.0'
+    end
+  end
+  object TLayout
+    StyleName = 'TMSFMXTileList2contentscroll1'
+    DesignVisible = False
+    Height = 131.000000000000000000
+    Position.X = 254.000000000000000000
+    Position.Y = 343.000000000000000000
+    Width = 334.000000000000000000
+    object TLayout
+      StyleName = 'background'
+      Align = alContents
+      Locked = True
+      Height = 131.000000000000000000
+      Width = 334.000000000000000000
+      object TLayout
+        StyleName = 'content'
+        Align = alClient
+        Height = 115.000000000000000000
+        Width = 318.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'vscrollbar'
+        Align = alRight
+        Height = 115.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orVertical
+        Position.X = 318.000000000000000000
+        Width = 16.000000000000000000
+      end
+      object TScrollBar
+        StyleName = 'hscrollbar'
+        Align = alBottom
+        Height = 16.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orHorizontal
+        Position.Y = 115.000000000000000000
+        Width = 334.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'vsmallscrollbar'
+        Align = alRight
+        Height = 8.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orVertical
+        Margins.Left = 2.000000000000000000
+        Position.X = 99.000000000000000000
+        Position.Y = 2.000000000000000000
+        Visible = False
+        Width = 8.000000000000000000
+      end
+      object TSmallScrollBar
+        StyleName = 'hsmallscrollbar'
+        Align = alBottom
+        Height = 8.000000000000000000
+        SmallChange = 0.000000000000000000
+        Orientation = orHorizontal
+        Margins.Top = 2.000000000000000000
+        Position.X = 2.000000000000000000
+        Position.Y = 113.000000000000000000
+        Visible = False
+        Width = 150.000000000000000000
+      end
+      object TLayout
+        Align = alContents
+        Height = 131.000000000000000000
+        Width = 334.000000000000000000
+        object TLayout
+          Align = alBottom
+          Height = 20.000000000000000000
+          Position.Y = 111.000000000000000000
+          Width = 334.000000000000000000
+          object TSizeGrip
+            StyleName = 'sizegrip'
+            Align = alRight
+            Locked = True
+            Height = 20.000000000000000000
+            Position.X = 314.000000000000000000
+            Width = 20.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object TRoundRect
+    StyleName = 'TMSFMXTileList1defaulttilebadge1'
+    DesignVisible = False
+    Fill.Color = claWhite
+    Height = 30.000000000000000000
+    Position.X = 406.000000000000000000
+    Position.Y = 394.000000000000000000
+    Stroke.Color = xFFADADAD
+    Width = 30.000000000000000000
+    object TRoundRect
+      StyleName = 'badge'
+      Align = alClient
+      Fill.Kind = bkGradient
+      Fill.Gradient.Points = <
+        item
+          Color = claRed
+          Offset = 0.000000000000000000
+        end
+        item
+          Color = claRed
+          Offset = 0.471153855323791500
+        end
+        item
+          Color = xFFFD7E7E
+          Offset = 0.474358975887298600
+        end
+        item
+          Color = xFFFEA7A7
+          Offset = 1.000000000000000000
+        end>
+      Fill.Gradient.StartPosition.X = 0.500000000000000000
+      Fill.Gradient.StartPosition.Y = 1.000000000000000000
+      Fill.Gradient.StopPosition.X = 0.500000000000000000
+      Fill.Gradient.StopPosition.Y = 0.000000000000000000
+      Height = 24.000000000000000000
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Stroke.Color = xFFFD0000
+      Width = 24.000000000000000000
+      object TTMSFMXHTMLText
+        StyleName = 'text'
+        Align = alClient
+        Color = claWhite
+        Font.Size = 14.000000000000000000
+        Font.Style = [fsBold]
+        Height = 20.000000000000000000
+        Margins.Left = 2.000000000000000000
+        Margins.Top = 2.000000000000000000
+        Margins.Right = 2.000000000000000000
+        Margins.Bottom = 2.000000000000000000
+        Text = '0'
+        Width = 20.000000000000000000
+        WordWrap = False
+        Fill.Color = claWhite
+        Version = '1.5.1.0'
+      end
+    end
+    object TShadowEffect
+      StyleName = 'shadow'
+      Distance = 1.000000000000000000
+      Direction = 90.000000000000000000
+      Softness = 0.050000000745058060
+      Opacity = 0.600000023841857900
+      ShadowColor = claBlack
+    end
+  end
+end

@@ -1,0 +1,110 @@
+object Form719: TForm719
+  Left = 0
+  Top = 0
+  Caption = 'TMS software FMX Grid: Editing Demo'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 1920
+  FormFactor.Height = 1200
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    DisableFocusEffect = False
+    Height = 699.000000000000000000
+    Padding.Left = 6.000000000000000000
+    Padding.Right = 6.000000000000000000
+    Padding.Bottom = 6.000000000000000000
+    TabOrder = 0
+    Width = 1024.000000000000000000
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '1.5.5.3'
+    Fill.Kind = bkSolid
+    Stroke.Color = claBlack
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+    OnGetCellClass = TMSFMXGrid1GetCellClass
+    OnGetCellEditorCustomClassType = TMSFMXGrid1GetCellEditorCustomClassType
+    OnGetCellEditorType = TMSFMXGrid1GetCellEditorType
+    OnCellEditGetData = TMSFMXGrid1CellEditGetData
+    OnCellEditSetData = TMSFMXGrid1CellEditSetData
+    OnGetCellEditorProperties = TMSFMXGrid1GetCellEditorProperties
+    Columns = <
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end>
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 49.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Width = 1024.000000000000000000
+    TabOrder = 1
+    object Label1: TLabel
+      AutoSize = True
+      Font.Size = 16.000000000000000000
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 25.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 
+        'Click on or type in a selected cell to editing. Each column uses' +
+        ' a different inplace editor.'
+      Width = 622.000000000000000000
+      WordWrap = False
+    end
+  end
+end

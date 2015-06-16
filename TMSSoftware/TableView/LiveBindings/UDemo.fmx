@@ -1,0 +1,306 @@
+object Form550: TForm550
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'LiveBindings Demo'
+  ClientHeight = 646
+  ClientWidth = 804
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object TMSFMXTableView1: TTMSFMXTableView
+    Align = alLeft
+    DisableFocusEffect = False
+    Height = 646.000000000000000000
+    TabOrder = 0
+    Width = 337.000000000000000000
+    Fill.Kind = bkSolid
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    CanFocus = True
+    SelectedItemIndex = 0
+    Items = <>
+    Categories = <>
+    MarkText = 'Mark'
+    MoveText = 'Move'
+    ArchiveText = 'Archive'
+    HeaderText = 'List of fish'
+    Version = '1.1.3.4'
+    OnItemCustomize = TMSFMXTableView1ItemCustomize
+  end
+  object Panel1: TPanel
+    Align = alClient
+    Height = 646.000000000000000000
+    StyleLookup = 'Panel1Style1'
+    Width = 467.000000000000000000
+    TabOrder = 1
+    object Label1: TLabel
+      AutoSize = True
+      Font.Style = [fsBold]
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 'Number:'
+      Width = 46.000000000000000000
+      WordWrap = False
+    end
+    object Label3: TLabel
+      AutoSize = True
+      Font.Style = [fsBold]
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 176.000000000000000000
+      Text = 'Notes:'
+      Width = 35.000000000000000000
+      WordWrap = False
+    end
+    object Label4: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 144.000000000000000000
+      Width = 16.000000000000000000
+      WordWrap = False
+    end
+    object Label5: TLabel
+      AutoSize = True
+      Font.Style = [fsBold]
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 144.000000000000000000
+      Text = 'Length (cm):'
+      Width = 64.000000000000000000
+      WordWrap = False
+    end
+    object Label6: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 112.000000000000000000
+      Width = 127.000000000000000000
+      WordWrap = False
+    end
+    object Label7: TLabel
+      AutoSize = True
+      Font.Style = [fsBold]
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 112.000000000000000000
+      Text = 'Species Name:'
+      Width = 75.000000000000000000
+      WordWrap = False
+    end
+    object Label8: TLabel
+      Height = 15.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 16.000000000000000000
+      Width = 120.000000000000000000
+    end
+    object Label9: TLabel
+      AutoSize = True
+      Font.Style = [fsBold]
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 80.000000000000000000
+      Text = 'Common Name:'
+      Width = 83.000000000000000000
+      WordWrap = False
+    end
+    object Label10: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 80.000000000000000000
+      Width = 92.000000000000000000
+      WordWrap = False
+    end
+    object Label11: TLabel
+      AutoSize = True
+      Font.Style = [fsBold]
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 48.000000000000000000
+      Text = 'Category:'
+      Width = 50.000000000000000000
+      WordWrap = False
+    end
+    object Label12: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 48.000000000000000000
+      Width = 63.000000000000000000
+      WordWrap = False
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [igPan]
+      Height = 193.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 176.000000000000000000
+      TabOrder = 11
+      Width = 337.000000000000000000
+      WordWrap = True
+    end
+    object Label2: TLabel
+      Font.Style = [fsBold]
+      Height = 15.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 384.000000000000000000
+      Text = 'Image:'
+      Width = 97.000000000000000000
+    end
+    object ImageControl1: TImageControl
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000FA000000960806000000F7DA95
+        1C000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        00A849444154785EEDC101010000008220FFAF6E484000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        0000000000000000000000000000000000000000000000000000000000000000
+        00000000000000DCAA014AA4000100AE27110000000049454E44AE426082}
+      Height = 217.000000000000000000
+      Position.X = 120.000000000000000000
+      Position.Y = 392.000000000000000000
+      TabOrder = 13
+      Width = 337.000000000000000000
+    end
+    object BindNavigator1: TBindNavigator
+      Align = alBottom
+      Height = 25.000000000000000000
+      Position.Y = 621.000000000000000000
+      Width = 467.000000000000000000
+      DataSource = BindScopeDB1
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+  end
+  object DataSource1: TDataSource
+    DataSet = ClientDataSet1
+    Left = 184
+    Top = 144
+  end
+  object BindScopeDB1: TBindScopeDB
+    DataSource = DataSource1
+    DataSet = ClientDataSet1
+    ScopeMappings = <>
+    Left = 144
+    Top = 64
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 92
+    Top = 141
+    object DBLinkImageControl1Graphic1: TBindDBImageLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Graphic'
+      ImageControl = ImageControl1
+    end
+    object DBLinkLabel2SpeciesNo1: TBindDBTextLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Species No'
+      TextControl = Label8
+    end
+    object DBLinkLabel12Category1: TBindDBTextLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Category'
+      TextControl = Label12
+    end
+    object DBLinkLabel10Common_Name1: TBindDBTextLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Common_Name'
+      TextControl = Label10
+    end
+    object DBLinkLabel6SpeciesName1: TBindDBTextLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Species Name'
+      TextControl = Label6
+    end
+    object DBLinkLabel4Lengthcm1: TBindDBTextLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Length (cm)'
+      TextControl = Label4
+    end
+    object DBLinkMemo1Notes1: TBindDBMemoLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Notes'
+      MemoControl = Memo1
+    end
+    object TMSFMXBindDBTableViewLink1: TTMSFMXBindDBTableViewLink
+      Category = 'DB TableView Links'
+      ControlComponent = TMSFMXTableView1
+      SourceComponent = BindScopeDB1
+      ColumnExpressions = <
+        item
+          ColumnName = 'Common_Name'
+          ColumnIndex = 0
+          SourceMemberName = 'Common_Name'
+          ParseCellExpressions = <>
+          FormatCellExpressions = <
+            item
+              ControlExpression = 'Caption'
+              SourceExpression = 'AsString'
+            end>
+          FormatColumnExpressions = <>
+        end
+        item
+          ColumnName = 'Species Name'
+          ColumnIndex = 1
+          SourceMemberName = 'Species Name'
+          ParseCellExpressions = <>
+          FormatCellExpressions = <
+            item
+              ControlExpression = 'Description'
+              SourceExpression = 'AsString'
+            end>
+          FormatColumnExpressions = <>
+        end
+        item
+          ColumnName = 'Graphic'
+          ColumnIndex = 2
+          SourceMemberName = 'Graphic'
+          ParseCellExpressions = <>
+          FormatCellExpressions = <
+            item
+              ControlExpression = 'Bitmap'
+              SourceExpression = 'Self'
+            end>
+          FormatColumnExpressions = <>
+        end>
+      PosControlExpressions = <
+        item
+          ControlExpression = 'SelectedItemIndex'
+          SourceExpression = 'Math_Max(0, DBUtils_ActiveRecord(Self))'
+        end>
+      PosSourceExpressions = <
+        item
+          ControlExpression = 'SelectedItemIndex+1'
+          SourceExpression = 'DBUtils_ValidRecNo(Self)'
+        end>
+      FormatControlExpressions = <>
+      ClearControlExpressions = <>
+    end
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 144
+    Top = 232
+  end
+end

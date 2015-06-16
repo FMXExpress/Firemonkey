@@ -1,0 +1,101 @@
+object Form15: TForm15
+  Left = 0
+  Top = 0
+  Caption = 'TMS FMX PassLock Demo'
+  ClientHeight = 463
+  ClientWidth = 346
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TMSFMXPassLock1: TTMSFMXPassLock
+    Align = alClient
+    DisableFocusEffect = False
+    Height = 342.000000000000000000
+    TabOrder = 1
+    Width = 346.000000000000000000
+    LineThickness = 3.000000000000000000
+    PassValue = '0000'
+    ShowEntry = True
+    Spacing = 6.000000000000000000
+    Version = '1.0.0.0'
+    OnPasswordMatch = TMSFMXPassLock1PasswordMatch
+    OnPasswordMismatch = TMSFMXPassLock1PasswordMismatch
+    OnPasswordLearned = TMSFMXPassLock1PasswordLearned
+    OnPasswordConfirmed = TMSFMXPassLock1PasswordConfirmed
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 121.000000000000000000
+    Width = 346.000000000000000000
+    TabOrder = 0
+    object Label1: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Lock type:'
+      Width = 120.000000000000000000
+    end
+    object rbNumbers: TRadioButton
+      GroupName = 'locktype'
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 16.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 1
+      Text = 'Numbers'
+      Width = 120.000000000000000000
+      OnChange = rbNumbersChange
+    end
+    object rbPattern: TRadioButton
+      GroupName = 'locktype'
+      Height = 19.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 56.000000000000000000
+      TabOrder = 4
+      Text = 'Pattern'
+      Width = 120.000000000000000000
+      OnChange = rbNumbersChange
+    end
+    object rbEnter: TRadioButton
+      GroupName = 'mode'
+      Height = 19.000000000000000000
+      Position.X = 144.000000000000000000
+      Position.Y = 56.000000000000000000
+      TabOrder = 2
+      Text = 'Enter password'
+      Width = 120.000000000000000000
+    end
+    object rbLearn: TRadioButton
+      GroupName = 'mode'
+      Height = 19.000000000000000000
+      IsChecked = True
+      Position.X = 144.000000000000000000
+      Position.Y = 32.000000000000000000
+      TabOrder = 3
+      Text = 'Learn password'
+      Width = 120.000000000000000000
+      OnChange = rbLearnChange
+    end
+    object Label2: TLabel
+      Height = 17.000000000000000000
+      Position.X = 144.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Mode:'
+      Width = 120.000000000000000000
+    end
+    object Label3: TLabel
+      Height = 17.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 88.000000000000000000
+      Text = 'Result:'
+      Width = 313.000000000000000000
+    end
+  end
+end

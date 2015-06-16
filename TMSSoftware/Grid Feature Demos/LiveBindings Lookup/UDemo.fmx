@@ -1,0 +1,328 @@
+object Form719: TForm719
+  Left = 0
+  Top = 0
+  Caption = 'TMS software FMX Grid: LiveBindings Lookup Demo'
+  ClientHeight = 457
+  ClientWidth = 989
+  Position = poScreenCenter
+  FormFactor.Width = 1920
+  FormFactor.Height = 1200
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object Panel2: TPanel
+    Align = alBottom
+    Height = 40.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Position.Y = 417.000000000000000000
+    StyleLookup = 'Panel1Style1'
+    Width = 989.000000000000000000
+    TabOrder = 0
+    object NavigatorBindSourceDB1: TBindNavigator
+      Height = 25.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Width = 240.000000000000000000
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+  end
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    DisableFocusEffect = False
+    Height = 417.000000000000000000
+    StyleLookup = 'TMSFMXGrid1Style1'
+    TabOrder = 1
+    Width = 989.000000000000000000
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    ColumnCount = 14
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '2.0.6.0'
+    Fill.Kind = bkSolid
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+    OnGetCellEditorType = TMSFMXGrid1GetCellEditorType
+    Columns = <
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claNull
+        ID = ''
+        Width = 68.000000000000000000
+      end>
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 384
+    Top = 168
+    object LinkGridToDataSource1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = TMSFMXGrid1
+      AutoBufferCount = False
+      Columns = <>
+    end
+  end
+  object ADOTable1: TADOTable
+    Connection = ADOConnection2
+    CursorType = ctStatic
+    TableName = 'tblTest'
+    Left = 560
+    Top = 232
+    object ADOTable1ID: TAutoIncField
+      FieldName = 'ID'
+      ReadOnly = True
+    end
+    object ADOTable1ShortText: TWideStringField
+      FieldName = 'Short Text'
+      Size = 255
+    end
+    object ADOTable1Number: TIntegerField
+      FieldName = 'Number'
+    end
+    object ADOTable1Currency: TBCDField
+      FieldName = 'Currency'
+      Precision = 19
+    end
+    object ADOTable1DateTime: TDateTimeField
+      FieldName = 'Date / Time'
+    end
+    object ADOTable1YesNo: TBooleanField
+      FieldName = 'Yes / No'
+    end
+    object ADOTable1LongText1: TWideMemoField
+      FieldName = 'Long Text 1'
+      BlobType = ftWideMemo
+    end
+    object ADOTable1Hyperlink: TWideMemoField
+      FieldName = 'Hyperlink'
+      BlobType = ftWideMemo
+    end
+    object ADOTable1Country: TIntegerField
+      FieldName = 'Country'
+    end
+    object ADOTable1CountryName: TStringField
+      FieldKind = fkLookup
+      FieldName = 'CountryName'
+      LookupDataSet = ADOTable2
+      LookupKeyFields = 'ID'
+      LookupResultField = 'Country'
+      KeyFields = 'Country'
+      Lookup = True
+    end
+    object ADOTable1Field1: TIntegerField
+      DisplayLabel = 'Car'
+      FieldName = 'Field1'
+    end
+    object ADOTable1CarName: TStringField
+      FieldKind = fkLookup
+      FieldName = 'CarName'
+      LookupDataSet = ADOTable3
+      LookupKeyFields = 'ID'
+      LookupResultField = 'Field1'
+      KeyFields = 'Field1'
+      Lookup = True
+    end
+  end
+  object ADOConnection2: TADOConnection
+    LoginPrompt = False
+    Mode = cmShareDenyNone
+    Provider = 'Microsoft.ACE.OLEDB.15.0'
+    Left = 376
+    Top = 320
+  end
+  object ADOTable2: TADOTable
+    Connection = ADOConnection2
+    CursorType = ctStatic
+    TableName = 'tblCountries'
+    Left = 456
+    Top = 272
+  end
+  object ADOTable3: TADOTable
+    Connection = ADOConnection2
+    CursorType = ctStatic
+    TableName = 'tblCars'
+    Left = 480
+    Top = 336
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = ADOTable2
+    ScopeMappings = <>
+    Left = 576
+    Top = 312
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = ADOTable3
+    ScopeMappings = <>
+    Left = 344
+    Top = 248
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ADOTable1
+    ScopeMappings = <>
+    Left = 480
+    Top = 216
+  end
+end

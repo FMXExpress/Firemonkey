@@ -1,0 +1,204 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F631F1A8-0A5C-4151-9C1A-DBE7993BB29C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="XLSIO\XlsIODemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Grouping\GroupDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Filtering\FilteringDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FixedFreezeCells\FixedFreezeDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Clipboard\ClipboardDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Sorting\SortingDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Cell Controls\CellControlsDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Editing\EditingDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Merging\MergingDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Styling\StylingDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RTFIO\RTFIODemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Embedded Controls\EmbeddedControlsDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Printing\PrintingDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LiveBindings\LiveBindings.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LiveBindings Lookup\LiveBindingsLookup.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="XlsIODemo">
+        <MSBuild Projects="XLSIO\XlsIODemo.dproj"/>
+    </Target>
+    <Target Name="XlsIODemo:Clean">
+        <MSBuild Projects="XLSIO\XlsIODemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XlsIODemo:Make">
+        <MSBuild Projects="XLSIO\XlsIODemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GroupDemo">
+        <MSBuild Projects="Grouping\GroupDemo.dproj"/>
+    </Target>
+    <Target Name="GroupDemo:Clean">
+        <MSBuild Projects="Grouping\GroupDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GroupDemo:Make">
+        <MSBuild Projects="Grouping\GroupDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FilteringDemo">
+        <MSBuild Projects="Filtering\FilteringDemo.dproj"/>
+    </Target>
+    <Target Name="FilteringDemo:Clean">
+        <MSBuild Projects="Filtering\FilteringDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FilteringDemo:Make">
+        <MSBuild Projects="Filtering\FilteringDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FixedFreezeDemo">
+        <MSBuild Projects="FixedFreezeCells\FixedFreezeDemo.dproj"/>
+    </Target>
+    <Target Name="FixedFreezeDemo:Clean">
+        <MSBuild Projects="FixedFreezeCells\FixedFreezeDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FixedFreezeDemo:Make">
+        <MSBuild Projects="FixedFreezeCells\FixedFreezeDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClipboardDemo">
+        <MSBuild Projects="Clipboard\ClipboardDemo.dproj"/>
+    </Target>
+    <Target Name="ClipboardDemo:Clean">
+        <MSBuild Projects="Clipboard\ClipboardDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClipboardDemo:Make">
+        <MSBuild Projects="Clipboard\ClipboardDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SortingDemo">
+        <MSBuild Projects="Sorting\SortingDemo.dproj"/>
+    </Target>
+    <Target Name="SortingDemo:Clean">
+        <MSBuild Projects="Sorting\SortingDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SortingDemo:Make">
+        <MSBuild Projects="Sorting\SortingDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CellControlsDemo">
+        <MSBuild Projects="Cell Controls\CellControlsDemo.dproj"/>
+    </Target>
+    <Target Name="CellControlsDemo:Clean">
+        <MSBuild Projects="Cell Controls\CellControlsDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CellControlsDemo:Make">
+        <MSBuild Projects="Cell Controls\CellControlsDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EditingDemo">
+        <MSBuild Projects="Editing\EditingDemo.dproj"/>
+    </Target>
+    <Target Name="EditingDemo:Clean">
+        <MSBuild Projects="Editing\EditingDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EditingDemo:Make">
+        <MSBuild Projects="Editing\EditingDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MergingDemo">
+        <MSBuild Projects="Merging\MergingDemo.dproj"/>
+    </Target>
+    <Target Name="MergingDemo:Clean">
+        <MSBuild Projects="Merging\MergingDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MergingDemo:Make">
+        <MSBuild Projects="Merging\MergingDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StylingDemo">
+        <MSBuild Projects="Styling\StylingDemo.dproj"/>
+    </Target>
+    <Target Name="StylingDemo:Clean">
+        <MSBuild Projects="Styling\StylingDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StylingDemo:Make">
+        <MSBuild Projects="Styling\StylingDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RTFIODemo">
+        <MSBuild Projects="RTFIO\RTFIODemo.dproj"/>
+    </Target>
+    <Target Name="RTFIODemo:Clean">
+        <MSBuild Projects="RTFIO\RTFIODemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RTFIODemo:Make">
+        <MSBuild Projects="RTFIO\RTFIODemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EmbeddedControlsDemo">
+        <MSBuild Projects="Embedded Controls\EmbeddedControlsDemo.dproj"/>
+    </Target>
+    <Target Name="EmbeddedControlsDemo:Clean">
+        <MSBuild Projects="Embedded Controls\EmbeddedControlsDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmbeddedControlsDemo:Make">
+        <MSBuild Projects="Embedded Controls\EmbeddedControlsDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PrintingDemo">
+        <MSBuild Projects="Printing\PrintingDemo.dproj"/>
+    </Target>
+    <Target Name="PrintingDemo:Clean">
+        <MSBuild Projects="Printing\PrintingDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PrintingDemo:Make">
+        <MSBuild Projects="Printing\PrintingDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LiveBindings">
+        <MSBuild Projects="LiveBindings\LiveBindings.dproj"/>
+    </Target>
+    <Target Name="LiveBindings:Clean">
+        <MSBuild Projects="LiveBindings\LiveBindings.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LiveBindings:Make">
+        <MSBuild Projects="LiveBindings\LiveBindings.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LiveBindingsLookup">
+        <MSBuild Projects="LiveBindings Lookup\LiveBindingsLookup.dproj"/>
+    </Target>
+    <Target Name="LiveBindingsLookup:Clean">
+        <MSBuild Projects="LiveBindings Lookup\LiveBindingsLookup.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LiveBindingsLookup:Make">
+        <MSBuild Projects="LiveBindings Lookup\LiveBindingsLookup.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="XlsIODemo;GroupDemo;FilteringDemo;FixedFreezeDemo;ClipboardDemo;SortingDemo;CellControlsDemo;EditingDemo;MergingDemo;StylingDemo;RTFIODemo;EmbeddedControlsDemo;PrintingDemo;LiveBindings;LiveBindingsLookup"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="XlsIODemo:Clean;GroupDemo:Clean;FilteringDemo:Clean;FixedFreezeDemo:Clean;ClipboardDemo:Clean;SortingDemo:Clean;CellControlsDemo:Clean;EditingDemo:Clean;MergingDemo:Clean;StylingDemo:Clean;RTFIODemo:Clean;EmbeddedControlsDemo:Clean;PrintingDemo:Clean;LiveBindings:Clean;LiveBindingsLookup:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="XlsIODemo:Make;GroupDemo:Make;FilteringDemo:Make;FixedFreezeDemo:Make;ClipboardDemo:Make;SortingDemo:Make;CellControlsDemo:Make;EditingDemo:Make;MergingDemo:Make;StylingDemo:Make;RTFIODemo:Make;EmbeddedControlsDemo:Make;PrintingDemo:Make;LiveBindings:Make;LiveBindingsLookup:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

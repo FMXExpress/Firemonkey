@@ -1,0 +1,39 @@
+object Form4: TForm4
+  Left = 0
+  Top = 0
+  Caption = 'TMS software FMX Grid: embedded controls demo'
+  ClientHeight = 432
+  ClientWidth = 782
+  Visible = False
+  OnCreate = FormCreate
+  StyleLookup = 'backgroundstyle'
+  object TMSFMXGrid1: TTMSFMXGrid
+    Position.Point = '(40,24)'
+    Width = 568.000000000000000000
+    Height = 368.000000000000000000
+    StyleLookup = 'TMSFMXGrid1Style1'
+    TabOrder = 0
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.ColumnSizing = True
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '1.1.0.0'
+    Fill.Kind = bkSolid
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+  end
+  object Button1: TButton
+    Position.Point = '(632,24)'
+    Width = 129.000000000000000000
+    Height = 22.000000000000000000
+    OnClick = Button1Click
+    TabOrder = 1
+    Text = 'Remove cell grid'
+  end
+end

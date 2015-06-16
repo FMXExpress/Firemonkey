@@ -1,0 +1,155 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'TMS FMX Grid Filter'
+  ClientHeight = 661
+  ClientWidth = 981
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alTop
+    DisableFocusEffect = False
+    Height = 270.000000000000000000
+    TabOrder = 1
+    Width = 981.000000000000000000
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrolling = True
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '2.1.1.1'
+    Fill.Kind = bkSolid
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+    Columns = <
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FixedFont.Style = [fsBold]
+        FixedFontColor = claBlack
+        FontColor = claBlack
+        ID = ''
+        Width = 68.000000000000000000
+      end>
+  end
+  object TMSFMXGridFilterPanel1: TTMSFMXGridFilterPanel
+    Align = alClient
+    Height = 391.000000000000000000
+    Width = 981.000000000000000000
+    TabOrder = 0
+    Grid = TMSFMXGrid1
+    LabelFont.Family = 'Arial'
+    ButtonAddIcon.PNG = {
+      89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+      61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      012D49444154384F9593BB4A034114404753A895AD827F2012B5144B41B0100B
+      4B0B2BFD03F11B62A9E20304C142B0B2B2B1573022A87F20886093546AA1E239
+      B309CC6E36861C38E1CE257776EEECDD50C20C1EE217DEB4FCC003AC625746F0
+      044F71D24481293CC3231C369162F1032EC5D5FF2CE31DE636F1C965C58BB890
+      853956D036C320DA7305AF4C1418C7B12CCC7189A35875834DDCC17EA9E18681
+      B7DD8D755CCBC20E06B0E98FAF69CE0CD8B3C76E338FBFE87FDABCE2751686BA
+      2DA4FCE077A2C565B9361E207CC6B09C5E2D34BCFD097CC1772C328D3EF129AE
+      F2CC62C5167C9F5B66FA641B8FDDE0116DC3092BE285BD65618E55F4C4CF7105
+      8EA5E3E984F5C2E25B1C8AAB0437B19D73743AE30DB730B6E70BDCC38EE2143F
+      D97D6C621DEFB181BBE8179910C21F19203BD107DD47660000000049454E44AE
+      426082}
+    ButtonRemoveIcon.PNG = {
+      89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+      61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      012049444154384F8D92CB2E444110402F1658F905CF9588B011F1071662E1CF
+      104622915848ACAC7C004262C4AFB0C20AE7744F4BDDAB8D39C9C9547752D553
+      75ABA9B086C7F881F703DFF00857F14FA6F114CF70D98B0E2B788E3D9CF22262
+      F2336EA7D37076F0115B457C7994E4C22EDA66338EF63C81D75EC0162EE4B0C5
+      126EE6B0B9C2194C33B152ECD9E4BBC16F6111BD9B4DA78C0F1F1A38ED2EB188
+      DE624C96317C35F033D528456AC985BE3318C6177EA2AFD548F7EF296C137B9E
+      C31B9CC788C92F066E984B5270DADD81996C2BB1C83AEE1BF829DCB0829FAAD6
+      B333D9C861E2127F1E3E41376C54F6F0208719D7D2F574C3FEC3E4079C4CA780
+      455CAA0B7449E2E48DEDD9BFEDCBBF9223CEC40D7349FAF8844EDB81C56143D3
+      7C03801F316AA9A71FE00000000049454E44AE426082}
+    TitleFont.Family = 'Arial'
+    TitleFont.Size = 12.000000000000000000
+    Title = 'Grid Filter'
+    UI.ColumnLabel = 'Column'
+    UI.ColumnHint = 'The column from the selected grid'
+    UI.OperationLabel = 'Operation'
+    UI.OperationHint = 'Select an operation'
+    UI.ValueLabel = 'Value'
+    UI.CaseLabel = 'Case'
+    UI.CaseHint = 'Is the value case sensitive'
+    UI.RestoreButton = 'Restore Filter'
+    UI.ApplyButton = 'Apply Filter'
+    UI.RestartButton = 'Restart Filter'
+    UI.OperationEqual = 'Equal'
+    UI.OperationNotEqual = 'Not Equal'
+    UI.OperationContains = 'Contains'
+    UI.OperationBeginsWith = 'Begins With'
+    UI.OperationEndsWith = 'Ends With'
+    UI.OperationSmallerThen = 'Smaller Then'
+    UI.OperationLargerThen = 'Larger Then'
+    UI.OperationSmallerOrEqual = 'Smaller Or Equal'
+    UI.OperationLargerOrEqual = 'Larger Or Equal'
+    UI.OperatorAnd = 'And'
+    UI.OperatorOr = 'Or'
+  end
+end

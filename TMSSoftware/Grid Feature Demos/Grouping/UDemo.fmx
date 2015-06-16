@@ -1,0 +1,134 @@
+object Form719: TForm719
+  Left = 0
+  Top = 0
+  Caption = 'TMS software FMX Grid: grouping demo'
+  ClientHeight = 645
+  ClientWidth = 938
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    DisableFocusEffect = False
+    Height = 596.000000000000000000
+    Padding.Left = 6.000000000000000000
+    Padding.Right = 6.000000000000000000
+    Padding.Bottom = 6.000000000000000000
+    TabOrder = 0
+    Width = 938.000000000000000000
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.ColumnDragging = True
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '2.0.3.9'
+    Fill.Kind = bkSolid
+    Stroke.Color = claBlack
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+    Columns = <
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end>
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 49.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Width = 938.000000000000000000
+    TabOrder = 1
+    object Button1: TButton
+      Height = 22.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'Group'
+      Width = 80.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Height = 22.000000000000000000
+      Position.X = 136.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 1
+      Text = 'Ungroup'
+      Visible = False
+      Width = 80.000000000000000000
+      OnClick = Button2Click
+    end
+    object Label1: TLabel
+      AutoSize = True
+      Height = 19.000000000000000000
+      Position.X = 248.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 
+        'After grouping, click column headers to perform sort within grou' +
+        'ps'
+      Width = 329.000000000000000000
+      WordWrap = False
+    end
+    object NodeButton: TButton
+      Height = 22.000000000000000000
+      Position.X = 648.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 3
+      Text = 'Close all nodes'
+      Visible = False
+      Width = 105.000000000000000000
+      OnClick = NodeButtonClick
+    end
+  end
+end

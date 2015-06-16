@@ -1,0 +1,137 @@
+object Form27: TForm27
+  Left = 0
+  Top = 0
+  Caption = 'Form27'
+  ClientHeight = 727
+  ClientWidth = 1260
+  FormFactor.Width = 1920
+  FormFactor.Height = 1200
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1260
+  DesignerHeight = 752
+  DesignerDeviceName = '10.1 WXGA Android Tablet'
+  DesignerOrientation = 3
+  DesignerOSVersion = ''
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    DisableFocusEffect = False
+    Height = 679.000000000000000000
+    StyleLookup = 'TMSFMXGrid1Style1'
+    TabOrder = 0
+    Width = 1260.000000000000000000
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '2.0.1.3'
+    Fill.Kind = bkSolid
+    Stroke.Color = claBlack
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+    Columns = <
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end
+      item
+        BorderWidth = 1.000000000000000000
+        Color = claNull
+        Editor = etEdit
+        Fixed = False
+        FontColor = claNull
+        ID = ''
+      end>
+  end
+  object Panel1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 1
+    Width = 1260.000000000000000000
+    object Button1: TButton
+      Font.Size = 16.000000000000000000
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 48.000000000000000000
+      Position.X = 4.000000000000000000
+      Position.Y = 6.000000000000000000
+      StyleLookup = 'speedbuttonstyle'
+      TabOrder = 0
+      Text = 'Group'
+      Width = 80.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Font.Size = 16.000000000000000000
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 48.000000000000000000
+      Position.X = 88.000000000000000000
+      Position.Y = 6.000000000000000000
+      StyleLookup = 'speedbuttonstyle'
+      TabOrder = 1
+      Text = 'Ungroup'
+      Visible = False
+      Width = 96.000000000000000000
+      OnClick = Button2Click
+    end
+    object Label1: TLabel
+      AutoSize = True
+      Font.Size = 16.000000000000000000
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 23.000000000000000000
+      Position.X = 200.000000000000000000
+      Position.Y = 11.000000000000000000
+      Text = 
+        'After grouping, click column headers to perform sort within grou' +
+        'ps'
+      Width = 480.000000000000000000
+      WordWrap = False
+    end
+    object NodeButton: TButton
+      Font.Size = 16.000000000000000000
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 48.000000000000000000
+      Position.X = 880.000000000000000000
+      Position.Y = 6.000000000000000000
+      StyleLookup = 'speedbuttonstyle'
+      TabOrder = 3
+      Text = 'Close all nodes'
+      Visible = False
+      Width = 129.000000000000000000
+      OnClick = NodeButtonClick
+    end
+  end
+end

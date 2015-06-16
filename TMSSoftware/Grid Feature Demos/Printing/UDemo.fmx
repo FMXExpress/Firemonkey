@@ -1,0 +1,73 @@
+object Form719: TForm719
+  Left = 0
+  Top = 0
+  Caption = 'TMS software FMX Grid: Printing Demo'
+  ClientHeight = 645
+  ClientWidth = 938
+  Position = poScreenCenter
+  FormFactor.Width = 1920
+  FormFactor.Height = 1200
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  object TMSFMXGrid1: TTMSFMXGrid
+    Align = alClient
+    DisableFocusEffect = False
+    Height = 585.000000000000000000
+    Padding.Left = 6.000000000000000000
+    Padding.Right = 6.000000000000000000
+    Padding.Bottom = 6.000000000000000000
+    Position.X = 6.000000000000000000
+    Position.Y = 54.000000000000000000
+    Width = 926.000000000000000000
+    DefaultRowHeight = 24.000000000000000000
+    DefaultColumnWidth = 68.000000000000000000
+    Options.Editing.CalcFormat = '%g'
+    Options.Grouping.CalcFormat = '%g'
+    Options.Grouping.GroupCountFormat = '(%d)'
+    Options.IO.XMLEncoding = 'ISO-8859-1'
+    Options.Mouse.TouchScrollingSensitivity = 0.100000001490116100
+    Options.Printing.PageNumberFormat = '%g'
+    Version = '1.5.3.1'
+    Fill.Kind = bkSolid
+    Stroke.Color = claBlack
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+    TopRow = 1
+    LeftCol = 1
+    OnGetCellClass = TMSFMXGrid1GetCellClass
+    OnGetCellProperties = TMSFMXGrid1GetCellProperties
+    OnCellAnchorClick = TMSFMXGrid1CellAnchorClick
+  end
+  object Panel1: TPanel
+    Align = alTop
+    Height = 49.000000000000000000
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Width = 928.000000000000000000
+    object Button1: TButton
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 'Print'
+      Width = 80.000000000000000000
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      DisableFocusEffect = False
+      Height = 22.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = 16.000000000000000000
+      Text = 'Print To Image'
+      Width = 97.000000000000000000
+      OnClick = Button2Click
+    end
+  end
+  object TMSFMXGridPrintPreviewDialog1: TTMSFMXGridPrintPreviewDialog
+    Left = 456
+    Top = 312
+  end
+end

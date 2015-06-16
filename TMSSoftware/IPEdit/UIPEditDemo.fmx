@@ -1,0 +1,147 @@
+object Form7: TForm7
+  Left = 0
+  Top = 0
+  Caption = 'TMSFMXIPEdit demo'
+  ClientHeight = 209
+  ClientWidth = 660
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Label1: TLabel
+    Height = 22.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 64.000000000000000000
+    Text = 'IP v4:'
+    Width = 120.000000000000000000
+  end
+  object Label2: TLabel
+    Height = 22.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 32.000000000000000000
+    Text = 'Address type'
+    Width = 120.000000000000000000
+  end
+  object Label3: TLabel
+    Height = 22.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 96.000000000000000000
+    Text = 'IP v6:'
+    Width = 120.000000000000000000
+  end
+  object Label4: TLabel
+    Height = 22.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 128.000000000000000000
+    Text = 'Mac:'
+    Width = 120.000000000000000000
+  end
+  object TMSFMXIPEditv4: TTMSFMXIPEdit
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    Position.X = 64.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 1
+    Width = 140.000000000000000000
+    Version = '1.0.0.0'
+    IPAddress = '192.168.36.125'
+    Fill.Kind = bkSolid
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+  end
+  object TMSFMXIPEditv6: TTMSFMXIPEdit
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    Position.X = 64.000000000000000000
+    Position.Y = 96.000000000000000000
+    TabOrder = 2
+    Width = 320.000000000000000000
+    Version = '1.0.0.0'
+    IPAddress = '000E:0000:0225:FFEE:01FF:C552:9865:AC01'
+    IPAddressType = IPv6
+    Fill.Kind = bkSolid
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+  end
+  object TMSFMXIPEditMac: TTMSFMXIPEdit
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    HitTest = False
+    Position.X = 64.000000000000000000
+    Position.Y = 128.000000000000000000
+    TabOrder = 3
+    Width = 175.000000000000000000
+    Version = '1.0.0.0'
+    IPAddress = 'A1-B2-C3-D4-E5-F6'
+    IPAddressType = Mac
+    Fill.Kind = bkSolid
+    Stroke.Kind = bkSolid
+    StrokeThickness = 1.000000000000000000
+  end
+  object btGet: TButton
+    Height = 22.000000000000000000
+    Position.X = 392.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 4
+    Text = 'Get values'
+    Width = 80.000000000000000000
+    OnClick = btGetClick
+  end
+  object btSet: TButton
+    Height = 22.000000000000000000
+    Position.X = 480.000000000000000000
+    Position.Y = 32.000000000000000000
+    TabOrder = 5
+    Text = 'Set values'
+    Width = 80.000000000000000000
+    OnClick = btSetClick
+  end
+  object TMSFMXEditv4: TTMSFMXEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 6
+    Text = '0'
+    Position.X = 392.000000000000000000
+    Position.Y = 64.000000000000000000
+    Width = 250.000000000000000000
+    Height = 22.000000000000000000
+    KillFocusByReturn = False
+    Version = '1.5.1.8'
+    EditType = etValidChars
+    Lookup.Separator = ';'
+    ValidChars = '0123456789.'
+  end
+  object TMSFMXEditv6: TTMSFMXEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 7
+    Text = '0'
+    Position.X = 392.000000000000000000
+    Position.Y = 96.000000000000000000
+    Width = 250.000000000000000000
+    Height = 22.000000000000000000
+    KillFocusByReturn = False
+    Version = '1.5.1.8'
+    EditType = etValidChars
+    Lookup.Separator = ';'
+    ValidChars = '0123456789abcdef:'
+  end
+  object TMSFMXEditMac: TTMSFMXEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 8
+    Text = '0'
+    Position.X = 392.000000000000000000
+    Position.Y = 128.000000000000000000
+    Width = 250.000000000000000000
+    Height = 22.000000000000000000
+    KillFocusByReturn = False
+    Version = '1.5.1.8'
+    EditType = etValidChars
+    Lookup.Separator = ';'
+    ValidChars = '0123456789abcdef-'
+  end
+end

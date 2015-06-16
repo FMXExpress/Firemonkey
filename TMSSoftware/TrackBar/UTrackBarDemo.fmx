@@ -1,0 +1,151 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'TMSFMXTrackBar demo'
+  ClientHeight = 365
+  ClientWidth = 561
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TMSFMXTrackBar1: TTMSFMXTrackBar
+    DisableFocusEffect = False
+    Height = 265.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 0
+    Width = 90.000000000000000000
+    Fill.Color = claLightblue
+    Fill.Kind = bkSolid
+    Stroke.Color = claDarkgray
+    Stroke.Kind = bkSolid
+    ThumbSize = 35.000000000000000000
+    Maximum = 100.000000000000000000
+    Step = 20.000000000000000000
+    ValueFormat = '%g db'
+    TickMarkSize = 15.000000000000000000
+    ProgressFontColor = claWhite
+    SnapToTickMarks = False
+    SnapMargin = 10.000000000000000000
+    Version = '1.0.0.0'
+    OnValueChanging = TMSFMXTrackBar1ValueChanging
+    object Label3: TLabel
+      Font.Size = 30.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      Height = 33.000000000000000000
+      Position.X = 144.000000000000000000
+      Position.Y = 80.000000000000000000
+      Text = 'Value:'
+      Width = 81.000000000000000000
+    end
+    object lblVal: TLabel
+      Font.Size = 30.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      Height = 41.000000000000000000
+      Position.X = 233.000000000000000000
+      Position.Y = 77.000000000000000000
+      Text = '0'
+      Width = 152.000000000000000000
+    end
+  end
+  object TMSFMXTrackBar2: TTMSFMXTrackBar
+    DisableFocusEffect = False
+    Height = 74.000000000000000000
+    Position.X = 184.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 1
+    Width = 329.000000000000000000
+    Fill.Color = claLightblue
+    Fill.Kind = bkSolid
+    Stroke.Color = claDarkgray
+    Stroke.Kind = bkSolid
+    Direction = dHorizontal
+    ThumbSize = 35.000000000000000000
+    Maximum = 100.000000000000000000
+    Step = 20.000000000000000000
+    ValueFormat = '%g db'
+    TickMarkSize = 15.000000000000000000
+    ProgressFontColor = claWhite
+    SnapMargin = 10.000000000000000000
+    Version = '1.0.0.0'
+  end
+  object cbtick: TCheckBox
+    Height = 19.000000000000000000
+    Position.X = 184.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 2
+    Text = 'Snap to tickmarks'
+    Width = 120.000000000000000000
+    OnChange = cbtickChange
+  end
+  object cbfmt: TCheckBox
+    Height = 19.000000000000000000
+    IsChecked = True
+    Position.X = 184.000000000000000000
+    Position.Y = 192.000000000000000000
+    TabOrder = 3
+    Text = 'Show format'
+    Width = 120.000000000000000000
+    OnChange = cbfmtChange
+  end
+  object cbShowTick: TCheckBox
+    Height = 19.000000000000000000
+    IsChecked = True
+    Position.X = 184.000000000000000000
+    Position.Y = 216.000000000000000000
+    TabOrder = 4
+    Text = 'Show tickmarks'
+    Width = 120.000000000000000000
+    OnChange = cbShowTickChange
+  end
+  object SpinBox1: TSpinBox
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 5
+    Cursor = crIBeam
+    Position.X = 240.000000000000000000
+    Position.Y = 248.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    OnChange = SpinBox1Change
+  end
+  object Label1: TLabel
+    Height = 17.000000000000000000
+    Position.X = 184.000000000000000000
+    Position.Y = 248.000000000000000000
+    Text = 'Min.'
+    Width = 41.000000000000000000
+  end
+  object Label2: TLabel
+    Height = 17.000000000000000000
+    Position.X = 184.000000000000000000
+    Position.Y = 280.000000000000000000
+    Text = 'Max.'
+    Width = 41.000000000000000000
+  end
+  object SpinBox2: TSpinBox
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 8
+    Cursor = crIBeam
+    Max = 1000.000000000000000000
+    Value = 100.000000000000000000
+    Position.X = 240.000000000000000000
+    Position.Y = 280.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    OnChange = SpinBox2Change
+  end
+  object Button1: TButton
+    Height = 22.000000000000000000
+    Position.X = 464.000000000000000000
+    Position.Y = 328.000000000000000000
+    TabOrder = 9
+    Text = 'OK'
+    Width = 80.000000000000000000
+    OnClick = Button1Click
+  end
+end

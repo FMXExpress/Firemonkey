@@ -1,0 +1,206 @@
+object Form11: TForm11
+  Left = 0
+  Top = 0
+  Caption = 'TMS FMX Rating Grid Demo'
+  ClientHeight = 513
+  ClientWidth = 1045
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Label1: TLabel
+    Height = 17.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = 'TV feature comparison'
+    Width = 321.000000000000000000
+  end
+  object Label2: TLabel
+    Height = 17.000000000000000000
+    Position.X = 550.000000000000000000
+    Position.Y = 16.000000000000000000
+    Text = 'Hotel survey feedback'
+    Width = 321.000000000000000000
+  end
+  object TMSFMXRatingGrid1: TTMSFMXRatingGrid
+    Height = 401.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 3
+    Width = 457.000000000000000000
+    Categories = <
+      item
+        Title = 'Wi-FI'
+      end
+      item
+        Title = 'Smart TV'
+      end
+      item
+        Title = 'DLNA'
+      end
+      item
+        Title = 'Camera'
+      end
+      item
+        Title = 'Browser'
+      end
+      item
+        Title = '3D'
+      end
+      item
+        Title = 'Curved'
+      end
+      item
+        Title = 'Bluetooth'
+      end
+      item
+        Title = 'ARC via HDMI'
+      end>
+    CategoryType = catFeature
+    CheckOffBitmap.PNG = {
+      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+      F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      00F949444154484BDD953D6EC24010853FA581925C2247E00E297300EE419796
+      2E874889448E81C211DCE5022402A14013B323CD8805D99E592B6E78D293ADF1
+      FBD9B5A535F7873F784A7C95AB8E5C843D22F885550DF5163E2325614F2E347A
+      25459E1F78CB859EA129DCF8054B95F1A0D7563CC23495BFE725727F82C5185E
+      74E4A36B4542DB4954A7B1D788987B871BBC923686C20DA52545E1866849AF70
+      43323EEF61DD142C3CC04E342A2FC3A03B88861B07FDC0C65089172E21DEF3D6
+      9248B868A23A8DBDA0EDB013DE9ABC92A2C3EE1B3613982561A523315523981F
+      E143473E9A56D5F94E138A3DB9C10B37147B449038CC3FF9FF016731AAD90D9F
+      71364E0000000049454E44AE426082}
+    CheckOnBitmap.PNG = {
+      89504E470D0A1A0A0000000D4948445200000018000000180806000000E0773D
+      F8000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+      020449444154484BC5943F481C4114C6BF9B9DDB5DE3815A68A38506D122551A
+      5309A727560A0A6952049232A4B153B0F00F040229ECD4CEC2C24E6B45C53F8D
+      580B828DA560082170496ECFDD5BF78DEF5C67B3BB77E8497EB0CCCCB7C3FB76
+      DEBCB7786E323C3686B9421F7E96BFA0B5E90C196F030B7B178D33A0E0BF2BDB
+      68CE76ABB5EB6D4162A6310614BCE8AE23670DB07247D1397DBA010577F115D2
+      98644543F0F8787CE35D52704AD3D34E405F5F764F615A2DAC84146FCE911313
+      8F3F4135EF71C1CBCE2F0A1E56116D2E799FF0D7EB429B394B2F949E448DBCC3
+      C73C167716682AEE37DBE614DA9ADEA2E41E2B2D09F54ECCA4E55DF50023E0F8
+      2BDA66DBEA50474F32A14B45E623AF7482B2A4DA7F9801014B0EF33C84EA39CE
+      84D67F6E3EF04AA7E45C2327DF47D31B9CC0DDE7B94ED484465A573B358A652D
+      C7DD9D81C2CB93A0A4DEC0949DAC8590E6545E61A8F73B3C7F1A767684DF44F0
+      D790A9ACE2F0F2070BF7184A1CED3D4A3491A2076EA51D59638C151DBA54E1CF
+      27555ED868D51444FF27697033A595B5DEC96442654A95540B6A26530EA40527
+      F44EA6CDB61C5415518BACB5542B38F1EFAFA21E934833A561F0A843175FE86F
+      0E12986725849AC9169FEBF97A22DE80C8775F0557940B9ED7ACDC35D30B395E
+      6F7022D9804E91EF39D74C0CF90D8BBB9B6A5E27C90644D5C417D440072AEF31
+      CDF41F016E016500D0F9387CD2F70000000049454E44AE426082}
+    Items = <
+      item
+        Style = [fsBold]
+        Title = '40 inch TVs'
+        Separator = True
+      end
+      item
+        Title = 'Philips 40PFK4309'
+        Value = 17
+      end
+      item
+        Title = 'Samsung UE32H5500'
+        Value = 492
+      end
+      item
+        Title = 'LG 42LB56'
+        Value = 17
+      end
+      item
+        Title = 'Sony KDL40R'
+        Value = 82
+      end
+      item
+        Title = 'JVC LT-40'
+        Value = 34
+      end
+      item
+        Style = [fsBold]
+        Title = '50 inch TVs'
+        Separator = True
+      end
+      item
+        Title = 'Samsung UE50H'
+        Value = 503
+      end
+      item
+        Title = 'LG 50LB5'
+        Value = 19
+      end
+      item
+        Title = 'Panasonic TX-50'
+        Value = 139
+      end>
+    Spacing = 6.000000000000000000
+    Version = '1.0.0.0'
+  end
+  object TMSFMXRatingGrid2: TTMSFMXRatingGrid
+    Height = 401.000000000000000000
+    Position.X = 550.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 2
+    Width = 457.000000000000000000
+    Categories = <
+      item
+        Title = 'Extremely satisfied'
+      end
+      item
+        Title = 'Satisfied'
+      end
+      item
+        Title = 'Neither'
+      end
+      item
+        Title = 'Dissatisfied'
+      end
+      item
+        Title = 'Extremely dissastified'
+      end
+      item
+        Title = 'Not applicable'
+      end>
+    Items = <
+      item
+        Style = [fsBold]
+        Title = 'ROOM'
+        Separator = True
+        Value = -1
+      end
+      item
+        Title = 'Quality of guest room'
+        Value = -1
+      end
+      item
+        Title = 'Comfort of bed'
+        Value = -1
+      end
+      item
+        Title = 'Quality of room amenities'
+        Value = -1
+      end
+      item
+        Title = 'Operations of room equipment'
+        Value = -1
+      end
+      item
+        Title = 'Quietness of room'
+        Value = -1
+      end
+      item
+        Title = 'Cleanness of bathroom'
+        Value = -1
+      end
+      item
+        Title = 'Shower pressure'
+        Value = -1
+      end>
+    Spacing = 6.000000000000000000
+    Version = '1.0.0.0'
+  end
+end
