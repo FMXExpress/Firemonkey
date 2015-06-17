@@ -1,0 +1,10 @@
+Title: MessageAlert
+
+Brief Description: This application shows how to pop-up various alert messages both standard one button information box style, and 
+multiple button input box styles that allows various confirmations.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: button, alert, message, notifications, confirmation, messagebox

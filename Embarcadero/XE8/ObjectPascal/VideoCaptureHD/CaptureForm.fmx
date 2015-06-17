@@ -1,0 +1,72 @@
+object Form240: TForm240
+  Left = 0
+  Top = 0
+  Caption = 'FireMonkey Video Capture'
+  ClientHeight = 413
+  ClientWidth = 557
+  Fill.Color = xFFF2F2F2
+  Fill.Kind = Solid
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Contents
+    Size.Width = 557.000000000000000000
+    Size.Height = 413.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Layout1: TLayout
+    Align = Top
+    Padding.Left = 5.000000000000000000
+    Padding.Top = 5.000000000000000000
+    Padding.Right = 5.000000000000000000
+    Padding.Bottom = 5.000000000000000000
+    Size.Width = 557.000000000000000000
+    Size.Height = 39.000000000000000000
+    Size.PlatformDefault = False
+    object CaptureButton: TSpeedButton
+      Align = Right
+      Opacity = 0.850000023841857900
+      Position.X = 341.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 129.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Save to Bitmap...'
+      OnClick = CaptureButtonClick
+    end
+    object Ellipse1: TEllipse
+      Fill.Color = xFF09D428
+      Opacity = 0.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 12.000000000000000000
+      Size.Width = 15.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object StopButton: TSpeedButton
+      Align = Right
+      Position.X = 470.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Stop'
+      OnClick = StopButtonClick
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = 'png'
+    Filter = 'PNG Files|*.png'
+    Options = [ofOverwritePrompt, ofHideReadOnly, ofEnableSizing]
+    Left = 54
+    Top = 342
+  end
+end

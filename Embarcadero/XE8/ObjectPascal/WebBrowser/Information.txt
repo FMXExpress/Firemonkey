@@ -1,0 +1,11 @@
+Title: WebBrowser Code Snippet
+
+Brief Description: This code snippet shows you how to use a TWebBrowser component in a desktop app. 
+The application consists of an edit box, a button and the web browser component. Type an address in the edit 
+box and press the "GO" button in order to redirect the browser to your address.
+
+Language: Object Pascal
+
+Platforms supported: All desktop 
+
+Keywords: Internet, web, browser, mobile, http, www

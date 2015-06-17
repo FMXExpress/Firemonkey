@@ -1,0 +1,81 @@
+inherited frmHeartMonitor_iPhone4in: TfrmHeartMonitor_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited pnlMain: TPanel
+    Size.Width = 320.000000000000000000
+    Size.Height = 381.000000000000000000
+    inherited MainList: TListBox
+      Size.Width = 320.000000000000000000
+      Size.Height = 381.000000000000000000
+      inherited DeviceScan: TListBoxItem
+        Size.Width = 320.000000000000000000
+        inherited lblDevice: TLabel
+          Margins.Top = 15.000000000000000000
+          Position.Y = 15.000000000000000000
+          Size.Height = 29.000000000000000000
+        end
+        inherited btnScan: TButton
+          Position.X = 235.000000000000000000
+        end
+      end
+      inherited BPM: TListBoxItem
+        Size.Width = 320.000000000000000000
+        inherited lblBPM: TLabel
+          Size.Width = 320.000000000000000000
+        end
+      end
+      inherited Image: TListBoxItem
+        Size.Width = 320.000000000000000000
+        inherited imgHeart: TImage
+          Size.Width = 320.000000000000000000
+        end
+      end
+      inherited Location: TListBoxItem
+        Size.Width = 320.000000000000000000
+        inherited lblBodyLocation: TLabel
+          Size.Width = 315.000000000000000000
+        end
+      end
+      inherited Status: TListBoxItem
+        Size.Width = 320.000000000000000000
+      end
+      inherited Monitoring: TListBoxItem
+        Size.Width = 320.000000000000000000
+        inherited btnMonitorize: TButton
+          Size.Width = 310.000000000000000000
+        end
+      end
+    end
+  end
+  inherited pnlLog: TPanel
+    Position.Y = 425.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 123.000000000000000000
+    inherited LogList: TListBox
+      Size.Width = 310.000000000000000000
+      Size.Height = 113.000000000000000000
+      inherited ListBoxGroupHeader1: TListBoxGroupHeader
+        Size.Width = 310.000000000000000000
+        Size.Height = 56.000000000000000000
+      end
+      inherited ListBoxItem1: TListBoxItem
+        Position.Y = 56.000000000000000000
+        Size.Width = 310.000000000000000000
+        inherited Memo1: TMemo
+          Margins.Bottom = 35.000000000000000000
+          Size.Width = 300.000000000000000000
+          Size.Height = 70.000000000000000000
+        end
+      end
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+end

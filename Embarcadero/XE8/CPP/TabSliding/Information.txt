@@ -1,0 +1,10 @@
+Title: TabSliding
+
+Brief Description: This snippet shows you how to use a TabControl with TabPosition set to tpDots in order to enable scrolling of 
+tab items on iOS devices. The application has 2 tab items each one containing a different image.
+
+Language: C++
+
+Platforms supported: iOS, Android
+
+Keywords: tab, dots, slide, image, Android, iOS

@@ -1,0 +1,440 @@
+object FrDeviceExplorer: TFrDeviceExplorer
+  Left = 0
+  Top = 0
+  Caption = 'LE Bluetooth device explorer'
+  ClientHeight = 625
+  ClientWidth = 985
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object tmAnimateFindDevices: TTimer
+    Enabled = False
+    Interval = 250
+    OnTimer = tmAnimateFindDevicesTimer
+    Left = 488
+    Top = 312
+  end
+  object ScrollBox1: TScrollBox
+    Align = Client
+    Size.Width = 985.000000000000000000
+    Size.Height = 625.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Panel2: TPanel
+      Position.X = 8.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 544.000000000000000000
+      Size.Height = 463.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'droppanel'
+      TabOrder = 0
+      object Label2: TLabel
+        Align = MostTop
+        StyledSettings = [Family, Size, FontColor]
+        Size.Width = 544.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.HorzAlign = Center
+        Text = 'Services'
+      end
+      object CornerButton3: TCornerButton
+        Align = Top
+        Corners = []
+        Position.Y = 37.000000000000000000
+        Sides = [Top, Left, Bottom, Right]
+        Size.Width = 544.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Get services'
+        XRadius = 7.000000000000000000
+        YRadius = 7.000000000000000000
+        OnClick = CornerButton3Click
+      end
+      object PbServices: TProgressBar
+        Align = Top
+        Orientation = Horizontal
+        Position.Y = 23.000000000000000000
+        Size.Width = 544.000000000000000000
+        Size.Height = 14.000000000000000000
+        Size.PlatformDefault = False
+        Value = 1.000000000000000000
+      end
+      object TvCharacteristics: TTreeView
+        Align = Client
+        Size.Width = 544.000000000000000000
+        Size.Height = 376.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        OnClick = TvCharacteristicsClick
+      end
+      object btnGetValues: TButton
+        Align = Top
+        Position.Y = 63.000000000000000000
+        Size.Width = 544.000000000000000000
+        Size.Height = 24.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = 
+          'Get all Values (Performs a read operation for each characteristi' +
+          'c found)'
+        OnClick = btnGetValuesClick
+      end
+    end
+    object Panel1: TPanel
+      Position.X = 208.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 537.000000000000000000
+      Size.Height = 123.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label4: TLabel
+        Align = MostTop
+        StyledSettings = [Family, Size, FontColor]
+        Size.Width = 537.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.HorzAlign = Center
+        Text = 'Devices'
+      end
+      object Panel4: TPanel
+        Align = Top
+        Margins.Left = 15.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 15.000000000000000000
+        Position.Y = 28.000000000000000000
+        Size.Width = 507.000000000000000000
+        Size.Height = 55.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Button1: TButton
+          Align = Left
+          Size.Width = 129.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Find devices'
+          OnClick = Button1Click
+        end
+        object Button2: TButton
+          Align = Right
+          Position.X = 448.000000000000000000
+          Size.Width = 59.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Select'
+          OnClick = Button2Click
+        end
+        object CbDevices: TComboBox
+          Align = Client
+          Size.Width = 319.000000000000000000
+          Size.Height = 45.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+        object PbFindDevices: TProgressBar
+          Align = Bottom
+          Orientation = Horizontal
+          Position.Y = 45.000000000000000000
+          Size.Width = 507.000000000000000000
+          Size.Height = 10.000000000000000000
+          Size.PlatformDefault = False
+          Value = 1.000000000000000000
+        end
+      end
+      object Panel5: TPanel
+        Align = Client
+        Margins.Left = 15.000000000000000000
+        Margins.Right = 15.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 507.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Label1: TLabel
+          Align = Left
+          Margins.Right = 5.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Trailing
+          Text = 'Current Device : '
+        end
+        object EdCurrentDevice: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Client
+          TabOrder = 0
+          ReadOnly = True
+          Size.Width = 405.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object Panel6: TPanel
+      Position.X = 569.000000000000000000
+      Position.Y = 156.000000000000000000
+      Size.Width = 386.000000000000000000
+      Size.Height = 434.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object ScrollBox2: TScrollBox
+        Align = Client
+        Size.Width = 386.000000000000000000
+        Size.Height = 434.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Panel8: TPanel
+          Align = Top
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Position.Y = 37.000000000000000000
+          Size.Width = 376.000000000000000000
+          Size.Height = 288.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label5: TLabel
+            Position.Y = 8.000000000000000000
+            Size.Width = 128.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Trailing
+            TextSettings.WordWrap = False
+            Text = 'Characteristic name :'
+          end
+          object Label8: TLabel
+            Position.X = 8.000000000000000000
+            Position.Y = 40.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = 'Characteristic UID :'
+          end
+          object btnRefresh: TSpeedButton
+            Position.X = 80.000000000000000000
+            Position.Y = 96.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'refreshtoolbutton'
+            Text = 'btnRefresh'
+            OnClick = btnRefreshClick
+          end
+          object btnSuscribe: TButton
+            Position.X = 48.000000000000000000
+            Position.Y = 136.000000000000000000
+            Size.Width = 81.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Suscribe'
+            OnClick = btnSuscribeClick
+          end
+          object btnWrite: TButton
+            Position.X = 8.000000000000000000
+            Position.Y = 242.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 30.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = 'Write'
+            OnClick = btnWriteClick
+          end
+          object EdCharacWrite: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 5
+            Position.X = 96.000000000000000000
+            Position.Y = 240.000000000000000000
+            Size.Width = 137.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object CbWriteTypes: TComboBox
+            Items.Strings = (
+              'as String UTF8'
+              'as String NOUTF8'
+              'as UInt8'
+              'as UInt16'
+              'as UInt32'
+              'as UInt64'
+              'as Int8'
+              'as Int16'
+              'as Int32'
+              'as Int64'
+              'as Double'
+              'as Single')
+            ItemIndex = 0
+            Position.X = 237.000000000000000000
+            Position.Y = 238.000000000000000000
+            Size.Width = 124.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+          end
+          object EdCharacName: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 7
+            Position.X = 136.000000000000000000
+            Size.Width = 217.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object EdCharacUID: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 8
+            Position.X = 136.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 217.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label7: TLabel
+            Position.X = 8.000000000000000000
+            Position.Y = 72.000000000000000000
+            TextSettings.HorzAlign = Trailing
+            Text = 'Current value :'
+          end
+          object LbCurrentValue: TListBox
+            Position.X = 136.000000000000000000
+            Position.Y = 66.000000000000000000
+            Size.Width = 217.000000000000000000
+            Size.Height = 167.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            AlternatingRowBackground = True
+            DisableFocusEffect = True
+            DefaultItemStyles.ItemStyle = ''
+            DefaultItemStyles.GroupHeaderStyle = ''
+            DefaultItemStyles.GroupFooterStyle = ''
+          end
+        end
+        object Panel7: TPanel
+          Align = MostTop
+          Size.Width = 386.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object lbCurrentService: TLabel
+            Align = Client
+            Size.Width = 386.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+          end
+        end
+        object Panel9: TPanel
+          Align = Top
+          Position.Y = 330.000000000000000000
+          Size.Width = 386.000000000000000000
+          Size.Height = 104.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label6: TLabel
+            Align = Top
+            StyledSettings = [Family, Size, FontColor]
+            Margins.Left = 30.000000000000000000
+            Margins.Top = 5.000000000000000000
+            Position.X = 30.000000000000000000
+            Position.Y = 5.000000000000000000
+            Size.Width = 356.000000000000000000
+            Size.Height = 17.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Style = [fsBold]
+            Text = 'Available operations'
+          end
+          object CbRead: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 24.000000000000000000
+            Size.Width = 81.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Read'
+          end
+          object cbWriteNoResponse: TCheckBox
+            Position.X = 112.000000000000000000
+            Position.Y = 48.000000000000000000
+            Size.Width = 129.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Write No Response'
+          end
+          object cbBroadcast: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 72.000000000000000000
+            Size.Width = 97.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Broadcast'
+          end
+          object CbWrite: TCheckBox
+            Position.X = 8.000000000000000000
+            Position.Y = 48.000000000000000000
+            Size.Width = 73.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = 'Write'
+          end
+          object cbSignedWrite: TCheckBox
+            Position.X = 264.000000000000000000
+            Position.Y = 48.000000000000000000
+            TabOrder = 5
+            Text = 'Signed Write'
+          end
+          object cbExtendedProp: TCheckBox
+            Position.X = 112.000000000000000000
+            Position.Y = 72.000000000000000000
+            Size.Width = 161.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            Text = 'Extended Properties'
+          end
+          object cbNotify: TCheckBox
+            Position.X = 112.000000000000000000
+            Position.Y = 24.000000000000000000
+            Size.Width = 73.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            Text = 'Notify'
+          end
+          object cbIndicate: TCheckBox
+            Position.X = 264.000000000000000000
+            Position.Y = 24.000000000000000000
+            Size.Width = 81.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 8
+            Text = 'Indicate'
+          end
+          object Panel3: TPanel
+            Align = Client
+            Opacity = 0.000000000000000000
+            Size.Width = 386.000000000000000000
+            Size.Height = 82.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 10
+          end
+        end
+      end
+    end
+  end
+  object tmAnimateFindServices: TTimer
+    Enabled = False
+    OnTimer = tmAnimateFindServicesTimer
+    Left = 496
+    Top = 256
+  end
+end

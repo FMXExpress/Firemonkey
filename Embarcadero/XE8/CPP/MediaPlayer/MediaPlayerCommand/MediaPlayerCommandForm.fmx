@@ -1,0 +1,69 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'RemoteCommand'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object lbPlayers: TListBox
+    Position.X = 8.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 305.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnClick = lbPlayersClick
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object lbDiscoveredPlayers: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Discovered Players:'
+  end
+  object ButtonFindPlayers: TButton
+    Position.X = 112.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Find Players'
+    OnClick = ButtonFindPlayersClick
+  end
+  object ButtonPlayPause: TButton
+    Position.X = 105.000000000000000000
+    Position.Y = 320.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Play / Pause'
+    OnClick = ButtonPlayPauseClick
+  end
+  object CommandManager: TTetheringManager
+    OnEndManagersDiscovery = CommandManagerEndManagersDiscovery
+    OnEndProfilesDiscovery = CommandManagerEndProfilesDiscovery
+    OnRequestManagerPassword = CommandManagerRequestManagerPassword
+    Text = 'CommandApp'
+    AllowedAdapters = 'Network'
+    Left = 56
+    Top = 464
+  end
+  object CommandApp: TTetheringAppProfile
+    Manager = CommandManager
+    Text = 'CommandApp'
+    Actions = <>
+    Resources = <>
+    Left = 224
+    Top = 456
+  end
+end

@@ -1,0 +1,11 @@
+Title: CameraComponent
+
+Brief Description: This code snippet shows you how to manipulate the camera on your mobile device. 
+The snippet allows you to select either the front facing camera or the back facing camera. Also you can select 
+whether to use the flash (always on or automatic) or not.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android (note that Android targeting for this snippet requires XE5 Update 1.)
+
+Keywords: camera, flash, front, back, facing, iOS

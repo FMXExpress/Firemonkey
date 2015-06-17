@@ -1,0 +1,15 @@
+inherited CameraComponentForm_LgXhdpiPh: TCameraComponentForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited btnStartCamera: TButton
+    Size.Width = 460.000000000000000000
+  end
+  inherited btnStopCamera: TButton
+    Size.Width = 460.000000000000000000
+  end
+  inherited imgCameraView: TImage
+    Size.Width = 449.000000000000000000
+    Size.Height = 530.000000000000000000
+  end
+end

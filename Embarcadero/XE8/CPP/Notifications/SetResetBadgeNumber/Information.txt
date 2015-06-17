@@ -1,0 +1,10 @@
+Title: Set / Reset Badge Number
+
+Brief Description: This code snippet shows you how to use the Notification API in order to set the badge number on the 
+application icon on iOS to a specified value or to reset the badge number to 0.
+
+
+Language: C++
+
+Platforms supported: iOS, Android
+

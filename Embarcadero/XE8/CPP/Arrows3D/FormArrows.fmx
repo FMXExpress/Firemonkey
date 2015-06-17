@@ -1,0 +1,124 @@
+object FormArrows3d: TFormArrows3d
+  Left = 0
+  Top = 0
+  Caption = 'FireMonkey Arrows 3D'
+  ClientHeight = 480
+  ClientWidth = 728
+  FormFactor.Width = 1280
+  FormFactor.Height = 875
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Viewport3D1: TViewport3D
+    Align = Client
+    Camera = CameraZ
+    Color = claPowderblue
+    Size.Width = 727.999980328976400000
+    Size.Height = 480.000013083082800000
+    Size.PlatformDefault = False
+    UsingDesignCamera = False
+    OnMouseDown = Viewport3D1MouseDown
+    OnMouseMove = Viewport3D1MouseMove
+    OnMouseWheel = Viewport3D1MouseWheel
+    object DummyXY: TDummy
+      Width = 0.999999984306749000
+      Height = 0.999999984306749000
+      Depth = 0.999999984306749000
+      object CameraZ: TCamera
+        AngleOfView = 45.000001011790640000
+        Position.Z = -9.999999843067494000
+        Width = 0.999999984306749000
+        Height = 0.999999984306749000
+        Depth = 0.999999984306749000
+        object Light1: TLight
+          Color = claWhite
+          LightType = Directional
+          SpotCutOff = 180.000000611188700000
+          Width = 0.999999984306749000
+          Height = 0.999999984306749000
+          Depth = 0.999999984306749000
+        end
+      end
+    end
+    object Dummy1: TDummy
+      Scale.X = 1.999999968613499000
+      Scale.Y = 1.999999968613499000
+      Scale.Z = 1.999999968613499000
+      Width = 0.999999984306749000
+      Height = 0.999999984306749000
+      Depth = 0.999999984306749000
+      object CylX: TCylinder
+        Width = 0.099999998430674940
+        Height = 3.999999937226998000
+        Depth = 0.099999998430674940
+        MaterialSource = LightMaterialSourceX
+        object ConeX: TCone
+          Position.Y = -1.999999968613499000
+          Width = 0.199999996861349900
+          Height = 0.499999992153374700
+          Depth = 0.199999996861349900
+          SubdivisionsCap = 3
+          MaterialSource = LightMaterialSourceX
+        end
+      end
+      object CylY: TCylinder
+        RotationAngle.Z = 90.000002023581290000
+        Width = 0.099999998430674940
+        Height = 3.999999937226998000
+        Depth = 0.099999998430674940
+        MaterialSource = LightMaterialSourceY
+        Quanternion = '(0,0,0.70710678550007,0.70710678550007)'
+        object ConeY: TCone
+          Position.Y = -1.999999968613499000
+          Width = 0.199999996861349900
+          Height = 0.499999992153374700
+          Depth = 0.199999996861349900
+          SubdivisionsCap = 3
+          MaterialSource = LightMaterialSourceY
+        end
+      end
+      object CylZ: TCylinder
+        RotationAngle.X = 269.999992326848500000
+        Width = 0.099999998430674940
+        Height = 3.999999937226998000
+        Depth = 0.099999998430674940
+        MaterialSource = LightMaterialSourceZ
+        Quanternion = '(0.707106716780593,0,0,-0.707106854219547)'
+        object ConeZ: TCone
+          Position.Y = -1.999999968613499000
+          Width = 0.199999996861349900
+          Height = 0.499999992153374700
+          Depth = 0.199999996861349900
+          SubdivisionsCap = 3
+          MaterialSource = LightMaterialSourceZ
+        end
+      end
+    end
+  end
+  object LightMaterialSourceX: TLightMaterialSource
+    Diffuse = claRed
+    Ambient = claMaroon
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 48
+    Top = 16
+  end
+  object LightMaterialSourceY: TLightMaterialSource
+    Diffuse = claGreen
+    Ambient = claGreen
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 48
+    Top = 72
+  end
+  object LightMaterialSourceZ: TLightMaterialSource
+    Diffuse = claDarkblue
+    Ambient = claBlue
+    Emissive = claNull
+    Specular = xFF606060
+    Shininess = 30
+    Left = 48
+    Top = 136
+  end
+end

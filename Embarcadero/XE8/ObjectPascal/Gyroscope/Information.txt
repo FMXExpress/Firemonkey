@@ -1,0 +1,9 @@
+Title: Gyroscope
+
+Brief Description: This code snippet shows you how to use the Gyroscope in order to rotate a 3D cube when the iOS or Android device is tilted.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: 3D, cube, rotate, gyroscope, tilt, acceleration, angle, iOS, Android

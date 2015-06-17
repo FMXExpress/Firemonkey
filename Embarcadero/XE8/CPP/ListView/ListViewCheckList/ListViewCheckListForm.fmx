@@ -1,0 +1,61 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 3
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    OnUpdateObjects = ListView1UpdateObjects
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 567.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ItemAppearanceObjects.ItemObjects.Accessory.AccessoryType = Checkmark
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+    CanSwipeDelete = False
+    OnItemClick = ListView1ItemClick
+    ShowSelection = False
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    RecordCount = 20
+    FieldDefs = <
+      item
+        Name = 'ColorsName1'
+        Generator = 'ColorsNames'
+        Options = []
+        ReadOnly = False
+        CustomFormat = '%s + '#39' abcdefghijklmnopqrstuvwxyz'#39
+      end>
+    ScopeMappings = <>
+    Left = 128
+    Top = 136
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = PrototypeBindSource1
+      FillDisplayFieldName = 'ColorsName1'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

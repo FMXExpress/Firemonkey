@@ -1,0 +1,413 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Expander: TExpander
+    Align = alTop
+    Font.Size = 14.000000000000000000
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 281.000000000000000000
+    ShowCheck = False
+    Text = 'Settings'
+    Width = 320.000000000000000000
+    TabOrder = 0
+    ContentSize = '256'
+    object lbServer: TLabel
+      Font.Size = 14.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      Height = 20.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 45.000000000000000000
+      Text = 'Server'
+      Width = 80.000000000000000000
+      Trimming = ttCharacter
+    end
+    object lbPort: TLabel
+      Font.Size = 14.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      Height = 21.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 80.000000000000000000
+      Text = 'Port'
+      Width = 82.000000000000000000
+      Trimming = ttCharacter
+    end
+    object lbDatabase: TLabel
+      Font.Size = 14.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      Height = 21.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 115.000000000000000000
+      Text = 'Database'
+      Width = 82.000000000000000000
+      Trimming = ttCharacter
+    end
+    object lbUserName: TLabel
+      Font.Size = 14.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      Height = 21.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 150.000000000000000000
+      Text = 'User Name'
+      Width = 82.000000000000000000
+      Trimming = ttCharacter
+    end
+    object lbPassword: TLabel
+      Font.Size = 14.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      Height = 21.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 185.000000000000000000
+      Text = 'Password'
+      Width = 82.000000000000000000
+      Trimming = ttCharacter
+    end
+    object edServer: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 5
+      Font.Size = 14.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = 40.000000000000000000
+      Width = 200.000000000000000000
+      Height = 31.000000000000000000
+      Enabled = False
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      KillFocusByReturn = False
+    end
+    object edDatabase: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 6
+      Font.Size = 14.000000000000000000
+      Text = 'fish.db3'
+      Position.X = 104.000000000000000000
+      Position.Y = 110.000000000000000000
+      Width = 200.000000000000000000
+      Height = 31.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      KillFocusByReturn = False
+    end
+    object edUserName: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 7
+      Font.Size = 14.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = 145.000000000000000000
+      Width = 200.000000000000000000
+      Height = 31.000000000000000000
+      Enabled = False
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      KillFocusByReturn = False
+    end
+    object edPassword: TEdit
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 8
+      Font.Size = 14.000000000000000000
+      Password = True
+      Position.X = 104.000000000000000000
+      Position.Y = 180.000000000000000000
+      Width = 200.000000000000000000
+      Height = 31.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      KillFocusByReturn = False
+    end
+    object btnConnect: TButton
+      Height = 30.000000000000000000
+      Position.X = 100.000000000000000000
+      Position.Y = 220.000000000000000000
+      TabOrder = 9
+      Text = 'Connect'
+      Trimming = ttCharacter
+      Width = 120.000000000000000000
+      OnClick = btnConnectClick
+    end
+    object cbProvider: TComboBox
+      DisableFocusEffect = False
+      Height = 31.000000000000000000
+      ItemIndex = 0
+      Position.X = 104.000000000000000000
+      Position.Y = 4.000000000000000000
+      TabOrder = 10
+      Width = 200.000000000000000000
+      OnChange = cbProviderChange
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'SQLite'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'Oracle'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'MySQL'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'PostgreSQL'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'InterBase'
+        Width = 19.000000000000000000
+      end
+      object TListBoxItem
+        Height = 19.000000000000000000
+        Text = 'SQL Server'
+        Width = 19.000000000000000000
+      end
+    end
+    object lbProvider: TLabel
+      Font.Size = 14.000000000000000000
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+      Height = 20.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 10.000000000000000000
+      Text = 'Provider'
+      Width = 80.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object pMain: TPanel
+    Touch.GestureManager = GestureManager
+    OnGesture = pMainGesture
+    Align = alClient
+    Height = 179.000000000000000000
+    Width = 320.000000000000000000
+    TabOrder = 1
+    object lbFishName: TLabel
+      Align = alTop
+      Font.Size = 14.000000000000000000
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 20.000000000000000000
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+      Trimming = ttCharacter
+    end
+    object iPicture: TImage
+      MultiResBitmap = <
+        item
+          Width = 250
+          Height = 150
+          PNG = {
+            89504E470D0A1A0A0000000D49484452000000FA000000960806000000F7DA95
+            1C000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            02A549444154785EEDD08100000000C3A0F9531FE4855061C0800103060C1830
+            60C0800103060C183060C0800103060C183060C0800103060C183060C0800103
+            060C183060C0800103060C183060C0800103060C183060C0800103060C183060
+            C0800103060C183060C0800103060C183060C0800103060C183060C080010306
+            0C183060C0800103060C183060C0800103060C183060C0800103060C183060C0
+            800103060C183060C0800103060C183060C0800103060C183060C0800103060C
+            183060C0800103060C183060C0800103060C183060C0800103060C183060C080
+            0103060C183060C0800103060C183060C0800103060C183060C0800103060C18
+            3060C0800103060C183060C0800103060C183060C0800103060C183060C08001
+            03060C183060C0800103060C183060C0800103060C183060C0800103060C1830
+            60C0800103060C183060C0800103060C183060C0800103060C183060C0800103
+            060C183060C0800103060C183060C0800103060C183060C0800103060C183060
+            C0800103060C183060C0800103060C183060C0800103060C183060C080010306
+            0C183060C0800103060C183060C0800103060C183060C0800103060C183060C0
+            800103060C183060C0800103060C183060C0800103060C183060C0800103060C
+            183060C0800103060C183060C0800103060C183060C0800103060C183060C080
+            0103060C183060C0800103060C183060C0800103060C183060C0800103060C18
+            3060C0800103060C183060C0800103060C183060C0800103060C183060C08001
+            03060C183060C0800103060C183060C0800103060C183060C0800103060C1830
+            60C0800103060C183060C0800103060C183060C0800103060C183060C0800103
+            060C183060C0800103060C183060C0800103060C183060C0800103060C183060
+            C0800103BF03034AA4000183DEAD4E0000000049454E44AE426082}
+        end>
+      Align = alTop
+      Height = 138.000000000000000000
+      Position.Y = 20.000000000000000000
+      Width = 320.000000000000000000
+    end
+    object pInfo: TPanel
+      Align = alTop
+      Height = 56.000000000000000000
+      Position.Y = 158.000000000000000000
+      Width = 320.000000000000000000
+      TabOrder = 2
+      object Label1: TLabel
+        Font.Size = 14.000000000000000000
+        StyledSettings = [ssFamily, ssStyle, ssFontColor]
+        Height = 20.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Text = 'Species Name:'
+        Width = 105.000000000000000000
+        Trimming = ttCharacter
+      end
+      object lbSpeciesName: TLabel
+        Font.Size = 14.000000000000000000
+        Font.Style = [fsBold]
+        StyledSettings = [ssFamily, ssFontColor]
+        Height = 20.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 8.000000000000000000
+        Width = 180.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label2: TLabel
+        Font.Size = 14.000000000000000000
+        StyledSettings = [ssFamily, ssStyle, ssFontColor]
+        Height = 20.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 32.000000000000000000
+        Text = 'Category:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object lbCategory: TLabel
+        Font.Size = 14.000000000000000000
+        Font.Style = [fsBold]
+        StyledSettings = [ssFamily, ssFontColor]
+        Height = 20.000000000000000000
+        Position.X = 128.000000000000000000
+        Position.Y = 32.000000000000000000
+        Width = 180.000000000000000000
+        Trimming = ttCharacter
+      end
+    end
+    object meDescription: TMemo
+      Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+      Align = alClient
+      Height = 0.000000000000000000
+      TabOrder = 3
+      Width = 320.000000000000000000
+      CanFocus = False
+      ReadOnly = True
+      WordWrap = True
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    end
+    object nbPort: TNumberBox
+      Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+      TabOrder = 4
+      Cursor = crIBeam
+      Max = 65535.000000000000000000
+      Position.X = 104.000000000000000000
+      Position.Y = -176.000000000000000000
+      Width = 200.000000000000000000
+      Height = 31.000000000000000000
+      VertIncrement = 5.000000000000000000
+      Enabled = False
+    end
+  end
+  object UniConnection: TUniConnection
+    SpecificOptions.Strings = ()
+    LoginPrompt = False
+    Left = 256
+    Top = 257
+  end
+  object UniQuery: TUniQuery
+    Connection = UniConnection
+    SQL.Strings = (
+      'select id as "id", '
+      '       category as "category", '
+      '       species_name as "species_name",'
+      '       common_name as "common_name",'
+      '       notes as "notes",'
+      '       graphic as "graphic"'
+      '  from fish')
+    Left = 256
+    Top = 313
+  end
+  object GestureManager: TGestureManager
+    Left = 40
+    Top = 257
+    GestureData = <
+      item
+        Control = pMain
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+  object InterBaseUniProvider: TInterBaseUniProvider
+    Left = 40
+    Top = 308
+  end
+  object MySQLUniProvider: TMySQLUniProvider
+    Left = 40
+    Top = 356
+  end
+  object OracleUniProvider: TOracleUniProvider
+    Left = 144
+    Top = 308
+  end
+  object PostgreSQLUniProvider: TPostgreSQLUniProvider
+    Left = 144
+    Top = 356
+  end
+  object SQLiteUniProvider: TSQLiteUniProvider
+    Left = 256
+    Top = 356
+  end
+  object SQLServerUniProvider: TSQLServerUniProvider
+    Left = 40
+    Top = 409
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = UniQuery
+    ScopeMappings = <>
+    Left = 144
+    Top = 192
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkPropertyToFieldBitmap: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'graphic'
+      Component = iPicture
+      ComponentProperty = 'Bitmap'
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'notes'
+      Control = meDescription
+      Track = False
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'common_name'
+      Component = lbFishName
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'species_name'
+      Component = lbSpeciesName
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldText3: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'category'
+      Component = lbCategory
+      ComponentProperty = 'Text'
+    end
+  end
+end

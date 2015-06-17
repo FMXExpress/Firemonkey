@@ -1,0 +1,157 @@
+object TIBLiteForm: TTIBLiteForm
+  Left = 0
+  Top = 0
+  Caption = 'TIBLiteForm'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'IBLite'
+      object AddButton: TButton
+        Align = Right
+        Margins.Right = 5.000000000000000000
+        Position.X = 331.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'addtoolbuttonbordered'
+        TabOrder = 0
+        Text = 'AddButton'
+        OnClick = AddButtonClick
+      end
+      object DeleteButton: TButton
+        Align = Left
+        Margins.Left = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'deletetoolbutton'
+        TabOrder = 1
+        Text = 'Delete'
+        OnClick = DeleteButtonClick
+      end
+    end
+  end
+  object ListViewTASKNAME: TListView
+    ItemAppearanceClassName = 'TListItemAppearance'
+    ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 519.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object LabelTASKNAME: TLabel
+      Position.Y = -20.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 21.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.WordWrap = False
+      Text = 'TASKNAME'
+    end
+  end
+  object FireTaskList: TFDConnection
+    Params.Strings = (
+      
+        'Database=C:\Users\Public\Documents\Embarcadero\Studio\15.0\Sampl' +
+        'es\CPP\Mobile Snippets\FireDAC_IBLite\TASKS.GDB'
+      'User_Name=SYSDBA'
+      'Password=masterkey'
+      'CharacterSet=UTF8'
+      'DriverID=IB')
+    LoginPrompt = False
+    BeforeConnect = FireTaskListBeforeConnect
+    Left = 32
+    Top = 68
+  end
+  object FDQueryInsert: TFDQuery
+    Connection = FireTaskList
+    SQL.Strings = (
+      'insert into task (TaskName) values (:TaskName)')
+    Left = 120
+    Top = 132
+    ParamData = <
+      item
+        Name = 'TASKNAME'
+        DataType = ftString
+        ParamType = ptInput
+        Value = 'test'
+      end>
+  end
+  object FDTableTask: TFDTable
+    Connection = FireTaskList
+    UpdateOptions.UpdateTableName = 'TASK'
+    TableName = 'TASK'
+    Left = 32
+    Top = 124
+    object FDTableTaskTASKNAME: TWideStringField
+      FieldName = 'TASKNAME'
+      KeyFields = 'TASKNAME'
+      Origin = 'TASKNAME'
+      Size = 200
+    end
+  end
+  object FDQueryDelete: TFDQuery
+    Connection = FireTaskList
+    SQL.Strings = (
+      'delete from task where TaskName = (:TaskName)')
+    Left = 120
+    Top = 204
+    ParamData = <
+      item
+        Name = 'TASKNAME'
+        ParamType = ptInput
+      end>
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 256
+    Top = 340
+  end
+  object FDPhysIBDriverLink1: TFDPhysIBDriverLink
+    Left = 176
+    Top = 352
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDTableTask
+    ScopeMappings = <>
+    Left = 312
+    Top = 192
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 316
+    Top = 125
+    object LinkFillControlToFieldTASKNAME: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'TASKNAME'
+      Control = ListViewTASKNAME
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'TASKNAME'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

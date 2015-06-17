@@ -1,0 +1,137 @@
+object CameraComponentForm: TCameraComponentForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object btnStartCamera: TButton
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Size.Width = 364.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Start Camera'
+    OnClick = btnStartCameraClick
+  end
+  object btnStopCamera: TButton
+    Align = Top
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 364.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Stop Camera'
+    OnClick = btnStopCameraClick
+  end
+  object lblCameraType: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'listboxitemlabel'
+    Text = 'Camera Type:'
+  end
+  object cbCameraFlashType: TLabel
+    Position.X = 16.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'listboxitemlabel'
+    Text = 'Camera Flash Type:'
+  end
+  object CameraComponent1: TCameraComponent
+    OnSampleBufferReady = CameraComponent1SampleBufferReady
+    Left = 48
+    Top = 408
+  end
+  object imgCameraView: TImage
+    MultiResBitmap = <
+      item
+      end
+      item
+        Scale = 2.000000000000000000
+      end>
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 16.000000000000000000
+    Position.Y = 285.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 268.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnFrontCamera: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraType'
+    Position.X = 16.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'segmentedbuttonleft'
+    Text = 'Front'
+    OnClick = btnFrontCameraClick
+  end
+  object btnBackCamera: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraType'
+    Position.X = 88.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'segmentedbuttonright'
+    Text = 'Back'
+    OnClick = btnBackCameraClick
+  end
+  object btnOn: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraFlashType'
+    Position.X = 16.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'segmentedbuttonleft'
+    Text = 'On'
+    OnClick = btnOnClick
+  end
+  object btnOff: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraFlashType'
+    Position.X = 88.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'segmentedbuttonmiddle'
+    Text = 'Off'
+    OnClick = btnOffClick
+  end
+  object btnAuto: TSpeedButton
+    StaysPressed = True
+    GroupName = 'grpCameraFlashType'
+    Position.X = 160.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'segmentedbuttonright'
+    Text = 'Auto'
+    OnClick = btnAutoClick
+  end
+end

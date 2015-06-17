@@ -1,0 +1,31 @@
+#Life 1.05
+#D Thunderbird fuse
+#D
+#D A kind of fuse that can easily go
+#D around corners.  This is the same
+#D fuse that eats the end of BSHIP.
+#N
+#P -10 -10
+..***
+.
+*.....*
+*.....*.***
+*.....*
+.
+..***
+#P 7 -8
+*
+*
+*
+#P 9 -2
+*
+*
+*
+#P 8 7
+***
+#P -5 8
+*
+*
+*
+#P 2 9
+***

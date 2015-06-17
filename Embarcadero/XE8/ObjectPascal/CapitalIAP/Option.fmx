@@ -1,0 +1,204 @@
+object OptionFrame: TOptionFrame
+  Size.Width = 320.000000000000000000
+  Size.Height = 510.000000000000000000
+  Size.PlatformDefault = False
+  TabOrder = 0
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 466.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Height = 56.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxgroupheader'
+      TabOrder = 0
+      Text = 'Select region of the country'
+    end
+    object ListBoxItem1: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      HitTest = True
+      Position.Y = 56.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Eastern'
+      object sEast: TSwitch
+        Anchors = [akTop, akRight]
+        IsChecked = True
+        Position.X = 229.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnSwitch = sEastSwitch
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      HitTest = True
+      Position.Y = 100.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 2
+      Text = 'Central'
+      object sCentral: TSwitch
+        Anchors = [akTop, akRight]
+        IsChecked = True
+        Position.X = 229.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnSwitch = sCentralSwitch
+      end
+    end
+    object ListBoxItem3: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 3
+      Text = 'Western'
+      object sWest: TSwitch
+        Anchors = [akTop, akRight]
+        IsChecked = True
+        Position.X = 229.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnSwitch = sWestSwitch
+      end
+    end
+    object ListBoxItem4: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 188.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 4
+      Text = 'Europe'
+      Visible = False
+      object sEurope: TSwitch
+        Anchors = [akTop, akRight]
+        IsChecked = True
+        Position.X = 229.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 78.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        OnSwitch = sEuropeSwitch
+      end
+    end
+    object ListBoxGroupHeader2: TListBoxGroupHeader
+      Height = 56.000000000000000000
+      Position.Y = 232.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxgroupheader'
+      TabOrder = 5
+      Text = 'Advertising'
+    end
+    object DisableAdsListBoxItem: TListBoxItem
+      Height = 44.000000000000000000
+      ItemData.Detail = 'A small in-app purchase will disable adverts'
+      Position.Y = 288.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitembottomdetail'
+      TabOrder = 6
+      Text = 'Disable in-app adverts'
+      OnClick = DisableAdsListBoxItemClick
+    end
+    object EuropeListBoxItem: TListBoxItem
+      Height = 44.000000000000000000
+      ItemData.Detail = 'Purchase the Europe questions set'
+      Position.Y = 332.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitembottomdetail'
+      TabOrder = 9
+      Text = 'Europe Questions'
+      OnClick = EuropeListBoxItemClick
+    end
+    object RestoreAdsListBoxItem: TListBoxItem
+      Height = 44.000000000000000000
+      ItemData.Detail = 'Use after reinstallation or on a new device'
+      Position.Y = 376.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitembottomdetail'
+      TabOrder = 7
+      Text = 'Restore purchase'
+      OnClick = RestoreAdsListBoxItemClick
+    end
+    object ConsumeListBoxItem: TListBoxItem
+      Height = 44.000000000000000000
+      ItemData.Detail = 'Use this in order to re-enable purchasing'
+      Position.Y = 420.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitembottomdetail'
+      TabOrder = 10
+      Text = 'Consume purchased Items'
+      OnClick = ConsumeListBoxItemClick
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.Font.Size = 21.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Option'
+      object Button1: TButton
+        Align = Left
+        Margins.Left = 6.000000000000000000
+        Position.X = 6.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'donetoolbutton'
+        TabOrder = 0
+        Text = 'Done'
+      end
+    end
+  end
+end

@@ -1,0 +1,22 @@
+inherited frmShareSheet_LgXhdpiPh: TfrmShareSheet_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited TopToolbar: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 480.000000000000000000
+    end
+  end
+  inherited BottomToolbar: TToolBar
+    Position.Y = 781.000000000000000000
+    Size.Width = 480.000000000000000000
+    inherited btnShare: TButton
+      Position.X = 384.000000000000000000
+    end
+  end
+  inherited imgCameraPicture: TImage
+    Size.Width = 480.000000000000000000
+    Size.Height = 733.000000000000000000
+  end
+end

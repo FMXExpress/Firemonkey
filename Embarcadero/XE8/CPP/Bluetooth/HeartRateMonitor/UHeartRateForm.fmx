@@ -1,0 +1,253 @@
+object frmHeartMonitor: TfrmHeartMonitor
+  Left = 0
+  Top = 0
+  Caption = 'Heart Rate Monitor'
+  ClientHeight = 590
+  ClientWidth = 607
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object pnlMain: TPanel
+    Align = Client
+    Size.Width = 607.000000000000000000
+    Size.Height = 425.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object MainList: TListBox
+      Align = Client
+      Size.Width = 607.000000000000000000
+      Size.Height = 425.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      DisableFocusEffect = True
+      ItemHeight = 44.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      object DeviceScan: TListBoxItem
+        Size.Width = 603.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblDevice: TLabel
+          Align = Left
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 116.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'lblDevice'
+        end
+        object btnScan: TButton
+          Align = Right
+          StyledSettings = [Family, Size, FontColor]
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Position.X = 518.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Scan'
+          TextSettings.Font.Style = [fsBold]
+          OnClick = btnScanClick
+        end
+      end
+      object BPM: TListBoxItem
+        Position.Y = 44.000000000000000000
+        Size.Width = 603.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object lblBPM: TLabel
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Size.Width = 603.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 26.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          TextSettings.HorzAlign = Center
+          Text = 'XX bpm'
+        end
+      end
+      object Image: TListBoxItem
+        Position.Y = 88.000000000000000000
+        Size.Width = 603.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object imgHeart: TImage
+          MultiResBitmap = <
+            item
+              Width = 32
+              Height = 32
+              PNG = {
+                89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+                F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+                0238494441545847D5D74B88CD511CC0F1BFC7486A1849A3B0B1206261A1A849
+                532325B6B26763A12CEC64A36423945848B15293AC6C588D2CC8C68232794C9A
+                1DE53D93F7F3FBFDBBA7CEBD8EDB9D7BFFE7DEFCEAD3BDF7FC5FE7F13BF79C7F
+                D1EB9855FB4CC54A6CC2522CC37B3CC21D4C2115F3B0111BB01CD378877B7880
+                5F681A56A81F17F111DFF0035EF8135FF1167BD18710B3B11E77F105F135DFF1
+                190FB1199E9B0C0F78E317F0E266BCE955ACC01C1C82154E9D1BFB807318445D
+                D8F2DDB0C5A90BFFE53CB621759D95F481F6883D11CAFD7E19710F963769A505
+                8D5EE369435970008B318433882BE9101D43391CD6E406E28BABB00621C91DA6
+                9D3091C371F3628B07CCD8E3F07B95B11DCE8A6770364CE00D76C096CF8533A4
+                388BB8E655B2AB9FC31962F8D05B08C79D35C593A82097EB0849B715A1FC9505
+                66697C720EF6C46A9813EB6A6572A6149FA2829C1EE344ED339499886572C427
+                76D34BB3F1267A159356E0CA9FEF3D89712B701B93E5CFEE868959F6BE997912
+                A931CAC9557509CA580BFF305227E6E0CCDB83BA18C64C57C3765DC05F7FFD16
+                384FC3662297FB588564B8785C42AE4AF8F001340DFFB34FA3EA4AB8F0B8F2B6
+                140EC73EB4B34969644346B100330AA7A76B7727ABA5EBFF61B8D16D3B16610C
+                F1BEAE156E426C40D8157514BE1B9C422B436245AD70D8845416E6C57E345BBE
+                1DEF6B58882C6177EE826B47E3C3DD5C1C45DD763B57B88D77CF1F3FFC20CA6D
+                76B76204E3F03DF108DADA55779AA1F361ABC3FBE0FF1645F11BCA1C0D550239
+                F6DF0000000049454E44AE426082}
+            end>
+          Align = Client
+          Size.Width = 603.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object Location: TListBoxItem
+        Position.Y = 132.000000000000000000
+        Size.Width = 603.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object lblBodyLocation: TLabel
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 5.000000000000000000
+          Size.Width = 598.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'body location'
+        end
+      end
+      object Status: TListBoxItem
+        Position.Y = 176.000000000000000000
+        Size.Width = 603.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object lblContactStatus: TLabel
+          Align = Left
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 289.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'contact status'
+        end
+      end
+      object Monitoring: TListBoxItem
+        Position.Y = 220.000000000000000000
+        Size.Width = 603.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object btnMonitorize: TButton
+          Align = Client
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 593.000000000000000000
+          Size.Height = 34.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Stop monitoring'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          OnClick = btnMonitorizeClick
+        end
+      end
+    end
+  end
+  object pnlLog: TPanel
+    Align = Bottom
+    Position.Y = 465.000000000000000000
+    Size.Width = 607.000000000000000000
+    Size.Height = 125.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object LogList: TListBox
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 597.000000000000000000
+      Size.Height = 115.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'transparentlistboxstyle'
+      TabOrder = 0
+      ShowScrollBars = False
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      GroupingKind = Grouped
+      object ListBoxGroupHeader1: TListBoxGroupHeader
+        Size.Width = 597.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listboxgroupheader'
+        TabOrder = 0
+        Text = 'Monitoring Log'
+      end
+      object ListBoxItem1: TListBoxItem
+        Position.Y = 19.000000000000000000
+        Size.Width = 597.000000000000000000
+        Size.Height = 110.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Memo1: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          Align = Client
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 587.000000000000000000
+          Size.Height = 100.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Align = MostTop
+    Size.Width = 607.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 607.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Bluetooth Heartrate Monitor'
+    end
+  end
+end

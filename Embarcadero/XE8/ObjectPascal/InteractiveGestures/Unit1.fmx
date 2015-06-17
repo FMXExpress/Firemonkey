@@ -1,0 +1,36 @@
+object Form36: TForm36
+  Left = 0
+  Top = 0
+  Caption = 'Interactive Gestures'
+  ClientHeight = 597
+  ClientWidth = 895
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object MenuBar1: TMenuBar
+    Size.Width = 895.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object MenuItem1: TMenuItem
+      Text = 'Add Picture'
+      OnClick = MenuItem1Click
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Options = [ofHideReadOnly, ofAllowMultiSelect, ofEnableSizing]
+    Left = 848
+    Top = 544
+  end
+  object Panel1: TPanel
+    Touch.InteractiveGestures = [Zoom, Pan, Rotate, PressAndTap]
+    OnGesture = Panel1Gesture
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.Y = 24.000000000000000000
+    Size.Width = 897.000000000000000000
+    Size.Height = 569.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+end

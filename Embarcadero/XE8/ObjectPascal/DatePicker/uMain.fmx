@@ -1,0 +1,71 @@
+object DatePickerForm: TDatePickerForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1920
+  FormFactor.Height = 1022
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ListBox1: TListBox
+    Align = Top
+    Margins.Top = 10.000000000000000000
+    Position.Y = 58.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 93.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 0
+    ShowScrollBars = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    object ListBoxItem5: TListBoxItem
+      Height = 44.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 0
+      Text = 'Pick a Date'
+      object DateEdit1: TDateEdit
+        Date = 41698.000000000000000000
+        OnChange = DateEdit1Change
+        Position.X = 216.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 121.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        TextSettings.HorzAlign = Center
+      end
+    end
+    object ListBoxItem6: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Picked'
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Date Picker'
+    end
+  end
+end

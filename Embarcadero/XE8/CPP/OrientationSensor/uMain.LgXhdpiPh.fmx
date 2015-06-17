@@ -1,0 +1,36 @@
+inherited OrientationSensorForm_LgXhdpiPh: TOrientationSensorForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Size.Width = 480.000000000000000000
+    Size.Height = 710.000000000000000000
+    inherited lbOrientationSensor: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+    inherited lbTiltX: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+    inherited lbTiltY: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+    inherited lbTiltZ: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+    inherited lbHeadingX: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+    inherited lbHeadingY: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+    inherited lbHeadingZ: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+  end
+  inherited Layout1: TLayout
+    Size.Width = 480.000000000000000000
+  end
+end

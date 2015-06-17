@@ -1,0 +1,34 @@
+inherited Form5_LgXhdpiPh: TForm5_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 2
+  inherited Panel1: TPanel
+    Size.Width = 200.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited LocationListBox: TListBox
+      Size.Width = 200.000000000000000000
+    end
+    inherited ToolBar2: TToolBar
+      Size.Width = 200.000000000000000000
+      inherited SurfSpotNameLabel: TLabel
+        Size.Width = 196.000000000000000000
+      end
+    end
+    inherited WebBrowser1: TWebBrowser
+      Size.Width = 200.000000000000000000
+      Size.Height = 510.000000000000000000
+    end
+  end
+  inherited MultiView1: TMultiView
+    Size.Height = 695.000000000000000000
+    inherited ListView1: TListView
+      Size.Height = 651.000000000000000000
+    end
+    inherited ToolBar1: TToolBar
+      inherited SurferImage: TImage
+        MultiResBitmap.Height = 149
+        MultiResBitmap.Width = 152
+      end
+    end
+  end
+end

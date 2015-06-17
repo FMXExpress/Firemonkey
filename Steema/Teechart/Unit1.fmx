@@ -1,0 +1,150 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'TeeChart FastLine Series'
+  ClientHeight = 387
+  ClientWidth = 779
+  Quality = HighPerformance
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  object TeeCommander1: TTeeCommander
+    Panel = Chart1
+    Align = Top
+    Size.Width = 779.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label3: TLabel
+      Cursor = crHandPoint
+      Position.X = 344.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'steema.com'
+      OnClick = Label3Click
+    end
+  end
+  object Layout1: TLayout
+    Align = Left
+    Position.Y = 50.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 337.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object CheckBox3: TCheckBox
+      IsChecked = True
+      Position.X = 16.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Draw All'
+      OnChange = CheckBox3Change
+    end
+    object CheckBox4: TCheckBox
+      IsChecked = True
+      Position.X = 16.000000000000000000
+      Position.Y = 64.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Update Thread'
+      OnChange = CheckBox4Change
+    end
+    object CBParallel: TCheckBox
+      Position.X = 16.000000000000000000
+      Position.Y = 288.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Use all CPUs'
+      OnChange = CBParallelChange
+    end
+    object TrackBar1: TComboTrackBar
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Cursor = crIBeam
+      Max = 100.000000000000000000
+      DecimalDigits = 3
+      Position.X = 16.000000000000000000
+      Position.Y = 128.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = TrackBar1Change
+    end
+    object Label1: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Series:'
+    end
+    object Label2: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Points:'
+    end
+    object ComboFlat1: TComboTrackBar
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 6
+      Cursor = crIBeam
+      Max = 100.000000000000000000
+      DecimalDigits = 3
+      Position.X = 16.000000000000000000
+      Position.Y = 192.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = ComboFlat1Change
+    end
+    object CheckBox1: TCheckBox
+      IsChecked = True
+      Position.X = 17.000000000000000000
+      Position.Y = 249.000000000000000000
+      TabOrder = 7
+      Text = 'Form Quality'
+      OnChange = CheckBox1Change
+    end
+  end
+  object Chart1: TChart
+    Title.Text.Strings = (
+      'TeeChart FastLine Series')
+    OnScroll = Chart1Scroll
+    OnUndoZoom = Chart1UndoZoom
+    OnZoom = Chart1Zoom
+    View3D = False
+    Zoom.Brush.Kind = None
+    Zoom.Pen.Fill.Color = claSilver
+    OnAfterDraw = Chart1AfterDraw
+    Align = Client
+    TabOrder = 2
+    Size.Width = 602.000000000000000000
+    Size.Height = 337.000000000000000000
+    Size.PlatformDefault = False
+    OnResize = Chart1Resize
+    ColorPaletteIndex = 13
+    object ChartTool1: TRepaintMonitor
+      Shape.Color = claDarkgray
+      Shape.Font.Color = claWhite
+      Shape.Font.Brush.Color = claWhite
+      Shape.Shadow.Visible = False
+      Shape.Text = '2fps 9'
+      Shape.Transparency = 20
+    end
+  end
+  object Timer1: TTimer
+    Interval = 1
+    OnTimer = Timer1Timer
+    Left = 288
+    Top = 168
+  end
+end

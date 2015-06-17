@@ -1,0 +1,117 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [dkDesktop]
+  object ArchiveButton: TButton
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    Position.X = 144.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Archive Location'
+    Width = 136.000000000000000000
+    OnClick = ArchiveButtonClick
+  end
+  object RestoreButton: TButton
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 120.000000000000000000
+    Text = 'Restore Location'
+    Width = 136.000000000000000000
+    OnClick = RestoreButtonClick
+  end
+  object OrigDegreesEdit: TEdit
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    Position.X = 112.000000000000000000
+    Position.Y = 48.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    object Label1: TLabel
+      Height = 15.000000000000000000
+      Position.X = 4.000000000000000000
+      Position.Y = -17.000000000000000000
+      Text = 'Degrees'
+      Width = 93.000000000000000000
+    end
+  end
+  object OrigMinutesEdit: TEdit
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    Position.X = 240.000000000000000000
+    Position.Y = 48.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    object Label2: TLabel
+      Height = 15.000000000000000000
+      Position.X = -4.000000000000000000
+      Position.Y = -17.000000000000000000
+      Text = 'Minutes'
+      Width = 120.000000000000000000
+    end
+  end
+  object OrigSecondsEdit: TEdit
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    Position.X = 368.000000000000000000
+    Position.Y = 48.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+    object Label3: TLabel
+      Height = 15.000000000000000000
+      Position.X = -1.000000000000000000
+      Position.Y = -17.000000000000000000
+      Text = 'Seconds'
+      Width = 120.000000000000000000
+    end
+  end
+  object RestDegreesEdit: TEdit
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    Position.X = 112.000000000000000000
+    Position.Y = 80.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object RestMinutesEdit: TEdit
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    Position.X = 240.000000000000000000
+    Position.Y = 80.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object RestSecondsEdit: TEdit
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    Position.X = 368.000000000000000000
+    Position.Y = 80.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object Label4: TLabel
+    Height = 15.000000000000000000
+    Position.X = 496.000000000000000000
+    Position.Y = 48.000000000000000000
+    Text = 'Original'
+    Width = 120.000000000000000000
+  end
+  object Label5: TLabel
+    Height = 15.000000000000000000
+    Position.X = 496.000000000000000000
+    Position.Y = 80.000000000000000000
+    Text = 'Restored'
+    Width = 120.000000000000000000
+  end
+end

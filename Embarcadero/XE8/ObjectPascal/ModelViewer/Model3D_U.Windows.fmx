@@ -1,0 +1,12 @@
+inherited Model3DTest_Windows: TModel3DTest_Windows
+  DesignerMasterStyle = 0
+  inherited MainLayer3D: TLayer3D
+    inherited MaterialDesignerLayout: TLayout
+      Position.X = 180.000000000000000000
+      Size.Width = 50.000000000000000000
+      inherited ToolBarDone: TToolBar
+        Size.Width = 50.000000000000000000
+      end
+    end
+  end
+end

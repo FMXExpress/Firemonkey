@@ -1,0 +1,11 @@
+Title: Location
+
+Brief Description: This code snippet shows you how to use the TLocationSensor component in order to read the GPS location of the device 
+and display it realtime on the form. The snippet also shows you how to display Google Maps in a web browser in order to accurately pinpoint 
+the location of the device on a real map.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: iOS, Android, location, sensor, map, browser, latitude, longitude, Google Maps, distance, accuracy, precision

@@ -1,0 +1,10 @@
+Title: OrientationSensor
+
+Brief Description: This code snippet shows you how to use the TOrientationSensor component in order to get various compass related 
+information such as three axis tilt, distance and heading, heading relative to magnetic north compensated and uncompensated and heading 
+relative to true north compensated and uncompensated.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+

@@ -1,0 +1,37 @@
+inherited Form1_Windows: TForm1_Windows
+  ClientHeight = 583
+  ClientWidth = 429
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    Size.Width = 429.000000000000000000
+    Size.Height = 583.000000000000000000
+    inherited TabControl1: TTabControl
+      Size.Width = 429.000000000000000000
+      Size.Height = 583.000000000000000000
+      inherited TabItem1: TTabItem
+        Size.Width = 215.000000000000000000
+      end
+      inherited TabItem2: TTabItem
+        Size.Width = 212.000000000000000000
+        inherited PanelClient: TPanel
+          Position.X = 1.000000000000000000
+          inherited LabelClient: TLabel
+            Position.Y = -1.000000000000000000
+          end
+        end
+        inherited PanelServer: TPanel
+          Position.X = 1.000000000000000000
+          inherited LabelServer: TLabel
+            Position.Y = 1.000000000000000000
+          end
+        end
+      end
+    end
+    inherited Labeldiscoverable: TLabel
+      TextSettings.Font.Size = 14.000000000000000000
+    end
+    inherited DisplayR: TMemo
+      Position.X = -1.000000000000000000
+    end
+  end
+end

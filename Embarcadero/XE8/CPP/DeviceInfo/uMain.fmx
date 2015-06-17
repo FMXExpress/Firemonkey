@@ -1,0 +1,84 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 417
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 2
+  object ListBox1: TListBox
+    Align = Top
+    Margins.Top = 10.000000000000000000
+    Position.Y = 54.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 175.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 0
+    ShowScrollBars = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    object lbOSName: TListBoxItem
+      Height = 44.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 0
+      Text = 'OS Name:'
+    end
+    object lbDeviceType: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Device Type:'
+    end
+    object lbOSVersion: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 2
+      Text = 'OS Version:'
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Device Information'
+    end
+    object btnGetDeviceInfo: TButton
+      Align = Right
+      Anchors = []
+      Margins.Right = 5.000000000000000000
+      Position.X = 271.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'refreshtoolbuttonbordered'
+      TabOrder = 1
+      Text = 'Get Device Information'
+      OnClick = btnGetDeviceInfoClick
+    end
+  end
+end

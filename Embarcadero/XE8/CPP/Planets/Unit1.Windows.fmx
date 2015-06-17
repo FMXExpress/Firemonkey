@@ -1,0 +1,3 @@
+inherited Form3D1_Windows: TForm3D1_Windows
+  DesignerMasterStyle = 0
+end

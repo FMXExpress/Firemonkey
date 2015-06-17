@@ -1,0 +1,42 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 284
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Client
+    Cursor = crDefault
+    Size.Width = 284.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Viewport.Width = 280.000000000000000000
+    Viewport.Height = 476.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 5
+    Text = 'Start'
+    OnClick = Button1Click
+  end
+  object Beacon1: TBeacon
+    Mode = Alternative
+    MonitorizedRegions = <
+      item
+        UUID = '{2F234454-CF6D-4A0F-ADF2-F4911BA9FFA6}'
+      end>
+    BeaconDeathTime = 5
+    SPC = 0.500000000000000000
+    OnBeaconEnter = Beacon1BeaconEnter
+    OnBeaconExit = Beacon1BeaconExit
+    Left = 24
+    Top = 80
+  end
+end

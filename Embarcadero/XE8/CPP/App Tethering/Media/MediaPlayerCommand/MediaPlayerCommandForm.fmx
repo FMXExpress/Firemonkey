@@ -1,0 +1,140 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'RemoteCommand'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lbPlayers: TListBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 4.000000000000000000
+    Position.Y = 28.000000000000000000
+    Size.Width = 313.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnClick = lbPlayersClick
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 309.000000000000000000
+    Viewport.Height = 149.000000000000000000
+  end
+  object lbDiscoveredPlayers: TLabel
+    Position.X = 4.000000000000000000
+    Position.Y = 4.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Discovered Players:'
+  end
+  object ButtonFindPlayers: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 128.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Find Players'
+    OnClick = ButtonFindPlayersClick
+  end
+  object ButtonPlayPause: TButton
+    Position.X = 93.000000000000000000
+    Position.Y = 408.000000000000000000
+    Size.Width = 128.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Play / Pause'
+    OnClick = ButtonPlayPauseClick
+  end
+  object VolumeTrack: TTrackBar
+    Max = 1.000000000000000000
+    Orientation = Vertical
+    Position.X = 284.000000000000000000
+    Position.Y = 196.000000000000000000
+    Size.Width = 20.000000000000000000
+    Size.Height = 289.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    OnChange = VolumeTrackChange
+  end
+  object CBAdapter: TComboBox
+    Items.Strings = (
+      'Bluetooth'
+      'Network')
+    ItemIndex = 1
+    Position.X = 108.000000000000000000
+    Position.Y = 288.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 25
+    OnChange = CBAdapterChange
+  end
+  object LabelFind: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 352.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Manager IP:'
+  end
+  object CbEditTarget: TComboEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 33
+    ItemHeight = 19.000000000000000000
+    Items.Strings = (
+      ''
+      '192.168.1.0'
+      'TargetName1;TargetName2')
+    ItemIndex = 0
+    Position.X = 108.000000000000000000
+    Position.Y = 348.000000000000000000
+    Size.Width = 165.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabelVolume: TLabel
+    Position.X = 212.000000000000000000
+    Position.Y = 468.000000000000000000
+    Size.Width = 68.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Volume'
+  end
+  object LabelAdapter: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Adapter'
+  end
+  object CommandManager: TTetheringManager
+    OnEndManagersDiscovery = CommandManagerEndManagersDiscovery
+    OnEndProfilesDiscovery = CommandManagerEndProfilesDiscovery
+    OnRequestManagerPassword = CommandManagerRequestManagerPassword
+    OnNewManager = CommandManagerNewManager
+    OnRemoteManagerShutdown = CommandManagerRemoteManagerShutdown
+    Text = 'CommandApp'
+    Enabled = False
+    AllowedAdapters = 'Network'
+    Left = 80
+    Top = 36
+  end
+  object CommandApp: TTetheringAppProfile
+    Manager = CommandManager
+    Text = 'CommandApp'
+    Actions = <>
+    Resources = <>
+    Left = 244
+    Top = 32
+  end
+end

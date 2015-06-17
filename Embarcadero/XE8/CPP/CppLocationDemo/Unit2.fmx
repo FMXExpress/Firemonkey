@@ -1,0 +1,70 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'CppLocationDemo'
+  ClientHeight = 171
+  ClientWidth = 386
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    ReadOnly = True
+    Position.X = 32.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    ReadOnly = True
+    Position.X = 224.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    Position.X = 32.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Lattitude'
+  end
+  object Label2: TLabel
+    Position.X = 224.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Longitude'
+  end
+  object Button1: TButton
+    Position.X = 240.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Get Location'
+    OnClick = Button1Click
+  end
+  object AniIndicator1: TAniIndicator
+    Position.X = 152.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+  end
+  object LocationSensor1: TLocationSensor
+    OnLocationChanged = LocationSensor1LocationChanged
+    Left = 16
+    Top = 120
+  end
+end

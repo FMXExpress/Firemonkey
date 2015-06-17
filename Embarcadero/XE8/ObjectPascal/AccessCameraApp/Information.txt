@@ -1,0 +1,10 @@
+Title: AccessCameraApp
+
+Brief Description: This code snippet shows you how to use standard actions in order to open the Camera Application on your iOS or Android device, 
+take a picture and retrieve the taken image for displaying on your FireMonkey form.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: image, Photo Library, iOS, Android, camera

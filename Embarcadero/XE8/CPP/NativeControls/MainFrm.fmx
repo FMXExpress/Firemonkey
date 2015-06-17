@@ -1,0 +1,192 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 521
+  ClientWidth = 264
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 264.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 264.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'User Data'
+    end
+  end
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 264.000000000000000000
+    Size.Height = 481.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Calendar1: TCalendar
+      Align = Top
+      ControlType = Platform
+      Date = 41842.000000000000000000
+      Position.X = 31.000000000000000000
+      Position.Y = 300.000000000000000000
+      Size.Width = 202.000000000000000000
+      Size.Height = 180.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      ControlType = Platform
+      Text = 'Ivanov'
+      Position.X = 10.000000000000000000
+      Position.Y = 99.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 244.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Last Name'
+      Caret.Color = claGreen
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      ControlType = Platform
+      Text = 'Peter'
+      Position.X = 10.000000000000000000
+      Position.Y = 32.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 244.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'First Name'
+      Caret.Color = claRed
+    end
+    object Edit3: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 3
+      ControlType = Platform
+      Position.X = 10.000000000000000000
+      Position.Y = 166.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 244.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Skype ID'
+      object ClearEditButton2: TClearEditButton
+        CanFocus = False
+        Cursor = crArrow
+        Size.Width = 28.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+    object Edit4: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 4
+      ControlType = Platform
+      Text = 'youmail@mail.com'
+      TextSettings.HorzAlign = Center
+      Position.X = 10.000000000000000000
+      Position.Y = 233.000000000000000000
+      Margins.Left = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 244.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'E-Mail'
+      object ClearEditButton1: TClearEditButton
+        CanFocus = False
+        Cursor = crArrow
+        Size.Width = 28.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+    object Label2: TLabel
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 244.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'embossedlabel'
+      Text = 'First Name'
+    end
+    object Label3: TLabel
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 244.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'embossedlabel'
+      Text = 'Skype ID'
+    end
+    object Label4: TLabel
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 77.000000000000000000
+      Size.Width = 244.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'embossedlabel'
+      Text = 'Last Name'
+    end
+    object Label5: TLabel
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 278.000000000000000000
+      Size.Width = 244.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'embossedlabel'
+      Text = 'Date of Birthday'
+    end
+    object Label6: TLabel
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 211.000000000000000000
+      Size.Width = 244.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'embossedlabel'
+      Text = 'Email'
+    end
+  end
+end

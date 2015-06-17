@@ -1,0 +1,3 @@
+inherited Form2_Windows: TForm2_Windows
+  DesignerMasterStyle = 0
+end

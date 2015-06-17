@@ -1,0 +1,182 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'C++ InterBase ToGo Demo'
+  ClientHeight = 563
+  ClientWidth = 388
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 388.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    object CheckBox1: TCheckBox
+      Align = Left
+      Margins.Left = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Employee GDB'
+      OnChange = CheckBox1Change
+    end
+  end
+  object Layout1: TLayout
+    Align = Top
+    Position.Y = 40.000000000000000000
+    Size.Width = 388.000000000000000000
+    Size.Height = 217.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    object NavigatorBindSourceDB1: TBindNavigator
+      Align = Top
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 125.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 258.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnClick = NavigatorBindSourceDB1Click
+      DataSource = BindSourceDB1
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbRefresh]
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+    object StringGridBindSourceDB1: TStringGrid
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 378.000000000000000000
+      Size.Height = 162.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      RowCount = 0
+      RowHeight = 21.000000000000000000
+    end
+  end
+  object Layout2: TLayout
+    Align = Client
+    Size.Width = 388.000000000000000000
+    Size.Height = 227.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    object NavigatorBindSourceDB2: TBindNavigator
+      Align = Top
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 378.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DataSource = BindSourceDB2
+      VisibleButtons = [nbFirst, nbPrior, nbNext, nbLast, nbDelete, nbCancel, nbRefresh]
+      xRadius = 4.000000000000000000
+      yRadius = 4.000000000000000000
+    end
+    object StringGridBindSourceDB2: TStringGrid
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 378.000000000000000000
+      Size.Height = 172.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      RowCount = 0
+      RowHeight = 21.000000000000000000
+    end
+  end
+  object MeLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Bottom
+    Position.Y = 484.000000000000000000
+    Size.Width = 388.000000000000000000
+    Size.Height = 79.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 33
+  end
+  object IBDatabase1: TIBDatabase
+    DatabaseName = 'C:\Users\Public\Documents\Studio\15.0\Samples\Data\EMPLOYEE.GDB'
+    Params.Strings = (
+      'user_name=SYSDBA'
+      'password=masterkey')
+    LoginPrompt = False
+    DefaultTransaction = IBTransaction1
+    ServerType = 'IBEmbedded'
+    Left = 304
+    Top = 144
+  end
+  object IBTransaction1: TIBTransaction
+    Left = 304
+    Top = 200
+  end
+  object IBDataSet1: TIBDataSet
+    Database = IBDatabase1
+    Transaction = IBTransaction1
+    BufferChunks = 1000
+    CachedUpdates = False
+    SelectSQL.Strings = (
+      'select  * from CUSTOMER')
+    ParamCheck = True
+    UniDirectional = False
+    Left = 304
+    Top = 248
+  end
+  object IBDataSet2: TIBDataSet
+    Database = IBDatabase1
+    Transaction = IBTransaction1
+    AutoCalcFields = False
+    BufferChunks = 1000
+    CachedUpdates = False
+    SelectSQL.Strings = (
+      'select * from sales where Cust_No = :Cust_No')
+    ParamCheck = True
+    UniDirectional = False
+    Filtered = True
+    Left = 304
+    Top = 320
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = IBDataSet1
+    ScopeMappings = <>
+    Left = 304
+    Top = 384
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 212
+    Top = 141
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGridBindSourceDB1
+      Columns = <>
+    end
+    object LinkGridToDataSourceBindSourceDB2: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      GridControl = StringGridBindSourceDB2
+      Columns = <>
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = IBDataSet2
+    ScopeMappings = <>
+    Left = 304
+    Top = 440
+  end
+end

@@ -1,0 +1,20 @@
+inherited VKBaseForm_LgXhdpiPh: TVKBaseForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited VertScrollBox1: TVertScrollBox
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited MainLayout1: TLayout
+      Size.Width = 450.000000000000000000
+      Size.Height = 695.000000000000000000
+      inherited ToolBar1: TToolBar
+        Size.Width = 450.000000000000000000
+      end
+      inherited ListBox1: TListBox
+        Size.Width = 450.000000000000000000
+        Size.Height = 637.000000000000000000
+      end
+    end
+  end
+end

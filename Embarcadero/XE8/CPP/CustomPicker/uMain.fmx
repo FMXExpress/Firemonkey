@@ -1,0 +1,106 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 3
+  object ListBox1: TListBox
+    Align = Top
+    Margins.Top = 10.000000000000000000
+    Position.Y = 58.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 93.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 0
+    ShowScrollBars = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    object ListBoxItem5: TListBoxItem
+      Height = 44.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 0
+      Text = 'Pick an Item'
+      object ComboBox1: TComboBox
+        Align = Right
+        Anchors = []
+        DisableFocusEffect = False
+        Margins.Right = 5.000000000000000000
+        Position.X = 186.000000000000000000
+        Position.Y = 6.000000000000000000
+        Size.Width = 153.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnChange = ComboBox1Change
+        object ListBoxItem1: TListBoxItem
+          Height = 44.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Item One'
+        end
+        object ListBoxItem2: TListBoxItem
+          Height = 44.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Item Two'
+        end
+        object ListBoxItem3: TListBoxItem
+          Height = 44.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Item Three'
+        end
+        object ListBoxItem4: TListBoxItem
+          Height = 44.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Item Four'
+        end
+      end
+    end
+    object ListBoxItem6: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 344.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'Picked'
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Custom Picker'
+    end
+  end
+end

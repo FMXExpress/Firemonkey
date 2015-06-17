@@ -1,0 +1,160 @@
+object Form240: TForm240
+  Left = 0
+  Top = 0
+  Caption = 'FireMonkey MediaPlayer'
+  ClientHeight = 387
+  ClientWidth = 665
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = x5DFFFFFF
+    Height = 41.000000000000000000
+    Padding.Left = 6.000000000000000000
+    Padding.Top = 6.000000000000000000
+    Padding.Right = 6.000000000000000000
+    Padding.Bottom = 6.000000000000000000
+    Stroke.Kind = None
+    Width = 665.000000000000000000
+    object PauseButton: TSpeedButton
+      Action = acPlayPause
+      Align = Left
+      Height = 29.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 109.000000000000000000
+      Position.Y = 6.000000000000000000
+      Width = 80.000000000000000000
+    end
+    object OpenButton: TSpeedButton
+      Align = Left
+      Height = 29.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 6.000000000000000000
+      Position.Y = 6.000000000000000000
+      Text = 'Load...'
+      Width = 93.000000000000000000
+      OnClick = OpenButtonClick
+    end
+    object Label1: TLabel
+      Align = Right
+      Height = 29.000000000000000000
+      Position.X = 539.000000000000000000
+      Position.Y = 6.000000000000000000
+      TextSettings.HorzAlign = Trailing
+      Width = 120.000000000000000000
+    end
+    object CheckBox1: TCheckBox
+      Align = Center
+      Height = 19.000000000000000000
+      IsChecked = True
+      TabOrder = 3
+      Text = 'Visible'
+      Width = 84.000000000000000000
+      OnChange = CheckBox1Change
+    end
+    object VolumeTrack: TTrackBar
+      Align = Right
+      Height = 37.000000000000000000
+      Max = 1.000000000000000000
+      Orientation = Vertical
+      Margins.Top = -4.000000000000000000
+      Margins.Bottom = -4.000000000000000000
+      Position.X = 519.000000000000000000
+      Position.Y = 2.000000000000000000
+      TabOrder = 4
+      Width = 20.000000000000000000
+      OnChange = VolumeTrackChange
+    end
+    object ClearButton: TSpeedButton
+      Action = acClear
+      Align = Left
+      Height = 29.000000000000000000
+      Position.X = 194.000000000000000000
+      Position.Y = 6.000000000000000000
+      Width = 72.000000000000000000
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 32
+    Top = 218
+  end
+  object TrackBar1: TTrackBar
+    Height = 20.000000000000000000
+    Orientation = Horizontal
+    Margins.Left = 4.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Margins.Bottom = 4.000000000000000000
+    Position.X = -4.000000000000000000
+    Position.Y = 368.000000000000000000
+    TabOrder = 1
+    Tracking = False
+    Width = 661.000000000000000000
+    OnChange = TrackBar1Change
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 32
+    Top = 296
+  end
+  object MediaPlayerControl1: TMediaPlayerControl
+    Height = 328.000000000000000000
+    MediaPlayer = MediaPlayer1
+    Position.Y = 41.000000000000000000
+    Width = 657.000000000000000000
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 240
+    Top = 294
+  end
+  object ActionList1: TActionList
+    Left = 496
+    Top = 281
+    object acPlayPause: TAction
+      Text = 'PlayPause'
+      OnExecute = acPlayPauseExecute
+    end
+    object acClear: TAction
+      Text = 'Clear'
+      OnExecute = acClearExecute
+    end
+  end
+  object FMXManager: TTetheringManager
+    OnRequestManagerPassword = FMXManagerRequestManagerPassword
+    Password = '1234'
+    Text = 'FMXManager'
+    Left = 464
+    Top = 193
+  end
+  object FMXAppProfile: TTetheringAppProfile
+    Manager = FMXManager
+    Text = 'FMXMediaPlayer'
+    Actions = <
+      item
+        Name = 'acPlayPause'
+        IsPublic = True
+        Action = acPlayPause
+        NotifyUpdates = False
+      end
+      item
+        Name = 'acClear'
+        IsPublic = True
+        Action = acClear
+        NotifyUpdates = False
+      end>
+    Resources = <>
+    OnResourceReceived = FMXAppProfileResourceReceived
+    Left = 392
+    Top = 233
+  end
+end

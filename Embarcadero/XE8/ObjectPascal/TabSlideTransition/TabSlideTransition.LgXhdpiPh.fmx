@@ -1,0 +1,76 @@
+inherited TabSlideTransitionFrmBase_LgXhdpiPh: TTabSlideTransitionFrmBase_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited VertScrollBox1: TVertScrollBox
+    Size.Width = 450.000000000000000000
+    Size.Height = 647.000000000000000000
+    inherited MainLayout1: TLayout
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      inherited TabControl1: TTabControl
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        inherited TabItem1: TTabItem
+          inherited NameList: TListBox
+            Size.Width = 40.000000000000000000
+            inherited firstName: TListBoxItem
+              Size.Width = 400.000000000000000000
+              inherited efirstName: TEdit
+                Size.Width = 240.000000000000000000
+              end
+            end
+            inherited LastName: TListBoxItem
+              Size.Width = 400.000000000000000000
+              inherited eLastName: TEdit
+                Size.Width = 240.000000000000000000
+              end
+            end
+          end
+        end
+        inherited TabItem2: TTabItem
+          inherited PersonalInfoList: TListBox
+            Size.Width = 40.000000000000000000
+            inherited Address: TListBoxItem
+              Position.Y = 30.000000000000000000
+            end
+          end
+        end
+        inherited TabItem3: TTabItem
+          inherited EducationList: TListBox
+            Size.Width = 40.000000000000000000
+            inherited Institution: TListBoxItem
+              Position.Y = 30.000000000000000000
+            end
+          end
+        end
+        inherited TabItem4: TTabItem
+          inherited WorkList: TListBox
+            Size.Width = 40.000000000000000000
+            inherited Employer: TListBoxItem
+              Position.Y = 30.000000000000000000
+            end
+          end
+        end
+        inherited TabItem5: TTabItem
+          inherited Memo1: TMemo
+            Size.Width = 40.000000000000000000
+            Size.Height = 25.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited Label2: TLabel
+      Size.Width = 378.000000000000000000
+    end
+    inherited Button1: TButton
+      Position.X = 388.000000000000000000
+    end
+    inherited Button2: TButton
+      Visible = False
+    end
+  end
+end

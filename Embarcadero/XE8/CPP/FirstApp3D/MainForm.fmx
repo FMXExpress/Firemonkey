@@ -1,0 +1,97 @@
+object Form3D4: TForm3D4
+  Left = 0
+  Top = 0
+  Camera = Camera1
+  Caption = 'Form3D4'
+  ClientHeight = 480
+  ClientWidth = 640
+  UsingDesignCamera = False
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Sphere1: TSphere
+    Position.X = -4.997880458831787000
+    Position.Y = -1.820950031280518000
+    Scale.X = 5.000000000000000000
+    Scale.Y = 5.000000000000000000
+    Scale.Z = 5.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = ColorMaterialSource1
+  end
+  object Cube1: TCube
+    Position.X = 6.015057086944580000
+    Position.Y = -2.172234296798706000
+    Scale.X = 3.000000000000000000
+    Scale.Y = 3.000000000000000000
+    Scale.Z = 3.000000000000000000
+    RotationAngle.X = 8.842918395996094000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = ColorMaterialSource2
+    Quanternion = '(0.0770926028490067,0,0,0.99702399969101)'
+  end
+  object Cylinder1: TCylinder
+    Position.X = 5.093170166015625000
+    Position.Y = 5.241097927093506000
+    Scale.X = 6.000000000000000000
+    Scale.Y = 6.000000000000000000
+    Scale.Z = 3.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    MaterialSource = ColorMaterialSource3
+  end
+  object Camera1: TCamera
+    AngleOfView = 45.000000000000000000
+    Target = Rectangle3D1
+    Position.X = -4.818165779113770000
+    Position.Y = 2.964628696441650000
+    Position.Z = -10.000000000000000000
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+  end
+  object Rectangle3D1: TRectangle3D
+    Position.X = -0.329229772090911900
+    Position.Y = 3.697681665420532000
+    Position.Z = 9.579747200012207000
+    RotationAngle.Y = 80.207878112792970000
+    Width = 4.000013351440430000
+    Height = 8.563787460327148000
+    Depth = 4.667651176452637000
+    OnClick = Rectangle3D1Click
+    CornerType = Round
+    Flatness = 1.000000000000000000
+    Sides = [Front, Back, Shaft]
+    MaterialBackSource = ColorMaterialSource1
+    MaterialShaftSource = ColorMaterialSource2
+    MaterialSource = ColorMaterialSource3
+    Quanternion = '(0,0.644174218177795,0,0.764877438545227)'
+    object FloatAnimation1: TFloatAnimation
+      Duration = 3.000000000000000000
+      Loop = True
+      PropertyName = 'RotationAngle.Y'
+      StartValue = 0.000000000000000000
+      StopValue = 360.000000000000000000
+    end
+  end
+  object ColorMaterialSource1: TColorMaterialSource
+    Color = claRoyalblue
+    Left = 304
+    Top = 224
+  end
+  object ColorMaterialSource2: TColorMaterialSource
+    Color = claPurple
+    Left = 312
+    Top = 232
+  end
+  object ColorMaterialSource3: TColorMaterialSource
+    Color = claYellowgreen
+    Left = 320
+    Top = 240
+  end
+end

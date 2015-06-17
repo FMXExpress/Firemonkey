@@ -1,0 +1,89 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  Caption = 'MediaPlayer Remote Command'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object Button1: TButton
+    Position.X = 80.000000000000000000
+    Position.Y = 321.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Play/Pause'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 56.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Find Players'
+    OnClick = Button2Click
+  end
+  object lbPlayers: TListBox
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 137.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnItemClick = lbPlayersItemClick
+    object lbHeader: TListBoxGroupHeader
+      Height = 22.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Available Players'
+    end
+  end
+  object VolumeTrack: TTrackBar
+    Max = 1.000000000000000000
+    Orientation = Vertical
+    Position.X = 248.000000000000000000
+    Position.Y = 280.000000000000000000
+    Size.Width = 36.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    OnChange = VolumeTrackChange
+  end
+  object Label2: TLabel
+    Position.X = 225.000000000000000000
+    Position.Y = 428.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Volume'
+  end
+  object CommandManager: TTetheringManager
+    OnEndManagersDiscovery = CommandManagerEndManagersDiscovery
+    OnEndProfilesDiscovery = CommandManagerEndProfilesDiscovery
+    OnRequestManagerPassword = CommandManagerRequestManagerPassword
+    OnRemoteManagerShutdown = CommandManagerRemoteManagerShutdown
+    Password = '1234'
+    Text = 'CommandManager'
+    Left = 48
+    Top = 384
+  end
+  object CommandApp: TTetheringAppProfile
+    Manager = CommandManager
+    Text = 'CommandApp'
+    Actions = <>
+    Resources = <>
+    Left = 144
+    Top = 384
+  end
+end
