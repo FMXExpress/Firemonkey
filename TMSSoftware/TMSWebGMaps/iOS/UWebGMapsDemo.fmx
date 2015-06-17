@@ -1,0 +1,614 @@
+object Form65: TForm65
+  Left = 0
+  Top = 0
+  Caption = 'Form65'
+  ClientHeight = 748
+  ClientWidth = 1024
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 1024
+  DesignerHeight = 768
+  DesignerDeviceName = 'iPad'
+  DesignerOrientation = 1
+  object Panel1: TPanel
+    Align = alTop
+    Height = 73.000000000000000000
+    Width = 1024.000000000000000000
+    TabOrder = 0
+    object Label1: TLabel
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssSize, ssFontColor]
+      Height = 21.000000000000000000
+      Position.X = 16.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'TMS WebGMaps for iOS Demo'
+      Width = 273.000000000000000000
+      Trimming = ttCharacter
+    end
+    object lbEvents: TLabel
+      Height = 21.000000000000000000
+      Position.X = 336.000000000000000000
+      Position.Y = 24.000000000000000000
+      Text = 'Events:'
+      Width = 681.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object TMSFMXWebGMaps1: TTMSFMXWebGMaps
+    Align = alClient
+    Height = 675.000000000000000000
+    Width = 704.000000000000000000
+    Markers = <>
+    Polylines = <>
+    Polygons = <>
+    MapOptions.ZoomMap = 5
+    MapOptions.DefaultLatitude = 48.859040000000000000
+    MapOptions.DefaultLongitude = 2.294297000000000000
+    Directions = <>
+    StreetViewOptions.DefaultLatitude = 48.859040000000000000
+    StreetViewOptions.DefaultLongitude = 2.294297000000000000
+    TabOrder = 1
+    Version = '1.6.0.5'
+    OnMarkerClick = TMSFMXWebGMaps1MarkerClick
+    OnPolylineClick = TMSFMXWebGMaps1PolylineClick
+    OnPolygonClick = TMSFMXWebGMaps1PolygonClick
+    OnMapClick = TMSFMXWebGMaps1MapClick
+    OnMapMoveEnd = TMSFMXWebGMaps1MapMoveEnd
+    OnMapZoomChange = TMSFMXWebGMaps1MapZoomChange
+  end
+  object TabControl1: TTabControl
+    Align = alLeft
+    FullSize = True
+    Height = 675.000000000000000000
+    Position.Y = 73.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = tpBottom
+    Width = 320.000000000000000000
+    object TabItem1: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      TabOrder = 0
+      Text = 'Markers'
+      Trimming = ttCharacter
+      Width = 80.000000000000000000
+      object btAddMarker: TButton
+        Height = 44.000000000000000000
+        Position.X = 120.000000000000000000
+        Position.Y = 301.000000000000000000
+        TabOrder = 0
+        Text = 'Add Marker'
+        Trimming = ttCharacter
+        Width = 152.000000000000000000
+        OnClick = btAddMarkerClick
+      end
+      object edLatitude: TEdit
+        Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+        TabOrder = 1
+        KeyboardType = vktNumberPad
+        Text = '48'
+        Position.X = 120.000000000000000000
+        Position.Y = 216.000000000000000000
+        Width = 177.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Label5: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 224.000000000000000000
+        Text = 'Latitude:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object btAddMarkerAddress: TButton
+        Height = 44.000000000000000000
+        Position.X = 120.000000000000000000
+        Position.Y = 157.000000000000000000
+        TabOrder = 3
+        Text = 'Add Marker'
+        Trimming = ttCharacter
+        Width = 152.000000000000000000
+        OnClick = btAddMarkerAddressClick
+      end
+      object rbMarkerDefault: TRadioButton
+        GroupName = 'MRKRGROUP'
+        Height = 19.000000000000000000
+        IsChecked = True
+        Position.X = 120.000000000000000000
+        Position.Y = 24.000000000000000000
+        TabOrder = 4
+        Text = 'Default'
+        Width = 120.000000000000000000
+      end
+      object Label8: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Text = 'Marker Type:'
+        Width = 113.000000000000000000
+        Trimming = ttCharacter
+      end
+      object edLongitude: TEdit
+        Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+        TabOrder = 6
+        KeyboardType = vktNumberPad
+        Text = '2'
+        Position.X = 120.000000000000000000
+        Position.Y = 258.000000000000000000
+        Width = 177.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+      end
+      object edMarkerAddress: TEdit
+        Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+        TabOrder = 7
+        KeyboardType = vktNumberPad
+        Text = 'Berlin'
+        Position.X = 120.000000000000000000
+        Position.Y = 114.000000000000000000
+        Width = 177.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Label6: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 260.000000000000000000
+        Text = 'Longitude:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label7: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 116.000000000000000000
+        Text = 'Address:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object rbMarkerImage: TRadioButton
+        GroupName = 'MRKRGROUP'
+        Height = 19.000000000000000000
+        Position.X = 120.000000000000000000
+        Position.Y = 48.000000000000000000
+        TabOrder = 10
+        Text = 'Image'
+        Width = 120.000000000000000000
+      end
+      object cbAddMarker: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 120.000000000000000000
+        Position.Y = 80.000000000000000000
+        TabOrder = 11
+        Text = 'Add marker on map click'
+        Width = 200.000000000000000000
+      end
+      object btClearMarkers: TButton
+        Height = 44.000000000000000000
+        Position.X = 120.000000000000000000
+        Position.Y = 357.000000000000000000
+        TabOrder = 12
+        Text = 'Clear Markers'
+        Trimming = ttCharacter
+        Width = 152.000000000000000000
+        OnClick = btClearMarkersClick
+      end
+    end
+    object TabItem2: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 80.000000000000000000
+      TabOrder = 1
+      Text = 'Polygons'
+      Trimming = ttCharacter
+      Width = 80.000000000000000000
+      object btAddPolygon: TButton
+        Height = 44.000000000000000000
+        Position.X = 120.000000000000000000
+        Position.Y = 141.000000000000000000
+        TabOrder = 0
+        Text = 'Add Polygon'
+        Trimming = ttCharacter
+        Width = 152.000000000000000000
+        OnClick = btAddPolygonClick
+      end
+      object btClearPolygons: TButton
+        Height = 44.000000000000000000
+        Position.X = 120.000000000000000000
+        Position.Y = 197.000000000000000000
+        TabOrder = 1
+        Text = 'Clear Polygons'
+        Trimming = ttCharacter
+        Width = 152.000000000000000000
+        OnClick = btClearPolygonsClick
+      end
+      object Label9: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 56.000000000000000000
+        Text = 'Latitude:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label10: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 100.000000000000000000
+        Text = 'Longitude:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object edPolygonLongitude: TEdit
+        Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+        TabOrder = 4
+        KeyboardType = vktNumberPad
+        Text = '2'
+        Position.X = 120.000000000000000000
+        Position.Y = 98.000000000000000000
+        Width = 177.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+      end
+      object edPolygonLatitude: TEdit
+        Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+        TabOrder = 5
+        KeyboardType = vktNumberPad
+        Text = '48'
+        Position.X = 120.000000000000000000
+        Position.Y = 56.000000000000000000
+        Width = 177.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+      end
+      object Label11: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Text = 'Polygon Type:'
+        Width = 113.000000000000000000
+        Trimming = ttCharacter
+      end
+      object cbPolygonType: TComboBox
+        DisableFocusEffect = False
+        Height = 31.000000000000000000
+        ItemIndex = 0
+        Position.X = 120.000000000000000000
+        Position.Y = 16.000000000000000000
+        TabOrder = 7
+        Width = 177.000000000000000000
+        object TListBoxItem
+          Height = 19.000000000000000000
+          IsSelected = True
+          Text = 'Line'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'Circle'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'Square'
+          Width = 19.000000000000000000
+        end
+      end
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [igPan, igDoubleTap, igLongTap]
+        EnableDragHighlight = False
+        Enabled = False
+        Height = 233.000000000000000000
+        Position.X = 19.000000000000000000
+        Position.Y = 257.000000000000000000
+        TabOrder = 8
+        Width = 285.000000000000000000
+        Lines.Strings = (
+          '- The "Line" polygon is displayed from (0, 0) '
+          'coordinates to the specified latitude and '
+          'longitude coordinate.'
+          ''
+          '- The "Circle" polygon is displayed as a '
+          'fixed size circle, with the specified latitude '
+          'and longitude values as center point.'
+          ''
+          '- The "Square" polygon is displayed using '
+          'the specified latitude and longitude values '
+          'as top right point.')
+      end
+    end
+    object TabItem3: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 160.000000000000000000
+      TabOrder = 2
+      Text = 'Directions'
+      Trimming = ttCharacter
+      Width = 80.000000000000000000
+      object edTo: TEdit
+        Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+        TabOrder = 0
+        Text = 'Paris'
+        Position.X = 56.000000000000000000
+        Position.Y = 48.000000000000000000
+        Width = 241.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+      end
+      object edFrom: TEdit
+        Touch.InteractiveGestures = [igDoubleTap, igLongTap]
+        TabOrder = 1
+        Text = 'Berlin'
+        Position.X = 56.000000000000000000
+        Position.Y = 10.000000000000000000
+        Width = 241.000000000000000000
+        Height = 31.000000000000000000
+        KillFocusByReturn = False
+      end
+      object btGetDirections: TButton
+        Height = 44.000000000000000000
+        Position.X = 56.000000000000000000
+        Position.Y = 93.000000000000000000
+        TabOrder = 2
+        Text = 'Get Directions'
+        Trimming = ttCharacter
+        Width = 152.000000000000000000
+        OnClick = btGetDirectionsClick
+      end
+      object btClearDirections: TButton
+        Height = 44.000000000000000000
+        Position.X = 56.000000000000000000
+        Position.Y = 149.000000000000000000
+        TabOrder = 3
+        Text = 'Clear Directions'
+        Trimming = ttCharacter
+        Width = 152.000000000000000000
+        OnClick = btClearDirectionsClick
+      end
+      object Label12: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 52.000000000000000000
+        Text = 'To:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label13: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Text = 'From:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label14: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 216.000000000000000000
+        Text = 'Suggested Routes:'
+        Width = 177.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label15: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 392.000000000000000000
+        Text = 'Details:'
+        Width = 177.000000000000000000
+        Trimming = ttCharacter
+      end
+      object lbRoutes: TListBox
+        Height = 129.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 248.000000000000000000
+        TabOrder = 8
+        Width = 289.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        OnChange = lbRoutesChange
+      end
+      object lbRouteDetails: TListBox
+        Height = 193.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 416.000000000000000000
+        TabOrder = 9
+        Width = 289.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+      end
+    end
+    object TabItem4: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 240.000000000000000000
+      TabOrder = 3
+      Text = 'Options'
+      Trimming = ttCharacter
+      Width = 80.000000000000000000
+      object cbCycle: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 200.000000000000000000
+        TabOrder = 0
+        Text = 'Show Bicycling'
+        Width = 200.000000000000000000
+        OnChange = cbCycleChange
+      end
+      object Label2: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 16.000000000000000000
+        Text = 'Map:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label3: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 168.000000000000000000
+        Text = 'View:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label4: TLabel
+        Height = 21.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 376.000000000000000000
+        Text = 'Controls:'
+        Width = 82.000000000000000000
+        Trimming = ttCharacter
+      end
+      object rbRoad: TRadioButton
+        GroupName = 'mapview'
+        Height = 19.000000000000000000
+        IsChecked = True
+        Position.X = 16.000000000000000000
+        Position.Y = 48.000000000000000000
+        TabOrder = 4
+        Text = 'Road Map'
+        Width = 200.000000000000000000
+        OnClick = rbRoadClick
+      end
+      object rbSatellite: TRadioButton
+        GroupName = 'mapview'
+        Height = 19.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 72.000000000000000000
+        TabOrder = 5
+        Text = 'Satellite View'
+        Width = 200.000000000000000000
+        OnClick = rbSatelliteClick
+      end
+      object rbTerrain: TRadioButton
+        GroupName = 'mapview'
+        Height = 19.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 96.000000000000000000
+        TabOrder = 6
+        Text = 'Terrain View'
+        Width = 200.000000000000000000
+        OnClick = rbTerrainClick
+      end
+      object rbHybrid: TRadioButton
+        GroupName = 'mapview'
+        Height = 19.000000000000000000
+        Position.X = 16.000000000000000000
+        Position.Y = 120.000000000000000000
+        TabOrder = 7
+        Text = 'Hybrid View'
+        Width = 200.000000000000000000
+        OnClick = rbHybridClick
+      end
+      object cbPano: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 224.000000000000000000
+        TabOrder = 8
+        Text = 'Show Panoramio'
+        Width = 200.000000000000000000
+        OnChange = cbCycleChange
+      end
+      object cbTraffic: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 248.000000000000000000
+        TabOrder = 9
+        Text = 'Show Traffic'
+        Width = 200.000000000000000000
+        OnChange = cbCycleChange
+      end
+      object cbStreetView: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 272.000000000000000000
+        TabOrder = 10
+        Text = 'Show StreetView'
+        Width = 200.000000000000000000
+        OnChange = cbCycleChange
+      end
+      object cbWeather: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 296.000000000000000000
+        TabOrder = 11
+        Text = 'Show Weather'
+        Width = 200.000000000000000000
+        OnChange = cbCycleChange
+      end
+      object cbCloud: TCheckBox
+        Height = 19.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 320.000000000000000000
+        TabOrder = 12
+        Text = 'Show Cloud'
+        Width = 200.000000000000000000
+        OnChange = cbCycleChange
+      end
+      object cbStreetViewControl: TCheckBox
+        Height = 19.000000000000000000
+        IsChecked = True
+        Position.X = 24.000000000000000000
+        Position.Y = 408.000000000000000000
+        TabOrder = 13
+        Text = 'Show StreetView Control'
+        Width = 200.000000000000000000
+        OnChange = cbStreetViewControlChange
+      end
+      object cbScaleControl: TCheckBox
+        Height = 19.000000000000000000
+        IsChecked = True
+        Position.X = 24.000000000000000000
+        Position.Y = 456.000000000000000000
+        TabOrder = 14
+        Text = 'Show Scale Control'
+        Width = 200.000000000000000000
+        OnChange = cbStreetViewControlChange
+      end
+      object cbMapType: TCheckBox
+        Height = 19.000000000000000000
+        IsChecked = True
+        Position.X = 24.000000000000000000
+        Position.Y = 480.000000000000000000
+        TabOrder = 15
+        Text = 'Show MapType Control'
+        Width = 200.000000000000000000
+        OnChange = cbStreetViewControlChange
+      end
+      object cbOverviewControl: TCheckBox
+        Height = 19.000000000000000000
+        IsChecked = True
+        Position.X = 24.000000000000000000
+        Position.Y = 504.000000000000000000
+        TabOrder = 16
+        Text = 'Show OverviewMap Control'
+        Width = 200.000000000000000000
+        OnChange = cbStreetViewControlChange
+      end
+      object cbZoomControl: TCheckBox
+        Height = 19.000000000000000000
+        IsChecked = True
+        Position.X = 24.000000000000000000
+        Position.Y = 432.000000000000000000
+        TabOrder = 17
+        Text = 'Show Zoom Control'
+        Width = 200.000000000000000000
+        OnChange = cbStreetViewControlChange
+      end
+    end
+  end
+  object TMSFMXWebGMapsGeocoding1: TTMSFMXWebGMapsGeocoding
+    Version = '1.0.0.0'
+    Left = 920
+    Top = 8
+  end
+end
