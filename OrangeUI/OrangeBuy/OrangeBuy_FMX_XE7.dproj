@@ -1,0 +1,2368 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F3B87289-459A-45B1-8388-F96C2D569939}</ProjectGuid>
+        <ProjectVersion>16.1</ProjectVersion>
+        <FrameworkType>FMX</FrameworkType>
+        <MainSource>OrangeBuy_FMX_XE7.dpr</MainSource>
+        <Base>True</Base>
+        <Config Condition="'$(Config)'==''">Debug</Config>
+        <Platform Condition="'$(Platform)'==''">Win32</Platform>
+        <TargetedPlatforms>95</TargetedPlatforms>
+        <AppType>Application</AppType>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Android' and '$(Base)'=='true') or '$(Base_Android)'!=''">
+        <Base_Android>true</Base_Android>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSDevice' and '$(Base)'=='true') or '$(Base_iOSDevice)'!=''">
+        <Base_iOSDevice>true</Base_iOSDevice>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Base)'=='true') or '$(Base_iOSSimulator)'!=''">
+        <Base_iOSSimulator>true</Base_iOSSimulator>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Base)'=='true') or '$(Base_OSX32)'!=''">
+        <Base_OSX32>true</Base_OSX32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+        <Base_Win32>true</Base_Win32>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+        <Base_Win64>true</Base_Win64>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+        <Cfg_1>true</Cfg_1>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+        <Cfg_1_Win32>true</Cfg_1_Win32>
+        <CfgParent>Cfg_1</CfgParent>
+        <Cfg_1>true</Cfg_1>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+        <Cfg_2>true</Cfg_2>
+        <CfgParent>Base</CfgParent>
+        <Base>true</Base>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base)'!=''">
+        <DCC_UnitSearchPath>..\..\OrangeUIDesign\DCU\FMX\XE7UP1\$(Platform)\$(Config);$(DCC_UnitSearchPath)</DCC_UnitSearchPath>
+        <Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
+        <DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+        <Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+        <AUP_CAMERA>true</AUP_CAMERA>
+        <AUP_READ_PHONE_STATE>true</AUP_READ_PHONE_STATE>
+        <AUP_WRITE_EXTERNAL_STORAGE>true</AUP_WRITE_EXTERNAL_STORAGE>
+        <AUP_WRITE_CALENDAR>true</AUP_WRITE_CALENDAR>
+        <AUP_READ_EXTERNAL_STORAGE>true</AUP_READ_EXTERNAL_STORAGE>
+        <SanitizedProjectName>OrangeBuy_FMX_XE7</SanitizedProjectName>
+        <Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+        <AUP_INTERNET>true</AUP_INTERNET>
+        <AUP_READ_CALENDAR>true</AUP_READ_CALENDAR>
+        <AUP_ACCESS_COARSE_LOCATION>true</AUP_ACCESS_COARSE_LOCATION>
+        <AUP_CALL_PHONE>true</AUP_CALL_PHONE>
+        <AUP_ACCESS_FINE_LOCATION>true</AUP_ACCESS_FINE_LOCATION>
+        <DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+        <DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
+        <DCC_E>false</DCC_E>
+        <DCC_N>false</DCC_N>
+        <DCC_S>false</DCC_S>
+        <DCC_F>false</DCC_F>
+        <DCC_K>false</DCC_K>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Android)'!=''">
+        <Android_LauncherIcon72>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png</Android_LauncherIcon72>
+        <Android_SplashImage640>$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png</Android_SplashImage640>
+        <Android_SplashImage470>$(BDS)\bin\Artwork\Android\FM_SplashImage_470x320.png</Android_SplashImage470>
+        <Android_LauncherIcon48>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png</Android_LauncherIcon48>
+        <Android_LauncherIcon96>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png</Android_LauncherIcon96>
+        <Android_SplashImage426>$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png</Android_SplashImage426>
+        <Android_SplashImage960>$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png</Android_SplashImage960>
+        <BT_BuildType>Debug</BT_BuildType>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <Android_LauncherIcon144>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png</Android_LauncherIcon144>
+        <Android_LauncherIcon36>$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png</Android_LauncherIcon36>
+        <DCC_UsePackage>FireDACSqliteDriver;FireDACDSDriver;DBXSqliteDriver;fmx;IndySystem;tethering;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DataSnapProviderClient;DbxCommonDriver;dbxcds;fmxFireDAC;CustomIPTransport;dsnap;IndyIPServer;IndyCore;IndyIPCommon;CloudService;FmxTeeUI;FireDACIBDriver;DataSnapFireDAC;FireDACDBXDriver;soapserver;dsnapxml;bindcompfmx;RESTBackendComponents;emsclientfiredac;rtl;dbrtl;DbxClientDriver;FireDACCommon;bindcomp;xmlrtl;DataSnapNativeClient;ibxpress;IndyProtocols;FireDACCommonDriver;bindengine;bindcompdbx;soaprtl;FMXTee;emsclient;FireDAC;inet;soapmidas;RESTComponents;dbexpress;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_Keys>package=com.embarcadero.$(MSBuildProjectName);label=$(MSBuildProjectName);versionCode=1;versionName=1.0.0;persistent=False;restoreAnyVersion=False;installLocation=preferExternal;largeHeap=False;theme=TitleBar;hardwareAccelerated=true</VerInfo_Keys>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_iOSDevice)'!=''">
+        <iPad_Launch2048x1536>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png</iPad_Launch2048x1536>
+        <iPad_AppIcon152>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png</iPad_AppIcon152>
+        <iPad_Launch1536x2048>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png</iPad_Launch1536x2048>
+        <iPad_SpotLight80>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png</iPad_SpotLight80>
+        <iPad_AppIcon72>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png</iPad_AppIcon72>
+        <iPhone_AppIcon60>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png</iPhone_AppIcon60>
+        <iPhone_AppIcon87>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png</iPhone_AppIcon87>
+        <iPhone_AppIcon57>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png</iPhone_AppIcon57>
+        <iPhone_Spotlight40>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png</iPhone_Spotlight40>
+        <iPad_Launch768x1024>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png</iPad_Launch768x1024>
+        <iPad_Launch1024x768>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png</iPad_Launch1024x768>
+        <iPad_AppIcon144>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png</iPad_AppIcon144>
+        <iPhone_Launch640x1136>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png</iPhone_Launch640x1136>
+        <VerInfo_BundleId>$(MSBuildProjectName)</VerInfo_BundleId>
+        <iPhone_Launch2208>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png</iPhone_Launch2208>
+        <iPad_SpotLight40>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png</iPad_SpotLight40>
+        <iPad_SpotLight50>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png</iPad_SpotLight50>
+        <iPhone_AppIcon180>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png</iPhone_AppIcon180>
+        <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
+        <iPhone_AppIcon120>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png</iPhone_AppIcon120>
+        <iPhone_Spotlight58>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_58x58.png</iPhone_Spotlight58>
+        <iPhone_Launch1242>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png</iPhone_Launch1242>
+        <BT_BuildType>Debug</BT_BuildType>
+        <iPhone_Spotlight29>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png</iPhone_Spotlight29>
+        <iPad_Setting58>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png</iPad_Setting58>
+        <iPhone_AppIcon114>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png</iPhone_AppIcon114>
+        <iPad_SpotLight100>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png</iPad_SpotLight100>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <iPad_AppIcon76>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png</iPad_AppIcon76>
+        <iPad_Launch2048>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png</iPad_Launch2048>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=7.1;CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);UIDeviceFamily=iPhone &amp; iPad;CFBundleResourceSpecification=ResourceRules.plist</VerInfo_Keys>
+        <iPhone_Launch320>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png</iPhone_Launch320>
+        <DCC_UsePackage>FireDACSqliteDriver;FireDACDSDriver;DBXSqliteDriver;fmx;IndySystem;tethering;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DataSnapProviderClient;DbxCommonDriver;dbxcds;fmxFireDAC;CustomIPTransport;dsnap;IndyIPServer;fmxase;IndyCore;IndyIPCommon;CloudService;FmxTeeUI;FireDACIBDriver;DataSnapFireDAC;FireDACDBXDriver;soapserver;dsnapxml;bindcompfmx;RESTBackendComponents;emsclientfiredac;rtl;dbrtl;DbxClientDriver;FireDACCommon;bindcomp;xmlrtl;DataSnapNativeClient;ibxpress;IndyProtocols;FireDACCommonDriver;bindengine;bindcompdbx;soaprtl;FMXTee;emsclient;FireDAC;inet;soapmidas;RESTComponents;dbexpress;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+        <iPhone_Spotlight80>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png</iPhone_Spotlight80>
+        <iPad_Launch768>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png</iPad_Launch768>
+        <iPad_Launch1536>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png</iPad_Launch1536>
+        <iPad_Setting29>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png</iPad_Setting29>
+        <iPad_Launch1024>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png</iPad_Launch1024>
+        <iPhone_Launch640>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png</iPhone_Launch640>
+        <iPhone_Launch750>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png</iPhone_Launch750>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_iOSSimulator)'!=''">
+        <iPad_Launch2048x1536>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png</iPad_Launch2048x1536>
+        <iPad_AppIcon152>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png</iPad_AppIcon152>
+        <iPad_AppIcon72>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png</iPad_AppIcon72>
+        <iPad_Launch1536x2048>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png</iPad_Launch1536x2048>
+        <iPhone_Spotlight40>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png</iPhone_Spotlight40>
+        <iPhone_AppIcon60>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png</iPhone_AppIcon60>
+        <iPhone_AppIcon87>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png</iPhone_AppIcon87>
+        <iPad_Launch768x1024>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png</iPad_Launch768x1024>
+        <iPhone_AppIcon57>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png</iPhone_AppIcon57>
+        <iPad_SpotLight80>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png</iPad_SpotLight80>
+        <iPad_Launch1024x768>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png</iPad_Launch1024x768>
+        <iPad_AppIcon144>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png</iPad_AppIcon144>
+        <iPhone_Launch2208>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png</iPhone_Launch2208>
+        <iPhone_Launch640x1136>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png</iPhone_Launch640x1136>
+        <VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
+        <iPad_SpotLight40>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png</iPad_SpotLight40>
+        <iPad_SpotLight50>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png</iPad_SpotLight50>
+        <iPhone_AppIcon120>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png</iPhone_AppIcon120>
+        <iPhone_AppIcon180>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png</iPhone_AppIcon180>
+        <iPhone_Spotlight58>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_58x58.png</iPhone_Spotlight58>
+        <iPhone_Launch1242>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png</iPhone_Launch1242>
+        <iPhone_Spotlight29>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png</iPhone_Spotlight29>
+        <iPad_Setting58>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png</iPad_Setting58>
+        <iPad_AppIcon76>$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png</iPad_AppIcon76>
+        <iPhone_AppIcon114>$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png</iPhone_AppIcon114>
+        <iPad_SpotLight100>$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png</iPad_SpotLight100>
+        <iPad_Launch2048>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png</iPad_Launch2048>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <iPad_Setting29>$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png</iPad_Setting29>
+        <DCC_UsePackage>FireDACSqliteDriver;FireDACDSDriver;DBXSqliteDriver;fmx;IndySystem;tethering;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DataSnapProviderClient;DbxCommonDriver;dbxcds;fmxFireDAC;CustomIPTransport;dsnap;IndyIPServer;fmxase;IndyCore;IndyIPCommon;CloudService;FmxTeeUI;FireDACIBDriver;DataSnapFireDAC;FireDACDBXDriver;soapserver;dsnapxml;bindcompfmx;RESTBackendComponents;emsclientfiredac;rtl;dbrtl;DbxClientDriver;FireDACCommon;bindcomp;xmlrtl;DataSnapNativeClient;ibxpress;IndyProtocols;FireDACCommonDriver;bindengine;bindcompdbx;soaprtl;FMXTee;emsclient;FireDAC;inet;soapmidas;RESTComponents;dbexpress;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=7.1;CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);UIDeviceFamily=iPhone &amp; iPad;CFBundleResourceSpecification=ResourceRules.plist</VerInfo_Keys>
+        <iPhone_Spotlight80>$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_80x80.png</iPhone_Spotlight80>
+        <iPad_Launch768>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png</iPad_Launch768>
+        <iPhone_Launch320>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png</iPhone_Launch320>
+        <iPad_Launch1024>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png</iPad_Launch1024>
+        <iPad_Launch1536>$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png</iPad_Launch1536>
+        <iPhone_Launch640>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png</iPhone_Launch640>
+        <iPhone_Launch750>$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png</iPhone_Launch750>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_OSX32)'!=''">
+        <DCC_UsePackage>FireDACSqliteDriver;FireDACDSDriver;DBXSqliteDriver;FireDACPgDriver;fmx;IndySystem;tethering;DBXInterBaseDriver;DataSnapClient;DataSnapServer;DataSnapCommon;DataSnapProviderClient;DbxCommonDriver;dbxcds;fmxFireDAC;DBXOracleDriver;CustomIPTransport;dsnap;IndyIPServer;fmxase;IndyCore;IndyIPCommon;CloudService;FmxTeeUI;FireDACIBDriver;DataSnapFireDAC;FireDACDBXDriver;soapserver;inetdbxpress;dsnapxml;FireDACASADriver;bindcompfmx;FireDACODBCDriver;RESTBackendComponents;emsclientfiredac;rtl;dbrtl;DbxClientDriver;FireDACCommon;bindcomp;inetdb;xmlrtl;DataSnapNativeClient;ibxpress;IndyProtocols;DBXMySQLDriver;FireDACCommonDriver;bindengine;bindcompdbx;soaprtl;FMXTee;emsclient;FireDACMSSQLDriver;FireDAC;DBXInformixDriver;DataSnapServerMidas;DBXFirebirdDriver;inet;fmxobj;FireDACMySQLDriver;soapmidas;DBXSybaseASADriver;FireDACOracleDriver;fmxdae;RESTComponents;dbexpress;DataSnapIndy10ServerTransport;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+        <VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true;LSApplicationCategoryType=public.app-category.utilities</VerInfo_Keys>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win32)'!=''">
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <DCC_UsePackage>FireDACSqliteDriver;FireDACDSDriver;DBXSqliteDriver;FireDACPgDriver;fmx;IndySystem;frxe21;TeeDB;tethering;OrangeUIDesign_FMX_XE7UP1;vclib;DBXInterBaseDriver;DataSnapClient;DataSnapServer;DataSnapCommon;frx21;DataSnapProviderClient;DBXSybaseASEDriver;DbxCommonDriver;vclimg;dbxcds;DatasnapConnectorsFreePascal;MetropolisUILiveTile;vcldb;vcldsnap;fmxFireDAC;DBXDb2Driver;DBXOracleDriver;CustomIPTransport;vclribbon;dsnap;IndyIPServer;fmxase;vcl;IndyCore;DBXMSSQLDriver;IndyIPCommon;CloudService;FmxTeeUI;FireDACIBDriver;CodeSiteExpressPkg;DataSnapFireDAC;FireDACDBXDriver;soapserver;inetdbxpress;dsnapxml;FireDACInfxDriver;FireDACDb2Driver;adortl;FireDACASADriver;bindcompfmx;FireDACODBCDriver;RESTBackendComponents;emsclientfiredac;rtl;dbrtl;DbxClientDriver;FireDACCommon;bindcomp;inetdb;frxTee21;Tee;DBXOdbcDriver;frxDB21;vclFireDAC;xmlrtl;DataSnapNativeClient;svnui;ibxpress;IndyProtocols;DBXMySQLDriver;FireDACCommonDriver;bindengine;vclactnband;bindcompdbx;soaprtl;FMXTee;TeeUI;bindcompvcl;vclie;FireDACADSDriver;vcltouch;emsclient;VCLRESTComponents;FireDACMSSQLDriver;FireDAC;VclSmp;DBXInformixDriver;Intraweb;DataSnapConnectors;DataSnapServerMidas;dsnapcon;DBXFirebirdDriver;inet;fmxobj;FireDACMySQLDriver;soapmidas;vclx;svn;DBXSybaseASADriver;FireDACOracleDriver;fmxdae;RESTComponents;FireDACMSAccDriver;dbexpress;DataSnapIndy10ServerTransport;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Base_Win64)'!=''">
+        <DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+        <DCC_UsePackage>FireDACSqliteDriver;FireDACDSDriver;DBXSqliteDriver;FireDACPgDriver;fmx;IndySystem;TeeDB;tethering;vclib;DBXInterBaseDriver;DataSnapClient;DataSnapServer;DataSnapCommon;DataSnapProviderClient;DBXSybaseASEDriver;DbxCommonDriver;vclimg;dbxcds;DatasnapConnectorsFreePascal;MetropolisUILiveTile;vcldb;vcldsnap;fmxFireDAC;DBXDb2Driver;DBXOracleDriver;CustomIPTransport;vclribbon;dsnap;IndyIPServer;fmxase;vcl;IndyCore;DBXMSSQLDriver;IndyIPCommon;CloudService;FmxTeeUI;FireDACIBDriver;DataSnapFireDAC;FireDACDBXDriver;soapserver;inetdbxpress;dsnapxml;FireDACInfxDriver;FireDACDb2Driver;adortl;FireDACASADriver;bindcompfmx;FireDACODBCDriver;RESTBackendComponents;emsclientfiredac;rtl;dbrtl;DbxClientDriver;FireDACCommon;bindcomp;inetdb;Tee;DBXOdbcDriver;vclFireDAC;xmlrtl;DataSnapNativeClient;ibxpress;IndyProtocols;DBXMySQLDriver;FireDACCommonDriver;bindengine;vclactnband;bindcompdbx;soaprtl;FMXTee;TeeUI;bindcompvcl;vclie;FireDACADSDriver;vcltouch;emsclient;VCLRESTComponents;FireDACMSSQLDriver;FireDAC;VclSmp;DBXInformixDriver;Intraweb;DataSnapConnectors;DataSnapServerMidas;dsnapcon;DBXFirebirdDriver;inet;fmxobj;FireDACMySQLDriver;soapmidas;vclx;DBXSybaseASADriver;FireDACOracleDriver;fmxdae;RESTComponents;FireDACMSAccDriver;dbexpress;DataSnapIndy10ServerTransport;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1)'!=''">
+        <DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+        <DCC_DebugDCUs>true</DCC_DebugDCUs>
+        <DCC_Optimize>false</DCC_Optimize>
+        <DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+        <DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+        <DCC_RemoteDebug>true</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+        <VerInfo_Locale>1033</VerInfo_Locale>
+        <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+        <DCC_RemoteDebug>false</DCC_RemoteDebug>
+    </PropertyGroup>
+    <PropertyGroup Condition="'$(Cfg_2)'!=''">
+        <DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+        <DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+        <DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+        <DCC_DebugInformation>0</DCC_DebugInformation>
+    </PropertyGroup>
+    <ItemGroup>
+        <DelphiCompile Include="$(MainSource)">
+            <MainSource>MainSource</MainSource>
+        </DelphiCompile>
+        <DCCReference Include="..\..\OrangeProjectCommon\uUIFunction.pas"/>
+        <DCCReference Include="MainFrame.pas">
+            <Form>FrameMain</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="HomeFrame.pas">
+            <Form>FrameHome</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="SearchFrame.pas">
+            <Form>FrameSearch</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ClassifyFrame.pas">
+            <Form>FrameClassify</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="MyFrame.pas">
+            <Form>FrameMy</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="CartFrame.pas">
+            <Form>FrameCart</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="MainForm.pas">
+            <Form>frmMain</Form>
+            <FormType>fmx</FormType>
+        </DCCReference>
+        <DCCReference Include="LoginFrame.pas">
+            <Form>FrameLogin</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="SubClassifyFrame.pas">
+            <Form>FrameSubClassify</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ClassifyProductListFrame.pas">
+            <Form>FrameClassifyProductList</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ProductInfoFrame.pas">
+            <Form>FrameProductInfo</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <DCCReference Include="ThemeProductListFrame.pas">
+            <Form>FrameThemeProductList</Form>
+            <FormType>fmx</FormType>
+            <DesignClass>TFrame</DesignClass>
+        </DCCReference>
+        <RcItem Include="图片\12c15cb25beb90afc19be2770359a51d.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>12c15cb25beb90afc19be2770359a51d_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\21be6c8941c31e2aac1a2cee1338b771.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>21be6c8941c31e2aac1a2cee1338b771_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\268de1b8dcd35c426309ae627036ecfd.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>268de1b8dcd35c426309ae627036ecfd_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\4f60faae7d97dfc96e789ef318cba3da.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>4f60faae7d97dfc96e789ef318cba3da_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\50d91313f29046c03cc20fb3543b6e5d.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>50d91313f29046c03cc20fb3543b6e5d_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\592a33538f2ba38d3f5b534fee2fa2c6.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>592a33538f2ba38d3f5b534fee2fa2c6_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\5b33f57f591e9d66e97886e4c010da1b.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>5b33f57f591e9d66e97886e4c010da1b_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\5e346be6b82f7bd122f65eb6ac061387.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>5e346be6b82f7bd122f65eb6ac061387_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\5e954ffea494b1190c8ab53a43df9499.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>5e954ffea494b1190c8ab53a43df9499_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\66d9b3a7c4a7c2cfe1ecb7f369cd7f8e.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>66d9b3a7c4a7c2cfe1ecb7f369cd7f8e_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\69b4ddd04e70c6b5e78fdc6bb040f4ef.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>69b4ddd04e70c6b5e78fdc6bb040f4ef_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\69f62e8fc66b87289ff5e823762a16cf.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>69f62e8fc66b87289ff5e823762a16cf_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\74b58e615d1e7ffdf32dd418a0db24f4.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>74b58e615d1e7ffdf32dd418a0db24f4_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\8212901a3e5759d59ff92ab2e19bfd4f.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>8212901a3e5759d59ff92ab2e19bfd4f_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\9c75b89d227ec986cd427c8324f86cfd.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>9c75b89d227ec986cd427c8324f86cfd_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\9cd82f0fa1367e72a4eb042d82ced192.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>9cd82f0fa1367e72a4eb042d82ced192_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\a85463f19e46ab371a6189bfa0101b21.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>a85463f19e46ab371a6189bfa0101b21_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\arrowdown.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>arrowdown_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\bcs_return@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>bcs_return_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\bf24bb546d9f265dcf75fb5bf6a5042e.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>bf24bb546d9f265dcf75fb5bf6a5042e_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\buttletin_icon@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>buttletin_icon_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\button_gray_border@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>button_gray_border_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\c75a1fb3145f003c55647c263ccdb63d.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>c75a1fb3145f003c55647c263ccdb63d_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\cart_all_select@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>cart_all_select_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\cart_all_unselect@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>cart_all_unselect_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\cell_arrow_down_accessory@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>cell_arrow_down_accessory_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\cell_arrow_right_accessory@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>cell_arrow_right_accessory_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\cell_arrow_up_accessory@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>cell_arrow_up_accessory_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_binggandianxin@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_binggandianxin_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_chandizhigong@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_chandizhigong_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_chongtiaochayin@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_chongtiaochayin_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_jiushuiyinliao@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_jiushuiyinliao_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_liangyoufushi@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_liangyoufushi_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_meishiyongpin@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_meishiyongpin_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_muyingshipin@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_muyingshipin_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_shengxianshipin@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_shengxianshipin_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_xiuxianshipin@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_xiuxianshipin_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\classify_yingyangbaojian@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>classify_yingyangbaojian_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\common_info@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>common_info_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\dc0922dd119363d06a20a546966137a0.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>dc0922dd119363d06a20a546966137a0_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\e3f14d291114821c7d43fda9ef1e5472.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>e3f14d291114821c7d43fda9ef1e5472_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\e7c53066e086dfb837ae3602cadc5351.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>e7c53066e086dfb837ae3602cadc5351_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\efe25bb9e8e365bd4911d94f92a28076.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>efe25bb9e8e365bd4911d94f92a28076_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\f548a36f56c97d520fc00ea887bfa47e.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>f548a36f56c97d520fc00ea887bfa47e_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\focus_map_selected@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>focus_map_selected_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\focus_map_unselect@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>focus_map_unselect_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsDetail_fav_un@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsDetail_fav_un_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsDetail_nav_back@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsDetail_nav_back_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsDetail_nav_back_height@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsDetail_nav_back_height_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsDetail_nav_sf@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsDetail_nav_sf_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsDetail_nav_sf_height@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsDetail_nav_sf_height_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsDetail_share@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsDetail_share_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsDetail_subGoods_normal@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsDetail_subGoods_normal_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsList_cart@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsList_cart_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsList_cell_addCart@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsList_cell_addCart_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsList_grid@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsList_grid_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsList_list@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsList_list_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsList_order_unselected@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsList_order_unselected_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\goodsList_searchBar@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>goodsList_searchBar_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\homeAllClassify@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>homeAllClassify_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\homeGlobalCate@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>homeGlobalCate_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\homeLocalSupply@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>homeLocalSupply_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\homeSearch@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>homeSearch_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\homeShake@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>homeShake_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\largirostrornis@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>largirostrornis_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\locate@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>locate_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\login_password_icon@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>login_password_icon_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\login_user_icon@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>login_user_icon_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\menu_cart@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>menu_cart_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\menu_cate@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>menu_cate_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\menu_home@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>menu_home_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\menu_pc@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>menu_pc_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\menu_search@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>menu_search_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\message_redPoint@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>message_redPoint_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\metrixQR@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>metrixQR_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\mnp_back@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>mnp_back_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\mnp_middle_line@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>mnp_middle_line_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\navibar_back_icon@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>navibar_back_icon_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\null_cart@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>null_cart_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\personalCenter_allOrder@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>personalCenter_allOrder_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\personalCenter_bg@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>personalCenter_bg_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\personalCenter_comments@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>personalCenter_comments_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\personalCenter_setting@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>personalCenter_setting_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\personalCenter_unpayedOrder@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>personalCenter_unpayedOrder_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\personalCenter_unreceived@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>personalCenter_unreceived_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\personalCenterLogin@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>personalCenterLogin_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_add_icon@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_add_icon_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_1@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_1_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_10@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_10_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_2@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_2_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_3@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_3_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_4@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_4_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_5@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_5_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_6@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_6_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_7@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_7_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_8@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_8_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\search_hot_9@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>search_hot_9_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\step_add@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>step_add_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\step_add_unvalid@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>step_add_unvalid_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\step_input@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>step_input_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\step_reduce@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>step_reduce_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\step_reduce_unvalid@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>step_reduce_unvalid_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_classify_hl@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_classify_hl_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_home_hl@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_home_hl_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_mobile_exclusive@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_mobile_exclusive_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_mobile_exclusive_hl@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_mobile_exclusive_hl_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_promotions_hl@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_promotions_hl_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_shoppingcart_hl@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_shoppingcart_hl_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\title_bar_bg_iOS7@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>title_bar_bg_iOS7_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\toolbar_bg_iOS7@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>toolbar_bg_iOS7_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\ecf23989835a6d221e2052efbfc235.jpg">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ecf23989835a6d221e2052efbfc235_jpg</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_classify@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_classify_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_home@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_home_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_promotions@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_promotions_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\tabbar_item_shoppingcart@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>tabbar_item_shoppingcart_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\cart_badge@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>cart_badge_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\arrow@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>arrow_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\BlueArrow@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>BlueArrow_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\common_loading@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>common_loading_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\73c8a42110ddcc708644de1c02529b58.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>73c8a42110ddcc708644de1c02529b58_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\activity_addMore@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>activity_addMore_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\activity_buyGift@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>activity_buyGift_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\activity_fullBack@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>activity_fullBack_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\activity_fullGift@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>activity_fullGift_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\activity_fullReduce@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>activity_fullReduce_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\activity_immediate_reduce@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>activity_immediate_reduce_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\ec8e12a684daed34a203b8234410ea5f.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>ec8e12a684daed34a203b8234410ea5f_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\common_switch_off@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>common_switch_off_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\common_switch_on@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>common_switch_on_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\login_password_secure_no@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>login_password_secure_no_2x_png</ResourceId>
+        </RcItem>
+        <RcItem Include="图片\login_password_secure_yes@2x.png">
+            <ResourceType>RCDATA</ResourceType>
+            <ResourceId>login_password_secure_yes_2x_png</ResourceId>
+        </RcItem>
+        <BuildConfiguration Include="Release">
+            <Key>Cfg_2</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Base">
+            <Key>Base</Key>
+        </BuildConfiguration>
+        <BuildConfiguration Include="Debug">
+            <Key>Cfg_1</Key>
+            <CfgParent>Base</CfgParent>
+        </BuildConfiguration>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Delphi.Personality.12</Borland.Personality>
+        <Borland.ProjectType>Application</Borland.ProjectType>
+        <BorlandProject>
+            <Delphi.Personality>
+                <Source>
+                    <Source Name="MainSource">OrangeBuy_FMX_XE7.dpr</Source>
+                </Source>
+                <Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcboffice2k210.bpl">Embarcadero C++Builder Office 2000 Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\bcbofficexp210.bpl">Embarcadero C++Builder Office XP Servers Package</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dcloffice2k210.bpl">Microsoft Office 2000 Sample Automation Server Wrapper Components</Excluded_Packages>
+                    <Excluded_Packages Name="$(BDSBIN)\dclofficexp210.bpl">Microsoft Office XP Sample Automation Server Wrapper Components</Excluded_Packages>
+                </Excluded_Packages>
+            </Delphi.Personality>
+            <Deployment>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Configuration="Debug" Class="iPad_AppIcon76"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Configuration="Release" Class="iPhone_Launch640"/>
+                <DeployFile LocalName="图片\goodsList_list@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\a85463f19e46ab371a6189bfa0101b21.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\menu_search@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_jiushuiyinliao@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_xiuxianshipin@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\common_switch_on@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\5e954ffea494b1190c8ab53a43df9499.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\efe25bb9e8e365bd4911d94f92a28076.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_6@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="Android\Release\splash_image_def.xml" Configuration="Release" Class="AndroidSplashImageDef"/>
+                <DeployFile LocalName="图片\cart_badge@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\menu_cate@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_shoppingcart@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\personalCenterLogin@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_jiushuiyinliao@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\homeShake@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\mnp_back@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\cell_arrow_up_accessory@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\focus_map_selected@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\268de1b8dcd35c426309ae627036ecfd.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_9@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Configuration="Debug" Class="iPhone_AppIcon114"/>
+                <DeployFile LocalName="Android\Release\AndroidManifest.xml" Configuration="Release" Class="ProjectAndroidManifest"/>
+                <DeployFile LocalName="图片\cell_arrow_right_accessory@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\mnp_back@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\ecf23989835a6d221e2052efbfc235.jpg" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="iOSDevice\Release\OrangeBuy_FMX_XE7" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>OrangeBuy_FMX_XE7</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\OrangeBuy_FMX.entitlements" Configuration="Release" Class="ProjectiOSEntitlements"/>
+                <DeployFile LocalName="图片\tabbar_item_mobile_exclusive@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="iOSDevice\Release\ResourceRules.plist" Configuration="Release" Class="ProjectiOSDeviceResourceRules"/>
+                <DeployFile LocalName="图片\menu_cart@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Release" Class="iPhone_Launch2208"/>
+                <DeployFile LocalName="图片\ec8e12a684daed34a203b8234410ea5f.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\activity_immediate_reduce@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\personalCenter_comments@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\search_add_icon@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\homeGlobalCate@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\activity_fullBack@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\cart_all_select@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\e3f14d291114821c7d43fda9ef1e5472.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\5e346be6b82f7bd122f65eb6ac061387.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\focus_map_selected@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\268de1b8dcd35c426309ae627036ecfd.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\5e954ffea494b1190c8ab53a43df9499.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\menu_home@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\activity_fullBack@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\69f62e8fc66b87289ff5e823762a16cf.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_10@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPhone_Spotlight40"/>
+                <DeployFile LocalName="图片\arrowdown.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\locate@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_binggandianxin@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsList_searchBar@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\cart_badge@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Configuration="Debug" Class="iPad_Launch1024x768"/>
+                <DeployFile LocalName="图片\login_user_icon@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\cell_arrow_right_accessory@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_user_icon@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\arrowdown.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\c75a1fb3145f003c55647c263ccdb63d.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\button_gray_border@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\activity_fullGift@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\navibar_back_icon@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\4f60faae7d97dfc96e789ef318cba3da.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_binggandianxin@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\buttletin_icon@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\ecf23989835a6d221e2052efbfc235.jpg" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_5@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_promotions_hl@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\activity_buyGift@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_home_hl@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\a85463f19e46ab371a6189bfa0101b21.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\12c15cb25beb90afc19be2770359a51d.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_chongtiaochayin@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\step_reduce@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_classify_hl@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\menu_search@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\9c75b89d227ec986cd427c8324f86cfd.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_classify@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_password_secure_no@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\homeShake@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_shengxianshipin@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_sf@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\69f62e8fc66b87289ff5e823762a16cf.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\personalCenter_allOrder@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\search_hot_8@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_2@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\4f60faae7d97dfc96e789ef318cba3da.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="iOSSimulator\Debug\OrangeBuy_FMX_XE7" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>OrangeBuy_FMX_XE7</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\buttletin_icon@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\personalCenter_bg@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Configuration="Debug" Class="iPad_SpotLight100"/>
+                <DeployFile LocalName="图片\dc0922dd119363d06a20a546966137a0.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\5b33f57f591e9d66e97886e4c010da1b.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\9c75b89d227ec986cd427c8324f86cfd.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\search_hot_6@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\locate@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Configuration="Release" Class="iPad_SpotLight80"/>
+                <DeployFile LocalName="图片\goodsList_searchBar@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\bf24bb546d9f265dcf75fb5bf6a5042e.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\personalCenter_setting@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_3@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\menu_cart@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_72x72.png" Configuration="Release" Class="Android_LauncherIcon72"/>
+                <DeployFile LocalName="图片\classify_shengxianshipin@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\bcs_return@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_144x144.png" Configuration="Release" Class="Android_LauncherIcon144"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Configuration="Release" Class="iPad_Launch1024"/>
+                <DeployFile LocalName="图片\cell_arrow_down_accessory@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Configuration="Debug" Class="iPad_Launch2048x1536"/>
+                <DeployFile LocalName="图片\arrow@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\74b58e615d1e7ffdf32dd418a0db24f4.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\homeGlobalCate@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_5@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\message_redPoint@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="iOSSimulator\Debug\OrangeBuy_FMX.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Configuration="Release" Class="iPad_SpotLight100"/>
+                <DeployFile LocalName="Win32\Debug\OrangeBuy_FMX_XE7.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>OrangeBuy_FMX_XE7.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\activity_fullBack@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\step_input@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\ec8e12a684daed34a203b8234410ea5f.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\search_add_icon@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\mnp_middle_line@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_subGoods_normal@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Configuration="Debug" Class="iPad_Launch2048"/>
+                <DeployFile LocalName="图片\menu_pc@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_1@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Configuration="Debug" Class="iPad_AppIcon152"/>
+                <DeployFile LocalName="图片\e3f14d291114821c7d43fda9ef1e5472.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\search_hot_3@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsList_cart@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Configuration="Release" Class="iPhone_AppIcon114"/>
+                <DeployFile LocalName="图片\null_cart@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\metrixQR@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Configuration="Debug" Class="iPhone_Spotlight29"/>
+                <DeployFile LocalName="图片\title_bar_bg_iOS7@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\metrixQR@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\268de1b8dcd35c426309ae627036ecfd.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\goodsDetail_nav_sf@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\goodsDetail_subGoods_normal@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Configuration="Debug" Class="iPhone_Launch320"/>
+                <DeployFile LocalName="图片\classify_liangyoufushi@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_share@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\focus_map_unselect@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\menu_pc@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\personalCenter_allOrder@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Configuration="Debug" Class="iPad_Launch1536x2048"/>
+                <DeployFile LocalName="图片\50d91313f29046c03cc20fb3543b6e5d.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\5b33f57f591e9d66e97886e4c010da1b.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_password_secure_no@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Configuration="Debug" Class="iPhone_AppIcon57"/>
+                <DeployFile LocalName="$(BDS)\lib\android\debug\x86\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeX86File"/>
+                <DeployFile LocalName="图片\step_reduce_unvalid@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_add_icon@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_9@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_password_icon@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\9c75b89d227ec986cd427c8324f86cfd.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_mobile_exclusive_hl@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\focus_map_unselect@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\homeAllClassify@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\goodsList_list@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="iOSDevice\Debug\ResourceRules.plist" Configuration="Debug" Class="ProjectiOSDeviceResourceRules"/>
+                <DeployFile LocalName="图片\message_redPoint@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Release\libOrangeBuy_FMX_XE7.so" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="Android">
+                        <RemoteName>libOrangeBuy_FMX_XE7.so</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\cart_all_select@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\mnp_middle_line@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\5e954ffea494b1190c8ab53a43df9499.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\personalCenter_allOrder@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_mobile_exclusive_hl@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Configuration="Release" Class="iPhone_AppIcon180"/>
+                <DeployFile LocalName="图片\personalCenter_unpayedOrder@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\5e346be6b82f7bd122f65eb6ac061387.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\focus_map_selected@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_back_height@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\50d91313f29046c03cc20fb3543b6e5d.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\arrowdown.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Configuration="Debug" Class="iPhone_Launch1242"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Configuration="Release" Class="iPad_Launch1536x2048"/>
+                <DeployFile LocalName="iOSDevice\Release\OrangeBuy_FMX.entitlements" Configuration="Release" Class="ProjectiOSEntitlements"/>
+                <DeployFile LocalName="图片\goodsDetail_share@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_back_height@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_promotions_hl@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Configuration="Release" Class="iPad_SpotLight50"/>
+                <DeployFile LocalName="图片\goodsList_cell_addCart@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\step_reduce@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="iOSDevice\Release\OrangeBuy_FMX.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Configuration="Debug" Class="iPad_Launch768x1024"/>
+                <DeployFile LocalName="图片\personalCenter_unpayedOrder@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\ec8e12a684daed34a203b8234410ea5f.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\50d91313f29046c03cc20fb3543b6e5d.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_classify@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_home@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\21be6c8941c31e2aac1a2cee1338b771.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_home@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_shoppingcart@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\common_switch_on@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Configuration="Release" Class="iPad_Launch1024x768"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_SplashImage_426x320.png" Configuration="Release" Class="Android_SplashImage426"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_back@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\bf24bb546d9f265dcf75fb5bf6a5042e.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\personalCenterLogin@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_mobile_exclusive_hl@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\74b58e615d1e7ffdf32dd418a0db24f4.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\BlueArrow@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\lib\android\debug\mips\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeMipsFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Configuration="Debug" Class="iPad_Launch1536"/>
+                <DeployFile LocalName="图片\step_add@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Configuration="Release" Class="iPad_Launch768"/>
+                <DeployFile LocalName="图片\common_loading@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Configuration="Release" Class="iPhone_AppIcon60"/>
+                <DeployFile LocalName="图片\activity_immediate_reduce@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\cart_all_unselect@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Configuration="Debug" Class="iPhone_Launch640"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Debug" Class="iPhone_Launch750"/>
+                <DeployFile LocalName="图片\bcs_return@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_chongtiaochayin@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\common_loading@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\personalCenter_unreceived@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsList_list@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Configuration="Debug" Class="iPhone_AppIcon87"/>
+                <DeployFile LocalName="图片\homeShake@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsList_searchBar@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\66d9b3a7c4a7c2cfe1ecb7f369cd7f8e.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_home@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\menu_search@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\personalCenter_setting@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="iOSDevice\Release\OrangeBuy_FMX.info.plist" Configuration="Release" Class="ProjectiOSInfoPList"/>
+                <DeployFile LocalName="图片\4f60faae7d97dfc96e789ef318cba3da.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Configuration="Debug" Class="iPad_SpotLight80"/>
+                <DeployFile LocalName="图片\efe25bb9e8e365bd4911d94f92a28076.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\a85463f19e46ab371a6189bfa0101b21.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\66d9b3a7c4a7c2cfe1ecb7f369cd7f8e.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\step_reduce@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\step_reduce_unvalid@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\5b33f57f591e9d66e97886e4c010da1b.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_SplashImage_640x480.png" Configuration="Release" Class="Android_SplashImage640"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Configuration="Debug" Class="iPhone_AppIcon60"/>
+                <DeployFile LocalName="图片\tabbar_item_promotions@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\goodsList_order_unselected@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_shoppingcart@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\step_add_unvalid@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Configuration="Release" Class="iPhone_AppIcon57"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_180x180.png" Configuration="Debug" Class="iPhone_AppIcon180"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Configuration="Debug" Class="iPhone_AppIcon120"/>
+                <DeployFile LocalName="图片\tabbar_item_home_hl@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_password_secure_yes@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\menu_home@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_muyingshipin@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\mnp_back@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_sf_height@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_36x36.png" Configuration="Release" Class="Android_LauncherIcon36"/>
+                <DeployFile LocalName="图片\efe25bb9e8e365bd4911d94f92a28076.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\c75a1fb3145f003c55647c263ccdb63d.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\bcs_return@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\dc0922dd119363d06a20a546966137a0.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\toolbar_bg_iOS7@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\personalCenter_unreceived@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\activity_fullGift@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\title_bar_bg_iOS7@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\common_switch_on@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_user_icon@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_password_secure_yes@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_password_icon@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\e7c53066e086dfb837ae3602cadc5351.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\arrow@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\e7c53066e086dfb837ae3602cadc5351.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_classify_hl@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_muyingshipin@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\e3f14d291114821c7d43fda9ef1e5472.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_fav_un@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\metrixQR@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Debug\OrangeBuy_FMX.info.plist" Configuration="Debug" Class="ProjectiOSInfoPList"/>
+                <DeployFile LocalName="图片\BlueArrow@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\button_gray_border@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\activity_fullGift@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\73c8a42110ddcc708644de1c02529b58.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\common_switch_off@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="iOSSimulator\Release\OrangeBuy_FMX_XE7" Configuration="Release" Class="ProjectOutput">
+                    <Platform Name="iOSSimulator">
+                        <RemoteName>OrangeBuy_FMX_XE7</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Configuration="Debug" Class="iPad_Setting29"/>
+                <DeployFile LocalName="图片\navibar_back_icon@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\BlueArrow@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Configuration="Release" Class="iPhone_AppIcon120"/>
+                <DeployFile LocalName="图片\menu_home@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\activity_addMore@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\cell_arrow_right_accessory@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\8212901a3e5759d59ff92ab2e19bfd4f.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\66d9b3a7c4a7c2cfe1ecb7f369cd7f8e.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\9cd82f0fa1367e72a4eb042d82ced192.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\12c15cb25beb90afc19be2770359a51d.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\step_add_unvalid@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="Android\Release\styles.xml" Configuration="Release" Class="AndroidSplashStyles"/>
+                <DeployFile LocalName="图片\f548a36f56c97d520fc00ea887bfa47e.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_96x96.png" Configuration="Release" Class="Android_LauncherIcon96"/>
+                <DeployFile LocalName="图片\21be6c8941c31e2aac1a2cee1338b771.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_sf@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="C:\Documents and Settings\All Users\Documents\Embarcadero\Studio\15.0\PlatformSDKs\android-ndk-r9c\prebuilt\android-arm\gdbserver\gdbserver" Configuration="Release" Class="AndroidGDBServer"/>
+                <DeployFile LocalName="图片\classify_binggandianxin@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\personalCenter_comments@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\homeSearch@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\592a33538f2ba38d3f5b534fee2fa2c6.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_4@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Configuration="Release" Class="Android_SplashImage960"/>
+                <DeployFile LocalName="图片\69f62e8fc66b87289ff5e823762a16cf.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_chandizhigong@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\8212901a3e5759d59ff92ab2e19bfd4f.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_classify@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_promotions@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\personalCenter_unpayedOrder@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\toolbar_bg_iOS7@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\c75a1fb3145f003c55647c263ccdb63d.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_promotions@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\homeSearch@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_liangyoufushi@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_shoppingcart_hl@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\73c8a42110ddcc708644de1c02529b58.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\common_loading@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\lib\android\debug\armeabi\libnative-activity.so" Configuration="Release" Class="AndroidLibnativeArmeabiFile"/>
+                <DeployFile LocalName="图片\message_redPoint@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Configuration="Release" Class="iPad_Launch2048x1536"/>
+                <DeployFile LocalName="图片\common_info@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\cell_arrow_down_accessory@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Configuration="Release" Class="iPad_AppIcon76"/>
+                <DeployFile LocalName="图片\goodsDetail_share@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_shoppingcart_hl@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\592a33538f2ba38d3f5b534fee2fa2c6.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsList_cell_addCart@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Configuration="Release" Class="iPad_Launch1536"/>
+                <DeployFile LocalName="图片\classify_chongtiaochayin@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\8212901a3e5759d59ff92ab2e19bfd4f.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\navibar_back_icon@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_password_secure_no@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\personalCenter_bg@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\step_reduce_unvalid@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\9cd82f0fa1367e72a4eb042d82ced192.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Configuration="Release" Class="iPhone_Launch320"/>
+                <DeployFile LocalName="图片\cart_all_select@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\goodsDetail_nav_back@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_8@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\69b4ddd04e70c6b5e78fdc6bb040f4ef.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Configuration="Debug" Class="iPad_Setting58"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_sf_height@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\menu_cate@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Configuration="Debug" Class="iPad_SpotLight50"/>
+                <DeployFile LocalName="图片\classify_yingyangbaojian@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Configuration="Release" Class="iPad_AppIcon72"/>
+                <DeployFile LocalName="图片\f548a36f56c97d520fc00ea887bfa47e.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_chandizhigong@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\activity_buyGift@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136"/>
+                <DeployFile LocalName="图片\cart_badge@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsList_cart@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Release\OrangeBuy_FMX.info.plist" Configuration="Release" Class="ProjectiOSInfoPList"/>
+                <DeployFile LocalName="图片\dc0922dd119363d06a20a546966137a0.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\homeGlobalCate@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\personalCenter_unreceived@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_3@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\5e346be6b82f7bd122f65eb6ac061387.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\mnp_middle_line@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\search_hot_7@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\button_gray_border@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_back_height@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\locate@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Configuration="Release" Class="iPad_Setting58"/>
+                <DeployFile LocalName="图片\search_hot_7@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_meishiyongpin@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\common_switch_off@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Debug\OrangeBuy_FMX_XE7" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="iOSDevice">
+                        <RemoteName>OrangeBuy_FMX_XE7</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_chandizhigong@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_home_hl@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\activity_buyGift@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\largirostrornis@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Configuration="Release" Class="iPhone_Spotlight29"/>
+                <DeployFile LocalName="图片\title_bar_bg_iOS7@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsList_grid@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\login_password_secure_yes@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\homeLocalSupply@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_subGoods_normal@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_fav_un@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Configuration="Release" Class="iPad_AppIcon144"/>
+                <DeployFile LocalName="图片\homeSearch@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_shoppingcart_hl@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_yingyangbaojian@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_10@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\homeAllClassify@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_6@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\common_info@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_4@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\69b4ddd04e70c6b5e78fdc6bb040f4ef.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\step_add@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\9cd82f0fa1367e72a4eb042d82ced192.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\74b58e615d1e7ffdf32dd418a0db24f4.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\activity_addMore@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\null_cart@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\step_input@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_xiuxianshipin@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Configuration="Release" Class="iPad_Launch768x1024"/>
+                <DeployFile LocalName="图片\tabbar_item_mobile_exclusive@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\buttletin_icon@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSDevice\Debug\OrangeBuy_FMX.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug"/>
+                <DeployFile LocalName="图片\classify_shengxianshipin@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="iOSSimulator\Debug\OrangeBuy_FMX.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Configuration="Debug" Class="iPad_SpotLight40"/>
+                <DeployFile LocalName="图片\activity_fullReduce@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\592a33538f2ba38d3f5b534fee2fa2c6.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\search_hot_4@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\activity_fullReduce@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\goodsList_grid@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_1@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\search_hot_10@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\cell_arrow_up_accessory@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\cart_all_unselect@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\personalCenter_comments@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\menu_cart@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\12c15cb25beb90afc19be2770359a51d.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+                    <Platform Name="OSX32">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\largirostrornis@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\cell_arrow_down_accessory@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\arrow@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\homeLocalSupply@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_LauncherIcon_48x48.png" Configuration="Release" Class="Android_LauncherIcon48"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Configuration="Release" Class="iPad_Launch2048"/>
+                <DeployFile LocalName="图片\personalCenterLogin@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_750x1334.png" Configuration="Release" Class="iPhone_Launch750"/>
+                <DeployFile LocalName="图片\goodsDetail_fav_un@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsList_cart@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\homeLocalSupply@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\e7c53066e086dfb837ae3602cadc5351.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\personalCenter_setting@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\21be6c8941c31e2aac1a2cee1338b771.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\step_add_unvalid@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_2@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_mobile_exclusive@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\cart_all_unselect@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Configuration="Release" Class="iPad_SpotLight40"/>
+                <DeployFile LocalName="iOSDevice\Debug\OrangeBuy_FMX.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements"/>
+                <DeployFile LocalName="图片\classify_meishiyongpin@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\common_switch_off@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_1242x2208.png" Configuration="Release" Class="iPhone_Launch1242"/>
+                <DeployFile LocalName="图片\classify_meishiyongpin@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_sf_height@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_xiuxianshipin@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\null_cart@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\ecf23989835a6d221e2052efbfc235.jpg" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_yingyangbaojian@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\menu_cate@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_5@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\classify_liangyoufushi@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\goodsList_order_unselected@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\menu_pc@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsDetail_nav_back@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\cell_arrow_up_accessory@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\tabbar_item_promotions_hl@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\search_hot_7@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Configuration="Release" Class="iPhone_Spotlight40"/>
+                <DeployFile LocalName="图片\goodsList_order_unselected@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\search_hot_1@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_muyingshipin@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\personalCenter_bg@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\f548a36f56c97d520fc00ea887bfa47e.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\tabbar_item_classify_hl@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\largirostrornis@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="图片\common_info@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\goodsList_grid@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\73c8a42110ddcc708644de1c02529b58.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\login_password_icon@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\Android\FM_SplashImage_470x320.png" Configuration="Release" Class="Android_SplashImage470"/>
+                <DeployFile LocalName="$(BDS)\lib\android\debug\classes.dex" Configuration="Release" Class="AndroidClassesDexFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_2208x1242.png" Configuration="Debug" Class="iPhone_Launch2208"/>
+                <DeployFile LocalName="图片\toolbar_bg_iOS7@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\activity_immediate_reduce@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\focus_map_unselect@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\step_add@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\homeAllClassify@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_87x87.png" Configuration="Release" Class="iPhone_AppIcon87"/>
+                <DeployFile LocalName="图片\search_hot_9@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Configuration="Release" Class="iPad_Setting29"/>
+                <DeployFile LocalName="图片\search_hot_8@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\classify_jiushuiyinliao@2x.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Configuration="Debug" Class="iPad_AppIcon72"/>
+                <DeployFile LocalName="图片\goodsList_cell_addCart@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\69b4ddd04e70c6b5e78fdc6bb040f4ef.png" Configuration="Release" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Configuration="Release" Class="iPhone_Launch640x1136"/>
+                <DeployFile LocalName="图片\activity_fullReduce@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\bf24bb546d9f265dcf75fb5bf6a5042e.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="图片\activity_addMore@2x.png" Configuration="Debug" Class="ProjectFile">
+                    <Platform Name="Win32">
+                        <RemoteDir>.\</RemoteDir>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Configuration="Debug" Class="iPad_Launch1024"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Configuration="Debug" Class="iPad_AppIcon144"/>
+                <DeployFile LocalName="图片\search_hot_2@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Configuration="Release" Class="iPad_AppIcon152"/>
+                <DeployFile LocalName="图片\step_input@2x.png" Configuration="Debug" Class="ProjectFile"/>
+                <DeployFile LocalName="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Configuration="Debug" Class="iPad_Launch768"/>
+                <DeployClass Required="true" Name="DependencyPackage">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyModule">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                        <Extensions>.dll;.bpl</Extensions>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                        <Extensions>.dylib</Extensions>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch2048">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXInfoPList">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceDebug">
+                    <Platform Name="iOSDevice">
+                        <RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage470">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-normal</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeX86File">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\x86</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSResource">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXEntitlements">
+                    <Platform Name="OSX32">
+                        <RemoteDir>../</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidGDBServer">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage960">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xlarge</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon96">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch320">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon144">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-xxhdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeMipsFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\mips</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashImageDef">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DebugSymbols">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="DependencyFramework">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                        <Extensions>.framework</Extensions>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage426">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-small</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSEntitlements">
+                    <Platform Name="iOSDevice">
+                        <RemoteDir>../</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AdditionalDebugSymbols">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidClassesDexFile">
+                    <Platform Name="Android">
+                        <RemoteDir>classes</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSInfoPList">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1024">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_DefaultAppIcon">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectOSXResource">
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\Resources</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectiOSDeviceResourceRules">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch768">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Required="true" Name="ProjectOutput">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi-v7a</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidLibnativeArmeabiFile">
+                    <Platform Name="Android">
+                        <RemoteDir>library\lib\armeabi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_SplashImage640">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-large</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="File">
+                    <Platform Name="iOSDevice">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Android">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="Win32">
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="OSX32">
+                        <RemoteDir>Contents\MacOS</RemoteDir>
+                        <Operation>0</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>0</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPhone_Launch640x1136">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon36">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-ldpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="AndroidSplashStyles">
+                    <Platform Name="Android">
+                        <RemoteDir>res\values</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="iPad_Launch1536">
+                    <Platform Name="iOSDevice">
+                        <Operation>1</Operation>
+                    </Platform>
+                    <Platform Name="iOSSimulator">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon48">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-mdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="Android_LauncherIcon72">
+                    <Platform Name="Android">
+                        <RemoteDir>res\drawable-hdpi</RemoteDir>
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <DeployClass Name="ProjectAndroidManifest">
+                    <Platform Name="Android">
+                        <Operation>1</Operation>
+                    </Platform>
+                </DeployClass>
+                <ProjectRoot Platform="Android" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="iOSDevice" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+                <ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+                <ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+            </Deployment>
+            <Platforms>
+                <Platform value="Android">True</Platform>
+                <Platform value="iOSDevice">True</Platform>
+                <Platform value="iOSSimulator" ActiveMobileDevice="iPhone">True</Platform>
+                <Platform value="OSX32">True</Platform>
+                <Platform value="Win32">True</Platform>
+                <Platform value="Win64">True</Platform>
+            </Platforms>
+        </BorlandProject>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+    <Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+    <Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+</Project>

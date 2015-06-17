@@ -1,0 +1,66 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'MobileDisk'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object IdFTPServer1: TIdFTPServer
+    Bindings = <>
+    MaxConnections = 1
+    CommandHandlers = <>
+    ExceptionReply.Code = '500'
+    ExceptionReply.Text.Strings = (
+      'Unknown Internal Error')
+    Greeting.Code = '220'
+    Greeting.Text.Strings = (
+      'Indy FTP Server ready.')
+    MaxConnectionReply.Code = '300'
+    MaxConnectionReply.Text.Strings = (
+      'Too many connections. Try again later.')
+    ReplyTexts = <>
+    ReplyUnknownCommand.Code = '500'
+    ReplyUnknownCommand.Text.Strings = (
+      'Unknown Command')
+    OnAfterCommandHandler = IdFTPServer1AfterCommandHandler
+    PathProcessing = ftppUnix
+    AllowAnonymousLogin = True
+    AnonymousAccounts.Strings = (
+      'anonymous'
+      'ftp'
+      'guest')
+    AnonymousPassStrictCheck = False
+    OnChangeDirectory = IdFTPServer1ChangeDirectory
+    OnGetFileSize = IdFTPServer1GetFileSize
+    OnUserLogin = IdFTPServer1UserLogin
+    OnUserAccount = IdFTPServer1UserAccount
+    OnListDirectory = IdFTPServer1ListDirectory
+    OnRenameFile = IdFTPServer1RenameFile
+    OnDeleteFile = IdFTPServer1DeleteFile
+    OnRetrieveFile = IdFTPServer1RetrieveFile
+    OnStoreFile = IdFTPServer1StoreFile
+    OnRemoveDirectory = IdFTPServer1RemoveDirectory
+    OnCRCFile = IdFTPServer1CRCFile
+    OnFileExistCheck = IdFTPServer1FileExistCheck
+    OnCompleteDirSize = IdFTPServer1CompleteDirSize
+    SITECommands = <>
+    MLSDFacts = []
+    ReplyUnknownSITCommand.Code = '500'
+    ReplyUnknownSITCommand.Text.Strings = (
+      'Invalid SITE command.')
+    Left = 48
+    Top = 200
+  end
+  object IdIPWatch1: TIdIPWatch
+    Active = False
+    HistoryEnabled = False
+    HistoryFilename = 'iphist.dat'
+    Left = 248
+    Top = 200
+  end
+end

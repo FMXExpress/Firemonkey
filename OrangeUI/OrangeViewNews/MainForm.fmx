@@ -1,0 +1,21 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Border.Styling = False
+  Caption = #26032#38395#27983#35272'DEMO'
+  ClientHeight = 460
+  ClientWidth = 320
+  Fill.Color = xFF00AE89
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 2
+  object tmrAfterLogin: TTimer
+    Enabled = False
+    Interval = 500
+    Left = 128
+    Top = 184
+  end
+end

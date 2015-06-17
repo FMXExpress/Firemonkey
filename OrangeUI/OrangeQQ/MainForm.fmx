@@ -1,0 +1,1654 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'QQ'#30028#38754#23398#20064'Demo'
+  ClientHeight = 480
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  OnVirtualKeyboardShown = FormVirtualKeyboardShown
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 2
+  object pcMain: TSkinFMXPageControl
+    ParentMouseEvent = False
+    ComponentTypeUseKind = ctukDefault
+    MaterialUseKind = mukSelfOwn
+    KeepSelfOwnMaterial = True
+    SelfOwnMaterial.BackColor.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Alpha = 180
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Offset = 1
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.IsFill = False
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.FillColor.Color = claBlack
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Alpha = 180
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Offset = 1
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.IsFill = False
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.FillColor.Color = claBlack
+    SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+    SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Alpha = 180
+    SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Offset = 1
+    SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+    SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.IsFill = False
+    SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.FillColor.Color = claBlack
+    SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.EffectTypes = []
+    SelfOwnMaterial.BackColor.BorderEadges = [beLeft, beTop, beRight, beBottom]
+    SelfOwnMaterial.BackColor.RectCorners = [rcTopLeft, rcTopRight, rcBottomLeft, rcBottomRight]
+    SelfOwnMaterial.BackColor.IsLine = False
+    SelfOwnMaterial.BackColor.LinePosition = lpBottom
+    SelfOwnMaterial.BackColor.IsFill = True
+    SelfOwnMaterial.BackColor.FillColor.Color = claWhite
+    SelfOwnMaterial.BackColor.IsRound = False
+    SelfOwnMaterial.BackColor.RoundWidth = 6
+    SelfOwnMaterial.BackColor.RoundHeight = 6
+    SelfOwnMaterial.BackColor.BorderColor.Color = claBlack
+    SelfOwnMaterial.BackColor.DrawRectSetting.Enabled = False
+    SelfOwnMaterial.BackColor.DrawRectSetting.SizeType = dpstPercent
+    SelfOwnMaterial.BackColor.DrawRectSetting.PositionHorzType = dpphtNone
+    SelfOwnMaterial.BackColor.DrawRectSetting.PositionVertType = dppvtNone
+    SelfOwnMaterial.IsTransparent = False
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = [dpcetOffsetChange]
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.PushedEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.PushedEffect.Offset = 1
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawTabIconParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabIconParam.Alpha = 255
+    SelfOwnMaterial.DrawTabIconParam.IsAutoFit = True
+    SelfOwnMaterial.DrawTabIconParam.IsStretch = False
+    SelfOwnMaterial.DrawTabIconParam.StretchStyle = issTensile
+    SelfOwnMaterial.DrawTabIconParam.StretchMargins.Left = 8
+    SelfOwnMaterial.DrawTabIconParam.StretchMargins.Top = 8
+    SelfOwnMaterial.DrawTabIconParam.StretchMargins.Right = 8
+    SelfOwnMaterial.DrawTabIconParam.StretchMargins.Bottom = 8
+    SelfOwnMaterial.DrawTabIconParam.DestDrawStretchMargins.Left = 8
+    SelfOwnMaterial.DrawTabIconParam.DestDrawStretchMargins.Top = 8
+    SelfOwnMaterial.DrawTabIconParam.DestDrawStretchMargins.Right = 8
+    SelfOwnMaterial.DrawTabIconParam.DestDrawStretchMargins.Bottom = 8
+    SelfOwnMaterial.DrawTabIconParam.PictureHorzAlign = phaCenter
+    SelfOwnMaterial.DrawTabIconParam.PictureVertAlign = pvaTop
+    SelfOwnMaterial.DrawTabIconParam.DrawRectSetting.Top = -10.000000000000000000
+    SelfOwnMaterial.DrawTabIconParam.DrawRectSetting.Height = 120.000000000000000000
+    SelfOwnMaterial.DrawTabIconParam.DrawRectSetting.Enabled = True
+    SelfOwnMaterial.DrawTabIconParam.DrawRectSetting.SizeType = dpstPercent
+    SelfOwnMaterial.DrawTabIconParam.DrawRectSetting.PositionHorzType = dpphtNone
+    SelfOwnMaterial.DrawTabIconParam.DrawRectSetting.PositionVertType = dppvtNone
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = [dpcetOffsetChange]
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseDownEffect.FontColor.Color = claBlack
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseDownEffect.FontSize = 0
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseDownEffect.FontStyle = []
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseOverEffect.FontColor.Color = claBlack
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseOverEffect.FontSize = 0
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseOverEffect.FontStyle = []
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.PushedEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.PushedEffect.Offset = 1
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.PushedEffect.FontColor.Color = xFF0079FF
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.PushedEffect.FontSize = 0
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.PushedEffect.FontStyle = []
+    SelfOwnMaterial.DrawTabCaptionParam.DrawEffectSetting.PushedEffect.EffectTypes = [dtpetFontColorChange]
+    SelfOwnMaterial.DrawTabCaptionParam.DrawFont.Family = #24494#36719#38597#40657
+    SelfOwnMaterial.DrawTabCaptionParam.DrawFont.Size = 12.000000000000000000
+    SelfOwnMaterial.DrawTabCaptionParam.DrawFont.FontColor.Color = claGray
+    SelfOwnMaterial.DrawTabCaptionParam.IsWordWrap = False
+    SelfOwnMaterial.DrawTabCaptionParam.FontTrimming = fttNone
+    SelfOwnMaterial.DrawTabCaptionParam.FontHorzAlign = fhaCenter
+    SelfOwnMaterial.DrawTabCaptionParam.FontVertAlign = fvaBottom
+    SelfOwnMaterial.DrawTabCaptionParam.DrawRectSetting.Enabled = False
+    SelfOwnMaterial.DrawTabCaptionParam.DrawRectSetting.SizeType = dpstPercent
+    SelfOwnMaterial.DrawTabCaptionParam.DrawRectSetting.PositionHorzType = dpphtNone
+    SelfOwnMaterial.DrawTabCaptionParam.DrawRectSetting.PositionVertType = dppvtNone
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.Alpha = 180
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.Offset = 1
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+    SelfOwnMaterial.DrawPictureParam.Alpha = 255
+    SelfOwnMaterial.DrawPictureParam.IsAutoFit = False
+    SelfOwnMaterial.DrawPictureParam.IsStretch = False
+    SelfOwnMaterial.DrawPictureParam.StretchStyle = issTensile
+    SelfOwnMaterial.DrawPictureParam.StretchMargins.Left = 8
+    SelfOwnMaterial.DrawPictureParam.StretchMargins.Top = 8
+    SelfOwnMaterial.DrawPictureParam.StretchMargins.Right = 8
+    SelfOwnMaterial.DrawPictureParam.StretchMargins.Bottom = 8
+    SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Left = 8
+    SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Top = 8
+    SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Right = 8
+    SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Bottom = 8
+    SelfOwnMaterial.DrawPictureParam.PictureHorzAlign = phaLeft
+    SelfOwnMaterial.DrawPictureParam.PictureVertAlign = pvaTop
+    SelfOwnMaterial.DrawPictureParam.DrawRectSetting.Enabled = False
+    SelfOwnMaterial.DrawPictureParam.DrawRectSetting.SizeType = dpstPercent
+    SelfOwnMaterial.DrawPictureParam.DrawRectSetting.PositionHorzType = dpphtNone
+    SelfOwnMaterial.DrawPictureParam.DrawRectSetting.PositionVertType = dppvtNone
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.PushedEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.PushedEffect.Offset = 1
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawTabPictureParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabPictureParam.Alpha = 255
+    SelfOwnMaterial.DrawTabPictureParam.IsAutoFit = False
+    SelfOwnMaterial.DrawTabPictureParam.IsStretch = False
+    SelfOwnMaterial.DrawTabPictureParam.StretchStyle = issTensile
+    SelfOwnMaterial.DrawTabPictureParam.StretchMargins.Left = 8
+    SelfOwnMaterial.DrawTabPictureParam.StretchMargins.Top = 8
+    SelfOwnMaterial.DrawTabPictureParam.StretchMargins.Right = 8
+    SelfOwnMaterial.DrawTabPictureParam.StretchMargins.Bottom = 8
+    SelfOwnMaterial.DrawTabPictureParam.DestDrawStretchMargins.Left = 8
+    SelfOwnMaterial.DrawTabPictureParam.DestDrawStretchMargins.Top = 8
+    SelfOwnMaterial.DrawTabPictureParam.DestDrawStretchMargins.Right = 8
+    SelfOwnMaterial.DrawTabPictureParam.DestDrawStretchMargins.Bottom = 8
+    SelfOwnMaterial.DrawTabPictureParam.PictureHorzAlign = phaLeft
+    SelfOwnMaterial.DrawTabPictureParam.PictureVertAlign = pvaTop
+    SelfOwnMaterial.DrawTabPictureParam.DrawRectSetting.Enabled = False
+    SelfOwnMaterial.DrawTabPictureParam.DrawRectSetting.SizeType = dpstPercent
+    SelfOwnMaterial.DrawTabPictureParam.DrawRectSetting.PositionHorzType = dpphtNone
+    SelfOwnMaterial.DrawTabPictureParam.DrawRectSetting.PositionVertType = dppvtNone
+    SelfOwnMaterial.IsDrawBackGndPicture = False
+    SelfOwnMaterial.IsDrawTabHeaderPicture = False
+    SelfOwnMaterial.BackGndPicture.ImageName = ''
+    SelfOwnMaterial.BackGndPicture.RowCount = 1
+    SelfOwnMaterial.BackGndPicture.ColCount = 1
+    SelfOwnMaterial.BackGndPicture.RowIndex = -1
+    SelfOwnMaterial.BackGndPicture.ColIndex = -1
+    SelfOwnMaterial.BackGndPicture.ImageIndex = -1
+    SelfOwnMaterial.BackGndPicture.PictureDrawType = pdtAuto
+    SelfOwnMaterial.BackGndPicture.GIFFileData = {}
+    SelfOwnMaterial.TabHeaderPicture.ImageName = ''
+    SelfOwnMaterial.TabHeaderPicture.RowCount = 1
+    SelfOwnMaterial.TabHeaderPicture.ColCount = 1
+    SelfOwnMaterial.TabHeaderPicture.RowIndex = -1
+    SelfOwnMaterial.TabHeaderPicture.ColIndex = -1
+    SelfOwnMaterial.TabHeaderPicture.ImageIndex = -1
+    SelfOwnMaterial.TabHeaderPicture.PictureDrawType = pdtAuto
+    SelfOwnMaterial.TabHeaderPicture.GIFFileData = {}
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.PushedEffect.Alpha = 180
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.PushedEffect.Offset = 1
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+    SelfOwnMaterial.TabHeaderPictureParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+    SelfOwnMaterial.TabHeaderPictureParam.Alpha = 255
+    SelfOwnMaterial.TabHeaderPictureParam.IsAutoFit = False
+    SelfOwnMaterial.TabHeaderPictureParam.IsStretch = True
+    SelfOwnMaterial.TabHeaderPictureParam.StretchStyle = issTensile
+    SelfOwnMaterial.TabHeaderPictureParam.StretchMargins.Left = 8
+    SelfOwnMaterial.TabHeaderPictureParam.StretchMargins.Top = 8
+    SelfOwnMaterial.TabHeaderPictureParam.StretchMargins.Right = 8
+    SelfOwnMaterial.TabHeaderPictureParam.StretchMargins.Bottom = 8
+    SelfOwnMaterial.TabHeaderPictureParam.DestDrawStretchMargins.Left = 8
+    SelfOwnMaterial.TabHeaderPictureParam.DestDrawStretchMargins.Top = 8
+    SelfOwnMaterial.TabHeaderPictureParam.DestDrawStretchMargins.Right = 8
+    SelfOwnMaterial.TabHeaderPictureParam.DestDrawStretchMargins.Bottom = 8
+    SelfOwnMaterial.TabHeaderPictureParam.PictureHorzAlign = phaLeft
+    SelfOwnMaterial.TabHeaderPictureParam.PictureVertAlign = pvaTop
+    SelfOwnMaterial.TabHeaderPictureParam.DrawRectSetting.Enabled = False
+    SelfOwnMaterial.TabHeaderPictureParam.DrawRectSetting.SizeType = dpstPercent
+    SelfOwnMaterial.TabHeaderPictureParam.DrawRectSetting.PositionHorzType = dpphtNone
+    SelfOwnMaterial.TabHeaderPictureParam.DrawRectSetting.PositionVertType = dppvtNone
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.PushedEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.PushedEffect.Offset = 1
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderPictureParam.Alpha = 255
+    SelfOwnMaterial.DrawTabHeaderPictureParam.IsAutoFit = False
+    SelfOwnMaterial.DrawTabHeaderPictureParam.IsStretch = True
+    SelfOwnMaterial.DrawTabHeaderPictureParam.StretchStyle = issTensile
+    SelfOwnMaterial.DrawTabHeaderPictureParam.StretchMargins.Left = 8
+    SelfOwnMaterial.DrawTabHeaderPictureParam.StretchMargins.Top = 8
+    SelfOwnMaterial.DrawTabHeaderPictureParam.StretchMargins.Right = 8
+    SelfOwnMaterial.DrawTabHeaderPictureParam.StretchMargins.Bottom = 8
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DestDrawStretchMargins.Left = 8
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DestDrawStretchMargins.Top = 8
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DestDrawStretchMargins.Right = 8
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DestDrawStretchMargins.Bottom = 8
+    SelfOwnMaterial.DrawTabHeaderPictureParam.PictureHorzAlign = phaLeft
+    SelfOwnMaterial.DrawTabHeaderPictureParam.PictureVertAlign = pvaTop
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawRectSetting.Enabled = False
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawRectSetting.SizeType = dpstPercent
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawRectSetting.PositionHorzType = dpphtNone
+    SelfOwnMaterial.DrawTabHeaderPictureParam.DrawRectSetting.PositionVertType = dppvtNone
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseDownEffect.IsFill = False
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseDownEffect.FillColor.Color = claBlack
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseOverEffect.IsFill = False
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseOverEffect.FillColor.Color = claBlack
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.PushedEffect.Alpha = 180
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.PushedEffect.Offset = 1
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.PushedEffect.IsFill = False
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.PushedEffect.FillColor.Color = claBlack
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+    SelfOwnMaterial.DrawTabHeaderColorParam.BorderEadges = [beLeft, beTop, beRight, beBottom]
+    SelfOwnMaterial.DrawTabHeaderColorParam.RectCorners = [rcTopLeft, rcTopRight, rcBottomLeft, rcBottomRight]
+    SelfOwnMaterial.DrawTabHeaderColorParam.IsLine = False
+    SelfOwnMaterial.DrawTabHeaderColorParam.LinePosition = lpBottom
+    SelfOwnMaterial.DrawTabHeaderColorParam.IsFill = False
+    SelfOwnMaterial.DrawTabHeaderColorParam.FillColor.Color = claWhite
+    SelfOwnMaterial.DrawTabHeaderColorParam.IsRound = False
+    SelfOwnMaterial.DrawTabHeaderColorParam.RoundWidth = 6
+    SelfOwnMaterial.DrawTabHeaderColorParam.RoundHeight = 6
+    SelfOwnMaterial.DrawTabHeaderColorParam.BorderColor.Color = claBlack
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawRectSetting.Enabled = False
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawRectSetting.SizeType = dpstPercent
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawRectSetting.PositionHorzType = dpphtNone
+    SelfOwnMaterial.DrawTabHeaderColorParam.DrawRectSetting.PositionVertType = dppvtNone
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseDownEffect.Alpha = 180
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseDownEffect.Offset = 1
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseDownEffect.IsFill = False
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseDownEffect.FillColor.Color = claBlack
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseOverEffect.Alpha = 180
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseOverEffect.Offset = 1
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseOverEffect.IsFill = False
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseOverEffect.FillColor.Color = claBlack
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.PushedEffect.Alpha = 180
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.PushedEffect.Offset = 1
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.PushedEffect.IsFill = False
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.PushedEffect.FillColor.Color = claBlack
+    SelfOwnMaterial.TabBackColor.DrawEffectSetting.PushedEffect.EffectTypes = []
+    SelfOwnMaterial.TabBackColor.BorderEadges = [beLeft, beTop, beRight, beBottom]
+    SelfOwnMaterial.TabBackColor.RectCorners = [rcTopLeft, rcTopRight, rcBottomLeft, rcBottomRight]
+    SelfOwnMaterial.TabBackColor.IsLine = False
+    SelfOwnMaterial.TabBackColor.LinePosition = lpBottom
+    SelfOwnMaterial.TabBackColor.IsFill = False
+    SelfOwnMaterial.TabBackColor.FillColor.Color = claWhite
+    SelfOwnMaterial.TabBackColor.IsRound = False
+    SelfOwnMaterial.TabBackColor.RoundWidth = 6
+    SelfOwnMaterial.TabBackColor.RoundHeight = 6
+    SelfOwnMaterial.TabBackColor.BorderColor.Color = claBlack
+    SelfOwnMaterial.TabBackColor.DrawRectSetting.Enabled = False
+    SelfOwnMaterial.TabBackColor.DrawRectSetting.SizeType = dpstPercent
+    SelfOwnMaterial.TabBackColor.DrawRectSetting.PositionHorzType = dpphtNone
+    SelfOwnMaterial.TabBackColor.DrawRectSetting.PositionVertType = dppvtNone
+    SelfOwnMaterial.TabNormalPicture.ImageName = ''
+    SelfOwnMaterial.TabNormalPicture.RowCount = 1
+    SelfOwnMaterial.TabNormalPicture.ColCount = 1
+    SelfOwnMaterial.TabNormalPicture.RowIndex = -1
+    SelfOwnMaterial.TabNormalPicture.ColIndex = -1
+    SelfOwnMaterial.TabNormalPicture.ImageIndex = -1
+    SelfOwnMaterial.TabNormalPicture.PictureDrawType = pdtAuto
+    SelfOwnMaterial.TabNormalPicture.GIFFileData = {}
+    SelfOwnMaterial.TabHoverPicture.ImageName = ''
+    SelfOwnMaterial.TabHoverPicture.RowCount = 1
+    SelfOwnMaterial.TabHoverPicture.ColCount = 1
+    SelfOwnMaterial.TabHoverPicture.RowIndex = -1
+    SelfOwnMaterial.TabHoverPicture.ColIndex = -1
+    SelfOwnMaterial.TabHoverPicture.ImageIndex = -1
+    SelfOwnMaterial.TabHoverPicture.PictureDrawType = pdtAuto
+    SelfOwnMaterial.TabHoverPicture.GIFFileData = {}
+    SelfOwnMaterial.TabDownPicture.ImageName = ''
+    SelfOwnMaterial.TabDownPicture.RowCount = 1
+    SelfOwnMaterial.TabDownPicture.ColCount = 1
+    SelfOwnMaterial.TabDownPicture.RowIndex = -1
+    SelfOwnMaterial.TabDownPicture.ColIndex = -1
+    SelfOwnMaterial.TabDownPicture.ImageIndex = -1
+    SelfOwnMaterial.TabDownPicture.PictureDrawType = pdtAuto
+    SelfOwnMaterial.TabDownPicture.GIFFileData = {}
+    SelfOwnMaterial.TabPushedPicture.ImageName = ''
+    SelfOwnMaterial.TabPushedPicture.RowCount = 1
+    SelfOwnMaterial.TabPushedPicture.ColCount = 1
+    SelfOwnMaterial.TabPushedPicture.RowIndex = -1
+    SelfOwnMaterial.TabPushedPicture.ColIndex = -1
+    SelfOwnMaterial.TabPushedPicture.ImageIndex = -1
+    SelfOwnMaterial.TabPushedPicture.PictureDrawType = pdtAuto
+    SelfOwnMaterial.TabPushedPicture.GIFFileData = {}
+    MouseDownFocus = False
+    Align = Client
+    ClipChildren = True
+    Size.Width = 320.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    OnResize = pcMainResize
+    Properties.SwitchPageAnimated = True
+    Properties.SwitchPageAnimateSpeed = 1.000000000000000000
+    Properties.ActivePage = tsMessage
+    Properties.ActivePageIndex = 0
+    Properties.TabSize = 60
+    Properties.TabSizeCalcType = tsctEqual
+    Properties.Orientation = toBottom
+    Properties.TabHeaderHeight = 50
+    OnChange = pcMainChange
+    OnChanging = pcMainChanging
+    object nniState: TSkinFMXNotifyNumberIcon
+      ParentMouseEvent = False
+      ComponentTypeUseKind = ctukDefault
+      MaterialUseKind = mukSelfOwn
+      KeepSelfOwnMaterial = True
+      SelfOwnMaterial.BackColor.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.BorderEadges = [beLeft, beTop, beRight, beBottom]
+      SelfOwnMaterial.BackColor.RectCorners = [rcTopLeft, rcTopRight, rcBottomLeft, rcBottomRight]
+      SelfOwnMaterial.BackColor.IsLine = False
+      SelfOwnMaterial.BackColor.LinePosition = lpBottom
+      SelfOwnMaterial.BackColor.IsFill = True
+      SelfOwnMaterial.BackColor.FillColor.Color = claWhite
+      SelfOwnMaterial.BackColor.IsRound = False
+      SelfOwnMaterial.BackColor.RoundWidth = 6
+      SelfOwnMaterial.BackColor.RoundHeight = 6
+      SelfOwnMaterial.BackColor.BorderColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.BackColor.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.IsTransparent = True
+      SelfOwnMaterial.AutoSuitNumberHorzMargin = 8
+      SelfOwnMaterial.AutoSuitNumberVertMargin = 8
+      SelfOwnMaterial.IsDrawPictureAutoSuitNumber = True
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = [dpcetOffsetChange]
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.FontColor.Color = claBlack
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.FontSize = 0
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.FontStyle = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.FontColor.Color = claBlack
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.FontSize = 0
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.FontStyle = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.FontColor.Color = claBlack
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.FontSize = 0
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.FontStyle = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawFont.Size = 12.000000000000000000
+      SelfOwnMaterial.DrawCaptionParam.DrawFont.FontColor.Color = claWhite
+      SelfOwnMaterial.DrawCaptionParam.IsWordWrap = False
+      SelfOwnMaterial.DrawCaptionParam.FontTrimming = fttNone
+      SelfOwnMaterial.DrawCaptionParam.FontHorzAlign = fhaCenter
+      SelfOwnMaterial.DrawCaptionParam.FontVertAlign = fvaCenter
+      SelfOwnMaterial.DrawCaptionParam.DrawRectSetting.Enabled = True
+      SelfOwnMaterial.DrawCaptionParam.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.DrawCaptionParam.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.DrawCaptionParam.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = [dpcetOffsetChange]
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.DrawIconParam.Alpha = 255
+      SelfOwnMaterial.DrawIconParam.IsAutoFit = True
+      SelfOwnMaterial.DrawIconParam.IsStretch = False
+      SelfOwnMaterial.DrawIconParam.StretchStyle = issTensile
+      SelfOwnMaterial.DrawIconParam.StretchMargins.Left = 8
+      SelfOwnMaterial.DrawIconParam.StretchMargins.Top = 8
+      SelfOwnMaterial.DrawIconParam.StretchMargins.Right = 8
+      SelfOwnMaterial.DrawIconParam.StretchMargins.Bottom = 8
+      SelfOwnMaterial.DrawIconParam.DestDrawStretchMargins.Left = 8
+      SelfOwnMaterial.DrawIconParam.DestDrawStretchMargins.Top = 8
+      SelfOwnMaterial.DrawIconParam.DestDrawStretchMargins.Right = 8
+      SelfOwnMaterial.DrawIconParam.DestDrawStretchMargins.Bottom = 8
+      SelfOwnMaterial.DrawIconParam.PictureHorzAlign = phaLeft
+      SelfOwnMaterial.DrawIconParam.PictureVertAlign = pvaTop
+      SelfOwnMaterial.DrawIconParam.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.DrawIconParam.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.DrawIconParam.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.DrawIconParam.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = [dpcetOffsetChange]
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.Alpha = 255
+      SelfOwnMaterial.DrawPictureParam.IsAutoFit = False
+      SelfOwnMaterial.DrawPictureParam.IsStretch = True
+      SelfOwnMaterial.DrawPictureParam.StretchStyle = issTensile
+      SelfOwnMaterial.DrawPictureParam.StretchMargins.Left = 8
+      SelfOwnMaterial.DrawPictureParam.StretchMargins.Top = 8
+      SelfOwnMaterial.DrawPictureParam.StretchMargins.Right = 8
+      SelfOwnMaterial.DrawPictureParam.StretchMargins.Bottom = 8
+      SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Left = 8
+      SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Top = 8
+      SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Right = 8
+      SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Bottom = 8
+      SelfOwnMaterial.DrawPictureParam.PictureHorzAlign = phaLeft
+      SelfOwnMaterial.DrawPictureParam.PictureVertAlign = pvaTop
+      SelfOwnMaterial.DrawPictureParam.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.DrawPictureParam.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.DrawPictureParam.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.DrawPictureParam.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.Picture.ImageName = ''
+      SelfOwnMaterial.Picture.RowCount = 1
+      SelfOwnMaterial.Picture.ColCount = 1
+      SelfOwnMaterial.Picture.RowIndex = -1
+      SelfOwnMaterial.Picture.ColIndex = -1
+      SelfOwnMaterial.Picture.ImageIndex = -1
+      SelfOwnMaterial.Picture.PictureDrawType = pdtAuto
+      SelfOwnMaterial.Picture.GIFFileData = {}
+      MouseDownFocus = False
+      Anchors = [akLeft, akBottom]
+      ClipChildren = True
+      HitTest = False
+      Position.X = 281.000000000000000000
+      Position.Y = 430.000000000000000000
+      Size.Width = 15.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Visible = False
+      Properties.AutoSize = False
+      Properties.NeedNotify = True
+      Properties.Icon.ImageName = ''
+      Properties.Icon.RowCount = 1
+      Properties.Icon.ColCount = 1
+      Properties.Icon.RowIndex = -1
+      Properties.Icon.ColIndex = -1
+      Properties.Icon.ImageIndex = -1
+      Properties.Icon.PictureDrawType = pdtAuto
+      Properties.Icon.PNG = {
+        89504E470D0A1A0A0000000D494844520000002700000026080600000047FF82
+        90000001BC494441545847ED98314BC35010C70B3AF925DC5D5492F73A76509C
+        5C2B4DAEE0E62E0AADF81114FD32FA09ECAE1437952E3A141C44106C9BBC78FF
+        603214CB4B4C5E92420A2124B9FBDFAF77AFAF776934EA4F9D8125C980EACA4D
+        E5CA33DFB56F661DF11490FCE023C019D7B88FE7B02BE42B05ADD6AA2271E839
+        D6C32F0860B407ECE1077F23A0CAB1A447F23E09CC221BF8432757402ECFF1DB
+        BE9C66018B7CA103BD5C007D12177940CD6BF8242F33012A47F44C80459AD0FF
+        17202FE09D47DAF04CC285FAAEBD9B0A3038B2D666245F4C8245DA611C8E9718
+        50B9E2A408B0B8BC1C2F115CD06EAF4C1DEBB548B8301EC7D5022A927B4582C5
+        D9E3B85A38DE3AAECA80435C2D1CEFE28332E03C12775AB8C9813D2E030E71B5
+        70EF24BFCB801B939C2C375CA5CB5ADE0F420EB465F51D715DC69A435C2D5CA5
+        37E14AFF7D21B5DCA99E16595AC4D396343228B665B246A95A2640A209AC64B3
+        19679044DF6C79453F7139FF32ACEC8013C162941BD1FA2C8F2C4227B7D13006
+        EC369B99876A4CFEAC93A9948B9CE3D711248669B2C8BDDAD0E8EB8879E0C015
+        5B1CF09CD7E42D4F50CF5F9DED4F00E38C6BDCC773D819C9542D5A67C040067E
+        003FB78D5BA79F72ED0000000049454E44AE426082}
+      Properties.Icon.GIFFileData = {}
+      Properties.Number = 9.000000000000000000
+      Properties.NumberMax = 100.000000000000000000
+      Properties.ShowType = nnistIcon
+      Properties.NumberExceedSymbol = '+'
+      Left = 281
+      Top = 430
+    end
+    object nniMessage: TSkinFMXNotifyNumberIcon
+      ParentMouseEvent = False
+      ComponentTypeUseKind = ctukDefault
+      MaterialUseKind = mukSelfOwn
+      KeepSelfOwnMaterial = True
+      SelfOwnMaterial.BackColor.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.BorderEadges = [beLeft, beTop, beRight, beBottom]
+      SelfOwnMaterial.BackColor.RectCorners = [rcTopLeft, rcTopRight, rcBottomLeft, rcBottomRight]
+      SelfOwnMaterial.BackColor.IsLine = False
+      SelfOwnMaterial.BackColor.LinePosition = lpBottom
+      SelfOwnMaterial.BackColor.IsFill = True
+      SelfOwnMaterial.BackColor.FillColor.Color = claWhite
+      SelfOwnMaterial.BackColor.IsRound = False
+      SelfOwnMaterial.BackColor.RoundWidth = 6
+      SelfOwnMaterial.BackColor.RoundHeight = 6
+      SelfOwnMaterial.BackColor.BorderColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.BackColor.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.IsTransparent = True
+      SelfOwnMaterial.AutoSuitNumberHorzMargin = 9
+      SelfOwnMaterial.AutoSuitNumberVertMargin = 6
+      SelfOwnMaterial.IsDrawPictureAutoSuitNumber = True
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = [dpcetOffsetChange]
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.FontColor.Color = claBlack
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.FontSize = 0
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.FontStyle = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.FontColor.Color = claBlack
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.FontSize = 0
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.FontStyle = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.FontColor.Color = claBlack
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.FontSize = 0
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.FontStyle = []
+      SelfOwnMaterial.DrawCaptionParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.DrawCaptionParam.DrawFont.Size = 12.000000000000000000
+      SelfOwnMaterial.DrawCaptionParam.DrawFont.FontColor.Color = claWhite
+      SelfOwnMaterial.DrawCaptionParam.IsWordWrap = False
+      SelfOwnMaterial.DrawCaptionParam.FontTrimming = fttNone
+      SelfOwnMaterial.DrawCaptionParam.FontHorzAlign = fhaCenter
+      SelfOwnMaterial.DrawCaptionParam.FontVertAlign = fvaCenter
+      SelfOwnMaterial.DrawCaptionParam.DrawRectSetting.Enabled = True
+      SelfOwnMaterial.DrawCaptionParam.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.DrawCaptionParam.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.DrawCaptionParam.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawIconParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.DrawIconParam.Alpha = 255
+      SelfOwnMaterial.DrawIconParam.IsAutoFit = False
+      SelfOwnMaterial.DrawIconParam.IsStretch = False
+      SelfOwnMaterial.DrawIconParam.StretchStyle = issTensile
+      SelfOwnMaterial.DrawIconParam.StretchMargins.Left = 8
+      SelfOwnMaterial.DrawIconParam.StretchMargins.Top = 8
+      SelfOwnMaterial.DrawIconParam.StretchMargins.Right = 8
+      SelfOwnMaterial.DrawIconParam.StretchMargins.Bottom = 8
+      SelfOwnMaterial.DrawIconParam.DestDrawStretchMargins.Left = 8
+      SelfOwnMaterial.DrawIconParam.DestDrawStretchMargins.Top = 8
+      SelfOwnMaterial.DrawIconParam.DestDrawStretchMargins.Right = 8
+      SelfOwnMaterial.DrawIconParam.DestDrawStretchMargins.Bottom = 8
+      SelfOwnMaterial.DrawIconParam.PictureHorzAlign = phaLeft
+      SelfOwnMaterial.DrawIconParam.PictureVertAlign = pvaTop
+      SelfOwnMaterial.DrawIconParam.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.DrawIconParam.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.DrawIconParam.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.DrawIconParam.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = [dpcetOffsetChange]
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+      SelfOwnMaterial.DrawPictureParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.DrawPictureParam.Alpha = 255
+      SelfOwnMaterial.DrawPictureParam.IsAutoFit = False
+      SelfOwnMaterial.DrawPictureParam.IsStretch = True
+      SelfOwnMaterial.DrawPictureParam.StretchStyle = issTensile
+      SelfOwnMaterial.DrawPictureParam.StretchMargins.Left = 8
+      SelfOwnMaterial.DrawPictureParam.StretchMargins.Top = 8
+      SelfOwnMaterial.DrawPictureParam.StretchMargins.Right = 8
+      SelfOwnMaterial.DrawPictureParam.StretchMargins.Bottom = 8
+      SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Left = 8
+      SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Top = 8
+      SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Right = 8
+      SelfOwnMaterial.DrawPictureParam.DestDrawStretchMargins.Bottom = 8
+      SelfOwnMaterial.DrawPictureParam.PictureHorzAlign = phaCenter
+      SelfOwnMaterial.DrawPictureParam.PictureVertAlign = pvaCenter
+      SelfOwnMaterial.DrawPictureParam.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.DrawPictureParam.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.DrawPictureParam.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.DrawPictureParam.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.Picture.ImageName = ''
+      SelfOwnMaterial.Picture.RowCount = 1
+      SelfOwnMaterial.Picture.ColCount = 1
+      SelfOwnMaterial.Picture.RowIndex = 0
+      SelfOwnMaterial.Picture.ColIndex = 0
+      SelfOwnMaterial.Picture.ImageIndex = -1
+      SelfOwnMaterial.Picture.PictureDrawType = pdtAuto
+      SelfOwnMaterial.Picture.PNG = {
+        89504E470D0A1A0A0000000D494844520000002700000026080600000047FF82
+        90000001BC494441545847ED98314BC35010C70B3AF925DC5D5492F73A76509C
+        5C2B4DAEE0E62E0AADF81114FD32FA09ECAE1437952E3A141C44106C9BBC78FF
+        603214CB4B4C5E92420A2124B9FBDFAF77AFAF776934EA4F9D8125C980EACA4D
+        E5CA33DFB56F661DF11490FCE023C019D7B88FE7B02BE42B05ADD6AA2271E839
+        D6C32F0860B407ECE1077F23A0CAB1A447F23E09CC221BF8432757402ECFF1DB
+        BE9C66018B7CA103BD5C007D12177940CD6BF8242F33012A47F44C80459AD0FF
+        17202FE09D47DAF04CC285FAAEBD9B0A3038B2D666245F4C8245DA611C8E9718
+        50B9E2A408B0B8BC1C2F115CD06EAF4C1DEBB548B8301EC7D5022A927B4582C5
+        D9E3B85A38DE3AAECA80435C2D1CEFE28332E03C12775AB8C9813D2E030E71B5
+        70EF24BFCB801B939C2C375CA5CB5ADE0F420EB465F51D715DC69A435C2D5CA5
+        37E14AFF7D21B5DCA99E16595AC4D396343228B665B246A95A2640A209AC64B3
+        19679044DF6C79453F7139FF32ACEC8013C162941BD1FA2C8F2C4227B7D13006
+        EC369B99876A4CFEAC93A9948B9CE3D711248669B2C8BDDAD0E8EB8879E0C015
+        5B1CF09CD7E42D4F50CF5F9DED4F00E38C6BDCC773D819C9542D5A67C040067E
+        003FB78D5BA79F72ED0000000049454E44AE426082}
+      SelfOwnMaterial.Picture.GIFFileData = {}
+      MouseDownFocus = False
+      Anchors = [akLeft, akBottom]
+      ClipChildren = True
+      HitTest = False
+      Position.X = 64.000000000000000000
+      Position.Y = 429.000000000000000000
+      Size.Width = 34.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Visible = False
+      Properties.AutoSize = False
+      Properties.NeedNotify = True
+      Properties.Icon.ImageName = ''
+      Properties.Icon.RowCount = 1
+      Properties.Icon.ColCount = 1
+      Properties.Icon.RowIndex = -1
+      Properties.Icon.ColIndex = -1
+      Properties.Icon.ImageIndex = -1
+      Properties.Icon.PictureDrawType = pdtAuto
+      Properties.Icon.GIFFileData = {}
+      Properties.Number = 9.000000000000000000
+      Properties.NumberMax = 99.000000000000000000
+      Properties.ShowType = nnistNumber
+      Properties.NumberExceedSymbol = '+'
+      Left = 64
+      Top = 429
+    end
+    object tsState: TSkinFMXTabSheet
+      ParentMouseEvent = True
+      ComponentTypeUseKind = ctukDefault
+      MaterialUseKind = mukSelfOwn
+      KeepSelfOwnMaterial = True
+      SelfOwnMaterial.BackColor.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.BorderEadges = [beLeft, beTop, beRight, beBottom]
+      SelfOwnMaterial.BackColor.RectCorners = [rcTopLeft, rcTopRight, rcBottomLeft, rcBottomRight]
+      SelfOwnMaterial.BackColor.IsLine = False
+      SelfOwnMaterial.BackColor.LinePosition = lpBottom
+      SelfOwnMaterial.BackColor.IsFill = True
+      SelfOwnMaterial.BackColor.FillColor.Color = claWhite
+      SelfOwnMaterial.BackColor.IsRound = False
+      SelfOwnMaterial.BackColor.RoundWidth = 6
+      SelfOwnMaterial.BackColor.RoundHeight = 6
+      SelfOwnMaterial.BackColor.BorderColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.BackColor.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.IsTransparent = True
+      SelfOwnMaterial.BackGndPicture.ImageName = ''
+      SelfOwnMaterial.BackGndPicture.RowCount = 1
+      SelfOwnMaterial.BackGndPicture.ColCount = 1
+      SelfOwnMaterial.BackGndPicture.RowIndex = -1
+      SelfOwnMaterial.BackGndPicture.ColIndex = -1
+      SelfOwnMaterial.BackGndPicture.ImageIndex = -1
+      SelfOwnMaterial.BackGndPicture.PictureDrawType = pdtAuto
+      SelfOwnMaterial.BackGndPicture.GIFFileData = {}
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.Alpha = 255
+      SelfOwnMaterial.BackGndPictureParam.IsAutoFit = False
+      SelfOwnMaterial.BackGndPictureParam.IsStretch = True
+      SelfOwnMaterial.BackGndPictureParam.StretchStyle = issTensile
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Left = 8
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Top = 8
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Right = 8
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Bottom = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Left = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Top = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Right = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Bottom = 8
+      SelfOwnMaterial.BackGndPictureParam.PictureHorzAlign = phaLeft
+      SelfOwnMaterial.BackGndPictureParam.PictureVertAlign = pvaTop
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.IsDrawBackGndPicture = False
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.Left = 16.000000000000000000
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.Width = 16.000000000000000000
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.Height = 16.000000000000000000
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.Enabled = True
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.SizeType = dpstPixel
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.PositionHorzType = dpphtCenter
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.PositionVertType = dppvtNone
+      MouseDownFocus = False
+      ClipChildren = True
+      Size.Width = 320.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Properties.Icon.ImageName = ''
+      Properties.Icon.RowCount = 1
+      Properties.Icon.ColCount = 1
+      Properties.Icon.RowIndex = 0
+      Properties.Icon.ColIndex = 0
+      Properties.Icon.ImageIndex = -1
+      Properties.Icon.PictureDrawType = pdtAuto
+      Properties.Icon.PNG = {
+        89504E470D0A1A0A0000000D49484452000000B4000000B408060000003DCD06
+        3200000A3949444154785EED9D8BB1F4260C46FF16D2425A480B69212DA485B4
+        90B27395DC2F513460C0062F8FB3333BF7B15E2C0E1FB21018FFF8C10B021080
+        0004200001084000021080000420000108400002108000042000010840000210
+        8000042000010840000210800004200001084000021080000420000108400002
+        1080000420000108400002108000042000010840000210800004200001084000
+        0210800004200001084000021080000420000108FC4DE0A7AFF7AFDF3F410281
+        A509FCFC65FD1F5FEF3FBF7F9AB87941604902265E89D9046DEFDF96AC094643
+        E05BBC12B2FFF90B7420B01A01136D14B1FF9BD063B5163DD8DE186AD880D05E
+        BF3B91DBEFBC20B004018B93E58D4DB8F2C6F693D0638926C44811B0AC8617AD
+        FDED5F3E14B10123A107DA999A800F2B146A44836B8E99BA92187706815AEF5B
+        F2E267D0A29653138803C1526ACEC7D9E4A6A76EDA338DB3F0C20F044B14E200
+        31C6DAA5EFF33904861188DEB9569CBE13E0A587350F05B712B82BCCBB1DA1D5
+        3E8E87403581A703BCD650A5DA300E84C01D0277BDB3CE8597BE439DEF0C21D0
+        4B8C4F3BC590CA51E879047A09B157C738AF05A8713702BD45D8AB7374AB2005
+        9D45A0B7007B7790B35A83DA3E22304A7CBE93E4D6813C329C2F432045C0A7EA
+        7A4E88F872598987F65E23E057CBD5CE0AD61AE7D778E0A56BA971DC6D02DE8B
+        8EB8EB6474F9B72BCE17D72760B1B2BD4D64B67ACEDE6FC4B971BDB49DD3CE6D
+        767043C0FABA1A5A0389D54463977B1393BDE3F603A9BBB74789CB779AD479B5
+        C787D9693623F8A11299B370139F3C6CAD6073621ABDBF466A3F8F2B5BE267D6
+        19AD8E12FAA88E37674B6F6855146F8B18FCB11286794179421349EF8160AA09
+        7CA8A3AB87AE2035578F94C8558737ECDF5056EF5649FBC7F9F8B324642FD8D5
+        2EDB12BC0F995AAE3C5677091C0FFEAE568B67ABB9442BDE3C6170E5BDBBBC7A
+        A973DB7108BB28B5770E888328EF7DB8BCFED30612B9B1CA5DC5C87BBFA3D7E2
+        59A287EE397B573CF9C207C49B13F0D01335666C9CD25DD71399FE115370021F
+        C1DE76D2187A106EA4F999987DD8C1BA91369DBD76340D5587DAAF17B1C1221D
+        BF8EDB478E8A9752BCCFFF9B215EC508CD3E22D3B693C678DAEF00DA56D25E47
+        473193D558A87DA3A84FCF7CC40DD84FE7B19094FF333536E2A91E09312F29DF
+        B4D1A75F66536226DFBCB8C0E3A8FE144F1DC5CC586271217BF34F133562DE48
+        BCA9AAD865F61451C7300BCFBCA9B84F10751433ABE83615B3AA9512F50E29AC
+        5CBD18006E2E68552F861F2B7BB238E53FFA16B14324B25E357788355337379C
+        92C5594F712F58BCB2A86D3634DE5FC8DA8C174433FB29628ACB4432FB0AB415
+        6D9E5D075BD9B7D2DA8F682B2B0AB79262BFCAC44BF8AC19021F269163EED7FE
+        DB9564026E79D6E0A700B0FFDDA7C82F765E1F97CE9E9BF683C1C53063EE5B04
+        7C6E7AF66CC1C82D7DDFE2CD790613F02299357E16823776411D8C9BE2471350
+        FC6C97F3D95FA39E22307BBDB1AF92C06A032D3F805DA10356360387F522B0E2
+        25DC0F0C670F917AB513E55412586940A82A799B679FD9AC6C060EEB4560A501
+        2103C35EADBE71392B0D08D50C0C0C3716E493AAAD324318EBC8C0F049AB6FFC
+        DD95660863333063B8B130EF566D6486438FCAB001DC88811B3386775B7DE3EF
+        8DCA16A416E05BE7E999625B313BB3B194E6A85AEF0C870939DEB3189FAED56B
+        AD880F97B8F56A0E3D7DDC8A5E71A8C28BD423D5520FD3B48EF4340C21D3F171
+        F9CC65408F4C81849C7A7EA00F314C7CA907F63C89AF7BD83F578B60CD23024F
+        D770D8253F25E42B91E6BE7337BEEE75857904922FCF41E06ECA2EE76D6BC388
+        5278D23270644DC71C5A9AC28AD641D55321C74AE7069026D25A8F4DEA6E0A29
+        CD61446D0E3A2764135E8F8CC55566A4F47C7152777368690A2BAEC47035D833
+        AFD843C8B51E5BDB7BA5B222BE538EB0698A86C2883A02A94915138D892435D8
+        1B25E416619B0D3E1C690D9BEAC870D49204BCA0AF9E835D3BD8EB0DE1AA73C9
+        6BDF1DD8F6B695F22620907B90BB26479EE4887B564FE14F8DBD3DCF4B598B11
+        484D51C74BFA6C55D2003297FF9ECD5EEC79918017C72CDEB8B6FAE6B52DDC50
+        A75CCDFEDA7A721C042000010840000210800004200001084000021080000420
+        0001084000021080000420000108400002108000042000010840000210800004
+        20B026015BEF6C6BB65BF6E958B3A658FD5102DA71C9EE6E19F9D4597FCB1577
+        747FB4C9F73FB9BFEF70546D25681EDD368A30E5FE4B40827EBA83E815529D83
+        AD72115E968085082690DA772E7E1D2D68BF9124313482CE1288FB3797FECE79
+        607DAF05B5B6234875260D00ED7C7E6B300B37F4BFAB9FF6FD582E1DA1A57516
+        3D56DB14D47868F3E6250FDD82C17BDD5247EAF1F9C870A8A5DE1C3B110179D5
+        E8417DC8E13DA73A4A4A4C56963223571DCA6737749CFE57D321ED187BE3A127
+        12D22CA6DCF5AA4F0672DA44C6A7044D9CFA3F429D451D0BDAA1AD74E5F5F453
+        1E3AFE5FA2BB2B68ED266AE544E16A1F3BD2780B0A69769373834285067704ED
+        375ECC4DA468A7243B0FAF83096827CF180BD7640E52D87A0BDA87140A3572A1
+        858FA70F6ED2B3AB9E7AB45A6D2661B4A0BD98E579E5AD539E3E1E4F4C7DA0B6
+        4D208A77953988FB43FBCC838F8D232E3F508C9FB5861C3ECCF0614469DF672F
+        6AE5AA0F6C56AAEC09F801580B19093A35386B11B4EF50A998D8CEA341662A0D
+        A7342053E42DADB7F1B129F1D54C46F8D576773C747C56E1D58ABDE88953E185
+        CF5BF77A90D1C6CDBE67D5FC5358251279EC528642E140CAAB5E79E8D443374B
+        E732FA12752A95A7D6899BB723EC3D759BAD95C49B8B5BAF065A57C297A0A3A7
+        8F8F93688D7BCD9ED2E02F7618D6501F246AC5A639E15DE579E50D53DE3557AE
+        A1B532F550CDD44053CF24F4C2BD5A4F926A2E3FBD7E50739E5DD5AB19371F8A
+        E4E2E92BD1DE5D56EAD38A3A2F0FD53C5BA7D5B5D7E5FFCE6C9C17FC557EBA34
+        B8D4048FCA488540F69917756EF0A835DED50038701F02572937D5D28B368AFE
+        6A4068DFAFF1D0A9F27382B63273B96AFBCCE7C447DEDFB88F0236AA89CFDBFA
+        F857D3DF7EA9A6C28A986B2EE5996B049DCA7F5F09DA8B3AB768C9E7AB376A32
+        AA9223E027294C7431EB70350DAEF0A1E6B6A892A0BD77F69DAA2468893A97E9
+        F0E5E2A90FE807BEC1A378FDA27B796B6525247EFBBBC60B9604AD8E143D7F8D
+        A04BCD549A2E2F7D9FCF1723E0D36626DCDABCAE7FC0A5093637E04B4DD67844
+        7E8017CB6815B4CE15A7C47DB6A454BFC59A0F737B11F09EEF6A66CF8B299EBB
+        5446EBBA125F5EEC1CADB9EB5E9C286701025EA47EB245D3D1F10E161FA2C4EA
+        5959B9091B7F1EA5E1FCDAEDB81250A10D77AF2C20A2594CF421422ABB905A63
+        9D5A1557539FAB18BF66C05A730E8E399C801FC0A5E251654EEC3813F7D3B513
+        760E2BC73A925F8F1D7F97B726463E5CA077AA6F22453877C8F11D0840000210
+        8000042000010840000210800004200001084000021080000420000108400002
+        1080000420000108400002108000042000010840000210800004200001084000
+        02108000042000010840000210800004200001084000021080404F027F019CFC
+        B358E611E7BB0000000049454E44AE426082}
+      Properties.Icon.GIFFileData = {}
+      Properties.PageIndex = 2
+      Properties.TabSize = 60.000000000000000000
+      Properties.PushedIcon.ImageName = ''
+      Properties.PushedIcon.RowCount = 1
+      Properties.PushedIcon.ColCount = 1
+      Properties.PushedIcon.RowIndex = 0
+      Properties.PushedIcon.ColIndex = 0
+      Properties.PushedIcon.ImageIndex = -1
+      Properties.PushedIcon.PictureDrawType = pdtAuto
+      Properties.PushedIcon.PNG = {
+        89504E470D0A1A0A0000000D49484452000000B4000000B408060000003DCD06
+        3200000AAB49444154785EED9DDD95DB361046D5825B480B6EC12DA405B7E016
+        DC421E1CAF8FAD17B7E016D2401E9CF536901612CC9003021428827F5A02B83C
+        678F935D4A022E3E8C063303F072E18200042000010840000210800004200001
+        0840000210800004200001084000021080000420000108400002108000042000
+        0108400002108000042000010840000210800004200001084000021080000420
+        0001084000021080000420000108400002108000042000010840000210800004
+        200001084000028EC0A797DF2E9F9F3FEABF5C10289AC0E797DF2F9FFEFEF7F2
+        F4EB3FFD1751173D9C6D375EC46B621641CBCFE7E71F6D43A1F7E512787AFEAE
+        22BEF979795F6EA768799B049E9C6893623681BFBC6D130CBD2E8F80B81A77C5
+        8CEB51DEA0B6DCE2495763E47EC882910B02A726F0E5E5DDAC7536EB4DD4E3D4
+        4349E384C0D33F7F650BBA8B7A7C041C04CE49607621988A78C8EF58209E7340
+        5B6E552AE63CB730F47F77E13D2E089C8A80B80ED9024E586AF1BDB920700A02
+        E2326C113319C4530C238D30027F3EFFB159D0226AAC349A7A75027B5867EA3C
+        5E7D18698011D8EA3B8F5D15AC34DA7A35027B5A67221EAF368C7CF051D6D944
+        8D9546630F27B029EE3C9560E97F2F8B4C2E083C94C0DEBEF36DCD34E5A50F1D
+        D0963FECFAF2E6F2F4F3E72EA1BAA9F835351E2D2BECC17D97B2CFAD89949CD7
+        B3FFF0C103DBEAC7C9BEC01C416EBD072BDDAAC21ED8EF25F5CE5B052DA5A85C
+        10D88D80FACAAE4E4345AC7B043F5CF64A73E78ABD5B7C7ED0CFEFDAF1F622ED
+        E282C00D0113ACF8C4221C11ABBA136EC1373E7E2057808FBA4FDB279B095CE9
+        A98ABE173C626F44E89AD573836EA23DBB60B74C0CE99B4C4C133A8BCBC245AE
+        476F39ABABEEC1C22D515B8474E6D7862227135980C0C502AB800F8E0F9F59B4
+        4BDB66561C0B7E32811F99865E2A9262EF77BE38C23E89B00F4F43CFD45E142B
+        E2F13921EC403F87A2B1D089F3F3564C422CF439F4ACAD78543ABA166B3CEE07
+        A7A29E48CCD6145C8F75969A139C4E2866699224151E55675195A5E6A09B932A
+        DA350B7F7A9995E6C0C8F36AD9B7EC90BD7E2B1659E7B7E21F0A184D9AC82231
+        63F2B1CDABC089B2FAF0C40C419CDFFADE713D384BAF4035F74D26F2110B5B16
+        CD54E495AB676DF9A36B98CF6ABD1173E1420E9B9FFB9888B38A716BBB44CC64
+        022B12B416F34F3D66AD729F19315724E4B02B2D8A1A37A352315BB79A12B5FB
+        46620158B9A0AD7BB52F1489333722E4B09BB58A9AF33C1A14B375598F08A869
+        51C873C41B5673DFF55A328A141AA1654FA0E80D02B231981250D43C2620A228
+        EDBC0E62CCE878928064D24AF3A7D93A85A0270994EA4B33A410481228358CC7
+        4948083A49A0D463C3883B23E81B029A122F351E4DC13E8A1E1378E841E67B4F
+        1C17B6E3824044A0F49D2DD43A23E88840E9B5D2640911742CE8C28FE1656188
+        A06341EFEDD73EF8FD48B020684FA08A83695818A2682350746152F04DC0EE14
+        34AD044A8F70F8F8391577285A08941EE11804FD9E0185801374E1110E1334FB
+        0851B312383CE5ED26CC230A9F887420683D4DE848418B7F6E8B354DAF1FF9DC
+        44221D28FAB0909D9CD234B14893BAEBA376C630A28D13D83B64275FFB39F5C9
+        FAB45B7D30FDB213F7E7EEA7A6A37141EFB64BC57DDDE708798CDB3F01772761
+        AF6943E312A8ABFB9BADA4EEB8DE1E2E53D76787C3242952AA4B9F8B7BB33AFA
+        E0842CE2D93B3BB75DD83C3765B1086A7AC162AB789090F77245A8BAAB499D2B
+        FA92FB5CC3DCC5DE8A26DC7D89586C11696E5484E4CADE2350D8FBCD095A0472
+        8685968F8ACCC5B1D95F589802776E6ED2E510B742426A272DF6910936E9FB23
+        E89D1552D8DB69F6CE8940BED2CF628D7311AAD5760B533F295D3FCEF06D92DB
+        7EEE830004200001084000021080000420000108400002108000042000010840
+        00021080000420000108400002108000042000010840000210800004EA267075
+        3BCAAFAE66FBEA6A9FB92070180115993B4BE3EAB6445D0FDC25F2D51D5CA39F
+        E37EBEFD6247F76103DAFA1BCBF10526B447085A76D4EC7D6442EB6348FF4704
+        BCA0DD36A8A3AE61D27C3CEA2378DFD2097C753BB9AF722A68EECFC466D941D0
+        EF0E41E2DD1A71394EBA61F7908EF3A6CB087821F6BEE9ECFF3B7F39750D827E
+        93DD0059DC4D4D24F191BB0560FFE37C73F98CCEDD087E3FF9DF6E01399EA42C
+        26B3C7A6D81B75A1956B9D455433167A0988C8EAE64EA82DF74D4CC6256DE6DE
+        CA089855BDB1A026B4B1C5B4C992F0AD65727413CA4D943B932A8C6ED87DFE77
+        1A59B9EF32C9BD7A3FAE4A656ADCA13BABADAA13DD9A4BA2195FDC6137E26E88
+        BF6F974C2C753FF0A9D760E5358390DEA9B51BFF980F3DFEBD8951ACE89A4BAD
+        AFF79DE3848A7E4BF8BFE5FBEE6BDAC16B1A2360821E77DBBB062B04AD9941EF
+        CAA4CF9D5677C5923ACE9A73354A405D077D888FA593E723076A112784B9B7A0
+        C5DF3597C25C8D54CA5B933AE24723EA4695DC77DBBECA67C37489A8C2BDB0DD
+        1E163A14B38A55446BD63A31A1227F5AEFA7D6A339758B40FCEABF8F126892C5
+        043C8A1C84BEF11856B850DC2AE8C8CDE8C52CEF19FD5EC387B17B114E028B55
+        3737A874382660565B16724B2E13B40869ADA0D50A9B3F3CE13E5C5DE8CF4736
+        12965844EDDD0F798FE0B9884BFAC3BD9510F06208BED6BBACDCFDC596095AAC
+        F81A418BF5F5425521DE5AE021CA32F8D69D257E1B7D64E453BBF7D228CB0E0F
+        32AA6488DBE9865A371F51E87C50EF67CF44282C7CB644D0223C799D0FEB05AE
+        CE1C75732F5282B6D746EE13C29E435ADFDF4DBCA1284DA85DF2627AA1754FF8
+        3E6C374A3B47AE81175C7E61934EC099CCDFD8F253435D9F6E277B3464DDE2F2
+        4F1364CAFA7A37C07CDF8425F716782CE83EDCA69F9B8C5C585871D8A122565D
+        2DEF8214B6F9D56196B1A1616DB3AB1641482D066357246D41A744AB6E4B50E3
+        31A6DB85E3D2FE791456EC2743E846606DDBD46A56AFCD0A4F89C40BC945166E
+        45E94A40BD686FC5995B276D099EC1EA77296F714D8605616FA1BDBF9D5E3C5A
+        8D7756E7B9A92E0261C86DD25A4ADDF2440ADAFBD909B1CF59E841A8B7EF9FF2
+        E987FB83947810ABD6CFB3FD8D33D192BA4691DE74510C11AAA58D7B3FB67303
+        C46F758F3AF609971F3EAC36764B52A1BE106F8E850E0B90C6167ACA77373729
+        1DBA0BC28023C133F4951288921496C8C82D9EEF7DDA785B543A0A3227E8C847
+        0FE3DF7D95DDDDC5A8D6A1C471E8C18A0761C80377A2572A8FF2BAA5D67942C0
+        5D9ABBDF6BA80FA5EF1683668DBB62F9B04EF936A1E28535B728ECBF216E2C7F
+        86A0538BCCE8DB21A8D623CA519E4617B75884A9110A4D118B70EF17F5F84488
+        D68104751F53FB0C23DFFBD692DE7B8F7B3E74AAA37E82AA8B317C561C2DA168
+        69B1486A7E812D1AE342A1E9C2FD504C632E51D2261587EE2D746E5D499C048A
+        C38B5D2A3DED9AD43C5EF42D834064F1A26AB87E4B94FB5DB40770147A8B5C02
+        11ED5474A417B4BA45FD9EC3681F63500D187E5EEE04C8E82AB7D44C605C0D97
+        8C2E842234DF79657D72B458CC5DAC6A8AFEB8836E6A1EDFE6FAD6A59DBBB3E5
+        A68A8264F12816D21F8DA05188F5DBA254D46A89BF27F7318EEBB9E7D600CD0D
+        1A1D9E27D065F4F047E749710704200001084000021080000420000108400002
+        1080000420000108400002108000042000010840000210800004200001084000
+        0210800004200001084000021080000420000108400002108000042000010840
+        0002108000042000010840E05802FF034646D688992C6FA20000000049454E44
+        AE426082}
+      Properties.PushedIcon.GIFFileData = {}
+      Properties.PageControl = pcMain
+      Properties.NotifyNumberIconControl = nniState
+    end
+    object tsContactor: TSkinFMXTabSheet
+      ParentMouseEvent = True
+      ComponentTypeUseKind = ctukDefault
+      MaterialUseKind = mukSelfOwn
+      KeepSelfOwnMaterial = True
+      SelfOwnMaterial.BackColor.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.BorderEadges = [beLeft, beTop, beRight, beBottom]
+      SelfOwnMaterial.BackColor.RectCorners = [rcTopLeft, rcTopRight, rcBottomLeft, rcBottomRight]
+      SelfOwnMaterial.BackColor.IsLine = False
+      SelfOwnMaterial.BackColor.LinePosition = lpBottom
+      SelfOwnMaterial.BackColor.IsFill = True
+      SelfOwnMaterial.BackColor.FillColor.Color = claWhite
+      SelfOwnMaterial.BackColor.IsRound = False
+      SelfOwnMaterial.BackColor.RoundWidth = 6
+      SelfOwnMaterial.BackColor.RoundHeight = 6
+      SelfOwnMaterial.BackColor.BorderColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.BackColor.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.IsTransparent = True
+      SelfOwnMaterial.BackGndPicture.ImageName = ''
+      SelfOwnMaterial.BackGndPicture.RowCount = 1
+      SelfOwnMaterial.BackGndPicture.ColCount = 1
+      SelfOwnMaterial.BackGndPicture.RowIndex = -1
+      SelfOwnMaterial.BackGndPicture.ColIndex = -1
+      SelfOwnMaterial.BackGndPicture.ImageIndex = -1
+      SelfOwnMaterial.BackGndPicture.PictureDrawType = pdtAuto
+      SelfOwnMaterial.BackGndPicture.GIFFileData = {}
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.Alpha = 255
+      SelfOwnMaterial.BackGndPictureParam.IsAutoFit = False
+      SelfOwnMaterial.BackGndPictureParam.IsStretch = True
+      SelfOwnMaterial.BackGndPictureParam.StretchStyle = issTensile
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Left = 8
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Top = 8
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Right = 8
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Bottom = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Left = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Top = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Right = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Bottom = 8
+      SelfOwnMaterial.BackGndPictureParam.PictureHorzAlign = phaLeft
+      SelfOwnMaterial.BackGndPictureParam.PictureVertAlign = pvaTop
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.IsDrawBackGndPicture = False
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.Enabled = False
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.PositionVertType = dppvtNone
+      MouseDownFocus = False
+      ClipChildren = True
+      Size.Width = 320.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Visible = False
+      Properties.Icon.ImageName = ''
+      Properties.Icon.RowCount = 1
+      Properties.Icon.ColCount = 1
+      Properties.Icon.RowIndex = 0
+      Properties.Icon.ColIndex = 0
+      Properties.Icon.ImageIndex = -1
+      Properties.Icon.PictureDrawType = pdtAuto
+      Properties.Icon.PNG = {
+        89504E470D0A1A0A0000000D49484452000000B4000000B408060000003DCD06
+        3200000AE649444154785EED9D8B91DD360C45B785B49016DC425A480B69212D
+        B86C2F36860363481114FFD279336FE2ECA328F2F01204FF1F1F7C2000010840
+        0002108000042000010840000210800004200001084000021080000420000108
+        4000021080000420000108400002108000042000010840000210800004200001
+        0840000210800004200001084000021080000420000108400002108000042000
+        010840000210800004200001084000021080000420F01C027F7C66E54FF795BF
+        F181C0110444BC7F7D7EFFF9FCFEFBF9FD9EF9CA6F1246C2CA337C20B0050115
+        F0DF0501E784AD7F97E711F61645FAEC44887B205654BF22BC92F5B5E2554B2C
+        CF459E95B811F6B335B5347722E49275B5BFD7B8116ADD53AE89881F5F7B69D1
+        3FF3E522ACA81F7C5780F2DCB784CB2242BF1BE7334B835C351310A1593F57FE
+        5F2CEB08A1A97BE35D165C90E6622402252022538189C59CF111015B3744FE8D
+        A867907FC93BC42F56518FB0CC298C2951CF7AF74B8AF5BDD9B41D43F9F7AC8F
+        08D85A6AA958887A16FD87BE4704642DB47412677EC4525B9F7A66859A994FDE
+        3589801FE558E1CB7A51AF48C324DCBC6624012F2419E158F559E5F6ACCA2FEF
+        1D40C0BA1A2BC52C59F3A32DF8D2030AFCC9515AEB2CC2DEE163DD1FDC8E1D4A
+        E4A034ECD8C4FB499E837092D4D504568C3D97F26CDD8E5D5A8D529AF97D1302
+        B36707A3D9B64378D16708F772023BFACF5A243BB61C2F97CBFED9B7829E3D91
+        52A263054DC7B0448BDFBF08ECDCF9B2231DAB871291CB21047616B41D7D41D0
+        87086A75324F1134EB3A562BE590F723E8430A8A64C608ECDC29DC71C2274695
+        50CB0860A197A1E7C5BD09F89D22BBF9A9D642B389B677E93F2C3EBF436447C1
+        D8E96F9935DC318D0F93C5B9D939C5FAEDDE8A9CAB8087A5DCEEDFDB7D166EE7
+        E9F987C9E2CCEC9C2810D6759CA9B529A9B6231BBB7504730098069F228D335F
+        82A0CF2C37529D21B0F3644AAED05879879CB304561CF9D5521CA7A5B725AF3C
+        7B93C049166FE7D9CC9BF879AC37013B0EBDFB9EBD932A5FEF7222BE20013F53
+        B8EB7A636B9D77AF7841F4041B45C08A45A696779B60D9E934A7516540BC9D09
+        D8E65C442DAEC8EA938A5287A1639D3B17FC53A3F3AE872E025A35E1C275154F
+        55DAC47C89A853F7ABCC7641FC71BE52B938277AA2109EF62A11B015F6EC630D
+        FCC8CBEC0AF5B4F2243F3FFDE7152BF1BCEB8398916337022BD64ADB96810E60
+        B7A2242221E0ADE5E80E22A7F6A3BBE10466896C76E5190E8E17EC4B60F49D2B
+        DC7CB56FD93F32657E18ADE726D5D410DDEA099D47162299FA9D406A7778EB08
+        444ACCAD71526E100813F03BAF65C2E3EE62A69E718533404008780229218A8F
+        1D751372B391772B0625048166022957213A9BE83B985C52DF5C1C44D08B805F
+        401489D75F791CB5EC91B80903816602767A3C12D9AE171345D24E98171040D0
+        2F28E437651141BFA9B41F9E573FE211C9AE7539F09F23C408339C406A6BD49D
+        510EB1EE0CD70D2F2E5E9023A042B66E46ED79CD7EB193EE46D9610F2325FF40
+        02225A119D584EF98AD0E4EB37D1AAEB5033A9A2B824FEABF8E47DFA7E098B6B
+        F240A1F5CE920A57C423A2CC09CC8E1BDB7F4BF8D6751722DA9AF74ACB206995
+        3423F4DE8A38303E11C195B5CD89D776E4544C3DB3EFF73096D2617F57914BE5
+        C092F72C954DE3CAF9BD39D18840C46AAA25D4E6BFD51A47F0D856435B0E6D3D
+        BCDF9E4BBF849F91D6487E08D391406A242265D94E6ABE6BDCA41E2E51C7E220
+        AA1602A9435A9E3A9A202297FC8A654E597184DDA2A4C5CFE696668EF07B1767
+        35F97A6D95521D4DC6BB772CB18B34E54E1B7AAB3F996AA546EF5A3F4C32FB26
+        3725660AEFBF518FD42194FB962429FB22E017CDD3BCFE2F8C941B069F8D2B0E
+        6727C70AC7577AC6AC63DCA687B205859B91C7EFDD0F584D976AF98552482CC7
+        2C73D210969770E3B319016E85AA2F10DBA2BD7504A89EDAA427ECE9A034A131
+        E896199DC318B369A1B8F7BA1EF589D741D7E7F2D027B8B7AFBEE04EBC0EBA3E
+        97873E61052DD69A6F8C8176A439507D33E1D72C8EAF5963FC96B0087A3341E7
+        56D5BD45902DF96483EE66622639108000042000010840000210800004200001
+        0840000210800004200001084000021080000420000108400002108000049613
+        889CA5ACA78DAEDADE6FCFA8EB0DCC1EDCCE3EC2DE7427C7A77BE864B9E49558
+        ED418723F7DAD91B02F4AC6A7FC862F4BE96284ABB558D35D0516A83C34941D4
+        7EF5DAE1D2659776E368444C7A70BA5E5791FAAF9EEBAC69AE5DBBDCB352D9FC
+        61A1070B351AFDDDDD2912BFDD189AB2506A212362D6F4460F204F095945AE15
+        41D22742B3DF28974838041DA134398C16BA369F7AEEB115818A5E4FB1B7562E
+        77E48175496AB2642B896D017C2B62055D53616AD2520A8BA04B8416FEAE8593
+        B2B42AE8DC191D6A55F5597B9250EFA6D85FCA79E7B6AC5E98ADA057757A7BE5
+        E571F1D4085A0F0057EBAE9D30B5EA56E0FA371D1168016705A47E7C2E3E49E3
+        6891D9F4B4E48B670710A81174EA92CB68E7EC4ED2FD8188A51105092F822F89
+        FE4E5AEC3308BA95E0C0E7ADA07D47CABB1C2A68EFD7AA65D61BAFECEFFA5B4D
+        16FC0545911DD556645AC97ABB3D9A07E552AA603579266C2702292178AB5B3A
+        E7EECACAD72633959ED4F0E2D5A888766247B91E2A6849039FCD08D851899CE5
+        9D29E816B7665647D156A651956633999C939C1A1F3A97AB9E165AAF7C903853
+        E3C9A9FB12A522CE14D60E4387E7286C724A7713F455F625ADD63AA67CEBD157
+        1AFB1604B763B2604BAF3B41D02921A7DC209D242AAD332931B9FADDAEE3D0CA
+        5572C95ADEC7B39504A282D6A65EC2FBD190ABD94609AB63D135A30EA90BE845
+        4057E2D1613B710946895ADD0D5D4D38F25D9545497021101DE568E9ACA9084A
+        964C1729F9110C15B2AF48129FFDFAEB8C7B8BDAB2D2CA7967DD0ACA1B48A056
+        D05763CD7AFFF7DDD19296054AB9099E9EA2F653FDDE20D4B440038BF4DD5147
+        5D8EA85FD9B24CF3AA72D98A6485E5ADB49D722F2D73AD29F99475D6E7EDB8F4
+        CCD1969AF4BF266C0F41DBA5A82DBD7E75395494B942D034975C985EB77A95AE
+        9DB0BF337BB8B8EAD4083AB7F5AA7666319AE5DC44494ED0A9265F0456127E29
+        3D766ABF54C984C5AA65ADA57CBCE2F788A0AD6FEB45A356503B6EBD7AFD365E
+        EFC6A4046DC3F7F4656DEB538AD78645D48BAA8F15B436F97EB4C05A602F2EDF
+        CB4F759C6AB3E66F68F56ECC95A0A3232A9134598146FB06B6F2479F89A48530
+        0502DA998A6CC5D2DD2C3E4ADB51D2CE90FDDB1D2B65C792459C2951E45C0EFF
+        EC5D7FD62F5BADC9874F43ABBB83908304724364EA738AB5BEDAB172D5E1BA63
+        D924D9364E495FAE892F750AFD6C5ECDC8436A674C10E9AF605ED43515A2F65D
+        84FF49C0BA1A3AFBE7E1E404ED85E79FBB63A5AC652F8D1D97042DE9F1A22EF9
+        BFF28C1F366C11A2DF23397B01D5EB841EB15A29415BA1884B908BC717684E1C
+        DE2296C46CC55A6ACE7D1A72A24E5D67D7C3FFF579135EA534BF4E8833336C05
+        7DA7D0BDA05262F587B6F80A2271E8BA09F5FB6B1605D9D10F1FB76F49748426
+        62CDA3E5907A07A28ED2EB1C4E05AD5724DB99B768A1DB663C67F5E4EF571DB8
+        DCB4765418B9F173C165ADE8DD4E6409BBED64B6B831A5F7F07B8180BFC35A85
+        1771576CD425C1960AC28FC48885EE290C495F0F17A3948F19EF28A5E1D5BFEB
+        1474AD805F0D8DCC430002108000042000010840000210800004200001084000
+        0210800004200001084000021080000420000108400002108000042000010840
+        0002108000042000010840000210800004200001084000021080000420000108
+        40000210800004B627F003367D71428792E1590000000049454E44AE426082}
+      Properties.Icon.GIFFileData = {}
+      Properties.PageIndex = 1
+      Properties.TabSize = 60.000000000000000000
+      Properties.PushedIcon.ImageName = ''
+      Properties.PushedIcon.RowCount = 1
+      Properties.PushedIcon.ColCount = 1
+      Properties.PushedIcon.RowIndex = 0
+      Properties.PushedIcon.ColIndex = 0
+      Properties.PushedIcon.ImageIndex = -1
+      Properties.PushedIcon.PictureDrawType = pdtAuto
+      Properties.PushedIcon.PNG = {
+        89504E470D0A1A0A0000000D49484452000000B4000000B408060000003DCD06
+        3200000B5449444154785EED9DDF95DC261487A705B79016D2825B700B6E615B
+        480B7E70BC3EC9BCA485B49006F2E0D8DB405A48B8308C00893F02A441A34FE7
+        EC71B28B34E8E3C7E572B930970B170420000108400002108000042000010840
+        0002108000042000010840000210800004200001084000021080000420000108
+        4000021080000420000108400002108000042000010840000210800004200001
+        0840000210800004200001084000021080000420000108400002108000042000
+        0108400002108000049E85C0E7B79F2E5FDFDE5FBEBC7DD0FFCA8FFC8E0B0287
+        202082FDF5FBA7CBEB3F7F5D5E7FFC17FDF9FCF7BF972FDFFF543FBF5C5EDF7E
+        3EC4BB51C9131010316A517EFF2329E094B8E56F226EE90C5C10D89480B80722
+        58B1BADAF22AE18AF85EBF7D6B127054E0CAB223EC4D9BF4DC0FD7D637E13A6C
+        F537E93CF8DAE7D6DE266FDFEA4A34095E4601FCEB4DDAF5B40F7D7DFBF8100B
+        ED7504447D5AFD757F7119F69BAC6C277705BFBA7BD39EF7819B4D0057885DC2
+        7CB81FE7D560D737D7D18D15E2DBACACF2A9AF6FEFBABE1B0F3B1901ED726416
+        493613F0422792CEC505816A023AE63C827576EBC024B1BA3D4F7DA3E45F0C27
+        66256CACF4A96559FFF223B91A61C7C297AE6FD753DE2961B211ADB3AD938C1E
+        5C102826304C6423E2BFE3761437250585C008B1E7E408A1222F5C10282220FE
+        E9C8EE86AD5BD1CB500802B222770441938D87568B088C1AAE0B3B19F91D45CD
+        49A12132EC0A16738874A0D522024711F4EB8F97A2F7A1D0C9091C45D0B29B86
+        0B02590247F1A11174B629292004465F25BCAF1662A1116C0981A358687CE892
+        D63C7999A35867B1D2EC6239B95873AF2F0B155A240521B361CAB08B25D7ACE7
+        FDFBA3CEE068ED1C4C0ECFABD9E49B1FCE3ADB91844425141D123892EFBC64D1
+        C9EB40D31E81A32CA6C4DC1396C11134824603CF4BE038B1E7C899D3EC047F5E
+        71D6BCD95192FA632E47CD3B73CF931318F20C8E9298B83AB39A0B023302478D
+        4393E88F98170988DB71B858342B85A83945E068E13BC275E8394BE028BEB4D4
+        930B025902FAC4D1ADBE14A86492575246D58FD5C16C5352C01230DF7E35E0C9
+        A3B7AF8043CC68B58A80CEF168FC0EC2D66CBAFBFDCA2A13D1A86A466E72098C
+        72F00C134074D98DC0A363D44C00BB35250F12020FDFCD42AE0642EC4DE05139
+        D3EC48E9DD923CEF4E60F773A309CFA1BE2D09EC1EA3C6D5D8B23979B61090A8
+        C71E391F4435D0DB6E04360FE5A9EF18E782C0AE046492B885A5C632EFDA8C7C
+        984BA0EB37CDB21288B8462120E7CCB52C714B688EFC8C515A937A68022D8206
+        2104862380A0876B122AD4420041B7D0E3DEA108B486F1F09F876ACEF3564636
+        D6F6C8C493F01FE1BAF3EAE8E16F2E165947267A9F27AD4E1225E2F1F0E67DCE
+        0A881B208B27FA9830B572274293E4A4DDB666A99D32C6FABFE83AE8851C5527
+        1915B8201025A0DD062518118F16EBE81B646513ADAAA3D455D759D51D1FFCE4
+        02176BA753418F20DE925DE0F63B5764FFA31A4D10F809046EFDDE6712713254
+        A8C4CDA6DA2714B60879F7C4FC42ABDA12BB2EBE57269ACA2DE17A0202473BDA
+        AB58A4351D46095B3A37D70109E82CB851CED3A811DF96F7906B7D2C45774DE9
+        DC52580F7CB6B8605C0720A04FE297A1F5816239CA67B39BFC00823EF5E4AFA6
+        13E37E8CABEA479D9B71148B1CAD2713C53145BDDB92748D251CF81EFCE901F5
+        AC2782038B66F4BA911F3298A8893747BEBFB0B093B3A23898A07BE4248F6E45
+        B7ADDFCB602D7AF2EAB088D266A1F1A307EB404C08DB042D06816B20022CA6B4
+        099A03D50712B354054123E8C124D9561D9DD4DE7B7F5F618460DBC95A9B504B
+        EAC606DD36ED7137042000010840000210800004200001084000021080000420
+        0001084000021080000420000108400002108000048A09C8FEBAABDAA3C80581
+        E1095C5556DE6FEA5CE5D4A650292319685775F6F2DEC2BEAA23054C1D3F5DBE
+        AAA37EA50E3D2F79B63C5718180E74DC9E7CAB9E258D7055E73B9B9FFC69F6B6
+        ECEFEA24FCAB4A09D53FEA74A5D8257FBB97EBBC9363AAF7FB8BD447D7497D86
+        1697AD5BF86FC79343F5E7DF9E2FC2E61A808027CC9808167E2FF789E5B30D2A
+        FF1D5E6E832FFD7D5EFE9DB6E6AED5B3D62F29D2927AAB8E65468A7EDBA3D6BE
+        DF00CDFDFC556811B4D01181DCAD6160FDF4309FB1E073517F8C5BD7887045A8
+        22F8BB95BE8D385BB79E1EDD6E7592CFE61A88806B6DC26A59D18B686256551A
+        565BC09BDB62EF31BF5BE75BBA56592CBB15AAFBAFEB52B89FBB375204BD37F1
+        C2CFAB15B4B6D2CA324BC3DA09A208588B4CFDAEB7E5BA4F3207B08C2EB3DEEF
+        59D86C148B4EDE9C094E8985F67C5B713BD4CF7DC8772682EE44CD08BEFED47B
+        1D29712661A9676977A073542335471071730D4460AD858E46117213B48A86D7
+        75733A899E8C26223252DE8E10FABE864E946A229719821E48CCC66D984250A1
+        CF6A230CAE0FBDE4DBBA518F45BF57C7A2CB2DB4B8326E74434F326F1DC2C498
+        6DB8D1F9D79DA4DACED531B2E1369BB83FD38478DD3C61B0E67FBEEA78D62662
+        659726857E034F9DA29590166CCEDA27FE6EC4AF0457105BAFADAB1721EA18DF
+        AEAD0FF73904D65AE8257829B7A506F63DEC170A57B911D687BFBB16B732F2FF
+        7B4DD07271F89A77E69E4E04D6FAD07B085A474F222B9832E99B2DB688BBB1A1
+        459E4D0ADD5550E9503B7E76A7667FDEC78C28E8E54E23429E5628EDC28D3B29
+        D30951E2AFEB09617E39BFA655DD451562D1350437BE6774414BFD42215B3F39
+        16669CC4DE5FD49EFF7C9B883E72816763791CEFF16108CA8D205821D949A1BF
+        92372D39C7A21CF27B3F6E5D96F52656508413FAD23121BBD4C3E4A9DE96DAD6
+        C9D4C5E4A098C525BEB37008F5AF8972B4441FEC8A62EAA5B51843FFF436E9F3
+        7236945B1176AE68DD3ABA1F4B2B847EC4834596878BDACF1C33F9BDF6C75A23
+        6BA1DD554137DEECCFFA27CBEDE560886F9B59C1F3E2BB0DA1BB50DCB9B06369
+        23D8CEE6BA1862A543AB5DFA3CCA6D40A08F0F6D723AE4A7253F38CC339E3A97
+        9FA8E4F9D4F74596F9C24DCFF09A6F893F7A2D61735A703D3610E8DA477611B4
+        936BA1855DF9CDAA66DB567E45B134EEED5ACF162B2D759A7CE579E6A130F7D3
+        697DC1AF6D13CA37102815B42E17711BBCA13848276DA85A340417ABB37659F4
+        32FB14DD90B22D0B2E6EA748A5C4BAE54CA7FED0F2EADC5B4B202E0EB504BD90
+        1F115ABA304A725FC16BCCA370FDE950484B757687FD5E89497AC47027A99991
+        C7B5E4A6CEF9D1A6B6DDB82F42209CB98B60C365E569BB9599F0B9975DB5B3BE
+        73CAD72C6D045718D62F75370B2C0BFA9D17AF3682AA1FFA4331975AF9794744
+        D4A5EDDE542EBBA9F436C14B6DA55A12EF7C885ED7A02256AF432D8832E52689
+        A5F6EEAFC88DD6095241DAEA1AD82E17D3B108E7ADE1575576694FA18DF5DA06
+        486FC19A5228536EC89AA1772E84E5CE909B14CE05993E72C10518EE8CA95D30
+        992DD3378C16550D7CB69B6408B76756C42C484CD073E1CD7382DD5D2646D4F1
+        4992C9C19836DDE63A414ED03AEA10FABF7A81259EBB6C76BA381B7F65625761
+        DD7D772CC83DD93989EA6C9ACEBEAF15AEF58F1733DD12429D67C5F91108233C
+        DF45C889D9DC338D0EA9970845BD14239732F29EB37943278B1A5AEA3DD35CB3
+        0D7CB602AE255E72517293AE99955C0867799671C18ADA8DB7F6C882B093E4DA
+        C4D621D65196139FD6F9FDF93AF84734D4BA31B9CFE1EF1902FEA46F1A924BAC
+        A87DB427EAC4109EDA2FE8BA2FDEB27661683077CEDE5DD4410CBBA740C44D32
+        07E990C4D493EBAA67B93EA5BD518BBC22D7B834ECB554417B969E5D0A1781D7
+        D663F9F9B242B97D24C274ACFE29ADAB1A95C210800004200001084000021080
+        0004200001084000021080000420000108400002108000042000010840000210
+        8000042000010840000210800004200001084000021080000420000108400002
+        1080000420000108400002108000042000010840E0D908FC0FC0F3D43164DCA7
+        AA0000000049454E44AE426082}
+      Properties.PushedIcon.GIFFileData = {}
+      Properties.PageControl = pcMain
+    end
+    object tsMessage: TSkinFMXTabSheet
+      ParentMouseEvent = True
+      ComponentTypeUseKind = ctukDefault
+      MaterialUseKind = mukSelfOwn
+      KeepSelfOwnMaterial = True
+      SelfOwnMaterial.BackColor.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.IsFill = False
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.FillColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.BackColor.BorderEadges = [beLeft, beTop, beRight, beBottom]
+      SelfOwnMaterial.BackColor.RectCorners = [rcTopLeft, rcTopRight, rcBottomLeft, rcBottomRight]
+      SelfOwnMaterial.BackColor.IsLine = False
+      SelfOwnMaterial.BackColor.LinePosition = lpBottom
+      SelfOwnMaterial.BackColor.IsFill = True
+      SelfOwnMaterial.BackColor.FillColor.Color = claWhite
+      SelfOwnMaterial.BackColor.IsRound = False
+      SelfOwnMaterial.BackColor.RoundWidth = 6
+      SelfOwnMaterial.BackColor.RoundHeight = 6
+      SelfOwnMaterial.BackColor.BorderColor.Color = claBlack
+      SelfOwnMaterial.BackColor.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.BackColor.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.BackColor.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.IsTransparent = True
+      SelfOwnMaterial.BackGndPicture.ImageName = ''
+      SelfOwnMaterial.BackGndPicture.RowCount = 1
+      SelfOwnMaterial.BackGndPicture.ColCount = 1
+      SelfOwnMaterial.BackGndPicture.RowIndex = -1
+      SelfOwnMaterial.BackGndPicture.ColIndex = -1
+      SelfOwnMaterial.BackGndPicture.ImageIndex = -1
+      SelfOwnMaterial.BackGndPicture.PictureDrawType = pdtAuto
+      SelfOwnMaterial.BackGndPicture.GIFFileData = {}
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.IsMixedMouseDownAndPushedEffect = False
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.Alpha = 180
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.Offset = 1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.ImageIndex = -1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseDownEffect.EffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.Alpha = 180
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.Offset = 1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.ImageIndex = -1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.MouseOverEffect.EffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.Alpha = 180
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.Offset = 1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.CommonEffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.ImageIndex = -1
+      SelfOwnMaterial.BackGndPictureParam.DrawEffectSetting.PushedEffect.EffectTypes = []
+      SelfOwnMaterial.BackGndPictureParam.Alpha = 255
+      SelfOwnMaterial.BackGndPictureParam.IsAutoFit = False
+      SelfOwnMaterial.BackGndPictureParam.IsStretch = True
+      SelfOwnMaterial.BackGndPictureParam.StretchStyle = issTensile
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Left = 8
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Top = 8
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Right = 8
+      SelfOwnMaterial.BackGndPictureParam.StretchMargins.Bottom = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Left = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Top = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Right = 8
+      SelfOwnMaterial.BackGndPictureParam.DestDrawStretchMargins.Bottom = 8
+      SelfOwnMaterial.BackGndPictureParam.PictureHorzAlign = phaLeft
+      SelfOwnMaterial.BackGndPictureParam.PictureVertAlign = pvaTop
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.Enabled = False
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.SizeType = dpstPercent
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.PositionHorzType = dpphtNone
+      SelfOwnMaterial.BackGndPictureParam.DrawRectSetting.PositionVertType = dppvtNone
+      SelfOwnMaterial.IsDrawBackGndPicture = False
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.Left = 20.000000000000000000
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.Width = 40.000000000000000000
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.Height = 30.000000000000000000
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.Enabled = True
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.SizeType = dpstPixel
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.PositionHorzType = dpphtCenter
+      SelfOwnMaterial.DrawNotifyNumberIconRectSetting.PositionVertType = dppvtNone
+      MouseDownFocus = False
+      ClipChildren = True
+      Size.Width = 320.000000000000000000
+      Size.Height = 430.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Properties.Icon.ImageName = ''
+      Properties.Icon.RowCount = 1
+      Properties.Icon.ColCount = 1
+      Properties.Icon.RowIndex = 0
+      Properties.Icon.ColIndex = 0
+      Properties.Icon.ImageIndex = -1
+      Properties.Icon.PictureDrawType = pdtAuto
+      Properties.Icon.PNG = {
+        89504E470D0A1A0A0000000D49484452000000B4000000B408060000003DCD06
+        320000098D49444154785EED9D8B9124270C862F05A7E0149C8253700A4EC129
+        386CAFEE4E3E951668F1EAE5F14DD5D4D9B3C0C0A77FD442D0F4B76FBC200001
+        0840000210800004200001084000021080000420000108400002108000042000
+        0108400002108000042000010840000210800004200001084000021080000420
+        0001084000021080000420000108400002108000042000010840000210800004
+        2000010840000210800004200001084000021080000420B02781DF3FBAFDC7C7
+        FBCF8FF75F1FEFBF7FBEFFF9F857DEFF66DEFA77F957EA485D6943DA92367941
+        E01502BFFD149E88B024D89C90A39FABD045E408FC15D3DEF32556C451418E2E
+        270247DCF7686ECA48C5334A28F0143AF870417E00F27E7A69391FB63C797EB9
+        3A4868C20B0221022AE4949715B18980455011D186BE305148DA96EF28FDA0A4
+        2F08BB95F005F534B4487948F58A33455C425CBA5A48DF88B32F1068CD10C5D3
+        A5842C1E7225B1E47E747AE5A81933650F2520A2F5E18578BDAFF2C611CC2561
+        AFF4038C8C85328308882844B856CCBBC5A5278C619039EF6E46BC980F31C453
+        EFFA4A854C3B8F67573B7C49BFBDF177F3CA3968296F2D57205E0713488979E5
+        58B9C5147E4E80A85B286E50C78B79F5895F0F525955B47303C28F1E9A0BD6F5
+        31F3C96256FC887A41218EE8928414760278839873A21691F3DA988017B308FB
+        B498F9C93C36A696F193A77E22B6F0DFBD316F13B39AC6E6DB6FFC512F2CD178
+        D76412682746376FE4F1572A2689711D2D5112037E3683841AF6074EE8B18454
+        639DF0A146ACD6F9A5E0B2A18DBD77C613FD32A26743D66303815B2F44ACF8D9
+        60766EC104717141DB381163E58D65F3F278E985458D778E19C77BE9582D4ABD
+        4A80D8B90EB7F5D237A734EBA8BD58DAEE5D6087D93378CB8BB9C633AFD74BD8
+        D5303CCE337E7B4563BEF1CCEBD512621C5D3410E3F08A11C009C438BD5E8ACB
+        671B72B8B5719B5E0B4FD386982B5B1BB7E9B5EC8CFDD61D75AD9061D74A6E52
+        3DBB984276A31EB2CDDD3399AEE737BC865D2420FD548FD7C6D1AC1AD6F31B5E
+        0383F421C521F4F11B5E9B4B661F5242B63E7EC36BDB0C075B45EBF1DA4C0773
+        907A7EC36B584193E1A8C74BEAAE9ED9D41A36ED34F58B0E6E9C55D6858C8BA0
+        FB8D61EF35EC6F8D16BA0820E82E7CDF2B23E87E86C35A40D0FD280939FA190E
+        6B8149611F4A26857DFC86D7266DD78794B45D1FBFE1B55958E943CAC24A1FBF
+        E1B559FAEE43CAD2771FBFE1B531481F521C421FBFE1B5B964F6212564EBE337
+        A5369BD4DBB1C2AE9DDDB49ADC82D58696945D1BB7E9B5B8D9B30D31DCDAB84D
+        AF85A76943CC95AD8DDB2BB5304E1D660E9AA9E3F57A698E02AB434EB851C7EB
+        F5D21CD658879CC31AEB787D49698ED38D61E738DD18A72F2FC581E7311370E0
+        798CD312A5F0D26533F0488A25641AEF847FAE377782FF62C74383E23A5AAA24
+        8F2F4B9B032E4BC934DE191EBCF999957FF026E7D8C5F5B444491E8D9C0F3538
+        03700989D6778287D7FF60C6C3EBEBB5B3640D1F7A88616F3B5DC9FFA899242F
+        29D578A752A28ED7DEBBA45DDE96A30A382E776F7BFEDF7B9FCABBC1537B3113
+        371F22661D864C12ED0AD9C9A2F662E654D1C3C46C456D8FBD3AF1F97C366696
+        B122E643C59CF3D422EA1372B23257B0D90CC47CB890EDF07C4C2DC6DF39C6F4
+        E1D4EEE3B9488AE3867A82374B79E553AE38E32C7D414B7E1571B7585A842C13
+        3F3BC915AF2CFF4F9EF90201DB21FABCF44E22280979E790E932098E1DEE8E8B
+        0DE27545B0DE23EBC40FAF3C5623DBB4B6CBAAA1F453C2A29C8835BC38213BB3
+        8D7856ECA8BF5BA3C5B389D8EC5BDA90B7FD2C32762D2F75A55F72E51001FBC9
+        AACD9BAB4746C811C21794B16229C59CEA21ADC852977B2FB659FF2FDF2D7D69
+        F9015E60D63B87E84F57F2BBEE4A71EA2CA1E6DA1501CB8F0F11DFA9D5D0A853
+        E748E7B20625018BD8F42DA2F36FFD5B4D1B72B510F14A1FF1C2217352C89F83
+        FC34E1520FA922BB6D1F358A599C4069B2A59778112FC25DDC9074EF0781D4A4
+        4E3E134F8D8851C9760452E92FE2D5EDCC48878580CD70B0130D4D6C4F4005AD
+        F9DCED07C400EE26A04BDEACB0DDAD83A3468F988F3227838100042000010840
+        0002108000042000010840000210808027205B3D75BBE74C3AB2CF8474E34CC2
+        07B5DDB3214977EEC9CAE3AC97DDBFCDA9A1B3281FD4AE88B274284B69E3920A
+        3A2734F97BEFC627FD0E8E27384874B386F27410BA7AC7DC41872541D77A56BD
+        59D68E559F8752730548B5338B1FED2E4AC09ED1610F9C49DDAE6587901374CB
+        63D3FC39213DF72F72D2E8A2427BB35BFEE0469D84953C6D4ED036B68E861CD6
+        1BA7EE518C7CA6372F106BBFA99CC5BF4B8563BB69EF43B4024D09DA8AB966C2
+        A982EEF1AE4F31FDE2E8E9DE9B04D4FB59C17901B58A59C681A0DFB426DFF55D
+        70FE52EE05AD717034CCC84D0023E145EEE8041E0A74A95825368EA4D574F1C4
+        FEABC77ED9949A7EA6C2B7E523A10731F4A5421C356C7BF77729C7DB936DD0BA
+        358226861E65E1CBDAF1A7DEE7CE875651EAA946298F9DFACC4E24236889A123
+        9428F348C0A7EBBCB75641D7C6C52A50A91F7911724428512644C07A6BFF580A
+        0D4DDE12F48810873C74C8ECE7174A4D1275E2F796A089A1CFD7D9978E5005DD
+        924A536F1B19003174841265BA09BC2D683D04273AF9B4E558FAEE36F7790DF8
+        9347DF0A39FC23E67A6269B69A9EA7CBA611D9A3C234667E4BD0BA20A3E750DB
+        851AFD6F3DC93FF537F94C9FD1C2DD2D4DE63FAF92DDC2F9B6A095A6FCA854B0
+        764146F3DA910C466421E73CEB31A24F043406B5976CF5D025CF99F298368428
+        A11681DAEC8ACD5F5BF1DA859A5248216DEDF6445CA438818015A0F5702AE89E
+        98B6D45DBB1F44CBE5B223B68FA9F45E299F3E01194DAE4C20E59DA5BF333DB4
+        3DAFDAFE884AE93EBBB299BB35AB671BEBCA36A26F4102EAF95297EA9993420D
+        23BCB77DCA5F478E054EEDDF0EE2A0D8EE044AF9DB5982B6B1B25F857C12B4F0
+        4E4DFCA4AF1A77DBFB1A7B561F77B7ED75FDD7CC46EEF23D6B2F472EC4110344
+        049D3294FF61D6DE797E9DF14F1B70C4E03376DBD98966CAD3B67CA71D8BF5F8
+        FA1C465279A7A9D78DC75E924BE75E44C5A5EDE99E0F7B038147A913BB5C4E59
+        EBEA731323FB48B49F7E2C9CD371B8907578E2D15438A595B5A8A0A55D9B2BD6
+        7A9185108FBC65195CF780E0892F11706E984FCBC4EA1D234211CFABE57B0F58
+        B42B86B9A56EFBF9E56664F81080000420000108400002108000042000010840
+        0002108000042000010840000210800004200001084000021080000420000108
+        4000021080000420000108400002108000042000010840000210800004200001
+        08400002108000042000010840602702FF01D4CFC37BA3B947A0000000004945
+        4E44AE426082}
+      Properties.Icon.GIFFileData = {}
+      Properties.PageIndex = 0
+      Properties.TabSize = 60.000000000000000000
+      Properties.PushedIcon.ImageName = ''
+      Properties.PushedIcon.RowCount = 1
+      Properties.PushedIcon.ColCount = 1
+      Properties.PushedIcon.RowIndex = 0
+      Properties.PushedIcon.ColIndex = 0
+      Properties.PushedIcon.ImageIndex = -1
+      Properties.PushedIcon.PictureDrawType = pdtAuto
+      Properties.PushedIcon.PNG = {
+        89504E470D0A1A0A0000000D49484452000000B4000000B408060000003DCD06
+        3200000A6949444154785EED9DDD95DB361046D5425A700B6EC12DB805B7E016
+        D2421E12AF8FA317B7E016D2401E9C5D359016120C4840A00412039212F17379
+        8ECEDABB24055C7E1C0E6606E0E9C40601084000021080000420000108400002
+        1080000420000108400002108000042000010840000210800004200001084000
+        0210800004200001084000021080000420000108400002108000042000010840
+        0002108000042000010840000210800004200001084000021080000420000108
+        400002108000042000811A09BC5CDE9F5E2E9F4E5F5E7F3DBDBC7E3FBDFCF3D7
+        E9E5E7CFD3EF7FFF6B3F2F6FFF453FFEEF665F7B8C39D69EC39CEBEBE5C3E97C
+        F9A5461CB4B9360256C06F9F8DF87ECC8A754EC4D9BF374217918BC0D920B01B
+        01B19622626B49672CEEC37F6F2CF960C1DFEFD62F4ED419016B8DC58D384AC4
+        73DF2B3796714DD820A02250AC906F052EFE37C2565DD32E7712D7E28FD7DFCA
+        B3C8A9278411367E7697929DEFF497CBC7C5A844716E4744E47233121DE95CD8
+        76C057A29F9CB2CA737FC75AF7AB68EB2B8B1FBA563C451FF7B9DF0BDB63CFC5
+        E75C4A7C342172F3E461EB808044069A10ACE209210920FCEA8645DD9398FD4D
+        6BE2D688BA415177296667C511755B8A96B05C2F6EC66C3FF1A9DB10B544339A
+        1F002AFC6911BAD483B0554CC0C6999B0DCDC54B53534F22795AB1554AA0A9A4
+        89D20AA7046D6BB12FEF2ABDA21D371BBF79DE824B388FAD2202E26AE037275C
+        122AF5EA51749555733BB9142997C3FD5D6E78E2D315687A9826B56EC0D4DB71
+        443D6A10744BD5730FBE31B1D2850B1AEB9CFF64C24A172C6A7CE77C418B9566
+        2B90C0303B3BFF82728CC920926C294FD176A90104BD8A0171E9F2F47CECBA19
+        0DDC4884F00A12B5A472B1CE1BDD2D122DE5281A7763A398E50943796939827E
+        CA5A730DB8154B4F31A21DE5E899BA8D9D6E36AAF00A1035C9941DDC8DF18620
+        7C5784A0FB99C5FDE8812F59C302046D9799DDE991DBFD7918181EAFE847CC4A
+        9101924DA3BBD5F957AE0D5DDA799237ACE927DBC104765F88DC58A95892213B
+        3458DA79344F3133FF92ED6002BB4E823517742963A62E7EDAF13C4B78D5EDD1
+        88D9EC43E8EE6031CBD7EF3AD52A912D5367244B3B8F52D0E292B01D4C20E917
+        665C4CCD3B4C543790E25D284F3D4F0683832F275F8FA0E75F1FB7860D8A3A98
+        80CAD2A92DD4F2BACA6A97C394B22E6DFA64D05EE7D1275F0EBE9C7CFD9E83C2
+        D41C3B6D8870AFF348DF9606A9DAF6682D3583C202EEA7DDC37626167B5BD3B0
+        EA8542A59D47F394226C77BCA2F7B652CE9A49059F0D8B9978F216B7A6B4F32C
+        5A6B122BC70B9AD4B7DE3F4EBA1EA4BE8F1774D70B996BDC888C7D284E3A5ECF
+        F6FDD749CB9371517B3E17E5A305087AF76C61C7E2A7C0BF104133056BBB1F4D
+        C8AE10314B33B22BE13AB6C2BC83A520E1CE35459FC1DB6EC99AF5B159C6A02C
+        A5EF9E60E9CC8AB3D04C597AC6EDD87003B21458616296E6B058E37A778A705D
+        81829626ED3D83A3597F39B0E644370A15B38D769064C94E32911D2C58D056D4
+        BC92422DEA54996BE197BA8FE661A5F5BE34D6B9927B025F3A2D6AAC73256276
+        118F2D35CC3D0C06A54A91AD2202BC1A9957235724575D531920DE8B9A97D7EB
+        B453E45E36D962E6C975E14228338524518A94AABE5112F5C09F1E2C35510DBD
+        6E8ADE137F9A77A8142DD0358DEB79EE21C5476B1453C1315D8ADA2C4D406968
+        05E25CDBC49E442D961931AF554A45C7894FDDFC409135362A52E40E4D6D3B46
+        BDBCC8E30EF8384549049A8D7A9898FBD7CB879250D39647136835D9220559F8
+        CB8F564F81E76F6EC903AC72812A7B5293C48235331894943E15734F524EA15F
+        D344C84EDE9988900B55D8939B55EBDA1DD71778BE7F3231BEAE5802D54DCD32
+        96588A89885A142BA9631BB6E760D0FAE1E2C3CAE3DF0AEF87FFB7FC3EE5A7DB
+        9AE4F01C260962176E37AE84089868C5B15AA9E2DB73562815B1F957498C2213
+        0B8FD0AAB8D47D34326535ADE08D785923B90F3D54DDCBC5D549651D0FC59B5F
+        AB0640E3DB22101D10929068EB22F7D41B19684DE6151AAB8C3FDC93021AEBEB
+        54D054A2357679FBEB8E7739C8B0F577F15BECB1ADB043CC2D5E5AFA04010840
+        000210800004200001084000021080000420000147E06C4A3DE5F3E7DBE78765
+        1C25D478B619CD4F0FFB0EAE684304CE9777AB85F24D562432AB793EF2B50E56
+        C8E63BECC7DC3C6C105824703685F98320E3AF66389BD595E6EA3D9CA0E78466
+        FFBE717D0C69DF20E6EF5C49082C13388F6B463B0B3808F09D3FC8BA1222A699
+        850E9704ED8F555AD6E149319D2B686FA6CC2740EC3CE8A02302838F6A7CE1F1
+        B13E58EB8F9640F8B8FF661670B9DDE6042DA2B2E7C97015C236F8E3DCF1993F
+        A55D6C9D1310D76022C2D10559F2616382B637C8E8260C37876E49AED01ACB79
+        D77C7CFBF1B53B57F3D87D2FC61B1743ACB3B79A81406F057D2F66FD7203227C
+        F98E2DD635E5D373953B246045693EE126FFFF6A66B6387FDAFD2D14D016310F
+        EE0D82EE506EC775D90A4E7CED40EC7716DAF9E24A37637AD30C8216B7618DBB
+        21C7E0721CA78FC3BF597C634D58CD254F263F6D28CF0870F495AD4B62D7D190
+        8FF9DB9870F13F83C8C95CC79D8546D0874BA3CE068403C041905337C3F56A6B
+        C4C11E9F21687CE83AF57478AB4564DE65F0B1DE215C377105C6909915FDADE5
+        5DF87F3890D474161F5A43897D9204C44598C68CA733C163D18DE44983419E1C
+        AFD970393494D84745C066D726B1E36BB6D08B3D73A0E7049A2BE85D5C1CE2D0
+        AAEBDEF44E3EEC3666095D67BD5BF22441E343372DB3E33BE7056D2C784E38CD
+        171565BA1C08FAF86BDE740B9E2D689BC0C9187C86FBFAE40F2E47D39ACCEADC
+        50487FF5A19FE5724CAAF3328B91EEFC6E4A4DB3AE79B33BDBC1E14D08EF5982
+        7699C861F68B4BD2843FC7844DF46FC37EF6589BCD8CD776377BE1E8589CC0A4
+        84731C043E4BD0AE45433DF398899C3C29C60229853BA149E4A0810E08381F34
+        AC7D76829EB79C316B3A5ACBD175584227375198820FC37DE14C183BAFD0D757
+        C7574D95488DAFE960ADEB0E14BBD0C549DD73CC87DEE0D72E0A3AA807F156DA
+        7DD75DD55F30BF30328BE63E9EAE2F5FEDFBEA37D8FB9875966E3ED242CB94AB
+        6B26F23A1075BF8B610E2722489B6FB7AD65AC0D5EDAFEBAE4ACF330C3E42AAC
+        50D0DA9927575F7828075DCA14BA7A8FDBD873EA383F17727662EFF0A6DCA5F9
+        90FD5DE54E7AEC5E933CB74CC0A30685135FF9260B9912B45C9AD8C0CFB675AC
+        D90E27006F49D674228376BAE9221B736B6BF864C58EA9EFC90C9848CC5823E8
+        D815B84DACB0A6473B3A55F54473C1D757DB0D4B10C45C8E302D1EB3B46BBE73
+        3AA8BD96C14A7464B8591920AA4451EB4EE123D95AB654817FC2428B30E53CAE
+        DE232C49BD1FB88D25AB33316577AC76F64A7883DC0E1459A7A3568566B65B2C
+        DAB534743EB396632D27B3C3136B722CBD7D6B4D1ADCF6C5FACFD3416D261676
+        AF9980884AC4B3B4398BAB7964CB40CFEF6F1EF5A9732FC6A76DC6309EB489FF
+        3E3E85ACE6EB43DB210001084000021080000420000108400002108000042000
+        0108400002108000042000010840000210800004200001084000021080000420
+        0001084000021080000420000108400002108000042000010840000210800004
+        20000108400002108040B304FE07A1706AD8B69822980000000049454E44AE42
+        6082}
+      Properties.PushedIcon.GIFFileData = {}
+      Properties.PageControl = pcMain
+      Properties.NotifyNumberIconControl = nniMessage
+    end
+  end
+end

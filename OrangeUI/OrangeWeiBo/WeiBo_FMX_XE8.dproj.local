@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899-12-30 00:00:00.000.515,E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\WebBrowserEx\FMX.WebBrowser.Mac.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.171,E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\XSuperObject\XSuperJSON.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.453,E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\uUIFunction.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.859,=E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\WebBrowserEx\FMX.WebBrowser.Mac.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.203,E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\XSuperObject\XSuperObject.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.515,=E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\uMobileUtils.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.484,=E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\XSuperObject\XSuperJSON.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.468,=E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\XSuperObject\XSuperObject.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.515,=E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\uUIFunction.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.265,E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\FMX.Platform.iOS.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.000,=E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\FMX.Platform.iOS.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.578,E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\WebBrowserEx\Macapi.WebView.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.843,=E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\WebBrowserEx\Macapi.WebView.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.875,=E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\WebBrowserEx\FMX.WebBrowser.Win.pas</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.953,E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\WebBrowserEx\FMX.WebBrowser.Win.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.546,E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\WebBrowserEx\FMX.WebBrowserEx.pas=</Transaction>
+    <Transaction>1899-12-30 00:00:00.000.843,=E:\MyFiles\OrangeUI Tutorial And Samples(教程和示例)\OrangeProjectCommon\WebBrowserEx\FMX.WebBrowserEx.pas</Transaction>
+  </Transactions>
+</BorlandProject>

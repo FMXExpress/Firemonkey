@@ -1,0 +1,6 @@
+object FrameMobilePopupMenu: TFrameMobilePopupMenu
+  Size.Width = 200.000000000000000000
+  Size.Height = 234.000000000000000000
+  Size.PlatformDefault = False
+  TabOrder = 0
+end

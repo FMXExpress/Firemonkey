@@ -1,0 +1,14 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = #28023#22806#28120#23398#20064'Demo'
+  ClientHeight = 480
+  ClientWidth = 320
+  Fill.Color = xFFEFEFEF
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+end

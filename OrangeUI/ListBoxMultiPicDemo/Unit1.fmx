@@ -1,0 +1,18 @@
+object Form8: TForm8
+  Left = 0
+  Top = 0
+  Caption = 'Form8'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 152.000000000000000000
+    TabOrder = 0
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+end
