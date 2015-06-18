@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+<key>CFBundleDocumentTypes</key>
+<array>
+    <dict>
+        <key>CFBundleTypeName</key>
+        <string>Excel document</string>
+        <key>CFBundleTypeRole</key>
+        <string>Editor</string>
+        <key>LSHandlerRank</key>
+        <string>Owner</string>
+        <key>LSItemContentTypes</key>
+        <array>
+            <string>com.microsoft.excel.xls</string>
+            <string>com.tms.flexcel.xlsx</string>
+			<string>org.openxmlformats.spreadsheetml.sheet</string>
+        </array>
+    </dict>
+</array>
+
+
+<key>UTExportedTypeDeclarations</key>
+ <array>
+<dict>
+    <key>UTTypeDescription</key>
+    <string>Excel xlsx document</string>
+    <key>UTTypeTagSpecification</key>
+    <dict>
+        <key>public.filename-extension</key>
+        <string>xlsx</string>
+        <key>public.mime-type</key>
+        <string>application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</string>
+    </dict>
+    <key>UTTypeConformsTo</key>
+    <array>
+        <string>public.data</string>
+    </array>
+    <key>UTTypeIdentifier</key>
+    <string>com.tms.flexcel.xlsx</string>
+</dict>
+</array>
+</dict>
+</plist>

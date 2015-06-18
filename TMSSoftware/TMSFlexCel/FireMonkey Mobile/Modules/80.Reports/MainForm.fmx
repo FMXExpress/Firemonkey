@@ -1,0 +1,84 @@
+object FMainForm: TFMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Delphi Versions in Stack Overflow'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object btnRun: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 104.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Run!'
+      OnClick = btnRunClick
+    end
+    object btnShare: TButton
+      Position.X = 120.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 104.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Share'
+      OnClick = btnShareClick
+    end
+    object btnOffline: TButton
+      StaysPressed = True
+      Anchors = [akTop, akRight]
+      Position.X = 528.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 104.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Offline'
+    end
+  end
+  object Viewer: TWebBrowser
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 436.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object SORESTClient: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    BaseURL = 'http://api.stackexchange.com'
+    Params = <>
+    HandleRedirects = True
+    Left = 40
+    Top = 32
+  end
+  object SORESTRequest: TRESTRequest
+    Client = SORESTClient
+    Params = <>
+    Resource = 
+      '2.2/tags?order=desc&sort=popular&inname=delphi-&site=stackoverfl' +
+      'ow'
+    Response = SORESTResponse
+    SynchronizedEvents = False
+    Left = 128
+    Top = 32
+  end
+  object SORESTResponse: TRESTResponse
+    ContentType = 'application/json'
+    ContentEncoding = 'gzip'
+    Left = 224
+    Top = 32
+  end
+  object FlexCelDocExport: TFlexCelDocExport
+    Left = 304
+    Top = 224
+  end
+end

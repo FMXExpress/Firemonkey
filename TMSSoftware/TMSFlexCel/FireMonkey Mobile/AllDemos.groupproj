@@ -1,0 +1,84 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{726654B0-4E25-4AB9-87F3-C3BE7E2D7E51}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Modules\40.FlexCalc\FlexCalc.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\50.FlexDocs\FlexDocs.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\60.CalcWheel\CalcWheel.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\70.iOS_FlexView\iOS_FlexView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\80.Reports\Reports.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FlexCalc">
+        <MSBuild Projects="Modules\40.FlexCalc\FlexCalc.dproj"/>
+    </Target>
+    <Target Name="FlexCalc:Clean">
+        <MSBuild Projects="Modules\40.FlexCalc\FlexCalc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FlexCalc:Make">
+        <MSBuild Projects="Modules\40.FlexCalc\FlexCalc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FlexDocs">
+        <MSBuild Projects="Modules\50.FlexDocs\FlexDocs.dproj"/>
+    </Target>
+    <Target Name="FlexDocs:Clean">
+        <MSBuild Projects="Modules\50.FlexDocs\FlexDocs.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FlexDocs:Make">
+        <MSBuild Projects="Modules\50.FlexDocs\FlexDocs.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CalcWheel">
+        <MSBuild Projects="Modules\60.CalcWheel\CalcWheel.dproj"/>
+    </Target>
+    <Target Name="CalcWheel:Clean">
+        <MSBuild Projects="Modules\60.CalcWheel\CalcWheel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CalcWheel:Make">
+        <MSBuild Projects="Modules\60.CalcWheel\CalcWheel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="iOS_FlexView">
+        <MSBuild Projects="Modules\70.iOS_FlexView\iOS_FlexView.dproj"/>
+    </Target>
+    <Target Name="iOS_FlexView:Clean">
+        <MSBuild Projects="Modules\70.iOS_FlexView\iOS_FlexView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="iOS_FlexView:Make">
+        <MSBuild Projects="Modules\70.iOS_FlexView\iOS_FlexView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Reports">
+        <MSBuild Projects="Modules\80.Reports\Reports.dproj"/>
+    </Target>
+    <Target Name="Reports:Clean">
+        <MSBuild Projects="Modules\80.Reports\Reports.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Reports:Make">
+        <MSBuild Projects="Modules\80.Reports\Reports.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FlexCalc;FlexDocs;CalcWheel;iOS_FlexView;Reports"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FlexCalc:Clean;FlexDocs:Clean;CalcWheel:Clean;iOS_FlexView:Clean;Reports:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FlexCalc:Make;FlexDocs:Make;CalcWheel:Make;iOS_FlexView:Make;Reports:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

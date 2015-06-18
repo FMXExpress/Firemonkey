@@ -1,0 +1,652 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{882622D9-599F-4F3A-845A-85A6DD83EFCD}</ProjectGuid>
+		<ProjectVersion>14.6</ProjectVersion>
+		<FrameworkType>FMX</FrameworkType>
+		<MainSource>FlexView.dpr</MainSource>
+		<Base>True</Base>
+		<Config Condition="'$(Config)'==''">Debug</Config>
+		<Platform Condition="'$(Platform)'==''">iOSDevice</Platform>
+		<TargetedPlatforms>72</TargetedPlatforms>
+		<AppType>Application</AppType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='iOSDevice' and '$(Base)'=='true') or '$(Base_iOSDevice)'!=''">
+		<Base_iOSDevice>true</Base_iOSDevice>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Base)'=='true') or '$(Base_iOSSimulator)'!=''">
+		<Base_iOSSimulator>true</Base_iOSSimulator>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+		<Base_Win32>true</Base_Win32>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+		<Cfg_1>true</Cfg_1>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='iOSDevice' and '$(Cfg_1)'=='true') or '$(Cfg_1_iOSDevice)'!=''">
+		<Cfg_1_iOSDevice>true</Cfg_1_iOSDevice>
+		<CfgParent>Cfg_1</CfgParent>
+		<Cfg_1>true</Cfg_1>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='iOSSimulator' and '$(Cfg_1)'=='true') or '$(Cfg_1_iOSSimulator)'!=''">
+		<Cfg_1_iOSSimulator>true</Cfg_1_iOSSimulator>
+		<CfgParent>Cfg_1</CfgParent>
+		<Cfg_1>true</Cfg_1>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+		<Cfg_1_Win32>true</Cfg_1_Win32>
+		<CfgParent>Cfg_1</CfgParent>
+		<Cfg_1>true</Cfg_1>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+		<Cfg_2>true</Cfg_2>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<PostBuildEvent><![CDATA["$(FLEXCELVCLNT)\Tools\CompiledTools\infoplist.exe" "$(OUTPUTDIR)\FlexView.info.plist" "$(PROJECTDIR)\DocumentTypes.plist" "$(OUTPUTDIR)\ActualFlexView.info.plist"
+$(PostBuildEvent)]]></PostBuildEvent>
+		<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+		<DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+		<DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
+		<DCC_E>false</DCC_E>
+		<DCC_N>false</DCC_N>
+		<DCC_S>false</DCC_S>
+		<DCC_F>false</DCC_F>
+		<DCC_K>false</DCC_K>
+		<VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);UIDeviceFamily=iPhone &amp; iPad;CFBundleResourceSpecification=ResourceRules.plist</VerInfo_Keys>
+		<OrientationPortrait>true</OrientationPortrait>
+		<OrientationLandscapeRight>true</OrientationLandscapeRight>
+		<OrientationLandscapeLeft>true</OrientationLandscapeLeft>
+		<OrientationPortraitUpsideDown>true</OrientationPortraitUpsideDown>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base_iOSDevice)'!=''">
+		<DCC_UsePackage>bindcompfmx;DBXSqliteDriver;fmx;rtl;dbrtl;DbxClientDriver;IndySystem;bindcomp;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DataSnapProviderClient;xmlrtl;DbxCommonDriver;IndyProtocols;dbxcds;bindengine;soaprtl;bindcompdbx;FMXTee;CustomIPTransport;dsnap;fmxase;IndyCore;IndyIPCommon;CloudService;FmxTeeUI;inet;dbexpress;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+		<BT_BuildType>Debug</BT_BuildType>
+		<iPad_Setting29>flexview29.png</iPad_Setting29>
+		<iPad_Launch1024>FlexViewLaunch1024.png</iPad_Launch1024>
+		<iPad_SpotLight50>flexview50.png</iPad_SpotLight50>
+		<iPad_AppIcon72>flexview72.png</iPad_AppIcon72>
+		<iPad_AppIcon144>flexview144.png</iPad_AppIcon144>
+		<iPad_Setting58>flexview58.png</iPad_Setting58>
+		<iPhone_Spotlight29>flexview29.png</iPhone_Spotlight29>
+		<iPad_Launch2048>FlexViewLaunch2048.png</iPad_Launch2048>
+		<iPad_Launch1536>FlexViewLaunch1536.png</iPad_Launch1536>
+		<iPhone_Launch640x1136>FlexViewLaunch640x1136.png</iPhone_Launch640x1136>
+		<iPhone_AppIcon114>flexview114.png</iPhone_AppIcon114>
+		<iPhone_Spotlight58>flexview58.png</iPhone_Spotlight58>
+		<iPad_SpotLight100>flexview100.png</iPad_SpotLight100>
+		<iPad_Launch768>FlexViewLaunch768.png</iPad_Launch768>
+		<iPhone_Launch320>FlexViewLaunch320.png</iPhone_Launch320>
+		<iPhone_AppIcon57>flexview57.png</iPhone_AppIcon57>
+		<iPhone_Launch640>FlexViewLaunch640x960.png</iPhone_Launch640>
+		<VerInfo_BundleId>$(MSBuildProjectName)</VerInfo_BundleId>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base_iOSSimulator)'!=''">
+		<DCC_UsePackage>bindcompfmx;DBXSqliteDriver;fmx;rtl;dbrtl;DbxClientDriver;IndySystem;bindcomp;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DataSnapProviderClient;xmlrtl;DbxCommonDriver;IndyProtocols;dbxcds;bindengine;soaprtl;bindcompdbx;FMXTee;CustomIPTransport;dsnap;fmxase;IndyCore;IndyIPCommon;CloudService;FmxTeeUI;inet;dbexpress;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+		<iPad_Setting29>flexview29.png</iPad_Setting29>
+		<iPad_Launch1024>FlexViewLaunch1024.png</iPad_Launch1024>
+		<iPad_SpotLight50>flexview50.png</iPad_SpotLight50>
+		<iPad_AppIcon72>flexview72.png</iPad_AppIcon72>
+		<iPad_AppIcon144>flexview144.png</iPad_AppIcon144>
+		<iPad_Setting58>flexview58.png</iPad_Setting58>
+		<iPhone_Spotlight29>flexview29.png</iPhone_Spotlight29>
+		<iPad_Launch2048>FlexViewLaunch2048.png</iPad_Launch2048>
+		<iPad_Launch1536>FlexViewLaunch1536.png</iPad_Launch1536>
+		<iPhone_Launch640x1136>FlexViewLaunch640x1136.png</iPhone_Launch640x1136>
+		<iPhone_AppIcon114>flexview114.png</iPhone_AppIcon114>
+		<iPhone_Spotlight58>flexview58.png</iPhone_Spotlight58>
+		<iPad_SpotLight100>flexview100.png</iPad_SpotLight100>
+		<iPad_Launch768>FlexViewLaunch768.png</iPad_Launch768>
+		<iPhone_Launch320>FlexViewLaunch320.png</iPhone_Launch320>
+		<iPhone_AppIcon57>flexview57.png</iPhone_AppIcon57>
+		<iPhone_Launch640>FlexViewLaunch640x960.png</iPhone_Launch640>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base_Win32)'!=''">
+		<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+		<DCC_UsePackage>FlexCel_Core;bindcompfmx;DBXSqliteDriver;vcldbx;fmx;rtl;dbrtl;DbxClientDriver;IndySystem;TeeDB;bindcomp;inetdb;inetdbbde;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DBXOdbcDriver;DataSnapServer;Tee;FlexCel_Render;DataSnapProviderClient;xmlrtl;svnui;DBXSybaseASEDriver;DbxCommonDriver;VCL_FlexCel_Components;vclimg;IndyProtocols;dbxcds;DBXMySQLDriver;DatasnapConnectorsFreePascal;MetropolisUILiveTile;vclactnband;bindengine;vcldb;soaprtl;bindcompdbx;vcldsnap;bindcompvcl;FMXTee;TeeUI;VCL_FlexCel_Core;vclie;FlexCel_Pdf;vcltouch;DBXDb2Driver;DBXOracleDriver;CustomIPTransport;vclribbon;VclSmp;dsnap;IndyIPServer;DBXInformixDriver;Intraweb;fmxase;vcl;IndyCore;DataSnapConnectors;IndyIPCommon;CloudService;DBXMSSQLDriver;dsnapcon;DBXFirebirdDriver;FmxTeeUI;inet;CodeSiteExpressPkg;fmxobj;FMX_FlexCel_Core;vclx;inetdbxpress;webdsnap;svn;DBXSybaseASADriver;fmxdae;FlexCel_XlsAdapter;bdertl;dbexpress;adortl;DataSnapIndy10ServerTransport;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+		<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+		<VerInfo_Locale>1033</VerInfo_Locale>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_1)'!=''">
+		<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		<DCC_DebugDCUs>true</DCC_DebugDCUs>
+		<DCC_Optimize>false</DCC_Optimize>
+		<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+		<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+		<DCC_RemoteDebug>true</DCC_RemoteDebug>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_1_iOSDevice)'!=''">
+		<VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDevelopmentRegion=en;CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleInfoDictionaryVersion=6.0;CFBundleVersion=1.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;LSRequiresIPhoneOS=true;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);UIDeviceFamily=iPhone &amp; iPad;CFBundleResourceSpecification=ResourceRules.plist</VerInfo_Keys>
+		<VerInfo_BundleId>$(MSBuildProjectName)</VerInfo_BundleId>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_UIDeviceFamily>iPhoneAndiPad</VerInfo_UIDeviceFamily>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_1_iOSSimulator)'!=''">
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+		<DCC_RemoteDebug>false</DCC_RemoteDebug>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_2)'!=''">
+		<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+		<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_DebugInformation>false</DCC_DebugInformation>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="$(MainSource)">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="UFlexView.pas">
+			<Form>FormFlexView</Form>
+			<FormType>fmx</FormType>
+		</DCCReference>
+		<DCCReference Include="UPatchMissingOpenURLEvent.pas"/>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_2</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_1</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType/>
+		<BorlandProject>
+			<Delphi.Personality>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Name="MajorVer">1</VersionInfo>
+					<VersionInfo Name="MinorVer">0</VersionInfo>
+					<VersionInfo Name="Release">0</VersionInfo>
+					<VersionInfo Name="Build">0</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+					<VersionInfo Name="Locale">14346</VersionInfo>
+					<VersionInfo Name="CodePage">1252</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName"/>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName"/>
+					<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+					<VersionInfoKeys Name="Comments"/>
+					<VersionInfoKeys Name="CFBundleName"/>
+					<VersionInfoKeys Name="CFBundleDisplayName"/>
+					<VersionInfoKeys Name="UIDeviceFamily"/>
+					<VersionInfoKeys Name="CFBundleIdentifier"/>
+					<VersionInfoKeys Name="CFBundleVersion"/>
+					<VersionInfoKeys Name="CFBundlePackageType"/>
+					<VersionInfoKeys Name="CFBundleSignature"/>
+					<VersionInfoKeys Name="CFBundleAllowMixedLocalizations"/>
+					<VersionInfoKeys Name="UISupportedInterfaceOrientations"/>
+					<VersionInfoKeys Name="CFBundleExecutable"/>
+					<VersionInfoKeys Name="CFBundleResourceSpecification"/>
+					<VersionInfoKeys Name="LSRequiresIPhoneOS"/>
+					<VersionInfoKeys Name="CFBundleInfoDictionaryVersion"/>
+					<VersionInfoKeys Name="CFBundleDevelopmentRegion"/>
+				</VersionInfoKeys>
+				<Source>
+					<Source Name="MainSource">FlexView.dpr</Source>
+				</Source>
+			</Delphi.Personality>
+			<Deployment>
+				<DeployFile LocalName="flexview72.png" Configuration="Debug" Class="iPad_AppIcon72">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="FlexViewLaunch1024.png" Configuration="Debug" Class="iPad_Launch1024">
+					<Platform Name="iOSDevice">
+						<RemoteName>Default-Landscape~ipad.png</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Debug\FlexView.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
+					<Platform Name="iOSDevice">
+						<RemoteName>Entitlements.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Release\FlexView" Configuration="Release" Class="ProjectOutput">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSSimulator\Debug\ActualFlexView.info.plist" Class="File">
+					<Platform Name="iOSSimulator">
+						<RemoteName>Info.plist</RemoteName>
+					</Platform>
+					<Platform Name="Win32">
+						<RemoteName>ActualFlexView.info.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Base\ResourceRules.plist" Configuration="Base" Class="ProjectiOSDeviceResourceRules">
+					<Platform Name="iOSDevice">
+						<RemoteName>ResourceRules.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="flexview144.png" Configuration="Debug" Class="iPad_AppIcon144">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSSimulator\Release\FlexView" Configuration="Release" Class="ProjectOutput">
+					<Platform Name="iOSSimulator"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSSimulator\Release\FlexView.info.plist" Configuration="Release" Class="ProjectiOSSimulatorInfoPList">
+					<Platform Name="iOSSimulator">
+						<Enabled>false</Enabled>
+						<RemoteName>Info.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Debug\FlexView" Configuration="Debug" Class="ProjectOutput">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Base\FlexView.entitlements" Configuration="Base" Class="ProjectiOSEntitlements">
+					<Platform Name="iOSDevice">
+						<RemoteName>Entitlements.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSSimulator\Release\FlexView.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
+					<Platform Name="iOSSimulator">
+						<RemoteName>Entitlements.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="flexview50.png" Configuration="Debug" Class="iPad_SpotLight50">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="FlexViewLaunch768.png" Configuration="Debug" Class="iPad_Launch768">
+					<Platform Name="iOSDevice">
+						<RemoteName>Default-Portrait~ipad.png</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="FlexViewLaunch320.png" Configuration="Debug" Class="iPhone_Launch320">
+					<Platform Name="iOSDevice">
+						<RemoteName>Default.png</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSSimulator\Debug\FlexView" Configuration="Debug" Class="ProjectOutput">
+					<Platform Name="iOSSimulator"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Base\FlexView" Configuration="Base" Class="ProjectOutput">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Base\FlexView.info.plist" Configuration="Base" Class="ProjectiOSDeviceInfoPList">
+					<Platform Name="iOSDevice">
+						<Enabled>false</Enabled>
+						<RemoteName>Info.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+					<Platform Name="OSX32"/>
+					<Platform Name="iOSSimulator"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSSimulator\Release\FlexView.rsm" Configuration="Release" Class="DebugSymbols">
+					<Platform Name="iOSSimulator">
+						<RemoteName>FlexView.rsm</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSSimulator\Debug\FlexView.info.plist" Configuration="Debug" Class="ProjectiOSSimulatorInfoPList">
+					<Platform Name="iOSSimulator">
+						<Enabled>false</Enabled>
+						<RemoteName>Info.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSSimulator\Debug\FlexView.entitlements" Configuration="Debug" Class="ProjectiOSEntitlements">
+					<Platform Name="iOSSimulator">
+						<RemoteName>Entitlements.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="FlexViewLaunch640x960.png" Configuration="Debug" Class="iPhone_Launch640">
+					<Platform Name="iOSDevice">
+						<RemoteName>Default@2x.png</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="flexview114.png" Configuration="Debug" Class="iPhone_AppIcon114">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="flexview58.png" Configuration="Debug" Class="iPad_Setting58">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Debug\FlexView.dSYM" Configuration="Debug" Class="ProjectiOSDeviceDebug">
+					<Platform Name="iOSDevice">
+						<RemoteName>FlexView</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Release\FlexView.entitlements" Configuration="Release" Class="ProjectiOSEntitlements">
+					<Platform Name="iOSDevice">
+						<RemoteName>Entitlements.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Base\FlexView.dSYM" Configuration="Base" Class="ProjectiOSDeviceDebug">
+					<Platform Name="iOSDevice">
+						<RemoteName>FlexView</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Release\ResourceRules.plist" Configuration="Release" Class="ProjectiOSDeviceResourceRules">
+					<Platform Name="iOSDevice">
+						<RemoteName>ResourceRules.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Release\FlexView.info.plist" Configuration="Release" Class="ProjectiOSDeviceInfoPList">
+					<Platform Name="iOSDevice">
+						<RemoteName>Info.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="FlexViewLaunch1536.png" Configuration="Debug" Class="iPad_Launch1536">
+					<Platform Name="iOSDevice">
+						<RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="flexview57.png" Configuration="Debug" Class="iPhone_AppIcon57">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Debug\FlexView.info.plist" Configuration="Debug" Class="ProjectiOSDeviceInfoPList">
+					<Platform Name="iOSDevice">
+						<Enabled>false</Enabled>
+						<RemoteName>Info.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Release\FlexView.dSYM" Configuration="Release" Class="ProjectiOSDeviceDebug">
+					<Platform Name="iOSDevice">
+						<RemoteName>FlexView</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="FlexViewLaunch640x1136.png" Configuration="Debug" Class="iPhone_Launch640x1136">
+					<Platform Name="iOSDevice">
+						<RemoteName>Default-568h@2x.png</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Debug\ActualFlexView.info.plist" Class="File">
+					<Platform Name="iOSDevice">
+						<RemoteName>Info.plist</RemoteName>
+					</Platform>
+					<Platform Name="Win32">
+						<RemoteName>ActualFlexView.info.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="iOSSimulator\Debug\FlexView.rsm" Configuration="Debug" Class="DebugSymbols">
+					<Platform Name="iOSSimulator">
+						<RemoteName>FlexView.rsm</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="flexview100.png" Configuration="Debug" Class="iPad_SpotLight100">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="flexview29.png" Configuration="Debug" Class="iPad_Setting29">
+					<Platform Name="iOSDevice"/>
+				</DeployFile>
+				<DeployFile LocalName="iOSDevice\Debug\ResourceRules.plist" Configuration="Debug" Class="ProjectiOSDeviceResourceRules">
+					<Platform Name="iOSDevice">
+						<RemoteName>ResourceRules.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="FlexViewLaunch2048.png" Configuration="Debug" Class="iPad_Launch2048">
+					<Platform Name="iOSDevice">
+						<RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployClass Required="true" Name="DependencyPackage">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+						<Extensions>.dylib</Extensions>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+						<Extensions>.bpl</Extensions>
+					</Platform>
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+						<Extensions>.dylib</Extensions>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+						<Extensions>.dylib</Extensions>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="DependencyModule">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+						<Extensions>.dylib</Extensions>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+						<Extensions>.dll;.bpl</Extensions>
+					</Platform>
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+						<Extensions>.dylib</Extensions>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+						<Extensions>.dylib</Extensions>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="iPad_Launch2048">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectOSXInfoPList">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectiOSDeviceInfoPList">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectiOSDeviceDebug">
+					<Platform Name="iOSDevice">
+						<RemoteDir>..\$(PROJECTNAME).app.dSYM\Contents\Resources\DWARF</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="iPad_Launch1024">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectiOSResource">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectiOSSimulatorInfoPList">
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectOSXEntitlements">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="iPhone_Launch640">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectOSXResource">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\Resources</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="iPhone_Launch320">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="iPad_Launch768">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Required="true" Name="ProjectOutput">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+					</Platform>
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectiOSDeviceResourceRules">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="File">
+					<Platform Name="iOSDevice">
+						<Operation>0</Operation>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+					</Platform>
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>0</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>0</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="DebugSymbols">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="DependencyFramework">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+						<Extensions>.framework</Extensions>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="iPhone_Launch640x1136">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectiOSEntitlements">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="iPad_Launch1536">
+					<Platform Name="iOSDevice">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="AdditionalDebugSymbols">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="iOSSimulator">
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="Win32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>0</Operation>
+					</Platform>
+				</DeployClass>
+				<ProjectRoot Platform="iOSDevice" Name="$(PROJECTNAME).app"/>
+				<ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+				<ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+				<ProjectRoot Platform="iOSSimulator" Name="$(PROJECTNAME).app"/>
+				<ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+			</Deployment>
+			<Platforms>
+				<Platform value="iOSDevice">True</Platform>
+				<Platform value="iOSSimulator" ActiveMobileDevice="iPhone">True</Platform>
+				<Platform value="Win32">False</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+	<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+	<Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+	<Import Project="$(MSBuildProjectName).deployproj" Condition="Exists('$(MSBuildProjectName).deployproj')"/>
+	<PropertyGroup Condition="'$(Config)'=='Debug' And '$(Platform)'=='iOSDevice'">
+		<PreBuildEvent/>
+		<PreBuildEventIgnoreExitCode>False</PreBuildEventIgnoreExitCode>
+		<PreLinkEvent/>
+		<PreLinkEventIgnoreExitCode>False</PreLinkEventIgnoreExitCode>
+		<PostBuildEvent>"$(FLEXCELVCLNT)\Tools\CompiledTools\infoplist.exe" "$(OUTPUTDIR)\FlexView.info.plist" "$(PROJECTDIR)\DocumentTypes.plist" "$(OUTPUTDIR)\ActualFlexView.info.plist"</PostBuildEvent>
+		<PostBuildEventIgnoreExitCode>False</PostBuildEventIgnoreExitCode>
+	</PropertyGroup>
+</Project>

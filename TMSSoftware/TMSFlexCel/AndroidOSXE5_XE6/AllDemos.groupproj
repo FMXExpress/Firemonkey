@@ -1,0 +1,48 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F81AE2DF-CB2E-4EBC-9882-9F35488A67D0}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Modules\10.FlexCalc\FlexCalc.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.FlexDocs\FlexDocs.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FlexCalc">
+        <MSBuild Projects="Modules\10.FlexCalc\FlexCalc.dproj"/>
+    </Target>
+    <Target Name="FlexCalc:Clean">
+        <MSBuild Projects="Modules\10.FlexCalc\FlexCalc.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FlexCalc:Make">
+        <MSBuild Projects="Modules\10.FlexCalc\FlexCalc.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FlexDocs">
+        <MSBuild Projects="Modules\20.FlexDocs\FlexDocs.dproj"/>
+    </Target>
+    <Target Name="FlexDocs:Clean">
+        <MSBuild Projects="Modules\20.FlexDocs\FlexDocs.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FlexDocs:Make">
+        <MSBuild Projects="Modules\20.FlexDocs\FlexDocs.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FlexCalc;FlexDocs"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FlexCalc:Clean;FlexDocs:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FlexCalc:Make;FlexDocs:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

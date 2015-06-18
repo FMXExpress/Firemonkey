@@ -1,0 +1,15 @@
+inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 2
+  inherited ToolBar1: TToolBar
+    Size.Width = 250.000000000000000000
+    inherited btnRun: TButton
+      Position.X = 24.000000000000000000
+    end
+  end
+  inherited Viewer: TWebBrowser
+    Size.Width = 250.000000000000000000
+    Size.Height = 331.000000000000000000
+  end
+end

@@ -1,0 +1,60 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{726654B0-4E25-4AB9-87F3-C3BE7E2D7E51}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Modules\10.GettingStarted\GettingStarted.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.Reading Files\ReadingFiles.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\30.CustomPreview\CustomPreview.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="GettingStarted">
+        <MSBuild Projects="Modules\10.GettingStarted\GettingStarted.dproj"/>
+    </Target>
+    <Target Name="GettingStarted:Clean">
+        <MSBuild Projects="Modules\10.GettingStarted\GettingStarted.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GettingStarted:Make">
+        <MSBuild Projects="Modules\10.GettingStarted\GettingStarted.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ReadingFiles">
+        <MSBuild Projects="Modules\20.Reading Files\ReadingFiles.dproj"/>
+    </Target>
+    <Target Name="ReadingFiles:Clean">
+        <MSBuild Projects="Modules\20.Reading Files\ReadingFiles.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ReadingFiles:Make">
+        <MSBuild Projects="Modules\20.Reading Files\ReadingFiles.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CustomPreview">
+        <MSBuild Projects="Modules\30.CustomPreview\CustomPreview.dproj"/>
+    </Target>
+    <Target Name="CustomPreview:Clean">
+        <MSBuild Projects="Modules\30.CustomPreview\CustomPreview.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomPreview:Make">
+        <MSBuild Projects="Modules\30.CustomPreview\CustomPreview.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="GettingStarted;ReadingFiles;CustomPreview"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="GettingStarted:Clean;ReadingFiles:Clean;CustomPreview:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="GettingStarted:Make;ReadingFiles:Make;CustomPreview:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

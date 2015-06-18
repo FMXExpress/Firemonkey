@@ -1,0 +1,63 @@
+object Form13: TForm13
+  Left = 0
+  Top = 0
+  Caption = 'FDoc'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Previewer: TFlexCelPreviewer
+    Align = alClient
+    Height = 519.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    Zoom = 1.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    object btnShare: TButton
+      Action = ActionShare
+      Anchors = [akTop, akRight]
+      Height = 44.000000000000000000
+      Position.X = 311.000000000000000000
+      Position.Y = 4.000000000000000000
+      TabOrder = 0
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+    end
+    object btnOpen: TButton
+      Action = ActionOpen
+      Height = 44.000000000000000000
+      Position.X = 8.000000000000000000
+      Position.Y = 4.000000000000000000
+      TabOrder = 1
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+    end
+  end
+  object ActionList1: TActionList
+    Left = 232
+    Top = 248
+    object ActionShare: TAction
+      Text = 'Share'
+      OnExecute = ActionShareExecute
+    end
+    object ActionOpen: TAction
+      Text = 'Open'
+      OnExecute = ActionOpenExecute
+    end
+  end
+  object FlexCelDocExport: TFlexCelDocExport
+    Left = 144
+    Top = 264
+  end
+end

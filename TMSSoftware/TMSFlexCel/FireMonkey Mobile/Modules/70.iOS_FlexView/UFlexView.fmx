@@ -1,0 +1,167 @@
+object FormFlexView: TFormFlexView
+  Left = 0
+  Top = 0
+  Caption = 'FlexView'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object edEdit: TSpeedButton
+      Anchors = [akTop, akRight]
+      Position.X = 272.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'composetoolbuttonbordered'
+      Text = 'Edit'
+      OnClick = edEditClick
+    end
+    object edShare: TSpeedButton
+      Anchors = [akTop, akRight]
+      Position.X = 222.000000000000000000
+      Position.Y = 9.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'actiontoolbuttonbordered'
+      Text = 'Share'
+      OnClick = edShareClick
+    end
+    object edSheets: TComboBox
+      Anchors = [akLeft, akTop, akRight]
+      DisableFocusEffect = False
+      ItemIndex = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      OnChange = edSheetsChange
+      object TListBoxItem
+        IsSelected = True
+        Size.Width = 19.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'No File - Sheet 1'
+      end
+    end
+  end
+  object FlexCelPreviewer1: TFlexCelPreviewer
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 416.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Zoom = 1.000000000000000000
+  end
+  object PanelEditor: TCalloutPanel
+    Anchors = [akLeft, akTop, akRight]
+    Padding.Top = 11.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 153.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 2
+    CalloutWidth = 23.000000000000000000
+    CalloutLength = 11.000000000000000000
+    object edCell: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 88.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 81.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      ShowSizeGrip = True
+      TextSettings.WordWrap = True
+      StyledSettings = [Family, Style, FontColor]
+    end
+    object edAddress: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 1
+      Text = 'A1'
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = edAddressChange
+    end
+    object edCancel: TSpeedButton
+      Position.X = 136.000000000000000000
+      Position.Y = 114.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Cancel'
+      OnClick = edCancelClick
+    end
+    object edOk: TSpeedButton
+      Position.X = 216.000000000000000000
+      Position.Y = 114.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'OK'
+      OnClick = edOkClick
+    end
+  end
+  object PopShare: TPopup
+    PlacementRectangle.Left = -1.000000000000000000
+    PlacementRectangle.Top = -1.000000000000000000
+    PlacementRectangle.Right = -1.000000000000000000
+    PlacementRectangle.Bottom = -1.000000000000000000
+    Position.X = 152.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 89.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 137.000000000000000000
+      Size.Height = 89.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      object edExcel: TListBoxItem
+        Size.Width = 137.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Excel'
+        OnClick = edExcelClick
+      end
+      object edPdf: TListBoxItem
+        Position.Y = 44.000000000000000000
+        Size.Width = 137.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Pdf'
+        OnClick = edPdfClick
+      end
+    end
+  end
+  object FlexCelDocExport1: TFlexCelDocExport
+    Left = 64
+    Top = 248
+  end
+end

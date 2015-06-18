@@ -1,0 +1,25 @@
+object FGettingStarted: TFGettingStarted
+  Left = 0
+  Top = 0
+  Caption = 'Getting Started'
+  BorderIcons = [biSystemMenu, biMinimize]
+  ClientHeight = 133
+  ClientWidth = 221
+  Visible = False
+  StyleLookup = 'backgroundstyle'
+  object BtnCreateFile: TButton
+    Position.Point = '(72,56)'
+    Width = 80.000000000000000000
+    Height = 22.000000000000000000
+    OnClick = BtnCreateFileClick
+    TabOrder = 0
+    Text = 'Create File!'
+  end
+  object SaveDialog: TSaveDialog
+    Filter = 
+      'Excel Files 2007 or newer (*.xlsx)|*.xlsx|Excel 97-2003 (*.xls)|' +
+      '*.xls'
+    Left = 160
+    Top = 64
+  end
+end

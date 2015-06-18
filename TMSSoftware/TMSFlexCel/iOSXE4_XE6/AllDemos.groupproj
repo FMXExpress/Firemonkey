@@ -1,0 +1,48 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5972C449-766D-4F25-A48E-B2C75958C2FD}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Modules\10.CalcWheel\CalcWheel.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Modules\20.FlexView\FlexView.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CalcWheel">
+        <MSBuild Projects="Modules\10.CalcWheel\CalcWheel.dproj"/>
+    </Target>
+    <Target Name="CalcWheel:Clean">
+        <MSBuild Projects="Modules\10.CalcWheel\CalcWheel.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CalcWheel:Make">
+        <MSBuild Projects="Modules\10.CalcWheel\CalcWheel.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FlexView">
+        <MSBuild Projects="Modules\20.FlexView\FlexView.dproj"/>
+    </Target>
+    <Target Name="FlexView:Clean">
+        <MSBuild Projects="Modules\20.FlexView\FlexView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FlexView:Make">
+        <MSBuild Projects="Modules\20.FlexView\FlexView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CalcWheel;FlexView"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CalcWheel:Clean;FlexView:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CalcWheel:Make;FlexView:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

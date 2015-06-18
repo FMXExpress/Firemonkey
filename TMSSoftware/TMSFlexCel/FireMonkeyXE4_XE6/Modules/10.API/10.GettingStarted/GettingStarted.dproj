@@ -1,0 +1,335 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<PropertyGroup>
+		<ProjectGuid>{DA99205B-8560-4326-9D5B-9A960E19234A}</ProjectGuid>
+		<ProjectVersion>14.6</ProjectVersion>
+		<FrameworkType>FMX</FrameworkType>
+		<MainSource>GettingStarted.dpr</MainSource>
+		<Base>True</Base>
+		<Config Condition="'$(Config)'==''">Release</Config>
+		<Platform Condition="'$(Platform)'==''">Win32</Platform>
+		<TargetedPlatforms>7</TargetedPlatforms>
+		<AppType>Application</AppType>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Base' or '$(Base)'!=''">
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='OSX32' and '$(Base)'=='true') or '$(Base_OSX32)'!=''">
+		<Base_OSX32>true</Base_OSX32>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Base)'=='true') or '$(Base_Win32)'!=''">
+		<Base_Win32>true</Base_Win32>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win64' and '$(Base)'=='true') or '$(Base_Win64)'!=''">
+		<Base_Win64>true</Base_Win64>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Debug' or '$(Cfg_1)'!=''">
+		<Cfg_1>true</Cfg_1>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="('$(Platform)'=='Win32' and '$(Cfg_1)'=='true') or '$(Cfg_1_Win32)'!=''">
+		<Cfg_1_Win32>true</Cfg_1_Win32>
+		<CfgParent>Cfg_1</CfgParent>
+		<Cfg_1>true</Cfg_1>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Config)'=='Release' or '$(Cfg_2)'!=''">
+		<Cfg_2>true</Cfg_2>
+		<CfgParent>Base</CfgParent>
+		<Base>true</Base>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base)'!=''">
+		<DCC_Namespace>System;Xml;Data;Datasnap;Web;Soap;$(DCC_Namespace)</DCC_Namespace>
+		<Icns_MainIcns>$(BDS)\bin\delphi_PROJECTICNS.icns</Icns_MainIcns>
+		<Icon_MainIcon>$(BDS)\bin\delphi_PROJECTICON.ico</Icon_MainIcon>
+		<DCC_DcuOutput>.\$(Platform)\$(Config)</DCC_DcuOutput>
+		<DCC_ExeOutput>.\$(Platform)\$(Config)</DCC_ExeOutput>
+		<DCC_E>false</DCC_E>
+		<DCC_N>false</DCC_N>
+		<DCC_S>false</DCC_S>
+		<DCC_F>false</DCC_F>
+		<DCC_K>false</DCC_K>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base_OSX32)'!=''">
+		<DCC_UsePackage>FlexCel_Core;bindcompfmx;DBXSqliteDriver;fmx;rtl;dbrtl;DbxClientDriver;IndySystem;bindcomp;inetdb;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DataSnapServer;FlexCel_Render;DataSnapProviderClient;xmlrtl;DbxCommonDriver;IndyProtocols;dbxcds;DBXMySQLDriver;bindengine;soaprtl;bindcompdbx;FMXTee;FlexCel_Pdf;DBXOracleDriver;CustomIPTransport;dsnap;IndyIPServer;DBXInformixDriver;fmxase;IndyCore;IndyIPCommon;CloudService;DBXFirebirdDriver;FmxTeeUI;inet;fmxobj;FMX_FlexCel_Core;inetdbxpress;DBXSybaseASADriver;fmxdae;FlexCel_XlsAdapter;dbexpress;DataSnapIndy10ServerTransport;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_Keys>CFBundleName=$(MSBuildProjectName);CFBundleDisplayName=$(MSBuildProjectName);CFBundleIdentifier=$(MSBuildProjectName);CFBundleVersion=1.0.0.0;CFBundlePackageType=APPL;CFBundleSignature=????;CFBundleAllowMixedLocalizations=YES;CFBundleExecutable=$(MSBuildProjectName);NSHighResolutionCapable=true</VerInfo_Keys>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base_Win32)'!=''">
+		<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;Bde;$(DCC_Namespace)</DCC_Namespace>
+		<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+		<DCC_UsePackage>FlexCel_Core;bindcompfmx;DBXSqliteDriver;vcldbx;fmx;rtl;dbrtl;DbxClientDriver;IndySystem;TeeDB;bindcomp;inetdb;inetdbbde;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DBXOdbcDriver;DataSnapServer;Tee;FlexCel_Render;DataSnapProviderClient;xmlrtl;svnui;DBXSybaseASEDriver;DbxCommonDriver;VCL_FlexCel_Components;vclimg;IndyProtocols;dbxcds;DBXMySQLDriver;DatasnapConnectorsFreePascal;MetropolisUILiveTile;vclactnband;bindengine;vcldb;soaprtl;bindcompdbx;vcldsnap;bindcompvcl;FMXTee;TeeUI;VCL_FlexCel_Core;vclie;FlexCel_Pdf;vcltouch;DBXDb2Driver;DBXOracleDriver;CustomIPTransport;vclribbon;VclSmp;dsnap;IndyIPServer;DBXInformixDriver;Intraweb;fmxase;vcl;IndyCore;DataSnapConnectors;IndyIPCommon;CloudService;DBXMSSQLDriver;dsnapcon;DBXFirebirdDriver;FmxTeeUI;inet;CodeSiteExpressPkg;fmxobj;FMX_FlexCel_Core;vclx;inetdbxpress;webdsnap;svn;DBXSybaseASADriver;fmxdae;FlexCel_XlsAdapter;bdertl;dbexpress;adortl;DataSnapIndy10ServerTransport;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_Locale>1033</VerInfo_Locale>
+		<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Base_Win64)'!=''">
+		<DCC_Namespace>Winapi;System.Win;Data.Win;Datasnap.Win;Web.Win;Soap.Win;Xml.Win;$(DCC_Namespace)</DCC_Namespace>
+		<Manifest_File>$(BDS)\bin\default_app.manifest</Manifest_File>
+		<DCC_UsePackage>FlexCel_Core;bindcompfmx;DBXSqliteDriver;fmx;rtl;dbrtl;DbxClientDriver;IndySystem;TeeDB;bindcomp;inetdb;DBXInterBaseDriver;DataSnapClient;DataSnapCommon;DBXOdbcDriver;DataSnapServer;Tee;FlexCel_Render;DataSnapProviderClient;xmlrtl;DBXSybaseASEDriver;DbxCommonDriver;VCL_FlexCel_Components;vclimg;IndyProtocols;dbxcds;DBXMySQLDriver;DatasnapConnectorsFreePascal;MetropolisUILiveTile;vclactnband;bindengine;vcldb;soaprtl;bindcompdbx;vcldsnap;bindcompvcl;FMXTee;TeeUI;VCL_FlexCel_Core;vclie;FlexCel_Pdf;vcltouch;DBXDb2Driver;DBXOracleDriver;CustomIPTransport;vclribbon;VclSmp;dsnap;IndyIPServer;DBXInformixDriver;Intraweb;fmxase;vcl;IndyCore;DataSnapConnectors;IndyIPCommon;CloudService;DBXMSSQLDriver;dsnapcon;DBXFirebirdDriver;FmxTeeUI;inet;fmxobj;FMX_FlexCel_Core;vclx;inetdbxpress;webdsnap;DBXSybaseASADriver;fmxdae;FlexCel_XlsAdapter;dbexpress;adortl;DataSnapIndy10ServerTransport;IndyIPClient;$(DCC_UsePackage)</DCC_UsePackage>
+		<VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
+		<VerInfo_Locale>1033</VerInfo_Locale>
+		<VerInfo_Keys>CompanyName=;FileDescription=;FileVersion=1.0.0.0;InternalName=;LegalCopyright=;LegalTrademarks=;OriginalFilename=;ProductName=;ProductVersion=1.0.0.0;Comments=</VerInfo_Keys>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_1)'!=''">
+		<DCC_Define>DEBUG;$(DCC_Define)</DCC_Define>
+		<DCC_DebugDCUs>true</DCC_DebugDCUs>
+		<DCC_Optimize>false</DCC_Optimize>
+		<DCC_GenerateStackFrames>true</DCC_GenerateStackFrames>
+		<DCC_DebugInfoInExe>true</DCC_DebugInfoInExe>
+		<DCC_RemoteDebug>true</DCC_RemoteDebug>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_1_Win32)'!=''">
+		<DCC_RemoteDebug>false</DCC_RemoteDebug>
+	</PropertyGroup>
+	<PropertyGroup Condition="'$(Cfg_2)'!=''">
+		<DCC_LocalDebugSymbols>false</DCC_LocalDebugSymbols>
+		<DCC_Define>RELEASE;$(DCC_Define)</DCC_Define>
+		<DCC_SymbolReferenceInfo>0</DCC_SymbolReferenceInfo>
+		<DCC_DebugInformation>false</DCC_DebugInformation>
+	</PropertyGroup>
+	<ItemGroup>
+		<DelphiCompile Include="$(MainSource)">
+			<MainSource>MainSource</MainSource>
+		</DelphiCompile>
+		<DCCReference Include="UGettingStarted.pas">
+			<Form>FGettingStarted</Form>
+		</DCCReference>
+		<DCCReference Include="..\..\..\Shared\UPaths.pas"/>
+		<BuildConfiguration Include="Release">
+			<Key>Cfg_2</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Base">
+			<Key>Base</Key>
+		</BuildConfiguration>
+		<BuildConfiguration Include="Debug">
+			<Key>Cfg_1</Key>
+			<CfgParent>Base</CfgParent>
+		</BuildConfiguration>
+	</ItemGroup>
+	<ProjectExtensions>
+		<Borland.Personality>Delphi.Personality.12</Borland.Personality>
+		<Borland.ProjectType/>
+		<BorlandProject>
+			<Delphi.Personality>
+				<VersionInfo>
+					<VersionInfo Name="IncludeVerInfo">False</VersionInfo>
+					<VersionInfo Name="AutoIncBuild">False</VersionInfo>
+					<VersionInfo Name="MajorVer">1</VersionInfo>
+					<VersionInfo Name="MinorVer">0</VersionInfo>
+					<VersionInfo Name="Release">0</VersionInfo>
+					<VersionInfo Name="Build">0</VersionInfo>
+					<VersionInfo Name="Debug">False</VersionInfo>
+					<VersionInfo Name="PreRelease">False</VersionInfo>
+					<VersionInfo Name="Special">False</VersionInfo>
+					<VersionInfo Name="Private">False</VersionInfo>
+					<VersionInfo Name="DLL">False</VersionInfo>
+					<VersionInfo Name="Locale">14346</VersionInfo>
+					<VersionInfo Name="CodePage">1252</VersionInfo>
+				</VersionInfo>
+				<VersionInfoKeys>
+					<VersionInfoKeys Name="CompanyName"/>
+					<VersionInfoKeys Name="FileDescription"/>
+					<VersionInfoKeys Name="FileVersion">1.0.0.0</VersionInfoKeys>
+					<VersionInfoKeys Name="InternalName"/>
+					<VersionInfoKeys Name="LegalCopyright"/>
+					<VersionInfoKeys Name="LegalTrademarks"/>
+					<VersionInfoKeys Name="OriginalFilename"/>
+					<VersionInfoKeys Name="ProductName"/>
+					<VersionInfoKeys Name="ProductVersion">1.0.0.0</VersionInfoKeys>
+					<VersionInfoKeys Name="Comments"/>
+					<VersionInfoKeys Name="CFBundleName"/>
+					<VersionInfoKeys Name="CFBundleDisplayName"/>
+					<VersionInfoKeys Name="UIDeviceFamily"/>
+					<VersionInfoKeys Name="CFBundleIdentifier"/>
+					<VersionInfoKeys Name="CFBundleVersion"/>
+					<VersionInfoKeys Name="CFBundlePackageType"/>
+					<VersionInfoKeys Name="CFBundleSignature"/>
+					<VersionInfoKeys Name="CFBundleAllowMixedLocalizations"/>
+					<VersionInfoKeys Name="UISupportedInterfaceOrientations"/>
+					<VersionInfoKeys Name="CFBundleExecutable"/>
+					<VersionInfoKeys Name="CFBundleResourceSpecification"/>
+					<VersionInfoKeys Name="LSRequiresIPhoneOS"/>
+					<VersionInfoKeys Name="CFBundleInfoDictionaryVersion"/>
+					<VersionInfoKeys Name="CFBundleDevelopmentRegion"/>
+				</VersionInfoKeys>
+				<Source>
+					<Source Name="MainSource">GettingStarted.dpr</Source>
+				</Source>
+			</Delphi.Personality>
+			<Deployment>
+				<DeployFile LocalName="OSX32\Debug\GettingStarted.info.plist" Configuration="Debug" Class="ProjectOSXInfoPList">
+					<Platform Name="OSX32">
+						<RemoteName>Info.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="All Platforms\Base\GettingStarted" Configuration="Base" Class="ProjectOutput">
+					<Platform Name="All Platforms"/>
+				</DeployFile>
+				<DeployFile LocalName="Win32\Debug\GettingStarted.rsm" Configuration="Debug" Class="DebugSymbols">
+					<Platform Name="Win32">
+						<RemoteName>GettingStarted.rsm</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="All Platforms\Base\GettingStarted.rsm" Configuration="Base" Class="DebugSymbols">
+					<Platform Name="All Platforms">
+						<RemoteName>GettingStarted.rsm</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="OSX32\Release\GettingStarted.rsm" Configuration="Release" Class="DebugSymbols">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS\</RemoteDir>
+						<RemoteName>GettingStarted.rsm</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="OSX32\Release\GettingStarted" Configuration="Release" Class="ProjectOutput">
+					<Platform Name="OSX32"/>
+				</DeployFile>
+				<DeployFile LocalName="Win64\Release\GettingStarted.rsm" Configuration="Release" Class="DebugSymbols">
+					<Platform Name="Win64">
+						<RemoteName>GettingStarted.rsm</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="OSX32\Release\GettingStarted.icns" Configuration="Release" Class="ProjectOSXResource">
+					<Platform Name="OSX32"/>
+				</DeployFile>
+				<DeployFile LocalName="OSX32\Debug\GettingStarted.rsm" Configuration="Debug" Class="DebugSymbols">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS\</RemoteDir>
+						<RemoteName>GettingStarted.rsm</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="Win64\Release\GettingStarted.exe" Configuration="Release" Class="ProjectOutput">
+					<Platform Name="Win64"/>
+				</DeployFile>
+				<DeployFile LocalName="poweredbyflexcel.png" Class="File">
+					<Platform Name="Win64">
+						<RemoteName>poweredbyflexcel.png</RemoteName>
+					</Platform>
+					<Platform Name="OSX32">
+						<RemoteName>poweredbyflexcel.png</RemoteName>
+					</Platform>
+					<Platform Name="Win32">
+						<RemoteName>poweredbyflexcel.png</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib" Class="DependencyModule">
+					<Platform Name="OSX32"/>
+				</DeployFile>
+				<DeployFile LocalName="OSX32\Debug\GettingStarted" Configuration="Debug" Class="ProjectOutput">
+					<Platform Name="OSX32"/>
+				</DeployFile>
+				<DeployFile LocalName="OSX32\Release\GettingStarted.info.plist" Configuration="Release" Class="ProjectOSXInfoPList">
+					<Platform Name="OSX32">
+						<RemoteName>Info.plist</RemoteName>
+					</Platform>
+				</DeployFile>
+				<DeployFile LocalName="Win32\Debug\GettingStarted.exe" Configuration="Debug" Class="ProjectOutput">
+					<Platform Name="Win32"/>
+				</DeployFile>
+				<DeployFile LocalName="OSX32\Debug\GettingStarted.icns" Configuration="Debug" Class="ProjectOSXResource">
+					<Platform Name="OSX32"/>
+				</DeployFile>
+				<DeployClass Required="true" Name="ProjectOutput">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Required="true" Name="DependencyPackage">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+						<Extensions>.dylib</Extensions>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+						<Extensions>.bpl</Extensions>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="DependencyModule">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+						<Extensions>.dylib</Extensions>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+						<Extensions>.dll;.bpl</Extensions>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectOSXInfoPList">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="File">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>0</Operation>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="DebugSymbols">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="DependencyFramework">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+						<Extensions>.framework</Extensions>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="AdditionalDebugSymbols">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\MacOS</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+					<Platform Name="Win32">
+						<Operation>0</Operation>
+					</Platform>
+				</DeployClass>
+				<DeployClass Name="ProjectOSXResource">
+					<Platform Name="OSX32">
+						<RemoteDir>Contents\Resources</RemoteDir>
+						<Operation>1</Operation>
+					</Platform>
+				</DeployClass>
+				<ProjectRoot Platform="OSX32" Name="$(PROJECTNAME).app"/>
+				<ProjectRoot Platform="Win64" Name="$(PROJECTNAME)"/>
+				<ProjectRoot Platform="Win32" Name="$(PROJECTNAME)"/>
+			</Deployment>
+			<Platforms>
+				<Platform value="OSX32">True</Platform>
+				<Platform value="Win32">True</Platform>
+				<Platform value="Win64">True</Platform>
+			</Platforms>
+		</BorlandProject>
+		<ProjectFileVersion>12</ProjectFileVersion>
+	</ProjectExtensions>
+	<Import Project="$(BDS)\Bin\CodeGear.Delphi.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Delphi.Targets')"/>
+	<Import Project="$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj" Condition="Exists('$(APPDATA)\Embarcadero\$(BDSAPPDATABASEDIR)\$(PRODUCTVERSION)\UserTools.proj')"/>
+	<Import Condition="Exists('$(MSBuildProjectName).deployproj')" Project="$(MSBuildProjectName).deployproj"/>
+</Project>

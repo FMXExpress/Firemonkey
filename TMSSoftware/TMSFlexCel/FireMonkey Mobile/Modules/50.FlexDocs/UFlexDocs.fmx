@@ -1,0 +1,64 @@
+object Form13: TForm13
+  Left = 0
+  Top = 0
+  Caption = 'FDoc'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Previewer: TFlexCelPreviewer
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 519.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Zoom = 1.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnShare: TButton
+      Action = ActionShare
+      Anchors = [akTop, akRight]
+      Enabled = True
+      Position.X = 303.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Visible = True
+    end
+    object btnOpen: TButton
+      Action = ActionOpen
+      Enabled = True
+      Position.X = 8.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Visible = True
+    end
+  end
+  object ActionList1: TActionList
+    Left = 232
+    Top = 248
+    object ActionShare: TAction
+      Text = 'Share'
+      OnExecute = ActionShareExecute
+    end
+    object ActionOpen: TAction
+      Text = 'Open'
+      OnExecute = ActionOpenExecute
+    end
+  end
+  object FlexCelDocExport: TFlexCelDocExport
+    Left = 144
+    Top = 264
+  end
+end

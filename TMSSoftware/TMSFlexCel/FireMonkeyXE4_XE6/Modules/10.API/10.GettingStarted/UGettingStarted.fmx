@@ -1,0 +1,32 @@
+object FGettingStarted: TFGettingStarted
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  Caption = 'Getting Started'
+  ClientHeight = 133
+  ClientWidth = 221
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object BtnCreateFile: TButton
+    Height = 22.000000000000000000
+    Position.X = 72.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 0
+    Text = 'Create File!'
+    Width = 80.000000000000000000
+    OnClick = BtnCreateFileClick
+  end
+  object SaveDialog: TSaveDialog
+    Filter = 
+      'Excel Files 2007 or newer (*.xlsx)|*.xlsx|Excel 97-2003 (*.xls)|' +
+      '*.xls'
+    Left = 160
+    Top = 64
+  end
+end

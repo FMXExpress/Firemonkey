@@ -1,0 +1,14 @@
+object FFlexCalc: TFFlexCalc
+  Left = 0
+  Top = 0
+  Caption = 'FlexCalc'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  DesignerMasterStyle = 3
+end

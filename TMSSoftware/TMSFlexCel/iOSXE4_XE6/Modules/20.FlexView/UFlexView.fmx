@@ -1,0 +1,155 @@
+object FormFlexView: TFormFlexView
+  Left = 0
+  Top = 0
+  Caption = 'FlexView'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object edEdit: TSpeedButton
+      Anchors = [akTop, akRight]
+      Height = 31.000000000000000000
+      Position.X = 272.000000000000000000
+      Position.Y = 8.000000000000000000
+      StyleLookup = 'composetoolbuttonbordered'
+      Text = 'Edit'
+      Trimming = ttCharacter
+      Width = 42.000000000000000000
+      OnClick = edEditClick
+    end
+    object edShare: TSpeedButton
+      Anchors = [akTop, akRight]
+      Height = 31.000000000000000000
+      Position.X = 222.000000000000000000
+      Position.Y = 9.000000000000000000
+      StyleLookup = 'actiontoolbuttonbordered'
+      Text = 'Share'
+      Trimming = ttCharacter
+      Width = 47.000000000000000000
+      OnClick = edShareClick
+    end
+    object edSheets: TComboBox
+      Anchors = [akLeft, akTop, akRight]
+      DisableFocusEffect = False
+      Height = 31.000000000000000000
+      ItemIndex = 0
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 2
+      Width = 193.000000000000000000
+      OnChange = edSheetsChange
+      object TListBoxItem
+        Height = 19.000000000000000000
+        IsSelected = True
+        Text = 'No File - Sheet 1'
+        Width = 19.000000000000000000
+      end
+    end
+  end
+  object FlexCelPreviewer1: TFlexCelPreviewer
+    Align = alClient
+    Height = 416.000000000000000000
+    TabOrder = 1
+    Width = 320.000000000000000000
+    Zoom = 1.000000000000000000
+  end
+  object PanelEditor: TCalloutPanel
+    Anchors = [akLeft, akTop, akRight]
+    Height = 153.000000000000000000
+    Padding.Top = 11.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 48.000000000000000000
+    Visible = False
+    Width = 289.000000000000000000
+    TabOrder = 2
+    CalloutWidth = 23.000000000000000000
+    CalloutLength = 11.000000000000000000
+    object edCell: TMemo
+      Anchors = [akLeft, akTop, akRight]
+      Height = 81.000000000000000000
+      Position.X = 88.000000000000000000
+      Position.Y = 24.000000000000000000
+      ShowSizeGrip = True
+      TabOrder = 0
+      Width = 193.000000000000000000
+      WordWrap = True
+      StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    end
+    object edAddress: TEdit
+      TabOrder = 1
+      Text = 'A1'
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Width = 73.000000000000000000
+      Height = 31.000000000000000000
+      KillFocusByReturn = False
+      OnChange = edAddressChange
+    end
+    object edCancel: TSpeedButton
+      Height = 31.000000000000000000
+      Position.X = 136.000000000000000000
+      Position.Y = 114.000000000000000000
+      Text = 'Cancel'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = edCancelClick
+    end
+    object edOk: TSpeedButton
+      Height = 31.000000000000000000
+      Position.X = 216.000000000000000000
+      Position.Y = 114.000000000000000000
+      Text = 'OK'
+      Trimming = ttCharacter
+      Width = 65.000000000000000000
+      OnClick = edOkClick
+    end
+  end
+  object PopShare: TPopup
+    Height = 89.000000000000000000
+    Position.X = 152.000000000000000000
+    Position.Y = 256.000000000000000000
+    TabOrder = 3
+    Width = 137.000000000000000000
+    Left = -1.000000000000000000
+    Top = -1.000000000000000000
+    object ListBox1: TListBox
+      Align = alClient
+      Height = 89.000000000000000000
+      TabOrder = 0
+      Width = 137.000000000000000000
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      object edExcel: TListBoxItem
+        Height = 44.000000000000000000
+        StyleLookup = 'listboxitemnodetail'
+        Text = 'Excel'
+        Width = 137.000000000000000000
+        OnClick = edExcelClick
+      end
+      object edPdf: TListBoxItem
+        Height = 44.000000000000000000
+        Position.Y = 44.000000000000000000
+        StyleLookup = 'listboxitemnodetail'
+        Text = 'Pdf'
+        Width = 137.000000000000000000
+        OnClick = edPdfClick
+      end
+    end
+  end
+  object FlexCelDocExport1: TFlexCelDocExport
+    Left = 64
+    Top = 248
+  end
+end
