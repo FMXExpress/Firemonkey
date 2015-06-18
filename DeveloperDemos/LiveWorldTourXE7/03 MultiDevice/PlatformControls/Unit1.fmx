@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 324
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 16.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 0
+    ControlType = Platform
+    Position.X = 128.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Calendar1: TCalendar
+    Date = 41867.000000000000000000
+    Position.X = 2.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 280.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+  end
+  object Switch1: TSwitch
+    IsChecked = False
+    Position.X = 16.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    OnSwitch = Switch1Switch
+  end
+  object Label1: TLabel
+    Position.X = 104.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Platform Calender?'
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 324.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Label2: TLabel
+      Align = Contents
+      Size.Width = 324.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Platform Tools'
+    end
+  end
+end

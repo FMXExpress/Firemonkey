@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FDBS Version="14"><Manager UpdatesRegistry="True"><TableList><Table Name="FoodMemTable" SourceName="Table" TabID="0" EnforceConstraints="False" MinimumCapacity="50" CheckNotNull="False" CheckReadOnly="False">
+
+<ColumnList><Column Name="FoodItemName" SourceName="FoodItemName" SourceID="1" DataType="AnsiString" Size="25" Searchable="True" AllowNull="True" Unnamed="True" Base="True" OAllowNull="True" OInUpdate="True" OInWhere="True" OriginColName="FoodItemName" SourceSize="25"/>
+
+<Column Name="ImageIndex" SourceName="ImageIndex" SourceID="2" DataType="AnsiString" Size="35" Searchable="True" AllowNull="True" Unnamed="True" Base="True" OAllowNull="True" OInUpdate="True" OInWhere="True" OriginColName="ImageIndex" SourceSize="35"/>
+
+
+
+</ColumnList><ConstraintList/><ViewList/>
+
+<RowList><Row RowID="0" RowState="Unchanged">
+<Original FoodItemName="Burgers" ImageIndex="0"/>
+
+</Row><Row RowID="1" RowState="Unchanged">
+<Original FoodItemName="Desserts" ImageIndex="1"/>
+
+</Row><Row RowID="2" RowState="Unchanged">
+<Original FoodItemName="Eggs" ImageIndex="2"/>
+
+</Row><Row RowID="3" RowState="Unchanged">
+<Original FoodItemName="Fish" ImageIndex="3"/>
+
+</Row><Row RowID="4" RowState="Unchanged">
+<Original FoodItemName="Pasta" ImageIndex="4"/>
+
+</Row><Row RowID="5" RowState="Unchanged">
+<Original FoodItemName="Pizza" ImageIndex="5"/>
+
+</Row><Row RowID="6" RowState="Unchanged">
+<Original FoodItemName="Salads" ImageIndex="6"/>
+
+</Row><Row RowID="7" RowState="Unchanged">
+<Original FoodItemName="Sandwiches" ImageIndex="7"/>
+
+</Row><Row RowID="8" RowState="Unchanged">
+<Original FoodItemName="Soups" ImageIndex="8"/>
+
+</Row><Row RowID="9" RowState="Unchanged">
+<Original FoodItemName="Steaks" ImageIndex="9"/>
+
+
+</Row></RowList></Table></TableList><RelationList/><UpdatesJournal SavePoint="16"><Changes/></UpdatesJournal></Manager></FDBS>

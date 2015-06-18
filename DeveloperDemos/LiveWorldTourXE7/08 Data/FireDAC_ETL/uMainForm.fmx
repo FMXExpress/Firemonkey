@@ -1,0 +1,61 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ClientHeight = 270
+  ClientWidth = 681
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 32.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Move Data'
+    OnClick = Button1Click
+  end
+  object FDBatchMove1: TFDBatchMove
+    Reader = FDBatchMoveDataSetReader1
+    Writer = FDBatchMoveTextWriter1
+    Mappings = <>
+    LogFileName = 'Data.log'
+    Left = 64
+    Top = 184
+  end
+  object FDBatchMoveDataSetReader1: TFDBatchMoveDataSetReader
+    DataSet = FDQOrders
+    Left = 216
+    Top = 72
+  end
+  object MASTSQLConnection: TFDConnection
+    Params.Strings = (
+      'ConnectionDef=MASTSQL2')
+    LoginPrompt = False
+    Left = 68
+    Top = 73
+  end
+  object FDQOrders: TFDQuery
+    Connection = MASTSQLConnection
+    SQL.Strings = (
+      'SELECT C.COMPANY, O.SALEDATE, O.SHIPDATE, O.ITEMSTOTAL '
+      'FROM ORDERS O, CUSTOMER C '
+      'WHERE C.CUSTNO = O.CUSTNO'
+      'ORDER BY C.COMPANY, O.ITEMSTOTAL DESC')
+    Left = 64
+    Top = 128
+  end
+  object FDBatchMoveTextWriter1: TFDBatchMoveTextWriter
+    FileName = 'C:\temp\salaries.txt'
+    DataDef.Fields = <>
+    Left = 216
+    Top = 128
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 216
+    Top = 184
+  end
+end

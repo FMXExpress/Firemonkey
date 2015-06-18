@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/06/04 12:26:29.000.217,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/04 12:29:52.000.813,C:\DTOURXE6\08_AppTethering\0-AppTethering101\ManagerFM\Project1.dproj=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2014/06/04 12:29:52.000.193,C:\DTOURXE6\08_AppTethering\0-AppTethering101\ManagerFM\Unit1.pas=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/06/04 12:29:52.000.193,C:\DTOURXE6\08_AppTethering\0-AppTethering101\ManagerFM\Unit1.fmx=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2014/09/09 21:53:44.000.076,C:\DTOURXE7\06 IoT\AppTethering101\ManagerFM\Unit1.fmx=C:\DTOURXE7\06 IoT\AppTethering101\ManagerFM\uMainForm.fmx</Transaction>
+    <Transaction>2014/09/09 21:53:44.000.076,C:\DTOURXE7\06 IoT\AppTethering101\ManagerFM\Unit1.pas=C:\DTOURXE7\06 IoT\AppTethering101\ManagerFM\uMainForm.pas</Transaction>
+    <Transaction>2014/09/09 21:53:55.000.874,C:\DTOURXE7\06 IoT\AppTethering101\ManagerFM\Project1.dproj=C:\DTOURXE7\06 IoT\AppTethering101\ManagerFM\TetheringManagerFM.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

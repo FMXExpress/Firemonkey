@@ -1,0 +1,212 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object RefreshButton: TSpeedButton
+      Action = MyAction
+      Align = alRight
+      Height = 44.000000000000000000
+      Position.X = 276.000000000000000000
+      StyleLookup = 'refreshtoolbutton'
+      Trimming = ttCharacter
+      Width = 44.000000000000000000
+    end
+    object CountdownLabel: TLabel
+      Align = alContents
+      Height = 44.000000000000000000
+      Text = 'Days to Vacation: ?'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+      Trimming = ttCharacter
+    end
+  end
+  object VacationTabControl: TTabControl
+    Align = alClient
+    FullSize = True
+    Height = 416.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 2
+    TabOrder = 1
+    TabPosition = tpBottom
+    Width = 320.000000000000000000
+    object WeatherTabItem: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      StyleLookup = 'tabitemmostviewed'
+      TabOrder = 0
+      Text = 'Vacation'
+      Trimming = ttCharacter
+      Width = 107.000000000000000000
+      object WeatherListBox: TListBox
+        Align = alClient
+        Height = 367.000000000000000000
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 0
+        Width = 320.000000000000000000
+        ItemHeight = 40.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+      end
+    end
+    object BrowserTabItem: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = False
+      Position.X = 107.000000000000000000
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 1
+      Text = 'Browser'
+      Trimming = ttCharacter
+      Width = 107.000000000000000000
+      object WebBrowser1: TWebBrowser
+        Align = alClient
+        Height = 367.000000000000000000
+        Width = 320.000000000000000000
+      end
+    end
+    object SettingsTabItem: TTabItem
+      WordWrap = False
+      Height = 49.000000000000000000
+      IsSelected = True
+      Position.X = 214.000000000000000000
+      StyleLookup = 'tabitemfavorites'
+      TabOrder = 2
+      Text = 'Settings'
+      Trimming = ttCharacter
+      Width = 106.000000000000000000
+      object ListBox1: TListBox
+        Align = alTop
+        Height = 145.000000000000000000
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 0
+        Width = 320.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        object DateListBoxItem: TListBoxItem
+          Height = 44.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Vacation Date'
+          Width = 320.000000000000000000
+          object CalendarEdit1: TCalendarEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alRight
+            TabOrder = 0
+            Cursor = crIBeam
+            Date = 41684.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Position.X = 186.000000000000000000
+            Position.Y = 7.000000000000000000
+            TextAlign = taTrailing
+            Width = 130.000000000000000000
+          end
+        end
+        object LocationListBoxItem: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 44.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Address'
+          Width = 320.000000000000000000
+          object AddressEdit: TEdit
+            Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+            Align = alRight
+            TabOrder = 0
+            Position.X = 86.000000000000000000
+            Position.Y = 7.000000000000000000
+            Width = 230.000000000000000000
+            Height = 30.000000000000000000
+            Margins.Right = 4.000000000000000000
+            KillFocusByReturn = False
+            OnChange = AddressEditChange
+          end
+        end
+        object LatLongListBoxItem: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 88.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'Latitude:'
+          Width = 320.000000000000000000
+          object LatLongLabel: TLabel
+            Align = alRight
+            Height = 44.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Position.X = 131.000000000000000000
+            Text = '???'
+            TextAlign = taTrailing
+            Width = 185.000000000000000000
+            Trimming = ttCharacter
+          end
+        end
+      end
+    end
+  end
+  object ClientDataSet1: TClientDataSet
+    Aggregates = <>
+    FieldDefs = <>
+    IndexDefs = <>
+    Params = <>
+    StoreDefs = True
+    Left = 40
+    Top = 336
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Dataset = ClientDataSet1
+    FieldDefs = <>
+    Response = RESTResponse1
+    RootElement = 'forecastList'
+    Left = 160
+    Top = 320
+  end
+  object ActionList1: TActionList
+    Left = 40
+    Top = 256
+    object MyAction: TAction
+      Text = 'MyAction'
+      OnExecute = MyActionExecute
+    end
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    AcceptEncoding = 'identity'
+    BaseURL = 'http://i.wxbug.net'
+    Params = <>
+    HandleRedirects = True
+    Left = 112
+    Top = 256
+  end
+  object RESTRequest1: TRESTRequest
+    Client = RESTClient1
+    Params = <>
+    Resource = 
+      'REST/Direct/GetForecast.ashx?la=19.54770&lo=-155.53304&ht=t&ht=i' +
+      '&ht=d&api_key=yourwetherbugapikeyhere'
+    Response = RESTResponse1
+    Left = 252
+    Top = 256
+  end
+  object RESTResponse1: TRESTResponse
+    RootElement = 'forecastList'
+    Left = 264
+    Top = 336
+  end
+end

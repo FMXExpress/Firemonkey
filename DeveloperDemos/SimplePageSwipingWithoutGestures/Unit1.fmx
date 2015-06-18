@@ -1,0 +1,144 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 568
+  ClientWidth = 1066
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnResize = FormResize
+  DesignerMasterStyle = 3
+  object Layout1: TLayout
+    Size.Width = 1041.000000000000000000
+    Size.Height = 521.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Rectangle1: TRectangle
+      Touch.InteractiveGestures = [Pan]
+      Align = Left
+      Fill.Color = claRed
+      Size.Width = 249.000000000000000000
+      Size.Height = 521.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnMouseDown = Rectangle1MouseDown
+      OnMouseUp = Rectangle1MouseUp
+      object Button1: TButton
+        Position.X = 56.000000000000000000
+        Position.Y = 56.000000000000000000
+        TabOrder = 0
+        Text = 'Go to 3'
+        TintColor = claWhite
+        OnClick = Button1Click
+      end
+      object Label1: TLabel
+        AutoSize = True
+        Position.X = 24.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 58.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Page 1'
+      end
+    end
+    object Rectangle2: TRectangle
+      Align = Left
+      Fill.Color = claBlue
+      Position.X = 249.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 521.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnMouseDown = Rectangle1MouseDown
+      OnMouseUp = Rectangle1MouseUp
+      object Button2: TButton
+        Position.X = 64.000000000000000000
+        Position.Y = 56.000000000000000000
+        TabOrder = 0
+        Text = 'Go to 4'
+        TintColor = claWhite
+        OnClick = Button2Click
+      end
+      object Label2: TLabel
+        AutoSize = True
+        Position.X = 32.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 61.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Page 2'
+      end
+    end
+    object Rectangle3: TRectangle
+      Align = Left
+      Fill.Color = claGreen
+      Position.X = 498.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 521.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnMouseDown = Rectangle1MouseDown
+      OnMouseUp = Rectangle1MouseUp
+      object Button3: TButton
+        Position.X = 72.000000000000000000
+        Position.Y = 56.000000000000000000
+        TabOrder = 0
+        Text = 'Go to 2'
+        TintColor = claWhite
+        OnClick = Button3Click
+      end
+      object Label3: TLabel
+        AutoSize = True
+        Position.X = 40.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 61.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Page 3'
+      end
+    end
+    object Rectangle4: TRectangle
+      Align = Left
+      Fill.Color = claYellow
+      Position.X = 747.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 521.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      OnMouseDown = Rectangle1MouseDown
+      OnMouseUp = Rectangle1MouseUp
+      object Button4: TButton
+        Position.X = 80.000000000000000000
+        Position.Y = 56.000000000000000000
+        TabOrder = 0
+        Text = 'Go to 1'
+        TintColor = claRed
+        OnClick = Button4Click
+      end
+      object Label4: TLabel
+        AutoSize = True
+        Position.X = 48.000000000000000000
+        Position.Y = 16.000000000000000000
+        Size.Width = 61.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.WordWrap = False
+        Text = 'Page 4'
+      end
+    end
+  end
+  object Text1: TText
+    HitTest = False
+    Position.X = 16.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'You can also swipe to change pages'
+  end
+end

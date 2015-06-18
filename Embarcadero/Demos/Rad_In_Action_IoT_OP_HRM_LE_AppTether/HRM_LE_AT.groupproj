@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{30B05ABB-0092-417A-901A-C6D054E41253}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="HRM_AT_ResourceUpdate.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="HRM_ReceiveData.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="HRM_AT_ResourceUpdate">
+        <MSBuild Projects="HRM_AT_ResourceUpdate.dproj"/>
+    </Target>
+    <Target Name="HRM_AT_ResourceUpdate:Clean">
+        <MSBuild Projects="HRM_AT_ResourceUpdate.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HRM_AT_ResourceUpdate:Make">
+        <MSBuild Projects="HRM_AT_ResourceUpdate.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HRM_ReceiveData">
+        <MSBuild Projects="HRM_ReceiveData.dproj"/>
+    </Target>
+    <Target Name="HRM_ReceiveData:Clean">
+        <MSBuild Projects="HRM_ReceiveData.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HRM_ReceiveData:Make">
+        <MSBuild Projects="HRM_ReceiveData.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="HRM_AT_ResourceUpdate;HRM_ReceiveData"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="HRM_AT_ResourceUpdate:Clean;HRM_ReceiveData:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="HRM_AT_ResourceUpdate:Make;HRM_ReceiveData:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

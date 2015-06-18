@@ -1,0 +1,10 @@
+inherited Form9_LgXhdpiTb: TForm9_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ListBox1: TListBox
+    inherited ListBoxGroupHeader1: TListBoxGroupHeader
+      Size.Height = 30.000000000000000000
+    end
+  end
+end

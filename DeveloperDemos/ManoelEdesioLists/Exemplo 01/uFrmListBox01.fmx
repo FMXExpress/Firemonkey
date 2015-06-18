@@ -1,0 +1,71 @@
+object Form9: TForm9
+  Left = 0
+  Top = 0
+  Caption = 'Form9'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 2
+  object ListBox1: TListBox
+    Position.X = 104.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    object ListBoxItem1: TListBoxItem
+      TabOrder = 0
+      Text = 'ListBoxItem1'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 44.000000000000000000
+      TabOrder = 1
+      Text = 'ListBoxItem2'
+    end
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Position.Y = 88.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'ListBoxGroupHeader1'
+    end
+    object ListBoxItem4: TListBoxItem
+      Position.Y = 110.000000000000000000
+      TabOrder = 3
+      Text = 'ListBoxItem4'
+      object BitmapListAnimation1: TBitmapListAnimation
+        AnimationCount = 1
+        Duration = 0.200000002980232200
+      end
+    end
+    object ListBoxHeader1: TListBoxHeader
+      Size.Width = 200.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+  object Label1: TLabel
+    Position.X = 144.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = 'Label1'
+  end
+  object Switch1: TSwitch
+    IsChecked = False
+    Position.X = 296.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object StyleBook1: TStyleBook
+    Left = 168
+    Top = 272
+    ResourcesBin = {464D585F5354594C4520322E350100}
+  end
+end

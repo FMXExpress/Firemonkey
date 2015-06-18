@@ -1,0 +1,886 @@
+object FrmMain: TFrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Fmx Time'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object LayoutMain: TLayout
+    Align = alClient
+    Height = 567.000000000000000000
+    Width = 384.000000000000000000
+    object LayouFitClock: TLayout
+      Align = alFit
+      Height = 384.000122070312500000
+      Width = 384.000000000000000000
+      object ScaledLayoutRectBackground: TScaledLayout
+        Align = alContents
+        Height = 364.000122070312500000
+        OriginalWidth = 364.000000000000000000
+        OriginalHeight = 364.000122070312500000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Width = 364.000000000000000000
+        object RectBackgroundClock: TRectangle
+          Align = alClient
+          Fill.Color = claBlack
+          Height = 304.000122070312500000
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 30.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Margins.Bottom = 30.000000000000000000
+          Stroke.Kind = bkNone
+          XRadius = 10.000000000000000000
+          YRadius = 10.000000000000000000
+          Width = 304.000000000000000000
+          object LayoutScrewTop: TLayout
+            Align = alTop
+            Height = 25.000000000000000000
+            Margins.Left = 4.000000000000000000
+            Margins.Top = 8.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Position.X = 4.000000000000000000
+            Position.Y = 8.000000000000000000
+            Width = 296.000000000000000000
+            object CircleScrewTopRight: TCircle
+              Align = alRight
+              Fill.Kind = bkGradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = xFF636363
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Height = 25.000000000000000000
+              Position.X = 266.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 30.000000000000000000
+              object RectScrewTopRight1: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = 45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+              object RectScrewTopRight2: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = -45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+            end
+            object CircleScrewTopLeft: TCircle
+              Align = alLeft
+              Fill.Kind = bkGradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = xFF636363
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Height = 25.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 30.000000000000000000
+              object RectScrewTopLeft1: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = 45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+              object RectScrewTopLeft2: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = -45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+            end
+          end
+          object LayoutScrewBottom: TLayout
+            Align = alBottom
+            Height = 25.000000000000000000
+            Margins.Left = 4.000000000000000000
+            Margins.Right = 4.000000000000000000
+            Margins.Bottom = 8.000000000000000000
+            Position.X = 4.000000000000000000
+            Position.Y = 271.000122070312500000
+            Width = 296.000000000000000000
+            object CircleScrewBottomRight: TCircle
+              Align = alRight
+              Fill.Kind = bkGradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = xFF636363
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Height = 25.000000000000000000
+              Position.X = 266.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 30.000000000000000000
+              object RectScrewBottomRight1: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = 45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+              object RectScrewBottomRight2: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = -45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+            end
+            object CircleScrewBottomLeft: TCircle
+              Align = alLeft
+              Fill.Kind = bkGradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = xFF636363
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Height = 25.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 30.000000000000000000
+              object RectScrewBottomLeft1: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = 45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+              object RectScrewBottomLeft2: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = -45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+            end
+          end
+          object RectBtClock: TRectangle
+            Corners = [crTopLeft, crTopRight]
+            Fill.Color = claRed
+            Height = 25.000000000000000000
+            Position.X = 27.000000000000000000
+            Position.Y = -25.000000000000000000
+            Stroke.Kind = bkNone
+            XRadius = 10.000000000000000000
+            YRadius = 10.000000000000000000
+            Width = 49.000000000000000000
+            object LblClock: TLabel
+              Align = alClient
+              Font.Size = 10.000000000000000000
+              Font.Style = [fsBold]
+              StyledSettings = [ssFamily, ssFontColor, ssOther]
+              Height = 25.000000000000000000
+              HitTest = True
+              Text = 'CLOCK'
+              TextAlign = taCenter
+              TouchTargetExpansion.Left = 20.000000000000000000
+              TouchTargetExpansion.Top = 20.000000000000000000
+              TouchTargetExpansion.Right = 20.000000000000000000
+              TouchTargetExpansion.Bottom = 20.000000000000000000
+              Width = 49.000000000000000000
+              Trimming = ttCharacter
+              OnClick = BtClockClick
+            end
+          end
+          object RectBtTimer: TRectangle
+            Anchors = [akTop, akRight]
+            Corners = [crTopLeft, crTopRight]
+            Fill.Color = claBlack
+            Height = 25.000000000000000000
+            Position.X = 228.000000000000000000
+            Position.Y = -25.000000000000000000
+            Stroke.Kind = bkNone
+            XRadius = 10.000000000000000000
+            YRadius = 10.000000000000000000
+            Width = 49.000000000000000000
+            object LblTimer: TLabel
+              Align = alClient
+              Font.Size = 10.000000000000000000
+              Font.Style = [fsBold]
+              StyledSettings = [ssFamily, ssFontColor]
+              Height = 25.000000000000000000
+              HitTest = True
+              Text = 'TIMER'
+              TextAlign = taCenter
+              TouchTargetExpansion.Left = 20.000000000000000000
+              TouchTargetExpansion.Top = 20.000000000000000000
+              TouchTargetExpansion.Right = 20.000000000000000000
+              TouchTargetExpansion.Bottom = 20.000000000000000000
+              Width = 49.000000000000000000
+              Trimming = ttCharacter
+              OnClick = BtTimerClick
+            end
+          end
+          object RectBtStartStop: TRectangle
+            Anchors = [akLeft, akBottom]
+            Corners = [crBottomLeft, crBottomRight]
+            Fill.Color = claBlack
+            Height = 25.000000000000000000
+            Position.X = 27.000000000000000000
+            Position.Y = 304.000000000000000000
+            Stroke.Kind = bkNone
+            Visible = False
+            XRadius = 10.000000000000000000
+            YRadius = 10.000000000000000000
+            Width = 49.000000000000000000
+            object LblStartStop: TLabel
+              Align = alClient
+              Font.Size = 10.000000000000000000
+              Font.Style = [fsBold]
+              StyledSettings = [ssFamily, ssFontColor]
+              Height = 25.000000000000000000
+              HitTest = True
+              Text = 'START'
+              TextAlign = taCenter
+              TouchTargetExpansion.Left = 20.000000000000000000
+              TouchTargetExpansion.Top = 20.000000000000000000
+              TouchTargetExpansion.Right = 20.000000000000000000
+              TouchTargetExpansion.Bottom = 20.000000000000000000
+              Width = 49.000000000000000000
+              Trimming = ttCharacter
+              OnClick = BtStartStopClick
+            end
+          end
+          object RectBtReset: TRectangle
+            Anchors = [akLeft, akBottom]
+            Corners = [crBottomLeft, crBottomRight]
+            Fill.Color = claBlack
+            Height = 25.000000000000000000
+            Position.X = 228.000000000000000000
+            Position.Y = 304.000000000000000000
+            Stroke.Kind = bkNone
+            Visible = False
+            XRadius = 10.000000000000000000
+            YRadius = 10.000000000000000000
+            Width = 49.000000000000000000
+            object LblReset: TLabel
+              Align = alClient
+              Font.Size = 10.000000000000000000
+              Font.Style = [fsBold]
+              StyledSettings = [ssFamily, ssFontColor]
+              Height = 25.000000000000000000
+              HitTest = True
+              Text = 'RESET'
+              TextAlign = taCenter
+              TouchTargetExpansion.Left = 20.000000000000000000
+              TouchTargetExpansion.Top = 20.000000000000000000
+              TouchTargetExpansion.Right = 20.000000000000000000
+              TouchTargetExpansion.Bottom = 20.000000000000000000
+              Width = 49.000000000000000000
+              Trimming = ttCharacter
+              OnClick = BtResetClick
+            end
+          end
+        end
+      end
+      object LayoutRingClock: TLayout
+        Align = alContents
+        Height = 344.000122070312500000
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Width = 344.000000000000000000
+        object CircleRingClock: TCircle
+          Align = alClient
+          Fill.Kind = bkGradient
+          Fill.Gradient.Points = <
+            item
+              Color = claBlack
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = xFF3D3D3D
+              Offset = 0.073717951774597170
+            end
+            item
+              Color = claBlack
+              Offset = 0.153846159577369700
+            end>
+          Fill.Gradient.Style = gsRadial
+          Height = 344.000122070312500000
+          Stroke.Kind = bkNone
+          Width = 344.000000000000000000
+        end
+      end
+      object ScaledLayoutBackgroundClock: TScaledLayout
+        Align = alClient
+        Height = 344.000122070312500000
+        OriginalWidth = 344.000000000000000000
+        OriginalHeight = 344.000122070312500000
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Width = 344.000000000000000000
+        object CircleBackgroundClock: TCircle
+          Align = alClient
+          Fill.Kind = bkGradient
+          Fill.Gradient.Points = <
+            item
+              Color = xFF434343
+              Offset = 0.000000000000000000
+            end
+            item
+              Color = claBlack
+              Offset = 1.000000000000000000
+            end>
+          Fill.Gradient.Style = gsRadial
+          Height = 284.000122070312500000
+          Margins.Left = 30.000000000000000000
+          Margins.Top = 30.000000000000000000
+          Margins.Right = 30.000000000000000000
+          Margins.Bottom = 30.000000000000000000
+          Stroke.Kind = bkNone
+          Width = 284.000000000000000000
+          object InnerGlowEffBackgroundClock: TInnerGlowEffect
+            Softness = 0.200000002980232200
+            GlowColor = claWhite
+            Opacity = 0.899999976158142100
+            Enabled = False
+          end
+        end
+      end
+      object ScaledLayoutTickClock: TScaledLayout
+        Align = alContents
+        Height = 344.000122070312500000
+        OriginalWidth = 344.000000000000000000
+        OriginalHeight = 344.000122070312500000
+        Margins.Left = 20.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Width = 344.000000000000000000
+        object LblFmxTime: TLabel
+          Height = 30.000000000000000000
+          Position.X = 112.000000000000000000
+          Position.Y = 60.000000000000000000
+          Text = 'Fmx Time'
+          TextAlign = taCenter
+          Width = 120.000000000000000000
+          Trimming = ttCharacter
+        end
+        object LayoutClock: TLayout
+          Align = alContents
+          Height = 344.000122070312500000
+          Width = 344.000000000000000000
+          object LayoutTickHour: TLayout
+            Align = alHorzCenter
+            Locked = True
+            Height = 344.000122070312500000
+            Padding.Top = 10.000000000000000000
+            Padding.Bottom = 10.000000000000000000
+            Position.X = 168.000000000000000000
+            Width = 8.000000000000000000
+            object RectTickHourTop: TRectangle
+              Align = alMostTop
+              Fill.Color = claWhite
+              Height = 15.000000000000000000
+              Margins.Top = 22.000000000000000000
+              Position.Y = 32.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 8.000000000000000000
+            end
+            object RectTickHourBottom: TRectangle
+              Align = alBottom
+              Fill.Color = claWhite
+              Height = 15.000000000000000000
+              Margins.Bottom = 22.000000000000000000
+              Position.Y = 297.000122070312500000
+              Stroke.Kind = bkNone
+              Width = 8.000000000000000000
+            end
+          end
+          object LayoutTickMinute: TLayout
+            Align = alHorzCenter
+            Locked = True
+            Height = 344.000122070312500000
+            Padding.Top = 10.000000000000000000
+            Padding.Bottom = 10.000000000000000000
+            Position.X = 170.000000000000000000
+            RotationAngle = 6.000000000000000000
+            Width = 4.000000000000000000
+            object RectTickMinuteTop: TRectangle
+              Align = alMostTop
+              Fill.Color = claWhite
+              Height = 7.000000000000000000
+              Margins.Top = 22.000000000000000000
+              Position.Y = 32.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 4.000000000000000000
+            end
+            object RectTickMinuteBottom: TRectangle
+              Align = alBottom
+              Fill.Color = claWhite
+              Height = 7.000000000000000000
+              Margins.Bottom = 22.000000000000000000
+              Position.Y = 305.000122070312500000
+              Stroke.Kind = bkNone
+              Width = 4.000000000000000000
+            end
+          end
+          object LayoutScrewHorizontal: TLayout
+            Align = alVertCenter
+            Height = 25.000000000000000000
+            Position.Y = 159.000000000000000000
+            Width = 344.000000000000000000
+            object CircleScrewMiddleRight: TCircle
+              Align = alRight
+              Fill.Kind = bkGradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = xFF636363
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Height = 25.000000000000000000
+              Position.X = 314.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 30.000000000000000000
+              object RectScrewMiddleRight1: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = 45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+              object RectScrewMiddleRight2: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = -45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+            end
+            object CircleScrewMiddleLeft: TCircle
+              Align = alLeft
+              Fill.Kind = bkGradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = xFF636363
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Height = 25.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 30.000000000000000000
+              object RectScrewMiddleLeft1: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = 45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+              object RectScrewMiddleLeft2: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = -45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+            end
+          end
+          object LayoutScrewVertical: TLayout
+            Align = alVertCenter
+            Height = 25.000000000000000000
+            Position.Y = 159.000000000000000000
+            RotationAngle = 90.000000000000000000
+            Width = 344.000000000000000000
+            object CircleScrewMiddleBottom: TCircle
+              Align = alRight
+              Fill.Kind = bkGradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = xFF636363
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Height = 25.000000000000000000
+              Position.X = 314.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 30.000000000000000000
+              object RectScrewMiddleBottom1: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = 45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+              object RectScrewMiddleBottom2: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = -45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+            end
+            object CircleScrewMiddleTop: TCircle
+              Align = alLeft
+              Fill.Kind = bkGradient
+              Fill.Gradient.Points = <
+                item
+                  Color = claBlack
+                  Offset = 0.000000000000000000
+                end
+                item
+                  Color = xFF636363
+                  Offset = 1.000000000000000000
+                end>
+              Fill.Gradient.StartPosition.X = 0.500000000000000000
+              Fill.Gradient.StartPosition.Y = 1.000000000000000000
+              Fill.Gradient.StopPosition.X = 0.499999970197677600
+              Fill.Gradient.StopPosition.Y = 0.000000000000000000
+              Height = 25.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 30.000000000000000000
+              object RectScrewMiddleTop1: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = 45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+              object RectScrewMiddleTop2: TRectangle
+                Align = alContents
+                Fill.Color = xFF636363
+                Height = 5.000000000000000000
+                Margins.Left = 6.000000000000000000
+                Margins.Top = 10.000000000000000000
+                Margins.Right = 6.000000000000000000
+                Margins.Bottom = 10.000000000000000000
+                RotationAngle = -45.000000000000000000
+                Stroke.Kind = bkNone
+                Width = 18.000000000000000000
+              end
+            end
+          end
+        end
+        object EdtDay: TEdit
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 2
+          Font.Size = 22.000000000000000000
+          Font.Style = [fsBold]
+          TextAlign = taCenter
+          Position.X = 77.000000000000000000
+          Position.Y = 156.000000000000000000
+          Width = 41.000000000000000000
+          Height = 32.000000000000000000
+          HitTest = False
+          StyledSettings = [ssFamily, ssFontColor]
+          KillFocusByReturn = False
+        end
+        object EdtMonth: TEdit
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 3
+          Font.Size = 22.000000000000000000
+          Font.Style = [fsBold]
+          TextAlign = taCenter
+          Position.X = 217.000000000000000000
+          Position.Y = 156.000000000000000000
+          Width = 62.000000000000000000
+          Height = 32.000000000000000000
+          HitTest = False
+          StyledSettings = [ssFamily, ssFontColor]
+          KillFocusByReturn = False
+        end
+        object EdtTimer: TEdit
+          Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+          TabOrder = 4
+          Font.Size = 22.000000000000000000
+          Font.Style = [fsBold]
+          TextAlign = taCenter
+          Position.X = 102.000000000000000000
+          Position.Y = 222.000000000000000000
+          Width = 140.000000000000000000
+          Height = 32.000000000000000000
+          HitTest = False
+          StyledSettings = [ssFamily, ssFontColor]
+          Visible = False
+          KillFocusByReturn = False
+        end
+        object LayoutHour: TLayout
+          Align = alHorzCenter
+          Locked = True
+          Height = 344.000122070312500000
+          Padding.Top = 10.000000000000000000
+          Padding.Bottom = 10.000000000000000000
+          Position.X = 168.000000000000000000
+          Width = 8.000000000000000000
+          object RectHour: TRectangle
+            Align = alTop
+            Fill.Color = claWhite
+            Height = 75.000000000000000000
+            Margins.Top = 80.000000000000000000
+            Position.Y = 90.000000000000000000
+            Stroke.Kind = bkNone
+            Width = 8.000000000000000000
+            object ShadowEffRectHour: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.600000023841857900
+              ShadowColor = claBlack
+            end
+          end
+          object FltAnimLayoutHour: TFloatAnimation
+            Duration = 0.500000000000000000
+            PropertyName = 'RotationAngle'
+            StartValue = 0.000000000000000000
+            StopValue = 360.000000000000000000
+          end
+        end
+        object LayoutMinute: TLayout
+          Align = alHorzCenter
+          Locked = True
+          Height = 344.000122070312500000
+          Padding.Top = 10.000000000000000000
+          Padding.Bottom = 10.000000000000000000
+          Position.X = 168.000000000000000000
+          RotationAngle = 90.000000000000000000
+          Width = 8.000000000000000000
+          object RectMinute: TRectangle
+            Align = alTop
+            Fill.Color = claWhite
+            Height = 120.000000000000000000
+            Margins.Top = 40.000000000000000000
+            Position.Y = 50.000000000000000000
+            Stroke.Kind = bkNone
+            Width = 8.000000000000000000
+            object ShadowEffRectMinute: TShadowEffect
+              Distance = 3.000000000000000000
+              Direction = 45.000000000000000000
+              Softness = 0.300000011920929000
+              Opacity = 0.600000023841857900
+              ShadowColor = claBlack
+            end
+          end
+          object TmrTime: TTimer
+            Interval = 25
+            OnTimer = TmrTimeTimer
+            Left = 332
+            Top = 16
+          end
+          object FltAnimLayoutMinute: TFloatAnimation
+            Duration = 0.500000000000000000
+            PropertyName = 'RotationAngle'
+            StartValue = 0.000000000000000000
+            StopValue = 360.000000000000000000
+          end
+        end
+        object LayoutSecond: TLayout
+          Align = alHorzCenter
+          Locked = True
+          Height = 344.000122070312500000
+          Padding.Top = 10.000000000000000000
+          Padding.Bottom = 10.000000000000000000
+          Position.X = 170.000000000000000000
+          RotationAngle = 270.000000000000000000
+          Width = 4.000000000000000000
+          object RectSecond: TRectangle
+            Align = alTop
+            Fill.Color = claRed
+            Height = 120.000000000000000000
+            Margins.Top = 40.000000000000000000
+            Position.Y = 50.000000000000000000
+            Stroke.Kind = bkNone
+            Width = 4.000000000000000000
+            object CircleSecond: TCircle
+              Align = alMostTop
+              Fill.Color = claRed
+              Height = 18.000000000000000000
+              Margins.Left = -7.000000000000000000
+              Margins.Top = 8.000000000000000000
+              Margins.Right = -7.000000000000000000
+              Position.X = -7.000000000000000000
+              Position.Y = 8.000000000000000000
+              Stroke.Kind = bkNone
+              Width = 18.000000000000000000
+            end
+          end
+          object FltAnimLayoutSecond: TFloatAnimation
+            Duration = 0.500000000000000000
+            OnFinish = FltAnimLayoutSecondFinish
+            PropertyName = 'RotationAngle'
+            StartValue = 0.000000000000000000
+            StopValue = 360.000000000000000000
+          end
+          object ShadowEffSecond: TShadowEffect
+            Distance = 3.000000000000000000
+            Direction = 45.000000000000000000
+            Softness = 0.300000011920929000
+            Opacity = 0.600000023841857900
+            ShadowColor = claBlack
+          end
+        end
+        object CircleCenterClock: TCircle
+          Align = alCenter
+          Fill.Color = claWhite
+          Height = 30.000000000000000000
+          Stroke.Kind = bkNone
+          Width = 30.000000000000000000
+          object GlowEffCircleCenterClock: TGlowEffect
+            Softness = 0.200000002980232200
+            GlowColor = claBlack
+            Opacity = 0.899999976158142100
+          end
+        end
+      end
+    end
+    object BtInfo: TButton
+      Anchors = [akRight, akBottom]
+      Height = 48.000000000000000000
+      Position.X = 336.000000000000000000
+      Position.Y = 519.000000000000000000
+      StyleLookup = 'infotoolbutton'
+      TabOrder = 1
+      Text = 'BtInfo'
+      Trimming = ttCharacter
+      Width = 48.000000000000000000
+      OnClick = BtInfoClick
+    end
+  end
+end

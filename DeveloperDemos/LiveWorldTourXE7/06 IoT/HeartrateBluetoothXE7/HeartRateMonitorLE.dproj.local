@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+	<Transactions>
+    <Transaction>2014/09/06 14:06:18.000.879,C:\HeartrateBluetoothXE7\HeartRateMonitor.dproj=C:\HeartrateBluetoothXE7\HeartRateMonitor.dproj</Transaction>
+    <Transaction>2014/09/07 10:00:51.000.172,C:\Users\embt\Documents\XE7\demos\DemoKit\05 IoT\HeartrateBluetoothXE7\HeartRateMonitor.dproj=C:\Users\embt\Documents\XE7\demos\DemoKit\05 IoT\HeartrateBluetoothXE7\HeartRateMonitorLE.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

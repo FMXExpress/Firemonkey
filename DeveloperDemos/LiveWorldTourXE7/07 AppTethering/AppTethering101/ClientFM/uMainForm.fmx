@@ -1,0 +1,78 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 1
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Size.Width = 364.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object butPair: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 165.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'donetoolbutton'
+    TabOrder = 2
+    Text = 'Pair'
+    OnClick = butPairClick
+  end
+  object butAdd: TButton
+    Enabled = False
+    Position.X = 24.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 165.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'donetoolbutton'
+    TabOrder = 3
+    Text = 'Add to List'
+    OnClick = butAddClick
+  end
+  object butSend: TButton
+    Enabled = False
+    Position.X = 24.000000000000000000
+    Position.Y = 104.000000000000000000
+    Size.Width = 165.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'donetoolbutton'
+    TabOrder = 9
+    Text = 'Send Text'
+    OnClick = Button1Click
+  end
+  object TetheringManager1: TTetheringManager
+    OnEndAutoConnect = TetheringManager1EndAutoConnect
+    Text = 'TetheringManager1'
+    AllowedAdapters = 'Bluetooth'
+    Left = 272
+    Top = 64
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Manager = TetheringManager1
+    Text = 'TetheringAppProfile1'
+    Group = 'AppTethering101'
+    Actions = <>
+    Resources = <>
+    Left = 272
+    Top = 128
+  end
+end

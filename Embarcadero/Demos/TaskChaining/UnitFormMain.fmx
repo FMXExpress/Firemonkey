@@ -1,0 +1,206 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'TaskSwitch'
+  ClientHeight = 282
+  ClientWidth = 629
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ButtonTask1: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Task 1'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = ButtonTask1Click
+  end
+  object ButtonTask2: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 88.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Task 2'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = ButtonTask2Click
+  end
+  object ButtonTask3: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 128.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Task 3'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = ButtonTask3Click
+  end
+  object ButtonTask4: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Task 4'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = ButtonTask4Click
+  end
+  object ButtonTask5: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 208.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Task 5'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = ButtonTask5Click
+  end
+  object ButtonTask1Plus2: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 216.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Task 1 + 2'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = ButtonTask1Plus2Click
+  end
+  object ButtonTask4Plus5: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 216.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = 'Task 4 + 5'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = ButtonTask4Plus5Click
+  end
+  object ButtonTaskSumAll: TButton
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 440.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 96.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Sum All'
+    TextSettings.Font.Size = 16.000000000000000000
+    OnClick = ButtonTaskSumAllClick
+  end
+  object ScrollBarActivity: TScrollBar
+    Align = Top
+    SmallChange = 0.000000000000000000
+    Orientation = Horizontal
+    Size.Width = 629.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    object FloatAnimationActivity: TFloatAnimation
+      AnimationType = InOut
+      AutoReverse = True
+      Enabled = True
+      Duration = 1.000000000000000000
+      Loop = True
+      PropertyName = 'Value'
+      StartValue = 0.000000000000000000
+      StopValue = 100.000000000000000000
+    end
+  end
+  object LabelTask1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = '--'
+  end
+  object LabelTask2: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = '--'
+  end
+  object LabelTask3: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = '--'
+  end
+  object LabelTask4: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 176.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = '--'
+  end
+  object LabelTask5: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 112.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = '--'
+  end
+  object LabelTask1Plus2: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 344.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = '--'
+  end
+  object LabelTask4Plus5: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 344.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = '--'
+  end
+  object LabelTaskSumAll: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = 552.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    Text = '--'
+  end
+end

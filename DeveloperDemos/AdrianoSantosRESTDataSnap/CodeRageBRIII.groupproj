@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{DF57F8AA-3EC9-42C1-A6CC-1DE5414D5827}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="server\Server.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="cliente\Cliente.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="apache_server\mod_code_rage.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Server">
+        <MSBuild Projects="server\Server.dproj"/>
+    </Target>
+    <Target Name="Server:Clean">
+        <MSBuild Projects="server\Server.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Server:Make">
+        <MSBuild Projects="server\Server.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Cliente">
+        <MSBuild Projects="cliente\Cliente.dproj"/>
+    </Target>
+    <Target Name="Cliente:Clean">
+        <MSBuild Projects="cliente\Cliente.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Cliente:Make">
+        <MSBuild Projects="cliente\Cliente.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="mod_code_rage">
+        <MSBuild Projects="apache_server\mod_code_rage.dproj"/>
+    </Target>
+    <Target Name="mod_code_rage:Clean">
+        <MSBuild Projects="apache_server\mod_code_rage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="mod_code_rage:Make">
+        <MSBuild Projects="apache_server\mod_code_rage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Server;Cliente;mod_code_rage"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Server:Clean;Cliente:Clean;mod_code_rage:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Server:Make;Cliente:Make;mod_code_rage:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

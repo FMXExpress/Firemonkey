@@ -1,0 +1,11 @@
+inherited Form1_iPhone: TForm1_iPhone
+  ClientHeight = 460
+  ClientWidth = 320
+  DesignerMasterStyle = 2
+  inherited ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    inherited Label2: TLabel
+      Size.Width = 320.000000000000000000
+    end
+  end
+end

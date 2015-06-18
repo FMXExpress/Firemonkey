@@ -1,0 +1,49 @@
+ ZXing for Android and ZBar for iOS
+
+Uses
+  androidapi.JNI.GraphicsContentViewText, androidapi.jni.JavaTypes, fmx.helpers.android;
+  
+Procedure GetBarcode;
+var
+  intent: jintent;
+begin
+  intent := tjintent.Create;
+  intent.setAction(stringtojstring('com.google.zxing.client.android.SCAN'));
+  intent.putExtra(tjintent.JavaClass.EXTRA_TEXT,stringtojstring('"SCAN_MODE", "PRODUCT_MODE"'));
+  sharedactivity.startActivityForResult(intent,0);
+  edit1.PasteFromClipboard;
+end;
+
+
+
+
+
+ Procedure GetQRcode;
+ var
+   intent: jintent;
+ begin
+   intent := tjintent.Create;
+   intent.setAction(stringtojstring('com.google.zxing.client.android.SCAN'));
+   intent.putExtra(tjintent.JavaClass.EXTRA_TEXT,stringtojstring('"SCAN_MODE","ONE_D_MODE,QR_CODE_MODE,PRODUCT_MODE,DATA_MATRIX_MODE"'));
+   sharedactivity.startActivityForResult(intent,0);
+   edit1.PasteFromClipboard;
+ end;
+
+
+
+
+
+The Inelegant Way to Scan Barcodes on Android with Delphi XE5Embarcadero's shiny new Delphi XE5 Mobile Module seems to be lacking something rather important 
+to those of us wishing to scan barcodes on Android. Although it is fairly simple to use intents to start up other Android activities, with their required 
+parameters, there seems to be no way to register a callback function to receive results. This is my, rather inelegant, workaround whilst waiting for that 
+deficiency to be fixed.I have currently only tried using the free, open source, ZXing library available on Google Play. 
+
+See the ZXing Google Code page here https://code.google.com/p/zxing/  for more info the library and licensing.
+
+I'm assuming a similar state of ignorance 
+to the one I was in starting out with XE5, also a form containing a button, an editcontrol and a timer.The following needs to be present in the main 
+formUsesFMX.platform, fmx.helpers.android, androidapi.JNI.GraphicsContentViewText, androidapi.jni.JavaTypes;the first module is required for clipboard access, 
+the others for the JNI (Java Native Interface)in the forms private declarationsClipService: IFMXClipboardService;Elapsed: integer;in the FormCreate eventif not 
+TPlatformServices.Current.SupportsPlatformService(IFMXClipboardService, IInterface(ClipService)) then    ClipService := nil;Elapsed := 0;gives the app 
+access to the clipboardThe button's onclick eventprocedure Tform1.Button1click(sender: Tobject);var  intent: jintent;begin  if assigned(ClipService) then  
+begin    clipservice.SetClipboard('nil');    intent := tjintent.Create;    intent.setAction(stringtojstring('com.google.zxing.client.android.SCAN'));    intent.putExtra(tjintent.JavaClass.EXTRA_TEXT,      stringtojstring('"SCAN_MODE", "CODE_39"'));    sharedactivity.startActivityForResult(intent,0);Elapsed := 0;    timer1.Enabled := true;  end;end;the intent.putExtra is optional, if used it narrows the range of codes that ZXing looks for. The clipboard value can be set to anything you like, it’s only there to check for the clipboard changing. The variable Elapsed is there to provide a timeout in case the user cancels the scan. I have my timer set to 500ms intervals which seems okay in practice.The timer event looks like this procedure TForm1.Timer1Timer(Sender: TObject);beginif (ClipService.GetClipboard.ToString <> 'nil') thenbegintimer1.Enabled := false;Elapsed := 0;    edit1.Text := ClipService.GetClipboard.ToString;  endelse beginif Elapsed >9 thenbegintimer1.Enabled := false;Elapsed := 0;endelseElapsed := Elapsed +1;end;end;That’s it!

@@ -1,0 +1,16 @@
+inherited Form2_iPhone: TForm2_iPhone
+  ClientHeight = 460
+  ClientWidth = 320
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    Position.Y = 410.000000000000000000
+    Size.Width = 320.000000000000000000
+    inherited ComboBox1: TComboBox
+      Size.Height = 30.000000000000000000
+    end
+  end
+  inherited Panel2: TPanel
+    Size.Width = 320.000000000000000000
+    Size.Height = 410.000000000000000000
+  end
+end

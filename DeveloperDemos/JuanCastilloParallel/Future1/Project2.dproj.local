@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/11/24 22:06:57.000.550,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/11/24 22:07:36.000.598,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/08 21:51:37.000.944,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2014/12/08 21:51:38.000.975,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2015/01/22 21:31:26.000.849,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/01/22 21:47:54.000.920,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\ServerMethodsUnit1.pas</Transaction>
+    <Transaction>2015/01/22 21:47:54.000.818,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/01/22 21:47:55.000.010,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\ServerContainerUnit1.pas</Transaction>
+    <Transaction>2015/02/18 10:01:58.000.844,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/19 04:23:31.000.837,=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/19 04:26:04.000.377,C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\CodeRageII\Parallel\Future1\Unit1.fmx</Transaction>
+    <Transaction>2015/02/19 04:26:04.000.377,C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\CodeRageII\Parallel\Future1\Unit1.pas</Transaction>
+    <Transaction>2015/02/19 04:26:51.000.338,C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\jcastillo\Documents\Embarcadero\Studio\Projects\CodeRageII\Parallel\Future1\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

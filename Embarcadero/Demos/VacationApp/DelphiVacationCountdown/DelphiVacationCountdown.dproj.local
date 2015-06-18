@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/12/14 12:08:59.000.366,=C:\Users\davidi\Documents\RAD Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>2013/12/14 12:14:41.000.112,C:\Users\davidi\Desktop\VacationCountdown\MainUnit.pas=C:\Users\davidi\Documents\RAD Studio\Projects\Unit5.pas</Transaction>
+    <Transaction>2013/12/14 12:14:41.000.112,C:\Users\davidi\Desktop\VacationCountdown\MainUnit.fmx=C:\Users\davidi\Documents\RAD Studio\Projects\Unit5.fmx</Transaction>
+    <Transaction>2013/12/14 12:14:48.000.515,C:\Users\davidi\Desktop\VacationCountdown\VacationCountdown.dproj=C:\Users\davidi\Documents\RAD Studio\Projects\Project6.dproj</Transaction>
+    <Transaction>2014/01/16 14:50:37.000.583,C:\Users\davidi\Desktop\Demos in progress\Delphi\DelphiVacationCountdown\DelphiVacationCountdown.dproj=C:\Users\davidi\Desktop\Demos in progress\Delphi\DelphiVacationCountdown\VacationCountdown.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>62dd248a</MobileDevice>
+</BorlandProject>

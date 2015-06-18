@@ -1,0 +1,13 @@
+unit unitGamePlayer;
+
+interface
+
+type
+  TGamePlayer = class
+    Name : string;
+    Score : Integer;
+  end;
+
+implementation
+
+end.

@@ -1,0 +1,84 @@
+object Form36: TForm36
+  Left = 0
+  Top = 0
+  Caption = 'Form36'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Button1: TButton
+    Align = Top
+    Height = 44.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 62.000000000000000000
+    TabOrder = 1
+    Text = 'Encode'
+    Width = 364.000000000000000000
+    OnClick = Button1Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 2
+    Text = 'This is some input text'
+    Position.X = 10.000000000000000000
+    Position.Y = 10.000000000000000000
+    Width = 364.000000000000000000
+    Height = 32.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 3
+    Position.X = 10.000000000000000000
+    Position.Y = 126.000000000000000000
+    Width = 364.000000000000000000
+    Height = 32.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+  end
+  object Button2: TButton
+    Align = Top
+    Height = 44.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 178.000000000000000000
+    TabOrder = 4
+    Text = 'Decode'
+    Width = 364.000000000000000000
+    OnClick = Button2Click
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    TabOrder = 5
+    Position.X = 10.000000000000000000
+    Position.Y = 242.000000000000000000
+    Width = 364.000000000000000000
+    Height = 32.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 10.000000000000000000
+    Margins.Right = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+  end
+end

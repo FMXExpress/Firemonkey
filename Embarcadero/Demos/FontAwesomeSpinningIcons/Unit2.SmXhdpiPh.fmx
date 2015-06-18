@@ -1,0 +1,28 @@
+inherited Form2_SmXhdpiPh: TForm2_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    Position.Y = 325.000000000000000000
+    Size.Width = 250.000000000000000000
+    inherited Button1: TButton
+      Size.Width = 87.000000000000000000
+      Text = 'Start'
+    end
+    inherited ComboBox1: TComboBox
+      Align = Right
+      Position.X = 104.000000000000000000
+      Size.Width = 136.000000000000000000
+    end
+  end
+  inherited Panel2: TPanel
+    Size.Width = 250.000000000000000000
+    Size.Height = 325.000000000000000000
+    inherited Circle1: TCircle
+      Visible = False
+      inherited MoveUpAnim: TFloatAnimation
+        OnFinish = MoveUpAnimFinish
+      end
+    end
+  end
+end

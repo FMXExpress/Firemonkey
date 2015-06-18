@@ -1,0 +1,15 @@
+inherited Form1_iPad: TForm1_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 2
+  inherited Calendar1: TCalendar
+    Position.X = 258.000000000000000000
+    Position.Y = 56.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 768.000000000000000000
+    inherited Label2: TLabel
+      Size.Width = 768.000000000000000000
+    end
+  end
+end

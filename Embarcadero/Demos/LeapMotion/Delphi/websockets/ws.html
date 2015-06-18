@@ -1,0 +1,200 @@
+<!DOCTYPE HTML> 
+<html lang='cs'> 
+<head> 
+  <meta charset="utf-8" />   
+  <style> 
+    p {margin: 0px; padding: 0px;}
+    p.m { background: #FFEEEE; white-space: pre; }
+    p.s { background: #EEEEFF; white-space: pre; }
+    #responses { border: 1px solid red; width: 250px; height: 500px; overflow-y: auto;}
+    input[type="number"] { width: 100px; }
+  </style> 
+  
+  <script> 
+ 
+  var stat = null;
+  var responses = null;
+  var socket = null;
+  
+  function doLoad()
+  {
+    window.WebSocket = window.WebSocket || window.WebKitWebSocket || window.MozWebSocket;
+    window.BlobBuilder = window.BlobBuilder || window.WebKitBlobBuilder || window.MozBlobBuilder;
+    window.URL = window.URL || window.webkitURL || window.mozURL;
+  
+     
+    responses = document.getElementById("responses");
+    stat = document.getElementById("stat");
+    
+    document.getElementById("send").onclick = function()
+    {
+      if (socket && socket.readyState == socket.OPEN)
+      {
+        var p = document.createElement("p");
+        p.innerHTML = "&gt; " + document.getElementById("msg").value.length + ": " + document.getElementById("msg").value;
+        p.className = 's';
+        responses.appendChild(p);
+        socket.send(document.getElementById("msg").value);
+      }
+    }
+    
+    document.getElementById("send2").onclick = function()
+    {
+      if (socket && socket.readyState == socket.OPEN)
+      {
+        var msgt = '';
+        var msg = '';
+        for (var i = 0; i < 1024 * 1024; i++) msgt += 'a';
+        for (i = 0; i < parseInt(document.getElementById('leng').value); i++) msg += msgt;
+        var p = document.createElement("p");
+        p.innerHTML = "&gt; " + msg.length;
+        p.className = 's';
+        responses.appendChild(p);
+        socket.send(msg);
+      }
+    }    
+    
+    document.getElementById("send3").onchange = function()
+    {
+      if (socket && socket.readyState == socket.OPEN)
+      {
+        socket.send(this.files[0]);
+        return;
+        var fr = new FileReader();
+        fr.onload = function(e)
+        {
+          //console.log(e.target.result);
+          socket.send(e.target.result);
+        };
+        fr.readAsArrayBuffer(this.files[0]);
+      }
+    }    
+    
+
+    
+    document.getElementById("open").onclick = function()
+    {
+      var scheme = document.getElementById('scheme').value;		
+      var host = document.getElementById('host').value;
+      var port = document.getElementById('port').value;
+      socket = new WebSocket(scheme + host + ':' + port + "/path/to/file.php?data=1", ['proto1', 'proto2']);
+      socket.binaryType = 'arraybuffer';
+      socket.onopen = function (event) 
+      {
+        console.log(event);
+        stat.innerHTML = 'Opened';
+      };
+      socket.onmessage = function (event) 
+      {
+        console.log(event);
+        console.log(event.data);
+        if (event.data instanceof Blob)
+        {
+          var img = document.createElement("img");
+          img.onload = function() {window.URL.revokeObjectURL(img.src);}
+          img.src = window.URL.createObjectURL(event.data);
+          responses.appendChild(img);
+        }
+        if (event.data instanceof ArrayBuffer)
+        {
+          var b = new BlobBuilder();
+          b.append(event.data);
+          var img = document.createElement("img");
+          img.onload = function() {window.URL.revokeObjectURL(img.src);}
+          img.src = window.URL.createObjectURL(b.getBlob());
+          responses.appendChild(img);
+        }
+        else
+        {
+          var p = document.createElement("p");
+          p.innerHTML = "&lt; " + event.data.length + ": " + event.data.substring(0, 50);
+          p.className = 'm';
+          responses.appendChild(p);
+        }
+      };
+      socket.onerror = function (event) 
+      {
+        console.log(event);
+        stat.innerHTML = 'Error: ' + event.data;
+      };
+      socket.onclose = function (event) 
+      {
+        console.log(event);
+        stat.innerHTML = 'Closed ' + event.wasClean + " | " + event.code + " | " + event.reason;
+        socket = null; 
+      };
+    } 
+    
+    document.getElementById("close").onclick = function()
+    {
+      socket && socket.close(1000, 'konec');
+      //socket && socket.close();
+    }    
+  }
+ 
+  </script>  
+  <title>WS1</title> 
+</head> 
+<body onload="doLoad();"> 
+<p> 
+  <select id="scheme"> 
+    <option value="ws://">ws://</option> 
+    <option value="wss://">wss://</option> 
+  </select> 
+  <select id="host"> 
+    <option value="localhost" selected>localhost</option> 
+    <option value="127.0.0.1">127.0.0.1</option> 
+    <option value="10.0.0.1">10.0.0.1</option> 
+    <option value="81.0.231.149">81.0.231.149</option>
+  </select> 
+  <input type="number" id="port" value="81" step="1" /> 
+</p> 
+<p> 
+  <button id="open">Open</button> 
+  <button id="close">Close</button> 
+</p>  
+ 
+<p id="stat">Closed</p> 
+<textarea id="msg" cols="20" rows="5">příliš žluťoučký kůň úpěl ďábelské ódY</textarea> 
+<button id="send">Send</button> 
+
+<div style="display: none;">
+<br />
+<input type="number" value="2" id="leng" /><button id="send2">Send2</button>
+</div>
+<br />
+<input type="file" id="send3" />
+
+<div id="responses"></div> 
+ 
+
+<!--
+
+GET / HTTP/1.1
+Upgrade: websocket
+Connection: Upgrade
+Host: 81.0.231.149:81
+Sec-WebSocket-Origin: http://html5.bauglir.dev
+Sec-WebSocket-Key: Q9ceXTuzjdF2o23CRYvnuA==
+Sec-WebSocket-Version: 8
+
+
+GET / HTTP/1.1
+Host: 81.0.231.149:81
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64; rv:6.0) Gecko/20100101 Firefox/6.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: sk,cs;q=0.8,en-us;q=0.5,en;q=0.3
+Accept-Encoding: gzip, deflate
+Accept-Charset: ISO-8859-2,utf-8;q=0.7,*;q=0.7
+Connection: keep-alive, Upgrade
+Sec-WebSocket-Version: 7
+Sec-WebSocket-Origin: http://html5.bauglir.dev
+Sec-WebSocket-Key: HgBKcPfdBSzjCYxGnWCO3g==
+Pragma: no-cache
+Cache-Control: no-cache
+Upgrade: websocket
+
+-->
+ 
+</body> 
+</html>  

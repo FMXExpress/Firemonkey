@@ -1,0 +1,106 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 331
+  ClientWidth = 486
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnTask1: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 4
+    Text = 'Tarea 1'
+    OnClick = btnTask1Click
+  end
+  object lblTask1: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '(nada)'
+  end
+  object AniIndicator1: TAniIndicator
+    Enabled = True
+    Position.X = 24.000000000000000000
+    Position.Y = 248.000000000000000000
+  end
+  object Button1: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 72.000000000000000000
+    TabOrder = 3
+    Text = 'Tarea 2'
+    OnClick = Button1Click
+  end
+  object lblTask2: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '(nada)'
+  end
+  object Button2: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 96.000000000000000000
+    TabOrder = 2
+    Text = 'Tarea 3'
+    OnClick = Button2Click
+  end
+  object lblTask3: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '(nada)'
+  end
+  object Button3: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 120.000000000000000000
+    TabOrder = 1
+    Text = 'Tarea 4'
+    OnClick = Button3Click
+  end
+  object lblTask4: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '(nada)'
+  end
+  object Button4: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 144.000000000000000000
+    TabOrder = 0
+    Text = 'Tarea 5'
+    OnClick = Button4Click
+  end
+  object lblTask5: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = '(nada)'
+  end
+  object btnTask1And2: TButton
+    Position.X = 176.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = 'Tarea 1 y 2'
+    OnClick = btnTask1And2Click
+  end
+  object lblTarea1y2: TLabel
+    Position.X = 272.000000000000000000
+    Position.Y = 64.000000000000000000
+    Text = '(nada)'
+  end
+end

@@ -1,0 +1,266 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 495
+  ClientWidth = 592
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Bottom
+    Position.Y = 344.000000000000000000
+    Size.Width = 592.000000000000000000
+    Size.Height = 151.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+  end
+  object Container: TPanel
+    Align = Client
+    Size.Width = 592.000000000000000000
+    Size.Height = 344.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    object UserPanel: TPanel
+      Align = Client
+      Size.Width = 592.000000000000000000
+      Size.Height = 296.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object UserIDPanel: TPanel
+        Align = Top
+        Size.Width = 592.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object UserIDLabel: TLabel
+          Align = Top
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 15.000000000000000000
+          Position.X = 15.000000000000000000
+          Size.Width = 577.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'User ID'
+        end
+        object ActiveUserIDLabel: TLabel
+          Align = Bottom
+          Margins.Right = 15.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 577.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Trailing
+          Text = 'ActiveUserIDLabel'
+        end
+      end
+      object StepsPanel: TPanel
+        Align = Top
+        Position.Y = 160.000000000000000000
+        Size.Width = 592.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object ActiveStepsLabel: TLabel
+          Align = Bottom
+          Margins.Right = 15.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 577.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Trailing
+          Text = 'ActiveStepsLabel'
+        end
+        object StepsLabel: TLabel
+          Align = Top
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 15.000000000000000000
+          Position.X = 15.000000000000000000
+          Size.Width = 577.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'Steps'
+        end
+      end
+      object EmailPanel: TPanel
+        Align = Top
+        Position.Y = 80.000000000000000000
+        Size.Width = 592.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object EmailLabel: TLabel
+          Align = Top
+          StyledSettings = [Family, FontColor]
+          Margins.Left = 15.000000000000000000
+          Position.X = 15.000000000000000000
+          Size.Width = 577.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.Style = [fsBold]
+          Text = 'Email'
+        end
+        object ActiveEmailLabel: TLabel
+          Align = Bottom
+          Margins.Right = 15.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 577.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.HorzAlign = Trailing
+          Text = 'ActiveEmailLabel'
+        end
+      end
+    end
+    object ToolBar1: TToolBar
+      Size.Width = 592.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Label1: TLabel
+        Align = Client
+        StyledSettings = [Family, FontColor]
+        Size.Width = 592.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 22.000000000000000000
+        TextSettings.Font.Style = [fsBold]
+        TextSettings.HorzAlign = Center
+        Text = 'MISFIT Shine Test App'
+      end
+    end
+    object WebBrowser1: TWebBrowser
+      Align = Client
+      Size.Width = 592.000000000000000000
+      Size.Height = 296.000000000000000000
+      Size.PlatformDefault = False
+      URL = 
+        'https://api.misfitwearables.com/auth/dialog/authorize?client_id=' +
+        'R8kAa6JTptnZtOW5&scope=public,birthday,email&response_type=code&' +
+        'redirect_uri=http://ec2-54-148-200-34.us-west-2.compute.amazonaw' +
+        's.com/'
+      OnDidFinishLoad = WebBrowser1DidFinishLoad
+    end
+  end
+  object TokenRESTClient: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    AcceptEncoding = 'identity'
+    BaseURL = 'https://api.misfitwearables.com/auth/tokens/exchange'
+    ContentType = 'application/x-www-form-urlencoded'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 488
+    Top = 456
+  end
+  object TokenRESTRequest: TRESTRequest
+    Client = TokenRESTClient
+    Method = rmPOST
+    Params = <
+      item
+        name = 'grant_type'
+        Value = 'authorization_code'
+      end
+      item
+        name = 'code'
+        Value = 'VrbOr7O3qYWaHXoK'
+      end
+      item
+        name = 'client_id'
+        Value = 'R8kAa6JTptnZtOW5'
+      end
+      item
+        name = 'client_secret'
+        Value = 'EWb7lIaogTTKt8M6o4G2kOWNFnRlgAJh'
+      end
+      item
+        name = 'redirect_uri'
+        Value = 'http://ec2-54-148-200-34.us-west-2.compute.amazonaws.com/'
+      end>
+    Response = TokenRESTResponse
+    SynchronizedEvents = False
+    Left = 456
+    Top = 384
+  end
+  object TokenRESTResponse: TRESTResponse
+    Left = 568
+    Top = 408
+  end
+  object ProfileRESTClient: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    AcceptEncoding = 'identity'
+    BaseURL = 'https://api.misfitwearables.com/move/resource/v1/user/me/profile'
+    ContentType = 'application/x-www-form-urlencoded'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 408
+    Top = 360
+  end
+  object ProfileRESTRequest: TRESTRequest
+    Client = ProfileRESTClient
+    Params = <
+      item
+        Kind = pkHTTPHEADER
+        name = 'access_token'
+        Value = 'REPLACE_ME'
+      end>
+    Response = ProfileRESTResponse
+    SynchronizedEvents = False
+    Left = 416
+    Top = 368
+  end
+  object ProfileRESTResponse: TRESTResponse
+    ContentType = 'application/json'
+    Left = 424
+    Top = 376
+  end
+  object ActivityRESTClient: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'UTF-8, *;q=0.8'
+    AcceptEncoding = 'identity'
+    BaseURL = 
+      'https://api.misfitwearables.com/move/resource/v1/user/me/activit' +
+      'y/summary'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 296
+    Top = 384
+  end
+  object ActivityRESTRequest: TRESTRequest
+    Client = ActivityRESTClient
+    Params = <
+      item
+        Kind = pkHTTPHEADER
+        name = 'access_token'
+        Value = 'YOUR_TOKEN_HERE'
+      end
+      item
+        name = 'start_date'
+        Value = '2015-01-01'
+      end
+      item
+        name = 'end_date'
+        Value = '2015-01-08'
+      end>
+    Response = ActivityRESTResponse
+    SynchronizedEvents = False
+    Left = 304
+    Top = 392
+  end
+  object ActivityRESTResponse: TRESTResponse
+    ContentType = 'application/json'
+    Left = 312
+    Top = 400
+  end
+end

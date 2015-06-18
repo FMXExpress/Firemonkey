@@ -1,0 +1,40 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  Touch.GestureManager = GestureManager1
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Position.X = 48.000000000000000000
+    Position.Y = 144.000000000000000000
+    Size.Width = 457.000000000000000000
+    Size.Height = 265.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object GestureManager1: TGestureManager
+    Left = 72
+    Top = 40
+    GestureData = <
+      item
+        Control = Owner
+        Collection = <
+          item
+            Action = Action1
+            GestureID = sgiLeft
+          end>
+      end>
+  end
+  object ActionList1: TActionList
+    Left = 184
+    Top = 40
+    object Action1: TAction
+      Text = 'Action1'
+      OnExecute = Action1Execute
+    end
+  end
+end

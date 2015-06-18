@@ -1,0 +1,511 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 3
+  object tcBible: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 384.000000000000000000
+    Size.Height = 567.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 2
+    TabOrder = 0
+    TabPosition = None
+    OnChange = tcBibleChange
+    object tabBooks: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabBooks'
+      object Header: TToolBar
+        Size.Width = 384.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object HeaderLabel: TLabel
+          Align = Contents
+          Size.Width = 384.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'The Bible'
+        end
+      end
+      object lvBooks: TListView
+        ItemAppearanceClassName = 'TCustomizeItemObjects'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 1
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 523.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearanceObjects.ItemObjects.Text.PlaceOffset.Y = -9.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 12.500000000000000000
+        ItemAppearanceObjects.ItemObjects.Detail.Visible = True
+        ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.Y = 8.000000000000000000
+        CanSwipeDelete = False
+        OnItemClick = lvBooksItemClick
+        SearchVisible = True
+        object TTimer
+          Interval = 17
+          Left = 40
+          Top = 65480
+        end
+        object TTimer
+          Interval = 17
+          Left = 65528
+          Top = 65528
+        end
+        object TTimer
+          Interval = 17
+        end
+      end
+    end
+    object tabChapters: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabChapters'
+      object ToolBar1: TToolBar
+        Size.Width = 384.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object lblChapters: TLabel
+          Align = Contents
+          Size.Width = 384.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Chapters'
+        end
+        object Button1: TButton
+          Action = actNextBook
+          Align = Right
+          Enabled = True
+          Margins.Right = 5.000000000000000000
+          Position.X = 337.000000000000000000
+          Size.Width = 42.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowdowntoolbuttonborderedright'
+          TabOrder = 1
+          Visible = True
+        end
+        object Button2: TButton
+          Action = actPriorBook
+          Align = Right
+          Enabled = True
+          Position.X = 295.000000000000000000
+          Size.Width = 42.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowuptoolbuttonborderedleft'
+          TabOrder = 2
+          Visible = True
+        end
+        object Button6: TButton
+          Action = ctaBook
+          Align = Left
+          Enabled = True
+          Size.Width = 73.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          TabOrder = 3
+          Visible = True
+        end
+      end
+      object lvChapters: TListView
+        ItemAppearanceClassName = 'TCustomizeItemObjects'
+        ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemIndex = 1
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 523.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        ItemAppearance.HeaderHeight = 40
+        ItemAppearanceObjects.ItemObjects.Text.Width = 100.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Detail.WordWrap = True
+        ItemAppearanceObjects.ItemObjects.Detail.Visible = True
+        ItemAppearanceObjects.ItemObjects.Detail.PlaceOffset.X = 35.000000000000000000
+        ItemAppearanceObjects.HeaderObjects.Text.WordWrap = True
+        CanSwipeDelete = False
+        OnItemClick = lvChaptersItemClick
+        object TTimer
+          Interval = 17
+          Top = 65520
+        end
+        object TTimer
+          Interval = 17
+        end
+      end
+    end
+    object tabVerses: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'tabVerses'
+      object tcVerses: TTabControl
+        Align = Client
+        FullSize = True
+        Size.Width = 384.000000000000000000
+        Size.Height = 567.000000000000000000
+        Size.PlatformDefault = False
+        TabHeight = 49.000000000000000000
+        TabIndex = 1
+        TabOrder = 0
+        TabPosition = None
+        OnChange = tcVersesChange
+        object tabVerseText: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = False
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'tabVerseText'
+          object ToolBar2: TToolBar
+            Size.Width = 384.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object lblVerses: TLabel
+              Align = Contents
+              Size.Width = 384.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'toollabel'
+              TextSettings.HorzAlign = Center
+            end
+            object Button3: TButton
+              Action = actNextChapter
+              Align = Right
+              Enabled = True
+              Margins.Right = 5.000000000000000000
+              Position.X = 337.000000000000000000
+              Size.Width = 42.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'arrowdowntoolbuttonborderedright'
+              TabOrder = 1
+              Visible = True
+            end
+            object Button4: TButton
+              Action = actPriorChapter
+              Align = Right
+              Enabled = True
+              Margins.Right = 5.000000000000000000
+              Position.X = 290.000000000000000000
+              Size.Width = 42.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'arrowuptoolbuttonborderedleft'
+              TabOrder = 2
+              Visible = True
+            end
+            object Button5: TButton
+              Action = ctaChapter
+              Align = Left
+              Enabled = True
+              Size.Width = 73.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'backtoolbutton'
+              TabOrder = 3
+              Visible = True
+            end
+          end
+          object ToolBar3: TToolBar
+            Align = Bottom
+            Position.Y = 523.000000000000000000
+            Size.Width = 384.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'bottomtoolbar'
+            TabOrder = 1
+            object Label1: TLabel
+              Align = Client
+              StyledSettings = [Family, Style, FontColor]
+              Size.Width = 330.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.Font.Size = 14.000000000000000000
+            end
+            object btnSettings: TButton
+              Align = Right
+              Margins.Left = 5.000000000000000000
+              Margins.Right = 5.000000000000000000
+              Position.X = 335.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'composetoolbutton'
+              TabOrder = 1
+              Text = 'btnSettings'
+              OnClick = btnSettingsClick
+            end
+          end
+          object WebBrowser1: TWebBrowser
+            Align = Client
+            Size.Width = 384.000000000000000000
+            Size.Height = 479.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object tabVerseSettings: TTabItem
+          CustomIcon = <
+            item
+            end>
+          IsSelected = True
+          Size.Width = 8.000000000000000000
+          Size.Height = 8.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'tabVerseSettings'
+          object ToolBar4: TToolBar
+            Size.Width = 384.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Label2: TLabel
+              Align = Client
+              Size.Width = 384.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'toollabel'
+              TextSettings.HorzAlign = Center
+              Text = 'Font'
+              object Button8: TButton
+                Action = ctaVerseDetail
+                Align = Left
+                Enabled = True
+                Size.Width = 73.000000000000000000
+                Size.Height = 48.000000000000000000
+                Size.PlatformDefault = False
+                StyleLookup = 'backtoolbutton'
+                TabOrder = 0
+                Visible = True
+              end
+            end
+          end
+          object ToolBar5: TToolBar
+            Align = Bottom
+            Position.Y = 519.000000000000000000
+            Size.Width = 384.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'bottomtoolbar'
+            TabOrder = 1
+            object btnUpdateFont: TButton
+              Align = Center
+              Size.Width = 73.000000000000000000
+              Size.Height = 48.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'toolbutton'
+              TabOrder = 0
+              Text = 'Update'
+              OnClick = btnUpdateFontClick
+            end
+          end
+          object tbFontNewSize: TTrackBar
+            Align = Bottom
+            Max = 400.000000000000000000
+            Min = 50.000000000000000000
+            Orientation = Horizontal
+            Margins.Left = 10.000000000000000000
+            Margins.Top = 10.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Margins.Bottom = 10.000000000000000000
+            Position.X = 10.000000000000000000
+            Position.Y = 477.000000000000000000
+            Size.Width = 364.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Value = 50.000000000000000000
+            OnChange = tbFontNewSizeChange
+          end
+          object lblFontSize: TLabel
+            Align = Bottom
+            Position.Y = 427.000000000000000000
+            Size.Width = 384.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.HorzAlign = Center
+            Text = '-33 %'
+          end
+          object WebBrowser2: TWebBrowser
+            Align = Client
+            Size.Width = 384.000000000000000000
+            Size.Height = 379.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+  end
+  object bsBooks: TBindSourceDB
+    DataSet = dtmdlMain.qryBooks
+    ScopeMappings = <>
+    Left = 272
+    Top = 168
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 276
+    Top = 341
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = bsBooks
+      FieldName = 'SHORT_NAME'
+      Control = lvBooks
+      FillExpressions = <
+        item
+          SourceMemberName = 'TITLE'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'TESTIMENT'
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = bsChapters
+      FieldName = 'CHAPTER_NUMBER'
+      Control = lvChapters
+      FillExpressions = <
+        item
+          SourceMemberName = 'TITLE'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'BOOK_TITLE'
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = bsChapters
+      FieldName = 'TITLE'
+      Component = Label1
+      ComponentProperty = 'Text'
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'FontSize'
+      Control = tbFontNewSize
+      Track = False
+    end
+    object LinkPropertyToFieldText2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'FontSize'
+      Component = lblFontSize
+      CustomFormat = '%s+" %%"'
+      ComponentProperty = 'Text'
+    end
+  end
+  object bsChapters: TBindSourceDB
+    DataSet = dtmdlMain.qryChapters
+    ScopeMappings = <>
+    Left = 272
+    Top = 216
+  end
+  object ActionList1: TActionList
+    Left = 272
+    Top = 125
+    object ctaBook: TChangeTabAction
+      Category = 'Tab'
+      CustomText = 'Books'
+      Tab = tabBooks
+    end
+    object ctaVerseDetail: TChangeTabAction
+      Category = 'Tab'
+      CustomText = 'Back'
+      Tab = tabVerseText
+    end
+    object actPriorBook: TFMXBindNavigatePrior
+      Category = 'LiveBindings'
+      Text = 'Prior'
+      DataSource = bsBooks
+    end
+    object actNextBook: TFMXBindNavigateNext
+      Category = 'LiveBindings'
+      Text = 'Next'
+      DataSource = bsBooks
+    end
+    object actPriorChapter: TFMXBindNavigatePrior
+      Category = 'LiveBindings'
+      Text = 'Prior'
+      DataSource = bsChapters
+    end
+    object actNextChapter: TFMXBindNavigateNext
+      Category = 'LiveBindings'
+      Text = 'Next'
+      DataSource = bsChapters
+    end
+    object ctaChapter: TChangeTabAction
+      Category = 'Tab'
+      CustomText = 'Back'
+      Tab = tabChapters
+    end
+  end
+  object dsVerses: TBindSourceDB
+    DataSet = dtmdlMain.qryVerses
+    ScopeMappings = <>
+    Left = 272
+    Top = 264
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'FontSize'
+        FieldType = ftInteger
+        Generator = 'Integers'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    OnCreateAdapter = PrototypeBindSource1CreateAdapter
+    Left = 208
+    Top = 296
+  end
+end

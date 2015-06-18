@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A747C535-B943-481A-B0B9-16442AA99311}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Kwikset Door Lock\KwiksetDoorLockApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CppIOS Door Lock App\CppDoorLockApp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi Mobile Door Lock App\DelphiMobileLockApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="KwiksetDoorLockApp">
+        <MSBuild Projects="Kwikset Door Lock\KwiksetDoorLockApp.dproj"/>
+    </Target>
+    <Target Name="KwiksetDoorLockApp:Clean">
+        <MSBuild Projects="Kwikset Door Lock\KwiksetDoorLockApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="KwiksetDoorLockApp:Make">
+        <MSBuild Projects="Kwikset Door Lock\KwiksetDoorLockApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CppDoorLockApp">
+        <MSBuild Projects="CppIOS Door Lock App\CppDoorLockApp.cbproj"/>
+    </Target>
+    <Target Name="CppDoorLockApp:Clean">
+        <MSBuild Projects="CppIOS Door Lock App\CppDoorLockApp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppDoorLockApp:Make">
+        <MSBuild Projects="CppIOS Door Lock App\CppDoorLockApp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="DelphiMobileLockApp">
+        <MSBuild Projects="Delphi Mobile Door Lock App\DelphiMobileLockApp.dproj"/>
+    </Target>
+    <Target Name="DelphiMobileLockApp:Clean">
+        <MSBuild Projects="Delphi Mobile Door Lock App\DelphiMobileLockApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DelphiMobileLockApp:Make">
+        <MSBuild Projects="Delphi Mobile Door Lock App\DelphiMobileLockApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="KwiksetDoorLockApp;CppDoorLockApp;DelphiMobileLockApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="KwiksetDoorLockApp:Clean;CppDoorLockApp:Clean;DelphiMobileLockApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="KwiksetDoorLockApp:Make;CppDoorLockApp:Make;DelphiMobileLockApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

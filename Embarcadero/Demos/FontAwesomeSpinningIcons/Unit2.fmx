@@ -1,0 +1,109 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Panel1: TPanel
+    Align = Bottom
+    Position.Y = 430.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Button1: TButton
+      Align = Left
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 159.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Simulate Load'
+      OnClick = Button1Click
+    end
+    object ComboBox1: TComboBox
+      Align = Left
+      Items.Strings = (
+        'Circle Notch'
+        'Cog'
+        'Gear'
+        'Refresh'
+        'Spinner')
+      ItemIndex = 0
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 189.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 164.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      OnChange = ComboBox1Change
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 5000
+    Left = 16
+    Top = 368
+  end
+  object Panel2: TPanel
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 430.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object Circle1: TCircle
+      Align = Top
+      Fill.Color = claIvory
+      Size.Width = 640.000000000000000000
+      Size.Height = 80.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Color = xFFF1DCBE
+      object Label1: TLabel
+        Align = Contents
+        StyledSettings = []
+        Locked = True
+        Size.Width = 640.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Family = 'FontAwesome'
+        TextSettings.Font.Size = 25.000000000000000000
+        TextSettings.FontColor = claSlategray
+        TextSettings.HorzAlign = Center
+        Text = 'Label1'
+        object SpinAnim: TFloatAnimation
+          Enabled = True
+          Duration = 1.000000000000000000
+          Loop = True
+          PropertyName = 'RotationAngle'
+          StartValue = 0.000000000000000000
+          StopValue = 360.000000000000000000
+        end
+      end
+      object MoveDownAnim: TFloatAnimation
+        Duration = 0.250000000000000000
+        PropertyName = 'Position.Y'
+        StartValue = 0.000000000000000000
+        StopValue = 0.000000000000000000
+      end
+      object MoveUpAnim: TFloatAnimation
+        Duration = 0.250000000000000000
+        PropertyName = 'Position.Y'
+        StartValue = 0.000000000000000000
+        StopValue = 0.000000000000000000
+      end
+    end
+  end
+end

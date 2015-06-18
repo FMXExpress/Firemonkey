@@ -1,0 +1,271 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="7"/>
+    <General>
+      <MainUnit Value="0"/>
+      <TargetFileExt Value=""/>
+      <Icon Value="0"/>
+      <UseXPManifest Value="True"/>
+      <ActiveEditorIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <CurrentVersionNr Value="2"/>
+      <CurrentMinorRevNr Value="1"/>
+      <CurrentBuildNr Value="13"/>
+      <ProjectVersion Value="2.0.1.0"/>
+      <FileDescription Value="Bauglir WebSocket server demo"/>
+      <LegalCopyright Value="Copyright 2011; Bronislav Klucka"/>
+    </VersionInfo>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="1">
+      <Item1>
+        <PackageName Value="LCL"/>
+      </Item1>
+    </RequiredPackages>
+    <Units Count="6">
+      <Unit0>
+        <Filename Value="ServerDemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ServerDemo"/>
+        <CursorPos X="1" Y="6"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="3"/>
+        <UsageCount Value="65"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mainformu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MainFormU"/>
+        <CursorPos X="33" Y="485"/>
+        <TopLine Value="459"/>
+        <EditorIndex Value="0"/>
+        <UsageCount Value="65"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="../../../synapse/source/lib/ssl_openssl_lib.pas"/>
+        <UnitName Value="ssl_openssl_lib"/>
+        <CursorPos X="11" Y="81"/>
+        <TopLine Value="63"/>
+        <EditorIndex Value="4"/>
+        <UsageCount Value="32"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="../../../../../../../usr/share/fpcsrc/2.4.0/rtl/unix/classes.pp"/>
+        <UnitName Value="Classes"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <EditorIndex Value="2"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../../../../../../usr/lib/lazarus/0.9.28.2/lcl/actnlist.pas"/>
+        <UnitName Value="ActnList"/>
+        <CursorPos X="1" Y="1"/>
+        <TopLine Value="1"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../mine/pascal/Bauglir/internet/websocket2.pas"/>
+        <UnitName Value="WebSocket2"/>
+        <CursorPos X="5" Y="488"/>
+        <TopLine Value="470"/>
+        <EditorIndex Value="1"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+        <SyntaxHighlighter Value="Delphi"/>
+      </Unit5>
+    </Units>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="320" Column="39" TopLine="293"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="321" Column="39" TopLine="293"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="323" Column="39" TopLine="293"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="369" Column="29" TopLine="357"/>
+      </Position4>
+      <Position5>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="391" Column="29" TopLine="372"/>
+      </Position5>
+      <Position6>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="331" Column="7" TopLine="303"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="359" Column="29" TopLine="341"/>
+      </Position7>
+      <Position8>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="360" Column="29" TopLine="341"/>
+      </Position8>
+      <Position9>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="367" Column="29" TopLine="341"/>
+      </Position9>
+      <Position10>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="318" Column="29" TopLine="306"/>
+      </Position10>
+      <Position11>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="322" Column="34" TopLine="306"/>
+      </Position11>
+      <Position12>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="100" Column="22" TopLine="82"/>
+      </Position12>
+      <Position13>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="105" Column="54" TopLine="82"/>
+      </Position13>
+      <Position14>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="88" Column="46" TopLine="75"/>
+      </Position14>
+      <Position15>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="176" Column="30" TopLine="176"/>
+      </Position15>
+      <Position16>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="102" Column="22" TopLine="83"/>
+      </Position16>
+      <Position17>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="181" Column="7" TopLine="177"/>
+      </Position17>
+      <Position18>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="178" Column="6" TopLine="160"/>
+      </Position18>
+      <Position19>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="182" Column="1" TopLine="163"/>
+      </Position19>
+      <Position20>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="372" Column="3" TopLine="370"/>
+      </Position20>
+      <Position21>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="102" Column="22" TopLine="84"/>
+      </Position21>
+      <Position22>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="372" Column="3" TopLine="359"/>
+      </Position22>
+      <Position23>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="382" Column="52" TopLine="370"/>
+      </Position23>
+      <Position24>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="12" Column="32" TopLine="1"/>
+      </Position24>
+      <Position25>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="122" Column="6" TopLine="98"/>
+      </Position25>
+      <Position26>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="478" Column="124" TopLine="461"/>
+      </Position26>
+      <Position27>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="470" Column="36" TopLine="453"/>
+      </Position27>
+      <Position28>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="467" Column="1" TopLine="447"/>
+      </Position28>
+      <Position29>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="468" Column="23" TopLine="454"/>
+      </Position29>
+      <Position30>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="475" Column="22" TopLine="456"/>
+      </Position30>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="8"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)/"/>
+      <OtherUnitFiles Value="/home/bauglir/Desktop/pascal/synapse/source/lib/;/home/bauglir/Desktop/pascal/mine/pascal/Bauglir/common/;/home/bauglir/Desktop/pascal/mine/pascal/Bauglir/internet/"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+        <CStyleOperator Value="False"/>
+        <AllowLabel Value="False"/>
+        <CPPInline Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Watches Count="1">
+      <Item1>
+        <Expression Value="UTF8Decode(s)"/>
+      </Item1>
+    </Watches>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

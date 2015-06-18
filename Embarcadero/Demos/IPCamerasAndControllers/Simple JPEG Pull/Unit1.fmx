@@ -1,0 +1,50 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object btnGetJPEG: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Height = 22.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 0
+    Text = 'Get JPEG'
+    Width = 625.000000000000000000
+    OnClick = btnGetJPEGClick
+  end
+  object imgCameraImage: TImage
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Height = 433.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 40.000000000000000000
+    Width = 625.000000000000000000
+    WrapMode = iwStretch
+  end
+  object IdHTTP: TIdHTTP
+    AllowCookies = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 560
+    Top = 288
+  end
+end

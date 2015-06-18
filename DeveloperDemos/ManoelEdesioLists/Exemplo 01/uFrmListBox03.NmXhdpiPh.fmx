@@ -1,0 +1,32 @@
+inherited Form3_NmXhdpiPh: TForm3_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited ListBox1: TListBox
+    Align = Client
+    Size.Width = 400.000000000000000000
+    Size.Height = 615.000000000000000000
+    Size.PlatformDefault = False
+    inherited ListBoxItem2: TListBoxItem
+      Position.Y = 44.000000000000000000
+    end
+    inherited ListBoxGroupHeader1: TListBoxGroupHeader
+      Position.Y = 88.000000000000000000
+      Size.Width = 400.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    inherited ListBoxItem3: TListBoxItem
+      Position.Y = 118.000000000000000000
+    end
+    inherited ListBoxItem4: TListBoxItem
+      Position.Y = 162.000000000000000000
+    end
+    inherited ListBoxHeader1: TListBoxHeader
+      Size.Width = 400.000000000000000000
+    end
+    inherited SearchBox1: TSearchBox
+      Size.Width = 400.000000000000000000
+    end
+  end
+end

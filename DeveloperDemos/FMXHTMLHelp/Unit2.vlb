@@ -1,0 +1,16 @@
+﻿[Memo1]
+Coordinates=100,10,49,51
+
+[Edit1]
+Coordinates=10,78,40,51
+Visible=True
+
+[CheckBox1]
+Coordinates=10,10,70,51
+
+[Button1]
+Coordinates=167,10,53,51
+
+[]
+Coordinates=270,1,78,36
+

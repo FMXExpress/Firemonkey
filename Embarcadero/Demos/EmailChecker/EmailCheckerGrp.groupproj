@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4303A2BE-5477-4915-9B5D-04B150CF0CE4}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="EmailChecker.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="EmailCheckerApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="EmailChecker">
+        <MSBuild Projects="EmailChecker.dproj"/>
+    </Target>
+    <Target Name="EmailChecker:Clean">
+        <MSBuild Projects="EmailChecker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmailChecker:Make">
+        <MSBuild Projects="EmailChecker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="EmailCheckerApp">
+        <MSBuild Projects="EmailCheckerApp.dproj"/>
+    </Target>
+    <Target Name="EmailCheckerApp:Clean">
+        <MSBuild Projects="EmailCheckerApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmailCheckerApp:Make">
+        <MSBuild Projects="EmailCheckerApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="EmailChecker;EmailCheckerApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="EmailChecker:Clean;EmailCheckerApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="EmailChecker:Make;EmailCheckerApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

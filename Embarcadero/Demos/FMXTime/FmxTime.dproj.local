@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/02/06 19:48:22.000.755,=C:\Users\tlaborde\Documents\RAD Studio\Projets\Unit12.pas</Transaction>
+    <Transaction>2014/02/08 04:57:12.000.070,=C:\Users\tlaborde\Documents\RAD Studio\Projets\Unit12.pas</Transaction>
+    <Transaction>2014/02/08 04:57:45.000.003,C:\Users\tlaborde\Documents\RAD Studio\Projets\Unit12.fmx=C:\travail\dev\Perso\FmxApp\FmxTime\UMain.fmx</Transaction>
+    <Transaction>2014/02/08 04:57:45.000.003,C:\Users\tlaborde\Documents\RAD Studio\Projets\Unit12.pas=C:\travail\dev\Perso\FmxApp\FmxTime\UMain.pas</Transaction>
+    <Transaction>2014/02/08 04:57:53.000.226,C:\Users\tlaborde\Documents\RAD Studio\Projets\Project11.dproj=C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.dproj</Transaction>
+    <Transaction>2014/02/09 00:49:02.000.130,=C:\travail\dev\Perso\FmxApp\FmxTime\Unit1.pas</Transaction>
+    <Transaction>2014/02/11 13:41:32.000.507,C:\travail\dev\Perso\FmxApp\FmxTime\UMain.pas=</Transaction>
+    <Transaction>2014/02/11 13:42:42.000.811,C:\travail\dev\Perso\FmxApp\FmxTime\UMain.pas=C:\travail\dev\Perso\FmxApp\FmxTime\Unit1.pas</Transaction>
+    <Transaction>2014/02/11 13:42:42.000.811,C:\travail\dev\Perso\FmxApp\FmxTime\UMain.fmx=C:\travail\dev\Perso\FmxApp\FmxTime\Unit1.fmx</Transaction>
+    <Transaction>2014/02/11 16:28:24.000.637,=C:\travail\Ressources\XE5\29598_premium_style_pack_for_rad_studio_xe5_v4_oct_2013\RAD Studio XE5_PremiumStylePack\iOS\iOS7Jet.style</Transaction>
+    <Transaction>2014/02/11 16:28:24.000.642,=C:\travail\Ressources\XE5\29598_premium_style_pack_for_rad_studio_xe5_v4_oct_2013\RAD Studio XE5_PremiumStylePack\Win\Jet.style</Transaction>
+    <Transaction>2014/02/11 16:28:24.000.631,=C:\travail\Ressources\XE5\29598_premium_style_pack_for_rad_studio_xe5_v4_oct_2013\RAD Studio XE5_PremiumStylePack\Android\AndroidJet.style</Transaction>
+    <Transaction>2014/02/11 16:34:13.000.311,=C:\travail\dev\Perso\FmxApp\FmxTime\Styles\iOS7Jet.style</Transaction>
+    <Transaction>2014/02/11 16:34:13.000.306,=C:\travail\dev\Perso\FmxApp\FmxTime\Styles\AndroidJet.style</Transaction>
+    <Transaction>2014/02/11 16:34:13.000.264,C:\travail\Ressources\XE5\29598_premium_style_pack_for_rad_studio_xe5_v4_oct_2013\RAD Studio XE5_PremiumStylePack\Android\AndroidJet.style=</Transaction>
+    <Transaction>2014/02/11 16:34:13.000.315,=C:\travail\dev\Perso\FmxApp\FmxTime\Styles\Jet.style</Transaction>
+    <Transaction>2014/02/11 16:34:13.000.288,C:\travail\Ressources\XE5\29598_premium_style_pack_for_rad_studio_xe5_v4_oct_2013\RAD Studio XE5_PremiumStylePack\Win\Jet.style=</Transaction>
+    <Transaction>2014/02/11 16:34:13.000.278,C:\travail\Ressources\XE5\29598_premium_style_pack_for_rad_studio_xe5_v4_oct_2013\RAD Studio XE5_PremiumStylePack\iOS\iOS7Jet.style=</Transaction>
+    <Transaction>2014/02/20 05:49:34.000.032,C:\travail\dev\Perso\FmxApp\FmxTime\Styles\AndroidJet.style=</Transaction>
+    <Transaction>2014/02/20 05:49:34.000.022,C:\travail\dev\Perso\FmxApp\FmxTime\Styles\iOS7Jet.style=</Transaction>
+    <Transaction>2014/02/20 05:49:34.000.028,C:\travail\dev\Perso\FmxApp\FmxTime\Styles\Jet.style=</Transaction>
+    <Transaction>2014/02/20 05:58:51.000.877,=C:\travail\dev\Perso\FmxApp\FmxTime\Nouveau1.rc</Transaction>
+    <Transaction>2014/02/20 05:59:06.000.765,C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.rc=C:\travail\dev\Perso\FmxApp\FmxTime\Nouveau1.rc</Transaction>
+    <Transaction>2014/02/20 05:59:31.000.225,C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.win.win=C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.win</Transaction>
+    <Transaction>2014/02/20 06:02:20.000.161,=C:\travail\dev\Perso\FmxApp\FmxTime\Nouveau1.rc</Transaction>
+    <Transaction>2014/02/20 06:02:47.000.216,C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.android.rc=C:\travail\dev\Perso\FmxApp\FmxTime\Nouveau1.rc</Transaction>
+    <Transaction>2014/02/20 06:03:18.000.557,=C:\travail\dev\Perso\FmxApp\FmxTime\Nouveau1.rc</Transaction>
+    <Transaction>2014/02/20 06:04:03.000.756,C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.ios.rc=C:\travail\dev\Perso\FmxApp\FmxTime\Nouveau1.rc</Transaction>
+    <Transaction>2014/02/20 06:12:31.000.323,C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.ios.rc=</Transaction>
+    <Transaction>2014/02/20 06:12:34.000.395,C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.win.rc=</Transaction>
+    <Transaction>2014/02/20 06:16:05.000.877,=C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.android.rc</Transaction>
+    <Transaction>2014/02/20 06:16:05.000.890,=C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.ios.rc</Transaction>
+    <Transaction>2014/02/20 06:16:05.000.903,=C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.win.rc</Transaction>
+    <Transaction>2014/02/20 06:16:50.000.437,C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.win.rc=</Transaction>
+    <Transaction>2014/02/20 06:16:50.000.427,C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.ios.rc=</Transaction>
+    <Transaction>2014/02/20 06:16:50.000.401,C:\travail\dev\Perso\FmxApp\FmxTime\FmxTime.android.rc=</Transaction>
+    <Transaction>2014/02/20 06:25:18.000.474,=C:\travail\dev\Perso\FmxApp\FmxTime\Unit1.pas</Transaction>
+    <Transaction>2014/02/20 06:25:46.000.300,C:\travail\dev\Perso\FmxApp\FmxTime\UInfo.pas=C:\travail\dev\Perso\FmxApp\FmxTime\Unit1.pas</Transaction>
+    <Transaction>2014/02/20 06:25:46.000.300,C:\travail\dev\Perso\FmxApp\FmxTime\UInfo.fmx=C:\travail\dev\Perso\FmxApp\FmxTime\Unit1.fmx</Transaction>
+  </Transactions>
+	<MobileDevice>192.168.0.11:5555</MobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

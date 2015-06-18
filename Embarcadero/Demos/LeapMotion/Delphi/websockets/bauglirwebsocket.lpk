@@ -1,0 +1,51 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <Package Version="4">
+    <Name Value="bauglirwebsocket"/>
+    <CompilerOptions>
+      <Version Value="11"/>
+      <SearchPaths>
+        <UnitOutputDirectory Value="lib/$(TargetCPU)-$(TargetOS)/"/>
+      </SearchPaths>
+      <Other>
+        <CompilerMessages>
+          <MsgFileName Value=""/>
+        </CompilerMessages>
+        <CompilerPath Value="$(CompPath)"/>
+      </Other>
+    </CompilerOptions>
+    <Files Count="4">
+      <Item1>
+        <Filename Value="bclasses.pas"/>
+        <UnitName Value="BClasses"/>
+      </Item1>
+      <Item2>
+        <Filename Value="bsysutils.pas"/>
+        <UnitName Value="BSysUtils"/>
+      </Item2>
+      <Item3>
+        <Filename Value="customserver2.pas"/>
+        <UnitName Value="CustomServer2"/>
+      </Item3>
+      <Item4>
+        <Filename Value="websocket2.pas"/>
+        <UnitName Value="WebSocket2"/>
+      </Item4>
+    </Files>
+    <Type Value="RunAndDesignTime"/>
+    <RequiredPkgs Count="2">
+      <Item1>
+        <PackageName Value="laz_synapse"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="FCL"/>
+      </Item2>
+    </RequiredPkgs>
+    <UsageOptions>
+      <UnitPath Value="$(PkgOutDir)"/>
+    </UsageOptions>
+    <PublishOptions>
+      <Version Value="2"/>
+    </PublishOptions>
+  </Package>
+</CONFIG>

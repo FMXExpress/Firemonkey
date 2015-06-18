@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A6BBB2D3-4D99-4437-8B96-2572C21BEF69}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="kinveyclinet2.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\kinveyiossample\kinveoyiossampple.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="kinveyclinet2">
+        <MSBuild Projects="kinveyclinet2.dproj"/>
+    </Target>
+    <Target Name="kinveyclinet2:Clean">
+        <MSBuild Projects="kinveyclinet2.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="kinveyclinet2:Make">
+        <MSBuild Projects="kinveyclinet2.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="kinveoyiossampple">
+        <MSBuild Projects="..\kinveyiossample\kinveoyiossampple.dproj"/>
+    </Target>
+    <Target Name="kinveoyiossampple:Clean">
+        <MSBuild Projects="..\kinveyiossample\kinveoyiossampple.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="kinveoyiossampple:Make">
+        <MSBuild Projects="..\kinveyiossample\kinveoyiossampple.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="kinveyclinet2;kinveoyiossampple"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="kinveyclinet2:Clean;kinveoyiossampple:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="kinveyclinet2:Make;kinveoyiossampple:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

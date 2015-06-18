@@ -1,0 +1,99 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Kwikset Door Lock Demo'
+  ClientHeight = 239
+  ClientWidth = 621
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ComboBox1: TComboBox
+    DisableFocusEffect = False
+    Height = 22.000000000000000000
+    ItemIndex = 0
+    Position.X = 176.000000000000000000
+    Position.Y = 104.000000000000000000
+    TabOrder = 0
+    Width = 100.000000000000000000
+    object TListBoxItem
+      Height = 19.000000000000000000
+      IsSelected = True
+      Text = 'Lock'
+      Width = 19.000000000000000000
+    end
+    object TListBoxItem
+      Height = 19.000000000000000000
+      Text = 'Unlock'
+      Width = 19.000000000000000000
+    end
+  end
+  object Label1: TLabel
+    Height = 17.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 104.000000000000000000
+    Text = 'Lock Operation:'
+    Width = 120.000000000000000000
+  end
+  object BandedSwirlEffect1: TBandedSwirlEffect
+    Bands = 10.000000000000000000
+    Strength = 30.000000000000000000
+    AspectRatio = 1.500000000000000000
+  end
+  object DoItButton: TButton
+    Enabled = False
+    Height = 22.000000000000000000
+    Position.X = 304.000000000000000000
+    Position.Y = 104.000000000000000000
+    TabOrder = 2
+    Text = 'Do It!'
+    Width = 80.000000000000000000
+    OnClick = DoItButtonClick
+  end
+  object VeraLiteEdit: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    TabOrder = 3
+    Text = '10.20.10.33'
+    Position.X = 176.000000000000000000
+    Position.Y = 48.000000000000000000
+    Width = 153.000000000000000000
+    Height = 22.000000000000000000
+    KillFocusByReturn = False
+  end
+  object Label2: TLabel
+    Height = 17.000000000000000000
+    Position.X = 48.000000000000000000
+    Position.Y = 48.000000000000000000
+    Text = 'VeraLite IP Address:'
+    Width = 120.000000000000000000
+  end
+  object VeraLiteSwitch: TSwitch
+    Height = 27.000000000000000000
+    IsChecked = False
+    Position.X = 344.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 5
+    Width = 78.000000000000000000
+    OnSwitch = VeraLiteSwitchSwitch
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    BaseURL = 'http://192.168.1.101:3480'
+    Params = <>
+    HandleRedirects = True
+    Left = 520
+    Top = 56
+  end
+  object RESTRequestLockOperation: TRESTRequest
+    Client = RESTClient1
+    Method = rmPUT
+    Params = <>
+    Left = 520
+    Top = 120
+  end
+end

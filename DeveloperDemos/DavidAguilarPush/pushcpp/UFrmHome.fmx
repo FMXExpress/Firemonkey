@@ -1,0 +1,70 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 409
+  ClientWidth = 340
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Bottom
+    Position.Y = 359.000000000000000000
+    Size.Width = 340.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle2: TRectangle
+    Align = Top
+    Size.Width = 340.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    object SpeedButton1: TSpeedButton
+      Align = Right
+      Position.X = 272.000000000000000000
+      Size.Width = 68.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Ajustes'
+    end
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 272.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Kinvey-GCM'
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 340.000000000000000000
+    Size.Height = 309.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object KinveyProvider1: TKinveyProvider
+    ApiVersion = '3'
+    AppKey = 'kid_ZyKmpyjwj'
+    AppSecret = '144afa105e3e495c99101e9c2d751e6e'
+    MasterSecret = 'b88a95d137a34f3cbb7fec6866b73658'
+    UserName = 'david'
+    Password = 'david'
+    AndroidPush.GCMAppID = '552674250548'
+    Left = 88
+    Top = 16
+  end
+  object PushEvents1: TPushEvents
+    Provider = KinveyProvider1
+    OnDeviceTokenReceived = PushEvents1DeviceTokenReceived
+    OnDeviceTokenRequestFailed = PushEvents1DeviceTokenRequestFailed
+    OnPushReceived = PushEvents1PushReceived
+    Left = 192
+    Top = 32
+  end
+end

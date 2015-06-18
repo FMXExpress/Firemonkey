@@ -1,0 +1,62 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Bottom
+    Fill.Color = claGreen
+    Position.Y = 400.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle2: TRectangle
+    Align = Top
+    Fill.Color = claRed
+    Size.Width = 640.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button1: TButton
+    Align = Center
+    Size.Width = 145.000000000000000000
+    Size.Height = 43.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Toggle Full Screen'
+    OnClick = Button1Click
+  end
+  object Rectangle3: TRectangle
+    Align = Left
+    Fill.Color = claYellow
+    Position.Y = 102.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 298.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Rectangle4: TRectangle
+    Align = Right
+    Fill.Color = claBlue
+    Position.X = 543.000000000000000000
+    Position.Y = 102.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 298.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button2: TButton
+    Align = Top
+    Position.Y = 80.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Button2'
+    OnClick = Button2Click
+  end
+end

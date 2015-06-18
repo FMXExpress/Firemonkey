@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/02/17 11:12:20.000.841,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
+    <Transaction>2015/02/17 12:16:14.407,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
+    <Transaction>2015/02/17 12:16:40.567,C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizado\UMain.fmx=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit9.fmx</Transaction>
+    <Transaction>2015/02/17 12:16:40.567,C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizado\UMain.pas=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
+    <Transaction>2015/02/17 12:16:46.331,C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizado\ItemPerso.dproj=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project11.dproj</Transaction>
+  </Transactions>  <MobileDevice>a5a418af</MobileDevice>
+</BorlandProject>

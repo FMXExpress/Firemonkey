@@ -1,0 +1,104 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 315
+  ClientWidth = 474
+  FormFactor.Width = 1920
+  FormFactor.Height = 1052
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Memo1: TMemo
+    Align = Left
+    Height = 235.000000000000000000
+    Padding.Left = 10.000000000000000000
+    Padding.Top = 70.000000000000000000
+    Padding.Bottom = 10.000000000000000000
+    Margins.Left = 10.000000000000000000
+    Margins.Top = 70.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.X = 10.000000000000000000
+    Position.Y = 70.000000000000000000
+    Width = 255.000000000000000000
+  end
+  object btnListFee: TButton
+    Height = 22.000000000000000000
+    Position.X = 288.000000000000000000
+    Position.Y = 72.000000000000000000
+    Text = 'List Fee'
+    Width = 169.000000000000000000
+    OnClick = btnListFeeClick
+  end
+  object btnAddFee: TButton
+    Height = 22.000000000000000000
+    Position.X = 288.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = 'Add Fee'
+    Width = 80.000000000000000000
+    OnClick = btnAddFeeClick
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Position.X = 8.000000000000000000
+    Position.Y = 24.000000000000000000
+    Width = 153.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object btnAddFoo: TButton
+    Height = 22.000000000000000000
+    Position.X = 376.000000000000000000
+    Position.Y = 24.000000000000000000
+    Text = 'Add Foo'
+    Width = 80.000000000000000000
+    OnClick = btnAddFooClick
+  end
+  object SpinBox1: TSpinBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Cursor = crIBeam
+    Max = 10.000000000000000000
+    KeyboardType = Default
+    Position.X = 168.000000000000000000
+    Position.Y = 24.000000000000000000
+    Width = 100.000000000000000000
+    Height = 22.000000000000000000
+  end
+  object btnListFoo: TButton
+    Height = 22.000000000000000000
+    Position.X = 288.000000000000000000
+    Position.Y = 104.000000000000000000
+    Text = 'List Foo'
+    Width = 169.000000000000000000
+    OnClick = btnListFooClick
+  end
+  object btnListInterface: TButton
+    Height = 22.000000000000000000
+    Position.X = 288.000000000000000000
+    Position.Y = 136.000000000000000000
+    Text = 'List IMyInterface.AsString'
+    Width = 169.000000000000000000
+    OnClick = btnListInterfaceClick
+  end
+  object btnRTTIAsString: TButton
+    Height = 22.000000000000000000
+    Position.X = 288.000000000000000000
+    Position.Y = 168.000000000000000000
+    Text = 'List RTTI AsString'
+    Width = 169.000000000000000000
+    OnClick = btnRTTIAsStringClick
+  end
+  object Button1: TButton
+    Height = 22.000000000000000000
+    Position.X = 288.000000000000000000
+    Position.Y = 232.000000000000000000
+    Text = 'Clear Memo'
+    Width = 80.000000000000000000
+    OnClick = Button1Click
+  end
+end

@@ -1,0 +1,5 @@
+inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 0
+end

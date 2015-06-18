@@ -1,0 +1,65 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object btnGetMJPEG: TButton
+    Height = 22.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 0
+    Text = 'Start MJPEG Streaming'
+    Width = 625.000000000000000000
+    OnClick = btnGetMJPEGClick
+  end
+  object imgCameraImage: TImage
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Height = 433.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 40.000000000000000000
+    Width = 625.000000000000000000
+  end
+  object idHTTP: TIdHTTP
+    Intercept = idConnectionIntercept
+    IOHandler = idIOHandler
+    AllowCookies = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 288
+    Top = 224
+  end
+  object idIOHandler: TIdIOHandlerStack
+    Intercept = idConnectionIntercept
+    MaxLineAction = maException
+    Port = 0
+    RecvBufferSize = 1024
+    SendBufferSize = 1024
+    DefaultPort = 0
+    Left = 376
+    Top = 224
+  end
+  object idConnectionIntercept: TIdConnectionIntercept
+    OnReceive = idConnectionInterceptReceive
+    Left = 288
+    Top = 288
+  end
+end

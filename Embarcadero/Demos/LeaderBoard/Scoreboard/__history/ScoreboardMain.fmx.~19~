@@ -1,0 +1,128 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Scoreboard'
+  ClientHeight = 465
+  ClientWidth = 299
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Grid1: TGrid
+    Align = Client
+    Height = 440.000000000000000000
+    TabOrder = 5
+    Width = 299.000000000000000000
+    ReadOnly = True
+    RowCount = 0
+    RowHeight = 21.000000000000000000
+  end
+  object NavigatorBindSourceDB1: TBindNavigator
+    Align = Bottom
+    Height = 25.000000000000000000
+    Position.Y = 440.000000000000000000
+    Width = 299.000000000000000000
+    TabOrder = 21
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object tableScores: TFDMemTable
+    ActiveStoredUsage = [auDesignTime]
+    AfterPost = tableScoresAfterPost
+    FieldDefs = <>
+    IndexDefs = <
+      item
+        Name = 'idxScoreDesc'
+        DescFields = 'Score'
+        Fields = 'Score'
+        Options = [ixDescending]
+      end>
+    IndexFieldNames = 'Score;Name'
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    StoreDefs = True
+    Left = 216
+    Top = 192
+    object tableScoresScore: TIntegerField
+      FieldName = 'Score'
+    end
+    object tableScoresName: TStringField
+      FieldName = 'Name'
+      Size = 50
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = tableScores
+    ScopeMappings = <>
+    Left = 96
+    Top = 96
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 28
+    Top = 37
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <
+        item
+          MemberName = 'Name'
+          Width = 210
+        end
+        item
+          MemberName = 'Score'
+        end>
+    end
+  end
+  object TetheringManager1: TTetheringManager
+    Password = '1234'
+    Text = 'TetheringManager1'
+    Left = 96
+    Top = 168
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Manager = TetheringManager1
+    Text = 'Scoreboard1'
+    Group = 'Game'
+    Actions = <
+      item
+        Name = 'actGetScores'
+        IsPublic = True
+        Action = actGetScores
+        NotifyUpdates = False
+      end>
+    Resources = <
+      item
+        Name = 'Scoreboard'
+        IsPublic = True
+      end>
+    OnResourceReceived = TetheringAppProfile1ResourceReceived
+    Left = 96
+    Top = 248
+  end
+  object FDStanStorageXMLLink1: TFDStanStorageXMLLink
+    Left = 224
+    Top = 256
+  end
+  object ActionList1: TActionList
+    Left = 224
+    Top = 120
+    object actGetScores: TAction
+      Text = 'actGetScores'
+      OnExecute = actGetScoresExecute
+    end
+  end
+end

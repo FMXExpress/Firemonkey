@@ -1,0 +1,17 @@
+﻿[ClientDataSet1]
+Coordinates=300,0,100,249
+Visible=False
+
+[ListView1]
+Coordinates=50,10,89,213
+Visible=True
+
+[]
+Coordinates=19,160,82,33
+
+[BindSourceDB1]
+Coordinates=300,0,100,249
+
+[BindingsList1]
+Coordinates=148,170,82,33
+

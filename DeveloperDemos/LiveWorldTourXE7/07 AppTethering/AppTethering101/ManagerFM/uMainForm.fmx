@@ -1,0 +1,73 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 503
+  ClientWidth = 457
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 313.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button1: TButton
+    Action = Action1
+    Enabled = True
+    Position.X = 344.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Visible = True
+  end
+  object ListBox1: TListBox
+    Position.X = 24.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 401.000000000000000000
+    Size.Height = 409.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object ActionList1: TActionList
+    Left = 344
+    Top = 144
+    object Action1: TAction
+      Text = 'Add >>'
+      OnExecute = Action1Execute
+    end
+  end
+  object TetheringManager1: TTetheringManager
+    Text = 'TetheringManager1'
+    AllowedAdapters = 'Bluetooth'
+    Left = 344
+    Top = 200
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Manager = TetheringManager1
+    Text = 'TetheringAppProfile1'
+    Group = 'AppTethering101'
+    Actions = <
+      item
+        Name = 'Action1'
+        IsPublic = True
+        Action = Action1
+        NotifyUpdates = False
+      end>
+    Resources = <>
+    OnResourceReceived = TetheringAppProfile1ResourceReceived
+    Left = 344
+    Top = 256
+  end
+end

@@ -1,0 +1,228 @@
+inherited frmCtrlsDemo_LgXhdpiPh: TfrmCtrlsDemo_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 0
+  inherited ControlRoot: TLayout
+    Size.Width = 440.000000000000000000
+    Size.Height = 656.000000000000000000
+    inherited TabControl1: TTabControl
+      Size.Width = 422.000000000000000000
+      Size.Height = 638.000000000000000000
+      inherited TabItem1: TTabItem
+        Size.Width = 69.000000000000000000
+        Size.Height = 23.000000000000000000
+        inherited TextBox1: TEdit
+          Size.Height = 32.000000000000000000
+        end
+        inherited ProgressBar1: TProgressBar
+          Size.Height = 10.000000000000000000
+        end
+        inherited StringListBox1: TListBox
+          Viewport.Width = 107.000000000000000000
+          Viewport.Height = 162.000000000000000000
+        end
+        inherited StringComboBox1: TComboBox
+          Size.Height = 32.000000000000000000
+        end
+        inherited Panel1: TPanel
+          inherited SpeedButton2: TSpeedButton
+            Size.Height = 48.000000000000000000
+          end
+          inherited SpeedButton3: TSpeedButton
+            Size.Height = 48.000000000000000000
+          end
+        end
+        inherited TrackBar6: TTrackBar
+          Size.Height = 32.000000000000000000
+        end
+      end
+      inherited TabItem4: TTabItem
+        Size.Height = 23.000000000000000000
+        inherited Expander1: TExpander
+          ContentSize = '112'
+        end
+        inherited NumberBox1: TNumberBox
+          Size.Height = 32.000000000000000000
+        end
+        inherited TrackBar1: TTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited PopupBox1: TPopupBox
+          Size.Height = 32.000000000000000000
+        end
+        inherited TextBox3: TEdit
+          Size.Height = 32.000000000000000000
+        end
+        inherited Calendar1: TCalendar
+          Size.Width = 346.000000000000000000
+          Size.Height = 300.000000000000000000
+        end
+        inherited DateEdit1: TDateEdit
+          Size.Height = 32.000000000000000000
+        end
+        inherited Memo1: TMemo
+          Viewport.Width = 345.000000000000000000
+          Viewport.Height = 152.000000000000000000
+        end
+      end
+      inherited TabItem5: TTabItem
+        Size.Width = 85.000000000000000000
+        Size.Height = 23.000000000000000000
+        inherited ClearingEdit1: TClearingEdit
+          Size.Height = 32.000000000000000000
+        end
+      end
+      inherited TabItem3: TTabItem
+        Size.Width = 136.000000000000000000
+        Size.Height = 23.000000000000000000
+        inherited ListBox1: TListBox
+          Viewport.Width = 161.000000000000000000
+          Viewport.Height = 270.000000000000000000
+          inherited ListBoxItem4: TListBoxItem
+            inherited TextBox2: TEdit
+              Size.Height = 32.000000000000000000
+            end
+          end
+        end
+        inherited TreeView1: TTreeView
+          Viewport.Width = 298.000000000000000000
+          Viewport.Height = 270.000000000000000000
+        end
+      end
+      inherited TabItem6: TTabItem
+        Size.Width = 110.000000000000000000
+        Size.Height = 23.000000000000000000
+        inherited ListTransform: TListBox
+          Viewport.Width = 132.000000000000000000
+          Viewport.Height = 138.000000000000000000
+        end
+        inherited TrackBar2: TTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited TrackBar3: TTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited TextBox4: TEdit
+          Size.Height = 32.000000000000000000
+        end
+      end
+      inherited TabItem2: TTabItem
+        Size.Width = 71.000000000000000000
+        Size.Height = 23.000000000000000000
+        inherited Rectangle2: TPanel
+          Size.Height = 607.000000000000000000
+          inherited VertScrollBox1: TVertScrollBox
+            Size.Height = 588.000000000000000000
+            Viewport.Width = 166.000000000000000000
+            Viewport.Height = 562.000000000000000000
+            inherited Expander2: TExpander
+              Size.Width = 160.000000000000000000
+              ContentSize = '139'
+              inherited TrackBar5: TTrackBar
+                Size.Height = 32.000000000000000000
+              end
+              inherited TextBox5: TEdit
+                Size.Height = 32.000000000000000000
+              end
+            end
+            inherited Expander3: TExpander
+              Size.Width = 160.000000000000000000
+              ContentSize = '139'
+              inherited TrackBarE3: TTrackBar
+                Size.Height = 32.000000000000000000
+              end
+              inherited EditE3: TEdit
+                Size.Height = 32.000000000000000000
+              end
+            end
+            inherited Expander4: TExpander
+              Size.Width = 160.000000000000000000
+              ContentSize = '139'
+              inherited TrackBarE4: TTrackBar
+                Size.Height = 32.000000000000000000
+              end
+              inherited EditE4: TEdit
+                Size.Height = 32.000000000000000000
+              end
+            end
+          end
+        end
+        inherited Splitter1: TSplitter
+          Size.Height = 607.000000000000000000
+        end
+        inherited Panel2: TPanel
+          Size.Width = 237.000000000000000000
+          Size.Height = 607.000000000000000000
+          inherited ScrollBox1: TScrollBox
+            Size.Width = 233.000000000000000000
+            Size.Height = 603.000000000000000000
+            Viewport.Width = 233.000000000000000000
+            Viewport.Height = 577.000000000000000000
+          end
+        end
+      end
+      inherited TabItem8: TTabItem
+        Size.Height = 23.000000000000000000
+        inherited Memo2: TMemo
+          Size.Width = 406.000000000000000000
+          Size.Height = 599.000000000000000000
+          Viewport.Width = 406.000000000000000000
+          Viewport.Height = 599.000000000000000000
+        end
+      end
+      inherited TabItem7: TTabItem
+        Size.Width = 49.000000000000000000
+        Size.Height = 23.000000000000000000
+        inherited TrackBar4: TTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited SpinBox1: TSpinBox
+          Size.Height = 32.000000000000000000
+        end
+        inherited comboedit1: TComboEdit
+          Size.Height = 32.000000000000000000
+        end
+        inherited ComboTrackBar1: TComboTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited AlphaTrackBar1: TAlphaTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited BWTrackBar1: TBWTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited HueTrackBar1: THueTrackBar
+          Size.Height = 32.000000000000000000
+        end
+        inherited ComboColorBox1: TComboColorBox
+          Size.Height = 32.000000000000000000
+        end
+        inherited TextBoxClearBtn1: TClearingEdit
+          Size.Height = 32.000000000000000000
+        end
+        inherited TreeView2: TTreeView
+          Viewport.Width = 148.000000000000000000
+          Viewport.Height = 244.000000000000000000
+        end
+        inherited ListBox2: TListBox
+          Viewport.Width = 167.000000000000000000
+          Viewport.Height = 289.000000000000000000
+        end
+      end
+    end
+  end
+  inherited StatusBar1: TStatusBar
+    Position.Y = 666.000000000000000000
+    Size.Width = 450.000000000000000000
+    inherited ScaleTrack: TTrackBar
+      Position.X = 266.000000000000000000
+      Size.Height = 32.000000000000000000
+    end
+    inherited Text1: TLabel
+      Position.X = 209.000000000000000000
+    end
+    inherited TextScale: TLabel
+      Position.X = 382.000000000000000000
+    end
+  end
+end

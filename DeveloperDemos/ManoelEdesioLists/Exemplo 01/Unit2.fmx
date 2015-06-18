@@ -1,0 +1,75 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ListBox1: TListBox
+    Position.X = 72.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    object ListBoxItem1: TListBoxItem
+      TabOrder = 0
+      Text = 'ListBoxItem1'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 19.000000000000000000
+      TabOrder = 1
+      Text = 'ListBoxItem2'
+    end
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Position.Y = 38.000000000000000000
+      TabOrder = 2
+      Text = 'ListBoxGroupHeader1'
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 57.000000000000000000
+      TabOrder = 3
+      Text = 'ListBoxItem3'
+    end
+    object ListBoxItem4: TListBoxItem
+      Position.Y = 76.000000000000000000
+      TabOrder = 4
+      Text = 'ListBoxItem4'
+    end
+    object ListBoxHeader1: TListBoxHeader
+      Size.Width = 200.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object SearchBox1: TSearchBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 1
+      Position.Y = 40.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Label1: TLabel
+    Position.X = 88.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Label1'
+  end
+  object Switch1: TSwitch
+    IsChecked = False
+    Position.X = 224.000000000000000000
+    Position.Y = 232.000000000000000000
+    TabOrder = 4
+  end
+  object StyleBook1: TStyleBook
+    Left = 200
+    Top = 296
+    ResourcesBin = {464D585F5354594C4520322E350100}
+  end
+end

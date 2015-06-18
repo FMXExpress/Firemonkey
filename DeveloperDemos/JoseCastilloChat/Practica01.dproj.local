@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/02/15 21:40:36.000.492,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/15 21:41:37.000.608,=C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/15 23:56:27.000.902,C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\AppTetheringJCR\Practica1\Unit1.pas</Transaction>
+    <Transaction>2015/02/15 23:56:27.000.952,C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Unit1.fmx=C:\AppTetheringJCR\Practica1\Unit1.fmx</Transaction>
+    <Transaction>2015/02/15 23:56:40.000.588,C:\Users\Jose Castillo\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\AppTetheringJCR\Practica1\Practica01.dproj</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+	<MobileDevice>240000000D0485C0</MobileDevice>
+</BorlandProject>

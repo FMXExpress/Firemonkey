@@ -1,0 +1,130 @@
+object Form6: TForm6
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 615
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 360
+  DesignerHeight = 640
+  DesignerDeviceName = 'Samsung Galaxy S4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 360.000000000000000000
+    object Label1: TLabel
+      Align = alContents
+      Height = 48.000000000000000000
+      Text = 'Kwikset Door (Delphi)'
+      TextAlign = taCenter
+      Width = 360.000000000000000000
+      Trimming = ttCharacter
+    end
+    object VeraLiteSwitch: TSwitch
+      Align = alRight
+      Height = 26.000000000000000000
+      IsChecked = False
+      Position.X = 284.000000000000000000
+      Position.Y = 11.000000000000000000
+      TabOrder = 1
+      Width = 76.000000000000000000
+      OnSwitch = VeraLiteSwitchSwitch
+    end
+  end
+  object ListBox1: TListBox
+    Align = alTop
+    Height = 149.000000000000000000
+    Position.Y = 48.000000000000000000
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    Width = 360.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    object ListBoxItem1: TListBoxItem
+      Height = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'VeraLite IP Address:'
+      Width = 320.000000000000000000
+      object VeraLiteEdit: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Align = alRight
+        TabOrder = 0
+        KeyboardType = vktNumbersAndPunctuation
+        Text = '10.20.10.33'
+        TextAlign = taTrailing
+        Position.X = 176.000000000000000000
+        Position.Y = 6.000000000000000000
+        Width = 140.000000000000000000
+        Height = 32.000000000000000000
+        Margins.Right = 4.000000000000000000
+        KillFocusByReturn = False
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 44.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Text = 'Lock Operation:'
+      Width = 320.000000000000000000
+      object ComboBox1: TComboBox
+        Align = alRight
+        DisableFocusEffect = False
+        Height = 32.000000000000000000
+        ItemIndex = 0
+        Margins.Right = 4.000000000000000000
+        Position.X = 216.000000000000000000
+        Position.Y = 6.000000000000000000
+        TabOrder = 0
+        Width = 100.000000000000000000
+        object TListBoxItem
+          Height = 19.000000000000000000
+          IsSelected = True
+          Text = 'Lock'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          Text = 'Unlock'
+          Width = 19.000000000000000000
+        end
+      end
+    end
+    object ListBoxItem3: TListBoxItem
+      Height = 44.000000000000000000
+      Position.Y = 88.000000000000000000
+      StyleLookup = 'listboxitemnodetail'
+      Width = 320.000000000000000000
+      object DoItButton: TButton
+        Align = alContents
+        Enabled = False
+        Height = 44.000000000000000000
+        TabOrder = 0
+        Text = 'Do It!'
+        Trimming = ttCharacter
+        Width = 320.000000000000000000
+        OnClick = DoItButtonClick
+      end
+    end
+  end
+  object RESTRequestLockOperation: TRESTRequest
+    Client = RESTClient1
+    Method = rmPUT
+    Params = <>
+    Left = 252
+    Top = 272
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    BaseURL = 'http://192.168.1.101:3480'
+    Params = <>
+    HandleRedirects = True
+    Left = 252
+    Top = 208
+  end
+end

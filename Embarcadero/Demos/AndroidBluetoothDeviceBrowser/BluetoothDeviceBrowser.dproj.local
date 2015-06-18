@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899/12/30 00:00:00.000.572,C:\Users\Bjoern\Documents\RAD Studio\Projekte\BT_TEST\Unit1.pas=C:\Users\Bjoern\Documents\RAD Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.572,C:\Users\Bjoern\Documents\RAD Studio\Projekte\BT_TEST\Unit1.fmx=C:\Users\Bjoern\Documents\RAD Studio\Projekte\Unit1.fmx</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.606,C:\Users\Bjoern\Documents\RAD Studio\Projekte\BT_TEST\Project1.dproj=C:\Users\Bjoern\Documents\RAD Studio\Projekte\Project1.dproj</Transaction>
+    <Transaction>1899/12/30 00:00:00.000.173,=C:\Users\Bjoern\Documents\RAD Studio\Projekte\Unit1.pas</Transaction>
+    <Transaction>2014/01/13 15:49:18.000.061,C:\Users\davidi\Desktop\Demos in progress\Bluetooth_LEDs_android\Android Bluetooth Device Browser\BluetoothDeviceBrowser.dproj=C:\Users\davidi\Desktop\Demos in progress\Bluetooth_LEDs_android\Android Bluetooth Device Browser\Project1.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>62dd248a</MobileDevice>
+</BorlandProject>

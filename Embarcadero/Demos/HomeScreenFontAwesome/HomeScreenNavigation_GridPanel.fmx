@@ -1,0 +1,197 @@
+object Form20: TForm20
+  Left = 0
+  Top = 0
+  Caption = 'Form20'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  DesignerMasterStyle = 2
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Label7: TLabel
+      Align = Client
+      Size.Width = 476.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Nav Font Icons'
+    end
+    object Label8: TLabel
+      Align = Left
+      StyledSettings = [Style, FontColor]
+      Size.Width = 82.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'FontAwesome'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #61641
+    end
+    object Label9: TLabel
+      Align = Right
+      StyledSettings = [Style, FontColor]
+      Position.X = 558.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'FontAwesome'
+      TextSettings.Font.Size = 30.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #61668
+    end
+  end
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 378.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ColumnCollection = <
+      item
+        Value = 50.000000000000000000
+      end
+      item
+        Value = 50.000000000000000000
+      end>
+    ControlCollection = <
+      item
+        Column = 0
+        Control = Label1
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Label2
+        Row = 0
+      end
+      item
+        Column = 0
+        Control = Label3
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = Label4
+        Row = 1
+      end
+      item
+        Column = 0
+        Control = Label5
+        Row = 2
+      end
+      item
+        Column = 1
+        Control = Label6
+        Row = 2
+      end>
+    RowCollection = <
+      item
+        Value = 33.333333333333330000
+      end
+      item
+        Value = 33.333333333333330000
+      end
+      item
+        Value = 33.333333333333330000
+      end>
+    object Label1: TLabel
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 119.000000000000000000
+      Position.Y = 38.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'FontAwesome'
+      TextSettings.Font.Size = 40.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #61485
+    end
+    object Label2: TLabel
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 439.000000000000000000
+      Position.Y = 38.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'FontAwesome'
+      TextSettings.Font.Size = 40.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #61488
+    end
+    object Label3: TLabel
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 119.000000000000000000
+      Position.Y = 164.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'FontAwesome'
+      TextSettings.Font.Size = 40.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #61555
+    end
+    object Label4: TLabel
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 439.000000000000000000
+      Position.Y = 164.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'FontAwesome'
+      TextSettings.Font.Size = 40.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #61557
+    end
+    object Label5: TLabel
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 119.000000000000000000
+      Position.Y = 290.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'FontAwesome'
+      TextSettings.Font.Size = 40.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #61664
+    end
+    object Label6: TLabel
+      Anchors = []
+      StyledSettings = [Style, FontColor]
+      Position.X = 439.000000000000000000
+      Position.Y = 290.000000000000000000
+      Size.Width = 82.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'FontAwesome'
+      TextSettings.Font.Size = 40.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = #61442
+    end
+  end
+  object SetInCode: TLabel
+    Align = Bottom
+    StyledSettings = [Style, FontColor]
+    Margins.Top = 10.000000000000000000
+    Margins.Bottom = 10.000000000000000000
+    Position.Y = 432.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 38.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Family = 'FontAwesome'
+    TextSettings.Font.Size = 30.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'SetInCode'
+  end
+end

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/06/04 20:10:50.000.499,C:\Users\Steve\Documents\Embarcadero\Studio\Projects\ProjectGroup2.groupproj=Z:\Source\RadStudioXE6\Spikes\TeatheringObject\TetheringObjectDemo.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="Z:\Source\RadStudioXE6\Spikes\TeatheringObject\Client\GuessGameClient.dproj"/>
+	</Default.Personality>
+</BorlandProject>

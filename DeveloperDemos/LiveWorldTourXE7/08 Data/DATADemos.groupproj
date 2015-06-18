@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{2BC4100F-AF60-4109-B81C-8A707471A67A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FireDAC_Demo101\FireDAC_Demo101.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FireDAC_MultiDB\FireDAC_MultiDB.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FireDAC_LocalSQL\FireDAC_LocalSQL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FireDAC_ArrayDML\FireDAC_ArrayDML.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FireDAC_Monitoring\FireDAC_Monitoring.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FireDAC_ETL\FireDAC_ETL.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="IBLIte\IBLite_Multidevice.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FireDAC_Demo101">
+        <MSBuild Projects="FireDAC_Demo101\FireDAC_Demo101.dproj"/>
+    </Target>
+    <Target Name="FireDAC_Demo101:Clean">
+        <MSBuild Projects="FireDAC_Demo101\FireDAC_Demo101.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDAC_Demo101:Make">
+        <MSBuild Projects="FireDAC_Demo101\FireDAC_Demo101.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FireDAC_MultiDB">
+        <MSBuild Projects="FireDAC_MultiDB\FireDAC_MultiDB.dproj"/>
+    </Target>
+    <Target Name="FireDAC_MultiDB:Clean">
+        <MSBuild Projects="FireDAC_MultiDB\FireDAC_MultiDB.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDAC_MultiDB:Make">
+        <MSBuild Projects="FireDAC_MultiDB\FireDAC_MultiDB.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FireDAC_LocalSQL">
+        <MSBuild Projects="FireDAC_LocalSQL\FireDAC_LocalSQL.dproj"/>
+    </Target>
+    <Target Name="FireDAC_LocalSQL:Clean">
+        <MSBuild Projects="FireDAC_LocalSQL\FireDAC_LocalSQL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDAC_LocalSQL:Make">
+        <MSBuild Projects="FireDAC_LocalSQL\FireDAC_LocalSQL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FireDAC_ArrayDML">
+        <MSBuild Projects="FireDAC_ArrayDML\FireDAC_ArrayDML.dproj"/>
+    </Target>
+    <Target Name="FireDAC_ArrayDML:Clean">
+        <MSBuild Projects="FireDAC_ArrayDML\FireDAC_ArrayDML.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDAC_ArrayDML:Make">
+        <MSBuild Projects="FireDAC_ArrayDML\FireDAC_ArrayDML.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FireDAC_Monitoring">
+        <MSBuild Projects="FireDAC_Monitoring\FireDAC_Monitoring.dproj"/>
+    </Target>
+    <Target Name="FireDAC_Monitoring:Clean">
+        <MSBuild Projects="FireDAC_Monitoring\FireDAC_Monitoring.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDAC_Monitoring:Make">
+        <MSBuild Projects="FireDAC_Monitoring\FireDAC_Monitoring.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FireDAC_ETL">
+        <MSBuild Projects="FireDAC_ETL\FireDAC_ETL.dproj"/>
+    </Target>
+    <Target Name="FireDAC_ETL:Clean">
+        <MSBuild Projects="FireDAC_ETL\FireDAC_ETL.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FireDAC_ETL:Make">
+        <MSBuild Projects="FireDAC_ETL\FireDAC_ETL.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IBLite_Multidevice">
+        <MSBuild Projects="IBLIte\IBLite_Multidevice.dproj"/>
+    </Target>
+    <Target Name="IBLite_Multidevice:Clean">
+        <MSBuild Projects="IBLIte\IBLite_Multidevice.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IBLite_Multidevice:Make">
+        <MSBuild Projects="IBLIte\IBLite_Multidevice.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FireDAC_Demo101;FireDAC_MultiDB;FireDAC_LocalSQL;FireDAC_ArrayDML;FireDAC_Monitoring;FireDAC_ETL;IBLite_Multidevice"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FireDAC_Demo101:Clean;FireDAC_MultiDB:Clean;FireDAC_LocalSQL:Clean;FireDAC_ArrayDML:Clean;FireDAC_Monitoring:Clean;FireDAC_ETL:Clean;IBLite_Multidevice:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FireDAC_Demo101:Make;FireDAC_MultiDB:Make;FireDAC_LocalSQL:Make;FireDAC_ArrayDML:Make;FireDAC_Monitoring:Make;FireDAC_ETL:Make;IBLite_Multidevice:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

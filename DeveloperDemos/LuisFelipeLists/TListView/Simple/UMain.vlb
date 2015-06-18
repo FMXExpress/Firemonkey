@@ -1,0 +1,13 @@
+﻿[ListView1]
+Coordinates=10,10,107,212
+Visible=True
+
+[PrototypeBindSource1]
+Coordinates=370,100,143,124
+
+[]
+Coordinates=126,144,91,36
+
+[BindingsList1]
+Coordinates=136,1,91,36
+

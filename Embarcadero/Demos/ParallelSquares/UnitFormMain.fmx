@@ -1,0 +1,73 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Parallel Squares'
+  ClientHeight = 435
+  ClientWidth = 361
+  Position = ScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object GridLayoutRectangles: TGridLayout
+    ItemHeight = 32.000000000000000000
+    ItemWidth = 32.000000000000000000
+    Orientation = Horizontal
+    Position.X = 16.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 329.000000000000000000
+    Size.Height = 329.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+  end
+  object ButtonStartParallelFor: TButton
+    Position.X = 200.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Parallel For loop'
+    OnClick = ButtonStartParallelForClick
+  end
+  object NumberBoxStride: TNumberBox
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Cursor = crIBeam
+    Value = 2.000000000000000000
+    Position.X = 264.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    object Label1: TLabel
+      Position.X = -65.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 53.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Stride:'
+    end
+  end
+  object CheckBoxSync: TCheckBox
+    IsChecked = True
+    Position.X = 20.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 104.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Synchronize'
+  end
+  object ButtonNormalFor: TButton
+    Position.X = 16.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Normal For loop'
+    OnClick = ButtonNormalForClick
+  end
+end

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3B6F3505-F59B-4EF1-8C56-0E4FECBF320C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ItemPerso.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\ItemPersonalizadoCpp\ItemPersoCpp.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ItemPerso">
+        <MSBuild Projects="ItemPerso.dproj"/>
+    </Target>
+    <Target Name="ItemPerso:Clean">
+        <MSBuild Projects="ItemPerso.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ItemPerso:Make">
+        <MSBuild Projects="ItemPerso.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ItemPersoCpp">
+        <MSBuild Projects="..\ItemPersonalizadoCpp\ItemPersoCpp.cbproj"/>
+    </Target>
+    <Target Name="ItemPersoCpp:Clean">
+        <MSBuild Projects="..\ItemPersonalizadoCpp\ItemPersoCpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ItemPersoCpp:Make">
+        <MSBuild Projects="..\ItemPersonalizadoCpp\ItemPersoCpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ItemPerso;ItemPersoCpp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ItemPerso:Clean;ItemPersoCpp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ItemPerso:Make;ItemPersoCpp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

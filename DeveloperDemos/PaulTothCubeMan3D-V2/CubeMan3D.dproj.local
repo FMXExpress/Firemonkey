@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<BT_BuildType>AppStore</BT_BuildType>
+	<Transactions>
+    <Transaction>2014/01/04 14:42:26.000.355,=C:\Users\Sever 32bits\Documents\RAD Studio\Projects\CubeMan3D\Unit1.pas</Transaction>
+    <Transaction>2014/01/04 14:42:34.000.109,C:\Users\Sever 32bits\Documents\RAD Studio\Projects\CubeMan3D\Execute.CrossGL.pas=C:\Users\Sever 32bits\Documents\RAD Studio\Projects\CubeMan3D\Unit1.pas</Transaction>
+  </Transactions>
+	<MobileDevice>iPhone</MobileDevice>
+</BorlandProject>

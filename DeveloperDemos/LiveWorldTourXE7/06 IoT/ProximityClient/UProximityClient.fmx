@@ -1,0 +1,221 @@
+object frmProximityForm: TfrmProximityForm
+  Left = 0
+  Top = 0
+  Caption = 'Form6'
+  ClientHeight = 480
+  ClientWidth = 302
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object pnlLog: TPanel
+    Align = Client
+    Size.Width = 302.000000000000000000
+    Size.Height = 31.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      Align = Client
+      Size.Width = 302.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+  end
+  object pnlMain: TPanel
+    Align = Top
+    Size.Width = 302.000000000000000000
+    Size.Height = 441.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object btnScan: TButton
+      StyledSettings = [Family, Size, FontColor]
+      Position.X = 208.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Scan'
+      TextSettings.Font.Style = [fsBold]
+      OnClick = btnScanClick
+    end
+    object lblDevice: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      Text = 'lblDevice'
+    end
+    object lblTxPower: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 104.000000000000000000
+      Position.Y = 311.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+    end
+    object lblLinkLossAlert: TLabel
+      Position.X = 7.000000000000000000
+      Position.Y = 233.000000000000000000
+      Size.Width = 110.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'LinkLoss Alert'
+    end
+    object lblImmediateAlert: TLabel
+      Position.X = 7.000000000000000000
+      Position.Y = 270.000000000000000000
+      Size.Width = 146.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'lblImmediateAlert'
+    end
+    object Button1: TButton
+      Position.X = 224.000000000000000000
+      Position.Y = 360.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+      Text = 'Write LL Alert'
+      Visible = False
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Position.X = 224.000000000000000000
+      Position.Y = 384.000000000000000000
+      Size.Width = 65.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 11
+      Text = 'Write Immed Alert'
+      Visible = False
+      OnClick = Button2Click
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 13
+      Position.X = 224.000000000000000000
+      Position.Y = 408.000000000000000000
+      Size.Width = 68.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+    end
+    object lblRSSI: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 104.000000000000000000
+      Position.Y = 335.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+    end
+    object lblDistance: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 104.000000000000000000
+      Position.Y = 407.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+    end
+    object lblDist2: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 103.000000000000000000
+      Position.Y = 380.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+    end
+    object lblPosition: TLabel
+      StyledSettings = [Family, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      Text = 'lblPosition'
+    end
+    object Label1: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 335.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'RSSI:'
+    end
+    object Label2: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 7.000000000000000000
+      Position.Y = 380.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'Path Loss:'
+    end
+    object Label3: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 407.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'Distance:'
+    end
+    object Label4: TLabel
+      StyledSettings = [Family, Style, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 311.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      Text = 'Tx Power:'
+    end
+    object btnConnect: TButton
+      Enabled = False
+      StyledSettings = [Family, Size, FontColor]
+      Position.X = 208.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Connect'
+      TextSettings.Font.Style = [fsBold]
+      OnClick = btnConnectClick
+    end
+  end
+  object Splitter1: TSplitter
+    Align = Top
+    Cursor = crVSplit
+    MinSize = 20.000000000000000000
+    Position.Y = 441.000000000000000000
+    Size.Width = 302.000000000000000000
+    Size.Height = 8.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object tmrReadRSSI: TTimer
+    Enabled = False
+    Interval = 2000
+    OnTimer = tmrReadRSSITimer
+    Left = 240
+    Top = 176
+  end
+end

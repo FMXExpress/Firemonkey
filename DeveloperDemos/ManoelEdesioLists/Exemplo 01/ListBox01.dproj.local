@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/02/23 17:53:27.000.321,=C:\Documents and Settings\Administrador\Meus documentos\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
+    <Transaction>2015/02/23 17:54:04.000.587,C:\Documents and Settings\Administrador\Meus documentos\Embarcadero\Studio\Projects\Unit9.fmx=C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox01.fmx</Transaction>
+    <Transaction>2015/02/23 17:54:04.000.587,C:\Documents and Settings\Administrador\Meus documentos\Embarcadero\Studio\Projects\Unit9.pas=C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox01.pas</Transaction>
+    <Transaction>2015/02/23 17:54:07.000.415,C:\Documents and Settings\Administrador\Meus documentos\Embarcadero\Studio\Projects\Project7.dproj=C:\CodeRage III\Exemplos\Exemplo 01\ListBox0q.dproj</Transaction>
+    <Transaction>2015/02/23 17:54:14.000.868,C:\CodeRage III\Exemplos\Exemplo 01\ListBox0q.dproj=C:\CodeRage III\Exemplos\Exemplo 01\ListBox01.dproj</Transaction>
+    <Transaction>2015/02/23 18:51:47.000.868,=C:\CodeRage III\Exemplos\Exemplo 01\Unit1.pas</Transaction>
+    <Transaction>2015/02/23 19:03:59.000.852,C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox02pas.pas=C:\CodeRage III\Exemplos\Exemplo 01\Unit1.pas</Transaction>
+    <Transaction>2015/02/23 19:03:59.000.852,C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox02pas.fmx=C:\CodeRage III\Exemplos\Exemplo 01\Unit1.fmx</Transaction>
+    <Transaction>2015/02/24 18:17:34.174,=C:\CodeRage III\Exemplos\Exemplo 01\Unit3.pas</Transaction>
+    <Transaction>2015/02/24 18:17:42.315,C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox03.fmx=C:\CodeRage III\Exemplos\Exemplo 01\Unit3.fmx</Transaction>
+    <Transaction>2015/02/24 18:17:42.315,C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox03.pas=C:\CodeRage III\Exemplos\Exemplo 01\Unit3.pas</Transaction>
+    <Transaction>2015/02/24 18:30:55.158,C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox03.pas=</Transaction>
+    <Transaction>2015/02/24 19:00:17.158,=C:\CodeRage III\Exemplos\Exemplo 01\Unit2.pas</Transaction>
+    <Transaction>2015/02/24 22:39:28.798,C:\CodeRage III\Exemplos\Exemplo 01\Unit2.pas=</Transaction>
+    <Transaction>2015/02/24 22:40:33.533,=C:\CodeRage III\Exemplos\Exemplo 01\Unit3.pas</Transaction>
+  </Transactions>
+</BorlandProject>

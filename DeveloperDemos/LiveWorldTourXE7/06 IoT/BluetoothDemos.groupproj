@@ -1,0 +1,96 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BBC3480A-7AFE-4569-BEF2-D61E91EE16AB}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ProximityClient\ProximityClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ProximityServer\ProximityServer.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="HeartRateMonitorCPP\HeartRateMonitorCpp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="HeartrateBluetoothXE7\HeartRateMonitorLE.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Classic Bluetooth Basic app\ClBluetooth.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BlueChat\BlueChat.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ProximityClient">
+        <MSBuild Projects="ProximityClient\ProximityClient.dproj"/>
+    </Target>
+    <Target Name="ProximityClient:Clean">
+        <MSBuild Projects="ProximityClient\ProximityClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProximityClient:Make">
+        <MSBuild Projects="ProximityClient\ProximityClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProximityServer">
+        <MSBuild Projects="ProximityServer\ProximityServer.dproj"/>
+    </Target>
+    <Target Name="ProximityServer:Clean">
+        <MSBuild Projects="ProximityServer\ProximityServer.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProximityServer:Make">
+        <MSBuild Projects="ProximityServer\ProximityServer.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="HeartRateMonitorCpp">
+        <MSBuild Projects="HeartRateMonitorCPP\HeartRateMonitorCpp.cbproj"/>
+    </Target>
+    <Target Name="HeartRateMonitorCpp:Clean">
+        <MSBuild Projects="HeartRateMonitorCPP\HeartRateMonitorCpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HeartRateMonitorCpp:Make">
+        <MSBuild Projects="HeartRateMonitorCPP\HeartRateMonitorCpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="HeartRateMonitorLE">
+        <MSBuild Projects="HeartrateBluetoothXE7\HeartRateMonitorLE.dproj"/>
+    </Target>
+    <Target Name="HeartRateMonitorLE:Clean">
+        <MSBuild Projects="HeartrateBluetoothXE7\HeartRateMonitorLE.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="HeartRateMonitorLE:Make">
+        <MSBuild Projects="HeartrateBluetoothXE7\HeartRateMonitorLE.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClBluetooth">
+        <MSBuild Projects="Classic Bluetooth Basic app\ClBluetooth.dproj"/>
+    </Target>
+    <Target Name="ClBluetooth:Clean">
+        <MSBuild Projects="Classic Bluetooth Basic app\ClBluetooth.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClBluetooth:Make">
+        <MSBuild Projects="Classic Bluetooth Basic app\ClBluetooth.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BlueChat">
+        <MSBuild Projects="BlueChat\BlueChat.dproj"/>
+    </Target>
+    <Target Name="BlueChat:Clean">
+        <MSBuild Projects="BlueChat\BlueChat.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BlueChat:Make">
+        <MSBuild Projects="BlueChat\BlueChat.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ProximityClient;ProximityServer;HeartRateMonitorCpp;HeartRateMonitorLE;ClBluetooth;BlueChat"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ProximityClient:Clean;ProximityServer:Clean;HeartRateMonitorCpp:Clean;HeartRateMonitorLE:Clean;ClBluetooth:Clean;BlueChat:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ProximityClient:Make;ProximityServer:Make;HeartRateMonitorCpp:Make;HeartRateMonitorLE:Make;ClBluetooth:Make;BlueChat:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,49 @@
+#------------------------------------------------------------------------------
+VERSION = BWS.01
+#------------------------------------------------------------------------------
+!ifndef ROOT
+ROOT = $(MAKEDIR)\..
+!endif
+#------------------------------------------------------------------------------
+MAKE = $(ROOT)\bin\make.exe -$(MAKEFLAGS) -f$**
+DCC = $(ROOT)\bin\dcc32.exe $**
+BRCC = $(ROOT)\bin\brcc32.exe $**
+#------------------------------------------------------------------------------
+PROJECTS = dsynapse.bpl dbauglirwebsocket.bpl dsuperobject.bpl delphileapr.bpl \
+  delphileapd.bpl fingers.exe tapdemo.exe swipedemo.exe circledemo.exe \
+  combined.exe
+#------------------------------------------------------------------------------
+default: $(PROJECTS)
+#------------------------------------------------------------------------------
+
+delphileapr.bpl: delphileapr.dpk
+  $(DCC)
+
+dsuperobject.bpl: Delphi\SuperObject\dsuperobject.dpk
+  $(DCC)
+
+dsynapse.bpl: Delphi\synapse\dsynapse.dpk
+  $(DCC)
+
+dbauglirwebsocket.bpl: Delphi\websockets\dbauglirwebsocket.dpk
+  $(DCC)
+
+delphileapd.bpl: delphileapd.dpk
+  $(DCC)
+
+fingers.exe: Delphi\Fingers\fingers.dpr
+  $(DCC)
+
+tapdemo.exe: Delphi\TapDemo\tapdemo.dpr
+  $(DCC)
+
+swipedemo.exe: Delphi\SwipeDemo\swipedemo.dpr
+  $(DCC)
+
+circledemo.exe: Delphi\CircleDemo\circledemo.dpr
+  $(DCC)
+
+combined.exe: Delphi\Combined\combined.dpr
+  $(DCC)
+
+

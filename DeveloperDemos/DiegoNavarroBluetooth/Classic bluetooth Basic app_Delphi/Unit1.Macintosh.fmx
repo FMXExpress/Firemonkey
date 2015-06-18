@@ -1,0 +1,27 @@
+inherited Form1_Macintosh: TForm1_Macintosh
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    inherited TabControl1: TTabControl
+      inherited TabItem2: TTabItem
+        inherited PanelClient: TPanel
+          Position.X = 1.000000000000000000
+          inherited LabelClient: TLabel
+            Position.Y = -1.000000000000000000
+          end
+        end
+        inherited PanelServer: TPanel
+          Position.X = 1.000000000000000000
+          inherited LabelServer: TLabel
+            Position.Y = 1.000000000000000000
+          end
+        end
+      end
+    end
+    inherited Labeldiscoverable: TLabel
+      TextSettings.Font.Size = 14.000000000000000000
+    end
+    inherited DisplayR: TMemo
+      Position.X = -1.000000000000000000
+    end
+  end
+end

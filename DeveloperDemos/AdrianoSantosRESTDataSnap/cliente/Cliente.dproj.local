@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/12/08 15:35:07.000.789,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/10 10:42:04.000.605,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/11 14:44:07.000.801,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/18 15:13:31.000.591,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/18 15:18:07.000.572,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/18 15:24:40.000.568,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/18 15:49:27.000.495,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/18 15:57:09.000.549,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/18 15:59:26.000.658,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/18 16:03:17.000.967,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/12/30 09:04:07.000.844,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/01/20 16:14:54.000.286,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/02 15:01:39.000.879,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/09 11:20:42.000.204,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/02/09 12:05:57.000.767,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/03/03 14:16:13.000.968,=C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2015/03/03 14:21:23.000.737,C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit2.fmx=C:\CodeRage Brasil III\cliente\UntMain.fmx</Transaction>
+    <Transaction>2015/03/03 14:21:23.000.737,C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Unit2.pas=C:\CodeRage Brasil III\cliente\UntMain.pas</Transaction>
+    <Transaction>2015/03/03 14:21:33.000.374,C:\Users\adrianosantos\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\CodeRage Brasil III\cliente\Cliente.dproj</Transaction>
+    <Transaction>2015/03/03 14:31:45.000.777,=C:\CodeRage Brasil III\cliente\ClientModuleUnit1.pas</Transaction>
+    <Transaction>2015/03/03 14:31:45.000.012,=C:\CodeRage Brasil III\cliente\ClientClassesUnit1.pas</Transaction>
+    <Transaction>2015/03/03 14:32:26.000.160,C:\CodeRage Brasil III\cliente\ClientClassesUnit1.pas=C:\CodeRage Brasil III\cliente\Proxy.pas</Transaction>
+  </Transactions>
+</BorlandProject>

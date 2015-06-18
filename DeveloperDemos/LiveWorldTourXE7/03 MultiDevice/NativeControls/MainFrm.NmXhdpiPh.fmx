@@ -1,0 +1,53 @@
+inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 2
+  inherited ToolBar1: TToolBar
+    Size.Width = 400.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 400.000000000000000000
+    end
+  end
+  inherited Layout1: TLayout
+    Size.Width = 400.000000000000000000
+    Size.Height = 571.000000000000000000
+    inherited Calendar1: TCalendar
+      Position.X = 27.000000000000000000
+      Size.Width = 346.000000000000000000
+      Size.Height = 300.000000000000000000
+    end
+    inherited Edit1: TEdit
+      Size.Width = 380.000000000000000000
+    end
+    inherited Edit2: TEdit
+      Size.Width = 380.000000000000000000
+    end
+    inherited Edit3: TEdit
+      Size.Width = 380.000000000000000000
+      inherited ClearEditButton2: TClearEditButton
+        Size.Height = 30.000000000000000000
+      end
+    end
+    inherited Edit4: TEdit
+      Size.Width = 380.000000000000000000
+      inherited ClearEditButton1: TClearEditButton
+        Size.Height = 30.000000000000000000
+      end
+    end
+    inherited Label2: TLabel
+      Size.Width = 380.000000000000000000
+    end
+    inherited Label3: TLabel
+      Size.Width = 380.000000000000000000
+    end
+    inherited Label4: TLabel
+      Size.Width = 380.000000000000000000
+    end
+    inherited Label5: TLabel
+      Size.Width = 380.000000000000000000
+    end
+    inherited Label6: TLabel
+      Size.Width = 380.000000000000000000
+    end
+  end
+end

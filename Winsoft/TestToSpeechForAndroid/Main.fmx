@@ -1,0 +1,35 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'TTS'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ButtonSay: TButton
+    Align = Top
+    Enabled = False
+    Height = 44.000000000000000000
+    TabOrder = 1
+    Text = 'Say'
+    Width = 384.000000000000000000
+    OnClick = ButtonSayClick
+  end
+  object Memo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Client
+    Height = 523.000000000000000000
+    TabOrder = 2
+    Width = 384.000000000000000000
+    Lines.Strings = (
+      'Hello, world!')
+  end
+end

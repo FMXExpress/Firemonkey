@@ -1,0 +1,36 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  ClientHeight = 380
+  ClientWidth = 347
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object StringGrid: TStringGrid
+    Align = Client
+    Size.Width = 347.000000000000000000
+    Size.Height = 380.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Options = [ColumnResize, ColumnMove, RowLines, RowSelect, Tabs]
+    RowCount = 26
+    RowHeight = 25.000000000000000000
+    object StringColumnName: TStringColumn
+      ReadOnly = True
+      Size.Width = 130.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object StringColumnValue: TStringColumn
+      Align = Client
+      ReadOnly = True
+      Size.Width = 342.000000000000000000
+      Size.Height = 375.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+end

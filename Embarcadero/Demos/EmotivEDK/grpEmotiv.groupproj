@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{02FFCEA2-52FC-47EB-9B0C-8593DE59A951}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Packages\XE2\EmotivEDK.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Demos\XE2\BasicEmotivTest\BasicEmotivTest.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="EmotivEDK">
+        <MSBuild Projects="Packages\XE2\EmotivEDK.dproj"/>
+    </Target>
+    <Target Name="EmotivEDK:Clean">
+        <MSBuild Projects="Packages\XE2\EmotivEDK.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="EmotivEDK:Make">
+        <MSBuild Projects="Packages\XE2\EmotivEDK.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BasicEmotivTest">
+        <MSBuild Projects="Demos\XE2\BasicEmotivTest\BasicEmotivTest.dproj"/>
+    </Target>
+    <Target Name="BasicEmotivTest:Clean">
+        <MSBuild Projects="Demos\XE2\BasicEmotivTest\BasicEmotivTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BasicEmotivTest:Make">
+        <MSBuild Projects="Demos\XE2\BasicEmotivTest\BasicEmotivTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="EmotivEDK;BasicEmotivTest"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="EmotivEDK:Clean;BasicEmotivTest:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="EmotivEDK:Make;BasicEmotivTest:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

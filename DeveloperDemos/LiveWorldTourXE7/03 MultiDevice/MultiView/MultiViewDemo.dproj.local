@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/09/07 21:08:57.000.600,=C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/09/07 21:09:17.000.991,C:\Users\Administrador\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\DTOURXE7\05 MultiDevice\MultiView\MultiViewDemos.dproj</Transaction>
+    <Transaction>2014/09/07 21:09:26.000.309,=C:\DTOURXE7\05 MultiDevice\MultiView\MainFrm.pas</Transaction>
+    <Transaction>2014/09/07 21:09:26.000.218,=C:\DTOURXE7\05 MultiDevice\MultiView\FMX.MultiView.CustomPresentation.pas</Transaction>
+    <Transaction>2014/09/07 21:13:58.000.594,C:\DTOURXE7\05 MultiDevice\MultiView\MultiViewDemo.dproj=C:\DTOURXE7\05 MultiDevice\MultiView\MultiViewDemos.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+</BorlandProject>

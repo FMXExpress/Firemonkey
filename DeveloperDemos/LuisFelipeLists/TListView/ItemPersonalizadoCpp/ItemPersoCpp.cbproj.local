@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2015/02/17 13:43:48.239,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.cpp</Transaction>
+    <Transaction>2015/02/17 13:43:48.561,=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project11PCH1.h</Transaction>
+    <Transaction>2015/02/17 13:44:12.380,C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizadoCpp\UMain.cpp=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.cpp</Transaction>
+    <Transaction>2015/02/17 13:44:12.380,C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizadoCpp\UMain.h=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.h</Transaction>
+    <Transaction>2015/02/17 13:44:12.380,C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizadoCpp\UMain.fmx=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Unit6.fmx</Transaction>
+    <Transaction>2015/02/17 13:44:15.276,C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizadoCpp\Project11PCH1.h=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project11PCH1.h</Transaction>
+    <Transaction>2015/02/17 13:44:22.150,C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizadoCpp\ItemPersoCppPCH1.h=C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizadoCpp\Project11PCH1.h</Transaction>
+    <Transaction>2015/02/17 13:44:22.178,C:\Developer\MVP\CodeRageII\TListView\ItemPersonalizadoCpp\ItemPersoCpp.cbproj=C:\Users\lfgonzalez\Documents\Embarcadero\Studio\Projects\Project11.cbproj</Transaction>
+  </Transactions>
+  <MobileDevice>a5a418af</MobileDevice>
+</BorlandProject>

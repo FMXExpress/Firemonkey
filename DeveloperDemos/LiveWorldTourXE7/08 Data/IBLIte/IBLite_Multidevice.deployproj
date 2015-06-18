@@ -1,0 +1,1391 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+    <ProjectExtensions>
+        <ProjectFileVersion>12</ProjectFileVersion>
+    </ProjectExtensions>
+    <ItemGroup Condition="'$(Platform)'=='Android'">
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\ibconfig" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>ibconfig</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\license.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\license.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\ibconfig" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>ibconfig</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\admin.ib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\interbase.msg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\admin.ib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\android\interbase\interbase.msg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\assets\internal\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSDevice'">
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\interbase.msg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\license.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\admin.ib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\admin.ib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\ibconfig" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>ibconfig</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\license.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\ibconfig" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>ibconfig</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_device\interbase\interbase.msg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win32'">
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\ibtogo.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>ibtogo.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win32\Debug\IBLite_Multidevice.exe" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>IBLite_Multidevice.exe</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\ADMIN.IB" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\intl\gdsintl.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="Win32\Release\IBLite_Multidevice.exe" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>IBLite_Multidevice.exe</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\intl\gdsintl.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\interbase.msg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\ibtogo.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>ibtogo.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\ADMIN.IB" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\license.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\license.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\interbase.msg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win32_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='OSX32'">
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\license.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX32\Release\IBLite_Multidevice.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\libibtogo.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libibtogo.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\delphi_PROJECTICNS.icns" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\Resources\</RemoteDir>
+            <RemoteName>IBLite_Multidevice.icns</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\libibtogo.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libibtogo.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\intl\gdsintl" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX32\Release\IBLite_Multidevice" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\</RemoteDir>
+            <RemoteName>IBLite_Multidevice</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\license.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\interbase.msg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\intl\gdsintl" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\admin.ib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\interbase.msg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\osx32_togo\interbase\admin.ib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\MacOS\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="OSX32\Release\IBLite_Multidevice.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\Contents\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='iOSSimulator'">
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\admin.ib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\libibtogo.dylib" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>libibtogo.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\license.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_100x100.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_100x100.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\libibtogo.dylib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>libibtogo.dylib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\ibconfig" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>ibconfig</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\IBLite_Multidevice.info.plist" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_144x144.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\IBLite_Multidevice" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>IBLite_Multidevice</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>libcgunwind.1.0.dylib</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_114x114.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_114x114.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2008.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_58x58.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_58x58.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_29x29.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\admin.ib" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>admin.ib</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SettingIcon_29x29.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SettingIcon_29x29.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x748.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Landscape.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_80x80.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_80x80.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_60x60.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_60x60.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_1024x768.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Landscape~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1024.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Portrait~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\IBLite_Multidevice.entitlements" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1536.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_72x72.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_72x72.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_152x152.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_152x152.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Release\IBLite_Multidevice.entitlements" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Entitlements.plist</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_57x57.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_57x57.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\interbase.msg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImageLandscape_2048x1496.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Landscape@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_ApplicationIcon_76x76.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_76x76.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\license.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_SpotlightSearchIcon_50x50.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_50x50.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x1136.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-568h@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\ibconfig" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>ibconfig</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_320x480.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_768x1004.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default~ipad.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\IBLite_Multidevice" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>IBLite_Multidevice</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+            <Required>True</Required>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="iOSSimulator\Debug\IBLite_Multidevice.info.plist" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Info.plist</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_SpotlightSearchIcon_40x40.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_SpotlightSearchIcon_40x40.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPad\FM_LaunchImagePortrait_1536x2048.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default-Portrait@2x~ipad.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\ios_sim\interbase\interbase.msg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\StartUp\Documents\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_LaunchImage_640x960.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>Default@2x.png</RemoteName>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\iOS\iPhone\FM_ApplicationIcon_120x120.png" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice.app\</RemoteDir>
+            <RemoteName>FM_ApplicationIcon_120x120.png</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+    <ItemGroup Condition="'$(Platform)'=='Win64'">
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\license.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\intl\gdsintl.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\ibtogo64.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>ibtogo64.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\ADMIN.IB" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\interbase.msg" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\ADMIN.IB" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>ADMIN.IB</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\license.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>license.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_iblite.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\license\</RemoteDir>
+            <RemoteName>reg_iblite.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\oss_license_notice.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>oss_license_notice.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\interbase.msg" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\</RemoteDir>
+            <RemoteName>interbase.msg</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Public\Documents\InterBase\redist\InterBaseXE3\reg4059_1389718114000.txt" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>reg4059_1389718114000.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\ibtogo64.dll" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\</RemoteDir>
+            <RemoteName>ibtogo64.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\reg_ibtogo.txt" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>IBLite_Multidevice\interbase\license\</RemoteDir>
+            <RemoteName>reg_ibtogo.txt</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(IBREDISTDIR)\win64_togo\interbase\intl\gdsintl.dll" Condition="'$(Config)'=='Release'">
+            <RemoteDir>IBLite_Multidevice\interbase\intl\</RemoteDir>
+            <RemoteName>gdsintl.dll</RemoteName>
+            <Operation>0</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+    </ItemGroup>
+</Project>

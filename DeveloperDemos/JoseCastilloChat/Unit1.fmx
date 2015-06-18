@@ -1,0 +1,134 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 609
+  Padding.Left = 5.000000000000000000
+  Padding.Top = 5.000000000000000000
+  Padding.Right = 5.000000000000000000
+  Padding.Bottom = 5.000000000000000000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object btnDescubrir: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Descubrir'
+    OnClick = btnDescubrirClick
+  end
+  object btnEmparejar: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 153.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Emparejar'
+    OnClick = btnEmparejarClick
+  end
+  object ListBox1: TListBox
+    Align = Bottom
+    Margins.Top = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 270.000000000000000000
+    Size.Width = 599.000000000000000000
+    Size.Height = 111.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object ListBox4: TListBox
+    Align = Bottom
+    Position.X = 5.000000000000000000
+    Position.Y = 384.000000000000000000
+    Size.Width = 599.000000000000000000
+    Size.Height = 91.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object btnConectar: TButton
+    Position.X = 192.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Conectar'
+    OnClick = btnConectarClick
+  end
+  object ComboBox1: TComboBox
+    Items.Strings = (
+      'Network'
+      'Bluetooth')
+    ItemIndex = 0
+    Position.X = 184.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 121.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    OnChange = ComboBox1Change
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Align = Bottom
+    Position.X = 5.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 599.000000000000000000
+    Size.Height = 115.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    ReadOnly = True
+  end
+  object edtMensaje: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 8.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object btnEnviarMensaje: TButton
+    Position.X = 208.000000000000000000
+    Position.Y = 116.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 29.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Mensaje'
+    OnClick = btnEnviarMensajeClick
+  end
+  object TetheringManager1: TTetheringManager
+    OnEndManagersDiscovery = TetheringManager1EndManagersDiscovery
+    OnEndProfilesDiscovery = TetheringManager1EndProfilesDiscovery
+    Text = 'TetheringManager1'
+    AllowedAdapters = 'Network'
+    Left = 72
+    Top = 200
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Manager = TetheringManager1
+    Text = 'TetheringAppProfile1'
+    Actions = <>
+    Resources = <>
+    OnAcceptResource = TetheringAppProfile1AcceptResource
+    OnResourceReceived = TetheringAppProfile1ResourceReceived
+    Left = 200
+    Top = 208
+  end
+end

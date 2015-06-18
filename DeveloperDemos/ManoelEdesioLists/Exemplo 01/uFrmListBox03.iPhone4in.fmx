@@ -1,0 +1,63 @@
+inherited Form3_iPhone4in: TForm3_iPhone4in
+  ClientHeight = 548
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited ListBox1: TListBox
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 548.000000000000000000
+    Size.PlatformDefault = False
+    inherited ListBoxItem1: TListBoxItem
+      Text = 'Wi-fi'
+    end
+    inherited ListBoxItem2: TListBoxItem
+      ItemData.Detail = 'Inativo'
+      ItemData.Accessory = aMore
+      Position.Y = 44.000000000000000000
+      Text = 'Bluetooth'
+    end
+    inherited ListBoxGroupHeader1: TListBoxGroupHeader
+      Position.Y = 88.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Ajustes'
+    end
+    inherited ListBoxItem3: TListBoxItem
+      Position.Y = 110.000000000000000000
+      Text = 'Acesso Pessoal'
+    end
+    inherited ListBoxItem4: TListBoxItem
+      Position.Y = 154.000000000000000000
+      Text = 'Sons'
+    end
+    inherited ListBoxHeader1: TListBoxHeader
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+    inherited SearchBox1: TSearchBox
+      Position.Y = 44.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+    end
+  end
+  inherited Label1: TLabel
+    Position.X = 80.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 21.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Configura'#231#245'es'
+  end
+  inherited Switch1: TSwitch
+    IsChecked = True
+    Position.X = 248.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inherited StyleBook1: TStyleBook
+    Left = 248
+    Top = 304
+  end
+end

@@ -1,0 +1,84 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{C8CC66F9-A30D-4BA9-869D-99884EF82496}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MultiTouch\ProjectMultiTouchDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PullToRefresh\PullToRefresh.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PlatformControls\PlatformControls.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NativeControls\NativeControlsDemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MultiView\MultiViewDemo.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ProjectMultiTouchDemo">
+        <MSBuild Projects="MultiTouch\ProjectMultiTouchDemo.dproj"/>
+    </Target>
+    <Target Name="ProjectMultiTouchDemo:Clean">
+        <MSBuild Projects="MultiTouch\ProjectMultiTouchDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProjectMultiTouchDemo:Make">
+        <MSBuild Projects="MultiTouch\ProjectMultiTouchDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PullToRefresh">
+        <MSBuild Projects="PullToRefresh\PullToRefresh.dproj"/>
+    </Target>
+    <Target Name="PullToRefresh:Clean">
+        <MSBuild Projects="PullToRefresh\PullToRefresh.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PullToRefresh:Make">
+        <MSBuild Projects="PullToRefresh\PullToRefresh.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PlatformControls">
+        <MSBuild Projects="PlatformControls\PlatformControls.dproj"/>
+    </Target>
+    <Target Name="PlatformControls:Clean">
+        <MSBuild Projects="PlatformControls\PlatformControls.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PlatformControls:Make">
+        <MSBuild Projects="PlatformControls\PlatformControls.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NativeControlsDemo">
+        <MSBuild Projects="NativeControls\NativeControlsDemo.dproj"/>
+    </Target>
+    <Target Name="NativeControlsDemo:Clean">
+        <MSBuild Projects="NativeControls\NativeControlsDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NativeControlsDemo:Make">
+        <MSBuild Projects="NativeControls\NativeControlsDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MultiViewDemo">
+        <MSBuild Projects="MultiView\MultiViewDemo.dproj"/>
+    </Target>
+    <Target Name="MultiViewDemo:Clean">
+        <MSBuild Projects="MultiView\MultiViewDemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MultiViewDemo:Make">
+        <MSBuild Projects="MultiView\MultiViewDemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ProjectMultiTouchDemo;PullToRefresh;PlatformControls;NativeControlsDemo;MultiViewDemo"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ProjectMultiTouchDemo:Clean;PullToRefresh:Clean;PlatformControls:Clean;NativeControlsDemo:Clean;MultiViewDemo:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ProjectMultiTouchDemo:Make;PullToRefresh:Make;PlatformControls:Make;NativeControlsDemo:Make;MultiViewDemo:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

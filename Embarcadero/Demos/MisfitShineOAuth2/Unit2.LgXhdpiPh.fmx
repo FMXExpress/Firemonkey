@@ -1,0 +1,38 @@
+inherited Form2_LgXhdpiPh: TForm2_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Memo1: TMemo
+    Position.Y = 544.000000000000000000
+    Size.Width = 450.000000000000000000
+  end
+  inherited Container: TPanel
+    Size.Width = 450.000000000000000000
+    Size.Height = 544.000000000000000000
+    inherited UserPanel: TPanel
+      Size.Width = 450.000000000000000000
+      Size.Height = 544.000000000000000000
+      inherited UserIDPanel: TPanel
+        Size.Width = 450.000000000000000000
+        inherited ActiveUserIDLabel: TLabel
+          Position.X = 160.000000000000000000
+          Size.Width = 290.000000000000000000
+        end
+      end
+      inherited StepsPanel: TPanel
+        Size.Width = 450.000000000000000000
+        inherited ActiveStepsLabel: TLabel
+          Position.X = 160.000000000000000000
+          Size.Width = 290.000000000000000000
+        end
+      end
+      inherited Panel1: TPanel
+        Size.Width = 450.000000000000000000
+        inherited ActiveNameLabel: TLabel
+          Position.X = 152.000000000000000000
+          Size.Width = 298.000000000000000000
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,35 @@
+object FormGradientsFun1: TFormGradientsFun1
+  Left = 0
+  Top = 0
+  Caption = 'Form29'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object Rectangle1: TRectangle
+    Align = alClient
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFCDCCB0
+        Offset = 0.221153840422630300
+      end
+      item
+        Color = xFFED7A7A
+        Offset = 0.740384638309478800
+      end>
+    Fill.Gradient.StartPosition.X = 0.919549822807312000
+    Fill.Gradient.StartPosition.Y = 1.000000000000000000
+    Fill.Gradient.StopPosition.X = 0.080450169742107390
+    Fill.Gradient.StopPosition.Y = 0.000000004811006704
+    Height = 460.000000000000000000
+    Width = 320.000000000000000000
+  end
+end

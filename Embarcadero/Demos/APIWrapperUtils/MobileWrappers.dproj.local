@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/11/18 16:18:17.000.671,=C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/11/18 16:19:10.000.054,C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\OpenURL\uMainForm.pas</Transaction>
+    <Transaction>2013/11/18 16:19:10.000.054,C:\Users\Administrador\Documents\RAD Studio\Projects\Unit1.fmx=C:\Users\Administrador\Documents\RAD Studio\Projects\OpenURL\uMainForm.fmx</Transaction>
+    <Transaction>2013/11/18 16:19:13.000.852,C:\Users\Administrador\Documents\RAD Studio\Projects\Project1.dproj=C:\Users\Administrador\Documents\RAD Studio\Projects\OpenURL\OpenURL.dproj</Transaction>
+    <Transaction>2013/11/18 16:19:19.000.820,=C:\Users\Administrador\Documents\RAD Studio\Projects\OpenURL\Unit1.pas</Transaction>
+    <Transaction>2013/11/18 16:19:33.000.626,C:\Users\Administrador\Documents\RAD Studio\Projects\OpenURL\Unit1.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\OpenURL\OpenViewUrl.pas</Transaction>
+    <Transaction>2013/11/20 10:22:05.000.801,=C:\Users\Administrador\Documents\RAD Studio\Projects\OpenURL\Unit1.pas</Transaction>
+    <Transaction>2013/11/20 10:22:27.000.160,C:\Users\Administrador\Documents\RAD Studio\Projects\OpenURL\Network.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\OpenURL\Unit1.pas</Transaction>
+    <Transaction>2013/11/20 11:20:05.000.424,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\MobileWrappers.dproj=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\OpenURL.dproj</Transaction>
+    <Transaction>2013/11/26 18:43:25.000.556,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Network.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Network.Android.pas</Transaction>
+    <Transaction>2013/11/26 18:48:30.000.202,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas</Transaction>
+    <Transaction>2013/11/26 18:48:36.000.276,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Network.pas</Transaction>
+    <Transaction>2013/11/26 18:57:00.000.641,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Network.Android.pas=</Transaction>
+    <Transaction>2013/11/26 18:58:43.000.135,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Network.Android.pas</Transaction>
+    <Transaction>2013/11/26 18:58:44.000.003,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Network.iOS.pas</Transaction>
+    <Transaction>2013/11/26 19:10:30.000.431,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Network.iOS.pas=</Transaction>
+    <Transaction>2013/11/26 19:10:33.000.484,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Network.Android.pas=</Transaction>
+    <Transaction>2013/11/26 20:18:03.000.623,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\NetworkWrapper.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Network.pas</Transaction>
+    <Transaction>2013/11/27 12:25:11.000.545,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas</Transaction>
+    <Transaction>2013/11/27 12:25:36.000.407,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Contacts.Android.pas</Transaction>
+    <Transaction>2013/11/27 13:32:43.000.490,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Contacts.Android.pas=</Transaction>
+    <Transaction>2013/11/29 14:47:03.000.640,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas</Transaction>
+    <Transaction>2013/11/29 14:47:15.000.385,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\SendMail.Android.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas</Transaction>
+    <Transaction>2013/11/29 14:48:21.000.402,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\SendMail.Android.pas=</Transaction>
+    <Transaction>2013/11/29 14:54:34.000.755,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas</Transaction>
+    <Transaction>2013/11/29 14:54:41.000.764,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\SendMail.iOS.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas</Transaction>
+    <Transaction>2013/11/29 14:54:46.000.652,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\SendMail.iOS.pas=</Transaction>
+    <Transaction>2013/12/26 14:39:56.000.915,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\NetworkWrapper.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\NetworkState.pas</Transaction>
+    <Transaction>2013/12/26 15:12:54.000.396,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\SendMail.pas</Transaction>
+    <Transaction>2013/12/27 14:19:00.000.452,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\BluetoothAdapter.pas</Transaction>
+    <Transaction>2014/01/06 14:15:47.000.512,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas</Transaction>
+    <Transaction>2014/01/06 14:16:02.000.661,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\uSplashScreen.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.pas</Transaction>
+    <Transaction>2014/01/06 14:16:02.000.661,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\uSplashScreen.fmx=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\Unit1.fmx</Transaction>
+    <Transaction>2014/01/09 12:00:32.000.545,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\ZBarReader.pas</Transaction>
+    <Transaction>2014/01/09 12:32:08.000.714,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\ZBarReader.pas=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\BarCodeReader.pas</Transaction>
+    <Transaction>2014/01/09 15:45:02.000.746,=C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\ToastMessage.pas</Transaction>
+    <Transaction>2014/04/09 11:16:43.000.018,C:\Users\Administrador\Documents\RAD Studio\Projects\MobileWrappers\BluetoothAdapter.pas=</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+</BorlandProject>

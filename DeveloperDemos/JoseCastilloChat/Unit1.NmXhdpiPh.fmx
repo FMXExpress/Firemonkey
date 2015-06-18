@@ -1,0 +1,8 @@
+inherited Form1_NmXhdpiPh: TForm1_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 0
+  inherited ComboBox1: TComboBox
+    Size.Height = 32.000000000000000000
+  end
+end

@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0B5C7B4C-F443-4C52-931B-BABB4B1B82B1}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Android\DelphiAndroidBarCodeReaderApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="iOS\Barcode.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DelphiAndroidBarCodeReaderApp">
+        <MSBuild Projects="Android\DelphiAndroidBarCodeReaderApp.dproj"/>
+    </Target>
+    <Target Name="DelphiAndroidBarCodeReaderApp:Clean">
+        <MSBuild Projects="Android\DelphiAndroidBarCodeReaderApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DelphiAndroidBarCodeReaderApp:Make">
+        <MSBuild Projects="Android\DelphiAndroidBarCodeReaderApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Barcode">
+        <MSBuild Projects="iOS\Barcode.dproj"/>
+    </Target>
+    <Target Name="Barcode:Clean">
+        <MSBuild Projects="iOS\Barcode.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Barcode:Make">
+        <MSBuild Projects="iOS\Barcode.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DelphiAndroidBarCodeReaderApp;Barcode"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DelphiAndroidBarCodeReaderApp:Clean;Barcode:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DelphiAndroidBarCodeReaderApp:Make;Barcode:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

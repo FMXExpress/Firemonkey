@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/09/08 11:35:09.000.343,C:\DTOURXE7\06 IoT\HeartRateMonitorCPP\HearRateMonitorCppPCH1.h=C:\DTOURXE7\06 IoT\HeartRateMonitorCPP\HeartRateMonitorCppPCH1.h</Transaction>
+    <Transaction>2014/09/08 11:35:09.000.387,C:\DTOURXE7\06 IoT\HeartRateMonitorCPP\HearRateMonitorCpp.cbproj=C:\DTOURXE7\06 IoT\HeartRateMonitorCPP\HeartRateMonitorCpp.cbproj</Transaction>
+  </Transactions>
+	<MobileDevice>04db9f214811d5d3</MobileDevice>
+</BorlandProject>

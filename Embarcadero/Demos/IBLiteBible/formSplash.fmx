@@ -1,0 +1,32 @@
+object frmSplash: TfrmSplash
+  Left = 0
+  Top = 0
+  Caption = 'Loading'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object Label2: TLabel
+    Align = Top
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 384.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 40.000000000000000000
+    TextSettings.HorzAlign = Center
+    Text = 'Bible Buddie'
+  end
+  object Label3: TLabel
+    Align = Bottom
+    Position.Y = 507.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    TextSettings.VertAlign = Leading
+    Text = 'Based on King James Bible (1611 Authorized Version)'
+  end
+end

@@ -1,0 +1,68 @@
+package dsynapse;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD OFF}
+
+requires
+  rtl;
+
+contains
+  asn1util in 'asn1util.pas',
+  blcksock in 'blcksock.pas',
+  clamsend in 'clamsend.pas',
+  dnssend in 'dnssend.pas',
+  ftpsend in 'ftpsend.pas',
+  ftptsend in 'ftptsend.pas',
+  httpsend in 'httpsend.pas',
+  imapsend in 'imapsend.pas',
+  ldapsend in 'ldapsend.pas',
+  mimeinln in 'mimeinln.pas',
+  mimemess in 'mimemess.pas',
+  mimepart in 'mimepart.pas',
+  nntpsend in 'nntpsend.pas',
+  pingsend in 'pingsend.pas',
+  pop3send in 'pop3send.pas',
+  slogsend in 'slogsend.pas',
+  smtpsend in 'smtpsend.pas',
+  snmpsend in 'snmpsend.pas',
+  sntpsend in 'sntpsend.pas',
+  ssl_openssl in 'ssl_openssl.pas',
+  ssl_openssl_lib in 'ssl_openssl_lib.pas',
+  synachar in 'synachar.pas',
+  synacode in 'synacode.pas',
+  synacrypt in 'synacrypt.pas',
+  synadbg in 'synadbg.pas',
+  synafpc in 'synafpc.pas',
+  synaicnv in 'synaicnv.pas',
+  synaip in 'synaip.pas',
+  synamisc in 'synamisc.pas',
+  synaser in 'synaser.pas',
+  synautil in 'synautil.pas',
+  synsock in 'synsock.pas',
+  tlntsend in 'tlntsend.pas';
+
+end.

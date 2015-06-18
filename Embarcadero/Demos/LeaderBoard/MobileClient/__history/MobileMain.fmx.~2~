@@ -1,0 +1,116 @@
+object frmMobileGuessGame: TfrmMobileGuessGame
+  Left = 0
+  Top = 0
+  Caption = 'Mobile Guessing Game'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '6'
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Height = 460.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object tabPlayer: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = True
+      StyleLookup = 'tabitemcontacts'
+      TabOrder = 0
+      Text = 'Player'
+      Width = 107.000000000000000000
+      object btnConnect: TButton
+        Align = Center
+        Height = 40.000000000000000000
+        TabOrder = 0
+        Text = 'Connect'
+        Width = 185.000000000000000000
+      end
+      object EditName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Text = 'Mark Anderson'
+        Position.X = 10.000000000000000000
+        Position.Y = 20.000000000000000000
+        Width = 300.000000000000000000
+        Height = 31.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 10.000000000000000000
+        object LabelName: TLabel
+          Height = 17.000000000000000000
+          Position.Y = -16.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'Name'
+          Width = 120.000000000000000000
+        end
+      end
+      object EditScore: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 2
+        Text = '755384'
+        Position.X = 10.000000000000000000
+        Position.Y = 71.000000000000000000
+        Width = 300.000000000000000000
+        Height = 31.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 10.000000000000000000
+        object LabelScore: TLabel
+          Height = 17.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.Y = -16.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'Score'
+          Width = 120.000000000000000000
+        end
+      end
+      object Label2: TLabel
+        Align = Bottom
+        Height = 42.000000000000000000
+        Position.Y = 369.000000000000000000
+        TextSettings.VertAlign = Leading
+        Text = 'Bitmap28'
+        Width = 320.000000000000000000
+      end
+    end
+    object tabGuess: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      StyleLookup = 'tabitemfeatured'
+      TabOrder = 0
+      Text = 'Guess'
+      Width = 107.000000000000000000
+    end
+    object tabLeaders: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 49.000000000000000000
+      IsSelected = False
+      StyleLookup = 'tabitemtoprated'
+      TabOrder = 0
+      Text = 'Leaders'
+      Width = 106.000000000000000000
+    end
+  end
+end

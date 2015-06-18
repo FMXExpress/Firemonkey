@@ -1,0 +1,144 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{74DFF62E-EF0F-4925-BA7B-9D704941DE4A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Delphi\synapse\dsynapse.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\websockets\dbauglirwebsocket.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\SuperObject\dsuperobject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="delphileapr.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="delphileapd.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\Fingers\fingers.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\TapDemo\tapdemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\SwipeDemo\swipedemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\CircleDemo\circledemo.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Delphi\Combined\combined.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="dsynapse">
+        <MSBuild Projects="Delphi\synapse\dsynapse.dproj"/>
+    </Target>
+    <Target Name="dsynapse:Clean">
+        <MSBuild Projects="Delphi\synapse\dsynapse.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dsynapse:Make">
+        <MSBuild Projects="Delphi\synapse\dsynapse.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dbauglirwebsocket">
+        <MSBuild Projects="Delphi\websockets\dbauglirwebsocket.dproj"/>
+    </Target>
+    <Target Name="dbauglirwebsocket:Clean">
+        <MSBuild Projects="Delphi\websockets\dbauglirwebsocket.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dbauglirwebsocket:Make">
+        <MSBuild Projects="Delphi\websockets\dbauglirwebsocket.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="dsuperobject">
+        <MSBuild Projects="Delphi\SuperObject\dsuperobject.dproj"/>
+    </Target>
+    <Target Name="dsuperobject:Clean">
+        <MSBuild Projects="Delphi\SuperObject\dsuperobject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="dsuperobject:Make">
+        <MSBuild Projects="Delphi\SuperObject\dsuperobject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="delphileapr">
+        <MSBuild Projects="delphileapr.dproj"/>
+    </Target>
+    <Target Name="delphileapr:Clean">
+        <MSBuild Projects="delphileapr.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="delphileapr:Make">
+        <MSBuild Projects="delphileapr.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="delphileapd">
+        <MSBuild Projects="delphileapd.dproj"/>
+    </Target>
+    <Target Name="delphileapd:Clean">
+        <MSBuild Projects="delphileapd.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="delphileapd:Make">
+        <MSBuild Projects="delphileapd.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="fingers">
+        <MSBuild Projects="Delphi\Fingers\fingers.dproj"/>
+    </Target>
+    <Target Name="fingers:Clean">
+        <MSBuild Projects="Delphi\Fingers\fingers.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="fingers:Make">
+        <MSBuild Projects="Delphi\Fingers\fingers.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="tapdemo">
+        <MSBuild Projects="Delphi\TapDemo\tapdemo.dproj"/>
+    </Target>
+    <Target Name="tapdemo:Clean">
+        <MSBuild Projects="Delphi\TapDemo\tapdemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="tapdemo:Make">
+        <MSBuild Projects="Delphi\TapDemo\tapdemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="swipedemo">
+        <MSBuild Projects="Delphi\SwipeDemo\swipedemo.dproj"/>
+    </Target>
+    <Target Name="swipedemo:Clean">
+        <MSBuild Projects="Delphi\SwipeDemo\swipedemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="swipedemo:Make">
+        <MSBuild Projects="Delphi\SwipeDemo\swipedemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="circledemo">
+        <MSBuild Projects="Delphi\CircleDemo\circledemo.dproj"/>
+    </Target>
+    <Target Name="circledemo:Clean">
+        <MSBuild Projects="Delphi\CircleDemo\circledemo.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="circledemo:Make">
+        <MSBuild Projects="Delphi\CircleDemo\circledemo.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="combined">
+        <MSBuild Projects="Delphi\Combined\combined.dproj"/>
+    </Target>
+    <Target Name="combined:Clean">
+        <MSBuild Projects="Delphi\Combined\combined.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="combined:Make">
+        <MSBuild Projects="Delphi\Combined\combined.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="dsynapse;dbauglirwebsocket;dsuperobject;delphileapr;delphileapd;fingers;tapdemo;swipedemo;circledemo;combined"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="dsynapse:Clean;dbauglirwebsocket:Clean;dsuperobject:Clean;delphileapr:Clean;delphileapd:Clean;fingers:Clean;tapdemo:Clean;swipedemo:Clean;circledemo:Clean;combined:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="dsynapse:Make;dbauglirwebsocket:Make;dsuperobject:Make;delphileapr:Make;delphileapd:Make;fingers:Make;tapdemo:Make;swipedemo:Make;circledemo:Make;combined:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,0 +1,224 @@
+<?xml version="1.0"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="9"/>
+    <General>
+      <MainUnit Value="0"/>
+      <UseXPManifest Value="True"/>
+      <ActiveWindowIndexAtStart Value="0"/>
+    </General>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <AutoIncrementBuild Value="True"/>
+      <MajorVersionNr Value="2"/>
+      <RevisionNr Value="1"/>
+      <BuildNr Value="35"/>
+      <StringTable FileDescription="Bauglir WebSocket client demo" LegalCopyright="Copyright 2011; Bronislav Klucka" ProductVersion="2.0.1.0"/>
+    </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <IgnoreBinaries Value="False"/>
+      <IncludeFileFilter Value="*.(pas|pp|inc|lfm|lpr|lrs|lpi|lpk|sh|xml)"/>
+      <ExcludeFileFilter Value="*.(bak|ppu|ppw|o|so);*~;backup"/>
+    </PublishOptions>
+    <RunParams>
+      <local>
+        <FormatVersion Value="1"/>
+        <LaunchingApplication PathPlusParams="/usr/X11R6/bin/xterm -T 'Lazarus Run Output' -e $(LazarusDir)/tools/runwait.sh $(TargetCmdLine)"/>
+      </local>
+    </RunParams>
+    <RequiredPackages Count="3">
+      <Item1>
+        <PackageName Value="bauglirwebsocket"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="laz_synapse"/>
+      </Item2>
+      <Item3>
+        <PackageName Value="LCL"/>
+      </Item3>
+    </RequiredPackages>
+    <Units Count="8">
+      <Unit0>
+        <Filename Value="ClientDemo.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="ClientDemo"/>
+        <EditorIndex Value="1"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="14" Y="3"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="mainformu.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="MainFormU"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="0"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="55"/>
+        <CursorPos X="1" Y="55"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="/usr/share/fpcsrc/2.4.0/packages/libpng/src/png.pp"/>
+        <UnitName Value="png"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="444"/>
+        <CursorPos X="1" Y="480"/>
+        <UsageCount Value="10"/>
+        <LoadedDesigner Value="True"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="/usr/lib/lazarus/0.9.28.2/lcl/graphics.pp"/>
+        <UnitName Value="Graphics"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1461"/>
+        <CursorPos X="17" Y="1461"/>
+        <UsageCount Value="10"/>
+        <LoadedDesigner Value="True"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="../../../mine/pascal/Bauglir/internet/websocket2.pas"/>
+        <UnitName Value="WebSocket2"/>
+        <TopLine Value="1042"/>
+        <CursorPos X="1" Y="1070"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="10"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="../../../mine/pascal/Bauglir/internet/customserver2.pas"/>
+        <UnitName Value="CustomServer2"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="758"/>
+        <CursorPos X="84" Y="773"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="10"/>
+        <LoadedDesigner Value="True"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="../../../synapse/source/lib/ssl_openssl.pas"/>
+        <UnitName Value="ssl_openssl"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="78"/>
+        <CursorPos X="10" Y="93"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="10"/>
+        <LoadedDesigner Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="../../../synapse/source/lib/ssl_openssl_lib.pas"/>
+        <UnitName Value="ssl_openssl_lib"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="84"/>
+        <CursorPos X="44" Y="100"/>
+        <SyntaxHighlighter Value="Delphi"/>
+        <UsageCount Value="10"/>
+        <LoadedDesigner Value="True"/>
+      </Unit7>
+    </Units>
+    <JumpHistory Count="11" HistoryIndex="10">
+      <Position1>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="45" Column="49" TopLine="23"/>
+      </Position1>
+      <Position2>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="284" Column="87" TopLine="282"/>
+      </Position2>
+      <Position3>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="159" Column="14" TopLine="137"/>
+      </Position3>
+      <Position4>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="159" Column="13" TopLine="137"/>
+      </Position4>
+      <Position5>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="159" Column="12" TopLine="137"/>
+      </Position5>
+      <Position6>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="159" Column="13" TopLine="137"/>
+      </Position6>
+      <Position7>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="12" Column="3" TopLine="1"/>
+      </Position7>
+      <Position8>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="240" Column="70" TopLine="230"/>
+      </Position8>
+      <Position9>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="77" Column="21" TopLine="59"/>
+      </Position9>
+      <Position10>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="176" Column="1" TopLine="163"/>
+      </Position10>
+      <Position11>
+        <Filename Value="mainformu.pas"/>
+        <Caret Line="225" Column="40" TopLine="221"/>
+      </Position11>
+    </JumpHistory>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="/home/bauglir/Desktop/pascal/synapse/source/lib/;/home/bauglir/Desktop/pascal/mine/pascal/Bauglir/common/;/home/bauglir/Desktop/pascal/mine/pascal/Bauglir/internet/"/>
+    </SearchPaths>
+    <Parsing>
+      <SyntaxOptions>
+        <SyntaxMode Value="Delphi"/>
+        <CStyleOperator Value="False"/>
+        <AllowLabel Value="False"/>
+        <CPPInline Value="False"/>
+        <UseAnsiStrings Value="False"/>
+      </SyntaxOptions>
+    </Parsing>
+    <Linking>
+      <Debugging>
+        <GenerateDebugInfo Value="False"/>
+        <UseLineInfoUnit Value="False"/>
+        <StripSymbols Value="True"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+    <Other>
+      <CompilerPath Value="$(CompPath)"/>
+    </Other>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="3">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+    </Exceptions>
+  </Debugging>
+  <EditorMacros Count="0"/>
+</CONFIG>

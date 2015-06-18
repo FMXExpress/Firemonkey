@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<MobileDevice>%iosdevice%5d74ae46103b312a872501214ba3efb39d45db86</MobileDevice>
+	<Transactions>
+    <Transaction>2014/09/06 14:06:18.000.879,C:\HeartrateBluetoothXE7\HeartRateMonitor.dproj=C:\HeartrateBluetoothXE7\HeartRateMonitor.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

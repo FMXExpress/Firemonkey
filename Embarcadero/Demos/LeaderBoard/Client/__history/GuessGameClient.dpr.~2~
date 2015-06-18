@@ -1,0 +1,14 @@
+program GuessGameClient;
+
+uses
+  FMX.Forms,
+  formMain in 'formMain.pas' {Form5},
+  unitGame in 'unitGame.pas';
+
+{$R *.res}
+
+begin
+  Application.Initialize;
+  Application.CreateForm(TForm5, Form5);
+  Application.Run;
+end.

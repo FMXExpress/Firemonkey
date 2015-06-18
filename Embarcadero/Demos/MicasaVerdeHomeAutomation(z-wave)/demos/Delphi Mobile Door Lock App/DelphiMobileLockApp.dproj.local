@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/01/21 14:05:32.000.520,=C:\Users\davidi\Documents\RAD Studio\Projects\Unit6.pas</Transaction>
+    <Transaction>2014/01/21 14:06:05.000.841,C:\Users\davidi\Documents\RAD Studio\Projects\Unit6.pas=C:\Users\davidi\Desktop\Devices and Gadgets Webinar\micasaverde\demos\Delphi Mobile Door Lock App\Unit6.pas</Transaction>
+    <Transaction>2014/01/21 14:06:05.000.841,C:\Users\davidi\Documents\RAD Studio\Projects\Unit6.fmx=C:\Users\davidi\Desktop\Devices and Gadgets Webinar\micasaverde\demos\Delphi Mobile Door Lock App\Unit6.fmx</Transaction>
+    <Transaction>2014/01/21 14:06:18.000.053,C:\Users\davidi\Documents\RAD Studio\Projects\Project6.dproj=C:\Users\davidi\Desktop\Devices and Gadgets Webinar\micasaverde\demos\Delphi Mobile Door Lock App\DelphiMobileLockApp.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>62dd248a</MobileDevice>
+</BorlandProject>

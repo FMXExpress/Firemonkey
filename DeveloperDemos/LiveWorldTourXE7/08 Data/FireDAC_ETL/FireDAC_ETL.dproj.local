@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/09/17 15:04:32.000.386,C:\DTOURXE7\07 Data\FireDAC_ETL\Unit1.fmx=C:\DTOURXE7\07 Data\FireDAC_ETL\uMainForm.fmx</Transaction>
+    <Transaction>2014/09/17 15:04:32.000.386,C:\DTOURXE7\07 Data\FireDAC_ETL\Unit1.pas=C:\DTOURXE7\07 Data\FireDAC_ETL\uMainForm.pas</Transaction>
+    <Transaction>2014/09/17 15:07:54.000.049,C:\DTOURXE7\07 Data\FireDAC_ETL\ETLSimple1.dproj=C:\DTOURXE7\07 Data\FireDAC_ETL\ETLSimple.dproj</Transaction>
+    <Transaction>2014/09/17 15:51:42.000.598,C:\DTOURXE7\07 Data\FireDAC_ETL\FireDAC_ETL.dproj=C:\DTOURXE7\07 Data\FireDAC_ETL\ETLSimple.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

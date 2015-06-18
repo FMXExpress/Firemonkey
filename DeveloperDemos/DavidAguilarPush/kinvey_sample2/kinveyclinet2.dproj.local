@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/02/02 08:32:26.000.269,=C:\Users\Administrator\Desktop\johnnysuarez\Unit1.pas</Transaction>
+    <Transaction>2015/02/10 13:33:13.670,=C:\Users\Administrator\Desktop\johnnysuarez\Unit1.pas</Transaction>
+    <Transaction>2015/02/10 13:33:41.318,C:\Users\Administrator\Documents\kinvey_sample2\Unit1.fmx=C:\Users\Administrator\Desktop\johnnysuarez\Unit1.fmx</Transaction>
+    <Transaction>2015/02/10 13:33:41.318,C:\Users\Administrator\Documents\kinvey_sample2\Unit1.pas=C:\Users\Administrator\Desktop\johnnysuarez\Unit1.pas</Transaction>
+    <Transaction>2015/02/10 13:33:43.673,C:\Users\Administrator\Documents\kinvey_sample2\Project1.dproj=C:\Users\Administrator\Desktop\johnnysuarez\Project1.dproj</Transaction>
+    <Transaction>2015/02/10 15:13:36.163,C:\Users\Administrator\Documents\kinvey_sample2\kinveyclinet2.dproj=C:\Users\Administrator\Documents\kinvey_sample2\Project1.dproj</Transaction>
+    <Transaction>2015/02/10 15:22:43.713,=C:\Users\Administrator\Documents\kinvey_sample2\AndroidManifest.template.xml</Transaction>
+  </Transactions>
+</BorlandProject>

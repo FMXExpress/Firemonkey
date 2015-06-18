@@ -1,0 +1,122 @@
+inherited frmCtrlsDemo_Macintosh: TfrmCtrlsDemo_Macintosh
+  DesignerMasterStyle = 0
+  inherited ControlRoot: TLayout
+    inherited TabControl1: TTabControl
+      inherited TabItem1: TTabItem
+        inherited ProgressBar1: TProgressBar
+          Size.Height = 8.000000000000000000
+        end
+        inherited StringListBox1: TListBox
+          Viewport.Width = 107.000000000000000000
+          Viewport.Height = 162.000000000000000000
+        end
+        inherited TrackBar6: TTrackBar
+          Size.Height = 19.000000000000000000
+        end
+      end
+      inherited TabItem4: TTabItem
+        inherited Expander1: TExpander
+          ContentSize = '112'
+        end
+        inherited TrackBar1: TTrackBar
+          Size.Height = 19.000000000000000000
+        end
+        inherited Calendar1: TCalendar
+          Size.Width = 230.000000000000000000
+          Size.Height = 204.000000000000000000
+        end
+        inherited Memo1: TMemo
+          Viewport.Width = 345.000000000000000000
+          Viewport.Height = 152.000000000000000000
+        end
+      end
+      inherited TabItem3: TTabItem
+        inherited ListBox1: TListBox
+          Viewport.Width = 154.000000000000000000
+          Viewport.Height = 266.000000000000000000
+        end
+        inherited TreeView1: TTreeView
+          Viewport.Width = 291.000000000000000000
+          Viewport.Height = 266.000000000000000000
+        end
+      end
+      inherited TabItem6: TTabItem
+        inherited ListTransform: TListBox
+          Viewport.Width = 128.000000000000000000
+          Viewport.Height = 134.000000000000000000
+        end
+        inherited TrackBar2: TTrackBar
+          Size.Height = 19.000000000000000000
+        end
+        inherited TrackBar3: TTrackBar
+          Size.Height = 19.000000000000000000
+        end
+      end
+      inherited TabItem2: TTabItem
+        inherited Rectangle2: TPanel
+          inherited VertScrollBox1: TVertScrollBox
+            Viewport.Width = 158.000000000000000000
+            Viewport.Height = 429.000000000000000000
+            inherited Expander2: TExpander
+              ContentSize = '139'
+              inherited TrackBar5: TTrackBar
+                Size.Height = 19.000000000000000000
+              end
+            end
+            inherited Expander3: TExpander
+              ContentSize = '139'
+              inherited TrackBarE3: TTrackBar
+                Size.Height = 19.000000000000000000
+              end
+            end
+            inherited Expander4: TExpander
+              ContentSize = '139'
+              inherited TrackBarE4: TTrackBar
+                Size.Height = 19.000000000000000000
+              end
+            end
+          end
+        end
+        inherited Panel2: TPanel
+          inherited ScrollBox1: TScrollBox
+            Viewport.Width = 618.000000000000000000
+            Viewport.Height = 444.000000000000000000
+          end
+        end
+      end
+      inherited TabItem8: TTabItem
+        inherited Memo2: TMemo
+          Viewport.Width = 791.000000000000000000
+          Viewport.Height = 442.000000000000000000
+        end
+      end
+      inherited TabItem7: TTabItem
+        inherited TrackBar4: TTrackBar
+          Size.Height = 19.000000000000000000
+        end
+        inherited AlphaTrackBar1: TAlphaTrackBar
+          Size.Height = 19.000000000000000000
+        end
+        inherited BWTrackBar1: TBWTrackBar
+          Size.Height = 19.000000000000000000
+        end
+        inherited HueTrackBar1: THueTrackBar
+          Size.Height = 19.000000000000000000
+        end
+        inherited TreeView2: TTreeView
+          Viewport.Width = 141.000000000000000000
+          Viewport.Height = 245.000000000000000000
+        end
+        inherited ListBox2: TListBox
+          Viewport.Width = 160.000000000000000000
+          Viewport.Height = 285.000000000000000000
+        end
+      end
+    end
+  end
+  inherited StatusBar1: TStatusBar
+    inherited ScaleTrack: TTrackBar
+      Size.Height = 19.000000000000000000
+    end
+  end
+end

@@ -1,0 +1,19 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  ClientHeight = 480
+  ClientWidth = 345
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object ButtonCreatePdf: TButton
+    Align = Top
+    Size.Width = 345.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Create PDF'
+    OnClick = ButtonCreatePdfClick
+  end
+end

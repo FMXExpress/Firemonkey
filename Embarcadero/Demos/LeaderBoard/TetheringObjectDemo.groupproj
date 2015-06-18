@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D75483AE-A36B-4128-9145-91DA0D9EF387}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Scoreboard\GameScoreboard.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\GuessGameClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MobileClient\GuessGameMobile.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="GameScoreboard">
+        <MSBuild Projects="Scoreboard\GameScoreboard.dproj"/>
+    </Target>
+    <Target Name="GameScoreboard:Clean">
+        <MSBuild Projects="Scoreboard\GameScoreboard.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GameScoreboard:Make">
+        <MSBuild Projects="Scoreboard\GameScoreboard.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GuessGameClient">
+        <MSBuild Projects="Client\GuessGameClient.dproj"/>
+    </Target>
+    <Target Name="GuessGameClient:Clean">
+        <MSBuild Projects="Client\GuessGameClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GuessGameClient:Make">
+        <MSBuild Projects="Client\GuessGameClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GuessGameMobile">
+        <MSBuild Projects="MobileClient\GuessGameMobile.dproj"/>
+    </Target>
+    <Target Name="GuessGameMobile:Clean">
+        <MSBuild Projects="MobileClient\GuessGameMobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GuessGameMobile:Make">
+        <MSBuild Projects="MobileClient\GuessGameMobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="GameScoreboard;GuessGameClient;GuessGameMobile"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="GameScoreboard:Clean;GuessGameClient:Clean;GuessGameMobile:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="GameScoreboard:Make;GuessGameClient:Make;GuessGameMobile:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

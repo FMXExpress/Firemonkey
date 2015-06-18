@@ -1,0 +1,29 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 497
+  ClientWidth = 632
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnTouch = FormTouch
+  DesignerMasterStyle = 3
+  object PaintBox1: TPaintBox
+    OnTap = PaintBox1Tap
+    Align = Client
+    Size.Width = 632.000000000000000000
+    Size.Height = 497.000000000000000000
+    Size.PlatformDefault = False
+    OnPaint = PaintBox1Paint
+    object Button1: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 16.000000000000000000
+      TabOrder = 0
+      Text = 'Clear'
+      OnClick = Button1Click
+    end
+  end
+end

@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 567
+  ClientWidth = 384
+  Fill.Kind = bkGradient
+  Fill.Gradient.Points = <
+    item
+      Color = claBlack
+      Offset = 0.740384638309478800
+    end
+    item
+      Color = xFF202020
+      Offset = 0.884615361690521200
+    end>
+  Fill.Gradient.StartPosition.X = 0.500000000000000000
+  Fill.Gradient.StartPosition.Y = 1.000000000000000000
+  Fill.Gradient.StopPosition.X = 0.499999970197677600
+  Fill.Gradient.StopPosition.Y = 0.000000000000000000
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnShow = FormShow
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object reload: TButton
+    Anchors = [akTop, akRight]
+    Height = 48.000000000000000000
+    Position.X = 336.000000000000000000
+    StyleLookup = 'refreshtoolbutton'
+    TabOrder = 0
+    Text = 'Reload'
+    Trimming = ttCharacter
+    Width = 48.000000000000000000
+    OnClick = FormShow
+  end
+  object Label1: TLabel
+    AutoSize = True
+    Font.Size = 24.000000000000000000
+    FontColor = claWhitesmoke
+    StyledSettings = [ssFamily, ssStyle]
+    Height = 33.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Select Device:'
+    Width = 154.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+    ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Transparent = True
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Height = 521.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 2
+    Width = 385.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Text.Font.Size = 18.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Detail.Font.Size = 12.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Detail.TextColor = x00636363
+    ItemAppearanceObjects.ItemObjects.Detail.Height = 12.000000000000000000
+    OnItemClick = ListView1ItemClick
+  end
+end

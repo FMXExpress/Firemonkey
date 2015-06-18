@@ -1,0 +1,67 @@
+object FormGradientsFun2: TFormGradientsFun2
+  Left = 0
+  Top = 0
+  Caption = 'Form29'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object Rectangle1: TRectangle
+    Align = alClient
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFCDCCB0
+        Offset = 0.221153840422630300
+      end
+      item
+        Color = xFFED7A7A
+        Offset = 0.740384638309478800
+      end>
+    Fill.Gradient.StartPosition.X = 0.919549822807312000
+    Fill.Gradient.StartPosition.Y = 1.000000000000000000
+    Fill.Gradient.StopPosition.X = 0.080450169742107390
+    Fill.Gradient.StopPosition.Y = 0.000000004811006704
+    Height = 460.000000000000000000
+    Width = 320.000000000000000000
+    OnClick = Rectangle1Click
+    object GradientAnimation1: TGradientAnimation
+      AutoReverse = True
+      Duration = 0.200000002980232200
+      PropertyName = 'Fill.Gradient'
+      StartValue.Points = <
+        item
+          Color = xFFCDCCB0
+          Offset = 0.221153840422630300
+        end
+        item
+          Color = xFFED7A7A
+          Offset = 0.740384638309478800
+        end>
+      StartValue.StartPosition.X = 0.919549822807312000
+      StartValue.StartPosition.Y = 1.000000000000000000
+      StartValue.StopPosition.X = 0.080450169742107390
+      StartValue.StopPosition.Y = 0.000000004811006704
+      StopValue.Points = <
+        item
+          Color = xFF4DC1E7
+          Offset = 0.269230782985687300
+        end
+        item
+          Color = xFF72ECA5
+          Offset = 0.807692289352417000
+        end>
+      StopValue.StartPosition.X = 0.000000004811006704
+      StopValue.StartPosition.Y = 0.919549763202667200
+      StopValue.StopPosition.X = 1.000000000000000000
+      StopValue.StopPosition.Y = 0.080450206995010380
+    end
+  end
+end

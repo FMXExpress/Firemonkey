@@ -1,0 +1,489 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MainForm'
+  ClientHeight = 567
+  ClientWidth = 384
+  Visible = True
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TabControlMain: TTabControl
+    Touch.GestureManager = GestureManager1
+    OnGesture = TabControlMainGesture
+    Align = alClient
+    FullSize = True
+    Height = 567.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = tpDots
+    Width = 384.000000000000000000
+    object tabOpenURL: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = True
+      Position.X = 168.000000000000000000
+      Position.Y = 548.000000000000000000
+      StyleLookup = 'tabdotstyle'
+      TabOrder = 0
+      Text = 'tabOpenURL'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object ToolBar1: TToolBar
+        Height = 48.000000000000000000
+        TabOrder = 0
+        Width = 384.000000000000000000
+        object butOpen: TSpeedButton
+          Align = alCenter
+          Height = 48.000000000000000000
+          StyleLookup = 'donetoolbutton'
+          Text = 'Open'
+          Trimming = ttCharacter
+          Width = 118.000000000000000000
+          OnClick = butOpenClick
+        end
+      end
+      object lsbMain: TListBox
+        Touch.GestureManager = GestureManager1
+        OnGesture = TabControlMainGesture
+        Align = alClient
+        Height = 489.000000000000000000
+        Margins.Bottom = 30.000000000000000000
+        TabOrder = 1
+        Width = 384.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = gsGrouped
+        object ListBoxGroupHeader1: TListBoxGroupHeader
+          Height = 30.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'iOS and Android'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem1: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 30.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'http://www.embarcadero.com/'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem2: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 74.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'tel://(415)834-3131'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem3: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 118.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'sms://1234'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem4: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 162.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'http://twitter.com/coderage'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem6: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 206.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'mailto://fernando.rizzato@embarcadero.com'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem7: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 250.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'twitter://user?screen_name=coderage'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem8: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 294.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'fb://profile/34960937498'
+          Width = 379.000000000000000000
+        end
+        object ListBoxGroupHeader2: TListBoxGroupHeader
+          Height = 30.000000000000000000
+          Position.Y = 338.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'iOS Specific Links'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem5: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 368.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 
+            'http://maps.apple.com?q=5617 Scotts Valley Drive, Scotts Valley,' +
+            ' CA 95066'
+          Width = 379.000000000000000000
+        end
+        object ListBoxGroupHeader3: TListBoxGroupHeader
+          Height = 30.000000000000000000
+          Position.Y = 412.000000000000000000
+          StyleLookup = 'listboxgroupheader'
+          Text = 'Android Specific Links'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem9: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 442.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'content://contacts/people/'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem10: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 486.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'content://contacts/people/5'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem11: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 530.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'geo://0,0?q=5617 Scotts Valley Drive, Scotts Valley, CA 95066'
+          Width = 379.000000000000000000
+        end
+        object ListBoxItem12: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 574.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'geo://46.191200, -122.194400'
+          Width = 379.000000000000000000
+        end
+      end
+    end
+    object tabNetworkStatus: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = False
+      Position.X = 178.000000000000000000
+      Position.Y = 548.000000000000000000
+      StyleLookup = 'tabdotstyle'
+      TabOrder = 1
+      Text = 'tabNetworkStatus'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object ToolBar2: TToolBar
+        Height = 48.000000000000000000
+        TabOrder = 0
+        Width = 384.000000000000000000
+        object SwitchNetwork: TSwitch
+          Align = alRight
+          Height = 26.000000000000000000
+          IsChecked = False
+          Margins.Right = 10.000000000000000000
+          Position.X = 298.000000000000000000
+          Position.Y = 11.000000000000000000
+          TabOrder = 0
+          Width = 76.000000000000000000
+          OnSwitch = SwitchNetworkSwitch
+        end
+      end
+      object CircleNET: TCircle
+        Fill.Color = claRed
+        Height = 50.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 72.000000000000000000
+        Width = 50.000000000000000000
+      end
+      object CircleWiFi: TCircle
+        Fill.Color = claRed
+        Height = 50.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 136.000000000000000000
+        Width = 50.000000000000000000
+      end
+      object Circle3G: TCircle
+        Fill.Color = claRed
+        Height = 50.000000000000000000
+        Position.X = 24.000000000000000000
+        Position.Y = 200.000000000000000000
+        Width = 50.000000000000000000
+      end
+      object Label1: TLabel
+        Height = 23.000000000000000000
+        Position.X = 80.000000000000000000
+        Position.Y = 88.000000000000000000
+        Text = 'Network available'
+        Width = 169.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label2: TLabel
+        Height = 23.000000000000000000
+        Position.X = 80.000000000000000000
+        Position.Y = 152.000000000000000000
+        Text = 'WiFi connection'
+        Width = 153.000000000000000000
+        Trimming = ttCharacter
+      end
+      object Label3: TLabel
+        Height = 23.000000000000000000
+        Position.X = 80.000000000000000000
+        Position.Y = 216.000000000000000000
+        Text = '3G Connection'
+        Width = 145.000000000000000000
+        Trimming = ttCharacter
+      end
+    end
+    object tabSendMail: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = False
+      Position.X = 188.000000000000000000
+      Position.Y = 548.000000000000000000
+      StyleLookup = 'tabdotstyle'
+      TabOrder = 2
+      Text = 'tabSendMail'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object edtTo: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Align = alTop
+        TabOrder = 0
+        Position.X = 10.000000000000000000
+        Position.Y = 5.000000000000000000
+        Width = 364.000000000000000000
+        Height = 32.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        TextPrompt = 'To'
+        KillFocusByReturn = False
+      end
+      object edtSubject: TEdit
+        Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+        Align = alTop
+        TabOrder = 1
+        Position.X = 10.000000000000000000
+        Position.Y = 47.000000000000000000
+        Width = 364.000000000000000000
+        Height = 32.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        TextPrompt = 'Subject'
+        KillFocusByReturn = False
+      end
+      object memBody: TMemo
+        Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+        Align = alTop
+        Height = 96.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 89.000000000000000000
+        TabOrder = 2
+        Width = 364.000000000000000000
+      end
+      object butSend: TButton
+        Anchors = [akTop, akRight]
+        Height = 48.000000000000000000
+        Position.X = 301.000000000000000000
+        Position.Y = 189.000000000000000000
+        StyleLookup = 'donetoolbutton'
+        TabOrder = 3
+        Text = 'Send'
+        Trimming = ttCharacter
+        Width = 73.000000000000000000
+        OnClick = butSendClick
+      end
+    end
+    object tabBarCode: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = False
+      Position.X = 198.000000000000000000
+      Position.Y = 548.000000000000000000
+      StyleLookup = 'tabdotstyle'
+      TabOrder = 3
+      Text = 'tabBarCode'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object ToolBar3: TToolBar
+        Height = 48.000000000000000000
+        TabOrder = 0
+        Width = 384.000000000000000000
+        object butBarcode: TButton
+          Align = alLeft
+          Height = 48.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          StyleLookup = 'cameratoolbuttonbordered'
+          TabOrder = 0
+          Text = 'butBarcode'
+          Trimming = ttCharacter
+          Width = 48.000000000000000000
+          OnClick = butBarcodeClick
+        end
+        object butQRCode: TSpeedButton
+          Align = alLeft
+          Height = 48.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Position.X = 63.000000000000000000
+          Text = '[QR]'
+          Trimming = ttCharacter
+          Visible = False
+          Width = 48.000000000000000000
+          OnClick = butQRCodeClick
+        end
+      end
+      object lstBarCode: TListBox
+        Align = alClient
+        Height = 484.000000000000000000
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 30.000000000000000000
+        TabOrder = 1
+        Width = 374.000000000000000000
+        ItemHeight = 40.000000000000000000
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        object TListBoxItem
+          Height = 40.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'QR-Code 1'
+          Width = 374.000000000000000000
+        end
+        object TListBoxItem
+          Height = 40.000000000000000000
+          Position.Y = 40.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'QR-Code 2'
+          Width = 374.000000000000000000
+        end
+        object TListBoxItem
+          Height = 40.000000000000000000
+          Position.Y = 80.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'QR-Code 3'
+          Width = 374.000000000000000000
+        end
+        object TListBoxItem
+          Height = 40.000000000000000000
+          Position.Y = 120.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'UPC Code 1'
+          Width = 374.000000000000000000
+        end
+        object TListBoxItem
+          Height = 40.000000000000000000
+          Position.Y = 160.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'UPC Code 2'
+          Width = 374.000000000000000000
+        end
+        object TListBoxItem
+          Height = 40.000000000000000000
+          Position.Y = 200.000000000000000000
+          StyleLookup = 'listboxitemnodetail'
+          Text = 'UPC Code 3'
+          Width = 374.000000000000000000
+        end
+      end
+    end
+    object tabToast: TTabItem
+      WordWrap = False
+      Height = 8.000000000000000000
+      IsSelected = False
+      Position.X = 208.000000000000000000
+      Position.Y = 548.000000000000000000
+      StyleLookup = 'tabdotstyle'
+      TabOrder = 4
+      Text = 'tabToast'
+      Trimming = ttCharacter
+      Width = 8.000000000000000000
+      object Button1: TButton
+        Align = alCenter
+        Height = 48.000000000000000000
+        StyleLookup = 'donetoolbutton'
+        TabOrder = 0
+        Text = 'Android Toast Message'
+        Trimming = ttCharacter
+        Width = 255.000000000000000000
+        OnClick = Button1Click
+      end
+    end
+  end
+  object timNetwork: TTimer
+    Enabled = False
+    OnTimer = timNetworkTimer
+    Left = 264
+    Top = 72
+  end
+  object GestureManager1: TGestureManager
+    Left = 264
+    Top = 128
+    GestureData = <
+      item
+        Control = TabControlMain
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end
+      item
+        Control = lsbMain
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end>
+  end
+  object ActionList1: TActionList
+    Left = 264
+    Top = 184
+    object ChangeTabAction0: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabOpenURL
+      Transition = ttSlide
+    end
+    object ChangeTabAction1: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabNetworkStatus
+      Transition = ttSlide
+    end
+    object ChangeTabAction2: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabSendMail
+    end
+    object ChangeTabAction3: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabBarCode
+    end
+    object ChangeTabAction4: TChangeTabAction
+      Category = 'Tab'
+      Tab = tabToast
+    end
+  end
+end

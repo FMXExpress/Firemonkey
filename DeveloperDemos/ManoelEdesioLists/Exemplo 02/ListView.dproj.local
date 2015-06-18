@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2015/02/23 19:04:14.000.806,=C:\Documents and Settings\Administrador\Meus documentos\Embarcadero\Studio\Projects\Unit9.pas</Transaction>
+    <Transaction>2015/02/23 19:04:34.000.477,C:\Documents and Settings\Administrador\Meus documentos\Embarcadero\Studio\Projects\Unit9.fmx=C:\CodeRage III\Exemplos\Exemplo 02\uFrmListView.fmx</Transaction>
+    <Transaction>2015/02/23 19:04:34.000.477,C:\Documents and Settings\Administrador\Meus documentos\Embarcadero\Studio\Projects\Unit9.pas=C:\CodeRage III\Exemplos\Exemplo 02\uFrmListView.pas</Transaction>
+    <Transaction>2015/02/23 19:04:41.000.634,C:\Documents and Settings\Administrador\Meus documentos\Embarcadero\Studio\Projects\Project7.dproj=C:\CodeRage III\Exemplos\Exemplo 02\ListView.dproj</Transaction>
+    <Transaction>2015/02/24 18:17:04.268,=C:\CodeRage III\Exemplos\Exemplo 02\Unit2.pas</Transaction>
+    <Transaction>2015/02/24 18:17:20.424,C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox03.fmx=C:\CodeRage III\Exemplos\Exemplo 02\Unit2.fmx</Transaction>
+    <Transaction>2015/02/24 18:17:20.424,C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox03.pas=C:\CodeRage III\Exemplos\Exemplo 02\Unit2.pas</Transaction>
+    <Transaction>2015/02/24 18:17:27.393,C:\CodeRage III\Exemplos\Exemplo 02\uFrmListView.pas=</Transaction>
+    <Transaction>2015/02/24 18:31:03.596,C:\CodeRage III\Exemplos\Exemplo 01\uFrmListBox03.pas=</Transaction>
+    <Transaction>2015/02/24 18:31:10.158,=C:\CodeRage III\Exemplos\Exemplo 02\uFrmListView.pas</Transaction>
+    <Transaction>2015/02/24 19:19:09.940,=C:\CodeRage III\Exemplos\Exemplo 02\Unit3.pas</Transaction>
+    <Transaction>2015/02/24 22:06:37.908,C:\CodeRage III\Exemplos\Exemplo 02\Unit3.pas=</Transaction>
+    <Transaction>2015/02/24 22:53:14.079,=C:\CodeRage III\Exemplos\Exemplo 02\Unit2.pas</Transaction>
+  </Transactions>  <MobileDevice>BY900DDQLL</MobileDevice>
+</BorlandProject>

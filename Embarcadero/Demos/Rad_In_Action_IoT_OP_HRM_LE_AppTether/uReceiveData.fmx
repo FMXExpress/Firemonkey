@@ -1,0 +1,169 @@
+object frmHRMDataReceiver: TfrmHRMDataReceiver
+  Left = 0
+  Top = 0
+  Caption = 'Heart Rate Monitor Data Receiver'
+  ClientHeight = 567
+  ClientWidth = 798
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Header: TToolBar
+    Size.Width = 798.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object HeaderLabel: TLabel
+      Align = Contents
+      StyledSettings = []
+      Size.Width = 798.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.Font.Family = 'Calisto MT'
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = claCrimson
+      TextSettings.HorzAlign = Center
+      Text = 'Heart Rate Monitor Data Receiver'
+    end
+  end
+  object Footer: TToolBar
+    Align = Bottom
+    Position.Y = 519.000000000000000000
+    Size.Width = 798.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    object FooterLabel: TLabel
+      StyledSettings = [Family]
+      Position.X = 24.000000000000000000
+      Size.Width = 737.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.FontColor = claSpringgreen
+      Text = 'Connected to:  NONE'
+    end
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+        Width = 32
+        Height = 32
+        PNG = {
+          89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+          F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          0238494441545847D5D74B88CD511CC0F1BFC7486A1849A3B0B1206261A1A849
+          532325B6B26763A12CEC64A36423945848B15293AC6C588D2CC8C68232794C9A
+          1DE53D93F7F3FBFDBBA7CEBD8EDB9D7BFFE7DEFCEAD3BDF7FC5FE7F13BF79C7F
+          D1EB9855FB4CC54A6CC2522CC37B3CC21D4C2115F3B0111BB01CD378877B7880
+          5F681A56A81F17F111DFF0035EF8135FF1167BD18710B3B11E77F105F135DFF1
+          190FB1199E9B0C0F78E317F0E266BCE955ACC01C1C82154E9D1BFB807318445D
+          D8F2DDB0C5A90BFFE53CB621759D95F481F6883D11CAFD7E19710F963769A505
+          8D5EE369435970008B318433882BE9101D43391CD6E406E28BABB00621C91DA6
+          9D3091C371F3628B07CCD8E3F07B95B11DCE8A6770364CE00D76C096CF8533A4
+          388BB8E655B2AB9FC31962F8D05B08C79D35C593A82097EB0849B715A1FC9505
+          66697C720EF6C46A9813EB6A6572A6149FA2829C1EE344ED339499886572C427
+          76D34BB3F1267A159356E0CA9FEF3D89712B701B93E5CFEE868959F6BE997912
+          A931CAC9557509CA580BFF305227E6E0CCDB83BA18C64C57C3765DC05F7FFD16
+          384FC3662297FB588564B8785C42AE4AF8F001340DFFB34FA3EA4AB8F0B8F2B6
+          140EC73EB4B34969644346B100330AA7A76B7727ABA5EBFF61B8D16D3B16610C
+          F1BEAE156E426C40D8157514BE1B9C422B436245AD70D8845416E6C57E345BBE
+          1DEF6B58882C6177EE826B47E3C3DD5C1C45DD763B57B88D77CF1F3FFC20CA6D
+          76B76204E3F03DF108DADA55779AA1F361ABC3FBE0FF1645F11BCA1C0D550239
+          F6DF0000000049454E44AE426082}
+      end>
+    Position.X = 152.000000000000000000
+    Position.Y = 48.000000000000000000
+  end
+  object SpeedButton1: TSpeedButton
+    Position.X = 224.000000000000000000
+    Position.Y = 64.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'cornerbuttonstyle'
+    Text = 'Scan for HRM'
+    OnClick = SpeedButton1Click
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Position.X = 16.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 745.000000000000000000
+    Size.Height = 169.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    StyledSettings = [FontColor]
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 24.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.Style = [fsBold]
+    Text = 'App Tethering Log'
+  end
+  object Memo2: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Position.X = 16.000000000000000000
+    Position.Y = 360.000000000000000000
+    Size.Width = 745.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+  end
+  object Label2: TLabel
+    StyledSettings = [Family, FontColor]
+    Position.X = 16.000000000000000000
+    Position.Y = 336.000000000000000000
+    Size.Width = 177.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 14.000000000000000000
+    TextSettings.Font.Style = [fsBold]
+    Text = 'Heart Rate Monitor BPM'
+  end
+  object tmCheckConnection: TTimer
+    Enabled = False
+    Left = 712
+    Top = 56
+  end
+  object TetherManagerHRM: TTetheringManager
+    OnEndManagersDiscovery = TetherManagerHRMEndManagersDiscovery
+    OnEndProfilesDiscovery = TetherManagerHRMEndProfilesDiscovery
+    OnPairedFromLocal = TetherManagerHRMPairedFromLocal
+    OnPairedToRemote = TetherManagerHRMPairedToRemote
+    OnRequestManagerPassword = TetherManagerHRMRequestManagerPassword
+    OnNewManager = TetherManagerHRMNewManager
+    OnUnPairManager = TetherManagerHRMUnPairManager
+    OnRemoteManagerShutdown = TetherManagerHRMRemoteManagerShutdown
+    Password = '1234'
+    Text = 'TetherManagerHRM'
+    AllowedAdapters = 'Network'
+    Left = 480
+    Top = 57
+  end
+  object TetherProfileHRM: TTetheringAppProfile
+    Manager = TetherManagerHRM
+    OnDisconnect = TetherProfileHRMDisconnect
+    Text = 'TetherProfileHRM'
+    Actions = <>
+    Resources = <
+      item
+        Name = 'MyBPM'
+        IsPublic = True
+      end>
+    OnResourceReceived = TetherProfileHRMResourceReceived
+    OnResourceUpdated = TetherProfileHRMResourceUpdated
+    Left = 592
+    Top = 56
+  end
+end

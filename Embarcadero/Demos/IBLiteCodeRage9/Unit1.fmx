@@ -1,0 +1,220 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 575
+  ClientWidth = 885
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object loSQL: TLayout
+    Align = Left
+    Size.Width = 289.000000000000000000
+    Size.Height = 575.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ToolBar1: TToolBar
+      Align = Bottom
+      Position.Y = 527.000000000000000000
+      Size.Width = 289.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'bottomtoolbar'
+      TabOrder = 1
+      object btnRunSQL: TButton
+        Align = Center
+        Size.Width = 141.000000000000000000
+        Size.Height = 25.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Execute / Run SQL'
+        OnClick = btnRunSQLClick
+      end
+    end
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      Align = Client
+      Size.Width = 289.000000000000000000
+      Size.Height = 479.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object ToolBar3: TToolBar
+      Size.Width = 289.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Label2: TLabel
+        Align = Contents
+        Size.Width = 289.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'SQL Window'
+      end
+      object Button1: TButton
+        Align = Left
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'detailstoolbutton'
+        TabOrder = 1
+        Text = 'Connection'
+      end
+    end
+  end
+  object loData: TLayout
+    Align = Client
+    Margins.Left = 5.000000000000000000
+    Size.Width = 591.000000000000000000
+    Size.Height = 575.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Grid1: TGrid
+      Align = Client
+      Size.Width = 591.000000000000000000
+      Size.Height = 479.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      RowCount = 100
+      RowHeight = 21.000000000000000000
+    end
+    object ToolBar2: TToolBar
+      Size.Width = 591.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object Label1: TLabel
+        Align = Contents
+        Size.Width = 591.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Data'
+      end
+    end
+    object ToolBar5: TToolBar
+      Align = Bottom
+      Position.Y = 527.000000000000000000
+      Size.Width = 591.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'bottomtoolbar'
+      TabOrder = 18
+      object NavigatorBindSourceDB1: TBindNavigator
+        Align = Client
+        Size.Width = 591.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 18
+        DataSource = BindSourceDB1
+        xRadius = 4.000000000000000000
+        yRadius = 4.000000000000000000
+      end
+    end
+  end
+  object MultiView1: TMultiView
+    MasterButton = Button1
+    Mode = Drawer
+    Size.Width = 257.000000000000000000
+    Size.Height = 575.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 10
+    object loTables: TLayout
+      Align = Client
+      Size.Width = 256.000000000000000000
+      Size.Height = 474.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object lvTables: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Align = Client
+        Size.Width = 256.000000000000000000
+        Size.Height = 474.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnItemClick = lvTablesItemClick
+      end
+    end
+    object loDB: TLayout
+      Align = Top
+      Position.Y = 44.000000000000000000
+      Size.Width = 256.000000000000000000
+      Size.Height = 57.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object edtDatabaseName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Client
+        TabOrder = 0
+        Text = 'MyDB.ib'
+        TextSettings.Font.Size = 14.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 80.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 166.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Database Name'
+        StyledSettings = [Family, Style, FontColor]
+      end
+      object btConnect: TButton
+        Anchors = [akTop, akRight]
+        Position.X = 178.000000000000000000
+        Position.Y = 14.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Connect'
+        OnClick = btConnectClick
+      end
+    end
+    object ToolBar4: TToolBar
+      Size.Width = 256.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object Label3: TLabel
+        Align = Contents
+        Size.Width = 256.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Connect'
+      end
+    end
+  end
+  object FDQuery1: TFDQuery
+    Connection = dmInterBase.IBLiteDB
+    Left = 480
+    Top = 192
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDQuery1
+    ScopeMappings = <>
+    Left = 472
+    Top = 256
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 484
+    Top = 133
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = Grid1
+      Columns = <>
+    end
+  end
+end

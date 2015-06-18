@@ -1,0 +1,52 @@
+unit MobileMain;
+
+interface
+
+uses
+  System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
+  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs, unitGame,
+  FMX.StdCtrls, FMX.Edit, FMX.TabControl, FMX.Layouts;
+
+type
+  TfrmMobileGuessGame = class(TForm)
+    TabControl1: TTabControl;
+    tabPlayer: TTabItem;
+    tabGuess: TTabItem;
+    tabLeaders: TTabItem;
+    EditName: TEdit;
+    LabelName: TLabel;
+    EditScore: TEdit;
+    LabelScore: TLabel;
+    btnConnect: TButton;
+    Label2: TLabel;
+    Layout2: TLayout;
+    btnGuess: TButton;
+    sbGuess: TSpinBox;
+    lblResult: TLabel;
+    ToolBar1: TToolBar;
+    Label1: TLabel;
+    ToolBar2: TToolBar;
+    Label3: TLabel;
+    procedure btnConnectClick(Sender: TObject);
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+    Game : TGuessingGame;
+  end;
+
+var
+  frmMobileGuessGame: TfrmMobileGuessGame;
+
+implementation
+
+{$R *.fmx}
+
+uses dmMain;
+
+procedure TfrmMobileGuessGame.btnConnectClick(Sender: TObject);
+begin
+  dmMain.dataMain.ConnectToScoreboard;
+end;
+
+end.

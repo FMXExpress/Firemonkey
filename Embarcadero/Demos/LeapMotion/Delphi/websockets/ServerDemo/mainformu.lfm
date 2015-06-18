@@ -1,0 +1,453 @@
+object MainForm: TMainForm
+  Left = 274
+  Height = 671
+  Top = 176
+  Width = 934
+  ActiveControl = HostCombo
+  Caption = 'WebSocket 2 Bauglir Server'
+  ClientHeight = 671
+  ClientWidth = 934
+  OnClose = FormClose
+  OnCreate = FormCreate
+  LCLVersion = '0.9.28.2'
+  object GroupBox1: TGroupBox
+    Left = 0
+    Height = 105
+    Top = 0
+    Width = 934
+    Align = alTop
+    Caption = 'Server settings'
+    ClientHeight = 86
+    ClientWidth = 930
+    TabOrder = 0
+    object Label1: TLabel
+      Left = 14
+      Height = 18
+      Top = 17
+      Width = 35
+      Caption = 'Host:'
+      ParentColor = False
+    end
+    object Label2: TLabel
+      Left = 145
+      Height = 18
+      Top = 19
+      Width = 31
+      Caption = 'Port:'
+      ParentColor = False
+    end
+    object ServerErrorLabel: TLabel
+      Left = 388
+      Height = 25
+      Top = 5
+      Width = 115
+      ParentColor = False
+    end
+    object HostCombo: TComboBox
+      Left = 14
+      Height = 25
+      Top = 39
+      Width = 120
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        'localhost'
+      )
+      TabOrder = 0
+      Text = 'localhost'
+    end
+    object PortCombo: TComboBox
+      Left = 145
+      Height = 25
+      Top = 39
+      Width = 100
+      ItemHeight = 0
+      ItemIndex = 0
+      Items.Strings = (
+        '8080'
+      )
+      TabOrder = 1
+      Text = '8080'
+    end
+    object SSLCheck: TCheckBox
+      Left = 318
+      Height = 21
+      Top = 44
+      Width = 48
+      BidiMode = bdRightToLeft
+      Caption = 'SSL'
+      ParentBidiMode = False
+      TabOrder = 2
+    end
+    object StartButton: TButton
+      Left = 386
+      Height = 25
+      Top = 39
+      Width = 100
+      Action = StartAction
+      TabOrder = 3
+    end
+    object EndButton: TButton
+      Left = 486
+      Height = 25
+      Top = 39
+      Width = 100
+      Action = EndAction
+      TabOrder = 4
+    end
+  end
+  object InfoMemo: TMemo
+    Left = 0
+    Height = 90
+    Top = 581
+    Width = 934
+    Align = alBottom
+    ScrollBars = ssVertical
+    TabOrder = 1
+  end
+  object Splitter1: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 5
+    Top = 576
+    Width = 934
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 471
+    Top = 105
+    Width = 340
+    Align = alLeft
+    Caption = 'Panel1'
+    ClientHeight = 471
+    ClientWidth = 340
+    TabOrder = 3
+    object Panel2: TPanel
+      Left = 1
+      Height = 25
+      Top = 1
+      Width = 338
+      Align = alTop
+      Alignment = taLeftJustify
+      Caption = 'Connections'
+      TabOrder = 0
+    end
+    object ConnectionList: TListView
+      Left = 1
+      Height = 444
+      Top = 26
+      Width = 338
+      Align = alClient
+      Columns = <      
+        item
+          Caption = 'Connection'
+          Width = 200
+        end      
+        item
+          Caption = 'Read'
+        end      
+        item
+          Caption = 'Write'
+          Width = 75
+        end>
+      MultiSelect = True
+      PopupMenu = PopupMenu1
+      TabOrder = 1
+      ViewStyle = vsReport
+      OnChange = ConnectionListChange
+    end
+  end
+  object Splitter2: TSplitter
+    Left = 340
+    Height = 471
+    Top = 105
+    Width = 5
+  end
+  object PageControl1: TPageControl
+    Left = 345
+    Height = 471
+    Top = 105
+    Width = 589
+    ActivePage = TabSheet2
+    Align = alClient
+    TabIndex = 1
+    TabOrder = 5
+    object TabSheet1: TTabSheet
+      Caption = 'Basics'
+      ClientHeight = 440
+      ClientWidth = 585
+      object Panel3: TPanel
+        Left = 0
+        Height = 125
+        Top = 0
+        Width = 585
+        Align = alTop
+        ClientHeight = 125
+        ClientWidth = 585
+        TabOrder = 0
+        object Panel4: TPanel
+          Left = 1
+          Height = 123
+          Top = 1
+          Width = 270
+          Align = alLeft
+          ClientHeight = 123
+          ClientWidth = 270
+          TabOrder = 0
+          object Panel6: TPanel
+            Left = 1
+            Height = 35
+            Top = 87
+            Width = 268
+            Align = alBottom
+            ClientHeight = 35
+            ClientWidth = 268
+            TabOrder = 0
+            object Button1: TButton
+              Left = 10
+              Height = 25
+              Top = 5
+              Width = 75
+              Action = SendTextAction
+              TabOrder = 0
+            end
+          end
+          object SendSelectedMemo: TMemo
+            Left = 1
+            Height = 86
+            Top = 1
+            Width = 268
+            Align = alClient
+            TabOrder = 1
+          end
+        end
+        object Splitter3: TSplitter
+          Left = 271
+          Height = 123
+          Top = 1
+          Width = 5
+        end
+        object Panel5: TPanel
+          Left = 276
+          Height = 123
+          Top = 1
+          Width = 308
+          Align = alClient
+          ClientHeight = 123
+          ClientWidth = 308
+          TabOrder = 2
+          object Panel7: TPanel
+            Left = 1
+            Height = 35
+            Top = 87
+            Width = 306
+            Align = alBottom
+            ClientHeight = 35
+            ClientWidth = 306
+            TabOrder = 0
+            object Button2: TButton
+              Left = 10
+              Height = 25
+              Top = 5
+              Width = 100
+              Action = BroadcastAction
+              TabOrder = 0
+            end
+          end
+          object BroadcastMemo: TMemo
+            Left = 1
+            Height = 86
+            Top = 1
+            Width = 306
+            Align = alClient
+            TabOrder = 1
+          end
+        end
+      end
+      object Splitter4: TSplitter
+        Cursor = crVSplit
+        Left = 0
+        Height = 5
+        Top = 125
+        Width = 585
+        Align = alTop
+        ResizeAnchor = akTop
+      end
+      object PageControl2: TPageControl
+        Left = 0
+        Height = 310
+        Top = 130
+        Width = 290
+        ActivePage = TabSheet4
+        Align = alLeft
+        TabIndex = 1
+        TabOrder = 2
+        object TabSheet3: TTabSheet
+          Caption = 'Last received'
+          ClientHeight = 279
+          ClientWidth = 286
+          object LastReceivedMemo: TMemo
+            Left = 0
+            Height = 279
+            Top = 0
+            Width = 286
+            Align = alClient
+            TabOrder = 0
+          end
+        end
+        object TabSheet4: TTabSheet
+          Caption = 'Last sent'
+          ClientHeight = 279
+          ClientWidth = 286
+          object LastSentMemo: TMemo
+            Left = 0
+            Height = 279
+            Top = 0
+            Width = 286
+            Align = alClient
+            TabOrder = 0
+          end
+        end
+      end
+      object Splitter5: TSplitter
+        Left = 290
+        Height = 310
+        Top = 130
+        Width = 5
+      end
+      object ConnectionInfoMemo: TMemo
+        Left = 295
+        Height = 310
+        Top = 130
+        Width = 290
+        Align = alClient
+        TabOrder = 4
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Extra'
+      ClientHeight = 440
+      ClientWidth = 585
+      object Image1: TImage
+        Left = 13
+        Height = 200
+        Top = 162
+        Width = 200
+        Stretch = True
+      end
+      object Panel8: TPanel
+        Left = 0
+        Height = 150
+        Top = 0
+        Width = 585
+        Align = alTop
+        Caption = 'Panel8'
+        ClientHeight = 150
+        ClientWidth = 585
+        TabOrder = 0
+        object SendSelectedMemo2: TMemo
+          Left = 1
+          Height = 110
+          Top = 1
+          Width = 583
+          Align = alTop
+          TabOrder = 0
+        end
+        object Button3: TButton
+          Left = 7
+          Height = 25
+          Top = 119
+          Width = 100
+          Action = SendFramesAction
+          TabOrder = 1
+        end
+      end
+      object Button4: TButton
+        Left = 230
+        Height = 25
+        Top = 163
+        Width = 150
+        Action = LoadImageAction
+        TabOrder = 1
+      end
+      object Button5: TButton
+        Left = 230
+        Height = 25
+        Top = 197
+        Width = 150
+        Action = PingAction
+        TabOrder = 2
+      end
+      object Button6: TButton
+        Left = 230
+        Height = 25
+        Top = 231
+        Width = 150
+        Action = PongAction
+        TabOrder = 3
+      end
+    end
+  end
+  object ActionList1: TActionList
+    left = 616
+    top = 24
+    object StartAction: TAction
+      Caption = 'Start server'
+      OnExecute = StartActionExecute
+    end
+    object EndAction: TAction
+      Caption = 'End server'
+      OnExecute = EndActionExecute
+      OnUpdate = EndActionUpdate
+    end
+    object SendTextAction: TAction
+      Caption = 'Send text'
+      OnExecute = SendTextActionExecute
+      OnUpdate = EndActionUpdate
+    end
+    object BroadcastAction: TAction
+      Caption = 'Broadcast'
+      OnExecute = BroadcastActionExecute
+      OnUpdate = EndActionUpdate
+    end
+    object SendFramesAction: TAction
+      Caption = 'Send frames'
+      OnExecute = SendFramesActionExecute
+      OnUpdate = EndActionUpdate
+    end
+    object LoadImageAction: TAction
+      Caption = 'Load image'
+      OnExecute = LoadImageActionExecute
+      OnUpdate = EndActionUpdate
+    end
+    object PingAction: TAction
+      Caption = 'Ping'
+      OnExecute = PingActionExecute
+      OnUpdate = EndActionUpdate
+    end
+    object PongAction: TAction
+      Caption = 'Pong'
+      OnExecute = PongActionExecute
+      OnUpdate = EndActionUpdate
+    end
+    object CloseAction: TAction
+      Caption = 'Close'
+      OnExecute = CloseActionExecute
+      OnUpdate = EndActionUpdate
+    end
+  end
+  object OpenPictureDialog: TOpenPictureDialog
+    left = 704
+    top = 52
+  end
+  object PopupMenu1: TPopupMenu
+    left = 168
+    top = 276
+    object MenuItem1: TMenuItem
+      Action = CloseAction
+      OnClick = CloseActionExecute
+    end
+  end
+end

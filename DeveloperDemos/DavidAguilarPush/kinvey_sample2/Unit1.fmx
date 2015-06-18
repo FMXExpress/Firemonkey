@@ -1,0 +1,47 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 446
+  ClientWidth = 500
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 500.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Size.Width = 500.000000000000000000
+    Size.Height = 406.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object KinveyProvider1: TKinveyProvider
+    ApiVersion = '3'
+    AppKey = 'kid_-1geKZv6q'
+    AppSecret = '18ad0e6c640744a4ade1489bc50fd9b7'
+    MasterSecret = 'cc4e39be70f2450abbb650c6fe67fd58'
+    UserName = 'pruebas'
+    Password = 'pruebas'
+    AndroidPush.GCMAppID = '409440126831'
+    Left = 96
+    Top = 24
+  end
+  object PushEvents1: TPushEvents
+    Provider = KinveyProvider1
+    OnDeviceTokenReceived = PushEvents1DeviceTokenReceived
+    OnDeviceTokenRequestFailed = PushEvents1DeviceTokenRequestFailed
+    OnPushReceived = PushEvents1PushReceived
+    Left = 192
+    Top = 24
+  end
+end

@@ -1,0 +1,97 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Button1: TButton
+    Height = 44.000000000000000000
+    Position.X = 120.000000000000000000
+    Position.Y = 8.000000000000000000
+    TabOrder = 0
+    Text = 'Load Providers'
+    Trimming = ttCharacter
+    Width = 153.000000000000000000
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Align = alBottom
+    Height = 231.000000000000000000
+    Position.Y = 336.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object CheckBox1: TCheckBox
+    Height = 23.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 2
+    Text = 'GPS Enabled'
+    Width = 120.000000000000000000
+  end
+  object CheckBox2: TCheckBox
+    Height = 23.000000000000000000
+    Position.X = 168.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 3
+    Text = 'Network Enabled'
+    Width = 169.000000000000000000
+  end
+  object Label1: TLabel
+    Height = 23.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 128.000000000000000000
+    Text = 'Latitude'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label2: TLabel
+    Height = 23.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 168.000000000000000000
+    Text = 'Longitude'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label3: TLabel
+    Height = 23.000000000000000000
+    Position.X = 24.000000000000000000
+    Position.Y = 216.000000000000000000
+    Text = 'Alititude'
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label4: TLabel
+    Height = 23.000000000000000000
+    Position.X = 168.000000000000000000
+    Position.Y = 128.000000000000000000
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label5: TLabel
+    Height = 23.000000000000000000
+    Position.X = 168.000000000000000000
+    Position.Y = 168.000000000000000000
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+  object Label6: TLabel
+    Height = 23.000000000000000000
+    Position.X = 168.000000000000000000
+    Position.Y = 216.000000000000000000
+    Width = 82.000000000000000000
+    Trimming = ttCharacter
+  end
+end

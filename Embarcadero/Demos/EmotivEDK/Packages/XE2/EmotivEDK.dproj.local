@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2011/10/14 21:58:47.000.074,=rtl.dcp</Transaction>
+    <Transaction>2011/10/14 21:59:45.000.499,D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Packages\XE2\EmotivEDK_XE2.dproj=C:\Users\Kraven\Documents\RAD Studio\Projects\Package1.dproj</Transaction>
+    <Transaction>2011/10/14 21:59:51.000.762,=D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Packages\XE2\Unit1.pas</Transaction>
+    <Transaction>2011/10/14 22:00:13.000.331,D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Source\Core\EDK.Core.pas=D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Packages\XE2\Unit1.pas</Transaction>
+    <Transaction>2011/10/14 22:00:18.000.502,=D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Packages\XE2\Unit1.pas</Transaction>
+    <Transaction>2011/10/14 22:00:33.000.098,D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Source\Common\EDK.ErrorCodes.pas=D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Packages\XE2\Unit1.pas</Transaction>
+    <Transaction>2011/10/14 22:28:23.000.771,=D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Packages\XE2\Unit1.pas</Transaction>
+    <Transaction>2011/10/14 22:28:49.000.464,D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Source\Core\EDK.EmoState.pas=D:\(DEVELOPMENT)\(CLIENTS)\Guile 3D\EmotivEDK\Packages\XE2\Unit1.pas</Transaction>
+    <Transaction>2014/01/21 18:39:21.766,C:\Users\jim\Desktop\EmotivEDK\EmotivEDK\Packages\XE2\EmotivEDK.dproj=C:\Users\jim\Desktop\EmotivEDK\EmotivEDK\Packages\XE2\EmotivEDK_XE2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

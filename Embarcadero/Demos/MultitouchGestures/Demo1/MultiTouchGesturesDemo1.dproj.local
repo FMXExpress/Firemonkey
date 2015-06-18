@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/10/24 18:41:40.000.291,=\\psf\Home\Documents\Embarcadero\Studio\Projets\Unit1.pas</Transaction>
+    <Transaction>2014/10/24 18:42:03.000.749,\\psf\Home\Documents\Embarcadero\Studio\Projets\Unit1.fmx=C:\Coderage9\MultitouchGestures\Demo1\Unit1.fmx</Transaction>
+    <Transaction>2014/10/24 18:42:03.000.749,\\psf\Home\Documents\Embarcadero\Studio\Projets\Unit1.pas=C:\Coderage9\MultitouchGestures\Demo1\Unit1.pas</Transaction>
+    <Transaction>2014/10/24 18:42:11.000.366,\\psf\Home\Documents\Embarcadero\Studio\Projets\Project1.dproj=C:\Coderage9\MultitouchGestures\Demo1\MultiTouchGesturesDemo1.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>%iosdevice%299c977baaafd36702e310ac203484156dd10da8</MobileDevice>
+</BorlandProject>

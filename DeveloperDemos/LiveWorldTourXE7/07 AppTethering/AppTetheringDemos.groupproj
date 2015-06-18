@@ -1,0 +1,132 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3B726257-AC11-4144-B9ED-94993F72701D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="AppTethering101\ManagerFM\TetheringManagerFM.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="AppTethering101\ManagerVCL\TetheringManager.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="AppTethering101\ClientFM\TetheringClientFM.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PhotoWall\DesktopWall\DesktopWallApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="PhotoWall\Mobile\MobilePhotoApp.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BDShoppingList\VCL\TetherDatabase.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BDShoppingList\Client\TetherDBClient.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MediaPlayer\MediaPlayerHD\MediaPlayerHD.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MediaPlayer\MediaPlayerCommand\MediaPlayerCommand.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="TetheringManagerFM">
+        <MSBuild Projects="AppTethering101\ManagerFM\TetheringManagerFM.dproj"/>
+    </Target>
+    <Target Name="TetheringManagerFM:Clean">
+        <MSBuild Projects="AppTethering101\ManagerFM\TetheringManagerFM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TetheringManagerFM:Make">
+        <MSBuild Projects="AppTethering101\ManagerFM\TetheringManagerFM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TetheringManager">
+        <MSBuild Projects="AppTethering101\ManagerVCL\TetheringManager.dproj"/>
+    </Target>
+    <Target Name="TetheringManager:Clean">
+        <MSBuild Projects="AppTethering101\ManagerVCL\TetheringManager.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TetheringManager:Make">
+        <MSBuild Projects="AppTethering101\ManagerVCL\TetheringManager.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TetheringClientFM">
+        <MSBuild Projects="AppTethering101\ClientFM\TetheringClientFM.dproj"/>
+    </Target>
+    <Target Name="TetheringClientFM:Clean">
+        <MSBuild Projects="AppTethering101\ClientFM\TetheringClientFM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TetheringClientFM:Make">
+        <MSBuild Projects="AppTethering101\ClientFM\TetheringClientFM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DesktopWallApp">
+        <MSBuild Projects="PhotoWall\DesktopWall\DesktopWallApp.dproj"/>
+    </Target>
+    <Target Name="DesktopWallApp:Clean">
+        <MSBuild Projects="PhotoWall\DesktopWall\DesktopWallApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DesktopWallApp:Make">
+        <MSBuild Projects="PhotoWall\DesktopWall\DesktopWallApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobilePhotoApp">
+        <MSBuild Projects="PhotoWall\Mobile\MobilePhotoApp.dproj"/>
+    </Target>
+    <Target Name="MobilePhotoApp:Clean">
+        <MSBuild Projects="PhotoWall\Mobile\MobilePhotoApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobilePhotoApp:Make">
+        <MSBuild Projects="PhotoWall\Mobile\MobilePhotoApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TetherDatabase">
+        <MSBuild Projects="BDShoppingList\VCL\TetherDatabase.dproj"/>
+    </Target>
+    <Target Name="TetherDatabase:Clean">
+        <MSBuild Projects="BDShoppingList\VCL\TetherDatabase.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TetherDatabase:Make">
+        <MSBuild Projects="BDShoppingList\VCL\TetherDatabase.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TetherDBClient">
+        <MSBuild Projects="BDShoppingList\Client\TetherDBClient.dproj"/>
+    </Target>
+    <Target Name="TetherDBClient:Clean">
+        <MSBuild Projects="BDShoppingList\Client\TetherDBClient.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TetherDBClient:Make">
+        <MSBuild Projects="BDShoppingList\Client\TetherDBClient.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MediaPlayerHD">
+        <MSBuild Projects="MediaPlayer\MediaPlayerHD\MediaPlayerHD.dproj"/>
+    </Target>
+    <Target Name="MediaPlayerHD:Clean">
+        <MSBuild Projects="MediaPlayer\MediaPlayerHD\MediaPlayerHD.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MediaPlayerHD:Make">
+        <MSBuild Projects="MediaPlayer\MediaPlayerHD\MediaPlayerHD.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MediaPlayerCommand">
+        <MSBuild Projects="MediaPlayer\MediaPlayerCommand\MediaPlayerCommand.dproj"/>
+    </Target>
+    <Target Name="MediaPlayerCommand:Clean">
+        <MSBuild Projects="MediaPlayer\MediaPlayerCommand\MediaPlayerCommand.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MediaPlayerCommand:Make">
+        <MSBuild Projects="MediaPlayer\MediaPlayerCommand\MediaPlayerCommand.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="TetheringManagerFM;TetheringManager;TetheringClientFM;DesktopWallApp;MobilePhotoApp;TetherDatabase;TetherDBClient;MediaPlayerHD;MediaPlayerCommand"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="TetheringManagerFM:Clean;TetheringManager:Clean;TetheringClientFM:Clean;DesktopWallApp:Clean;MobilePhotoApp:Clean;TetherDatabase:Clean;TetherDBClient:Clean;MediaPlayerHD:Clean;MediaPlayerCommand:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="TetheringManagerFM:Make;TetheringManager:Make;TetheringClientFM:Make;DesktopWallApp:Make;MobilePhotoApp:Make;TetherDatabase:Make;TetherDBClient:Make;MediaPlayerHD:Make;MediaPlayerCommand:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
