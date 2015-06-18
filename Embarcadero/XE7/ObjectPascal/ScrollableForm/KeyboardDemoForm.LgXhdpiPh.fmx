@@ -1,0 +1,23 @@
+inherited FormMain_LgXhdpiPh: TFormMain_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited VertScrollBox1: TVertScrollBox
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited MainLayout1: TLayout
+      Size.Width = 50.000000000000000000
+      Size.Height = 50.000000000000000000
+      inherited Edit1: TEdit
+        Position.Y = 18.000000000000000000
+        Size.Width = 50.000000000000000000
+      end
+      inherited Memo1: TMemo
+        Size.Width = 50.000000000000000000
+      end
+      inherited LabelTitle: TLabel
+        Size.Width = 50.000000000000000000
+      end
+    end
+  end
+end

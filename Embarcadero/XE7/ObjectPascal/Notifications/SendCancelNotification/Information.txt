@@ -1,0 +1,9 @@
+Title: SendCancelNotifications
+
+Brief Description: This code snippet shows you how to use the Notification API in order to send a notification immediately or 
+with a 10 second delay and how to cancel a scheduled notification or all notifications.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+

@@ -1,0 +1,10 @@
+Title: CustomPicker
+
+Brief Description: This code snippet shows you how to use the TComboBox component to invoke the native picker at runtime, pick an item from it 
+and display the selected item text on a label.
+
+Language: C++
+
+Platforms supported: iOS, Android
+
+Keywords: combo box, item, text, label, pick, iOS, Android

@@ -1,0 +1,20 @@
+inherited SettingBadgeNumberForm_LgXhdpiPh: TSettingBadgeNumberForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ListBox1: TListBox
+    Size.Width = 480.000000000000000000
+    inherited ListBoxItem1: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 480.000000000000000000
+    end
+    inherited btnSetBadgeNumber: TButton
+      Position.X = 427.000000000000000000
+    end
+  end
+end

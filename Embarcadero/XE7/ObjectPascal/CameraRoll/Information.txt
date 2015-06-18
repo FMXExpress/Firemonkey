@@ -1,0 +1,10 @@
+Title: CameraRoll
+
+Brief Description: This code snippet shows you how to use standard actions in order to open the Photo Library on your iOS or Android device 
+and retrieve an image from the library for displaying on your FireMonkey form.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: image, Photo Library, iOS, Android

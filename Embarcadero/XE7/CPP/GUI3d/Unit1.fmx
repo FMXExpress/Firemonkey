@@ -1,0 +1,46 @@
+object Form3D1: TForm3D1
+  Left = 0
+  Top = 0
+  Caption = 'GUI 3D C++Builder XE3'
+  ClientHeight = 480
+  ClientWidth = 332
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Layer3D1: TLayer3D
+    Align = Client
+    Height = 480.000000000000000000
+    Position.X = 166.000000000000000000
+    Position.Y = 240.000000000000000000
+    Projection = Screen
+    Resolution = 50
+    StyleLookup = 'backgroundstyle'
+    Width = 332.000000000000000000
+    object Button1: TButton
+      Anchors = [akLeft, akTop, akRight]
+      Position.X = 64.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 215.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Flip'
+      OnClick = Button1Click
+      object GlowEffect1: TGlowEffect
+        Softness = 1.000000000000000000
+        GlowColor = claGold
+        Opacity = 0.899999976158142100
+        object FloatAnimation1: TFloatAnimation
+          Enabled = True
+          Duration = 1.000000000000000000
+          Inverse = True
+          Loop = True
+          PropertyName = 'Softness'
+          StartValue = 0.500000000000000000
+          StopValue = 3.000000000000000000
+        end
+      end
+    end
+  end
+end

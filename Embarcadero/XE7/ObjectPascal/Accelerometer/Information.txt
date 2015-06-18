@@ -1,0 +1,10 @@
+Title: Accelerometer Code Snippet
+
+Brief Description: This code snippet shows you how to use the accelerometer in order to obtain information about the 
+acceleration, angular acceleration, motion and speed.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android
+
+Keywords: motion, iOS, Android, accelerometer

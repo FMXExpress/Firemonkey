@@ -1,0 +1,242 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Basic Classic Bluetooth Demo'
+  ClientHeight = 577
+  ClientWidth = 360
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 3
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 360.000000000000000000
+    Size.Height = 577.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    object Labeldiscoverable: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 321.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TabControl1: TTabControl
+      Align = Client
+      FullSize = True
+      Size.Width = 360.000000000000000000
+      Size.Height = 577.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 1
+      TabPosition = Bottom
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 180.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Bluetooth settings'
+        object ButtonDiscover: TButton
+          Position.X = 4.000000000000000000
+          Position.Y = 41.000000000000000000
+          Size.Width = 158.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Discover devices'
+          OnClick = ButtonDiscoverClick
+        end
+        object ButtonPair: TButton
+          Position.X = 182.000000000000000000
+          Position.Y = 41.000000000000000000
+          Size.Width = 78.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Pair'
+          OnClick = ButtonPairClick
+        end
+        object ButtonPairedDevices: TButton
+          Position.X = 4.000000000000000000
+          Position.Y = 114.000000000000000000
+          Size.Width = 160.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Paired Devices'
+          OnClick = ButtonPairedDeviceClick
+        end
+        object ButtonUnPair: TButton
+          Position.X = 268.000000000000000000
+          Position.Y = 49.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'UnPair'
+          OnClick = ButtonUnPairClick
+        end
+        object ComboBoxDevices: TComboBox
+          Position.Y = 75.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+        end
+        object ComboBoxPaired: TComboBox
+          Position.Y = 148.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          OnChange = ComboBoxPairedChange
+        end
+        object ButtonServices: TButton
+          Position.X = 4.000000000000000000
+          Position.Y = 187.000000000000000000
+          Size.Width = 105.000000000000000000
+          Size.Height = 31.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Text = 'Services'
+          OnClick = ButtonServicesClick
+        end
+        object ComboBoxServices: TComboBox
+          Position.Y = 221.000000000000000000
+          Size.Width = 360.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 180.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Service demo'
+        object PanelClient: TPanel
+          Position.X = 8.000000000000000000
+          Position.Y = 148.000000000000000000
+          Size.Width = 345.000000000000000000
+          Size.Height = 137.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Button2: TButton
+            Position.X = 10.000000000000000000
+            Position.Y = 106.000000000000000000
+            Size.Width = 73.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Clear'
+            OnClick = Button2Click
+          end
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            TabOrder = 1
+            Text = 'I am the text sent'
+            Position.X = 10.000000000000000000
+            Position.Y = 65.000000000000000000
+            Size.Width = 327.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object FreeSocket: TButton
+            Position.X = 182.000000000000000000
+            Position.Y = 106.000000000000000000
+            Size.Width = 157.000000000000000000
+            Size.Height = 25.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Free Client Socket'
+            OnClick = FreeSocketClick
+          end
+          object LabelNameSarver: TLabel
+            Position.X = 157.000000000000000000
+            Position.Y = 30.000000000000000000
+            Size.Width = 180.000000000000000000
+            Size.Height = 38.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object LabelClient: TLabel
+            StyledSettings = [Family, Size, FontColor]
+            Size.Width = 227.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Style = [fsUnderline]
+            Text = 'Client'
+          end
+          object ButtonConnectToRFCOMM: TButton
+            Position.X = 10.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 143.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            Text = 'Send text to ->'
+            OnClick = ButtonConnectToRFCOMMClick
+          end
+        end
+        object PanelServer: TPanel
+          Position.X = 8.000000000000000000
+          Position.Y = 40.000000000000000000
+          Size.Width = 345.000000000000000000
+          Size.Height = 81.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object ButtonCloseReadingSocket: TButton
+            Position.X = 183.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 152.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Remove text service'
+            OnClick = ButtonCloseReadingSocketClick
+          end
+          object ButtonOpenReadingSocket: TButton
+            Position.X = 10.000000000000000000
+            Position.Y = 32.000000000000000000
+            Size.Width = 152.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Create text service'
+            OnClick = ButtonOpenReadingSocketClick
+          end
+          object LabelServer: TLabel
+            StyledSettings = [Family, Size, FontColor]
+            Size.Width = 227.000000000000000000
+            Size.Height = 20.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Style = [fsUnderline]
+            Text = 'Server'
+          end
+        end
+      end
+    end
+    object DisplayR: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      Position.Y = 288.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 241.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      TabStop = False
+      ReadOnly = True
+      ShowSizeGrip = True
+    end
+  end
+end

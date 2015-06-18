@@ -1,0 +1,663 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object DetailPanel: TPanel
+    Align = Client
+    Size.Width = 390.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'detailstyle'
+    TabOrder = 2
+    object ToolBar1: TToolBar
+      Padding.Left = 13.000000000000000000
+      Padding.Right = 15.000000000000000000
+      Size.Width = 390.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label2: TLabel
+        Align = Contents
+        Size.Width = 390.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Detail'
+      end
+      object MasterButton: TSpeedButton
+        Align = Left
+        Position.X = 13.000000000000000000
+        Size.Width = 48.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'detailstoolbuttonbordered'
+        Text = 'MasterButton'
+        TouchTargetExpansion.Left = 5.000000000000000000
+        TouchTargetExpansion.Top = 5.000000000000000000
+        TouchTargetExpansion.Right = 5.000000000000000000
+        TouchTargetExpansion.Bottom = 5.000000000000000000
+        Visible = False
+      end
+    end
+    object Layout2: TLayout
+      Align = Top
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 10.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 10.000000000000000000
+      Position.X = 10.000000000000000000
+      Position.Y = 58.000000000000000000
+      Size.Width = 370.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      object Layout4: TLayout
+        Align = Top
+        Size.Width = 370.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        object Label5: TLabel
+          Align = Left
+          Size.Width = 150.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Multi View Mode'
+        end
+        object cbMultiViewMode: TComboBox
+          Align = Client
+          DisableFocusEffect = False
+          ItemIndex = 0
+          Size.Width = 220.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnChange = cbMultiViewModeChange
+          object ListBoxItem8: TListBoxItem
+            IsSelected = True
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'PlatformBehaviour'
+          end
+          object ListBoxItem9: TListBoxItem
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Docked Panel'
+          end
+          object ListBoxItem10: TListBoxItem
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Popover'
+          end
+          object ListBoxItem11: TListBoxItem
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Drawer'
+          end
+          object ListBoxItem16: TListBoxItem
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = 'Custom'
+          end
+        end
+      end
+    end
+    object TabControl1: TTabControl
+      Align = Client
+      FullSize = True
+      Size.Width = 390.000000000000000000
+      Size.Height = 376.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 2
+      TabPosition = PlatformDefault
+      object TabItem1: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 98.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Drawer'
+        object Layout3: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label4: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Siding Mode'
+          end
+          object cbSlidingMode: TComboBox
+            Align = Client
+            DisableFocusEffect = False
+            ItemIndex = 1
+            Size.Width = 220.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            OnChange = cbSlidingModeChange
+            object ListBoxItem6: TListBoxItem
+              Size.Width = 19.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Pushing'
+            end
+            object ListBoxItem7: TListBoxItem
+              Size.Width = 19.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Overlap'
+            end
+          end
+        end
+        object Layout5: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 89.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Label8: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Touch Area Size'
+          end
+          object nbTouchAreaSize: TNumberBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            Cursor = crIBeam
+            Value = 15.000000000000000000
+            Size.Width = 220.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            OnChange = nbTouchAreaSizeChange
+          end
+        end
+        object Layout7: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 47.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label11: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Placement'
+          end
+          object cbSlidingDirection: TComboBox
+            Align = Client
+            DisableFocusEffect = False
+            ItemIndex = 0
+            Size.Width = 220.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            OnChange = cbSlidingDirectionChange
+            object ListBoxItem12: TListBoxItem
+              IsSelected = True
+              Size.Width = 19.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Left'
+            end
+            object ListBoxItem13: TListBoxItem
+              Size.Width = 19.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Right'
+            end
+          end
+        end
+        object Layout8: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 131.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label12: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Duration Sliding'
+          end
+          object nbDurationSliding: TNumberBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            Cursor = crIBeam
+            Value = 0.250000000000000000
+            ValueType = Float
+            HorzIncrement = 0.050000000745058060
+            VertIncrement = 0.100000001490116100
+            Size.Width = 220.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            OnChange = nbDurationSlidingChange
+          end
+        end
+      end
+      object TabItem2: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 98.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Popover'
+        object Layout6: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label10: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Popup Height'
+          end
+          object nbPopupHeight: TNumberBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            Cursor = crIBeam
+            Max = 2000.000000000000000000
+            Value = 300.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            OnChange = nbPopupHeightChange
+          end
+        end
+        object Layout12: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 47.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label7: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Appearance Duration'
+          end
+          object nmAppearanceDuration: TNumberBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            Cursor = crIBeam
+            Max = 2000.000000000000000000
+            Value = 0.250000000000000000
+            ValueType = Float
+            VertIncrement = 0.100000001490116100
+            Size.Width = 185.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            OnChange = nmAppearanceDurationChange
+          end
+        end
+        object Layout13: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 89.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label9: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 185.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Tint Popover'
+          end
+          object cbPopoverTint: TComboColorBox
+            Align = Client
+            Color = xFFF9F9F9
+            Size.Width = 185.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            OnChange = cbPopoverTintChange
+          end
+        end
+      end
+      object TabItem3: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 98.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Split View'
+        object Layout11: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label6: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Placement'
+          end
+          object cbSplitViewPlacement: TComboBox
+            Align = Client
+            DisableFocusEffect = False
+            ItemIndex = 0
+            Size.Width = 220.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            OnChange = cbSplitViewPlacementChange
+            object ListBoxItem14: TListBoxItem
+              IsSelected = True
+              Size.Width = 19.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Left'
+            end
+            object ListBoxItem15: TListBoxItem
+              Size.Width = 19.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Right'
+            end
+          end
+        end
+      end
+      object Shadow: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 94.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Shadow'
+        object Layout1: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label3: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Shadow Enable'
+          end
+          object swShadow: TSwitch
+            Align = Right
+            IsChecked = True
+            Position.X = 294.000000000000000000
+            Position.Y = 2.000000000000000000
+            Size.Width = 76.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            OnSwitch = swShadowSwitch
+          end
+        end
+        object Layout9: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 89.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Label13: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Color'
+          end
+          object cbShadowColor: TComboColorBox
+            Align = Client
+            Color = claLightskyblue
+            Size.Width = 220.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            OnChange = cbShadowColorChange
+          end
+        end
+        object Layout10: TLayout
+          Align = Top
+          Padding.Top = 2.000000000000000000
+          Padding.Bottom = 2.000000000000000000
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Position.X = 10.000000000000000000
+          Position.Y = 47.000000000000000000
+          Size.Width = 370.000000000000000000
+          Size.Height = 37.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Label14: TLabel
+            Align = Left
+            Position.Y = 2.000000000000000000
+            Size.Width = 150.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Opacity'
+          end
+          object nbShadowOpacity: TNumberBox
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = Client
+            TabOrder = 1
+            Cursor = crIBeam
+            Value = 0.300000011920929000
+            ValueType = Float
+            HorzIncrement = 0.100000001490116100
+            VertIncrement = 0.100000001490116100
+            Size.Width = 220.000000000000000000
+            Size.Height = 33.000000000000000000
+            Size.PlatformDefault = False
+            OnChangeTracking = nbShadowOpacityChangeTracking
+          end
+        end
+      end
+    end
+  end
+  object MultiView1: TMultiView
+    DrawerOptions.TouchAreaSize = 15.000000000000000000
+    PopoverOptions.StyleLookup = '#FFf9f9f9'
+    PopoverOptions.PopupHeight = 300.000000000000000000
+    MasterButton = MasterButton
+    ShadowOptions.Color = claLightskyblue
+    Size.Width = 250.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ToolBar2: TToolBar
+      Size.Width = 249.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label1: TLabel
+        Align = Contents
+        Size.Width = 249.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Master'
+      end
+    end
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 249.000000000000000000
+      Size.Height = 432.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      object ListBoxItem1: TListBoxItem
+        Size.Width = 245.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'ListBoxItem1'
+      end
+      object ListBoxItem2: TListBoxItem
+        Position.Y = 44.000000000000000000
+        Size.Width = 245.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'ListBoxItem2'
+      end
+      object ListBoxItem3: TListBoxItem
+        Position.Y = 88.000000000000000000
+        Size.Width = 245.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'ListBoxItem3'
+      end
+      object ListBoxItem4: TListBoxItem
+        Position.Y = 132.000000000000000000
+        Size.Width = 245.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'ListBoxItem4'
+      end
+      object ListBoxItem5: TListBoxItem
+        Position.Y = 176.000000000000000000
+        Size.Width = 245.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'ListBoxItem5'
+      end
+    end
+  end
+end

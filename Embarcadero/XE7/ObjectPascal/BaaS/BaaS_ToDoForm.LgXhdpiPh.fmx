@@ -1,0 +1,101 @@
+inherited BaaSToDoList_LgXhdpiPh: TBaaSToDoList_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited ButtonAdd: TButton
+      Position.X = 397.000000000000000000
+    end
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+    end
+    inherited SpeedButton2: TSpeedButton
+      Position.X = 350.000000000000000000
+    end
+    inherited SpeedButton1: TSpeedButton
+      Position.X = 308.000000000000000000
+    end
+  end
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 647.000000000000000000
+    inherited TabItemList: TTabItem
+      Size.Width = 113.000000000000000000
+      inherited ListView1: TListView
+        Size.Width = 450.000000000000000000
+        Size.Height = 554.000000000000000000
+      end
+      inherited Layout5: TLayout
+        Position.Y = 554.000000000000000000
+        Size.Width = 450.000000000000000000
+        inherited ToolBar4: TToolBar
+          Size.Width = 450.000000000000000000
+          inherited RefreshList: TButton
+            Position.X = 397.000000000000000000
+          end
+        end
+      end
+    end
+    inherited TabItemDetails: TTabItem
+      Size.Width = 112.000000000000000000
+      inherited EditTitle: TEdit
+        Size.Width = 440.000000000000000000
+      end
+      inherited MemoDescription: TMemo
+        Size.Width = 450.000000000000000000
+        Size.Height = 514.000000000000000000
+      end
+      inherited Layout3: TLayout
+        Position.Y = 554.000000000000000000
+        Size.Width = 450.000000000000000000
+        inherited ToolBar3: TToolBar
+          Size.Width = 450.000000000000000000
+          inherited Button3: TButton
+            Position.X = 401.000000000000000000
+          end
+        end
+      end
+    end
+    inherited TabItemAdd: TTabItem
+      Size.Width = 113.000000000000000000
+      inherited Layout1: TLayout
+        Position.Y = 554.000000000000000000
+        Size.Width = 450.000000000000000000
+        inherited BottomToolbar: TToolBar
+          Size.Width = 450.000000000000000000
+          inherited ButtonSaveAdd: TButton
+            Position.X = 385.000000000000000000
+          end
+        end
+      end
+      inherited MemoAddDescription: TMemo
+        Size.Width = 450.000000000000000000
+        Size.Height = 514.000000000000000000
+      end
+      inherited EditAddTitle: TEdit
+        Size.Width = 440.000000000000000000
+      end
+    end
+    inherited TabItemEdit: TTabItem
+      Size.Width = 112.000000000000000000
+      inherited EditEditTitle: TEdit
+        Size.Width = 440.000000000000000000
+      end
+      inherited Layout2: TLayout
+        Position.Y = 554.000000000000000000
+        Size.Width = 450.000000000000000000
+        inherited ToolBar2: TToolBar
+          Size.Width = 450.000000000000000000
+          inherited ButtonEditSave: TButton
+            Position.X = 385.000000000000000000
+          end
+        end
+      end
+      inherited MemoEditContent: TMemo
+        Size.Width = 450.000000000000000000
+        Size.Height = 514.000000000000000000
+      end
+    end
+  end
+end

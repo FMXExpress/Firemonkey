@@ -1,0 +1,9 @@
+Title: PhoneDialer
+
+Brief Description: This application shows how to use the PhoneDialer API in order to make a phone call and to obtain the carrier information.
+
+Language: C++
+
+Platforms supported: iOS, Android
+
+Keywords: phone, carrier, dialer, phone dialer, Android, iOS

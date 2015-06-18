@@ -1,0 +1,32 @@
+inherited Form1_Macintosh: TForm1_Macintosh
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    inherited TabControl1: TTabControl
+      inherited TabItem1: TTabItem
+        inherited ComboBoxDevices: TComboBox
+          Position.X = 1.000000000000000000
+        end
+        inherited ComboBoxPaired: TComboBox
+          Position.X = 8.000000000000000000
+        end
+        inherited ComboBoxServices: TComboBox
+          Position.X = -1.000000000000000000
+        end
+      end
+      inherited TabItem2: TTabItem
+        inherited PanelClient: TPanel
+          inherited LabelClient: TLabel
+            Position.X = 1.000000000000000000
+            Position.Y = -1.000000000000000000
+          end
+        end
+        inherited PanelServer: TPanel
+          inherited LabelServer: TLabel
+            Position.X = 6.000000000000000000
+            Position.Y = 6.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

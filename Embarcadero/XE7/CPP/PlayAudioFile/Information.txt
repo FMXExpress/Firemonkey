@@ -1,0 +1,9 @@
+Title: PlayAudioFile
+
+Brief Description: This snippet shows you how to include an audio file for playback 
+in your iOS application.
+
+Language: C++
+
+Platforms supported: iOS, Android
+

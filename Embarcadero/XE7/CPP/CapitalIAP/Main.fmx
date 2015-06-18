@@ -1,0 +1,121 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form11'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  DesignerMasterStyle = 2
+  object ClientLayout: TLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    object UILayout: TLayout
+      Align = Client
+      Size.Width = 320.000000000000000000
+      Size.Height = 460.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object bFiveQuestion: TButton
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 31.000000000000000000
+        Position.Y = 186.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '5 Questions'
+        OnClick = bFiveQuestionClick
+      end
+      object bTenQuestion: TButton
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 31.000000000000000000
+        Position.Y = 241.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = '10 Questions'
+        OnClick = bTenQuestionClick
+      end
+      object bTwentyQuestion: TButton
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 31.000000000000000000
+        Position.Y = 296.000000000000000000
+        Size.Width = 258.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = '20 Questions'
+        OnClick = bTwentyQuestionClick
+      end
+      object Label1: TLabel
+        Align = Top
+        Size.Width = 320.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Choose the Number of Questions you want to see:'
+      end
+      object ToolBar1: TToolBar
+        Align = Bottom
+        Position.Y = 416.000000000000000000
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object Button4: TButton
+          Align = Right
+          Margins.Right = 6.000000000000000000
+          Position.X = 270.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbuttonbordered'
+          TabOrder = 0
+        end
+      end
+    end
+    object OptionsMultiView: TMultiView
+      TargetControl = UILayout
+      MasterButton = Button4
+      OnHidden = OptionsMultiViewHidden
+      Size.Width = 280.000000000000000000
+      Size.Height = 460.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 1
+      inline OptionFrame: TfrOptions
+        Align = Client
+        Size.Width = 279.000000000000000000
+        Size.Height = 460.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        inherited ListBox1: TListBox
+          Size.Width = 279.000000000000000000
+          Size.Height = 416.000000000000000000
+        end
+        inherited ToolBar1: TToolBar
+          Size.Width = 279.000000000000000000
+          inherited Label1: TLabel
+            Size.Width = 279.000000000000000000
+            Text = 'Options'
+            inherited Button1: TButton
+              StyleLookup = 'donetoolbutton'
+              Text = 'Done'
+              OnClick = OptionFormButton1Click
+            end
+          end
+        end
+      end
+    end
+  end
+end

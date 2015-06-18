@@ -1,0 +1,50 @@
+object FrameMaterialDesigner: TFrameMaterialDesigner
+  Size.Width = 266.000000000000000000
+  Size.Height = 329.000000000000000000
+  TabOrder = 0
+  object CompListBox: TListBox
+    Align = Top
+    Margins.Left = 5.000000000000000000
+    Margins.Top = 5.000000000000000000
+    Margins.Right = 5.000000000000000000
+    Margins.Bottom = 5.000000000000000000
+    Position.X = 5.000000000000000000
+    Position.Y = 5.000000000000000000
+    Size.Width = 256.000000000000000000
+    Size.Height = 61.000000000000000000
+    TabOrder = 0
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = CompListBoxChange
+    object itemColor: TListBoxItem
+      Height = 19.000000000000000000
+      Size.Width = 252.000000000000000000
+      Size.Height = 19.000000000000000000
+      TabOrder = 0
+      Text = 'TColorMaterialSource'
+    end
+    object itemTexture: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 19.000000000000000000
+      Size.Width = 252.000000000000000000
+      Size.Height = 19.000000000000000000
+      TabOrder = 1
+      Text = 'TTextureMaterialSource'
+    end
+    object itemLight: TListBoxItem
+      Height = 19.000000000000000000
+      Position.Y = 38.000000000000000000
+      Size.Width = 252.000000000000000000
+      Size.Height = 19.000000000000000000
+      TabOrder = 2
+      Text = 'TLightMaterialSource'
+    end
+  end
+  object PanelOfProperties: TPanel
+    Align = Client
+    Size.Width = 266.000000000000000000
+    Size.Height = 258.000000000000000000
+    TabOrder = 1
+  end
+end

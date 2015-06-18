@@ -1,0 +1,16 @@
+object _1: TLayout
+  Align = alClient
+  Position.Point = '(0,33)'
+  Width = 696.000000000000000000
+  Height = 892.000000000000000000
+  object TRectangle
+    ResourceName = 'Panel1Style1'
+    Position.Point = '(323,421)'
+    Width = 50.000000000000000000
+    Height = 50.000000000000000000
+    HitTest = False
+    Fill.Color = claBlack
+    Stroke.Color = xFF8E8E8E
+    Sides = [sdTop, sdLeft, sdBottom, sdRight]
+  end
+end

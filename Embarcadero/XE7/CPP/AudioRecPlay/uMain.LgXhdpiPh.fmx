@@ -1,0 +1,26 @@
+inherited AudioRecPlayForm_LgXhdpiPh: TAudioRecPlayForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited btnStartPlay: TButton
+      Position.X = 424.000000000000000000
+    end
+  end
+  inherited ToolBar2: TToolBar
+    Position.Y = 781.000000000000000000
+    Size.Width = 480.000000000000000000
+    inherited btnStopRec: TButton
+      Position.X = 400.000000000000000000
+    end
+  end
+  inherited imgOff: TImage
+    Size.Width = 409.000000000000000000
+    Size.Height = 722.000000000000000000
+  end
+  inherited imgOn: TImage
+    Size.Width = 457.000000000000000000
+    Size.Height = 721.000000000000000000
+  end
+end

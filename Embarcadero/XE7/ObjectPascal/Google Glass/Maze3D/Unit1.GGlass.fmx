@@ -1,0 +1,15 @@
+inherited Form1_GGlass: TForm1_GGlass
+  ClientHeight = 215
+  ClientWidth = 427
+  DesignerMasterStyle = 0
+  inherited lBanner: TLayer3D
+    Quanternion = '(-0.573576509952545,0,0,-0.819152116775513)'
+  end
+  inherited lGlass: TLayer3D
+    Quanternion = '(-0.173648327589035,0,0,0.984807729721069)'
+    inherited Image1: TImage
+      MultiResBitmap.Height = 70
+      MultiResBitmap.Width = 128
+    end
+  end
+end

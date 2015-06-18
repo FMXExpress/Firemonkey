@@ -1,0 +1,140 @@
+object FireDAC_SQLiteForm: TFireDAC_SQLiteForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object btnAdd: TButton
+      Align = Right
+      Height = 48.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 331.000000000000000000
+      StyleLookup = 'addtoolbuttonbordered'
+      TabOrder = 0
+      Text = 'btnAdd'
+      Width = 48.000000000000000000
+      OnClick = btnAddClick
+    end
+    object Title: TLabel
+      Align = Contents
+      StyledSettings = [Family, Style, FontColor]
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      TextSettings.WordWrap = False
+      Text = 'SQLite && FireDAC'
+      Width = 384.000000000000000000
+    end
+    object btnDelete: TButton
+      Align = Left
+      StyledSettings = [Family, Size, Style, FontColor, Other]
+      Height = 48.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      StyleLookup = 'deletetoolbutton'
+      TabOrder = 2
+      Text = 'Delete'
+      Width = 76.000000000000000000
+      OnClick = btnDeleteClick
+    end
+  end
+  object ListBox1: TListBox
+    Align = Client
+    Height = 519.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    ItemIndex = 0
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 244
+    Top = 253
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListBox1
+      AutoActivate = False
+      Track = True
+      FillDataSource = BindSourceDB1
+      FillDisplayFieldName = 'TaskName'
+      AutoFill = False
+      BufferCount = -1
+      AutoBufferCount = False
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDTableTask
+    ScopeMappings = <>
+    Left = 240
+    Top = 344
+  end
+  object FDTableTask: TFDTable
+    Connection = FireTaskList
+    UpdateOptions.UpdateTableName = 'Task'
+    TableName = 'Task'
+    Left = 48
+    Top = 172
+  end
+  object FireTaskList: TFDConnection
+    Params.Strings = (
+      'Database=C:\tempprojects\tasks.s3db'
+      'DriverID=SQLite')
+    LoginPrompt = False
+    AfterConnect = FireTaskListAfterConnect
+    BeforeConnect = FireTaskListBeforeConnect
+    Left = 48
+    Top = 84
+  end
+  object FDQueryDelete: TFDQuery
+    Connection = FireTaskList
+    SQL.Strings = (
+      'delete from task where TaskName = (:TaskName)')
+    Left = 184
+    Top = 100
+    ParamData = <
+      item
+        Name = 'TASKNAME'
+        ParamType = ptInput
+      end>
+  end
+  object FDQueryInsert: TFDQuery
+    Connection = FireTaskList
+    SQL.Strings = (
+      'insert into task (TaskName) values (:TaskName)')
+    Left = 176
+    Top = 172
+    ParamData = <
+      item
+        Name = 'TASKNAME'
+        ParamType = ptInput
+      end>
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 56
+    Top = 260
+  end
+  object FDGUIxWaitCursor1: TFDGUIxWaitCursor
+    Provider = 'FMX'
+    Left = 48
+    Top = 332
+  end
+end

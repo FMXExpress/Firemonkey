@@ -1,0 +1,17 @@
+inherited MessageAlertsForm_LgXhdpiPh: TMessageAlertsForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited btnOneButtonAlert: TButton
+    Size.Width = 470.000000000000000000
+  end
+  inherited btnMultipleButtonAlert: TButton
+    Size.Width = 470.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 480.000000000000000000
+    end
+  end
+end

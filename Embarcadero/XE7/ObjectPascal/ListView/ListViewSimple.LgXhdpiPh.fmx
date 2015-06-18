@@ -1,0 +1,22 @@
+inherited SimpleListViewDelete_LgXhdpiPh: TSimpleListViewDelete_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited TopToolbar: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited TitleLabel: TLabel
+      Size.Width = 480.000000000000000000
+    end
+    inherited EditButton: TSpeedButton
+      Position.X = 400.000000000000000000
+    end
+  end
+  inherited BottomToolbar: TToolBar
+    Position.Y = 781.000000000000000000
+    Size.Width = 480.000000000000000000
+  end
+  inherited ListView1: TListView
+    Size.Width = 480.000000000000000000
+    Size.Height = 733.000000000000000000
+  end
+end

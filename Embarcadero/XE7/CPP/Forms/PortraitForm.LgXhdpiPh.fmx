@@ -1,0 +1,15 @@
+inherited PForm_LgXhdpiPh: TPForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited Label2: TLabel
+      Size.Width = 480.000000000000000000
+    end
+  end
+  inherited Image1: TImage
+    Size.Width = 480.000000000000000000
+    Size.Height = 781.000000000000000000
+  end
+end

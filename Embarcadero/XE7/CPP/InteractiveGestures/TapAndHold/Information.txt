@@ -1,0 +1,9 @@
+Title: Tap and Hold
+
+Brief Description: This code snippet shows you how to use long tapping gestures.
+
+Language: C++
+
+Platforms supported: iOS, Android
+
+Keywords: tap, gesture, iOS, Android, picture

@@ -1,0 +1,94 @@
+object QuizForm: TQuizForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnActivate = FormActivate
+  OnDeactivate = FormDeactivate
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 480
+  DesignerDeviceName = 'iPhone'
+  DesignerOrientation = 0
+  DesignerOSVersion = '7'
+  object lQuestion: TLabel
+    Anchors = [akLeft, akTop, akRight]
+    Height = 84.000000000000000000
+    Position.X = 18.000000000000000000
+    Position.Y = 68.000000000000000000
+    StyleLookup = 'embossedlabel'
+    TextSettings.HorzAlign = Center
+    Text = 'lQuestion'
+    Width = 283.000000000000000000
+  end
+  object Answer1: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Height = 44.000000000000000000
+    Position.X = 18.000000000000000000
+    Position.Y = 180.000000000000000000
+    TabOrder = 1
+    Text = 'Answer1'
+    Width = 280.000000000000000000
+    OnClick = Answer1Click
+  end
+  object Answer2: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Height = 44.000000000000000000
+    Position.X = 18.000000000000000000
+    Position.Y = 237.000000000000000000
+    TabOrder = 2
+    Text = 'Answer2'
+    Width = 280.000000000000000000
+    OnClick = Answer1Click
+  end
+  object Answer3: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Height = 44.000000000000000000
+    Position.X = 18.000000000000000000
+    Position.Y = 295.000000000000000000
+    TabOrder = 3
+    Text = 'Answer3'
+    Width = 280.000000000000000000
+    OnClick = Answer1Click
+  end
+  object Answer4: TButton
+    Anchors = [akLeft, akTop, akRight]
+    Height = 44.000000000000000000
+    Position.X = 18.000000000000000000
+    Position.Y = 350.000000000000000000
+    TabOrder = 4
+    Text = 'Answer4'
+    Width = 280.000000000000000000
+    OnClick = Answer1Click
+  end
+  object ToolBar1: TToolBar
+    Height = 44.000000000000000000
+    TabOrder = 8
+    Width = 320.000000000000000000
+    object lCurrentQuestion: TLabel
+      Align = Client
+      StyledSettings = [Family, Style, FontColor]
+      Height = 44.000000000000000000
+      StyleLookup = 'toollabel'
+      TextSettings.Font.Size = 21.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'Question #1'
+      Width = 320.000000000000000000
+      object bHome: TButton
+        Align = Left
+        Height = 44.000000000000000000
+        Margins.Left = 6.000000000000000000
+        Position.X = 6.000000000000000000
+        StyleLookup = 'speedbuttonstyle'
+        TabOrder = 0
+        Text = 'Home'
+        Width = 75.000000000000000000
+        OnClick = bHomeClick
+      end
+    end
+  end
+end
