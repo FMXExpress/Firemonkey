@@ -1,0 +1,131 @@
+object fPluginEdit: TfPluginEdit
+  Left = 0
+  Top = 0
+  Caption = 'Edit plugin'
+  ClientHeight = 500
+  ClientWidth = 462
+  Position = OwnerFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object lyt1: TLayout
+    Align = Bottom
+    Margins.Bottom = 10.000000000000000000
+    Position.Y = 450.000000000000000000
+    Size.Width = 462.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnSave: TButton
+      Align = Right
+      ModalResult = 1
+      Margins.Right = 20.000000000000000000
+      Position.X = 222.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Save'
+      OnClick = btnSaveClick
+    end
+    object btnCancel: TButton
+      Align = MostRight
+      ModalResult = 2
+      Margins.Right = 20.000000000000000000
+      Position.X = 342.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Cancel'
+    end
+  end
+  object lyt2: TLayout
+    Align = Top
+    Size.Width = 462.000000000000000000
+    Size.Height = 177.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object cbbTypes: TComboBox
+      Align = Top
+      ItemHeight = 40.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Position.X = 190.000000000000000000
+      Position.Y = 50.000000000000000000
+      Size.Width = 267.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnChange = cbbTypesChange
+    end
+    object img: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Align = MostLeft
+      Size.Width = 185.000000000000000000
+      Size.Height = 177.000000000000000000
+      Size.PlatformDefault = False
+      WrapMode = Stretch
+      object btnLoadImage: TButton
+        Align = Bottom
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 137.000000000000000000
+        Size.Width = 165.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Load image'
+        OnClick = btnLoadImageClick
+      end
+    end
+    object txtName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 2
+      Position.X = 190.000000000000000000
+      Position.Y = 5.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 267.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object txtPath: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Top
+      TabOrder = 3
+      Position.X = 190.000000000000000000
+      Position.Y = 95.000000000000000000
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Size.Width = 267.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      object btnAddScript: TButton
+        Align = Right
+        Position.X = 224.000000000000000000
+        Size.Width = 43.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '+'
+        OnClick = btnAddScriptClick
+      end
+    end
+  end
+  object dlgOpen: TOpenDialog
+    Filter = 'Icons|*.png'
+    Left = 232
+    Top = 280
+  end
+end

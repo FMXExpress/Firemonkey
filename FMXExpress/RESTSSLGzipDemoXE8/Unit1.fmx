@@ -1,0 +1,98 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'REST SSL GZIP Demo'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Top
+    ControlType = Platform
+    Position.Y = 41.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 125.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object Button1: TButton
+      Position.X = 280.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Text = 'Download'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Enabled = False
+      Position.X = 368.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 1
+      Text = 'Load'
+      OnClick = Button2Click
+    end
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Text = 'gzip,deflate'
+      Position.X = 176.000000000000000000
+      Position.Y = 8.000000000000000000
+    end
+    object Edit2: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 3
+      Text = 'https://www.embarcadero.com/'
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object WebBrowser1: TWebBrowser
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 310.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object RESTClient1: TRESTClient
+    Accept = 'application/json;q=0.9,text/plain;q=0.9,text/html'
+    AcceptCharset = 'UTF-8'
+    BaseURL = 'https://dev5.isafetypro.com'
+    Params = <>
+    HandleRedirects = True
+    RaiseExceptionOn500 = False
+    Left = 120
+    Top = 136
+  end
+  object RESTRequest1: TRESTRequest
+    Accept = 'application/json;q=0.9,text/plain;q=0.9,text/html'
+    AcceptCharset = 'UTF-8'
+    Client = RESTClient1
+    Params = <>
+    Response = RESTResponse1
+    Timeout = 0
+    SynchronizedEvents = False
+    Left = 184
+    Top = 136
+  end
+  object RESTResponse1: TRESTResponse
+    Left = 264
+    Top = 136
+  end
+  object Zlib: TIdCompressorZLib
+    Left = 384
+    Top = 80
+  end
+end

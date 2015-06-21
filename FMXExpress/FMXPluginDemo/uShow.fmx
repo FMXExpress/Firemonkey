@@ -1,0 +1,22 @@
+object fShow: TfShow
+  Left = 0
+  Top = 0
+  Caption = 'Form3'
+  ClientHeight = 364
+  ClientWidth = 314
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object btnShow: TButton
+    Align = Center
+    Size.Width = 150.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Show buttons'
+    OnClick = btnShowClick
+  end
+end

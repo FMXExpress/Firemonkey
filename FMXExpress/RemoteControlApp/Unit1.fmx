@@ -1,0 +1,134 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Contents
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label2: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Step 1: Launch this app twice.'
+    end
+    object Label3: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Step 2: Click Create Button in App 2.'
+    end
+    object Label4: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 96.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Step 3: Click Send Image in App 2.'
+    end
+    object Label5: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 241.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Step 4: Click the New button in App 1.'
+    end
+    object Label6: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 257.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Step 5: See the New button disappear.'
+    end
+    object Image1: TImage
+      MultiResBitmap = <
+        item
+        end>
+      Align = Contents
+      Size.Width = 640.000000000000000000
+      Size.Height = 480.000000000000000000
+      Size.PlatformDefault = False
+      OnMouseDown = Image1MouseDown
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object Button1: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 10.000000000000000000
+      TabOrder = 0
+      Text = 'Connect'
+      OnClick = Button1Click
+    end
+    object Button3: TButton
+      Position.X = 104.000000000000000000
+      Position.Y = 10.000000000000000000
+      TabOrder = 1
+      Text = 'Send Image'
+      OnClick = Button3Click
+    end
+    object Label1: TLabel
+      Position.X = 192.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 425.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Label1'
+    end
+    object Button4: TButton
+      Position.X = 272.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 89.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Create Button'
+      OnClick = Button4Click
+    end
+  end
+  object Button2: TButton
+    Position.X = 272.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 4
+    Text = 'Button2'
+    Visible = False
+    OnClick = Button2Click
+    OnMouseDown = Button2MouseDown
+  end
+  object TetheringManager1: TTetheringManager
+    OnPairedFromLocal = TetheringManager1PairedFromLocal
+    OnPairedToRemote = TetheringManager1PairedToRemote
+    Text = 'TetheringManager1'
+    AllowedAdapters = 'Network'
+    Left = 184
+    Top = 168
+  end
+  object TetheringAppProfile1: TTetheringAppProfile
+    Manager = TetheringManager1
+    Text = 'TetheringAppProfile1'
+    Group = 'RemoteApp'
+    Actions = <>
+    Resources = <>
+    OnResourceReceived = TetheringAppProfile1ResourceReceived
+    Left = 304
+    Top = 160
+  end
+end

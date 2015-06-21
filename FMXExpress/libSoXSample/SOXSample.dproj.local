@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/05/06 16:23:21.000.904,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/18 17:23:35.000.740,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/08/12 11:27:16.000.424,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/09/11 18:41:44.000.543,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/20 18:32:59.000.373,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/03/01 22:19:49.000.849,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2015/03/01 22:19:51.000.814,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2015/03/31 19:55:44.000.058,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/04/25 12:39:52.000.330,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/04/25 12:40:19.000.084,C:\libsox10\SoxTestAndroidSO\Project1.dproj=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2015/04/25 12:40:23.000.126,=C:\libsox10\SoxTestAndroidSO\UMain.pas</Transaction>
+    <Transaction>2015/04/25 14:41:33.000.894,C:\libsox10\SoXSample\SOXSample.dproj=C:\libsox10\SoXSample\Project1.dproj</Transaction>
+  </Transactions>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

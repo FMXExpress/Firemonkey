@@ -1,0 +1,83 @@
+object frPlugins: TfrPlugins
+  Align = Client
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object lvPlugins: TListView
+    ItemAppearanceClassName = 'TImageListItemAppearance'
+    ItemEditAppearanceClassName = 'TImageListItemDeleteAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    PopupMenu = pmEdit
+    Size.Width = 320.000000000000000000
+    Size.Height = 240.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ItemAppearance.ItemHeight = 100
+    ItemAppearance.ItemEditHeight = 100
+    ItemAppearanceObjects.ItemObjects.Text.Font.Size = 14.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+    ItemAppearanceObjects.ItemObjects.Image.ScalingMode = Stretch
+    ItemAppearanceObjects.ItemObjects.Image.Width = 80.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Image.Height = 80.000000000000000000
+    OnChange = lvPluginsChange
+    object pmEdit: TPopupMenu
+      OnPopup = pmEditPopup
+      Left = 244
+      Top = 44
+      object menuAdd: TMenuItem
+        Action = actAddPlugin
+        Enabled = True
+        Locked = True
+        Text = 'Add'
+        ImageIndex = -1
+      end
+      object menuEdit: TMenuItem
+        Action = actEditCurrent
+        Enabled = True
+        Text = 'Edit'
+        ImageIndex = -1
+      end
+      object menuLoad: TMenuItem
+        Action = actLoadPlugins
+        Enabled = True
+        Text = 'Load'
+        ImageIndex = -1
+      end
+      object menuSave: TMenuItem
+        Action = actSavePlugins
+        Enabled = True
+        Text = 'Save'
+        ImageIndex = -1
+      end
+    end
+    object dlgOpen: TOpenDialog
+      Filter = 'Plugins|*.plg|Icons|*.png'
+      Left = 196
+      Top = 44
+    end
+  end
+  object actlst: TActionList
+    Left = 144
+    Top = 40
+    object actLoadPlugins: TAction
+      Text = 'actLoadPlugins'
+      OnExecute = actLoadPluginsExecute
+    end
+    object actEditCurrent: TAction
+      Text = 'actEditCurrent'
+      OnExecute = actEditCurrentExecute
+    end
+    object actAddPlugin: TAction
+      Text = 'actAddPlugin'
+      OnExecute = actAddPluginExecute
+    end
+    object actSavePlugins: TAction
+      Text = 'actSavePlugins'
+      OnExecute = actSavePluginsExecute
+    end
+    object TakePhotoFromLibraryAction: TTakePhotoFromLibraryAction
+    end
+  end
+end

@@ -1,0 +1,56 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 255
+  ClientWidth = 307
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object mLog: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 292.000000000000000000
+    Size.Height = 121.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 288.000000000000000000
+    Viewport.Height = 117.000000000000000000
+  end
+  object btnTransform: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 47.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 34.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Transform File'
+    OnClick = btnTransformClick
+  end
+  object Button1: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 9.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Play Initial File'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 9.000000000000000000
+    Size.Width = 137.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Play New File'
+    OnClick = Button2Click
+  end
+end

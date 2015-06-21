@@ -1,0 +1,141 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object TMSFMXMemo1: TTMSFMXMemo
+    Align = Client
+    Cursor = crIBeam
+    DisableFocusEffect = False
+    TabOrder = 0
+    Size.Width = 640.000000000000000000
+    Size.Height = 296.000000000000000000
+    Size.PlatformDefault = False
+    ActiveLineSettings.ShowActiveLine = True
+    ActiveLineSettings.ShowActiveLineIndicator = True
+    ActiveLineSettings.ActiveLineAtCursor = True
+    AutoCompletion.StartToken = '.'
+    AutoIndent = False
+    AutoExpand = False
+    CaseSensitive = False
+    Font.Family = 'Courier New'
+    Gutter.Font.Family = 'Courier New'
+    KeyboardType = Default
+    Lines.Strings = (
+      'unit Unit1;'
+      ''
+      'interface'
+      ''
+      'uses'
+      
+        '  System.SysUtils, System.Types, System.UITypes, System.Classes,' +
+        ' System.Variants,'
+      
+        '  FMX.Types, FMX.Controls, FMX.Forms, FMX.Graphics, FMX.Dialogs,' +
+        ' FMX.StdCtrls,'
+      
+        '  PaxCompiler, FMX.TMSBaseControl, FMX.TMSMemo, PaxRunner, PaxIn' +
+        'terpreter,'
+      '  FMX.Layouts, FMX.Memo;'
+      ''
+      'type'
+      '  TForm1 = class(TForm)'
+      '    TMSFMXMemo1: TTMSFMXMemo;'
+      '    PaxPascalLanguage1: TPaxPascalLanguage;'
+      '    PaxCompiler1: TPaxCompiler;'
+      '    btn1: TButton;'
+      '    PaxInterpreter1: TPaxInterpreter;'
+      '    mmo1: TMemo;'
+      '    procedure btn1Click(Sender: TObject);'
+      '  private'
+      '    { Private declarations }'
+      '  public'
+      '    { Public declarations }'
+      '  end;'
+      ''
+      'var'
+      '  Form1: TForm1;'
+      ''
+      'implementation'
+      ''
+      '{$R *.fmx}'
+      ''
+      'procedure TForm1.btn1Click(Sender: TObject);'
+      'begin'
+      'PaxCompiler1.Reset;'
+      'PaxCompiler1.RegisterLanguage(PaxPascalLanguage1);'
+      'PaxCompiler1.AddModule('#39'1'#39', '#39'Pascal'#39');'
+      'PaxCompiler1.AddCode('#39'1'#39', TMSFMXMemo1.Lines.Text);'
+      'if PaxCompiler1.Compile(PaxInterpreter1) then'
+      'begin'
+      '//PaxInterpreter1.Run;'
+      'end'
+      'else'
+      'ShowMessage(PaxCompiler1.ErrorMessage[0]);'
+      'mmo1.Lines.Clear;'
+      ''
+      ''
+      'mmo1.Lines.Add('#39'msg'#39'+PaxCompiler1.ErrorMessage[0]);'
+      'mmo1.Lines.Add('#39'ln:'#39'+inttostr(PaxCompiler1.ErrorLineNumber[0]));'
+      'mmo1.Lines.Add('#39'l:'#39'+PaxCompiler1.ErrorLine[0]);'
+      'end;'
+      ''
+      'end.')
+    ReadOnly = False
+    TabSize = 4
+    TrimTrailingSpaces = False
+    UseStyler = True
+    Version = '1.5.2.0'
+  end
+  object btnSYntaxCheck: TButton
+    Align = Bottom
+    Position.Y = 296.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Check syntax'
+    OnClick = btnSYntaxCheckClick
+  end
+  object mmoMsg: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    ReadOnly = True
+    Align = Bottom
+    Position.Y = 328.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 152.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    OnDblClick = mmoMsgDblClick
+    Viewport.Width = 636.000000000000000000
+    Viewport.Height = 148.000000000000000000
+  end
+  object PaxPascalLanguage1: TPaxPascalLanguage
+    ExplicitOff = False
+    CompleteBooleanEval = False
+    UnitLookup = True
+    PrintKeyword = 'print'
+    PrintlnKeyword = 'println'
+    Left = 248
+    Top = 328
+  end
+  object PaxCompiler1: TPaxCompiler
+    Alignment = 8
+    DebugMode = False
+    Left = 144
+    Top = 368
+  end
+  object PaxInterpreter1: TPaxInterpreter
+    Console = False
+    Left = 352
+    Top = 328
+  end
+end

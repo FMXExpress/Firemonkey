@@ -1,0 +1,10 @@
+uses
+	uMain, uShow;
+var
+	fSHow : TfSHow;
+	fMain : TfMain;
+begin
+  	fShow := TfShow.Create(fMain);
+	fShow .SHowModal;
+	fShow.Free;
+end.

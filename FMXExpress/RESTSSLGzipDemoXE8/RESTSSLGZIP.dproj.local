@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/05/06 16:23:21.000.904,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/18 17:23:35.000.740,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/08/12 11:27:16.000.424,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/09/11 18:41:44.000.543,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/20 18:32:59.000.373,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/11/24 17:15:33.000.666,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/11/24 17:17:08.000.584,C:\Users\Anonymous\Documents\Embarcadero\Studio\SSLGZIP\Unit1.pas=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/11/24 17:17:08.000.584,C:\Users\Anonymous\Documents\Embarcadero\Studio\SSLGZIP\Unit1.fmx=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2014/11/24 17:17:15.000.190,C:\Users\Anonymous\Documents\Embarcadero\Studio\SSLGZIP\SSLGZIP.dproj=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2015/04/12 13:24:06.000.551,C:\Users\Anonymous\Documents\Embarcadero\Studio\RESTSSLGZIP\Unit1.pas=C:\Users\Anonymous\Documents\Embarcadero\Studio\SSLGZIP\Unit1.pas</Transaction>
+    <Transaction>2015/04/12 13:24:06.000.551,C:\Users\Anonymous\Documents\Embarcadero\Studio\RESTSSLGZIP\Unit1.fmx=C:\Users\Anonymous\Documents\Embarcadero\Studio\SSLGZIP\Unit1.fmx</Transaction>
+    <Transaction>2015/04/12 13:24:25.000.241,C:\Users\Anonymous\Documents\Embarcadero\Studio\RESTSSLGZIP\RESTSSLGZIP.dproj=C:\Users\Anonymous\Documents\Embarcadero\Studio\SSLGZIP\SSLGZIP.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>%iosdevice%e8097e6db2ddf3b45ce643ca9158dfedfcf44689-iOSDevice32</MobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>
