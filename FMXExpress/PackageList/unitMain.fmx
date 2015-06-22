@@ -1,0 +1,59 @@
+object formMain: TformMain
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 518
+  ClientWidth = 392
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object layFind: TLayout
+    Align = Top
+    Size.Width = 392.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object txtFind: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Scale
+      TabOrder = 0
+      Position.X = 23.000000000000000000
+      Position.Y = 12.000000000000000000
+      Size.Width = 345.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = txtFindChange
+      OnTyping = txtFindTyping
+      object ClearEditButton1: TClearEditButton
+        CanFocus = False
+        Cursor = crArrow
+        Size.Width = 28.000000000000000000
+        Size.Height = 36.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+  end
+  object layAppList: TLayout
+    Align = Client
+    Size.Width = 392.000000000000000000
+    Size.Height = 453.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object AppListView: TListView
+      ItemAppearanceClassName = 'TImageListItemAppearance'
+      ItemEditAppearanceClassName = 'TImageListItemDeleteAppearance'
+      HeaderAppearanceClassName = 'TListHeaderObjects'
+      FooterAppearanceClassName = 'TListHeaderObjects'
+      Align = Client
+      Size.Width = 392.000000000000000000
+      Size.Height = 453.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      CanSwipeDelete = False
+      OnItemClick = AppListViewItemClick
+    end
+  end
+end

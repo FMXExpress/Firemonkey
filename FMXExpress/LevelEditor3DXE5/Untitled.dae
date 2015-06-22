@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+   <asset>
+      <contributor>
+         <authoring_tool>Google SketchUp 6.0.515</authoring_tool>
+      </contributor>
+      <created>2007-07-14T01:25:05Z</created>
+      <modified>2007-07-14T01:25:05Z</modified>
+      <unit name="inches" meter="0.0254"/>
+      <up_axis>Z_UP</up_axis>
+   </asset>
+   <library_materials>
+      <material id="FrontColorNoCullingID" name="FrontColorNoCulling">
+         <instance_effect url="#FrontColorNoCulling-effect"/>
+      </material>
+      <material id="ForegroundColorID" name="ForegroundColor">
+         <instance_effect url="#ForegroundColor-effect"/>
+      </material>
+   </library_materials>
+   <library_effects>
+      <effect id="FrontColorNoCulling-effect" name="FrontColorNoCulling-effect">
+         <profile_COMMON>
+            <technique sid="COMMON">
+               <phong>
+                  <emission>
+                     <color>0.000000 0.000000 0.000000 1</color>
+                  </emission>
+                  <ambient>
+                     <color>0.000000 0.000000 0.000000 1</color>
+                  </ambient>
+                  <diffuse>
+                     <color>1.000000 1.000000 1.000000 1</color>
+                  </diffuse>
+                  <specular>
+                     <color>0.330000 0.330000 0.330000 1</color>
+                  </specular>
+                  <shininess>
+                     <float>20.000000</float>
+                  </shininess>
+                  <reflectivity>
+                     <float>0.100000</float>
+                  </reflectivity>
+                  <transparent>
+                     <color>1 1 1 1</color>
+                  </transparent>
+                  <transparency>
+                     <float>0.000000</float>
+                  </transparency>
+               </phong>
+            </technique>
+            <extra>
+               <technique profile="GOOGLEEARTH">
+                  <double_sided>1</double_sided>
+               </technique>
+            </extra>
+         </profile_COMMON>
+      </effect>
+      <effect id="ForegroundColor-effect" name="ForegroundColor-effect">
+         <profile_COMMON>
+            <technique sid="COMMON">
+               <phong>
+                  <emission>
+                     <color>0.000000 0.000000 0.000000 1</color>
+                  </emission>
+                  <ambient>
+                     <color>0.000000 0.000000 0.000000 1</color>
+                  </ambient>
+                  <diffuse>
+                     <color>0.000000 0.000000 0.000000 1</color>
+                  </diffuse>
+                  <specular>
+                     <color>0.330000 0.330000 0.330000 1</color>
+                  </specular>
+                  <shininess>
+                     <float>20.000000</float>
+                  </shininess>
+                  <reflectivity>
+                     <float>0.100000</float>
+                  </reflectivity>
+                  <transparent>
+                     <color>1 1 1 1</color>
+                  </transparent>
+                  <transparency>
+                     <float>0.000000</float>
+                  </transparency>
+               </phong>
+            </technique>
+            <extra>
+               <technique profile="GOOGLEEARTH">
+                  <double_sided>1</double_sided>
+               </technique>
+            </extra>
+         </profile_COMMON>
+      </effect>
+   </library_effects>
+   <library_geometries>
+      <geometry id="mesh1-geometry" name="mesh1-geometry">
+         <mesh>
+            <source id="mesh1-geometry-position">
+               <float_array id="mesh1-geometry-position-array" count="30">0.000000 119.750000 0.000000 -101.500000 0.000000 0.000000 -101.500000 119.750000 0.000000 0.000000 0.000000 0.000000 0.000000 0.000000 35.500000 0.000000 119.750000 35.500000 -101.500000 119.750000 35.500000 -101.500000 0.000000 35.500000 -50.750000 0.000000 67.750000 -50.750000 119.750000 67.750000 </float_array>
+               <technique_common>
+                  <accessor source="#mesh1-geometry-position-array" count="10" stride="3">
+                     <param name="X" type="float"/>
+                     <param name="Y" type="float"/>
+                     <param name="Z" type="float"/>
+                  </accessor>
+               </technique_common>
+            </source>
+            <source id="mesh1-geometry-normal">
+               <float_array id="mesh1-geometry-normal-array" count="21">0.000000 0.000000 -1.000000 1.000000 0.000000 0.000000 0.000000 1.000000 0.000000 -1.000000 0.000000 0.000000 0.000000 -1.000000 0.000000 0.536337 0.000000 0.844004 -0.536337 0.000000 0.844004 </float_array>
+               <technique_common>
+                  <accessor source="#mesh1-geometry-normal-array" count="7" stride="3">
+                     <param name="X" type="float"/>
+                     <param name="Y" type="float"/>
+                     <param name="Z" type="float"/>
+                  </accessor>
+               </technique_common>
+            </source>
+            <source id="mesh1-geometry-uv">
+               <float_array id="mesh1-geometry-uv-array" count="44">0.000000 119.750000 101.500000 0.000000 101.500000 119.750000 0.000000 0.000000 119.750000 0.000000 0.000000 35.500000 119.750000 35.500000 101.500000 35.500000 -119.750000 35.500000 -119.750000 0.000000 -101.500000 0.000000 -101.500000 35.500000 -50.750000 67.750000 0.000000 19.039975 119.750000 79.170043 0.000000 79.170043 119.750000 19.039975 50.750000 67.750000 -119.750000 -66.626401 0.000000 -6.496334 -119.750000 -6.496334 0.000000 -66.626401 </float_array>
+               <technique_common>
+                  <accessor source="#mesh1-geometry-uv-array" count="22" stride="2">
+                     <param name="S" type="float"/>
+                     <param name="T" type="float"/>
+                  </accessor>
+               </technique_common>
+            </source>
+            <vertices id="mesh1-geometry-vertex">
+               <input semantic="POSITION" source="#mesh1-geometry-position"/>
+            </vertices>
+            <triangles material="FrontColorNoCulling" count="16">
+               <input semantic="VERTEX" source="#mesh1-geometry-vertex" offset="0"/>
+               <input semantic="NORMAL" source="#mesh1-geometry-normal" offset="1"/>
+               <input semantic="TEXCOORD" source="#mesh1-geometry-uv" offset="2" set="0"/>
+               <p>0 0 0 1 0 1 2 0 2 1 0 1 0 0 0 3 0 3 0 1 4 4 1 5 3 1 3 4 1 5 0 1 4 5 1 6 0 2 3 6 2 7 5 2 5 6 2 7 0 2 3 2 2 1 1 3 3 6 3 8 2 3 9 6 3 8 1 3 3 7 3 5 1 4 10 4 4 5 7 4 11 4 4 5 1 4 10 3 4 3 7 4 11 4 4 5 8 4 12 4 5 13 9 5 14 8 5 15 9 5 14 4 5 13 5 5 16 5 2 5 6 2 7 9 2 17 6 6 18 8 6 19 9 6 20 8 6 19 6 6 18 7 6 21 </p>
+            </triangles>
+         </mesh>
+      </geometry>
+      <geometry id="mesh2-geometry" name="mesh2-geometry">
+         <mesh>
+            <source id="mesh2-geometry-position">
+               <float_array id="mesh2-geometry-position-array" count="30">0.000000 119.750000 0.000000 0.000000 0.000000 0.000000 -101.500000 119.750000 0.000000 -101.500000 0.000000 0.000000 0.000000 0.000000 35.500000 -50.750000 0.000000 67.750000 0.000000 119.750000 35.500000 -50.750000 119.750000 67.750000 -101.500000 119.750000 35.500000 -101.500000 0.000000 35.500000 </float_array>
+               <technique_common>
+                  <accessor source="#mesh2-geometry-position-array" count="10" stride="3">
+                     <param name="X" type="float"/>
+                     <param name="Y" type="float"/>
+                     <param name="Z" type="float"/>
+                  </accessor>
+               </technique_common>
+            </source>
+            <vertices id="mesh2-geometry-vertex">
+               <input semantic="POSITION" source="#mesh2-geometry-position"/>
+            </vertices>
+            <lines material="ForegroundColor" count="15">
+               <input semantic="VERTEX" source="#mesh2-geometry-vertex" offset="0"/>
+               <p>0 1 2 0 3 2 1 3 1 4 4 5 6 4 0 6 7 6 8 7 9 8 3 9 5 9 5 7 2 8 </p>
+            </lines>
+         </mesh>
+      </geometry>
+   </library_geometries>
+   <library_cameras>
+      <camera id="Camera-camera" name="Camera-camera">
+         <optics>
+            <technique_common>
+               <perspective>
+                  <xfov>40.000000</xfov>
+                  <yfov>30.000000</yfov>
+                  <znear>1.000000</znear>
+                  <zfar>1000.000000</zfar>
+               </perspective>
+            </technique_common>
+         </optics>
+      </camera>
+   </library_cameras>
+   <library_visual_scenes>
+      <visual_scene id="SketchUpScene" name="SketchUpScene">
+         <node id="Model" name="Model">
+            <node id="mesh1" name="mesh1">
+               <instance_geometry url="#mesh1-geometry">
+                  <bind_material>
+                     <technique_common>
+                        <instance_material symbol="FrontColorNoCulling" target="#FrontColorNoCullingID"/>
+                     </technique_common>
+                  </bind_material>
+               </instance_geometry>
+            </node>
+            <node id="mesh2" name="mesh2">
+               <instance_geometry url="#mesh2-geometry">
+                  <bind_material>
+                     <technique_common>
+                        <instance_material symbol="ForegroundColor" target="#ForegroundColorID"/>
+                     </technique_common>
+                  </bind_material>
+               </instance_geometry>
+            </node>
+         </node>
+         <node id="Camera" name="Camera">
+            <matrix>
+               0.707107 0.000000 0.666667 97.613754
+               0.707107 0.000000 -0.666667 -92.230866
+               0.000000 1.000000 0.333333 89.705575
+               0.000000 0.000000 0.000000 1.000000
+            </matrix>
+            <instance_camera url="#Camera-camera"/>
+         </node>
+      </visual_scene>
+   </library_visual_scenes>
+   <scene>
+      <instance_visual_scene url="#SketchUpScene"/>
+   </scene>
+</COLLADA>

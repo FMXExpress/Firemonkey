@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/12/31 10:01:41.000.007,=C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014/02/28 18:44:56.230,=C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014/02/28 18:45:30.865,C:\Users\Anonymous\Documents\RAD Studio\Projects\mapedsource\landscapeMobile.dproj=C:\Users\Anonymous\Documents\RAD Studio\Projects\Project2.dproj</Transaction>
+    <Transaction>2014/02/28 18:46:21.848,=C:\Users\Anonymous\Documents\RAD Studio\Projects\mapedsource\landscapeMainForm.pas</Transaction>
+  </Transactions>  <MobileDevice>4f0a511c</MobileDevice>
+  <BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

@@ -1,0 +1,151 @@
+object FormContacts: TFormContacts
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 508
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 533
+  DesignerDeviceName = 'Samsung Galaxy S2'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Height = 508.000000000000000000
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    Width = 320.000000000000000000
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 8.000000000000000000
+      IsSelected = True
+      TabOrder = 0
+      Text = 'TabItem1'
+      Width = 8.000000000000000000
+      object btnAddcontact: TButton
+        Height = 41.000000000000000000
+        Position.X = 272.000000000000000000
+        Position.Y = 32.000000000000000000
+        TabOrder = 0
+        Text = '+'
+        Width = 41.000000000000000000
+        OnClick = btnAddcontactClick
+      end
+      object cmbAvailability: TComboBox
+        DisableFocusEffect = False
+        Height = 32.000000000000000000
+        ItemIndex = 0
+        Position.X = 40.000000000000000000
+        Position.Y = 41.000000000000000000
+        TabOrder = 1
+        Width = 225.000000000000000000
+        OnChange = cmbAvailabilityChange
+        object TListBoxItem
+          Height = 19.000000000000000000
+          TabOrder = 0
+          Text = 'Available'
+          Width = 19.000000000000000000
+        end
+        object TListBoxItem
+          Height = 19.000000000000000000
+          TabOrder = 1
+          Text = 'Busy'
+          Width = 19.000000000000000000
+        end
+      end
+      object ListViewContacts: TListView
+        ItemAppearanceClassName = 'TCustomizeItemObjects'
+        ItemEditAppearanceClassName = 'TListItemRightDetailShowCheckAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        Height = 378.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 120.000000000000000000
+        TabOrder = 2
+        Width = 305.000000000000000000
+        ItemAppearance.HeaderHeight = 1
+        ItemAppearance.FooterHeight = 1
+        ItemAppearanceObjects.ItemObjects.Text.TextVertAlign = Leading
+        ItemAppearanceObjects.ItemObjects.Text.PlaceOffset.X = 30.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Text.PlaceOffset.Y = 10.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Detail.TextAlign = Trailing
+        ItemAppearanceObjects.ItemObjects.Detail.Height = 24.000000000000000000
+        ItemAppearanceObjects.ItemObjects.Detail.VertAlign = Trailing
+        ItemAppearanceObjects.ItemObjects.Detail.Visible = True
+        ItemAppearanceObjects.ItemObjects.Image.ScalingMode = Original
+        ItemAppearanceObjects.ItemObjects.Image.VertAlign = Leading
+        ItemAppearanceObjects.ItemObjects.Image.Visible = True
+        ItemAppearanceObjects.ItemObjects.Accessory.Visible = True
+        ItemAppearanceObjects.HeaderObjects.Text.Font.Style = [fsBold]
+        ItemAppearanceObjects.FooterObjects.Text.Visible = False
+        OnClick = ListViewContactsClick
+        OnDeletingItem = ListViewContactsDeletingItem
+      end
+      object lbDisplayName: TLabel
+        Anchors = [akLeft, akTop, akRight]
+        StyledSettings = [FontColor]
+        Height = 23.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        TextSettings.Font.Family = 'Arial Black'
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.Font.Style = [fsBold, fsUnderline]
+        TextSettings.HorzAlign = Center
+        Text = 'lbDisplayName'
+        Width = 305.000000000000000000
+      end
+      object lbContactsList: TLabel
+        StyledSettings = [FontColor]
+        Height = 23.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 96.000000000000000000
+        TextSettings.Font.Family = 'Times New Roman'
+        TextSettings.Font.Size = 14.000000000000000000
+        TextSettings.Font.Style = [fsItalic]
+        Text = 'Contacts list'
+        Width = 82.000000000000000000
+      end
+      object ImgUserstatus: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Height = 25.000000000000000000
+        Position.X = 8.000000000000000000
+        Position.Y = 48.000000000000000000
+        Width = 25.000000000000000000
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      Height = 8.000000000000000000
+      IsSelected = False
+      TabOrder = 0
+      Text = 'TabItem2'
+      Width = 8.000000000000000000
+      object TabControl2: TTabControl
+        Align = Client
+        FullSize = True
+        Height = 508.000000000000000000
+        TabHeight = 30.000000000000000000
+        TabIndex = 0
+        TabOrder = 0
+        TabPosition = Bottom
+        Width = 320.000000000000000000
+      end
+    end
+  end
+end

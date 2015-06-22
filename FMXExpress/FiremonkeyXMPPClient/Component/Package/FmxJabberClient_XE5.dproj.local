@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/04/18 09:49:46.000.938,=vclx.dcp</Transaction>
+    <Transaction>2014/04/18 09:49:46.000.894,=vcl.dcp</Transaction>
+    <Transaction>2014/04/18 09:49:46.000.871,=designide.dcp</Transaction>
+    <Transaction>2014/04/18 09:49:46.000.957,=xmlrtl.dcp</Transaction>
+    <Transaction>2014/04/18 09:49:46.000.218,=rtl.dcp</Transaction>
+    <Transaction>2014/04/18 09:49:46.000.848,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Component\Source\fmxJabberClient.pas</Transaction>
+    <Transaction>2014/04/18 09:49:46.000.917,=vclactnband.dcp</Transaction>
+    <Transaction>2014/04/18 09:52:26.000.911,=IndySystem.dcp</Transaction>
+    <Transaction>2014/04/18 09:52:26.000.884,=fmx.dcp</Transaction>
+    <Transaction>2014/04/18 09:52:26.000.938,=IndyProtocols.dcp</Transaction>
+    <Transaction>2014/04/18 09:52:26.000.968,=IndyCore.dcp</Transaction>
+    <Transaction>2014/04/18 10:07:32.000.943,=IndyProtocols.dcp</Transaction>
+    <Transaction>2014/04/18 10:07:32.000.878,=IndySystem.dcp</Transaction>
+    <Transaction>2014/04/18 10:07:33.000.005,=IndyCore.dcp</Transaction>
+    <Transaction>2014/04/18 10:11:42.000.008,=IndySystem.dcp</Transaction>
+    <Transaction>2014/04/18 10:12:02.000.210,=IndyProtocols.dcp</Transaction>
+    <Transaction>2014/04/18 10:12:07.000.666,=IndyCore.dcp</Transaction>
+    <Transaction>2014/04/18 10:19:07.000.719,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Component\Source\FmxJabberTools.pas</Transaction>
+    <Transaction>2014/04/18 10:19:08.000.132,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Component\Source\fmxJabberXml.pas</Transaction>
+    <Transaction>2014/04/18 10:19:08.000.154,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Component\Source\fmxReceiveThread.pas</Transaction>
+    <Transaction>2014/04/18 10:19:08.000.176,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Component\Source\fmxSASLCrypt.pas</Transaction>
+    <Transaction>2014/04/18 10:19:08.000.199,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Component\Source\fmxSocket.pas</Transaction>
+  </Transactions>
+</BorlandProject>

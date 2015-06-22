@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/12/31 10:01:41.000.007,=C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014/03/17 22:41:21.000.571,=C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014/03/17 23:11:40.000.562,C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.fmx=C:\Users\Anonymous\Documents\RAD Studio\Projects\Messenger\Unit2.fmx</Transaction>
+    <Transaction>2014/03/17 23:11:40.000.562,C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.pas=C:\Users\Anonymous\Documents\RAD Studio\Projects\Messenger\Unit2.pas</Transaction>
+    <Transaction>2014/03/17 23:11:44.000.387,C:\Users\Anonymous\Documents\RAD Studio\Projects\Project2.dproj=C:\Users\Anonymous\Documents\RAD Studio\Projects\Messenger\Project2.dproj</Transaction>
+    <Transaction>2014/03/18 21:08:10.729,C:\Users\Anonymous\Documents\RAD Studio\Projects\Messenger\Messenger.dproj=C:\Users\Anonymous\Documents\RAD Studio\Projects\Messenger\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

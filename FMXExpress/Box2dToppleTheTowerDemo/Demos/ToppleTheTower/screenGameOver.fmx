@@ -1,0 +1,73 @@
+object GameOverFrame: TGameOverFrame
+  Height = 306.000000000000000000
+  Width = 397.000000000000000000
+  object Rectangle1: TRectangle
+    Align = alClient
+    Fill.Kind = bkGradient
+    Fill.Gradient.Points = <
+      item
+        Color = xFFFFC635
+        Offset = 0.000000000000000000
+      end
+      item
+        Color = xFFFFA025
+        Offset = 1.000000000000000000
+      end>
+    Fill.Gradient.StartPosition.X = 0.500000000000000000
+    Fill.Gradient.StartPosition.Y = 1.000000000000000000
+    Fill.Gradient.StopPosition.X = 0.499999970197677600
+    Fill.Gradient.StopPosition.Y = 0.000000000000000000
+    Height = 306.000000000000000000
+    Opacity = 0.899999976158142100
+    Stroke.Color = claDarkgoldenrod
+    XRadius = 20.000000000000000000
+    YRadius = 20.000000000000000000
+    Width = 397.000000000000000000
+    object Label1: TLabel
+      Align = alTop
+      Font.Size = 36.000000000000000000
+      Font.Style = [fsBold]
+      FontColor = claDarkred
+      StyledSettings = [ssFamily]
+      Height = 65.000000000000000000
+      Text = 'Great Job!'
+      TextAlign = taCenter
+      Width = 397.000000000000000000
+    end
+    object ScoreLBL: TLabel
+      Align = alTop
+      Font.Size = 24.000000000000000000
+      Font.Style = [fsBold]
+      FontColor = claDarkred
+      StyledSettings = [ssFamily]
+      Height = 64.000000000000000000
+      Position.Y = 129.000000000000000000
+      Text = 'Score:'
+      TextAlign = taCenter
+      Width = 397.000000000000000000
+    end
+    object HighScoreLBL: TLabel
+      Align = alTop
+      Font.Size = 24.000000000000000000
+      Font.Style = [fsBold]
+      FontColor = claDarkred
+      StyledSettings = [ssFamily]
+      Height = 64.000000000000000000
+      Position.Y = 65.000000000000000000
+      Text = 'High Score:'
+      TextAlign = taCenter
+      Width = 397.000000000000000000
+    end
+    object Button1: TButton
+      Font.Size = 16.000000000000000000
+      Font.Style = [fsBold]
+      StyledSettings = [ssFamily, ssFontColor]
+      Height = 65.000000000000000000
+      Position.X = 128.000000000000000000
+      Position.Y = 208.000000000000000000
+      TabOrder = 3
+      Text = 'Retry'
+      Width = 145.000000000000000000
+    end
+  end
+end

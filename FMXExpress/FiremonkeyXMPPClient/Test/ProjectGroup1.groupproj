@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D200CC99-9385-4363-BB84-F7C85AD8C80D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="FmxJabber.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="C:\Users\ehkhalid\Downloads\TJabberClient (1)\TJabberClient\DemoApp\demoapp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FmxJabber">
+        <MSBuild Projects="FmxJabber.dproj"/>
+    </Target>
+    <Target Name="FmxJabber:Clean">
+        <MSBuild Projects="FmxJabber.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FmxJabber:Make">
+        <MSBuild Projects="FmxJabber.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="demoapp">
+        <MSBuild Projects="C:\Users\ehkhalid\Downloads\TJabberClient (1)\TJabberClient\DemoApp\demoapp.dproj"/>
+    </Target>
+    <Target Name="demoapp:Clean">
+        <MSBuild Projects="C:\Users\ehkhalid\Downloads\TJabberClient (1)\TJabberClient\DemoApp\demoapp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="demoapp:Make">
+        <MSBuild Projects="C:\Users\ehkhalid\Downloads\TJabberClient (1)\TJabberClient\DemoApp\demoapp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FmxJabber;demoapp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FmxJabber:Clean;demoapp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FmxJabber:Make;demoapp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

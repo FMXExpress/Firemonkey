@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{D312CC22-BC53-49D8-8740-696D091724F1}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Test\FmxJabber.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Component\Package\FmxJabberClient_XE5.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="FmxJabber">
+        <MSBuild Projects="Test\FmxJabber.dproj"/>
+    </Target>
+    <Target Name="FmxJabber:Clean">
+        <MSBuild Projects="Test\FmxJabber.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FmxJabber:Make">
+        <MSBuild Projects="Test\FmxJabber.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FmxJabberClient_XE5">
+        <MSBuild Projects="Component\Package\FmxJabberClient_XE5.dproj"/>
+    </Target>
+    <Target Name="FmxJabberClient_XE5:Clean">
+        <MSBuild Projects="Component\Package\FmxJabberClient_XE5.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FmxJabberClient_XE5:Make">
+        <MSBuild Projects="Component\Package\FmxJabberClient_XE5.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="FmxJabber;FmxJabberClient_XE5"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="FmxJabber:Clean;FmxJabberClient_XE5:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="FmxJabber:Make;FmxJabberClient_XE5:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

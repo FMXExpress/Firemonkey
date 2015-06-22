@@ -1,0 +1,39 @@
+object FrameConversation: TFrameConversation
+  Height = 519.000000000000000000
+  Width = 327.000000000000000000
+  object MemText2Send: TMemo
+    Touch.InteractiveGestures = [igPan, igLongTap, igDoubleTap]
+    Anchors = [akLeft, akRight, akBottom]
+    Height = 63.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 448.000000000000000000
+    TabOrder = 0
+    Width = 241.000000000000000000
+  end
+  object btnSend: TButton
+    Anchors = [akRight, akBottom]
+    Height = 63.000000000000000000
+    Position.X = 256.000000000000000000
+    Position.Y = 448.000000000000000000
+    TabOrder = 1
+    Text = 'Send'
+    Width = 64.000000000000000000
+    OnClick = btnSendClick
+  end
+  object SpeedButton1: TSpeedButton
+    Height = 33.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    StyleLookup = 'buttonstyle'
+    Text = '< Contacts'
+    Width = 97.000000000000000000
+    OnClick = SpeedButton1Click
+  end
+  object Panel1: TPanel
+    Height = 385.000000000000000000
+    Position.X = 8.000000000000000000
+    Position.Y = 56.000000000000000000
+    Width = 312.000000000000000000
+    TabOrder = 3
+  end
+end

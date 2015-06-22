@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{40BDE663-5CE4-463F-9BB9-B1D52AF5F750}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="landscapeMobile.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="landscape.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="landscapeMobile">
+        <MSBuild Projects="landscapeMobile.dproj"/>
+    </Target>
+    <Target Name="landscapeMobile:Clean">
+        <MSBuild Projects="landscapeMobile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="landscapeMobile:Make">
+        <MSBuild Projects="landscapeMobile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="landscape">
+        <MSBuild Projects="landscape.dproj"/>
+    </Target>
+    <Target Name="landscape:Clean">
+        <MSBuild Projects="landscape.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="landscape:Make">
+        <MSBuild Projects="landscape.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="landscapeMobile;landscape"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="landscapeMobile:Clean;landscape:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="landscapeMobile:Make;landscape:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

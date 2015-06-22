@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/12/31 10:01:41.000.007,=C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014/01/03 10:36:13.000.027,=C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2014/01/03 10:36:42.000.290,C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.fmx=C:\Users\Anonymous\Documents\RAD Studio\Projects\Filters\uMain.fmx</Transaction>
+    <Transaction>2014/01/03 10:36:42.000.290,C:\Users\Anonymous\Documents\RAD Studio\Projects\Unit2.pas=C:\Users\Anonymous\Documents\RAD Studio\Projects\Filters\uMain.pas</Transaction>
+    <Transaction>2014/01/03 10:36:46.000.358,C:\Users\Anonymous\Documents\RAD Studio\Projects\Project2.dproj=C:\Users\Anonymous\Documents\RAD Studio\Projects\Filters\Filters.dproj</Transaction>
+    <Transaction>2014/04/07 18:12:57.000.406,C:\Users\Anonymous\Documents\RAD Studio\Projects\InstagramFilters\InstagramFilters.dproj=C:\Users\Anonymous\Documents\RAD Studio\Projects\InstagramFilters\Filters.dproj</Transaction>
+    <Transaction>2014/04/07 18:13:31.000.949,C:\Users\Anonymous\Documents\RAD Studio\Projects\InstagramFilters\uMain.pas=</Transaction>
+    <Transaction>2014/04/07 18:13:37.000.817,=C:\Users\Anonymous\Documents\RAD Studio\Projects\InstagramFilters\uMain.pas</Transaction>
+    <Transaction>2014/04/07 19:32:44.050,C:\Users\Anonymous\Documents\RAD Studio\Projects\InstagramFilters\InstagramFilters.dproj=C:\Users\Anonymous\Documents\RAD Studio\Projects\InstagramFilters\InstagramFilters.dproj</Transaction>
+  </Transactions>
+	<MobileDevice>4f0a511c</MobileDevice>  <BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

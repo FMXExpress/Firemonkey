@@ -1,0 +1,124 @@
+object FormAddContact: TFormAddContact
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 508
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 533
+  DesignerDeviceName = 'Samsung Galaxy S2'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Label1: TLabel
+    AutoSize = True
+    Font.Size = 12.000000000000000000
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 18.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 168.000000000000000000
+    Text = 'JID : '
+    Width = 31.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object edJID: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 1
+    Font.Size = 12.000000000000000000
+    Position.X = 88.000000000000000000
+    Position.Y = 152.000000000000000000
+    Width = 217.000000000000000000
+    Height = 32.000000000000000000
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    KillFocusByReturn = False
+  end
+  object Label2: TLabel
+    AutoSize = True
+    Font.Size = 12.000000000000000000
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 18.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 208.000000000000000000
+    Text = 'Nickname : '
+    Width = 67.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object edName: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 3
+    Font.Size = 12.000000000000000000
+    Position.X = 88.000000000000000000
+    Position.Y = 192.000000000000000000
+    Width = 217.000000000000000000
+    Height = 32.000000000000000000
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    KillFocusByReturn = False
+  end
+  object Label3: TLabel
+    AutoSize = True
+    Font.Size = 12.000000000000000000
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    Height = 18.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 248.000000000000000000
+    Text = 'Group : '
+    Width = 46.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+  object edGroup: TEdit
+    Touch.InteractiveGestures = [igLongTap, igDoubleTap]
+    Anchors = [akLeft, akTop, akRight]
+    TabOrder = 5
+    Font.Size = 12.000000000000000000
+    Position.X = 88.000000000000000000
+    Position.Y = 232.000000000000000000
+    Width = 217.000000000000000000
+    Height = 32.000000000000000000
+    StyledSettings = [ssFamily, ssStyle, ssFontColor]
+    KillFocusByReturn = False
+  end
+  object Button1: TButton
+    Anchors = [akLeft, akBottom]
+    Height = 41.000000000000000000
+    ModalResult = 1
+    Position.X = 72.000000000000000000
+    Position.Y = 328.000000000000000000
+    TabOrder = 6
+    Text = 'Add'
+    Trimming = ttCharacter
+    Width = 80.000000000000000000
+  end
+  object Button2: TButton
+    Anchors = [akLeft, akBottom]
+    Height = 41.000000000000000000
+    ModalResult = 2
+    Position.X = 176.000000000000000000
+    Position.Y = 328.000000000000000000
+    TabOrder = 7
+    Text = 'Annuler'
+    Trimming = ttCharacter
+    Width = 80.000000000000000000
+  end
+  object Label4: TLabel
+    AutoSize = True
+    Font.Family = 'Arial Black'
+    Font.Size = 24.000000000000000000
+    Font.Style = [fsBold]
+    StyledSettings = [ssFontColor]
+    Height = 36.000000000000000000
+    Position.X = 72.000000000000000000
+    Position.Y = 104.000000000000000000
+    Text = 'Add new contact'
+    Width = 194.000000000000000000
+    WordWrap = False
+    Trimming = ttCharacter
+  end
+end

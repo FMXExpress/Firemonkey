@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/01/13 22:38:59.000.480,=C:\Users\ehkhalid\Documents\RAD Studio\Projets\Unit3.pas</Transaction>
+    <Transaction>2014/01/21 22:37:46.000.583,=C:\Users\ehkhalid\Documents\RAD Studio\Projets\Unit3.pas</Transaction>
+    <Transaction>2014/01/31 20:46:43.000.441,=C:\Users\ehkhalid\Documents\RAD Studio\Projets\Unit3.pas</Transaction>
+    <Transaction>2014/02/05 22:38:32.000.844,=C:\Users\ehkhalid\Documents\RAD Studio\Projets\Unit3.pas</Transaction>
+    <Transaction>2014/02/05 22:39:39.000.951,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\unit1.pas=C:\Users\ehkhalid\Documents\RAD Studio\Projets\Unit3.pas</Transaction>
+    <Transaction>2014/02/05 22:39:39.000.951,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\unit1.fmx=C:\Users\ehkhalid\Documents\RAD Studio\Projets\Unit3.fmx</Transaction>
+    <Transaction>2014/02/05 22:39:46.000.960,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\FmxJabber.dproj=C:\Users\ehkhalid\Documents\RAD Studio\Projets\Project3.dproj</Transaction>
+    <Transaction>2014/02/05 22:44:23.000.208,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/05 22:44:32.000.524,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\lib\fmxJabberSocket.pas=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/05 23:04:44.000.346,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\lib\fmxJabberSocket.pas=</Transaction>
+    <Transaction>2014/02/06 20:45:22.000.694,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/06 20:55:37.000.558,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\fmxSocket.pas</Transaction>
+    <Transaction>2014/02/06 20:55:42.000.491,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\fmxSocket.pas=</Transaction>
+    <Transaction>2014/02/22 22:39:50.000.672,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/22 22:40:09.000.102,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\fmxReceiveThread.pas=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/22 22:43:31.000.843,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/22 22:44:00.000.797,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\CommonHeader.pas=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/23 16:45:13.000.380,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\lib\CommonHeader.pas</Transaction>
+    <Transaction>2014/02/23 16:45:13.000.462,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\lib\fmxJabberXml.pas</Transaction>
+    <Transaction>2014/02/23 16:45:13.000.422,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\lib\fmxJabberClient.pas</Transaction>
+    <Transaction>2014/02/23 16:45:13.000.497,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\lib\fmxReceiveThread.pas</Transaction>
+    <Transaction>2014/02/23 16:45:13.000.528,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Lib\fmxSocket.pas</Transaction>
+    <Transaction>2014/02/23 22:01:17.000.324,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/23 22:02:26.000.884,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\lib\fmxSASLCrypt.pas=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/25 22:35:34.000.441,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/02/25 22:35:52.000.111,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit2.pas=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\lib\fmxJabberConst.pas</Transaction>
+    <Transaction>2014/02/25 23:22:28.000.754,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\lib\fmxJabberConst.pas=</Transaction>
+    <Transaction>2014/03/14 16:26:46.000.445,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/03/14 16:35:18.000.835,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\lib\FmxJabberTools.pas=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\lib\CommonHeader.pas</Transaction>
+    <Transaction>2014/03/14 16:36:39.000.478,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit3.pas</Transaction>
+    <Transaction>2014/03/14 16:37:47.000.844,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\CommonHeader.pas=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit3.pas</Transaction>
+    <Transaction>2014/03/17 09:50:50.000.483,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit4.pas</Transaction>
+    <Transaction>2014/03/17 11:56:00.000.782,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit3.pas</Transaction>
+    <Transaction>2014/03/17 11:58:14.000.380,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmConversation.fmx=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit3.fmx</Transaction>
+    <Transaction>2014/03/17 11:58:14.000.380,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmConversation.pas=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit3.pas</Transaction>
+    <Transaction>2014/03/17 15:37:33.000.944,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmContacts.pas=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit2.pas</Transaction>
+    <Transaction>2014/03/17 15:37:33.000.944,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmContacts.fmx=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit2.fmx</Transaction>
+    <Transaction>2014/03/17 15:37:43.000.489,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmConnect.fmx=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\unit1.fmx</Transaction>
+    <Transaction>2014/03/17 15:37:43.000.489,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmConnect.pas=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\unit1.pas</Transaction>
+    <Transaction>2014/03/19 11:58:45.000.651,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit1.pas</Transaction>
+    <Transaction>2014/03/19 12:02:44.000.166,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit1.pas=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmAddContact.pas</Transaction>
+    <Transaction>2014/03/19 12:02:44.000.166,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit1.fmx=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmAddContact.fmx</Transaction>
+    <Transaction>2014/03/19 12:10:26.000.203,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmAddContact.pas=</Transaction>
+    <Transaction>2014/03/19 12:10:35.000.167,=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit1.pas</Transaction>
+    <Transaction>2014/03/19 12:14:44.000.885,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit1.fmx=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmAddContact.fmx</Transaction>
+    <Transaction>2014/03/19 12:14:44.000.885,E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\Unit1.pas=E:\DEV\Labo\MyDev--PERSO---\Jabber\Src\Test\frmAddContact.pas</Transaction>
+    <Transaction>2014/03/23 22:12:57.000.179,=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit1.pas</Transaction>
+    <Transaction>2014/03/23 22:19:02.000.794,D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\Unit1.pas=D:\Perso\Dev\FreeLance\Current\XE5 Jabber\Src\Test\ConversationListComponent.pas</Transaction>
+  </Transactions>
+	<MobileDevice>4f0a511c</MobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

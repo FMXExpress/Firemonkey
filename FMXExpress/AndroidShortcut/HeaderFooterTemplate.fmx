@@ -1,0 +1,47 @@
+object HeaderFooterForm: THeaderFooterForm
+  Left = 0
+  Top = 0
+  Caption = 'Header Footer Form'
+  ClientHeight = 508
+  ClientWidth = 320
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [dkDesktop]
+  DesignerMobile = True
+  DesignerWidth = 320
+  DesignerHeight = 533
+  DesignerDeviceName = 'Samsung Galaxy S2'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object Header: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 320.000000000000000000
+    object HeaderLabel: TLabel
+      Align = alContents
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      Text = 'Title'
+      TextAlign = taCenter
+      Width = 320.000000000000000000
+    end
+  end
+  object Footer: TToolBar
+    Align = alBottom
+    Height = 48.000000000000000000
+    Position.Y = 460.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    Width = 320.000000000000000000
+  end
+  object Button1: TButton
+    Height = 44.000000000000000000
+    Position.X = 40.000000000000000000
+    Position.Y = 64.000000000000000000
+    TabOrder = 2
+    Text = 'Button1'
+    Trimming = ttCharacter
+    Width = 241.000000000000000000
+    OnClick = Button1Click
+  end
+end
