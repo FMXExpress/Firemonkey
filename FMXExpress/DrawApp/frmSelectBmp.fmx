@@ -1,0 +1,88 @@
+object SelectBmpfrm: TSelectBmpfrm
+  Left = 0
+  Top = 0
+  Caption = 'Select Bitmap stamp'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object SpeedButton1: TSpeedButton
+      Align = alLeft
+      Height = 48.000000000000000000
+      ModalResult = 1
+      StyleLookup = 'cornerbuttonstyle'
+      Text = 'Done'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = SpeedButton1Click
+    end
+    object SpeedButton2: TSpeedButton
+      Align = alRight
+      Height = 48.000000000000000000
+      ModalResult = 2
+      Position.X = 311.000000000000000000
+      StyleLookup = 'buttonstyle'
+      Text = 'Cancel'
+      Trimming = ttCharacter
+      Width = 73.000000000000000000
+      OnClick = SpeedButton2Click
+    end
+    object Button1: TButton
+      Align = alLeft
+      Height = 48.000000000000000000
+      Position.X = 73.000000000000000000
+      TabOrder = 2
+      Text = 'Crop'
+      Trimming = ttCharacter
+      Width = 64.000000000000000000
+      OnClick = Button1Click
+    end
+    object btopen: TButton
+      Align = alRight
+      Height = 48.000000000000000000
+      Position.X = 184.000000000000000000
+      TabOrder = 3
+      Text = 'Photo Library'
+      Trimming = ttCharacter
+      Width = 127.000000000000000000
+      OnClick = Button1Click
+    end
+  end
+  object Img: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = alClient
+    Height = 519.000000000000000000
+    Width = 384.000000000000000000
+    OnMouseDown = ImgMouseDown
+    OnMouseMove = ImgMouseMove
+    OnMouseUp = ImgMouseUp
+    OnPaint = ImgPaint
+  end
+  object actall: TActionList
+    Left = 208
+    Top = 216
+    object ActopenImage: TTakePhotoFromLibraryAction
+      Category = 'Media Library'
+      OnDidFinishTaking = ActopenImageDidFinishTaking
+    end
+    object actOpenCustom: TAction
+      Text = 'Photo Library'
+      OnExecute = actOpenCustomExecute
+    end
+  end
+end

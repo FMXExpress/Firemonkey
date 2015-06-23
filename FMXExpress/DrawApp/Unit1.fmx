@@ -1,0 +1,74 @@
+object mainfrm: Tmainfrm
+  Left = 0
+  Top = 0
+  Caption = 'Demo Drawing sample'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 2
+  DesignerOSVersion = ''
+  object recBoard: TPaintBox
+    OnGesture = recBoardGesture
+    Align = alClient
+    Height = 519.000000000000000000
+    Width = 384.000000000000000000
+    OnMouseDown = recBoardMouseDown
+    OnMouseMove = recBoardMouseMove
+    OnMouseUp = recBoardMouseUp
+    OnPaint = recBoardPaint
+  end
+  object ToolBar1: TToolBar
+    Height = 48.000000000000000000
+    TabOrder = 1
+    Width = 384.000000000000000000
+    object pbdraw: TPopupBox
+      Align = alLeft
+      Height = 32.000000000000000000
+      Items.Strings = (
+        'Select draw'
+        'Line'
+        'Rectangle'
+        'Ellipse'
+        'Fill Color')
+      ItemIndex = 0
+      Position.Y = 8.000000000000000000
+      TabOrder = 0
+      Width = 113.000000000000000000
+      OnChange = pbdrawChange
+    end
+    object cbfg: TComboColorBox
+      Align = alRight
+      Color = claBlack
+      Height = 32.000000000000000000
+      Position.X = 264.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 1
+      Width = 60.000000000000000000
+    end
+    object cbbg: TComboColorBox
+      Align = alRight
+      Color = claWhite
+      Height = 32.000000000000000000
+      Position.X = 324.000000000000000000
+      Position.Y = 8.000000000000000000
+      TabOrder = 2
+      Width = 60.000000000000000000
+    end
+    object SpeedButton1: TSpeedButton
+      Align = alClient
+      Height = 48.000000000000000000
+      Text = 'Save Image'
+      Trimming = ttCharacter
+      Width = 151.000000000000000000
+      OnClick = SpeedButton1Click
+    end
+  end
+end
