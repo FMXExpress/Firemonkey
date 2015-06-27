@@ -1,0 +1,44 @@
+object ServiceInteractionForm: TServiceInteractionForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object StopServiceButton: TButton
+    Height = 44.000000000000000000
+    Position.X = 43.000000000000000000
+    Position.Y = 117.000000000000000000
+    TabOrder = 0
+    Text = 'Stop Service'
+    Width = 201.000000000000000000
+    OnClick = StopServiceButtonClick
+  end
+  object StartServiceButton: TButton
+    Height = 44.000000000000000000
+    Position.X = 43.000000000000000000
+    Position.Y = 48.000000000000000000
+    TabOrder = 1
+    Text = 'Start Service'
+    Width = 201.000000000000000000
+    OnClick = StartServiceButtonClick
+  end
+  object ExitTimer: TTimer
+    Enabled = False
+    Interval = 10000
+    OnTimer = ExitTimerTimer
+    Left = 176
+    Top = 272
+  end
+end

@@ -1,0 +1,48 @@
+object ServiceInteractionForm: TServiceInteractionForm
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  DesignerMasterStyle = 3
+  object StopServiceButton: TButton
+    Position.X = 43.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Stop Service'
+    OnClick = StopServiceButtonClick
+  end
+  object StartServiceButton: TButton
+    Position.X = 43.000000000000000000
+    Position.Y = 48.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Start Service'
+    OnClick = StartServiceButtonClick
+  end
+  object StartTimer: TTimer
+    Enabled = False
+    Interval = 10
+    OnTimer = StartTimerTimer
+    Left = 176
+    Top = 216
+  end
+  object ExitTimer: TTimer
+    Enabled = False
+    Interval = 10000
+    OnTimer = ExitTimerTimer
+    Left = 176
+    Top = 272
+  end
+end
