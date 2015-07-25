@@ -1,0 +1,111 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    ClipChildren = True
+    Position.X = 128.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Circle1: TCircle
+    Fill.Color = x9BFF1717
+    Position.X = 384.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    object FloatAnimation1: TFloatAnimation
+      Duration = 0.100000001490116100
+      OnProcess = FloatAnimation1Process
+      OnFinish = FloatAnimation1Finish
+      PropertyName = 'Size.Height'
+      StartValue = 0.000000000000000000
+      StopValue = 500.000000000000000000
+      Trigger = 'IsVisible=true'
+    end
+  end
+  object Button1: TButton
+    Position.X = 296.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 193.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Button1'
+  end
+  object Panel1: TPanel
+    Position.X = 128.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 120.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object ListBox1: TListBox
+    Position.X = 128.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 361.000000000000000000
+    Size.Height = 160.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 357.000000000000000000
+    Viewport.Height = 156.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      TabOrder = 0
+      Text = 'ListBoxItem1'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 19.000000000000000000
+      TabOrder = 1
+      Text = 'ListBoxItem2'
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 38.000000000000000000
+      TabOrder = 2
+      Text = 'ListBoxItem3'
+    end
+    object ListBoxItem4: TListBoxItem
+      Position.Y = 57.000000000000000000
+      TabOrder = 3
+      Text = 'ListBoxItem4'
+    end
+    object ListBoxItem5: TListBoxItem
+      Position.Y = 76.000000000000000000
+      TabOrder = 4
+      Text = 'ListBoxItem5'
+    end
+  end
+  object SpeedButton1: TSpeedButton
+    Position.X = 184.000000000000000000
+    Position.Y = 112.000000000000000000
+    Size.Width = 56.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'additembutton'
+    Text = 'SpeedButton1'
+  end
+  object Text1: TText
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 81.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Ripple Effect. Click controls to see the effect.'
+  end
+end
