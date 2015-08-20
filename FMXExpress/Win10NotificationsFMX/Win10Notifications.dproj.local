@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2014/05/06 16:23:21.000.904,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/07/18 17:23:35.000.740,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/08/12 11:27:16.000.424,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/09/11 18:41:44.000.543,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2014/10/20 18:32:59.000.373,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/03/01 22:19:49.000.849,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\FormUnit1.pas</Transaction>
+    <Transaction>2015/03/01 22:19:51.000.814,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\WebModuleUnit1.pas</Transaction>
+    <Transaction>2015/03/31 19:55:44.000.058,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/08/01 11:06:58.000.441,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/08/18 06:41:15.000.263,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/08/19 09:23:44.999,=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/08/19 09:27:39.262,C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Win10NotificationsFMX\Unit1.fmx=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.fmx</Transaction>
+    <Transaction>2015/08/19 09:27:39.262,C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Win10NotificationsFMX\Unit1.pas=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2015/08/19 09:27:46.418,C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Win10NotificationsFMX\Win10Notifications.dproj=C:\Users\Anonymous\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="077b7f1d"/>
+		<P192.168.1.51 iOSSimulator="iPhone5"/>
+	</ActiveMobileDevice>
+</BorlandProject>
