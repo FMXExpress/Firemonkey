@@ -1,0 +1,15 @@
+inherited LSForm_LgXhdpiPh: TLSForm_LgXhdpiPh
+  ClientHeight = 455
+  ClientWidth = 854
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 854.000000000000000000
+    inherited Label2: TLabel
+      Size.Width = 854.000000000000000000
+    end
+  end
+  inherited Image1: TImage
+    Size.Width = 854.000000000000000000
+    Size.Height = 407.000000000000000000
+  end
+end

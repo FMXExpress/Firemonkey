@@ -1,0 +1,55 @@
+inherited Form1_iPad: TForm1_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 0
+  inherited LabelSourceExpressions: TLabel
+    Size.Width = 155.000000000000000000
+  end
+  inherited LabelControlExpression: TLabel
+    Size.Width = 164.000000000000000000
+  end
+  inherited EditControlExpression: TEdit
+    Position.X = 176.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited LabelControlComponent: TLabel
+    Size.Width = 156.000000000000000000
+  end
+  inherited EditControlComponent: TEdit
+    Position.X = 176.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited LabelSourceComponent: TLabel
+    Size.Width = 171.000000000000000000
+  end
+  inherited EditSourceExpression: TEdit
+    Position.X = 176.000000000000000000
+    Size.Width = 265.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited ButtonEvaluate: TButton
+    Position.Y = 212.000000000000000000
+  end
+  inherited EditSourceComponentName: TEdit
+    Position.X = 176.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Anchors = [akLeft, akTop, akBottom]
+    Size.Height = 269.000000000000000000
+    Viewport.Width = 561.000000000000000000
+    Viewport.Height = 269.000000000000000000
+  end
+  inherited ComboBox1: TComboBox
+    Position.X = 176.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited ButtonClear: TButton
+    Position.Y = 212.000000000000000000
+  end
+  inherited Label1: TLabel
+    Size.Width = 156.000000000000000000
+  end
+end

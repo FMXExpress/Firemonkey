@@ -1,0 +1,51 @@
+object FrmPairdevices: TFrmPairdevices
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 434
+  ClientWidth = 296
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object LbNewDevices: TListBox
+    Align = Client
+    Size.Width = 296.000000000000000000
+    Size.Height = 330.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+  end
+  object BtnDiscover: TButton
+    Align = Top
+    Size.Width = 296.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Discover devices'
+    OnClick = BtnDiscoverClick
+  end
+  object BtnPair: TButton
+    Align = Top
+    Position.Y = 30.000000000000000000
+    Size.Width = 296.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Pair (will throw the os pairing)'
+    OnClick = BtnPairClick
+  end
+  object BtnClose: TButton
+    Align = Bottom
+    Position.Y = 392.000000000000000000
+    Size.Width = 296.000000000000000000
+    Size.Height = 42.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Close'
+    OnClick = BtnCloseClick
+  end
+end

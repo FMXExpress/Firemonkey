@@ -1,0 +1,209 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 460
+  ClientWidth = 320
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object ToolBar1: TToolBar
+    Align = Bottom
+    Padding.Left = 7.000000000000000000
+    Padding.Right = 7.000000000000000000
+    Position.Y = 416.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 0
+    object btnAdd: TButton
+      Align = Left
+      Position.X = 7.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'speedbuttonstyle'
+      TabOrder = 0
+      Text = 'Add'
+      OnClick = btnAddClick
+    end
+    object btnDelete: TButton
+      Align = Right
+      Enabled = False
+      Position.X = 213.000000000000000000
+      Size.Width = 100.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'speedbuttonstyle'
+      TabOrder = 1
+      Text = 'Delete'
+      OnClick = btnDeleteClick
+    end
+  end
+  object ListBox1: TListBox
+    Align = Top
+    Size.Width = 320.000000000000000000
+    Size.Height = 249.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 1
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    GroupingKind = Grouped
+    object ListBoxGroupHeader1: TListBoxGroupHeader
+      Height = 56.000000000000000000
+      Size.Width = 315.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxgroupheader'
+      TabOrder = 0
+      Text = 'ToolBar'
+    end
+    object ListBoxItem1: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 56.000000000000000000
+      Size.Width = 315.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 1
+      Text = 'ToolBar'
+      object swToolbar: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 10.000000000000000000
+        Position.X = 250.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        OnSwitch = swToolbarSwitch
+      end
+    end
+    object ListBoxItem2: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 100.000000000000000000
+      Size.Width = 315.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 2
+      Text = 'Done button'
+      object swDoneButton: TSwitch
+        Align = Right
+        IsChecked = False
+        Margins.Right = 10.000000000000000000
+        Position.X = 250.000000000000000000
+        Position.Y = 4.000000000000000000
+        Size.Width = 55.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        TouchTargetExpansion.Left = 6.000000000000000000
+        TouchTargetExpansion.Top = 6.000000000000000000
+        TouchTargetExpansion.Right = 6.000000000000000000
+        TouchTargetExpansion.Bottom = 6.000000000000000000
+        OnSwitch = swDoneButtonSwitch
+      end
+    end
+    object ListBoxGroupHeader2: TListBoxGroupHeader
+      Height = 56.000000000000000000
+      Position.Y = 144.000000000000000000
+      Size.Width = 315.000000000000000000
+      Size.Height = 56.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxgroupheader'
+      TabOrder = 3
+      Text = 'Sample Controls'
+    end
+    object ListBoxItem3: TListBoxItem
+      Selectable = False
+      Height = 44.000000000000000000
+      Position.Y = 200.000000000000000000
+      Size.Width = 315.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listboxitemnodetail'
+      TabOrder = 4
+      object Edit1: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Left
+        TabOrder = 0
+        Position.X = 10.000000000000000000
+        Position.Y = 7.000000000000000000
+        Margins.Left = 10.000000000000000000
+        Size.Width = 103.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object SpeedButton1: TSpeedButton
+        Align = Left
+        Margins.Left = 10.000000000000000000
+        Position.X = 123.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Button'
+      end
+      object TrackBar1: TTrackBar
+        Align = VertCenter
+        Orientation = Horizontal
+        Margins.Left = 10.000000000000000000
+        Margins.Right = 10.000000000000000000
+        Position.X = 206.000000000000000000
+        Position.Y = 6.000000000000000000
+        Size.Width = 99.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+      end
+    end
+    object ListBoxHeader2: TListBoxHeader
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label2: TLabel
+        Align = Client
+        Size.Width = 320.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Keyboard ToolBar'
+      end
+    end
+  end
+  object lbButtons: TListBox
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 167.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = lbButtonsChange
+    object ListBoxGroupHeader3: TListBoxGroupHeader
+      Height = 22.000000000000000000
+      Size.Width = 320.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Custom buttons'
+    end
+  end
+end

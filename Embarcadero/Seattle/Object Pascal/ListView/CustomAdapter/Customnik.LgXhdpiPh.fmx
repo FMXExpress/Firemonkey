@@ -1,0 +1,23 @@
+inherited Form3_LgXhdpiPh: TForm3_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Label1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 175.000000000000000000
+    Size.Height = 635.000000000000000000
+    TextSettings.Font.Size = 11.000000000000000000
+  end
+  inherited Layout1: TLayout
+    Size.Width = 265.000000000000000000
+    Size.Height = 645.000000000000000000
+  end
+  inherited Layout2: TLayout
+    Position.Y = 645.000000000000000000
+    Size.Width = 450.000000000000000000
+  end
+  inherited BackdropSource: TImage
+    MultiResBitmap.Height = 64
+    MultiResBitmap.Width = 64
+  end
+end

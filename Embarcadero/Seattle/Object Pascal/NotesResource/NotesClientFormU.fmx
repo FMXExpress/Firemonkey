@@ -1,0 +1,654 @@
+object NotesClientForm: TNotesClientForm
+  Left = 0
+  Top = 0
+  Caption = 'Notes'
+  ClientHeight = 548
+  ClientWidth = 320
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnVirtualKeyboardShown = FormVirtualKeyboardShown
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 320.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object ButtonAdd: TButton
+      Action = ActionAdd
+      Align = Right
+      Enabled = True
+      Margins.Right = 5.000000000000000000
+      Position.X = 141.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'addtoolbutton'
+      TabOrder = 2
+      Visible = True
+    end
+    object ButtonBack: TButton
+      Action = ActionBack
+      Align = Left
+      Enabled = True
+      Margins.Left = 5.000000000000000000
+      Position.X = 5.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbutton'
+      TabOrder = 4
+      Visible = True
+    end
+    object Label1: TLabel
+      Action = ActionLabel
+      Align = Contents
+      Enabled = True
+      Size.Width = 320.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Visible = True
+    end
+    object SpeedButton2: TSpeedButton
+      Action = ActionNext
+      Align = Right
+      Enabled = True
+      Margins.Right = 5.000000000000000000
+      Position.X = 94.000000000000000000
+      Size.Width = 42.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowdowntoolbuttonborderedright'
+      Visible = True
+    end
+    object SpeedButton1: TSpeedButton
+      Action = ActionPrior
+      Align = Right
+      Enabled = True
+      Position.X = 52.000000000000000000
+      Size.Width = 42.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'arrowuptoolbuttonborderedleft'
+      Visible = True
+    end
+    object ButtonNext: TButton
+      Action = ActionForward
+      Align = Right
+      Enabled = True
+      Margins.Left = 5.000000000000000000
+      Position.X = -21.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'backtoolbuttonlabel'
+      TabOrder = 3
+      Visible = True
+    end
+    object ButtonCancelAdd: TButton
+      Action = ActionAddCancel
+      Align = Left
+      Enabled = True
+      Margins.Left = 5.000000000000000000
+      Position.X = 148.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toolbutton'
+      TabOrder = 5
+      Visible = True
+    end
+    object ButtonSaveAdd: TButton
+      Action = ActionAddSave
+      Align = Right
+      Enabled = True
+      Margins.Right = 5.000000000000000000
+      Position.X = 190.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toolbutton'
+      TabOrder = 6
+      Visible = True
+    end
+    object ButtonEditCancel: TButton
+      Action = ActionEditCancel
+      Align = Left
+      Enabled = True
+      Margins.Left = 5.000000000000000000
+      Position.X = 83.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toolbutton'
+      TabOrder = 7
+      Visible = True
+    end
+    object ButtonEditSave: TButton
+      Action = ActionEditSave
+      Align = Right
+      Enabled = True
+      Margins.Right = 5.000000000000000000
+      Position.X = 255.000000000000000000
+      Size.Width = 60.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toolbutton'
+      TabOrder = 8
+      Visible = True
+    end
+  end
+  object LayoutTabControl: TLayout
+    Align = Client
+    Size.Width = 320.000000000000000000
+    Size.Height = 504.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    object TabControl1: TTabControl
+      Align = Client
+      FullSize = True
+      Size.Width = 320.000000000000000000
+      Size.Height = 504.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 0
+      TabOrder = 0
+      TabPosition = Top
+      object TabItemLogin: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 64.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'TabItemLogin'
+        OnClick = TabItemLoginClick
+        object LayoutUserName: TLayout
+          Align = Top
+          Size.Width = 320.000000000000000000
+          Size.Height = 169.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object EditPassword: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 0
+            Password = True
+            Position.X = 8.000000000000000000
+            Position.Y = 90.000000000000000000
+            Size.Width = 305.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object EditUserName: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Anchors = [akLeft, akTop, akRight]
+            TabOrder = 1
+            Position.X = 8.000000000000000000
+            Position.Y = 34.000000000000000000
+            Size.Width = 305.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+          end
+          object Label2: TLabel
+            AutoSize = True
+            Position.X = 8.000000000000000000
+            Position.Y = 8.000000000000000000
+            Size.Width = 63.000000000000000000
+            Size.Height = 16.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+            Text = 'User name:'
+          end
+          object Label3: TLabel
+            AutoSize = True
+            Position.X = 8.000000000000000000
+            Position.Y = 65.000000000000000000
+            Size.Width = 56.000000000000000000
+            Size.Height = 16.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+            Text = 'Password:'
+          end
+          object Button1: TButton
+            Action = ActionLogin
+            Enabled = True
+            Position.X = 8.000000000000000000
+            Position.Y = 125.000000000000000000
+            Size.Width = 64.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Visible = True
+          end
+          object Button5: TButton
+            Action = ActionSignup
+            Enabled = True
+            Position.X = 80.000000000000000000
+            Position.Y = 125.000000000000000000
+            Size.Width = 64.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            Visible = True
+          end
+        end
+        object LayoutLogout: TLayout
+          Align = Top
+          Position.Y = 169.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 113.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object Button4: TButton
+            Action = ActionLogout
+            Enabled = True
+            Position.X = 8.000000000000000000
+            Position.Y = 80.000000000000000000
+            Size.Width = 64.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Visible = True
+          end
+          object Label4: TLabel
+            AutoSize = True
+            Position.X = 8.000000000000000000
+            Position.Y = 16.000000000000000000
+            Size.Width = 63.000000000000000000
+            Size.Height = 16.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.WordWrap = False
+            Text = 'User name:'
+          end
+          object LabelUserName: TLabel
+            Position.X = 8.000000000000000000
+            Position.Y = 42.000000000000000000
+            Size.Width = 120.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'LabelUserName'
+          end
+        end
+      end
+      object TabItemList: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 64.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'TabItemList'
+        object ListView1: TListView
+          ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+          ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          ItemIndex = 0
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 411.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnItemClick = ListView1ItemClick
+        end
+        object Layout5: TLayout
+          Align = Bottom
+          Position.Y = 411.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object ToolBar4: TToolBar
+            Size.Width = 320.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'bottomtoolbar'
+            TabOrder = 0
+            object RefreshList: TButton
+              Action = ActionRefresh
+              Align = Right
+              Enabled = True
+              Margins.Right = 5.000000000000000000
+              Position.X = 271.000000000000000000
+              Size.Width = 44.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              StyleLookup = 'refreshtoolbutton'
+              TabOrder = 1
+              Visible = True
+            end
+          end
+        end
+      end
+      object TabItemDetails: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 64.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'TabItemDetails'
+        object EditTitle: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          ReadOnly = True
+          Text = 'Accountant'
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 310.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object MemoContent: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 375.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Lines.Strings = (
+            'Lorem ipsum dolor sit amet')
+          ReadOnly = True
+          TextSettings.WordWrap = True
+        end
+        object ToolBar2: TToolBar
+          Align = Bottom
+          Position.Y = 415.000000000000000000
+          Size.Width = 320.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object ButtonEdit: TButton
+            Action = ActionEdit
+            Align = Right
+            Enabled = True
+            Margins.Right = 5.000000000000000000
+            Position.X = 271.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'toolbutton'
+            TabOrder = 1
+            Visible = True
+          end
+          object ButtonDelete: TButton
+            Action = ActionDelete
+            Align = Left
+            Enabled = True
+            Margins.Left = 5.000000000000000000
+            Position.X = 5.000000000000000000
+            Size.Width = 88.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'deletetoolbutton'
+            TabOrder = 2
+            Visible = True
+          end
+        end
+      end
+      object TabItemAdd: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 64.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'TabItemAdd'
+        object MemoAddContent: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 415.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Lines.Strings = (
+            'Lorem ipsum dolor sit amet')
+          TextSettings.WordWrap = True
+        end
+        object EditAddTitle: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Text = 'Accountant'
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 310.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Enter To Do Item Title'
+        end
+      end
+      object TabItemEdit: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 62.000000000000000000
+        Size.Height = 49.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'TabItemEdit'
+        object EditEditTitle: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Text = 'Accountant'
+          Position.X = 5.000000000000000000
+          Position.Y = 5.000000000000000000
+          Margins.Left = 5.000000000000000000
+          Margins.Top = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Margins.Bottom = 5.000000000000000000
+          Size.Width = 310.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object MemoEditContent: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          Align = Client
+          Size.Width = 320.000000000000000000
+          Size.Height = 415.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Lines.Strings = (
+            'Lorem ipsum dolor sit amet')
+          TextSettings.WordWrap = True
+        end
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 224
+    Top = 176
+    object ActionAdd: TAction
+      Text = 'Add'
+      OnExecute = ActionAddExecute
+      OnUpdate = ActionAddUpdate
+    end
+    object ActionAddSave: TAction
+      Text = 'Save'
+      OnExecute = ActionAddSaveExecute
+      OnUpdate = ActionAddSaveUpdate
+    end
+    object ActionAddCancel: TAction
+      Text = 'Cancel'
+      OnExecute = ActionAddCancelExecute
+      OnUpdate = ActionAddCancelUpdate
+    end
+    object ActionEditSave: TAction
+      Text = 'Save'
+      OnExecute = ActionEditSaveExecute
+      OnUpdate = ActionEditSaveUpdate
+    end
+    object ActionEditCancel: TAction
+      Text = 'Cancel'
+      OnExecute = ActionEditCancelExecute
+      OnUpdate = ActionEditCancelUpdate
+    end
+    object ActionEdit: TAction
+      Text = 'Edit'
+      OnExecute = ActionEditExecute
+      OnUpdate = ActionEditUpdate
+    end
+    object ActionBack: TAction
+      Text = 'Back'
+      OnExecute = ActionBackExecute
+      OnUpdate = ActionBackUpdate
+    end
+    object ActionDelete: TAction
+      Text = 'Delete'
+      OnExecute = ActionDeleteExecute
+      OnUpdate = ActionDeleteUpdate
+    end
+    object ActionLabel: TAction
+      Text = 'ActionLabel'
+      OnExecute = ActionLabelExecute
+      OnUpdate = ActionLabelUpdate
+    end
+    object ActionRefresh: TAction
+      Text = 'Refresh'
+      OnExecute = ActionRefreshExecute
+    end
+    object ActionNext: TAction
+      Text = 'Next'
+      OnExecute = ActionNextExecute
+      OnUpdate = ActionNextUpdate
+    end
+    object ActionPrior: TAction
+      Text = 'Prior'
+      OnExecute = ActionPriorExecute
+      OnUpdate = ActionPriorUpdate
+    end
+    object ActionLogin: TAction
+      Text = 'Login'
+      OnExecute = ActionLoginExecute
+      OnUpdate = ActionLoginUpdate
+    end
+    object ActionLogout: TAction
+      Text = 'Logout'
+      OnExecute = ActionLogoutExecute
+      OnUpdate = ActionLogoutUpdate
+    end
+    object ActionSignup: TAction
+      Text = 'Signup'
+      OnExecute = ActionSignupExecute
+      OnUpdate = ActionSignupUpdate
+    end
+    object ActionForward: TAction
+      Text = 'ActionForward'
+      OnExecute = ActionForwardExecute
+      OnUpdate = ActionForwardUpdate
+    end
+  end
+  object BindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'Title'
+        Generator = 'ContactTitles'
+        Options = []
+        ReadOnly = False
+      end
+      item
+        Name = 'Content'
+        Generator = 'LoremIpsum'
+        Options = []
+        ReadOnly = False
+      end
+      item
+        Name = 'ID'
+        FieldType = ftSingle
+        Generator = 'UIntegers'
+        Options = []
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    OnCreateAdapter = BindSource1CreateAdapter
+    Left = 225
+    Top = 268
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 156
+    Top = 333
+    object LinkControlToFieldTitle: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSource1
+      FieldName = 'Title'
+      Control = EditTitle
+      Track = False
+    end
+    object LinkControlToFieldDescription: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSource1
+      FieldName = 'Content'
+      Control = MemoContent
+      Track = False
+    end
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSource1
+      FieldName = 'Title'
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'Content'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSource1
+      FieldName = 'Title'
+      Control = EditEditTitle
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSource1
+      FieldName = 'Content'
+      Control = MemoEditContent
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSource1
+      FieldName = 'Title'
+      Control = EditAddTitle
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSource1
+      FieldName = 'Content'
+      Control = MemoAddContent
+      Track = False
+    end
+  end
+end

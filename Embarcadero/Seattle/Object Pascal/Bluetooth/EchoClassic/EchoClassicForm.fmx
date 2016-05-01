@@ -1,0 +1,90 @@
+object TEchoClassicForm: TTEchoClassicForm
+  Left = 0
+  Top = 0
+  Caption = 'TEchoClassicForm'
+  ClientHeight = 579
+  ClientWidth = 386
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object CBDevices: TComboBox
+    DisableFocusEffect = False
+    Position.X = 120.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 209.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+  end
+  object KnownDevices: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Known Devices'
+    OnClick = KnownDevicesClick
+  end
+  object Listen: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 85.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Listen'
+    OnClick = ListenClick
+  end
+  object Seconds: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 20
+    Text = '6'
+    Position.X = 96.000000000000000000
+    Position.Y = 86.000000000000000000
+    Size.Width = 57.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Text = '12345678901234567890123456789012'
+    Position.X = 8.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 161.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Send: TButton
+    Position.X = 176.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Send'
+    OnClick = SendClick
+  end
+  object Secure: TCheckBox
+    IsChecked = True
+    Position.X = 280.000000000000000000
+    Position.Y = 117.000000000000000000
+    Size.Width = 65.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = 'Secure'
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    Position.X = 8.000000000000000000
+    Position.Y = 149.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 370.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+  end
+end

@@ -1,0 +1,14 @@
+Title: CameraComponent
+
+Brief Description: This code snippet shows you how to manipulate the camera of your device. With this sample you can:
+
+	* Select either the front facing camera or the back facing camera.
+	* Select whether to turn the flash on, off or leave it in automatic mode.
+	* Select the different resolution configurations of your camera.
+
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android, Windows, OSX
+
+Keywords: camera, flash, front, back, facing, iOS, Android, Windows, OSX, MAC, capture, video, resolution, frame rate

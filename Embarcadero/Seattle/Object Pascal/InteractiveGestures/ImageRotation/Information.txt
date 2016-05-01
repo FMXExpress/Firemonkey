@@ -1,0 +1,9 @@
+Title: Image Rotation
+
+Brief Description: This code snippet shows you how to rotate an image on an iOS or Android device.
+
+Language: Object Pascal
+
+Platforms supported: iOS, Android 
+
+Keywords: rotate, gesture, iOS, Android, picture

@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <ActiveMobileDevice>   <NoProfile Android="077b7f1d"/>
+    <P192.168.1.51 iOSSimulator="iPhone5"/>
+  </ActiveMobileDevice>
+  <BT_BuildType>AppStore</BT_BuildType>
+</BorlandProject>

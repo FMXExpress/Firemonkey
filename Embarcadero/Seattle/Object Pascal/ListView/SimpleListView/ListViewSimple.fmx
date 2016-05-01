@@ -1,0 +1,176 @@
+object SimpleListViewDelete: TSimpleListViewDelete
+  Left = 0
+  Top = 0
+  Caption = 'ListViewDeleteForm'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object TopToolbar: TToolBar
+    Padding.Left = 7.000000000000000000
+    Padding.Right = 7.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object TitleLabel: TLabel
+      Align = Contents
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'List'
+    end
+    object EditButton: TSpeedButton
+      Align = MostRight
+      Position.X = 304.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Edit'
+      OnClick = EditButtonClick
+    end
+    object DoneButton: TSpeedButton
+      Align = MostRight
+      Position.X = 248.000000000000000000
+      Size.Width = 73.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'donetoolbutton'
+      Text = 'Done'
+      Visible = False
+      OnClick = DoneButtonClick
+    end
+  end
+  object BottomToolbar: TToolBar
+    Align = Bottom
+    Padding.Left = 7.000000000000000000
+    Padding.Right = 7.000000000000000000
+    Position.Y = 519.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    object DeleteButton: TSpeedButton
+      Align = Left
+      Position.X = 7.000000000000000000
+      Size.Width = 90.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'deletetoolbutton'
+      Text = 'Delete'
+      Visible = False
+      OnClick = DeleteButtonClick
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TImageListItemAppearance'
+    ItemEditAppearanceClassName = 'TImageListItemShowCheck'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    Align = Client
+    Size.Width = 384.000000000000000000
+    Size.Height = 471.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'AlphaColor1'
+        FieldType = ftUInteger
+        Generator = 'AlphaColors'
+        ReadOnly = False
+      end
+      item
+        Name = 'BitmapName1'
+        Generator = 'BitmapNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'Bitmap1'
+        FieldType = ftBitmap
+        Generator = 'Bitmaps'
+        ReadOnly = False
+      end
+      item
+        Name = 'BoolField1'
+        FieldType = ftBoolean
+        Generator = 'Booleans'
+        ReadOnly = False
+      end
+      item
+        Name = 'Color1'
+        FieldType = ftUInteger
+        Generator = 'Colors'
+        ReadOnly = False
+      end
+      item
+        Name = 'ColorsName1'
+        Generator = 'ColorsNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactBitmap1'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmaps'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactBitmapL1'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmapsL'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactName1'
+        Generator = 'ContactNames'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 144
+    Top = 216
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 228
+    Top = 141
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = PrototypeBindSource1
+      FillDisplayFieldName = 'ColorsName1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'ContactBitmap1'
+          ControlMemberName = 'Bitmap'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToField2: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = PrototypeBindSource1
+      FillDisplayFieldName = 'ColorsName1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'ContactBitmap1'
+          ControlMemberName = 'Bitmap'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

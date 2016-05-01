@@ -1,0 +1,700 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'TPresentedScrollBox: Demo'
+  ClientHeight = 591
+  ClientWidth = 866
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Client
+    Size.Width = 649.000000000000000000
+    Size.Height = 591.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object PresentedScrollBox1: TPresentedScrollBox
+      AutoCalculateContentSize = False
+      ContentSize.Width = 3000.000000000000000000
+      ContentSize.Height = 3000.000000000000000000
+      ScrollAnimation = True
+      TouchTracking = True
+      OnViewportPositionChange = PresentedScrollBox1ViewportPositionChange
+      Align = Client
+      Size.Width = 649.000000000000000000
+      Size.Height = 591.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      OnResize = PresentedScrollBox1Resize
+      Viewport.Width = 633.000000000000000000
+      Viewport.Height = 575.000000000000000000
+    end
+  end
+  object MultiView1: TMultiView
+    StyleName = 'MultiViewstyle'
+    TargetControl = Layout1
+    Mode = Panel
+    Size.Width = 217.000000000000000000
+    Size.Height = 591.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ListBox1: TListBox
+      StyleName = 'ListBoxstyle'
+      Align = Client
+      Size.Width = 216.000000000000000000
+      Size.Height = 591.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      ItemHeight = 35.000000000000000000
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 196.000000000000000000
+      Viewport.Height = 587.000000000000000000
+      object ListBoxGroupHeader4: TListBoxGroupHeader
+        TextSettings.Font.Style = [fsBold]
+        StyledSettings = [Family, Size, FontColor, Other]
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 15
+        Text = 'Common'
+      end
+      object ListBoxItem26: TListBoxItem
+        Position.Y = 35.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 16
+        Text = 'Platform'
+        object swControlType: TSwitch
+          Anchors = [akTop, akRight]
+          IsChecked = False
+          Position.X = 116.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 21.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ParentShowHint = False
+          ShowHint = True
+          OnSwitch = swControlTypeSwitch
+        end
+      end
+      object ListBoxGroupHeader1: TListBoxGroupHeader
+        StyleName = 'listboxplainheader'
+        TextSettings.Font.Style = [fsBold]
+        StyledSettings = [Family, Size, FontColor, Other]
+        Position.Y = 70.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Scrolling'
+      end
+      object ListBoxItem30: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 105.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 14
+        Text = 'Enabled'
+        object swScrollEnabled: TSwitch
+          StyleName = 'Switchstyle'
+          Anchors = [akTop, akRight]
+          IsChecked = True
+          Position.X = 115.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 21.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnClick = swScrollEnabledClick
+        end
+      end
+      object ListBoxItem31: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 140.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 13
+        Text = 'Mouse Wheel'
+        object swDisableMouseWheel: TSwitch
+          StyleName = 'Switchstyle'
+          Anchors = [akTop, akRight]
+          IsChecked = False
+          Position.X = 115.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 21.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnClick = swDisableMouseWheelClick
+        end
+      end
+      object ListBoxItem1: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 175.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Scroll animation'
+        object cbScrollAnimation: TComboBox
+          StyleName = 'ComboBoxstyle'
+          Anchors = [akTop, akRight]
+          ItemIndex = 1
+          Position.X = 115.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnChange = cbScrollAnimationChange
+          object ListBoxItem9: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'True'
+          end
+          object ListBoxItem10: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            IsSelected = True
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'False'
+          end
+          object ListBoxItem11: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Default'
+          end
+        end
+      end
+      object ListBoxItem2: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 210.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Bounces'
+        object cbBounces: TComboBox
+          StyleName = 'ComboBoxstyle'
+          Anchors = [akTop, akRight]
+          ItemIndex = 0
+          Position.X = 115.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnChange = cbBouncesChange
+          object ListBoxItem6: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            IsSelected = True
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'True'
+          end
+          object ListBoxItem7: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'False'
+          end
+          object ListBoxItem8: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Default'
+          end
+        end
+      end
+      object ListBoxItem3: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 245.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        Text = 'Scroll direction'
+        object cbScrollDirection: TComboBox
+          StyleName = 'ComboBoxstyle'
+          Hint = 'dfasdasd'
+          Anchors = [akTop, akRight]
+          ItemIndex = 0
+          Position.X = 115.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnChange = cbScrollDirectionChange
+          object ListBoxItem4: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            IsSelected = True
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Both'
+          end
+          object ListBoxItem5: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            TabOrder = 1
+            Text = 'Horizontal'
+          end
+          object ListBoxItem12: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            TabOrder = 2
+            Text = 'Vertical'
+          end
+        end
+      end
+      object ListBoxItem13: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 280.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Touch tracking'
+        object cbTouchTracking: TComboBox
+          StyleName = 'ComboBoxstyle'
+          Anchors = [akTop, akRight]
+          ItemIndex = 1
+          Position.X = 115.000000000000000000
+          Position.Y = 6.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnChange = cbTouchTrackingChange
+          object ListBoxItem14: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            TabOrder = 0
+            Text = 'True'
+          end
+          object ListBoxItem15: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            IsSelected = True
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'False'
+          end
+          object ListBoxItem16: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Default'
+          end
+        end
+      end
+      object ListBoxGroupHeader2: TListBoxGroupHeader
+        StyleName = 'listboxplainheader'
+        TextSettings.Font.Style = [fsBold]
+        StyledSettings = [Family, Size, FontColor, Other]
+        Position.Y = 315.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        Text = 'Scroll Bars'
+      end
+      object ListBoxItem17: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 350.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Auto hide scrolls'
+        object cbAutoHide: TComboBox
+          StyleName = 'ComboBoxstyle'
+          Anchors = [akTop, akRight]
+          ItemIndex = 2
+          Position.X = 115.000000000000000000
+          Position.Y = 6.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnChange = cbAutoHideChange
+          object ListBoxItem18: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            TabOrder = 0
+            Text = 'True'
+          end
+          object ListBoxItem19: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            TabOrder = 1
+            Text = 'False'
+          end
+          object ListBoxItem20: TListBoxItem
+            StyleName = 'ListBoxItemstyle'
+            IsSelected = True
+            Size.Width = 19.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Default'
+          end
+        end
+      end
+      object ListBoxItem21: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 385.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 7
+        Text = 'Show scroll bars'
+        object swShowScrollBars: TSwitch
+          StyleName = 'Switchstyle'
+          Anchors = [akTop, akRight]
+          IsChecked = True
+          Position.X = 115.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 21.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnSwitch = swShowScrollBarsSwitch
+        end
+      end
+      object ListBoxItem22: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 420.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 8
+        Text = 'Show Size Grip'
+        object swShowSizeGrip: TSwitch
+          StyleName = 'Switchstyle'
+          Anchors = [akTop, akRight]
+          IsChecked = True
+          Position.X = 115.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 21.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnSwitch = swShowSizeGripSwitch
+        end
+      end
+      object ListBoxGroupHeader3: TListBoxGroupHeader
+        StyleName = 'listboxplainheader'
+        TextSettings.Font.Style = [fsBold]
+        StyledSettings = [Family, Size, FontColor, Other]
+        Position.Y = 455.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 9
+        Text = 'Content Size'
+      end
+      object ListBoxItem23: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 490.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 10
+        Text = 'Auto size'
+        object swAutoSize: TSwitch
+          StyleName = 'Switchstyle'
+          Anchors = [akTop, akRight]
+          IsChecked = True
+          Position.X = 115.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 21.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          ParentShowHint = False
+          ShowHint = True
+          OnSwitch = swAutoSizeSwitch
+        end
+      end
+      object ListBoxItem24: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 525.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 11
+        Text = 'Width'
+        object spContentWidth: TSpinBox
+          StyleName = 'SpinBoxstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akTop, akRight]
+          TabOrder = 1
+          Cursor = crIBeam
+          Max = 10000.000000000000000000
+          Increment = 25.000000000000000000
+          RepeatClick = True
+          Position.X = 114.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          ParentShowHint = False
+          ShowHint = True
+          OnChange = spContentWidthChange
+        end
+      end
+      object ListBoxItem25: TListBoxItem
+        StyleName = 'ListBoxItemstyle'
+        Position.Y = 560.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 12
+        Text = 'Height'
+        object spContentHeight: TSpinBox
+          StyleName = 'SpinBoxstyle'
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akTop, akRight]
+          TabOrder = 1
+          Cursor = crIBeam
+          Max = 10000.000000000000000000
+          Increment = 25.000000000000000000
+          RepeatClick = True
+          Position.X = 114.000000000000000000
+          Position.Y = 6.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          ParentShowHint = False
+          ShowHint = True
+          OnChange = spContentHeightChange
+        end
+      end
+      object ListBoxGroupHeader5: TListBoxGroupHeader
+        TextSettings.Font.Style = [fsBold]
+        StyledSettings = [Family, Size, FontColor, Other]
+        Position.Y = 595.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 17
+        Text = 'Actions'
+      end
+      object ListBoxItem27: TListBoxItem
+        Position.Y = 630.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 18
+        Text = 'Scroll to top'
+        object Button4: TButton
+          StyleName = 'Buttonstyle'
+          Anchors = [akTop, akRight]
+          Position.X = 114.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Execute'
+          OnClick = Button4Click
+        end
+      end
+      object ListBoxItem28: TListBoxItem
+        Position.Y = 665.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 19
+        Text = 'ScrollBy'
+        object Button5: TButton
+          StyleName = 'Buttonstyle'
+          Anchors = [akTop, akRight]
+          Position.X = 114.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Execute'
+          OnClick = Button5Click
+        end
+      end
+      object ListBoxItem29: TListBoxItem
+        Position.Y = 700.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 20
+        Text = 'Scroll In View Rect'
+        object Button6: TButton
+          StyleName = 'Buttonstyle'
+          Anchors = [akTop, akRight]
+          Position.X = 114.000000000000000000
+          Position.Y = 5.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Execute'
+          OnClick = Button6Click
+        end
+      end
+      object ListBoxItem36: TListBoxItem
+        Position.Y = 735.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 26
+        Text = 'Scroll to Center'
+        object Button2: TButton
+          Anchors = [akTop, akRight]
+          Position.X = 114.000000000000000000
+          Position.Y = 7.000000000000000000
+          Size.Width = 75.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Execute'
+          OnClick = Button2Click
+        end
+      end
+      object ListBoxGroupHeader6: TListBoxGroupHeader
+        TextSettings.Font.Style = [fsBold]
+        StyledSettings = [Family, Size, FontColor, Other]
+        Position.Y = 770.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 21
+        Text = 'Viewport'
+      end
+      object ListBoxItem32: TListBoxItem
+        Position.Y = 805.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 22
+        Text = 'Position.X'
+        object spViewPortPositionX: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akTop, akRight]
+          TabOrder = 0
+          Cursor = crIBeam
+          Max = 5000.000000000000000000
+          Position.X = 112.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          OnChange = spViewPortPositionXChange
+        end
+      end
+      object ListBoxItem33: TListBoxItem
+        Position.Y = 840.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 23
+        Text = 'Position.Y'
+        object spViewPortPositionY: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akTop, akRight]
+          TabOrder = 0
+          Cursor = crIBeam
+          Max = 5000.000000000000000000
+          Position.X = 112.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          OnChange = spViewPortPositionXChange
+        end
+      end
+      object ListBoxItem34: TListBoxItem
+        Position.Y = 875.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 24
+        Text = 'Width'
+        object spViewPortWidth: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akTop, akRight]
+          TabOrder = 0
+          Cursor = crIBeam
+          Max = 5000.000000000000000000
+          ReadOnly = True
+          Position.X = 112.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object ListBoxItem35: TListBoxItem
+        Position.Y = 910.000000000000000000
+        Size.Width = 196.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 25
+        Text = 'Height'
+        object spViewPortHeight: TSpinBox
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akTop, akRight]
+          TabOrder = 0
+          Cursor = crIBeam
+          Max = 5000.000000000000000000
+          ReadOnly = True
+          Position.X = 112.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 76.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+  end
+end

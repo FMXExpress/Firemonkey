@@ -1,0 +1,87 @@
+inherited Form1_SmXhdpiPh: TForm1_SmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 250
+  DesignerMasterStyle = 0
+  inherited LabelSourceExpressions: TLabel
+    Visible = False
+  end
+  inherited LabelControlExpression: TLabel
+    Visible = False
+  end
+  inherited EditControlExpression: TEdit
+    Anchors = [akLeft, akTop, akRight]
+    Text = 'Control Expression:'
+    Position.X = 8.000000000000000000
+    Position.Y = 92.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited LabelControlComponent: TLabel
+    Visible = False
+  end
+  inherited EditControlComponent: TEdit
+    Anchors = [akLeft, akTop, akRight]
+    Text = 'Control Component:'
+    Position.X = 8.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited LabelSourceComponent: TLabel
+    Visible = False
+  end
+  inherited EditSourceExpression: TEdit
+    Anchors = [akLeft, akTop, akRight]
+    Text = 'Source Expression:'
+    Position.X = 8.000000000000000000
+    Position.Y = 165.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited CheckBoxActive: TCheckBox
+    Position.Y = 228.000000000000000000
+    Size.Width = 77.000000000000000000
+  end
+  inherited ButtonEvaluate: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 196.000000000000000000
+    Size.Height = 37.000000000000000000
+  end
+  inherited EditSourceComponentName: TEdit
+    Anchors = [akLeft, akTop, akRight]
+    Text = 'Source Component:'
+    Position.X = 8.000000000000000000
+    Position.Y = 132.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Align = Bottom
+    Position.Y = 286.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 89.000000000000000000
+    Viewport.Width = 250.000000000000000000
+    Viewport.Height = 89.000000000000000000
+  end
+  inherited ComboBox1: TComboBox
+    Align = Top
+    Items.Strings = (
+      'Collection:')
+    ItemIndex = 0
+    Size.Width = 250.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited CheckBoxAutoFill: TCheckBox
+    Position.Y = 252.000000000000000000
+  end
+  inherited ButtonClear: TButton
+    Position.X = 152.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Height = 34.000000000000000000
+  end
+  inherited Label1: TLabel
+    Visible = False
+  end
+  inherited CheckBoxAutoActivate: TCheckBox
+    Position.Y = 204.000000000000000000
+  end
+end

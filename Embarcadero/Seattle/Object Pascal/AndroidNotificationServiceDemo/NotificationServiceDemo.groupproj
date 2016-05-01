@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{181275F5-E7C6-4FAA-98F0-4F289081A31A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="NotificationService\NotificationService.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NotificationApp\NotificationApp.dproj">
+            <Dependencies>NotificationService\NotificationService.dproj</Dependencies>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="NotificationService">
+        <MSBuild Projects="NotificationService\NotificationService.dproj"/>
+    </Target>
+    <Target Name="NotificationService:Clean">
+        <MSBuild Projects="NotificationService\NotificationService.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotificationService:Make">
+        <MSBuild Projects="NotificationService\NotificationService.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NotificationApp" DependsOnTargets="NotificationService">
+        <MSBuild Projects="NotificationApp\NotificationApp.dproj"/>
+    </Target>
+    <Target Name="NotificationApp:Clean" DependsOnTargets="NotificationService:Clean">
+        <MSBuild Projects="NotificationApp\NotificationApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NotificationApp:Make" DependsOnTargets="NotificationService:Make">
+        <MSBuild Projects="NotificationApp\NotificationApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="NotificationService;NotificationApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="NotificationService:Clean;NotificationApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="NotificationService:Make;NotificationApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

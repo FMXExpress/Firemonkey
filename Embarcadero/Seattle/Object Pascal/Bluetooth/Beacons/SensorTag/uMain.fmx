@@ -1,0 +1,186 @@
+object FrMainform: TFrMainform
+  Left = 0
+  Top = 0
+  Caption = 'TI Sensor Tag LE'
+  ClientHeight = 362
+  ClientWidth = 415
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Align = Top
+    Size.Width = 415.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Find devices'
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Align = Top
+    Position.Y = 41.000000000000000000
+    Size.Width = 415.000000000000000000
+    Size.Height = 65.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 411.000000000000000000
+    Viewport.Height = 61.000000000000000000
+  end
+  object Button2: TButton
+    Align = Top
+    Position.Y = 106.000000000000000000
+    Size.Width = 415.000000000000000000
+    Size.Height = 39.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'Suscribe to data'
+    OnClick = Button2Click
+  end
+  object EdAmbient: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 88.000000000000000000
+    Position.Y = 184.000000000000000000
+    Size.Width = 109.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object EdTarget: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 88.000000000000000000
+    Position.Y = 224.000000000000000000
+    Size.Width = 109.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label1: TLabel
+    AutoSize = True
+    Position.X = 104.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 72.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Temperature'
+  end
+  object Label2: TLabel
+    AutoSize = True
+    Position.X = 16.000000000000000000
+    Position.Y = 191.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Ambient'
+  end
+  object Label3: TLabel
+    AutoSize = True
+    Position.X = 24.000000000000000000
+    Position.Y = 232.000000000000000000
+    Size.Width = 38.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Target'
+  end
+  object EdAccelX: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 10
+    Position.X = 56.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object EdAccelY: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 11
+    Position.X = 177.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object EdAccelZ: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    Position.X = 304.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label4: TLabel
+    AutoSize = True
+    Position.X = 16.000000000000000000
+    Position.Y = 272.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Accelerometer'
+  end
+  object Label5: TLabel
+    AutoSize = True
+    Position.X = 40.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 11.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'X'
+  end
+  object Label6: TLabel
+    AutoSize = True
+    Position.X = 162.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 11.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Y'
+  end
+  object Label7: TLabel
+    AutoSize = True
+    Position.X = 292.000000000000000000
+    Position.Y = 304.000000000000000000
+    Size.Width = 11.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Z'
+  end
+  object EdHumidity: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 17
+    Position.X = 240.000000000000000000
+    Position.Y = 200.000000000000000000
+    Size.Width = 129.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Label8: TLabel
+    AutoSize = True
+    Position.X = 274.000000000000000000
+    Position.Y = 181.000000000000000000
+    Size.Width = 53.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'Humidity'
+  end
+  object BluetoothLE1: TBluetoothLE
+    Enabled = True
+    OnCharacteristicRead = BluetoothLE1CharacteristicRead
+    OnEndDiscoverDevices = BluetoothLE1EndDiscoverDevices
+    OnEndDiscoverServices = BluetoothLE1EndDiscoverServices
+    Left = 24
+    Top = 32
+  end
+end

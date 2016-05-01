@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A781E1FC-DB68-49B0-A6DF-F6363875EE61}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ReceiveIntent\ReceiveIntent.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SendIntent\SendIntent.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ReceiveIntent">
+        <MSBuild Projects="ReceiveIntent\ReceiveIntent.dproj"/>
+    </Target>
+    <Target Name="ReceiveIntent:Clean">
+        <MSBuild Projects="ReceiveIntent\ReceiveIntent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ReceiveIntent:Make">
+        <MSBuild Projects="ReceiveIntent\ReceiveIntent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SendIntent">
+        <MSBuild Projects="SendIntent\SendIntent.dproj"/>
+    </Target>
+    <Target Name="SendIntent:Clean">
+        <MSBuild Projects="SendIntent\SendIntent.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SendIntent:Make">
+        <MSBuild Projects="SendIntent\SendIntent.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ReceiveIntent;SendIntent"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ReceiveIntent:Clean;SendIntent:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ReceiveIntent:Make;SendIntent:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

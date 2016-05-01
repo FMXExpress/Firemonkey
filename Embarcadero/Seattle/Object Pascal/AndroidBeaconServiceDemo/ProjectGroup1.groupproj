@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{CFF4BCB5-83F0-46EE-BE89-3C9D9A13EB1B}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="BeaconService\BeaconService.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="BeaconServiceApp\BeaconServiceApp.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="BeaconService">
+        <MSBuild Projects="BeaconService\BeaconService.dproj"/>
+    </Target>
+    <Target Name="BeaconService:Clean">
+        <MSBuild Projects="BeaconService\BeaconService.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BeaconService:Make">
+        <MSBuild Projects="BeaconService\BeaconService.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="BeaconServiceApp">
+        <MSBuild Projects="BeaconServiceApp\BeaconServiceApp.dproj"/>
+    </Target>
+    <Target Name="BeaconServiceApp:Clean">
+        <MSBuild Projects="BeaconServiceApp\BeaconServiceApp.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="BeaconServiceApp:Make">
+        <MSBuild Projects="BeaconServiceApp\BeaconServiceApp.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="BeaconService;BeaconServiceApp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="BeaconService:Clean;BeaconServiceApp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="BeaconService:Make;BeaconServiceApp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
