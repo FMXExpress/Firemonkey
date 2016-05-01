@@ -1,0 +1,68 @@
+inherited VKBaseForm_LgXhdpiPh: TVKBaseForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited VertScrollBox1: TVertScrollBox
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited MainLayout1: TLayout
+      Size.Width = 480.000000000000000000
+      Size.Height = 829.000000000000000000
+      inherited ToolBar1: TToolBar
+        Size.Width = 480.000000000000000000
+      end
+      inherited ListBox1: TListBox
+        Size.Width = 480.000000000000000000
+        Size.Height = 771.000000000000000000
+        inherited ListBoxItem1: TListBoxItem
+          Size.Width = 440.000000000000000000
+          inherited Edit1: TEdit
+            Size.Width = 280.000000000000000000
+          end
+        end
+        inherited ListBoxItem2: TListBoxItem
+          Size.Width = 440.000000000000000000
+          inherited Edit2: TEdit
+            Size.Width = 280.000000000000000000
+          end
+        end
+        inherited ListBoxItem3: TListBoxItem
+          Size.Width = 440.000000000000000000
+          inherited Edit3: TEdit
+            Size.Width = 280.000000000000000000
+          end
+        end
+        inherited ListBoxItem4: TListBoxItem
+          Size.Width = 440.000000000000000000
+          inherited Edit4: TEdit
+            Size.Width = 280.000000000000000000
+          end
+        end
+        inherited ListBoxItem5: TListBoxItem
+          Size.Width = 440.000000000000000000
+          inherited Edit5: TEdit
+            Size.Width = 280.000000000000000000
+          end
+        end
+        inherited ListBoxItem6: TListBoxItem
+          Size.Width = 440.000000000000000000
+          inherited Edit6: TEdit
+            Size.Width = 280.000000000000000000
+          end
+        end
+        inherited ListBoxItem7: TListBoxItem
+          Size.Width = 440.000000000000000000
+          inherited Edit7: TEdit
+            Size.Width = 280.000000000000000000
+          end
+        end
+        inherited ListBoxItem8: TListBoxItem
+          Size.Width = 440.000000000000000000
+          inherited Edit8: TEdit
+            Size.Width = 280.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

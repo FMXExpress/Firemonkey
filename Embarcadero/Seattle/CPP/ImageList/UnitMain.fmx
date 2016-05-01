@@ -1,0 +1,1431 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Demo of Images'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object MainMenu1: TMainMenu
+    Images = MainDataModule.ImageList1
+    Left = 232
+    Top = 184
+    object MenuItem1: TMenuItem
+      Text = 'Files'
+      ImageIndex = 0
+      object MenuItem5: TMenuItem
+        Action = FileExit1
+        Enabled = True
+        Locked = True
+        ImageIndex = 0
+      end
+      object MenuItem11: TMenuItem
+        Action = FileExit2
+        Enabled = True
+        Locked = True
+        ImageIndex = 0
+      end
+    end
+    object MenuItem2: TMenuItem
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+        61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        02C649444154384FA592DD4B53611CC7BFE7D9BB9BDB199A5348DACC0865E292
+        BAE8CE9488F9C2109182208A0824BA90EE822E12EA5AFA0FBCE94282C69A1142
+        A544A8B020BD30DF966EBE4C67BA9D6D67676FE7A567671499D14D0F3C70CE8F
+        DFF7F3FDBD3CC07F1EE65FFA974F71D1E17285B21919FC61F4D2D0637CFE33FF
+        9F808F2F5CCA29F7235513997B06EF7094F1FB7CACC96418B3391B6F1F2E7D1D
+        FD2BA09CA4958B2319F3DE2DA23FEDD25557C3C8642046A51952943D861A1B5B
+        D3E40217DDC609C0644F8F475365986EF25E651D1D1EE82C162892044910A008
+        39C4BF2C22F2690E62A140EB2A729ADF7B2A8BB556931FB252EFEAEA02DBEA86
+        D66486D66004D1E920F23C2C761636D68E836F1B500ACAE55F80D77DDE31B6D9
+        35DE76F70EABCF0A30120D4CB44CA5548228F028A693D4B0A45EBD568B428243
+        864B4EA980607FEF88A3BDED89E7FE30F4B4DF2ABB0D5BB3B3B0B734AB62319F
+        53412854004C490291157CDF8CE449A0DF3B5D7BFEDC58EBD020EE3D7888622A
+        81E4D616CC679B20A5329045F19858AD82C2CCD66A404F3A9977376F286DFDBD
+        30D4D50296AACA48340448F1B4473AA86A3318EAA60AF3F43F57809CCB434826
+        B1323F0FCDA0B3B153CCE59CE9DD18EC0D0D20B47786E62BBC00860E6ED91F84
+        C56A859CCD414CF3587AFF0176471D84540A7BE18D0891897E603FBCB6603099
+        2AF4541A3297A6EE45D555CC53B7FD38B2F4F2F10375A5856C16F1481432C1A8
+        666275357FBDC53D918A46EB632B616732B26934EA0D3096812511F1F5307474
+        8D25FABDB7BE0E9385AE955676B4BB8B9E578181130FC9EFBBE6B4596B36DBBB
+        BBA1C81242936F20951F922CCDE8B4B2E78CBB83CDF359EC8457177CC1A90B74
+        5AC7CF40602A92E18E16F8440231EA2E168AE37D8149C6177C7BA524121A4FE2
+        2816A373223365E509400547B8B55008DBCB8B1CA330CF7F5A101991C39D1DE4
+        B90C8D934039FE0398445C30A137C2AE0000000049454E44AE426082}
+      Text = 'Bitmap and Image'
+      ImageIndex = 1
+      object MenuItem6: TMenuItem
+        Enabled = False
+        Locked = True
+        AutoCheck = True
+        Text = 'Disabled'
+        ImageIndex = 2
+      end
+      object MenuItem7: TMenuItem
+        Locked = True
+        AutoCheck = True
+        IsChecked = True
+        Text = 'Checked'
+      end
+      object MenuItem8: TMenuItem
+        Locked = True
+        AutoCheck = True
+        IsChecked = True
+        Text = 'Image Checked'
+        ImageIndex = 0
+      end
+      object MenuItem9: TMenuItem
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          02C449444154384FA552C94F13511CFE663ADDB729B25484A46E68DD00A50142
+          3470114F18EE2EB8869B78F2E045FE0043BC1913858B07F56088173546302610
+          5B84E241A0296D592C6B61A6335DE86CBE8168500C175FF24BE6BDFCBE3503FC
+          E7A176C33FBE8DBABD7E4F48E05588493ED0F904237FEF33BB11E8E0F2C0DDCD
+          95A90F0F43004FF55657B3668FA3C75359D9B1F87DAAFB9F0EF425307457D6B1
+          7C4561BCFB4D4E07AC9408794E1D2C0035ACC3CE7A0FF8B09A98C70E82DE4075
+          8D91B60C1CBBD8CA563635C0EC7643956528A20855CC606E2888C9CF43903608
+          15C019B647D0C18CC9F19AA254AFBFB51525817A18ED2E98AC56D02633249E83
+          7B8F07452E16C9E83414556AFC4DF0EC4C4D4FB1CFD7D778A793357369D8681A
+          76FF116885022481473EB5024D572563611864575248AF73EF36097AEB4E7755
+          9C3CFEE0ECFD7BB0B02C9C456E44063EA1E4D45148220F399B81AA83F33A8104
+          AAA0805614CC2766F3F4D3BADA01EFE1833D81EB57D176F916515AC632B1E7AC
+          3A04658D832A49DBC05B0E405CB9483746D0CDD4CB96735A437B1BACE55EC0ED
+          D8AA84A181541A5A3E0FB04E508ABA05CC923B19359383904A61747818860BC5
+          45CD9220FAD66666515AB10F0603039AEC6B691194C98891E7AFC0BA5C50840C
+          24D24DF0ED7B9478CB2070EB88C5E2099A96D4F6D9683C6CB5DA804C7ED3B692
+          5A27EA1B9B7925E242F891449A0C975C8446B2E74401F3F10431AA761BFA9796
+          F2EDA5652F969349EFDCC437DF622466B1194DB0D9086141C2DC640446B3957C
+          CA9889446073D8C1188D582284978643ED3B7FA4FA6A9FD3EE8937B59E87A6CA
+          F8D8FF0632E940D1D4419381A9A93AE167B324CE743416BE393A564BDAFAF35C
+          FB329EE0383ECCAFAE223E31A52BF77584BE523746C65A0A8A1CE649BCC58505
+          D09436A8237710E88F140D6E3C184474728AA368F5D12F094A436241EF2297E3
+          2868FDFAFB4FFDB456F2B6E46E6A0000000049454E44AE426082}
+        Locked = True
+        AutoCheck = True
+        IsChecked = True
+        Text = 'Bitmap and Image Checked'
+        ImageIndex = 3
+      end
+      object MenuItem10: TMenuItem
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          02C649444154384FA592DD4B53611CC7BFE7D9BB9BDB199A5348DACC0865E292
+          BAE8CE9488F9C2109182208A0824BA90EE822E12EA5AFA0FBCE94282C69A1142
+          A544A8B020BD30DF966EBE4C67BA9D6D67676FE7A567671499D14D0F3C70CE8F
+          DFF7F3FDBD3CC07F1EE65FFA974F71D1E17285B21919FC61F4D2D0637CFE33FF
+          9F808F2F5CCA29F7235513997B06EF7094F1FB7CACC96418B3391B6F1F2E7D1D
+          FD2BA09CA4958B2319F3DE2DA23FEDD25557C3C8642046A51952943D861A1B5B
+          D3E40217DDC609C0644F8F475365986EF25E651D1D1EE82C162892044910A008
+          39C4BF2C22F2690E62A140EB2A729ADF7B2A8BB556931FB252EFEAEA02DBEA86
+          D66486D66004D1E920F23C2C761636D68E836F1B500ACAE55F80D77DDE31B6D9
+          35DE76F70EABCF0A30120D4CB44CA5548228F028A693D4B0A45EBD568B428243
+          864B4EA980607FEF88A3BDED89E7FE30F4B4DF2ABB0D5BB3B3B0B734AB62319F
+          53412854004C490291157CDF8CE449A0DF3B5D7BFEDC58EBD020EE3D7888622A
+          81E4D616CC679B20A5329045F19858AD82C2CCD66A404F3A9977376F286DFDBD
+          30D4D50296AACA48340448F1B4473AA86A3318EAA60AF3F43F57809CCB434826
+          B1323F0FCDA0B3B153CCE59CE9DD18EC0D0D20B47786E62BBC00860E6ED91F84
+          C56A859CCD414CF3587AFF0176471D84540A7BE18D0891897E603FBCB6603099
+          2AF4541A3297A6EE45D555CC53B7FD38B2F4F2F10375A5856C16F1481432C1A8
+          666275357FBDC53D918A46EB632B616732B26934EA0D3096812511F1F5307474
+          8D25FABDB7BE0E9385AE955676B4BB8B9E578181130FC9EFBBE6B4596B36DBBB
+          BBA1C81242936F20951F922CCDE8B4B2E78CBB83CDF359EC8457177CC1A90B74
+          5AC7CF40602A92E18E16F8440231EA2E168AE37D8149C6177C7BA524121A4FE2
+          2816A373223365E509400547B8B55008DBCB8B1CA330CF7F5A101991C39D1DE4
+          B90C8D934039FE0398445C30A137C2AE0000000049454E44AE426082}
+        Locked = True
+        AutoCheck = True
+        IsChecked = True
+        Text = 'Bitmap Checked'
+      end
+    end
+    object MenuItem3: TMenuItem
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        0226494441545847B5970BB283200C45EDDB98EE0CDC19AEACE51282690C10DF
+        54661CFC72929B1070591E6CEFDC524AE8DE3DCCEB297E81BEC4F0E552DE20F2
+        630660708F117F4F2A701C070DCF01C8028CC2E1B425E6E1F4814F638BB58C7D
+        7E19C140129443E7C48D10007A6D296DCBB6A53C7A58E0F1BAAE39B06A587C29
+        6E1D2995F790130E036C304C6138FA75DB6C05159C427226E4C480391C9E9B1E
+        B33906C1A9C01C7EF1BC259B1243AB2014E8CC02C0B367A57DF732E639A14E52
+        CB10912A383542805CE1D9D00941DF7B8E3DE05B8E3BFA10639D6A06CD228C15
+        E0B23956805D0F212C3B0C288D69AC42EDE5FC5115D1B06FECBD5400E7500153
+        6ADFF7250418C22A0835244519A072A01F7BCE05E400C79E4380981625761800
+        5A85E354CD7F9AF85D27213F1E8EFB18E39B0F24933E2F958FEAE2A50A9EE353
+        D094027BCDFA7E0F05587AF4243DE50BEA1A54694A080530F7513149498C6FB6
+        B902F016F59CBD86DEF21EAEF939D77E5CC373EE4961B38DE507484ACE206944
+        4D800A2363AEF07FE400C319AAE10C967D1F7E53811E5C86E104CFC3786B1668
+        B80C019E11D80B95EF3972C082CB10FC18CE1651223E079F56DA3BF0B6D3AA61
+        F05CF74A40BDFFACE7FDFF8382F7C33D9E5AEF0CBCF7C3E76B853D2B7E02FFBD
+        E76D31C2925A76377961E1732C2C38CE3F0B78A11792D9F578E74DAB3315940E
+        9C57F449025D14F66CF9C51E2A1BD186383DB7FE1D6786F8C00CFBDA2C29271C
+        3F2D9339ED78FC019075D7C9709662140000000049454E44AE426082}
+      Text = 'Bitmap'
+      object MenuItem12: TMenuItem
+        Locked = True
+        AutoCheck = True
+        GroupIndex = 1
+        RadioItem = True
+        Text = 'MenuItem12'
+        ImageIndex = 8
+      end
+      object MenuItem13: TMenuItem
+        Locked = True
+        AutoCheck = True
+        GroupIndex = 1
+        RadioItem = True
+        Text = 'MenuItem13'
+        ImageIndex = 9
+      end
+      object MenuItem14: TMenuItem
+        Locked = True
+        AutoCheck = True
+        GroupIndex = 1
+        RadioItem = True
+        Text = 'MenuItem14'
+      end
+    end
+    object MenuItem4: TMenuItem
+      Text = 'None'
+    end
+  end
+  object MenuBar1: TMenuBar
+    Images = MainDataModule.ImageList1
+    Size.Width = 640.000000000000000000
+    Size.Height = 24.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object CopyMenuItem1: TMenuItem
+      Text = 'Files'
+      ImageIndex = 0
+      object CopyMenuItem5: TMenuItem
+        Action = FileExit1
+        Enabled = True
+        Locked = True
+        ImageIndex = 0
+      end
+      object CopyMenuItem11: TMenuItem
+        Action = FileExit2
+        Enabled = True
+        Locked = True
+        ImageIndex = 0
+      end
+    end
+    object CopyMenuItem2: TMenuItem
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+        61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        02C649444154384FA592DD4B53611CC7BFE7D9BB9BDB199A5348DACC0865E292
+        BAE8CE9488F9C2109182208A0824BA90EE822E12EA5AFA0FBCE94282C69A1142
+        A544A8B020BD30DF966EBE4C67BA9D6D67676FE7A567671499D14D0F3C70CE8F
+        DFF7F3FDBD3CC07F1EE65FFA974F71D1E17285B21919FC61F4D2D0637CFE33FF
+        9F808F2F5CCA29F7235513997B06EF7094F1FB7CACC96418B3391B6F1F2E7D1D
+        FD2BA09CA4958B2319F3DE2DA23FEDD25557C3C8642046A51952943D861A1B5B
+        D3E40217DDC609C0644F8F475365986EF25E651D1D1EE82C162892044910A008
+        39C4BF2C22F2690E62A140EB2A729ADF7B2A8BB556931FB252EFEAEA02DBEA86
+        D66486D66004D1E920F23C2C761636D68E836F1B500ACAE55F80D77DDE31B6D9
+        35DE76F70EABCF0A30120D4CB44CA5548228F028A693D4B0A45EBD568B428243
+        864B4EA980607FEF88A3BDED89E7FE30F4B4DF2ABB0D5BB3B3B0B734AB62319F
+        53412854004C490291157CDF8CE449A0DF3B5D7BFEDC58EBD020EE3D7888622A
+        81E4D616CC679B20A5329045F19858AD82C2CCD66A404F3A9977376F286DFDBD
+        30D4D50296AACA48340448F1B4473AA86A3318EAA60AF3F43F57809CCB434826
+        B1323F0FCDA0B3B153CCE59CE9DD18EC0D0D20B47786E62BBC00860E6ED91F84
+        C56A859CCD414CF3587AFF0176471D84540A7BE18D0891897E603FBCB6603099
+        2AF4541A3297A6EE45D555CC53B7FD38B2F4F2F10375A5856C16F1481432C1A8
+        666275357FBDC53D918A46EB632B616732B26934EA0D3096812511F1F5307474
+        8D25FABDB7BE0E9385AE955676B4BB8B9E578181130FC9EFBBE6B4596B36DBBB
+        BBA1C81242936F20951F922CCDE8B4B2E78CBB83CDF359EC8457177CC1A90B74
+        5AC7CF40602A92E18E16F8440231EA2E168AE37D8149C6177C7BA524121A4FE2
+        2816A373223365E509400547B8B55008DBCB8B1CA330CF7F5A101991C39D1DE4
+        B90C8D934039FE0398445C30A137C2AE0000000049454E44AE426082}
+      Text = 'Bitmap and Image'
+      ImageIndex = 1
+      object CopyMenuItem6: TMenuItem
+        Enabled = False
+        Locked = True
+        AutoCheck = True
+        Text = 'Disabled'
+        ImageIndex = 2
+      end
+      object CopyMenuItem7: TMenuItem
+        Locked = True
+        AutoCheck = True
+        IsChecked = True
+        Text = 'Checked'
+      end
+      object CopyMenuItem8: TMenuItem
+        Locked = True
+        AutoCheck = True
+        IsChecked = True
+        Text = 'Image Checked'
+        ImageIndex = 0
+      end
+      object CopyMenuItem9: TMenuItem
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          02C449444154384FA552C94F13511CFE663ADDB729B25484A46E68DD00A50142
+          3470114F18EE2EB8869B78F2E045FE0043BC1913858B07F56088173546302610
+          5B84E241A0296D592C6B61A6335DE86CBE8168500C175FF24BE6BDFCBE3503FC
+          E7A176C33FBE8DBABD7E4F48E05588493ED0F904237FEF33BB11E8E0F2C0DDCD
+          95A90F0F43004FF55657B3668FA3C75359D9B1F87DAAFB9F0EF425307457D6B1
+          7C4561BCFB4D4E07AC9408794E1D2C0035ACC3CE7A0FF8B09A98C70E82DE4075
+          8D91B60C1CBBD8CA563635C0EC7643956528A20855CC606E2888C9CF43903608
+          15C019B647D0C18CC9F19AA254AFBFB51525817A18ED2E98AC56D02633249E83
+          7B8F07452E16C9E83414556AFC4DF0EC4C4D4FB1CFD7D778A793357369D8681A
+          76FF116885022481473EB5024D572563611864575248AF73EF36097AEB4E7755
+          9C3CFEE0ECFD7BB0B02C9C456E44063EA1E4D45148220F399B81AA83F33A8104
+          AAA0805614CC2766F3F4D3BADA01EFE1833D81EB57D176F916515AC632B1E7AC
+          3A04658D832A49DBC05B0E405CB9483746D0CDD4CB96735A437B1BACE55EC0ED
+          D8AA84A181541A5A3E0FB04E508ABA05CC923B19359383904A61747818860BC5
+          45CD9220FAD66666515AB10F0603039AEC6B691194C98891E7AFC0BA5C50840C
+          24D24DF0ED7B9478CB2070EB88C5E2099A96D4F6D9683C6CB5DA804C7ED3B692
+          5A27EA1B9B7925E242F891449A0C975C8446B2E74401F3F10431AA761BFA9796
+          F2EDA5652F969349EFDCC437DF622466B1194DB0D9086141C2DC640446B3957C
+          CA9889446073D8C1188D582284978643ED3B7FA4FA6A9FD3EE8937B59E87A6CA
+          F8D8FF0632E940D1D4419381A9A93AE167B324CE743416BE393A564BDAFAF35C
+          FB329EE0383ECCAFAE223E31A52BF77584BE523746C65A0A8A1CE649BCC58505
+          D09436A8237710E88F140D6E3C184474728AA368F5D12F094A436241EF2297E3
+          2868FDFAFB4FFDB456F2B6E46E6A0000000049454E44AE426082}
+        Locked = True
+        AutoCheck = True
+        IsChecked = True
+        Text = 'Bitmap and Image Checked'
+        ImageIndex = 3
+      end
+      object CopyMenuItem10: TMenuItem
+        Bitmap.PNG = {
+          89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+          61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+          02C649444154384FA592DD4B53611CC7BFE7D9BB9BDB199A5348DACC0865E292
+          BAE8CE9488F9C2109182208A0824BA90EE822E12EA5AFA0FBCE94282C69A1142
+          A544A8B020BD30DF966EBE4C67BA9D6D67676FE7A567671499D14D0F3C70CE8F
+          DFF7F3FDBD3CC07F1EE65FFA974F71D1E17285B21919FC61F4D2D0637CFE33FF
+          9F808F2F5CCA29F7235513997B06EF7094F1FB7CACC96418B3391B6F1F2E7D1D
+          FD2BA09CA4958B2319F3DE2DA23FEDD25557C3C8642046A51952943D861A1B5B
+          D3E40217DDC609C0644F8F475365986EF25E651D1D1EE82C162892044910A008
+          39C4BF2C22F2690E62A140EB2A729ADF7B2A8BB556931FB252EFEAEA02DBEA86
+          D66486D66004D1E920F23C2C761636D68E836F1B500ACAE55F80D77DDE31B6D9
+          35DE76F70EABCF0A30120D4CB44CA5548228F028A693D4B0A45EBD568B428243
+          864B4EA980607FEF88A3BDED89E7FE30F4B4DF2ABB0D5BB3B3B0B734AB62319F
+          53412854004C490291157CDF8CE449A0DF3B5D7BFEDC58EBD020EE3D7888622A
+          81E4D616CC679B20A5329045F19858AD82C2CCD66A404F3A9977376F286DFDBD
+          30D4D50296AACA48340448F1B4473AA86A3318EAA60AF3F43F57809CCB434826
+          B1323F0FCDA0B3B153CCE59CE9DD18EC0D0D20B47786E62BBC00860E6ED91F84
+          C56A859CCD414CF3587AFF0176471D84540A7BE18D0891897E603FBCB6603099
+          2AF4541A3297A6EE45D555CC53B7FD38B2F4F2F10375A5856C16F1481432C1A8
+          666275357FBDC53D918A46EB632B616732B26934EA0D3096812511F1F5307474
+          8D25FABDB7BE0E9385AE955676B4BB8B9E578181130FC9EFBBE6B4596B36DBBB
+          BBA1C81242936F20951F922CCDE8B4B2E78CBB83CDF359EC8457177CC1A90B74
+          5AC7CF40602A92E18E16F8440231EA2E168AE37D8149C6177C7BA524121A4FE2
+          2816A373223365E509400547B8B55008DBCB8B1CA330CF7F5A101991C39D1DE4
+          B90C8D934039FE0398445C30A137C2AE0000000049454E44AE426082}
+        Locked = True
+        AutoCheck = True
+        IsChecked = True
+        Text = 'Bitmap Checked'
+      end
+    end
+    object CopyMenuItem3: TMenuItem
+      Bitmap.PNG = {
+        89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+        F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+        0226494441545847B5970BB283200C45EDDB98EE0CDC19AEACE51282690C10DF
+        54661CFC72929B1070591E6CEFDC524AE8DE3DCCEB297E81BEC4F0E552DE20F2
+        630660708F117F4F2A701C070DCF01C8028CC2E1B425E6E1F4814F638BB58C7D
+        7E19C140129443E7C48D10007A6D296DCBB6A53C7A58E0F1BAAE39B06A587C29
+        6E1D2995F790130E036C304C6138FA75DB6C05159C427226E4C480391C9E9B1E
+        B33906C1A9C01C7EF1BC259B1243AB2014E8CC02C0B367A57DF732E639A14E52
+        CB10912A383542805CE1D9D00941DF7B8E3DE05B8E3BFA10639D6A06CD228C15
+        E0B23956805D0F212C3B0C288D69AC42EDE5FC5115D1B06FECBD5400E7500153
+        6ADFF7250418C22A0835244519A072A01F7BCE05E400C79E4380981625761800
+        5A85E354CD7F9AF85D27213F1E8EFB18E39B0F24933E2F958FEAE2A50A9EE353
+        D094027BCDFA7E0F05587AF4243DE50BEA1A54694A080530F7513149498C6FB6
+        B902F016F59CBD86DEF21EAEF939D77E5CC373EE4961B38DE507484ACE206944
+        4D800A2363AEF07FE400C319AAE10C967D1F7E53811E5C86E104CFC3786B1668
+        B80C019E11D80B95EF3972C082CB10FC18CE1651223E079F56DA3BF0B6D3AA61
+        F05CF74A40BDFFACE7FDFF8382F7C33D9E5AEF0CBCF7C3E76B853D2B7E02FFBD
+        E76D31C2925A76377961E1732C2C38CE3F0B78A11792D9F578E74DAB3315940E
+        9C57F449025D14F66CF9C51E2A1BD186383DB7FE1D6786F8C00CFBDA2C29271C
+        3F2D9339ED78FC019075D7C9709662140000000049454E44AE426082}
+      Text = 'Bitmap'
+      object CopyMenuItem12: TMenuItem
+        Locked = True
+        AutoCheck = True
+        GroupIndex = 1
+        RadioItem = True
+        Text = 'MenuItem12'
+        ImageIndex = 8
+      end
+      object CopyMenuItem13: TMenuItem
+        Locked = True
+        AutoCheck = True
+        GroupIndex = 1
+        RadioItem = True
+        Text = 'MenuItem13'
+        ImageIndex = 9
+      end
+      object CopyMenuItem14: TMenuItem
+        Locked = True
+        AutoCheck = True
+        GroupIndex = 1
+        RadioItem = True
+        Text = 'MenuItem14'
+      end
+    end
+    object CopyMenuItem4: TMenuItem
+      Text = 'None'
+    end
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    Images = MainDataModule.ImageList1
+    Size.Width = 640.000000000000000000
+    Size.Height = 456.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 5
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      ImageIndex = 0
+      Size.Width = 72.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Image'
+      object Panel1: TPanel
+        Align = Left
+        Padding.Left = 8.000000000000000000
+        Padding.Top = 8.000000000000000000
+        Padding.Right = 8.000000000000000000
+        Padding.Bottom = 8.000000000000000000
+        PopupMenu = PopupMenu1
+        Size.Width = 145.000000000000000000
+        Size.Height = 432.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Button1: TButton
+          Action = ActnNextImage
+          Align = Top
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = 0
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 129.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Visible = True
+        end
+        object CornerButton1: TCornerButton
+          Action = ActnNextImage
+          Align = Top
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = 0
+          Margins.Top = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 34.000000000000000000
+          Sides = [Top, Left, Bottom, Right]
+          Size.Width = 129.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Visible = True
+          XRadius = 3.000000000000000000
+          YRadius = 3.000000000000000000
+        end
+        object SpeedButton1: TSpeedButton
+          Action = ActnNextImage
+          Align = Top
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = 0
+          Position.X = 8.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 129.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          Visible = True
+        end
+        object Button2: TButton
+          Action = ActnNextImage
+          Align = Top
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = 0
+          Margins.Top = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 86.000000000000000000
+          Size.Width = 129.000000000000000000
+          Size.Height = 35.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'actiontoolbutton'
+          TabOrder = 3
+          Visible = True
+        end
+      end
+      object Splitter1: TSplitter
+        Align = Left
+        Cursor = crHSplit
+        MinSize = 20.000000000000000000
+        Position.X = 145.000000000000000000
+        Size.Width = 8.000000000000000000
+        Size.Height = 432.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+          Width = 16
+          Height = 16
+          PNG = {
+            89504E470D0A1A0A0000000D49484452000000100000001008060000001FF3FF
+            61000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            026349444154384F7D535B6B135110FE7693DD7477CDA5012F499388D86A4B43
+            E28352F20B0CEA63F117D8375FC407F10788A048C117C1CB5341112A888AE44D
+            8A4A5A5021B74609A24D421BB1D5D064BBC9E6B29E396A4DD2E081D93973E69B
+            6F66CECE1130B052A9D47D5DD7CF30F1F5BA344DDB60F2321A8D5EE83D17FE1A
+            D96C36542E973FDAED76C5EBF522B05F8453052C0BA81B40F15B1BD56A15ED76
+            DB08040293E170B848B19C2097CB1D4E26935F18BB301912A0755210AC565F6D
+            962041B745B1FAB5834C2663C562B123D3D3D36B9C209148EC389D4EE5E4D19F
+            905B9F07BBEAB35BD238560A2EB0168D783CAE8AE974FA9E2CCB4A74DC06D9CC
+            B39ACD3DA21B269EBDAEF273C95CC589093B1C0E8742B122639A1D1D1D85DA78
+            037459F010997FB481BB4F3E61FEF177EED79A6FE176BBA98A5922F0840E7421
+            746B43B3DF78B889A5776534CD36D3EB1C43D831AF49041E911AD4E4C66EE66B
+            0B3F404299483F5F2AA2617660B389B87931B48B5329862D3B7D2CABC3996F2D
+            9A78FAAAC41DCB191595CD1DBEDFA74AB87D2988095F93E1FEDCA9D5E51B5E81
+            DE9439F3B9191B24BBC0CB5D5BDFE69AEC3B97FD38E6FB572561F5A6F49B804D
+            57B5B4E960C4228EFB0C3CB8E283248B68B43A5C933DE9EF0F266C696B04144B
+            048B3461BA12E76D4C8D1958B87A10B224E2FADC216E0FFEDABA721AB55A8D08
+            16FB07C9FF1EF2CECA7F07C95467B05C8CC2608B0F12A183C1E0543E9FB73E54
+            4E615B3B0F4BB0EDC94A67E4234CA150B0288662873E2636D60878AA70ABECD6
+            D9DA6E8CA0B8E542BD5E1FFE987A6BA6F164C0B383CF5951948ACBE57A118944
+            E67AF1BF00D4495A02AD3FC9260000000049454E44AE426082}
+        end>
+      IsSelected = False
+      ImageIndex = 1
+      Size.Width = 135.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemcustom'
+      TabOrder = 0
+      Text = 'Bitmap and Image'
+      object Selection1: TSelection
+        GripSize = 8.000000000000000000
+        HideSelection = False
+        Padding.Left = 7.000000000000000000
+        Padding.Top = 7.000000000000000000
+        Padding.Right = 7.000000000000000000
+        Padding.Bottom = 7.000000000000000000
+        Proportional = False
+        Position.X = 176.000000000000000000
+        Position.Y = 80.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        object Rectangle1: TRectangle
+          Align = Client
+          HitTest = False
+          Padding.Left = 1.000000000000000000
+          Padding.Top = 1.000000000000000000
+          Padding.Right = 1.000000000000000000
+          Padding.Bottom = 1.000000000000000000
+          Size.Width = 18.000000000000000000
+          Size.Height = 18.000000000000000000
+          Size.PlatformDefault = False
+          object Glyph1: TGlyph
+            Align = Client
+            Size.Width = 16.000000000000000000
+            Size.Height = 16.000000000000000000
+            Size.PlatformDefault = False
+            ImageIndex = 0
+            Images = MainDataModule.ImageList1
+            OnChanged = Glyph1Changed
+          end
+        end
+      end
+      object ToolBar1: TToolBar
+        Size.Width = 640.000000000000000000
+        Size.Height = 40.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object SpeedButton2: TSpeedButton
+          Action = ActnDecIndex
+          Align = Left
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = -1
+          Size.Width = 80.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowlefttoolbutton'
+          Visible = True
+        end
+        object SpeedButton3: TSpeedButton
+          Action = ActnIncIndex
+          Align = Right
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = -1
+          Position.X = 560.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowrighttoolbutton'
+          Visible = True
+        end
+        object Label1: TLabel
+          Action = ActnInfo
+          Align = Center
+          Enabled = True
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 334.000000000000000000
+          Size.Height = 36.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 10.000000000000000000
+          TextSettings.HorzAlign = Center
+          Visible = True
+        end
+      end
+      object Panel2: TPanel
+        Align = Left
+        Padding.Left = 8.000000000000000000
+        Padding.Top = 8.000000000000000000
+        Padding.Right = 8.000000000000000000
+        Padding.Bottom = 8.000000000000000000
+        PopupMenu = PopupMenu1
+        Position.Y = 40.000000000000000000
+        Size.Width = 161.000000000000000000
+        Size.Height = 392.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Label2: TLabel
+          Align = Bottom
+          AutoSize = True
+          StyledSettings = [Style, FontColor]
+          Position.X = 8.000000000000000000
+          Position.Y = 371.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 13.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Family = 'Courier New'
+          TextSettings.Font.Size = 11.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'Label2'
+        end
+        object CheckBox1: TCheckBox
+          Action = ActnDormant
+          Align = Top
+          Enabled = True
+          Margins.Top = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 12.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Visible = True
+        end
+        object Button3: TButton
+          Action = ActnUpCache
+          Align = Top
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = -1
+          Position.X = 8.000000000000000000
+          Position.Y = 35.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Visible = True
+        end
+        object Button4: TButton
+          Action = ActnDownCache
+          Align = Top
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = -1
+          Margins.Top = 4.000000000000000000
+          Margins.Bottom = 4.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 65.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Visible = True
+        end
+        object Button5: TButton
+          Action = ActnClearCache
+          Align = Top
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = -1
+          Position.X = 8.000000000000000000
+          Position.Y = 95.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Visible = True
+        end
+        object Button6: TButton
+          Action = ActnUpdateText
+          Align = Bottom
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = 8
+          Position.X = 8.000000000000000000
+          Position.Y = 345.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          Visible = True
+        end
+        object Button7: TButton
+          Action = ActnAddSource
+          Align = Bottom
+          Enabled = True
+          Images = MainDataModule.ImageList1
+          ImageIndex = 9
+          Margins.Top = 8.000000000000000000
+          Margins.Bottom = 8.000000000000000000
+          Position.X = 8.000000000000000000
+          Position.Y = 309.000000000000000000
+          Size.Width = 145.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+          Visible = True
+        end
+      end
+      object Splitter2: TSplitter
+        Align = Left
+        Cursor = crHSplit
+        MinSize = 20.000000000000000000
+        Position.X = 161.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 8.000000000000000000
+        Size.Height = 392.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+          Width = 32
+          Height = 32
+          PNG = {
+            89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+            F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+            0226494441545847B5970BB283200C45EDDB98EE0CDC19AEACE51282690C10DF
+            54661CFC72929B1070591E6CEFDC524AE8DE3DCCEB297E81BEC4F0E552DE20F2
+            630660708F117F4F2A701C070DCF01C8028CC2E1B425E6E1F4814F638BB58C7D
+            7E19C140129443E7C48D10007A6D296DCBB6A53C7A58E0F1BAAE39B06A587C29
+            6E1D2995F790130E036C304C6138FA75DB6C05159C427226E4C480391C9E9B1E
+            B33906C1A9C01C7EF1BC259B1243AB2014E8CC02C0B367A57DF732E639A14E52
+            CB10912A383542805CE1D9D00941DF7B8E3DE05B8E3BFA10639D6A06CD228C15
+            E0B23956805D0F212C3B0C288D69AC42EDE5FC5115D1B06FECBD5400E7500153
+            6ADFF7250418C22A0835244519A072A01F7BCE05E400C79E4380981625761800
+            5A85E354CD7F9AF85D27213F1E8EFB18E39B0F24933E2F958FEAE2A50A9EE353
+            D094027BCDFA7E0F05587AF4243DE50BEA1A54694A080530F7513149498C6FB6
+            B902F016F59CBD86DEF21EAEF939D77E5CC373EE4961B38DE507484ACE206944
+            4D800A2363AEF07FE400C319AAE10C967D1F7E53811E5C86E104CFC3786B1668
+            B80C019E11D80B95EF3972C082CB10FC18CE1651223E079F56DA3BF0B6D3AA61
+            F05CF74A40BDFFACE7FDFF8382F7C33D9E5AEF0CBCF7C3E76B853D2B7E02FFBD
+            E76D31C2925A76377961E1732C2C38CE3F0B78A11792D9F578E74DAB3315940E
+            9C57F449025D14F66CF9C51E2A1BD186383DB7FE1D6786F8C00CFBDA2C29271C
+            3F2D9339ED78FC019075D7C9709662140000000049454E44AE426082}
+        end>
+      IsSelected = False
+      Size.Width = 77.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemcustom'
+      TabOrder = 0
+      Text = 'Bitmap'
+      object Panel3: TPanel
+        Align = Left
+        Size.Width = 150.000000000000000000
+        Size.Height = 432.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object TreeView1: TTreeView
+          Align = Client
+          Size.Width = 150.000000000000000000
+          Size.Height = 310.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Images = MainDataModule.ImageList1
+          Viewport.Width = 146.000000000000000000
+          Viewport.Height = 306.000000000000000000
+          object TreeViewItem1: TTreeViewItem
+            IsChecked = True
+            IsExpanded = False
+            IsSelected = False
+            ImageIndex = 10
+            TabOrder = 0
+            Text = 'TreeViewItem1'
+          end
+          object TreeViewItem2: TTreeViewItem
+            IsChecked = False
+            IsExpanded = False
+            IsSelected = False
+            ImageIndex = 8
+            TabOrder = 1
+            Text = 'TreeViewItem2'
+            object TreeViewItem6: TTreeViewItem
+              IsChecked = False
+              IsExpanded = False
+              IsSelected = False
+              ImageIndex = 5
+              TabOrder = 0
+              Text = 'TreeViewItem6'
+            end
+            object TreeViewItem7: TTreeViewItem
+              IsChecked = False
+              IsExpanded = False
+              IsSelected = False
+              TabOrder = 1
+              Text = 'TreeViewItem7'
+              object TreeViewItem10: TTreeViewItem
+                IsChecked = False
+                IsExpanded = False
+                IsSelected = False
+                ImageIndex = 1
+                TabOrder = 0
+                Text = 'TreeViewItem10'
+              end
+              object TreeViewItem11: TTreeViewItem
+                IsChecked = False
+                IsExpanded = False
+                IsSelected = False
+                TabOrder = 1
+                Text = 'TreeViewItem11'
+              end
+            end
+            object TreeViewItem8: TTreeViewItem
+              IsChecked = False
+              IsExpanded = False
+              IsSelected = False
+              TabOrder = 2
+              Text = 'TreeViewItem8'
+            end
+            object TreeViewItem9: TTreeViewItem
+              IsChecked = False
+              IsExpanded = False
+              IsSelected = False
+              TabOrder = 3
+              Text = 'TreeViewItem9'
+            end
+          end
+          object TreeViewItem3: TTreeViewItem
+            IsChecked = True
+            IsExpanded = False
+            IsSelected = False
+            ImageIndex = 9
+            TabOrder = 2
+            Text = 'TreeViewItem3'
+          end
+          object TreeViewItem4: TTreeViewItem
+            IsChecked = True
+            IsExpanded = False
+            IsSelected = False
+            TabOrder = 3
+            Text = 'TreeViewItem4'
+          end
+          object TreeViewItem5: TTreeViewItem
+            IsChecked = False
+            IsExpanded = False
+            IsSelected = False
+            TabOrder = 4
+            Text = 'TreeViewItem5'
+            object TreeViewItem12: TTreeViewItem
+              IsChecked = False
+              IsExpanded = False
+              IsSelected = False
+              TabOrder = 0
+              Text = 'TreeViewItem12'
+            end
+            object TreeViewItem13: TTreeViewItem
+              IsChecked = False
+              IsExpanded = False
+              IsSelected = False
+              TabOrder = 1
+              Text = 'TreeViewItem13'
+              object TreeViewItem15: TTreeViewItem
+                IsChecked = False
+                IsExpanded = False
+                IsSelected = False
+                TabOrder = 0
+                Text = 'Some TreeView text'
+              end
+              object TreeViewItem16: TTreeViewItem
+                Font.Size = 15.000000000000000000
+                IsChecked = False
+                IsExpanded = False
+                IsSelected = False
+                TabOrder = 1
+                Text = 'Other teee view item text'
+              end
+              object TreeViewItem17: TTreeViewItem
+                IsChecked = False
+                IsExpanded = False
+                IsSelected = False
+                TabOrder = 2
+                Text = 'TreeViewItem17'
+                object TreeViewItem18: TTreeViewItem
+                  IsChecked = False
+                  IsExpanded = False
+                  IsSelected = False
+                  TabOrder = 0
+                  Text = 'TreeViewItem18'
+                end
+                object TreeViewItem19: TTreeViewItem
+                  IsChecked = False
+                  IsExpanded = False
+                  IsSelected = False
+                  TabOrder = 1
+                  Text = 'TreeViewItem19'
+                  object TreeViewItem21: TTreeViewItem
+                    IsChecked = False
+                    IsExpanded = False
+                    IsSelected = False
+                    TabOrder = 0
+                    Text = 'TreeViewItem21'
+                  end
+                  object TreeViewItem22: TTreeViewItem
+                    IsChecked = False
+                    IsExpanded = False
+                    IsSelected = False
+                    TabOrder = 1
+                    Text = 'TreeViewItem22'
+                    object TreeViewItem24: TTreeViewItem
+                      IsChecked = False
+                      IsExpanded = False
+                      IsSelected = False
+                      TabOrder = 0
+                      Text = 'TreeViewItem24'
+                    end
+                    object TreeViewItem25: TTreeViewItem
+                      IsChecked = False
+                      IsExpanded = False
+                      IsSelected = False
+                      TabOrder = 1
+                      Text = 'TreeViewItem25'
+                    end
+                  end
+                  object TreeViewItem23: TTreeViewItem
+                    IsChecked = False
+                    IsExpanded = False
+                    IsSelected = False
+                    TabOrder = 2
+                    Text = 'TreeViewItem23'
+                  end
+                end
+                object TreeViewItem20: TTreeViewItem
+                  IsChecked = False
+                  IsExpanded = False
+                  IsSelected = False
+                  TabOrder = 2
+                  Text = 'TreeViewItem20'
+                end
+              end
+            end
+            object TreeViewItem14: TTreeViewItem
+              IsChecked = False
+              IsExpanded = False
+              IsSelected = False
+              TabOrder = 2
+              Text = 'TreeViewItem14'
+            end
+          end
+        end
+        object ListBox1: TListBox
+          Align = Top
+          Size.Width = 150.000000000000000000
+          Size.Height = 81.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          DisableFocusEffect = True
+          Images = MainDataModule.ImageList1
+          DefaultItemStyles.ItemStyle = ''
+          DefaultItemStyles.GroupHeaderStyle = ''
+          DefaultItemStyles.GroupFooterStyle = ''
+          Viewport.Width = 130.000000000000000000
+          Viewport.Height = 77.000000000000000000
+          object ListBoxItem5: TListBoxItem
+            ImageIndex = 2
+            TabOrder = 0
+            Text = 'ListBoxItem5'
+          end
+          object ListBoxItem6: TListBoxItem
+            ImageIndex = 8
+            Position.Y = 19.000000000000000000
+            TabOrder = 1
+            Text = 'ListBoxItem6'
+          end
+          object ListBoxItem7: TListBoxItem
+            ImageIndex = 9
+            Position.Y = 38.000000000000000000
+            TabOrder = 2
+            Text = 'ListBoxItem7'
+          end
+          object ListBoxItem8: TListBoxItem
+            Position.Y = 57.000000000000000000
+            TabOrder = 3
+            Text = 'ListBoxItem8'
+          end
+          object ListBoxItem9: TListBoxItem
+            ImageIndex = 1
+            Position.Y = 76.000000000000000000
+            TabOrder = 4
+            Text = 'ListBoxItem9'
+          end
+        end
+        object ComboBox1: TComboBox
+          Align = Bottom
+          Images = MainDataModule.ImageList1
+          Position.Y = 410.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object ListBoxItem1: TListBoxItem
+            ImageIndex = 1
+            TabOrder = 0
+            Text = 'ListBoxItem1'
+          end
+          object ListBoxItem2: TListBoxItem
+            ImageIndex = 4
+            TabOrder = 1
+            Text = 'ListBoxItem2'
+          end
+          object ListBoxItem3: TListBoxItem
+            ImageIndex = 8
+            TabOrder = 2
+            Text = 'ListBoxItem3'
+          end
+          object ListBoxItem4: TListBoxItem
+            ImageIndex = 9
+            TabOrder = 3
+            Text = 'ListBoxItem4'
+          end
+        end
+        object CheckBox3: TCheckBox
+          Action = ActnShowCheckBox
+          Align = Top
+          Enabled = True
+          Position.Y = 81.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 19.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Visible = True
+        end
+      end
+      object Splitter3: TSplitter
+        Align = Left
+        Cursor = crHSplit
+        MinSize = 20.000000000000000000
+        Position.X = 150.000000000000000000
+        Size.Width = 8.000000000000000000
+        Size.Height = 432.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object TabItem4: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 53.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'None'
+      OnPaint = TabItem4Paint
+      object Splitter4: TSplitter
+        Align = Bottom
+        Cursor = crVSplit
+        MinSize = 20.000000000000000000
+        Position.Y = 267.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Layout1: TLayout
+        Align = Bottom
+        Position.Y = 275.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 157.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 19
+        object ToolBar2: TToolBar
+          Size.Width = 640.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object Button8: TButton
+            Action = ActnListViewAdd
+            Align = Left
+            Enabled = True
+            Images = MainDataModule.ImageList1
+            ImageIndex = -1
+            Position.X = 168.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            TextSettings.WordWrap = True
+            Visible = True
+          end
+          object Button9: TButton
+            Action = ActnClear
+            Align = Left
+            Enabled = True
+            Images = MainDataModule.ImageList1
+            ImageIndex = -1
+            Position.X = 88.000000000000000000
+            Size.Width = 80.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            TextSettings.WordWrap = True
+            Visible = True
+          end
+          object Button10: TButton
+            Action = ActnListAddBitmap
+            Align = Left
+            Enabled = True
+            Images = MainDataModule.ImageList1
+            ImageIndex = -1
+            Position.X = 248.000000000000000000
+            Size.Width = 113.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            TextSettings.WordWrap = True
+            Visible = True
+          end
+          object Button11: TButton
+            Action = ActnAddBitmapAndImage
+            Align = Left
+            Enabled = True
+            Images = MainDataModule.ImageList1
+            ImageIndex = -1
+            Position.X = 361.000000000000000000
+            Size.Width = 120.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            TextSettings.WordWrap = True
+            Visible = True
+          end
+          object CheckBox2: TCheckBox
+            Action = ActnImages
+            Align = Left
+            Enabled = True
+            Size.Width = 88.000000000000000000
+            Size.Height = 40.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Visible = True
+          end
+        end
+        object ListView2: TListView
+          ItemAppearanceClassName = 'TListItemAppearance'
+          ItemEditAppearanceClassName = 'TListItemShowCheckAppearance'
+          HeaderAppearanceClassName = 'TListHeaderObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 640.000000000000000000
+          Size.Height = 117.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+        end
+      end
+      object Image1: TImage
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap = <
+          item
+            Width = 32
+            Height = 32
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              07AB494441545847ED576B6C5BE5197E8EEF4EECC471D2DCD384DCDA902E6B12
+              DA868404B63634240B509465DD9A49B413EA36181B6CDAC6900662D2A4A97F98
+              86064C089505A10D6D9A18DDA034B481F4DEF49AAC29CDC5B59B9B1DC7F6B173
+              E2BBBDF73BB64FECA58D2812FF76A457E7F8FBBEF33DCFFBBC97F319F8FF752B
+              05EE878E86B9B87DA91AC9A4DD1BA14407B673DD38AC2A929BE45BD045739964
+              2B6BBE042A72306F6BD12B337007F5EB953FAF6BCFAEA86932A44D5C757F8734
+              B060113708D747164DC6EFE878615F6565EB9F8B8A366BCCE633E33417248BDC
+              29474EF6287721A752535FD39409BD4125BD1FF047F0D11FA781713C85EB7897
+              2616BBBA7E991989A89E552AB54F1715D564646414E3E6CDCBB058CEBD7FFCF8
+              6B3FA1353364FE3B21218F56E0B596DE7CA4E91429EFC9151CCA1AF4989C7277
+              16A46FF437D77DEF073A5DFE5BB5B52D6D1B37DEA7CECC2C844CA6865E578268
+              34BAC16028B8C762191EA24D3C64E1CF4B420E01FF9C9C76EF67600C34F9924F
+              15A34AE8C4E6FCDEB6A6A6CEBBEBEA5AA1D365132087703822595A5A21384EB1
+              DE682C6EF57AED1704C1E9A07D429F87849CF80A08E0CAA4D9DD2392085318C6
+              CAA03ADC850A5F0F7636EF454D4D23B45A7D0A68241223100AB17B142A550E59
+              56BE4EA7EFE0F9E9B35E2F6F8FE7C59A3CE4E2221ED35BB7352BDD2305CD8557
+              7BF1D5F43DE8DEB9071B366C8242A18A83AC789C005770766CCEFB03E6DDD5F0
+              07D490CB322093A767180C39EDE1B0708DE7E7584E04D662C008B0CBBFBBFDA5
+              C35D5BBE8BF6AFF7A0A4A48C801524350553F2328204B03C6A4743EE0BD855F5
+              2C6A73CEC1E9E3605EDC262A81A88EDECDD51B32331F89226476382CE67862A6
+              5451825482008CC6C617F7EDFB16C9486C288F19783201062E8BD8B029F37974
+              143F8DF28C4B185968C6DB575E87C5D1440528C01F548B6A45C24ADA3F4B9169
+              D03EA854AA9D76FB042BD355A5CC48A4349985054049EF1A8D34119FE1282F99
+              199427B0A7A41A5B8CFD50CB02F874F6DB1830BF8CFA828378EE8107B06FDBDE
+              15A5C55CD651489A34E5E53B0ED4D7F7FE8A06F2C9524B8D062405AAABBFF662
+              53D3FDF0114F1D3562A684D7BB120221500C17C5B9543B280295EA47D1987F10
+              25FA310C9A1EC53F467E1B5380C2C0C21661466D89432EF47A459356ABD358AD
+              6357E855814C6A58ABDA6C888A27A1447676CCFBD8C56172E9C7386AFDB5E4A9
+              461EC011D35E1C9B7A09BE20C926AD5C1183F9C8A18EF2EAC11FB6B53DD94F33
+              6564EAC48A5BF6F930B59118090EEBD671148E95FE30EEFE118E4C3F2F213C5C
+              FD2794651DB90D78629891A82225BED2D6D2B2FF2D1AAD4890482160B5CE491B
+              C5484429A349C45C0E722958C035FE29FCDBFC9CB4F6EEDC7FC5354AF67CF533
+              873C180CA5CD5BB7F6FD2EAE844ADA56A3D15DB258ACBBCBCBAB2907F4E2DB2C
+              861E4F849873624EB8DD61A919CD7B1A31EDCEC307E33FC5A599DD088B0D29D1
+              9862CFAC72629795BE64E3A8DB66C451F384E93F9FBE3A4883CC5B9B44C066BB
+              6E0D858237E7E7F9AE6412C160143C1F46460647DD1070B9425263B22DD562D9
+              9F2582C73A22DD598B0EC5133132078DF606EAB6E4A0EB895D48ABA9C7D94B17
+              ADF691811304CE1272214958045C2E8B2914F299E7E73D9D8C447ABA5EF4826D
+              CEF3A138094E7C0E06632D98653B9B1781E97730E887D73745A19BC0CE6F54A1
+              FB8947E02BDA0457548B0025F8A9A14FAC8EAB473F26F011323E9900EB543E97
+              6B3A8584569B2E7A1608C448188D72A8D53252224860E4292348C03E9F1B4EE7
+              350A95197BFA1AD0FDF84370AFAB843BA8809A7A8B6399EA81326EE8F8A0CD3D
+              76EC24614D902D251360C15A45A2B4B4121A4DBAE82523E17285919D1D23E174
+              0621086ECCCC9CA7F949F4F5DD83BE271FC6525601829C023ACA9B59FA382B08
+              98659B9B7ACC95F3A76D8ED18153B723B08AC4C282D05952524980697125C270
+              385838C23873E663F2780EFBF7B761D7E31DE0F20A20A78A5512A0959A186BE5
+              0A02B62D5142C79F874F1E57F19F9D3E1B89043F2330CFFF2A90A89D14251C8E
+              E5CEE2E20A02D34A248687CF61FBF6123CF34C37D4C62C1198A7439940A62202
+              02C5DB4DDF4176C4F0D2989FCA7A76F422464E5CD62884609920988F11D8E2ED
+              08AC52C2E5F2761616DE2591B0DB67B16347390A0AB2E0A5CDE729C6F969E42D
+              79BE4CBFB5D4F59709D84744463FFC00877EFF3206FFFAFAECE2D4C0699E1F63
+              9D6B9ED5E75A045691F078FC9DF9F9775187D480116868C81509B0AFF032F398
+              00F514F7458A35CF2FE1A337DFC1ABBFF84DE8F4C05F4C16D3D0498FC734140A
+              2DB3F89F8FE78073D5D7291183A43BEB268B26D3A9771D0E1363FDB77BEF7D2C
+              65998EB29CC5D843045C337378FB957E1CFAFB802F1299BABEBC3C3D160EFBA7
+              E280ECB37C938C9D96483344520F81B7404F1A626DDB603014DED7D2F2FDF70C
+              863C1C38F04D51013B79FCC9B18B78E395777061F88C93E23B2E0896515ACF0E
+              23D7E3E0B3747792A59C0BEE8400E3C2D6D391ABB09548BCDFD3D34A52DBD1DF
+              7F888EE657673D9E89319FCFC9B2FB461C9879CE5AAE9B8CFD6F58752ABA5302
+              2924EAEADA7F76F9F209852058E743218F852627E3C0CC731B1915E0DAA7E32F
+              424022410F5564EBE39E59E9CE6496E2BB764463B35F9440E25DF6578A8A4F94
+              960A503C01DFF2F0793B32FF0598E0C5243DAD15520000000049454E44AE4260
+              82}
+            FileName = 
+              'C:\'#1052#1086#1080' '#1074#1077#1089#1077#1083#1099#1077' '#1082#1072#1088#1090#1080#1085#1082#1080'\Icons\icons\XP\PNG\32x32\favorites_32_h.' +
+              'png'
+          end>
+        Position.X = 296.000000000000000000
+        Position.Y = 144.000000000000000000
+        Size.Width = 32.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        Visible = False
+      end
+      object ListView1: TListView
+        ItemAppearanceClassName = 'TImageListItemAppearance'
+        ItemEditAppearanceClassName = 'TImageListItemDeleteAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        Images = MainDataModule.ImageList1
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 267.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 21
+        ItemAppearanceObjects.ItemObjects.Image.ScalingMode = Original
+      end
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Images = MainDataModule.ImageList1
+    Left = 232
+    Top = 240
+    object MenuItem15: TMenuItem
+      Action = FileExit1
+      Enabled = True
+      ImageIndex = 0
+    end
+    object MenuItem16: TMenuItem
+      Action = FileExit2
+      Enabled = True
+      ImageIndex = 0
+    end
+    object MenuItem17: TMenuItem
+      Text = 'MenuItem17'
+      ImageIndex = 1
+    end
+    object MenuItem18: TMenuItem
+      Text = 'MenuItem18'
+      ImageIndex = 8
+    end
+    object MenuItem19: TMenuItem
+      IsChecked = True
+      Text = 'MenuItem19'
+      ImageIndex = 10
+    end
+  end
+  object ActionList1: TActionList
+    Images = MainDataModule.ImageList1
+    Left = 232
+    Top = 128
+    object FileExit1: TFileExit
+      Category = 'File'
+      Hint = 'Quit|Quits the application'
+      ImageIndex = 0
+      UnsupportedPlatforms = [pfWindows, pfiOS, pfAndroid, pfWinRT, pfLinux]
+      ImageIndex = 0
+    end
+    object FileExit2: TFileExit
+      Category = 'File'
+      Hint = 'Quit|Quits the application'
+      ImageIndex = 0
+      ShortCut = 32856
+      UnsupportedPlatforms = [pfMacOS, pfiOS]
+      ImageIndex = 0
+    end
+    object ActnNextImage: TAction
+      Text = 'Next Image'
+      ImageIndex = 0
+      OnExecute = ActnNextImageExecute
+      ImageIndex = 0
+    end
+    object ActnDormant: TAction
+      Text = 'Dormant'
+      OnExecute = ActnDormantExecute
+      OnUpdate = ActnDormantUpdate
+    end
+    object ActnUpCache: TAction
+      Text = 'Up Cache Size'
+      OnExecute = ActnUpCacheExecute
+      OnUpdate = ActnUpCacheUpdate
+    end
+    object ActnDownCache: TAction
+      Text = 'Down Cache Size'
+      OnExecute = ActnDownCacheExecute
+      OnUpdate = ActnDownCacheUpdate
+    end
+    object ActnClearCache: TAction
+      Text = 'Clear Cache'
+      OnExecute = ActnClearCacheExecute
+    end
+    object ActnUpdateText: TAction
+      Text = 'Update Text'
+      ImageIndex = 8
+      OnExecute = ActnUpdateTextExecute
+      ImageIndex = 8
+    end
+    object ActnAddSource: TAction
+      Text = 'Add new source'
+      ImageIndex = 9
+      OnExecute = ActnAddSourceExecute
+      ImageIndex = 9
+    end
+    object ActnListViewAdd: TAction
+      Category = 'ListView'
+      Text = 'Add Item'
+      OnExecute = ActnListViewAddExecute
+    end
+    object ActnClear: TAction
+      Category = 'ListView'
+      Text = 'Clear Items'
+      OnExecute = ActnClearExecute
+    end
+    object ActnListAddBitmap: TAction
+      Category = 'ListView'
+      Text = 'Add Item with Bitmap'
+      OnExecute = ActnListAddBitmapExecute
+    end
+    object ActnAddBitmapAndImage: TAction
+      Category = 'ListView'
+      Text = 'Add Bitmap and Image'
+      OnExecute = ActnAddBitmapAndImageExecute
+    end
+    object ActnImages: TAction
+      Category = 'ListView'
+      Text = 'Images'
+      OnExecute = ActnImagesExecute
+      OnUpdate = ActnImagesUpdate
+    end
+    object ActnInfo: TControlAction
+      Text = 'ActnInfo'
+      OnUpdate = ActnInfoUpdate
+    end
+    object ActnIncIndex: TAction
+      Text = 'ActnIncIndex'
+      OnExecute = ActnIncIndexExecute
+    end
+    object ActnDecIndex: TAction
+      Text = 'ActnDecIndex'
+      OnExecute = ActnDecIndexExecute
+    end
+    object ActnShowCheckBox: TAction
+      Text = 'ShowCheckboxes'
+      OnExecute = ActnShowCheckBoxExecute
+      OnUpdate = ActnShowCheckBoxUpdate
+    end
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'DateTimeField1'
+        Generator = 'DateTime'
+        ReadOnly = False
+      end
+      item
+        Name = 'UIntField1'
+        FieldType = ftInteger
+        Generator = 'UIntegers'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 232
+    Top = 296
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 236
+    Top = 357
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Control = ListView1
+      Track = True
+      FillDataSource = PrototypeBindSource1
+      FillDisplayFieldName = 'DateTimeField1'
+      AutoFill = True
+      FillExpressions = <
+        item
+          SourceMemberName = 'UIntField1'
+          ControlMemberName = 'ImageIndex'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

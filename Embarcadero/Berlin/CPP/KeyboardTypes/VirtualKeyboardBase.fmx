@@ -1,0 +1,242 @@
+object VKBaseForm: TVKBaseForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  OnFocusChanged = FormFocusChanged
+  OnVirtualKeyboardShown = FormVirtualKeyboardShown
+  OnVirtualKeyboardHidden = FormVirtualKeyboardHidden
+  DesignerMasterStyle = 3
+  object VertScrollBox1: TVertScrollBox
+    Align = Contents
+    Size.Width = 384.000000000000000000
+    Size.Height = 567.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object MainLayout1: TLayout
+      Align = Client
+      Size.Width = 384.000000000000000000
+      Size.Height = 567.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object ToolBar1: TToolBar
+        Size.Width = 384.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'bottomtoolbar'
+        TabOrder = 0
+        object Label1: TLabel
+          Align = Center
+          Size.Width = 230.000000000000000000
+          Size.Height = 29.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          Text = 'Keyboard Types'
+        end
+      end
+      object ListBox1: TListBox
+        Align = Client
+        Padding.Top = 10.000000000000000000
+        Padding.Right = 5.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 509.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        object ListBoxItem1: TListBoxItem
+          Height = 44.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 0
+          Text = 'First Name'
+          object Edit1: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 184.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem2: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 44.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 1
+          Text = 'Last Name'
+          object Edit2: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = Alphabet
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 184.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem3: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 88.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 2
+          Text = 'City'
+          object Edit3: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = Alphabet
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 184.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem4: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 132.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 3
+          Text = 'State'
+          object Edit4: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = Alphabet
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 184.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem5: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 176.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 4
+          Text = 'Zip Code'
+          object Edit5: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = NumberPad
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 184.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem6: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 220.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 5
+          Text = 'Email'
+          object Edit6: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = EmailAddress
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 184.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem7: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 264.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 6
+          Text = 'Phone'
+          object Edit7: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = PhonePad
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 184.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object ListBoxItem8: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 308.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 7
+          Text = 'Web Page'
+          object Edit8: TEdit
+            Touch.InteractiveGestures = [LongTap, DoubleTap]
+            Align = VertCenter
+            TabOrder = 0
+            KeyboardType = URL
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Size.Width = 184.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,3647 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FMX.GridExplorer Sample</title>
+    <style type="text/css">
+
+        /* commonElements.css ************************************************/
+
+        /* Links */
+        a {
+            text-decoration: none;
+            color: #0645ad;
+            background: none;
+        }
+        a:visited {
+            color: #0b0080;
+        }
+        a:active {
+            color: #faa700;
+        }
+        a:hover, a:focus {
+            text-decoration: underline;
+        }
+        a.stub {
+            color: #772233;
+        }
+        a.new, #p-personal a.new {
+            color: #ba0000;
+        }
+        a.new:visited, #p-personal a.new:visited {
+            color: #a55858;
+        }
+
+        /* Interwiki Styling */
+        .mw-body a.extiw,
+        .mw-body a.extiw:active {
+            color: #36b;
+        }
+        .mw-body a.extiw:visited {
+            color: #636;
+        }
+        .mw-body a.extiw:active {
+            color: #b63;
+        }
+
+        /* External links */
+        .mw-body a.external {
+            color: #36b;
+        }
+        .mw-body a.external:visited {
+            color: #636; /* bug 3112 */
+        }
+        .mw-body a.external:active {
+            color: #b63;
+        }
+
+        /* Inline Elements */
+        img {
+            border: none;
+            vertical-align: middle;
+        }
+        hr {
+            height: 1px;
+            color: #aaa;
+            background-color: #aaa;
+            border: 0;
+            margin: .2em 0;
+        }
+
+        /* Structural Elements */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: black;
+            background: none;
+            font-weight: normal;
+            margin: 0;
+            overflow: hidden;
+            padding-top: .5em;
+            padding-bottom: .17em;
+            border-bottom: 1px solid #aaa;
+            width: auto;
+        }
+        h1 {
+            font-size: 188%;
+        }
+        h1 .editsection {
+            font-size: 53%;
+        }
+        h2 {
+            font-size: 150%;
+        }
+        h2 .editsection {
+            font-size: 67%;
+        }
+        h3,
+        h4,
+        h5,
+        h6 {
+            border-bottom: none;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 132%;
+        }
+        h3 .editsection {
+            font-size: 76%;
+            font-weight: normal;
+        }
+        h4 {
+            font-size: 116%;
+        }
+        h4 .editsection {
+            font-size: 86%;
+            font-weight: normal; }
+        h5 {
+            font-size: 100%;
+        }
+        h5 .editsection {
+            font-weight: normal;
+        }
+        h6 {
+            font-size: 80%;
+        }
+        h6 .editsection {
+            font-size: 125%;
+            font-weight: normal;
+        }
+
+        /* Some space under the headers in the content area */
+        h1,
+        h2 {
+            margin-bottom: .6em;
+        }
+        h3,
+        h4,
+        h5 {
+            margin-bottom: .3em;
+        }
+
+        p {
+            margin: .4em 0 .5em 0;
+            line-height: 1.5em;
+        }
+        p img {
+            margin: 0;
+        }
+
+        ul {
+            line-height: 1.5em;
+            list-style-type: square;
+            margin: .3em 0 0 1.6em;
+            padding: 0;
+        }
+        ol {
+            line-height: 1.5em;
+            margin: .3em 0 0 3.2em;
+            padding: 0;
+            list-style-image: none;
+        }
+        li {
+            margin-bottom: .1em;
+        }
+        dt {
+            font-weight: bold;
+            margin-bottom: .1em;
+        }
+        dl {
+            margin-top: .2em;
+            margin-bottom: .5em;
+        }
+        dd {
+            line-height: 1.5em;
+            margin-left: 1.6em;
+            margin-bottom: .1em;
+        }
+
+        q {
+            font-family: Times, "Times New Roman", serif;
+            font-style: italic;
+        }
+        /* Disabled for now
+        blockquote {
+            font-family: Times, "Times New Roman", serif;
+            font-style: italic;
+        }*/
+        pre, code, tt, kbd, samp {
+            /*
+            * Some browsers will render the monospace text too small, namely Firefox, Chrome and Safari.
+            * Specifying any valid, second value will trigger correct behaviour without forcing a different font.
+            */
+            font-family: monospace, Courier;
+        }
+        code {
+            background-color: #f9f9f9;
+        }
+        pre {
+            padding: 1em;
+            border: 1px dashed #2f6fab;
+            color: black;
+            background-color: #f9f9f9;
+        }
+
+        /* Tables */
+        table {
+            font-size: 100%;
+        }
+
+        /* Forms */
+        fieldset {
+            border: 1px solid #2f6fab;
+            margin: 1em 0 1em 0;
+            padding: 0 1em 1em;
+            line-height: 1.5em;
+        }
+        fieldset.nested {
+            margin: 0 0 0.5em 0;
+            padding: 0 0.5em 0.5em;
+        }
+        legend {
+            padding: .5em;
+            font-size: 95%;
+        }
+        form {
+            border: none;
+            margin: 0;
+        }
+        textarea {
+            width: 100%;
+            padding: .1em;
+        }
+        select {
+            vertical-align: top;
+        }
+
+        /* Emulate Center */
+        .center {
+            width: 100%;
+            text-align: center;
+        }
+        *.center * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Small for tables and similar */
+        .small {
+            font-size: 94%;
+        }
+        table.small {
+            font-size: 100%;
+        }
+
+        /* commonContent.css *************************************************/
+
+        /* Table of Contents */
+        #toc,
+        .toc,
+        .mw-warning {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+        }
+        #toc h2,
+        .toc h2 {
+            display: inline;
+            border: none;
+            padding: 0;
+            font-size: 100%;
+            font-weight: bold;
+        }
+        #toc #toctitle,
+        .toc #toctitle,
+        #toc .toctitle,
+        .toc .toctitle {
+            text-align: center;
+        }
+        #toc ul,
+        .toc ul {
+            list-style-type: none;
+            list-style-image: none;
+            margin-left: 0;
+            padding: 0;
+            text-align: left;
+        }
+        #toc ul ul,
+        .toc ul ul {
+            margin: 0 0 0 2em;
+        }
+        #toc .toctoggle,
+        .toc .toctoggle {
+            font-size: 94%;
+        }
+
+        .toccolours {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+        }
+
+        /* Warning */
+        .mw-warning {
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+        }
+
+        /* Images */
+        /* @noflip */div.floatright, table.floatright {
+            margin: 0 0 .5em .5em;
+            border: 0;
+        }
+        div.floatright p { font-style: italic; }
+        /* @noflip */div.floatleft, table.floatleft {
+            margin: 0 .5em .5em 0;
+            border: 0;
+        }
+        div.floatleft p { font-style: italic; }
+        /* Thumbnails */
+        div.thumb {
+            margin-bottom: .5em;
+            width: auto;
+            background-color: transparent;
+        }
+        div.thumbinner {
+            border: 1px solid #ccc;
+            padding: 3px !important;
+            background-color: #f9f9f9;
+            font-size: 94%;
+            text-align: center;
+            overflow: hidden;
+        }
+        html .thumbimage {
+            border: 1px solid #ccc;
+        }
+        html .thumbcaption {
+            border: none;
+            text-align: left;
+            line-height: 1.4em;
+            padding: 3px !important;
+            font-size: 94%;
+        }
+        div.magnify {
+            float: right;
+            border: none !important;
+            background: none !important;
+        }
+        div.magnify a, div.magnify img {
+            display: block;
+            border: none !important;
+            background: none !important;
+        }
+        /* @noflip */div.tright {
+            margin: .5em 0 1.3em 1.4em;
+        }
+        /* @noflip */div.tleft {
+            margin: .5em 1.4em 1.3em 0;
+        }
+        img.thumbborder {
+            border: 1px solid #dddddd;
+        }
+
+        /**
+        * Basic styles for the user login and create account forms
+        */
+        #userlogin, #userloginForm {
+            border: solid 1px #cccccc;
+            padding: 1.2em;
+            margin: .5em;
+            float: left;
+        }
+
+        /* commonInterface.css ***********************************************/
+
+        /* Categories */
+        .catlinks {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            margin-top: 1em;
+            clear: both;
+        }
+
+        /* User Message */
+        .usermessage {
+            background-color: #ffce7b;
+            border: 1px solid #ffa500;
+            color: black;
+            font-weight: bold;
+            margin: 2em 0 1em;
+            padding: .5em 1em;
+            vertical-align: middle;
+        }
+
+        /* Site Notice (includes notices from CentralNotice extension) */
+        #siteNotice {
+            position: relative;
+            text-align: center;
+            margin: 0;
+        }
+        #localNotice {
+            margin-bottom: 0.9em;
+        }
+
+        /* First h1 */
+        .firstHeading,
+        #firstHeading {
+            margin-bottom: .1em;
+            /* These two rules hack around bug 2013 (fix for more limited bug 11325).
+            * When bug 2013 is fixed properly, they should be removed. */
+            line-height: 1.2em;
+            padding-bottom: 0;
+        }
+
+        /* Sub-navigation */
+        #siteSub {
+            display: none;
+        }
+        #jump-to-nav {
+            /* Negate #contentSub's margin and replicate it so that the jump to links don't affect the spacing */
+            margin-top: -1.4em;
+            margin-bottom: 1.4em
+        }
+        #contentSub, #contentSub2 {
+            font-size: 84%;
+            line-height: 1.2em;
+            margin: 0 0 1.4em 1em;
+            color: #7d7d7d;
+            width: auto;
+        }
+        span.subpages {
+            display: block;
+        }
+
+        /* shared.css ********************************************************/
+
+        /**
+        * These classes should be used for text depending on the content direction.
+        * Content stuff like editsection, ul/ol and TOC depend on this.
+        */
+        .mw-content-ltr {
+            /* @noflip */
+            direction: ltr;
+        }
+        .mw-content-rtl {
+            /* @noflip */
+            direction: rtl;
+        }
+
+        /* Most input fields should be in site direction */
+        .sitedir-ltr textarea,
+        .sitedir-ltr input {
+            /* @noflip */
+            direction: ltr;
+        }
+        .sitedir-rtl textarea,
+        .sitedir-rtl input {
+            /* @noflip */
+            direction: rtl;
+        }
+
+        /* Input types that should follow user direction, like buttons */
+        /* TODO: What about buttons in wikipage content ? */
+        input[type="submit"],
+        input[type="button"],
+        input[type="reset"],
+        input[type="file"] {
+            direction: ltr;
+        }
+
+        /* Override default values */
+        textarea[dir="ltr"],
+        input[dir="ltr"] {
+            /* @noflip */
+            direction: ltr;
+        }
+        textarea[dir="rtl"],
+        input[dir="rtl"] {
+            /* @noflip */
+            direction: rtl;
+        }
+
+        /* Default style for semantic tags */
+        abbr,
+        acronym,
+        .explain {
+            border-bottom: 1px dotted;
+            cursor: help;
+        }
+
+        /* Colored watchlist and recent changes numbers */
+        .mw-plusminus-pos {
+            color: #006400; /* dark green */
+        }
+        .mw-plusminus-neg {
+            color: #8b0000; /* dark red */
+        }
+        .mw-plusminus-null {
+            color: #aaa; /* gray */
+        }
+
+        /**
+        * Links to redirects appear italicized on [[Special:AllPages]], [[Special:PrefixIndex]],
+        * [[Special:Watchlist/edit]] and in category listings.
+        */
+        .allpagesredirect,
+        .redirect-in-category,
+        .watchlistredir {
+            font-style: italic;
+        }
+
+        /* Comment and username portions of RC entries */
+        span.comment {
+            font-style: italic;
+        }
+
+        span.changedby {
+            font-size: 95%;
+        }
+
+        /* Math */
+        .texvc {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+        img.tex {
+            vertical-align: middle;
+        }
+        span.texhtml {
+            font-family: serif;
+        }
+
+        /**
+        * Add a bit of margin space between the preview and the toolbar.
+        * This replaces the ugly <p><br /></p> we used to insert into the page source
+        */
+        #wikiPreview.ontop {
+            margin-bottom: 1em;
+        }
+
+        /* Stop floats from intruding into edit area in previews */
+        #editform,
+        #toolbar,
+        #wpTextbox1 {
+            clear: both;
+        }
+        #toolbar img {
+            cursor: pointer;
+        }
+        div#mw-js-message {
+            margin: 1em 5%;
+            padding: 0.5em 2.5%;
+            border: solid 1px #ddd;
+            background-color: #fcfcfc;
+        }
+
+        /* Edit section links */
+        .editsection {
+            float: right;
+            margin-left: 5px;
+        }
+        /* Correct directionality when page dir is different from site/user dir */
+        .mw-content-ltr .editsection,
+        .mw-content-rtl .mw-content-ltr .editsection {
+            /* @noflip */
+            float: right;
+        }
+        .mw-content-rtl .editsection,
+        .mw-content-ltr .mw-content-rtl .editsection {
+            /* @noflip */
+            float: left;
+        }
+
+        /**
+        * File description page
+        */
+
+        div.mw-filepage-resolutioninfo {
+            font-size: smaller;
+        }
+
+        /**
+        * File histories
+        */
+        h2#filehistory {
+            clear: both;
+        }
+
+        table.filehistory th,
+        table.filehistory td {
+            vertical-align: top;
+        }
+        table.filehistory th {
+            text-align: left;
+        }
+        table.filehistory td.mw-imagepage-filesize,
+        table.filehistory th.mw-imagepage-filesize {
+            white-space: nowrap;
+        }
+
+        table.filehistory td.filehistory-selected {
+            font-weight: bold;
+        }
+
+        /**
+        * rev_deleted stuff
+        */
+        li span.deleted,
+        span.history-deleted {
+            text-decoration: line-through;
+            color: #888;
+            font-style: italic;
+        }
+
+        /**
+        * Patrol stuff
+        */
+        .not-patrolled {
+            background-color: #ffa;
+        }
+
+        .unpatrolled {
+            font-weight: bold;
+            color: red;
+        }
+
+        div.patrollink {
+            font-size: 75%;
+            text-align: right;
+        }
+
+        /**
+        * Forms
+        */
+        td.mw-label {
+            text-align: right;
+        }
+        td.mw-input {
+            text-align: left;
+        }
+        td.mw-submit {
+            text-align: left;
+        }
+
+        td.mw-label {
+            vertical-align: top;
+        }
+        .prefsection td.mw-label {
+            width: 20%;
+        }
+        .prefsection table {
+            width: 100%;
+        }
+        td.mw-submit {
+            white-space: nowrap;
+        }
+
+        table.mw-htmlform-nolabel td.mw-label {
+            width: 1px;
+        }
+
+        tr.mw-htmlform-vertical-label td.mw-label {
+            text-align: left !important;
+        }
+
+        .mw-htmlform-invalid-input td.mw-input input {
+            border-color: red;
+        }
+
+        .mw-htmlform-flatlist div.mw-htmlform-flatlist-item {
+            display: inline;
+            margin-right: 1em;
+            white-space: nowrap;
+        }
+
+        input#wpSummary {
+            width: 80%;
+        }
+
+        /**
+        * Image captions
+        */
+        .thumbcaption {
+            text-align: left;
+        }
+        .magnify {
+            float: right;
+        }
+
+        /**
+        * Categories
+        */
+        #catlinks {
+            /**
+            * Overrides text justification (user preference)
+            * See bug 31990
+            */
+            text-align: left;
+        }
+        .catlinks ul {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            list-style-type: none;
+            list-style-image: none;
+            vertical-align: middle !ie;
+        }
+
+        .catlinks li {
+            display: inline-block;
+            line-height: 1.25em;
+            border-left: 1px solid #AAA;
+            margin: 0.125em 0;
+            padding: 0 0.5em;
+            zoom: 1;
+            display: inline !ie;
+        }
+
+        .catlinks li:first-child {
+            padding-left: 0.25em;
+            border-left: none;
+        }
+        /**
+        * Hidden categories
+        */
+        .mw-hidden-cats-hidden {
+            display: none;
+        }
+        .catlinks-allhidden {
+            display: none;
+        }
+
+        /* Convenience links to edit block, delete and protect reasons */
+        p.mw-ipb-conveniencelinks,
+        p.mw-protect-editreasons,
+        p.mw-filedelete-editreasons,
+        p.mw-delete-editreasons,
+        p.mw-revdel-editreasons {
+            font-size: 90%;
+            text-align: right;
+        }
+
+        /**
+        * OpenSearch ajax suggestions
+        */
+        .os-suggest {
+            overflow: auto;
+            overflow-x: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            background-color: white;
+            border-style: solid;
+            border-color: #AAAAAA;
+            border-width: 1px;
+            z-index:99;
+            font-size:95%;
+        }
+
+        table.os-suggest-results {
+            font-size: 95%;
+            cursor: pointer;
+            border: 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .os-suggest-result,
+        .os-suggest-result-hl {
+            white-space: nowrap;
+            background-color: white;
+            color: black;
+            padding: 2px;
+        }
+        .os-suggest-result-hl,
+        .os-suggest-result-hl-webkit {
+            background-color: #4C59A6;
+            color: white;
+        }
+
+        .os-suggest-toggle {
+            position: relative;
+            left: 1ex;
+            font-size: 65%;
+        }
+        .os-suggest-toggle-def {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 65%;
+            visibility: hidden;
+        }
+
+        /* Page history styling */
+
+        /* The auto-generated edit comments */
+        .autocomment {
+            color: gray;
+        }
+        #pagehistory .history-user {
+            margin-left: 0.4em;
+            margin-right: 0.2em;
+        }
+        #pagehistory span.minor {
+            font-weight: bold;
+        }
+        #pagehistory li {
+            border: 1px solid white;
+        }
+        #pagehistory li.selected {
+            background-color: #f9f9f9;
+            border: 1px dashed #aaa;
+        }
+
+        .mw-history-revisiondelete-button, #mw-fileduplicatesearch-icon {
+            float: right;
+        }
+
+        /** Generic minor/bot/newpage styling (recent changes) */
+        .newpage,
+        .minoredit,
+        .botedit {
+            font-weight: bold;
+        }
+
+        #shared-image-dup,
+        #shared-image-conflict {
+            font-style: italic;
+        }
+
+        /**
+        * Recreating deleted page warning
+        * Reupload file warning
+        * Page protection warning
+        * incl. log entries for these warnings
+        */
+        div.mw-warning-with-logexcerpt {
+            padding: 3px;
+            margin-bottom: 3px;
+            border: 2px solid #2F6FAB;
+            clear: both;
+        }
+        div.mw-warning-with-logexcerpt ul li {
+            font-size: 90%;
+        }
+
+        /* (show/hide) revision deletion links */
+        span.mw-revdelundel-link,
+        strong.mw-revdelundel-link {
+            font-size: 90%;
+        }
+        span.mw-revdelundel-hidden,
+        input.mw-revdelundel-hidden {
+            visibility: hidden;
+        }
+
+        td.mw-revdel-checkbox,
+        th.mw-revdel-checkbox {
+            padding-right: 10px;
+            text-align: center;
+        }
+
+        /* Plainlinks - this can be used to switch
+        * off special external link styling */
+        .plainlinks a {
+            background: none !important;
+            padding: 0 !important;
+        }
+        /* External URLs should always be treated as LTR (bug 4330) */
+        /* @noflip */ .rtl a.external.free,
+        .rtl a.external.autonumber {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+
+        /**
+        * wikitable class for skinning normal tables
+        * keep in sync with commonPrint.css
+        */
+        table.wikitable {
+            margin: 1em 1em 1em 0;
+            background-color: #f9f9f9;
+            border: 1px #aaa solid;
+            border-collapse: collapse;
+            color: black;
+        }
+        table.wikitable > tr > th,
+        table.wikitable > tr > td,
+        table.wikitable > * > tr > th,
+        table.wikitable > * > tr > td {
+            border: 1px #aaa solid;
+            padding: 0.2em;
+        }
+        table.wikitable > tr > th,
+        table.wikitable > * > tr > th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        table.wikitable > caption {
+            font-weight: bold;
+        }
+
+        /* hide initially collapsed collapsable tables */
+        table.collapsed tr.collapsable {
+            display: none;
+        }
+
+        /* success and error messages */
+        .success {
+            color: green;
+            font-size: larger;
+        }
+        .warning {
+            color: #FFA500; /* orange */
+            font-size: larger;
+        }
+        .error {
+            color: red;
+            font-size: larger;
+        }
+        .errorbox,
+        .warningbox,
+        .successbox {
+            font-size: larger;
+            border: 2px solid;
+            padding: .5em 1em;
+            float: left;
+            margin-bottom: 2em;
+            color: #000;
+        }
+        .errorbox {
+            border-color: red;
+            background-color: #fff2f2;
+        }
+        .warningbox {
+            border-color: #FF8C00; /* darkorange */
+            background-color: #FFFFC0;
+        }
+        .successbox {
+            border-color: green;
+            background-color: #dfd;
+        }
+        .errorbox h2,
+        .warningbox h2,
+        .successbox h2 {
+            font-size: 1em;
+            font-weight: bold;
+            display: inline;
+            margin: 0 .5em 0 0;
+            border: none;
+        }
+
+        /* general info/warning box for SP */
+        .mw-infobox {
+            border: 2px solid #ff7f00;
+            margin: 0.5em;
+            clear: left;
+            overflow: hidden;
+        }
+
+        .mw-infobox-left {
+            margin: 7px;
+            float: left;
+            width: 35px;
+        }
+
+        .mw-infobox-right {
+            margin: 0.5em 0.5em 0.5em 49px;
+        }
+
+        /* Note on preview page */
+        .previewnote {
+            color: #c00;
+            margin-bottom: 1em;
+        }
+
+        .previewnote p {
+            text-indent: 3em;
+            margin: 0.8em 0;
+        }
+
+        .visualClear {
+            clear: both;
+        }
+
+        #mw_trackbacks {
+            border: solid 1px #bbbbff;
+            background-color: #eeeeff;
+            padding: 0.2em;
+        }
+
+        /**
+        * Data table style
+        *
+        * Transparent table with suddle borders
+        * and blue row-highlighting.
+        */
+        .mw-datatable {
+            border-collapse: collapse;
+        }
+        .mw-datatable,
+        .mw-datatable td,
+        .mw-datatable th {
+            border: 1px solid #aaaaaa;
+            padding: 0 0.15em 0 0.15em;
+        }
+        .mw-datatable th {
+            background-color: #ddddff;
+        }
+        .mw-datatable td {
+            background-color: #ffffff;
+        }
+        .mw-datatable tr:hover td {
+            background-color: #eeeeff;
+        }
+
+
+        /**
+        * TablePager tables generated by the TablePager PHP class
+        * in MediaWiki (e.g. Special:ListFiles).
+        */
+        .TablePager {
+            min-width: 80%;
+        }
+        .TablePager_nav {
+            margin: 0 auto;
+        }
+        .TablePager_nav td {
+            padding: 3px;
+            text-align: center;
+        }
+        .TablePager_nav a {
+            text-decoration: none;
+        }
+
+        .imagelist td,
+        .imagelist th {
+            white-space: nowrap;
+        }
+        .imagelist .TablePager_col_links {
+            background-color: #eeeeff;
+        }
+        .imagelist .TablePager_col_img_description {
+            white-space: normal;
+        }
+        .imagelist th.TablePager_sort {
+            background-color: #ccccff;
+        }
+
+        /* filetoc */
+        ul#filetoc {
+            text-align: center;
+            border: 1px solid #aaaaaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+            margin-bottom: 0.5em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #filetoc li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 2em;
+        }
+
+        /* Classes for EXIF data display */
+        table.mw_metadata {
+            font-size: 0.8em;
+            margin-left: 0.5em;
+            margin-bottom: 0.5em;
+            width: 400px;
+        }
+
+        table.mw_metadata caption {
+            font-weight: bold;
+        }
+
+        table.mw_metadata th {
+            font-weight: normal;
+        }
+
+        table.mw_metadata td {
+            padding: 0.1em;
+        }
+
+        table.mw_metadata {
+            border: none;
+            border-collapse: collapse;
+        }
+
+        table.mw_metadata td,
+        table.mw_metadata th {
+            text-align: center;
+            border: 1px solid #aaaaaa;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        table.mw_metadata th {
+            background-color: #f9f9f9;
+        }
+
+        table.mw_metadata td {
+            background-color: #fcfcfc;
+        }
+
+        table.mw_metadata ul.metadata-langlist {
+            list-style-type: none;
+            list-style-image: none;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin: 0;
+        }
+
+        /* Correct directionality when page dir is different from site/user dir */
+        .mw-content-ltr ul,
+        .mw-content-rtl .mw-content-ltr ul {
+            /* @noflip */
+            margin: 0.3em 0 0 1.6em;
+            padding: 0;
+        }
+        .mw-content-rtl ul,
+        .mw-content-ltr .mw-content-rtl ul {
+            /* @noflip */
+            margin: 0.3em 1.6em 0 0;
+            padding: 0;
+        }
+        .mw-content-ltr ol,
+        .mw-content-rtl .mw-content-ltr ol {
+            /* @noflip */
+            margin: 0.3em 0 0 3.2em;
+            padding: 0;
+        }
+        .mw-content-rtl ol,
+        .mw-content-ltr .mw-content-rtl ol {
+            /* @noflip */
+            margin: 0.3em 3.2em 0 0;
+            padding: 0;
+        }
+        /* @noflip */
+        .mw-content-ltr dd,
+        .mw-content-rtl .mw-content-ltr dd {
+            margin-left: 1.6em;
+            margin-right: 0;
+        }
+        /* @noflip */
+        .mw-content-rtl dd,
+        .mw-content-ltr .mw-content-rtl dd {
+            margin-right: 1.6em;
+            margin-left: 0;
+        }
+
+        /* Galleries */
+        /* These display attributes look nonsensical, but are needed to support IE and FF2 */
+        /* Don't forget to update commonPrint.css */
+        li.gallerybox {
+            vertical-align: top;
+            border: solid 2px white;
+            display: -moz-inline-box;
+            display: inline-block;
+        }
+
+        ul.gallery,
+        li.gallerybox {
+            zoom: 1;
+            *display: inline;
+        }
+
+        ul.gallery {
+            margin: 2px;
+            padding: 2px;
+            display: block;
+        }
+
+        li.gallerycaption {
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            word-wrap: break-word;
+        }
+
+        li.gallerybox div.thumb {
+            text-align: center;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            margin: 2px;
+        }
+
+        li.gallerybox div.thumb img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div.gallerytext {
+            overflow: hidden;
+            font-size: 94%;
+            padding: 2px 4px;
+            word-wrap: break-word;
+        }
+
+        /* Language specific height correction for titles. Ref Bug 29405 and Bug 30809 */
+        /* Languages like hi or ml require slightly more vertical space to show diacritics properly */
+        h1:lang(as),
+        h1:lang(bn),
+        h1:lang(gu),
+        h1:lang(hi),
+        h1:lang(kn),
+        h1:lang(ml),
+        h1:lang(mr),
+        h1:lang(or),
+        h1:lang(pa),
+        h1:lang(sa),
+        h1:lang(ta),
+        h1:lang(te) {
+            line-height: 1.5em !important;
+        }
+        h2:lang(as), h3:lang(as), h4:lang(as), h5:lang(as), h6:lang(as),
+        h2:lang(bn), h3:lang(bn), h4:lang(bn), h5:lang(bn), h6:lang(bn),
+        h2:lang(gu), h3:lang(gu), h4:lang(gu), h5:lang(gu), h6:lang(gu),
+        h2:lang(hi), h3:lang(hi), h4:lang(hi), h5:lang(hi), h6:lang(hi),
+        h2:lang(kn), h3:lang(kn), h4:lang(kn), h5:lang(kn), h6:lang(kn),
+        h2:lang(ml), h3:lang(ml), h4:lang(ml), h5:lang(ml), h6:lang(ml),
+        h2:lang(mr), h3:lang(mr), h4:lang(mr), h5:lang(mr), h6:lang(mr),
+        h2:lang(or), h3:lang(or), h4:lang(or), h5:lang(or), h6:lang(or),
+        h2:lang(pa), h3:lang(pa), h4:lang(pa), h5:lang(pa), h6:lang(pa),
+        h2:lang(sa), h3:lang(sa), h4:lang(sa), h5:lang(sa), h6:lang(sa),
+        h2:lang(ta), h3:lang(ta), h4:lang(ta), h5:lang(ta), h6:lang(ta),
+        h2:lang(te), h3:lang(te), h4:lang(te), h5:lang(te), h6:lang(te) {
+            line-height: 1.2em;
+        }
+
+        /* Localised ordered list numbering for some languages */
+        ol:lang(bcc) li,
+        ol:lang(bqi) li,
+        ol:lang(fa) li,
+        ol:lang(glk) li,
+        ol:lang(kk-arab) li,
+        ol:lang(mzn) li {
+            list-style-type: -moz-persian;
+            list-style-type: persian;
+        }
+
+        ol:lang(ckb) li {
+            list-style-type: -moz-arabic-indic;
+            list-style-type: arabic-indic;
+        }
+
+        ol:lang(as) li,
+        ol:lang(bn) li {
+            list-style-type: -moz-bengali;
+            list-style-type: bengali;
+        }
+
+        ol:lang(or) li {
+            list-style-type: -moz-oriya;
+            list-style-type: oriya;
+        }
+
+        #toc ul, .toc ul {
+            margin: .3em 0;
+        }
+
+        /* Correct directionality when page dir is different from site/user dir */
+        /* @noflip */ .mw-content-ltr .toc ul,
+        .mw-content-ltr #toc ul,
+        .mw-content-rtl .mw-content-ltr .toc ul,
+        .mw-content-rtl .mw-content-ltr #toc ul {
+            text-align: left;
+        }
+        /* @noflip */ .mw-content-rtl .toc ul,
+        .mw-content-rtl #toc ul,
+        .mw-content-ltr .mw-content-rtl .toc ul,
+        .mw-content-ltr .mw-content-rtl #toc ul {
+            text-align: right;
+        }
+        /* @noflip */ .mw-content-ltr .toc ul ul,
+        .mw-content-ltr #toc ul ul,
+        .mw-content-rtl .mw-content-ltr .toc ul ul,
+        .mw-content-rtl .mw-content-ltr #toc ul ul {
+            margin: 0 0 0 2em;
+        }
+        /* @noflip */ .mw-content-rtl .toc ul ul,
+        .mw-content-rtl #toc ul ul,
+        .mw-content-ltr .mw-content-rtl .toc ul ul,
+        .mw-content-ltr .mw-content-rtl #toc ul ul {
+            margin: 0 2em 0 0;
+        }
+
+        #toc #toctitle,
+        .toc #toctitle,
+        #toc .toctitle,
+        .toc .toctitle {
+            direction: ltr;
+        }
+        .mw-help-field-data {
+            display: block;
+            background-color: #d6f3ff;
+            padding:5px 8px 4px 8px;
+            border: 1px solid #5dc9f4;
+            margin-left: 20px;
+        }
+        .tipsy {
+            padding: 5px 5px 10px;
+            font-size: 12px;
+            position: absolute;
+            z-index: 100000;
+            overflow: visible;
+        }
+        .tipsy-inner {
+            padding: 5px 8px 4px 8px;
+            background-color: #d6f3ff;
+            color: black;
+            border: 1px solid #5dc9f4;
+            max-width: 300px;
+            text-align: left;
+        }
+        .tipsy-se .tipsy-arrow {
+            bottom: -2px;
+            right: 10px;
+            background-position: 0% 100%;
+        }
+
+        #mw-clearyourcache,
+        #mw-sitecsspreview,
+        #mw-sitejspreview,
+        #mw-usercsspreview,
+        #mw-userjspreview {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+
+        /* Correct user & content directionality when viewing a diff */
+        .diff-currentversion-title,
+        .diff {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+        /* @noflip */ .diff-contentalign-right td {
+            direction: rtl;
+            unicode-bidi: embed;
+        }
+        /* @noflip */ .diff-contentalign-left td {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+        .diff-otitle,
+        .diff-ntitle,
+        .diff-lineno {
+            direction: ltr !important;
+            unicode-bidi: embed;
+        }
+
+        #mw-revision-info,
+        #mw-revision-info-current,
+        #mw-revision-nav {
+            direction: ltr;
+            display: inline;
+        }
+
+        /* Images */
+
+        /* @noflip */ div.tright,
+        div.floatright,
+        table.floatright {
+            clear: right;
+            float: right;
+        }
+        /* @noflip */ div.tleft,
+        div.floatleft,
+        table.floatleft {
+            float: left;
+            clear: left;
+        }
+        div.floatright,
+        table.floatright,
+        div.floatleft,
+        table.floatleft {
+            position: relative;
+        }
+
+        /* bug 12205 */
+        #mw-credits a {
+            unicode-bidi: embed;
+        }
+
+        /* Accessibility */
+        .mw-jump,
+        #jump-to-nav {
+            overflow: hidden;
+            height: 0;
+            zoom: 1; /* http://webaim.org/techniques/skipnav/#iequirk */
+        }
+
+        /* For developpers */
+        .xdebug-error {
+            position: absolute;
+            z-index: 99;
+        }
+
+        /* main.css **********************************************************/
+
+        #column-content {
+            margin: 5px;
+            padding: 0;
+        }
+
+        #content {
+            margin: 0em 0 0 0em;
+            padding: 0 1em 1em 1em;
+            position: relative;
+            z-index: 2;
+            background: white 0 0 no-repeat;
+            color: black;
+            border-right: none;
+            line-height: 1.5em;
+            overflow: visible;
+            min-height:45em;
+
+        }
+
+        #column-one {
+            padding-top: 170px;
+        }
+        /* the left column width is specified in class .portlet */
+
+        /* Font size:
+        ** We take advantage of keyword scaling- browsers won't go below 9px
+        ** More at http://www.w3.org/2003/07/30-font-size
+        ** http://style.cleverchimp.com/font_size_intervals/altintervals.html
+        */
+
+        body {
+            font: x-small sans-serif;
+            background: #FFF;
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* scale back up to a sane default */
+        #globalWrapper {
+            font-size: 127%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .visualClear {
+            clear: both;
+        }
+
+        /* general styles */
+
+        table {
+            font-size: 100%;
+            color: black;
+            /* we don't want the bottom borders of <h2>s to be visible through
+            floated tables */
+            background-color: white;
+            border-top: 2px solid #f3f3f3;
+            border-left: 2px solid #f3f3f3;
+            border-right: 1px solid #999;
+            border-bottom: 1px solid #999;
+            border-spacing:0px;
+            border-style:solid;
+        }
+
+        table td {
+            padding: 0 .5em 0 .5em;
+            background-color:#eee;
+            border-left: 1px solid #f3f3f3;
+            border-right: 1px solid #e3e3e3;
+            border-top: 1px solid #f3f3f3;
+            border-bottom: 1px solid #ccc;
+
+        }
+        fieldset table {
+            /* but keep table layouts in forms clean... */
+            background: none;
+        }
+        a {
+            text-decoration: none;
+            color: #002bb8;
+            background: none;
+        }
+        a:visited {
+            color: #5a3696;
+        }
+        a:active {
+            color: #faa700;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a.stub {
+            color: #772233;
+        }
+        a.new, #p-personal a.new {
+            color: #ba0000;
+        }
+        a.new:visited, #p-personal a.new:visited {
+            color: #a55858;
+        }
+
+        img {
+            border: none;
+            vertical-align: middle;
+        }
+        p {
+            margin: .4em 0 .5em 0;
+            line-height: 1.5em;
+        }
+        p img {
+            margin: 0;
+        }
+
+        hr {
+            height: 1px;
+            color: #aaa;
+            background-color: #aaa;
+            border: 0;
+            margin: .2em 0 .2em 0;
+        }
+
+        .editsection { display: none; }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: black;
+            background: none;
+            font-weight: normal;
+            margin: 0;
+            padding-top: .5em;
+            padding-bottom: .17em;
+            border-bottom: 1px solid #aaa;
+        }
+        h1 { font-size: 188%; }
+        h1 .editsection { font-size: 53%; }
+        h2 { font-size: 150%; }
+        h2 .editsection { font-size: 67%; }
+        h3, h4, h5, h6 {
+            border-bottom: none;
+            font-weight: bold;
+        }
+        h3 { font-size: 132%; }
+        h3 .editsection { font-size: 76%; font-weight: normal; }
+        h4 { font-size: 116%; }
+        h4 .editsection { font-size: 86%; font-weight: normal; }
+        h5 { font-size: 100%; }
+        h5 .editsection { font-weight: normal; }
+        h6 { font-size: 80%;  }
+        h6 .editsection { font-size: 125%; font-weight: normal; }
+
+        ul {
+            line-height: 1.5em;
+            list-style-type: square;
+            margin: .3em 0 0 1.5em;
+            padding: 0;
+            list-style-image: url('data:image/gif;base64,R0lGODlhBgAHAKIAAAAAAN4xKN4yJuAxJeAxKOIvKAAAAAAAACH5BAkKAAYALAAAAAAGAAcAAAMOaLo2w4YEGJ4qYg0CWQIAOw==');
+        }
+        ol {
+            line-height: 1.5em;
+            margin: .3em 0 0 3.2em;
+            padding: 0;
+            list-style-image: none;
+        }
+        li {
+            margin-bottom: .1em;
+        }
+        dt {
+            font-weight: bold;
+            margin-bottom: .1em;
+        }
+        dl {
+            margin-top: .2em;
+            margin-bottom: .5em;
+        }
+        dd {
+            line-height: 1.5em;
+            margin-left: 2em;
+            margin-bottom: .1em;
+        }
+
+        fieldset {
+            border: 1px solid #2f6fab;
+            margin: 1em 0 1em 0;
+            padding: 0 1em 1em;
+            line-height: 1.5em;
+        }
+        fieldset.nested {
+            margin: 0 0 0.5em 0;
+            padding: 0 0.5em 0.5em;
+        }
+        legend {
+            padding: .5em;
+            font-size: 95%;
+        }
+        form {
+            border: none;
+            margin: 0;
+        }
+
+        textarea {
+            width: 100%;
+            padding: .1em;
+        }
+
+        input.historysubmit {
+            padding: 0 .3em .3em .3em !important;
+            font-size: 94%;
+            cursor: pointer;
+            height: 1.7em !important;
+            margin-left: 1.6em;
+        }
+        select {
+            vertical-align: top;
+        }
+        abbr, acronym, .explain {
+            border-bottom: 1px dotted black;
+            color: black;
+            background: none;
+            cursor: help;
+        }
+        q {
+            font-family: Times, "Times New Roman", serif;
+            font-style: italic;
+        }
+        /* disabled for now
+        blockquote {
+            font-family: Times, "Times New Roman", serif;
+            font-style: italic;
+        }*/
+        code {
+            background-color: #f9f9f9;
+        }
+        source {
+            background-color: #eeeeee;
+        }
+        pre {
+            padding: 1em;
+            border: 1px dashed #2f6fab;
+            color: black;
+            background-color: #f9f9f9;
+            line-height: 1.1em;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+
+        div.source-delphi, div.source-cpp, div.source-xml {
+        padding: 1em;
+        margin: 1em 0;
+        border: 1px dashed #2f6fab;
+        background-color:  #f9f9f9;
+        line-height: 1.1em;
+        font-size: 1.2em;
+        }
+
+        #codesig div.source-delphi, #codesig div.source-cpp {
+            border:none;
+            background: none;
+            padding: 0;
+            margin: 0;
+            word-wrap: break-word; /* Internet Explorer 5.5+ */
+            white-space: pre-wrap;
+            font-size: 1.1em;
+        }
+
+        /*
+        ** the main content area
+        */
+
+        #siteSub {
+            display: none;
+        }
+        #jump-to-nav {
+            display: none;
+        }
+
+        #contentSub, #contentSub2 {
+            font-size: 84%;
+            line-height: 1.2em;
+            margin: 0 0 1.4em 1em;
+            color: #7d7d7d;
+            width: auto;
+        }
+        span.subpages {
+            display: block;
+        }
+
+        /* Some space under the headers in the content area */
+        #bodyContent h1, #bodyContent h2 {
+            margin-bottom: .6em;
+        }
+        #bodyContent h3, #bodyContent h4, #bodyContent h5 {
+            margin-bottom: .3em;
+        }
+        .firstHeading {
+            margin-bottom: .1em;
+            /* These two rules hack around bug 2013 (fix for more limited bug 11325).
+            When bug 2013 is fixed properly, they should be removed. */
+            padding-top: 0em;
+            display:block;
+            width: 100%;
+            height: 100%;
+            line-height: 1.2em;
+            padding-bottom: 0;
+        }
+
+        /* user notification thing */
+        .usermessage {
+            background-color: #ffce7b;
+            border: 1px solid #ffa500;
+            color: black;
+            font-weight: bold;
+            margin: 2em 0 1em;
+            padding: .5em 1em;
+            vertical-align: middle;
+        }
+        #siteNotice {
+            text-align: center;
+            font-size: 95%;
+            padding: 0 .9em;
+        }
+        #siteNotice p {
+            margin: 0;
+            padding: 0;
+        }
+        .success {
+            color: green;
+            font-size: larger;
+        }
+        .error {
+            color: red;
+            font-size: larger;
+        }
+        .errorbox, .successbox {
+            font-size: larger;
+            border: 2px solid;
+            padding: .5em 1em;
+            float: left;
+            margin-bottom: 2em;
+            color: #000;
+        }
+        .errorbox {
+            border-color: red;
+            background-color: #fff2f2;
+        }
+        .successbox {
+            border-color: green;
+            background-color: #dfd;
+        }
+        .errorbox h2, .successbox h2 {
+            font-size: 1em;
+            font-weight: bold;
+            display: inline;
+            margin: 0 .5em 0 0;
+            border: none;
+        }
+
+        .catlinks {
+            display: none;
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            margin-top: 1em;
+            clear: both;
+        }
+        /* currently unused, intended to be used by a metadata box
+        in the bottom-right corner of the content area */
+        .documentDescription {
+            /* The summary text describing the document */
+            font-weight: bold;
+            display: block;
+            margin: 1em 0;
+            line-height: 1.5em;
+        }
+        .documentByLine {
+            text-align: right;
+            font-size: 90%;
+            clear: both;
+            font-weight: normal;
+            color: #76797c;
+        }
+
+        /* emulate center */
+        .center {
+            width: 100%;
+            text-align: center;
+        }
+        *.center * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* small for tables and similar */
+        .small, .small * {
+            font-size: 94%;
+        }
+        table.small {
+            font-size: 100%;
+        }
+
+        /*
+        ** content styles
+        */
+
+        table#toc.toc {
+            border: none;
+            display: block;
+            position: relative;
+            float: right;
+            max-width: 40%;
+            margin: -5px 0px 10px 10px;
+            z-index: 3;
+        }
+        #toc a:visited {
+            color: #002bb8;
+        }
+
+        #toc,
+        .toc,
+        .mw-warning {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+            z-index:3;
+        }
+        #toc h2,
+        .toc h2 {
+            display: inline;
+            border: none;
+            padding: 0;
+            font-size: 100%;
+            font-weight: bold;
+            z-index:3;
+        }
+        #toc #toctitle,
+        .toc #toctitle,
+        #toc .toctitle,
+        .toc .toctitle {
+            z-index:3;
+        }
+        #toc ul,
+        .toc ul {
+            list-style-type: none;
+            list-style-image: none;
+            margin-left: 0;
+            padding-left: 0;
+            width: 100%;
+            display:block;
+        }
+        #toc ul ul,
+        .toc ul ul {
+            margin: 0 0 0 1em;
+
+        }
+        #toc .toctoggle,
+        .toc .toctoggle {
+            font-size: 94%;
+        }
+
+        #toc table, #toc tbody, #toc tr, #toc td{
+            width: 100%;
+        }
+
+        #toc ul li,
+        .toc ul li {
+            /*display: inline; */
+            margin: 0 1em 0 0;
+        }
+
+        .mw-warning {
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+        }
+
+        /* images */
+        div.floatright, table.floatright {
+            clear: right;
+            float: right;
+            position: relative;
+            margin: 0 0 .5em .5em;
+            border: 0;
+        /*
+            border: .5em solid white;
+            border-width: .5em 0 .8em 1.4em;
+        */
+        }
+        div.floatright p { font-style: italic; }
+        div.floatleft, table.floatleft {
+            float: left;
+            clear: left;
+            position: relative;
+            margin: 0 .5em .5em 0;
+            border: 0;
+        /*
+            margin: .3em .5em .5em 0;
+            border: .5em solid white;
+            border-width: .5em 1.4em .8em 0;
+        */
+        }
+        div.floatleft p { font-style: italic; }
+        /* thumbnails */
+        div.thumb {
+            margin-bottom: .5em;
+            border-style: solid;
+            border-color: white;
+            width: auto;
+        }
+        div.thumbinner {
+            border: 1px solid #ccc;
+            padding: 3px !important;
+            background-color: #f9f9f9;
+            font-size: 94%;
+            text-align: center;
+            overflow: hidden;
+        }
+        html .thumbimage {
+            border: 1px solid #ccc;
+        }
+        html .thumbcaption {
+            border: none;
+            text-align: left;
+            line-height: 1.4em;
+            padding: 3px !important;
+            font-size: 94%;
+        }
+        div.magnify {
+            float: right;
+            border: none !important;
+            background: none !important;
+        }
+        div.magnify a, div.magnify img {
+            display: block;
+            border: none !important;
+            background: none !important;
+        }
+        div.tright {
+            clear: right;
+            float: right;
+            border-width: .5em 0 .8em 1.4em;
+        }
+        div.tleft {
+            float: left;
+            clear: left;
+            margin-right: .5em;
+            border-width: .5em 1.4em .8em 0;
+        }
+        img.thumbborder {
+            border: 1px solid #dddddd;
+        }
+        .hiddenStructure {
+            display: none;
+        }
+
+        /*
+        ** classes for special content elements like town boxes
+        ** intended to be referenced directly from the wiki src
+        */
+
+        /*
+        ** User styles
+        */
+        /* table standards */
+        table.rimage {
+            float: right;
+            position: relative;
+            margin-left: 1em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        .toccolours {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+        }
+
+        /*
+        ** edit views etc
+        */
+        .special li {
+            line-height: 1.4em;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        ** keep the whitespace in front of the ^=, hides rule from konqueror
+        ** this is css3, the validator doesn't like it when validating as css2
+        */
+        #bodyContent a.external,
+        #bodyContent a[href ^="gopher://"] {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAAFVBMVEVmmcwzmcyZzP8AZswAZv////////9E6giVAAAAB3RSTlP///////8AGksDRgAAADhJREFUGFcly0ESAEAEA0Ei6/9P3sEcVB8kmrwFyni0bOeyyDpy9JTLEaOhQq7Ongf5FeMhHS/4AVnsAZubxDVmAAAAAElFTkSuQmCC') center right no-repeat;
+            padding-right: 13px;
+        }
+        #bodyContent a[href ^="https://"],
+        .link-https {
+            background: url('data:image/gif;base64,R0lGODlhEAANAPcAAEVFRZmXO62qOLCtOLm2N765NsbCNcnFNNHOM93YI9/bL9TQM9rWMdvYMeDbMODcMODcMs3KW+TgR+TgSubiWufkXejkZ5KSkqKioq6urtjWnO3ri+/tofDup/Hup/HwsNHR0dLS0vX0zfj32+np6fn55Pv76/Dw8Pv78P399P/+/f////8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAACwALAAAAAAQAA0AAAhzAFkIFJihYMGBCAdmGKECxQgNABIqHLECgEUOESJKzFBRIQWNCTOYAJlBAUiEC0kmOCkQRICXMGFiCLkiRQkRHzZYmPCAZYYBBQ4saPDgQQUPPmvezGlBQs+QAggYQMDAgdEOSW3i1DkBAssQFsOKvTAwIAA7') center right no-repeat;
+            padding-right: 16px;
+        }
+        #bodyContent a[href ^="mailto:"],
+        .link-mailto {
+            background: url('data:image/gif;base64,R0lGODlhEAAQAPcAAE5OTmSh5e43IPBEL/JhT6Ojo4Kz6o298LHQ8rbT87nV873X9L7Y9MLa9cXc9cne9srf9tDj99Hj99bm+Nrp+dzq+d3q+d/s+uHt+uTu+ujx++ny++vz/O30/PD2/PL3/fX5/fn7/vz9/v7+/+0XF////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAACQALAAAAAAQABAAAAhzAEkIHEiwoMGDCBMSLMCwocOGAAQWKEGRoggQHTJUiHAgIomJFUeE8KDhAoEBHSWWCGAggEsOGCYMEJDyY8WLGSlEcLCg5kSWLg1YkPCAQQKfJUR+2HBhAoQGChD4PEC1qlWqHgsA2Mq1K1eFYMOKHVswIAA7') center right no-repeat;
+            padding-right: 18px;
+        }
+        #bodyContent a[href ^="news://"] {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAclBMVEXtFxdkoeXuNyDwRC/yYU+jo6OCs+qNvfCx0PK20/O51fO91/S+2PTC2vXF3PXJ3vbK3/bQ4/fR4/fW5vja6fnc6vnd6vnf7Prh7frk7vro8fvp8vvr8/zt9Pzw9vzy9/31+f35+/78/f7+/v9OTk7///+hgxW+AAAAAXRSTlMAQObYZgAAAGVJREFUeNqFz1cOgCAQRVGwgL1h7wjuf4s6QhT98X6e8DIBod9cMwmwQ9s6dVVObxB87hvH1vAZnfAeaXhGAJhgjMeW2RYAdfWgzJMQQKoXpC7SyNd3BF+GhmVx4CmgRhdIs//PHhVeDaSWnu0yAAAAAElFTkSuQmCC') center right no-repeat;
+            padding-right: 18px;
+        }
+        #bodyContent a[href ^="ftp://"],
+        .link-ftp {
+            background: url('data:image/gif;base64,R0lGODlhEAAQAPcAAE5OTv8RkouLi4298KjN9LDR9bLT9bjW9rrX9r3Z9sDb98Pc98be98ng+Mzh+M/j+dHk+dXn+dTm+tfo+drp+tzr+t3r+t/s+uLu++Tv++Tw++bx/Ony/Oz0/O71/fD3/fL3/fT4/vb6/vj7//r8//v8//3+//7+/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAEALAAAAAAQABAAAAh2AAMIHEiwoMGDBwUoXAgAYQABKCKigNgwocSJESsWhBixhAAAIDUOhHiCRAgPA1KKFCjAxAgQHTJYkDBg5UMRHzhgoAChQU2DAjxsuDDhAYMEPzdqqBDBwQIEBpISFMCzgYIDBQhIHZmya1ebIcOGdEi2bMGAAAA7') center right no-repeat;
+            padding-right: 18px;
+        }
+        #bodyContent a[href ^="irc://"],
+        #bodyContent a.extiw[href ^="irc://"],
+        .link-irc {
+            background: url('data:image/gif;base64,R0lGODlhEAAQAPcAAE5OTmtra2+Xxm+Yx5EtLf8RkouLi4KjyJOty56qzYm68Iu78I298JC+8ZG/8a2z0LW30Ly80JLA8ZPA8ZbB8pjC8pvF8pzF857H86PJ86XL9KjM86rN9LDR9bLR9bfV9bnW9rvX9rzY98PDw8rE0tHH08Pc+Mfe+Mjf+M3i+M/i+dPl+tTm+tXm+trq+t3r+97r+9/t++3t7eXv/Ofx/Ojy/e31/O71/fD3/fL4/fP4/vX6/ff6/vn7/vr8/vz+//3+/////wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAUALAAAAAAQABAAAAiSAAsIHEiwoMGDCGUoXKjQoAwDECNGDCBj4EMZQXrkqAFjxYkQCABULGAAow8dBEq0IADBg4YDAAQaCPJjhw0CJFIQeLDhgoOYJIHwuDHDhQoTHzhgmKAAaEkcNF4QiACCQAIKCwQAvRiDBQoRHTJUYDAAwAiLBgCoBWDAQgO1ZxGSlGB2pNy0ceUKNKu3r9+CAQEAOw==') center right no-repeat;
+            padding-right: 18px;
+        }
+        #bodyContent a.external[href $=".ogg"], #bodyContent a.external[href $=".OGG"],
+        #bodyContent a.external[href $=".mid"], #bodyContent a.external[href $=".MID"],
+        #bodyContent a.external[href $=".midi"], #bodyContent a.external[href $=".MIDI"],
+        #bodyContent a.external[href $=".mp3"], #bodyContent a.external[href $=".MP3"],
+        #bodyContent a.external[href $=".wav"], #bodyContent a.external[href $=".WAV"],
+        #bodyContent a.external[href $=".wma"], #bodyContent a.external[href $=".WMA"],
+        .link-audio {
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAKCAMAAABVLlSxAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAA/UExURYO1/8zg/5rC/1+f/1ud/+30/63O//v9/+Xv/5S//53E/73X/4K0/0GN/+bw/3at/2aj/3+y5f///wBmzP///7yvI4wAAAAVdFJOU///////////////////////////ACvZfeoAAABeSURBVHjaYhABAkFhECkCEEAMYKYwHwczPztAADEICgoKCwlzsbDyMgIEEIOwsLCQkLCIABsnD0AAMQBZIDYTA7cAQAAhswECCFkNQAAh6wUIIGQzAQKIAckugAADAJRZBqnJZ4GSAAAAAElFTkSuQmCC") center right no-repeat;
+            padding-right: 13px;
+        }
+        #bodyContent a.external[href $=".ogm"], #bodyContent a.external[href $=".OGM"],
+        #bodyContent a.external[href $=".avi"], #bodyContent a.external[href $=".AVI"],
+        #bodyContent a.external[href $=".mpeg"], #bodyContent a.external[href $=".MPEG"],
+        #bodyContent a.external[href $=".mpg"], #bodyContent a.external[href $=".MPG"],
+        .link-video {
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAMAAAC67D+PAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAASUExURczg9bLR8DOF1maj4P///wBmzL8VgU8AAABLSURBVHjaYmBmZWVkYWFkZWUGCCAGZgYmViBgYmAGCCAGhChAAIFEWYAAKAoQQEiiAAGEpBYggJBEAQIISS1AACGJAgQQklqAAAMARm0BQ7tR/e0AAAAASUVORK5CYII=') center right no-repeat;
+            padding-right: 13px;
+        }
+        #bodyContent a.external[href $=".pdf"], #bodyContent a.external[href $=".PDF"],
+        #bodyContent a.external[href *=".pdf#"], #bodyContent a.external[href *=".PDF#"],
+        #bodyContent a.external[href *=".pdf?"], #bodyContent a.external[href *=".PDF?"],
+        .link-document {
+            background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAKCAMAAAC+Ge+yAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAkUExURTOF1i2B1ubw/x130n+y5eHt/6XJ/8zg/2aj/////wBmzP///zvG3SgAAAAMdFJOU///////////////ABLfzs4AAABYSURBVHjaYuACAmYWbm6AAGLg4uTk5GJg4QYIIAYuVnZ2LiZGFoAAYuBi4+AAyQIEEFiEnZ2VCyCAwCIcHGxcAAEEFwEIILgIQACBtYNMAAggBi4oAAgwAGydAoHBcnzyAAAAAElFTkSuQmCC") center right no-repeat;
+            padding-right: 12px;
+        }
+
+        /* disable interwiki styling */
+        #bodyContent a.extiw,
+        #bodyContent a.extiw:active {
+            color: #36b;
+            background: none;
+            padding: 0;
+        }
+        #bodyContent a.external {
+            color: #36b;
+        }
+        /* this can be used in the content area to switch off
+        special external link styling */
+        #bodyContent .plainlinks a {
+            background: none !important;
+            padding: 0 !important;
+        }
+        /*
+        ** Structural Elements
+        */
+
+        /*
+        ** general portlet styles (elements in the quickbar)
+        */
+        .portlet {
+            position:relative;
+            border: none;
+            margin: 0 0 .5em;
+            padding: 0;
+            padding: .5em 0 0 0;
+            float: none;
+            width: 11.6em;
+            overflow: hidden;
+            background: #777 url(rtcorner.png) no-repeat 10.62em top;
+        }
+        .portlet h4 {
+            font-size: 95%;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+        .portlet h5 {
+            color: #fff;
+            background: transparent;
+            padding: 0 1em 0 .5em;
+            display: inline;
+            height: 1em;
+            text-transform: capitalize;
+            font-size: 91%;
+            font-weight: bold;
+            white-space: nowrap;
+            font-variant: small-caps;
+        }
+        .portlet h6 {
+            background: #ffae2e;
+            border: 1px solid #2f6fab;
+            border-style: solid solid none solid;
+            padding: 0 1em 0 1em;
+            text-transform: lowercase;
+            display: block;
+            font-size: 1em;
+            height: 1.2em;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+        .pBody {
+            font-size: 95%;
+            background: #777 url(rbcorner.png) no-repeat bottom right;
+            color: black;
+            border-collapse: collapse;
+            padding: 0 .8em 1em .5em;
+        }
+        .portlet h1,
+        .portlet h2,
+        .portlet h3,
+        .portlet h4 {
+            margin: 0;
+            padding: 0;
+        }
+        .portlet ul {
+            line-height: 1.5em;
+            list-style-type: none;
+            font-size: 95%;
+            list-style-position: inside;
+            list-style-image: none;
+        }
+        .portlet li {
+            width: 9em;
+            height: auto;
+            display: block;
+            padding: .1em 2em;
+            margin: 0 -2em;
+            background: #777 url('data:image/gif;base64,R0lGODlhBgAHAKIAAAAAAN4xKN4yJuAxJeAxKOIvKAAAAAAAACH5BAkKAAYALAAAAAAGAAcAAAMOaLo2w4YEGJ4qYg0CWQIAOw==') .5em center no-repeat;
+        }
+
+        .portlet li a {
+            color: #fff;
+            font-weight:bold;
+        }
+
+        .portlet li:hover {
+            background-color: #fff;
+            color: #000;
+            text-decoration:none;
+        }
+
+        .portlet li:hover a {
+            color: #000;
+            text-decoration:none;
+        }
+
+        .portlet li a:hover {
+            color: #000;
+            text-decoration:none;
+        }
+
+        /*
+        ** Logo properties
+        */
+
+        #p-logo {
+            top: 1em;
+            left: 0;
+            position: absolute; /*needed to use z-index */
+            z-index: 3;
+            height: 155px;
+            overflow: visible;
+            padding: 0;
+            background: none;
+        }
+
+        #p-logo h5 {
+            display: none;
+        }
+        #p-logo a,
+        #p-logo a:hover {
+            display: block;
+            height: 155px;
+            width: 12.2em;
+            background-repeat: no-repeat;
+            background-position: 35% 50% !important;
+            text-decoration: none;
+        }
+
+        /*
+        ** Search portlet
+        */
+        #p-search {
+            position: relative;
+            z-index: 3;
+        }
+        input.searchButton {
+            margin-top: 1px;
+            font-size: 95%;
+        }
+        #searchGoButton {
+            padding-left: .5em;
+            padding-right: .5em;
+            font-weight: bold;
+        }
+        #searchInput {
+            width: 7.9em;
+            margin: 0;
+            font-size: 95%;
+        }
+        #p-search .pBody {
+            padding: .5em .4em .4em .4em;
+            text-align: center;
+        }
+
+        /*
+        ** the personal toolbar
+        */
+        #p-personal {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 4;
+            width: 100%;
+            white-space: nowrap;
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: none;
+            overflow: visible;
+            line-height: 1.2em;
+            /*border-bottom: 1px solid #1d5cc8;*/
+        }
+        #p-personal h5 {
+            display: none;
+        }
+        #p-personal .portlet,
+        #p-personal .pBody {
+            z-index: 2;
+            padding: 0;
+            margin: 0;
+            border: none;
+            overflow: visible;
+            background: none;
+        }
+        /* this is the ul contained in the portlet */
+        #p-personal ul {
+            border: none;
+            line-height: 1.4em;
+            color: #FFF;
+            padding: 0 2em 0 3em;
+            margin: 0;
+            text-align: right;
+            list-style: none;
+            z-index: 0;
+            background: #777;
+            cursor: default;
+        }
+        #p-personal li {
+            z-index: 0;
+            border: none;
+            padding: 0;
+            display: inline;
+            color: #2f6fab;
+            margin: 0 0 0 1em;
+            line-height: 1.2em;
+            background: none;
+        }
+        #p-personal li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0em 0em .2em 0em;
+            background: none;
+        }
+        #p-personal li a:hover {
+            color: #000;
+            background-color: white;
+            text-decoration: none;
+        }
+        #p-personal li.active a:hover {
+            background-color: transparent;
+        }
+        /* the icon in front of the user name, single quotes
+        in bg url to hide it from iemac */
+        li#pt-userpage,
+        li#pt-anonuserpage,
+        li#pt-login {
+            background: url(user.gif) top left no-repeat;
+            padding-left: 20px;
+            text-transform: none;
+        }
+        #p-personal li.active {
+            font-weight: bold;
+        }
+        /*
+        ** the page-related actions- page/talk, edit etc
+        */
+        #p-cactions {
+            position: absolute;
+            top: 1.3em;
+            left: 11.5em;
+            margin: 0;
+            white-space: nowrap;
+            width: 76%;
+            line-height: 1.1em;
+            overflow: visible;
+            background: none;
+            border-collapse: collapse;
+            padding-top: 0em;
+            padding-left: 1em;
+            list-style: none;
+            font-size: 95%;
+        }
+        #p-cactions ul {
+            list-style: none;
+            list-style-image: none;
+            list-style-position: inside;
+        }
+        #p-cactions li {
+            display: inline;
+            border-bottom: none;
+            padding: 0 0 .3em 0;
+            margin: 0 .3em 0 0;
+            overflow: visible;
+        }
+        #p-cactions li.selected {
+            border-color: #fabd23;
+            padding: 0 0 .2em 0;
+            font-weight: bold;
+        }
+        #p-cactions li a {
+            color: #ddd;
+            border: none;
+            padding: .2em 1em .2em 1em;
+            position: relative;
+            z-index: 0;
+            margin: 0 0em;
+            text-decoration: none;
+            background: #777 url(smcorner.png) no-repeat;
+        }
+        #p-cactions li.selected a {
+            color: #000;
+            z-index: 3;
+            background-color: white;
+        }
+        #p-cactions .new a {
+            color: #ffdddd;
+        }
+        #p-cactions li a:hover {
+            z-index: 3;
+            text-decoration: none;
+            background-color: #b90003;
+            color: #fff;
+            font-weight: bold;
+        }
+        #p-cactions h5 {
+            display: none;
+        }
+        #p-cactions li.istalk {
+            margin-right: 0;
+        }
+        #p-cactions li.istalk a {
+            padding-right: .5em;
+        }
+        #p-cactions #ca-addsection a {
+            padding-left: .4em;
+            padding-right: .4em;
+        }
+        /* offsets to distinguish the tab groups */
+        li#ca-talk {
+            margin-right: 1.6em;
+        }
+        li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
+            margin-left: 1.6em;
+        }
+        #p-cactions .pBody {
+            font-size: 1em;
+            background-color: transparent;
+            color: inherit;
+            border-collapse: inherit;
+            border: 0;
+            padding: 0;
+            background-image: none;
+        }
+        #p-cactions .hiddenStructure {
+            display: none;
+        }
+        #p-cactions li a {
+            font-variant: small-caps;
+        }
+
+        /*
+        ** the remaining portlets
+        */
+        #p-tbx,
+        #p-lang {
+            position: relative;
+            z-index: 3;
+        }
+
+        /* TODO: #t-iscite is only used by the Cite extension, come up with some
+        * system which allows extensions to add to this file on the fly
+        */
+        #t-ispermalink, #t-iscite {
+            color: #999;
+        }
+        /*
+        ** footer
+        */
+        #footer {
+            background-color: #777;
+            border-top: 1px dashed #555;
+            border-bottom: 1px dashed #555;
+            margin: .6em 0 1em 0;
+            padding: .4em 0 1.2em 0;
+            text-align: center;
+            font-size: 90%;
+        }
+        #footer li {
+            color: #ddd;
+            display: inline;
+            margin: 0 1.3em;
+        }
+
+        #footer a {
+            color: #fff;
+        }
+
+        #f-poweredbyico, #f-copyrightico {
+            margin: 0 8px;
+            position: relative;
+            top: -2px; /* Bump it up just a tad */
+        }
+        #f-poweredbyico {
+            float: right;
+            height: 1%;
+        }
+        #f-copyrightico {
+            float: left;
+            height: 1%;
+        }
+
+        /* js pref toc */
+        #preftoc {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            clear: both;
+        }
+        #preftoc li {
+            background-color: #f0f0f0;
+            color: #000;
+        }
+        #preftoc li {
+            margin: 1px -2px 1px 2px;
+            float: left;
+            padding: 2px 0 3px 0;
+            border: 1px solid #fff;
+            border-right-color: #716f64;
+            border-bottom: 0;
+            position: relative;
+            white-space: nowrap;
+            list-style-type: none;
+            list-style-image: none;
+            z-index: 3;
+        }
+        #preftoc li.selected {
+            font-weight: bold;
+            background-color: #f9f9f9;
+            border: 1px solid #aaa;
+            border-bottom: none;
+            cursor: default;
+            top: 1px;
+            padding-top: 2px;
+            margin-right: -3px;
+        }
+        #preftoc > li.selected {
+            top: 2px;
+        }
+        #preftoc a,
+        #preftoc a:active {
+            display: block;
+            color: #000;
+            padding: 0 .7em;
+            position: relative;
+            text-decoration: none;
+        }
+        #preftoc li.selected a {
+            cursor: default;
+            text-decoration: none;
+        }
+        #prefcontrol {
+            padding-top: 2em;
+            clear: both;
+        }
+        #preferences {
+            margin: 0;
+            border: 1px solid #aaa;
+            clear: both;
+            padding: 1.5em;
+            background-color: #F9F9F9;
+        }
+        .prefsection {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        .prefsection fieldset {
+            border: 1px solid #aaa;
+            float: left;
+            margin-right: 2em;
+        }
+        .prefsection legend {
+            font-weight: bold;
+        }
+        .prefsection table, .prefsection legend {
+            background-color: #F9F9F9;
+        }
+        .mainLegend {
+            display: none;
+        }
+        div.prefsectiontip {
+            font-size: x-small;
+            padding: .2em 2em;
+            color: #666;
+        }
+        .btnSavePrefs {
+            font-weight: bold;
+            padding-left: .3em;
+            padding-right: .3em;
+        }
+
+        .preferences-login {
+            clear: both;
+            margin-bottom: 1.5em;
+        }
+
+        .prefcache {
+            font-size: 90%;
+            margin-top: 2em;
+        }
+
+        div#userloginForm form,
+        div#userlogin form#userlogin2 {
+            margin: 0 3em 1em 0;
+            border: 1px solid #aaa;
+            clear: both;
+            padding: 1.5em 2em;
+            background-color: #f9f9f9;
+            float: left;
+        }
+        .rtl div#userloginForm form,
+        .rtl div#userlogin form#userlogin2 {
+            float: right;
+        }
+
+        div#userloginForm table,
+        div#userlogin form#userlogin2 table {
+            background-color: #f9f9f9;
+        }
+
+        div#userloginForm h2,
+        div#userlogin form#userlogin2 h2 {
+            padding-top: 0;
+        }
+
+        div#userlogin .captcha,
+        div#userloginForm .captcha {
+            border: 1px solid #bbb;
+            padding: 1.5em 2em;
+            background-color: white;
+        }
+
+        #loginend, #signupend {
+            clear: both;
+        }
+
+        #userloginprompt, #languagelinks {
+            font-size: 85%;
+        }
+
+        #login-sectiontip {
+            font-size: 85%;
+            line-height: 1.2;
+            padding-top: 2em;
+        }
+
+        #userlogin .loginText, #userlogin .loginPassword {
+            width: 12em;
+        }
+
+        #userloginlink a, #wpLoginattempt, #wpCreateaccount {
+            font-weight: bold;
+        }
+
+        /*
+        ** IE/Mac fixes, hope to find a validating way to move this
+        ** to a separate stylesheet. This would work but doesn't validate:
+        ** @import("IEMacFixes.css");
+        */
+        /* tabs: border on the a, not the div */
+        * > html #p-cactions li { border: none; }
+        * > html #p-cactions li a {
+            border: 1px solid #aaa;
+            border-bottom: none;
+        }
+        * > html #p-cactions li.selected a { border-color: #fabd23; }
+        /* footer icons need a fixed width */
+        * > html #f-poweredbyico,
+        * > html #f-copyrightico { width: 88px; }
+        * > html #bodyContent,
+        * > html #bodyContent pre {
+            overflow-x: auto;
+            width: 100%;
+            padding-bottom: 25px;
+        }
+
+        /* more IE fixes */
+        /* float/negative margin brokenness */
+        * html #footer {margin-top: 0;}
+        * html #column-content {
+            display: inline;
+            margin-bottom: 0;
+        }
+        * html div.editsection { font-size: smaller; }
+        #pagehistory li.selected { position: relative; }
+
+        /* Mac IE 5.0 fix; floated content turns invisible */
+        * > html #column-content {
+            float: none;
+        }
+        * > html #column-one {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        * > html #footer {
+            margin-left: 13.2em;
+        }
+        .redirectText {
+            font-size: 150%;
+            margin: 5px;
+        }
+
+        .printfooter {
+            display: none;
+        }
+
+        .not-patrolled {
+            background-color: #ffa;
+        }
+        div.patrollink {
+            clear: both;
+            font-size: 75%;
+            text-align: right;
+        }
+        span.newpage, span.minor, span.bot {
+            font-weight: bold;
+        }
+        span.unpatrolled {
+            font-weight: bold;
+            color: red;
+        }
+
+        .sharedUploadNotice {
+            font-style: italic;
+        }
+
+        span.updatedmarker {
+            color: black;
+            background-color: #0f0;
+        }
+
+        table.gallery {
+            border: 1px solid #ccc;
+            margin: 2px;
+            padding: 2px;
+            background-color: white;
+        }
+
+        table.gallery tr {
+            vertical-align: top;
+        }
+
+        table.gallery td {
+            vertical-align: top;
+            background-color: #f9f9f9;
+            border: solid 2px white;
+        }
+        /* Keep this temporarily so that cached pages will display right */
+        table.gallery td.galleryheader {
+            text-align: center;
+            font-weight: bold;
+        }
+        table.gallery caption {
+            font-weight: bold;
+        }
+
+        div.gallerybox {
+            margin: 2px;
+        }
+
+        div.gallerybox div.thumb {
+            text-align: center;
+            border: 1px solid #ccc;
+            margin: 2px;
+        }
+
+        div.gallerytext {
+            overflow: hidden;
+            font-size: 94%;
+            padding: 2px 4px;
+        }
+
+        span.comment {
+            font-style: italic;
+        }
+
+        span.changedby {
+            font-size: 95%;
+        }
+
+        .previewnote {
+            text-indent: 3em;
+            color: #c00;
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+        }
+
+        .previewnote p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .editExternally {
+            border: 1px solid gray;
+            background-color: #ffffff;
+            padding: 3px;
+            margin-top: 0.5em;
+            float: left;
+            font-size: small;
+            text-align: center;
+        }
+        .editExternallyHelp {
+            font-style: italic;
+            color: gray;
+        }
+
+        .toggle {
+            margin-left: 2em;
+            text-indent: -2em;
+        }
+
+        /* Classes for EXIF data display */
+        table.mw_metadata {
+            font-size: 0.8em;
+            margin-left: 0.5em;
+            margin-bottom: 0.5em;
+            width: 300px;
+        }
+
+        table.mw_metadata caption {
+            font-weight: bold;
+        }
+
+        table.mw_metadata th {
+            font-weight: normal;
+        }
+
+        table.mw_metadata td {
+            padding: 0.1em;
+        }
+
+        table.mw_metadata {
+            border: none;
+            border-collapse: collapse;
+        }
+
+        table.mw_metadata td, table.mw_metadata th {
+            text-align: center;
+            border: 1px solid #aaaaaa;
+            padding-left: 0.1em;
+            padding-right: 0.1em;
+        }
+
+        table.mw_metadata th {
+            background-color: #f9f9f9;
+        }
+
+        table.mw_metadata td {
+            background-color: #fcfcfc;
+        }
+
+        table.collapsed tr.collapsable {
+            display: none;
+        }
+
+
+        /* filetoc */
+        ul#filetoc {
+            text-align: center;
+            border: 1px solid #aaaaaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+            margin-bottom: 0.5em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #filetoc li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 2em;
+        }
+
+        input#wpSummary {
+            width: 80%;
+        }
+
+        /* @bug 1714 */
+        input#wpSave, input#wpDiff {
+            margin-right: 0.33em;
+        }
+
+        #wpSave {
+            font-weight: bold;
+        }
+
+        /* Classes for article validation */
+
+        table.revisionform_default {
+            border: 1px solid #000000;
+        }
+
+        table.revisionform_focus {
+            border: 1px solid #000000;
+            background-color:#00BBFF;
+        }
+
+        tr.revision_tr_default {
+            background-color:#EEEEEE;
+        }
+
+        tr.revision_tr_first {
+            background-color:#DDDDDD;
+        }
+
+        p.revision_saved {
+            color: green;
+            font-weight:bold;
+        }
+
+        #mw_trackbacks {
+            border: solid 1px #bbbbff;
+            background-color: #eeeeff;
+            padding: 0.2em;
+        }
+
+
+        /* Allmessages table */
+
+        #allmessagestable th {
+            background-color: #b2b2ff;
+        }
+
+        #allmessagestable tr.orig {
+            background-color: #ffe2e2;
+        }
+
+        #allmessagestable tr.new {
+            background-color: #e2ffe2;
+        }
+
+        #allmessagestable tr.def {
+            background-color: #f0f0ff;
+        }
+
+
+        /* noarticletext */
+        div.noarticletext {
+            border: 1px solid #ccc;
+            background: #fff;
+            padding: .2em 1em;
+            color: #000;
+        }
+
+        div#searchTargetContainer {
+            left:       10px;
+            top:        10px;
+            width:      90%;
+            background: white;
+        }
+
+        div#searchTarget {
+            padding:    3px;
+            margin:     5px;
+            background: #F0F0F0;
+            border:     solid 1px blue;
+        }
+
+        div#searchTarget ul li {
+            list-style: none;
+        }
+
+        div#searchTarget ul li:before {
+            color: #FFA500;
+            content: "\00BB \0020";
+        }
+
+        div#searchTargetHide {
+            float:right;
+            border:solid 1px black;
+            background:#DCDCDC;
+            padding:2px;
+        }
+
+        div.multipageimagenavbox {
+        border: solid 1px silver;
+        padding: 4px;
+        margin: 1em;
+        background: #f0f0f0;
+        }
+
+        div.multipageimagenavbox div.thumb {
+        border: none;
+        margin-left: 2em;
+        margin-right: 2em;
+        }
+
+        div.multipageimagenavbox hr {
+        margin: 6px;
+        }
+
+        table.multipageimage td {
+        text-align: center;
+        }
+
+        /** Special:Version */
+
+        table#sv-ext, table#sv-hooks, table#sv-software {
+            margin: 1em;
+            padding:0em;
+        }
+
+        #sv-ext td, #sv-hooks td, #sv-software td,
+        #sv-ext th, #sv-hooks th, #sv-software th {
+            border: 1px solid #A0A0A0;
+            padding: 0 0.15em 0 0.15em;
+        }
+        #sv-ext th, #sv-hooks th, #sv-software th {
+            background-color: #F0F0F0;
+            color: black;
+            padding: 0 0.15em 0 0.15em;
+        }
+        tr.sv-space{
+            height: 0.8em;
+            border:none;
+        }
+        tr.sv-space td { display: none; }
+
+        /*
+        Table pager (e.g. Special:Imagelist)
+        - remove underlines from the navigation link
+        - collapse borders
+        - set the borders to outsets (similar to Special:Allmessages)
+        - remove line wrapping for all td and th, set background color
+        - restore line wrapping for the last two table cells (description and size)
+        */
+        .TablePager_nav a { text-decoration: none; }
+        .TablePager { border-collapse: collapse; }
+        .TablePager, .TablePager td, .TablePager th {
+            border: 1px solid #aaaaaa;
+            padding: 0 0.15em 0 0.15em;
+        }
+        .TablePager th { background-color: #eeeeff }
+        .TablePager td { background-color: #ffffff }
+        .TablePager tr:hover td { background-color: #eeeeff }
+
+        .imagelist td, .imagelist th { white-space: nowrap }
+        .imagelist .TablePager_col_links { background-color: #eeeeff }
+        .imagelist .TablePager_col_img_description { white-space: normal }
+        .imagelist th.TablePager_sort { background-color: #ccccff }
+
+        .templatesUsed { margin-top: 1.5em; }
+
+        .mw-summary-preview {
+            margin: 0.1em 0;
+        }
+
+        /* Friendlier slave lag warnings */
+        div.mw-lag-warn-normal,
+        div.mw-lag-warn-high {
+            padding: 3px;
+            text-align: center;
+            margin: 3px auto;
+        }
+        div.mw-lag-warn-normal {
+            border: 1px solid #FFCC66;
+            background-color: #FFFFCC;
+        }
+        div.mw-lag-warn-high {
+            font-weight: bold;
+            border: 2px solid #FF0033;
+            background-color: #FFCCCC;
+        }
+
+        /* Recreating-deleted-page/reupload file warning and log entries */
+        div#mw-upload-deleted-warn,
+        div#mw-recreate-deleted-warn {
+            padding: 3px;
+            margin-bottom: 3px;
+            border: 2px solid #2F6FAB;
+        }
+        div#mw-upload-deleted-warn ul li,
+        div#mw-recreate-deleted-warn ul li {
+            font-size: 90%;
+        }
+        .MediaTransformError {
+            background-color: #ccc;
+            padding: 0.1em;
+        }
+        .MediaTransformError td {
+            text-align: center;
+            vertical-align: middle;
+            font-size: 90%;
+        }
+
+        /** Special:Search stuff */
+        div#mw-search-interwiki-caption {
+            text-align: center;
+            font-weight: bold;
+            font-size: 95%;
+        }
+
+        .mw-search-interwiki-project {
+            font-size: 97%;
+            text-align: left;
+            padding-left: 0.2em;
+            padding-right: 0.15em;
+            padding-bottom: 0.2em;
+            padding-top: 0.15em;
+            background: #cae8ff;
+        }
+
+        span.searchmatch {
+            font-weight: bold;
+            color: red;
+        }
+
+        /* God-damned hack for the crappy layout */
+        .os-suggest {
+            font-size: 127%;
+        }
+
+        span.codeInline {
+            font-family: monospace;
+        }
+
+        ul.h2-navlinks {
+            list-style-image: none;
+            list-style-type: none;
+            background: none;
+            list-style: none;
+            display: none;
+            float: right;
+            padding:0;
+            margin: 0;
+            margin-bottom: -1em;
+        }
+
+        ul.h2-navlinks li {
+            display: none;
+            list-style: none;
+            padding-left: .6em;
+            padding-right: .4em;
+            border-left: 1px solid #999;
+        }
+        ul.h2-navlinks li.first {
+            border: none;
+        }
+
+        span.codeInline {
+            font-family: monospace;
+            white-space: nowrap;
+        }
+
+        span.code {
+            white-space: nowrap;
+            font-family: monospace;
+        }
+
+        table#toc.toc {
+            z-index: 3;
+        }
+
+        pre.de1 {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            _white-space: pre;
+        }
+
+        span.menuPath {
+            color: #598527;
+        }
+
+        #codesig div.cpp, #codesig div.delphi, #vclinfo div.cpp, #vclinfo div.delphi {
+            display: block;
+            padding: 3px 3px 3px 15px;
+        }
+
+        td div.cpp {
+            background: #f9f9ff url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtJREFUeNpirKvbxwAELkDcAcTGQHyPBUgoAfEqIN4DxBUgFSDBUCAWBOJ0IH4PEmRiwAJYoNpAYCYQz4KpPAvEYVBLdgNxOUCAAQA2SQvcaJpJCwAAAABJRU5ErkJggg==') no-repeat 3px center;
+            text-align: left;
+        }
+
+        td div.delphi {
+            background: #fff9f9 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtJREFUeNpi3Nrff5eBgUEJiN8D8VkgDmOCCnSCOFD2KpAgCLwvLCzcA6RXA7ELTBAZvIcJCvb397sA6TSQaiaoBeUgs6DaKwACDACm+RHfdthcsgAAAABJRU5ErkJggg==') no-repeat 3px center;
+            text-align: left;
+        }
+
+        table#vclinfo {
+            display: block;
+            border: 0;
+        }
+
+        table#vclinfo tr{
+            width: 100%;
+            background: #fdfdfd;
+            border: 0;
+        }
+        table#vclinfo td{
+            background: #fdfdfd;
+            padding: 5px;
+            margin: 0;
+            border: 0;
+            border-left: 1px solid #888;;
+            text-align: center;
+            vertical-align: top;
+        }
+        table#vclinfo td.wide{
+            width: 25%;
+        }
+        table#vclinfo tr.vclinfot th{
+            border-bottom:1px solid #888;
+        }
+        table#vclinfo td.vclinfol {
+            border-left: 0px;
+        }
+
+        table#vclinfo span.delphi, table#vclinfo
+        span.cpp {
+            display: block;
+            clear: both;
+        }
+
+        #codesig {
+            display: block;
+            background: none;
+        }
+        #codesig .sig{
+            display: block;
+            z-index:2;
+        }
+
+        #codesig .lang{
+            float: left;
+            padding: 5px;
+            z-index:10;
+            position: relative;
+        }
+
+        #codesig .sig .thesig{
+            margin-left: 60px;
+            background: #f3f3f3;
+            padding: 5px;
+        }
+
+        #codesig .sig div.delphi,#codesig .sig div.cpp {
+            margin:0;
+            padding:0;
+        }
+
+        #codesig .sig pre {
+            padding: 0;
+            border: none;
+            background: none;
+        }
+
+        div.delphi span.lang {
+            color: #800;
+            font-weight: bold;
+        }
+
+        div.cpp span.lang {
+            color: #008;
+            font-weight: bold;
+        }
+
+        #toggles {
+            float: right;
+            position: relative;
+            display: block;
+            background: none;
+            color: #fff;
+            font-family: Helvetica, Arial;
+            font-weight: bold;
+            font-size: .85em;
+        }
+
+        #toggles #dtoggle, #toggles #ctoggle {
+            color: #fff;
+            padding: 1px 10px 1px 10px;
+        }
+
+        #displayPrefs, #displayPrefTab {
+            display: block;
+            background: #E13935;
+            padding: 1px 10px 1px 10px;
+            text-align: right;
+        }
+
+        #displayPrefs {
+            display: none;
+            clear: both;
+        }
+
+        #displayPrefTab {
+            width: auto;
+            color: #fff;
+        }
+
+        ul#childlinks {
+        list-style-image: none;
+        list-style-type: none;
+        list-style-position: inside;
+        border-top: 1px solid #777;
+        display: block;
+        background: #FCFCFC;
+        margin: -14px 0 0 0;
+        padding: 0 0 0 10px;
+        text-align: left;
+        }
+
+        ul#childlinks li {
+        display: inline;
+        margin: 0;
+        padding: 0 10px 3px 10px;
+        border-left: 1px solid #eee;
+        }
+
+        ul#childlinks li:hover {
+        background: #fff;
+        }
+
+        ul#childlinks li.first {
+        border: none;
+        }
+
+        ul#childlinks li a {
+        color: #000;
+        font-weight: normal;
+        }
+
+        ul#childlinks li a {
+        color: #000;
+        }
+
+        span#inherits {
+        background: #F2F2FF;
+        color: #222;
+        font-size: .85em;
+        font-style: italic;
+        padding: 3px 10px 3px 10px;
+        }
+
+        table.long {
+        width: 90%;
+        border: none;
+        border-collapse: collapse;
+        }
+
+        table.long tr {
+        background-color: none;
+        height: 1.5em;
+        font-size: 1em;
+        padding: 5px;
+        }
+
+        table.long tr td {
+        background: none;
+        border: none;
+        padding: 3px 5px 3px 20px;
+        }
+
+        table.long tr.alt td {
+        background-color: #f3f3f3;
+        }
+
+        table.long tr.over td {
+        background-color: #696969;
+        color #fff;
+        }
+
+        table.long tr.over code {
+        background-color: #696969;
+        color: #fff;
+        }
+
+        table.long tr.over td a {
+        color: #C6D5FE;
+        }
+
+        table.long tr td:first-child {
+        background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAD37n+BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNpi2drf/58BAu4BcScQz/osKQnipwGx8bVrYquBdAeIDVLDBFWsDMQgiZlQCRAIhRqyCkq7AnE6E5LpFVC2C5SGaRQEKQTiPSAM0wCTAIH3UE1nGbAAFiitBMTlUPYeKHsPFDNAnToLxIDZcBfqBFeo81ygikG2hEHldoMMAggwAKBfH6mEmRE3AAAAAElFTkSuQmCC') no-repeat 3px center;
+        width: 220px;
+        }
+
+        table.long tr.alt td:first-child {
+        background: #f3f3f3 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAD37n+BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNpi2drf/58BAu4BcScQz/osKQnipwGx8bVrYquBdAeIDVLDBFWsDMQgiZlQCRAIhRqyCkq7AnE6E5LpFVC2C5SGaRQEKQTiPSAM0wCTAIH3UE1nGbAAFiitBMTlUPYeKHsPFDNAnToLxIDZcBfqBFeo81ygikG2hEHldoMMAggwAKBfH6mEmRE3AAAAAElFTkSuQmCC') no-repeat 3px center;
+        width: 220px;
+        }
+
+        table.long tr.over td:first-child{
+            background: #696969 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAD37n+BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNpi2drf/58BAu4BcScQz/osKQnipwGx8bVrYquBdAeIDVLDBFWsDMQgiZlQCRAIhRqyCkq7AnE6E5LpFVC2C5SGaRQEKQTiPSAM0wCTAIH3UE1nGbAAFiitBMTlUPYeKHsPFDNAnToLxIDZcBfqBFeo81ygikG2hEHldoMMAggwAKBfH6mEmRE3AAAAAElFTkSuQmCC') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.delphi td:first-child{
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtJREFUeNpi3Nrff5eBgUEJiN8D8VkgDmOCCnSCOFD2KpAgCLwvLCzcA6RXA7ELTBAZvIcJCvb397sA6TSQaiaoBeUgs6DaKwACDACm+RHfdthcsgAAAABJRU5ErkJggg==') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.delphi.alt td:first-child{
+            background: #f3f3f3 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtJREFUeNpi3Nrff5eBgUEJiN8D8VkgDmOCCnSCOFD2KpAgCLwvLCzcA6RXA7ELTBAZvIcJCvb397sA6TSQaiaoBeUgs6DaKwACDACm+RHfdthcsgAAAABJRU5ErkJggg==') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.delphi.over td:first-child{
+            background: #696969 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtJREFUeNpi3Nrff5eBgUEJiN8D8VkgDmOCCnSCOFD2KpAgCLwvLCzcA6RXA7ELTBAZvIcJCvb397sA6TSQaiaoBeUgs6DaKwACDACm+RHfdthcsgAAAABJRU5ErkJggg==') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp td:first-child{
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtJREFUeNpirKvbxwAELkDcAcTGQHyPBUgoAfEqIN4DxBUgFSDBUCAWBOJ0IH4PEmRiwAJYoNpAYCYQz4KpPAvEYVBLdgNxOUCAAQA2SQvcaJpJCwAAAABJRU5ErkJggg==') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp.alt td:first-child{
+            background: #f3f3f3 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtJREFUeNpirKvbxwAELkDcAcTGQHyPBUgoAfEqIN4DxBUgFSDBUCAWBOJ0IH4PEmRiwAJYoNpAYCYQz4KpPAvEYVBLdgNxOUCAAQA2SQvcaJpJCwAAAABJRU5ErkJggg==') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp.over td:first-child{
+            background: #696969 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAGCAYAAAAL+1RLAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAEtJREFUeNpirKvbxwAELkDcAcTGQHyPBUgoAfEqIN4DxBUgFSDBUCAWBOJ0IH4PEmRiwAJYoNpAYCYQz4KpPAvEYVBLdgNxOUCAAQA2SQvcaJpJCwAAAABJRU5ErkJggg==') no-repeat 3px center;
+            width: 220px;
+        }
+
+
+        table.long tr.cpp.delphi td:first-child{
+            background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAD37n+BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNpi2drf/58BAu4BcScQz/osKQnipwGx8bVrYquBdAeIDVLDBFWsDMQgiZlQCRAIhRqyCkq7AnE6E5LpFVC2C5SGaRQEKQTiPSAM0wCTAIH3UE1nGbAAFiitBMTlUPYeKHsPFDNAnToLxIDZcBfqBFeo81ygikG2hEHldoMMAggwAKBfH6mEmRE3AAAAAElFTkSuQmCC') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp.delphi.alt td:first-child{
+            background: #f3f3f3 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAD37n+BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNpi2drf/58BAu4BcScQz/osKQnipwGx8bVrYquBdAeIDVLDBFWsDMQgiZlQCRAIhRqyCkq7AnE6E5LpFVC2C5SGaRQEKQTiPSAM0wCTAIH3UE1nGbAAFiitBMTlUPYeKHsPFDNAnToLxIDZcBfqBFeo81ygikG2hEHldoMMAggwAKBfH6mEmRE3AAAAAElFTkSuQmCC') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp.delphi.over td:first-child{
+            background: #696969 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAGCAYAAAD37n+BAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAIZJREFUeNpi2drf/58BAu4BcScQz/osKQnipwGx8bVrYquBdAeIDVLDBFWsDMQgiZlQCRAIhRqyCkq7AnE6E5LpFVC2C5SGaRQEKQTiPSAM0wCTAIH3UE1nGbAAFiitBMTlUPYeKHsPFDNAnToLxIDZcBfqBFeo81ygikG2hEHldoMMAggwAKBfH6mEmRE3AAAAAElFTkSuQmCC') no-repeat 3px center;
+            width: 220px;
+        }
+        span.short {
+        display:none;
+        }
+        div#ex-uses {
+        display: block;
+        padding: 5px;
+        margin: -1.2em 0 0 0;
+        background: #EEF;
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+        }
+
+        div#ex-uses h3 {
+        display: inline;
+        font-size:1em;
+        }
+
+        div#ex-uses ul {
+            display: inline;
+            margin: 0 1.5em 0 .5em;
+        }
+
+        div#ex-uses ul li {
+            display: inline;
+            margin: 0 0 0 .5em;
+            padding: 0;
+
+        }
+
+        tr.protected {
+            display:none;
+        }
+        #lstfilter {
+            border: 1px solid #d1d1d1;
+            width: 18.5em;
+            text-align: center;
+            margin: .3em;
+            padding: .3em 1em;
+            color: #666;
+            font-weight: bold;
+            font-size: .8em;
+            background: #fee;
+            border-radius: 3px;
+        }
+        #protecttoggle {
+            display: none;
+            border: 1px solid #d1d1d1;
+            width: 18.5em;
+            text-align: center;
+            margin: .3em;
+            padding: .3em 1em;
+            color: #666;
+            font-weight: bold;
+            font-size: .8em;
+            background: #fee;
+            border-radius: 3px;
+        }
+
+        /* Hide Appmethod-specific content */
+        .appmethod {
+            display: none;
+        }
+
+        /* geshi.css *********************************************************/
+
+        .source-delphi {line-height: normal;}
+        .source-delphi li, .source-delphi pre {
+            line-height: normal; border: 0px none white;
+        }
+        .delphi.source-delphi .de1, .delphi.source-delphi .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+        .delphi.source-delphi  {font-family:monospace;}
+        .delphi.source-delphi .imp {font-weight: bold; color: red;}
+        .delphi.source-delphi li, .delphi.source-delphi .li1 {font-weight: normal; vertical-align:top;}
+        .delphi.source-delphi .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+        .delphi.source-delphi .li2 {font-weight: bold; vertical-align:top;}
+        .delphi.source-delphi .kw1 {color: #000000; font-weight: bold;}
+        .delphi.source-delphi .kw2 {color: #000000; font-weight: bold;}
+        .delphi.source-delphi .kw3 {color: #000066;}
+        .delphi.source-delphi .kw4 {color: #000066; font-weight: bold;}
+        .delphi.source-delphi .co1 {color: #808080; font-style: italic;}
+        .delphi.source-delphi .co2 {color: #008000; font-style: italic;}
+        .delphi.source-delphi .coMULTI {color: #808080; font-style: italic;}
+        .delphi.source-delphi .es0 {color: #ff0000; font-weight: bold;}
+        .delphi.source-delphi .br0 {color: #000066;}
+        .delphi.source-delphi .sy0 {color: #000066;}
+        .delphi.source-delphi .sy1 {color: #000066;}
+        .delphi.source-delphi .sy2 {color: #000066;}
+        .delphi.source-delphi .sy3 {color: #000066;}
+        .delphi.source-delphi .st0 {color: #ff0000;}
+        .delphi.source-delphi .nu0 {color: #0000ff;}
+        .delphi.source-delphi .me1 {color: #006600;}
+        .delphi.source-delphi .re0 {color: #9ac;}
+        .delphi.source-delphi .re1 {color: #ff0000;}
+        .delphi.source-delphi .ln-xtra, .delphi.source-delphi li.ln-xtra, .delphi.source-delphi div.ln-xtra {background-color: #ffc;}
+        .delphi.source-delphi span.xtra { display:block; }
+        .source-cpp {line-height: normal;}
+        .source-cpp li, .source-cpp pre {
+            line-height: normal; border: 0px none white;
+        }
+        .cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+        .cpp.source-cpp  {font-family:monospace;}
+        .cpp.source-cpp .imp {font-weight: bold; color: red;}
+        .cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+        .cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+        .cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+        .cpp.source-cpp .kw1 {color: #0000ff;}
+        .cpp.source-cpp .kw2 {color: #0000ff;}
+        .cpp.source-cpp .kw3 {color: #0000dd;}
+        .cpp.source-cpp .kw4 {color: #0000ff;}
+        .cpp.source-cpp .co1 {color: #666666;}
+        .cpp.source-cpp .co2 {color: #339900;}
+        .cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+        .cpp.source-cpp .es0 {color: #000099; font-weight: bold;}
+        .cpp.source-cpp .es1 {color: #000099; font-weight: bold;}
+        .cpp.source-cpp .es2 {color: #660099; font-weight: bold;}
+        .cpp.source-cpp .es3 {color: #660099; font-weight: bold;}
+        .cpp.source-cpp .es4 {color: #660099; font-weight: bold;}
+        .cpp.source-cpp .es5 {color: #006699; font-weight: bold;}
+        .cpp.source-cpp .br0 {color: #008000;}
+        .cpp.source-cpp .sy0 {color: #008000;}
+        .cpp.source-cpp .sy1 {color: #000080;}
+        .cpp.source-cpp .sy2 {color: #000040;}
+        .cpp.source-cpp .sy3 {color: #000040;}
+        .cpp.source-cpp .sy4 {color: #008080;}
+        .cpp.source-cpp .st0 {color: #FF0000;}
+        .cpp.source-cpp .nu0 {color: #0000dd;}
+        .cpp.source-cpp .nu6 {color: #208080;}
+        .cpp.source-cpp .nu8 {color: #208080;}
+        .cpp.source-cpp .nu12 {color: #208080;}
+        .cpp.source-cpp .nu16 {color:#800080;}
+        .cpp.source-cpp .nu17 {color:#800080;}
+        .cpp.source-cpp .nu18 {color:#800080;}
+        .cpp.source-cpp .nu19 {color:#800080;}
+        .cpp.source-cpp .me1 {color: #007788;}
+        .cpp.source-cpp .me2 {color: #007788;}
+        .cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+        .cpp.source-cpp span.xtra { display:block; }
+        .source-sql {line-height: normal;}
+        .source-sql li, .source-sql pre {
+            line-height: normal; border: 0px none white;
+        }
+        .sql.source-sql .de1, .sql.source-sql .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+        .sql.source-sql  {font-family:monospace;}
+        .sql.source-sql .imp {font-weight: bold; color: red;}
+        .sql.source-sql li, .sql.source-sql .li1 {font-weight: normal; vertical-align:top;}
+        .sql.source-sql .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+        .sql.source-sql .li2 {font-weight: bold; vertical-align:top;}
+        .sql.source-sql .kw1 {color: #993333; font-weight: bold;}
+        .sql.source-sql .co1 {color: #808080; font-style: italic;}
+        .sql.source-sql .coMULTI {color: #808080; font-style: italic;}
+        .sql.source-sql .es0 {color: #000099; font-weight: bold;}
+        .sql.source-sql .br0 {color: #66cc66;}
+        .sql.source-sql .sy0 {color: #66cc66;}
+        .sql.source-sql .st0 {color: #ff0000;}
+        .sql.source-sql .nu0 {color: #cc66cc;}
+        .sql.source-sql .ln-xtra, .sql.source-sql li.ln-xtra, .sql.source-sql div.ln-xtra {background-color: #ffc;}
+        .sql.source-sql span.xtra { display:block; }
+    </style>
+  </head>
+  <body>
+    <div id="globalWrapper">
+      <div id="column-content">
+        <div id="content">
+          <a id="top"></a>
+          <h1 id="firstHeading" class="firstHeading"><span dir="ltr">FMX.GridExplorer Sample</span></h1>
+          <div id="bodyContent" class="mw-body">
+            <div id="contentSub"></div>
+            <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><p>This sample demonstrates how to build a simple file browser using the <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Grid.TGrid" title="lib en:FMX.Grid.TGrid">TGrid</a> and <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.TreeView.TTreeView" title="lib en:FMX.TreeView.TTreeView">TTreeView</a> components of <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Berlin/en/FireMonkey" title="rad en:FireMonkey">FireMonkey</a>.
+</p>
+
+<h2> <span class="mw-headline" id="Location"> Location </span></h2>
+<p>You can find the <b>GridExplorer</b> sample project at:
+</p>
+<ul><li> <font color="#598527"><b>Start |  Programs |  Embarcadero RAD Studio Berlin |  Samples</b></font> and then navigate to:
+<ul><li> <code class="path">CPP\Multi-Device Samples\User Interface\GridExplorer</code>
+</li></ul>
+</li><li> <b>Subversion Repository:</b>
+<ul><li> <b>C++:</b> <a target="_blank" class="external free" href="http://sourceforge.net/p/radstudiodemos/code/HEAD/tree/branches/RADStudio_Berlin/CPP/Multi-Device%20Samples/User%20Interface/GridExplorer" rel="nofollow">http://sourceforge.net/p/radstudiodemos/code/HEAD/tree/branches/RADStudio_Berlin/CPP/Multi-Device%20Samples/User%20Interface/GridExplorer</a>
+</li></ul>
+</li></ul>
+<h2> <span class="mw-headline" id="Description"> Description </span></h2>
+<p>The <b>GridExplorer</b> sample demonstrates how to build a simple file browser using <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Berlin/en/FireMonkey" title="rad en:FireMonkey">FireMonkey</a>.
+</p><p>The top bar of the sample application allows you to select a folder. You can either write a path manually and press Enter, or use the ellipsis button to select a folder from a file browser dialog box.
+</p><p>When you open a folder:
+</p>
+<ul><li> The left-hand sidebar shows a tree view with the folder that you opened. You can use the tree view to recursively navigate its subfolders.
+</li><li> The main view is a grid that shows information about the files in the selected folder (file name, size, and so on).
+</li></ul>
+<p>When you click a folder in the tree view, the grid shows the files of the clicked folder.
+</p>
+<dl><dd> <img alt="GridExplorer.png" height="385" src="data:image/png;base64,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655nYbPVMqigusUEVQAAlpEH1R//kR/pzj///GmA3LNnT1NxjAv6Y/3YC1+47nkWNlstg64F1cmRFwiqW+CBRx/dnXTSSdUPIQAAyMVz41FHHbXueTLC6uWXXTb9ldz496MtRN/xTaqQylaoZVBBdYtd+7SnTcNq/D9jAAAwT4TUpz/lKdXnSjhY1DLoWlA95KgLBVUAAAC2VC2DLhRUb3zd66odAgAAwL56yxveUM2gWVAd/tXf51x3XbVTAAAA2Fc/+PznVzPoWlAdHX3xYFC95z3v2b3gec+bpt1a5wAAALCoyJYRUu99r3tVM+haUB0f+9jBoAoAAABbZZpNn/nL3WjysCcLqgAAABxwa0H1kJOuFVQBAAA44PYG1VOfJagCAABwwK0F1bud/jxBFQAAgANumk2ve383OuT07xNUAQAAOODWguro1OcIqgAAABxwa0F1vGf9v1G95dmPBHa51137iO6www7rDj300HUfHEPufve7d0ceeWR39NFHT18BAGAjRx111NQ97nGPtefKvd+onvi9giowY8+ePdOwmj4b5okPmpNOOqm77LLLuiuvvBIOOnGN1+rZGczf7mK+dzfzv71sNB/x7HjKKadMw2p6rtwbVB92jaAKzDj77LO7E044Ye2zYZ74ELrkkku6yy+/HA5KcY1fccUV7FDmb3cx37ub+d9eYj5q99VcPENWg+r4oU8RVIEZ55xzTnfiiSeufTbMEx9C8f+IwcHKNb6zmb/dxXzvbuZ/e1l0PqJdeq5cC6qThzx5qaB67kPvU62v+du/+kaXly986n3VdsD2s2xQjf83DA5WcY1feuml7FDmb3cx37ub+d9eFn1GjHbpuXJvUH3o9ywcVCOkbtQmF0H1373xudPleI2S1vdV3ifQzrJB9dGPfjQctFzjO5v5213M9+5m/reXRecj2qXnyrWgOjr+CQsF1RRS57UplaHyL/7HVwVV2CGWDaq/93u/133lK19Z8453vKN71ateNV1+7nOfO12+4447uosuumhhH//4x6f9lvVRF32W9dBKXOM/+ZM/ue4av/jii6fiuv7EJz6xts72U/uMivVa280S10WobYvrZV+Pnz7/QryPuC6jPl2fsf0Xf/EX96n/2L9Wv9MciPkOaU6SmIdau60U9+Ld9vmUz38+7zE/W3EdsF7MR+2+Wop26blyqaCa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" width="600"/>
+</dd></dl>
+<h2> <span class="mw-headline" id="How_to_Use_the_Sample"> How to Use the Sample </span></h2>
+<ol><li> Navigate to the location given above and open <code class="path">GridExplorer.cbproj</code>.
+</li><li> Select a target platform in the <b><a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Berlin/en/Project_Manager" title="rad en:Project Manager">Project Manager</a></b>.
+</li><li> Press <code>F9</code> or choose <font color="#598527"><b>Run &gt; Run</b></font>.
+</li></ol>
+<h2> <span class="mw-headline" id="Files"> Files </span></h2>
+<table class="wikitable">
+<tr>
+<th> File
+</th>
+<th> Contains
+</th></tr>
+<tr valign="top">
+<td>
+<p><code class="path">GridExplorer.cbproj</code><br/>
+<code class="path">GridExplorer.cpp</code>
+</p>
+</td>
+<td>
+<p>The project itself.
+</p>
+</td></tr>
+<tr valign="top">
+<td>
+<p><code class="path">MainForm.h</code><br/>
+<code class="path">MainForm.cpp</code><br/>
+<code class="path">MainForm.fmx</code>
+</p>
+</td>
+<td style="text-align: left; vertical-align: top;">
+<p>The main form.
+</p>
+</td></tr></table>
+<h2> <span class="mw-headline" id="Classes"> Classes </span></h2>
+<p><code>TFrmMain</code> is the main form that represents the main window of the sample. It contains the following components:
+</p>
+<ul><li> A <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Layouts.TScaledLayout" title="lib en:FMX.Layouts.TScaledLayout">TScaledLayout</a> object that contains:
+<ul><li> A <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Objects.TRectangle" title="lib en:FMX.Objects.TRectangle">TRectangle</a> object, which contains a <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Edit.TEdit" title="lib en:FMX.Edit.TEdit">TEdit</a> control, which contains a <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.StdCtrls.TSpeedButton" title="lib en:FMX.StdCtrls.TSpeedButton">TSpeedButton</a> control.
+</li><li> A <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.TreeView.TTreeView" title="lib en:FMX.TreeView.TTreeView">TTreeView</a> control.
+</li><li> A <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Grid.TGrid" title="lib en:FMX.Grid.TGrid">TGrid</a> control.
+</li></ul>
+</li><li> A <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Dialogs.TOpenDialog" title="lib en:FMX.Dialogs.TOpenDialog">TOpenDialog</a> dialog.
+</li></ul>
+<h2> <span class="mw-headline" id="Implementation"> Implementation </span></h2>
+<p>The <b>GridExplorer</b> sample application uses:
+</p>
+<ul><li> <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Layouts.TScaledLayout" title="lib en:FMX.Layouts.TScaledLayout">TScaledLayout</a> for the layout of the main form.
+</li><li> A <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Dialogs.TOpenDialog" title="lib en:FMX.Dialogs.TOpenDialog">TOpenDialog</a> dialog to let users select a folder path.
+</li><li> A <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.TreeView.TTreeView" title="lib en:FMX.TreeView.TTreeView">TTreeView</a> control to show a folder hierarchy.
+</li><li> A <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Grid.TGrid" title="lib en:FMX.Grid.TGrid">TGrid</a> control to show data about the files within a folder.
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/System.IOUtils.TDirectory" title="lib en:System.IOUtils.TDirectory">TDirectory</a> to navigate the file system.
+</li></ul>
+<h2> <span class="mw-headline" id="Uses"> Uses </span></h2>
+<ul><li> <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Layouts.TScaledLayout" title="lib en:FMX.Layouts.TScaledLayout">TScaledLayout</a>
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.TreeView.TTreeView" title="lib en:FMX.TreeView.TTreeView">TTreeView</a>
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/FMX.Grid.TGrid" title="lib en:FMX.Grid.TGrid">TGrid</a>
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Berlin/en/System.IOUtils.TDirectory" title="lib en:System.IOUtils.TDirectory">TDirectory</a>
+</li></ul>
+<h2> <span class="mw-headline" id="See_Also"> See Also </span></h2>
+<ul><li> <a href="http://docwiki.embarcadero.com/CodeExamples/Berlin/en/FMX.ControlsDemo_Sample" title="FMX.ControlsDemo Sample">Controls</a> sample application
+</li><li> <a href="http://docwiki.embarcadero.com/CodeExamples/Berlin/en/TGrid_(Delphi)" title="TGrid (Delphi)">TGrid</a> code example
+</li></ul>
+
+
+</div>
+            <div class="visualClear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="visualClear"></div>
+    </div>
+  </body>
+</html>

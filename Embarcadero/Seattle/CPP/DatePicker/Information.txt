@@ -1,0 +1,10 @@
+Title: DatePicker
+
+Brief Description: This code snippet shows you how to use the TDateEdit component to invoke the native date picker at runtime, 
+select dates from it and process them for use in your own applications.
+
+Language: C++
+
+Platforms supported: iOS, Android
+
+Keywords: calendar, date, day, month, year, pick, iOS, Android

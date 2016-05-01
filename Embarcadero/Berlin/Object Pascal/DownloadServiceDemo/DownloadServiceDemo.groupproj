@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{3B2594C4-6276-424A-A3C5-46DCFD58772F}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="DownloadService\DownloadService.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DownloadImage\DownloadImage.dproj">
+            <Dependencies>DownloadService\DownloadService.dproj</Dependencies>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="DownloadService">
+        <MSBuild Projects="DownloadService\DownloadService.dproj"/>
+    </Target>
+    <Target Name="DownloadService:Clean">
+        <MSBuild Projects="DownloadService\DownloadService.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DownloadService:Make">
+        <MSBuild Projects="DownloadService\DownloadService.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DownloadImage" DependsOnTargets="DownloadService">
+        <MSBuild Projects="DownloadImage\DownloadImage.dproj"/>
+    </Target>
+    <Target Name="DownloadImage:Clean" DependsOnTargets="DownloadService:Clean">
+        <MSBuild Projects="DownloadImage\DownloadImage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DownloadImage:Make" DependsOnTargets="DownloadService:Make">
+        <MSBuild Projects="DownloadImage\DownloadImage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="DownloadService;DownloadImage"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="DownloadService:Clean;DownloadImage:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="DownloadService:Make;DownloadImage:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

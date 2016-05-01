@@ -1,0 +1,129 @@
+object StreamingDeviceFrame: TStreamingDeviceFrame
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object Layout3: TLayout
+    Align = Client
+    Margins.Left = 3.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 234.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Layout2: TLayout
+      Align = Client
+      Size.Width = 314.000000000000000000
+      Size.Height = 201.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Size.Width = 314.000000000000000000
+        Size.Height = 168.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 310.000000000000000000
+        Viewport.Height = 164.000000000000000000
+      end
+      object Layout4: TLayout
+        Align = Bottom
+        Position.Y = 168.000000000000000000
+        Size.Width = 314.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object ButtonClear: TButton
+          Align = Right
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Position.X = 231.000000000000000000
+          Position.Y = 3.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Clear'
+          OnClick = ButtonClearClick
+        end
+      end
+    end
+    object Layout1: TLayout
+      Align = Top
+      Size.Width = 314.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object ButtonStartStop: TButton
+        Action = ActionStartStop
+        Align = Right
+        Enabled = False
+        ImageIndex = -1
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 231.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Visible = True
+      end
+      object ButtonConnect: TButton
+        Anchors = [akTop, akRight, akBottom]
+        Position.X = 144.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = 'Connect'
+        OnClick = ButtonConnectClick
+      end
+      object edDeviceName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Anchors = [akLeft, akTop, akRight]
+        TabOrder = 3
+        Position.X = 5.000000000000000000
+        Position.Y = 6.000000000000000000
+        Size.Width = 132.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Enter Device Name as shown in Bluetooth Settings after Pairing'
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 168
+    Top = 112
+    object ActionStartStop: TAction
+      Text = 'Start'
+      Enabled = False
+      OnExecute = ActionStartStopExecute
+      OnUpdate = ActionStartStopUpdate
+    end
+  end
+  object BLEManager: TBluetoothDeviceDiscoveryManager
+    OnGeneralDiscoveryError = BLEManagerGeneralDiscoveryError
+    DiscoveryTimeout = 6000
+    DiscoveryMethod = Connect
+    Left = 128
+    Top = 48
+  end
+  object GenericHRM: TGenericHeartRateMonitor
+    DiscoveryManager = BLEManager
+    DeviceName = 'GenericHeartRateMonitor'
+    OnDeviceConnected = GenericHRMDeviceConnected
+    OnDeviceDisconnect = GenericHRMDeviceDisconnect
+    OnHeartRateMeasurementUpdate = GenericHRMHeartRateMeasurementUpdate
+    Left = 224
+    Top = 48
+  end
+end

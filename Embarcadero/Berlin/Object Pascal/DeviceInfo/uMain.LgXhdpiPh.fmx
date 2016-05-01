@@ -1,0 +1,28 @@
+inherited DeviceInfoForm_LgXhdpiPh: TDeviceInfoForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ListBox1: TListBox
+    Size.Width = 450.000000000000000000
+    Viewport.Width = 450.000000000000000000
+    Viewport.Height = 175.000000000000000000
+    inherited lbOSName: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+    inherited lbDeviceType: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+    inherited lbOSVersion: TListBoxItem
+      Size.Width = 450.000000000000000000
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+    end
+    inherited btnGetDeviceInfo: TButton
+      Position.X = 397.000000000000000000
+    end
+  end
+end

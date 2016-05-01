@@ -1,0 +1,82 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'C++Builder FireMonkey Sepia Filter Effect Demo'
+  ClientHeight = 480
+  ClientWidth = 697
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 24.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 305.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Image2: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Position.X = 376.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 281.000000000000000000
+    Size.Height = 305.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object OpenButton: TButton
+    Position.X = 96.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 145.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Open Bitmap'
+    OnClick = OpenButtonClick
+  end
+  object TrackBar1: TTrackBar
+    Orientation = Horizontal
+    Position.X = 136.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 521.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    OnChange = TrackBar1Change
+  end
+  object Label1: TLabel
+    Position.X = 24.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 113.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Sepia Filter Amount'
+  end
+  object SaveButton: TButton
+    Enabled = False
+    Position.X = 432.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = 'Save Filtered Bitmap'
+    OnClick = SaveButtonClick
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'JPeg (*.jpg)|*.jpg|Png (*.png)|*.png|All Files(*.*)|*.*'
+    Left = 328
+    Top = 80
+  end
+  object SaveDialog1: TSaveDialog
+    DefaultExt = 'jpg'
+    Filter = 'JPeg (*.jpg)|*.jpg|Png (*.png)|*.png|All Files(*.*)|*.*'
+    Left = 328
+    Top = 144
+  end
+end

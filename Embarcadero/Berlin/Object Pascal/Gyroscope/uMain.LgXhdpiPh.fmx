@@ -1,0 +1,15 @@
+inherited GyroscopeForm_LgXhdpiPh: TGyroscopeForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Rectangle3D1: TRectangle3D
+    Quanternion = 
+      '(0.020250404253602,-0.478708475828171,0.0274653173983097,-0.8773' +
+      '10216426849)'
+  end
+  inherited Light1: TLight
+    Quanternion = 
+      '(0.0251593366265297,0.105718806385994,-0.0164530407637358,-0.993' +
+      '941962718964)'
+  end
+end

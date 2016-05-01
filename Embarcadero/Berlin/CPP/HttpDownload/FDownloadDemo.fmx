@@ -1,0 +1,368 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 343.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Client
+      Size.Width = 640.000000000000000000
+      Size.Height = 211.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 636.000000000000000000
+      Viewport.Height = 207.000000000000000000
+    end
+    object Panel3: TPanel
+      Align = Top
+      Size.Width = 640.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+      object Button1: TButton
+        Align = Left
+        Enabled = False
+        Images = ImageList1
+        ImageIndex = 0
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClick = ButtonStopClick
+      end
+      object Label1: TLabel
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 533.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 102.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Trailing
+        Text = '0 KB/s'
+      end
+      object ProgressBarPart1: TProgressBar
+        Align = Client
+        Orientation = Horizontal
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 488.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Panel4: TPanel
+      Align = Top
+      Position.Y = 99.000000000000000000
+      Size.Width = 640.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      object Button4: TButton
+        Align = Left
+        Enabled = False
+        Images = ImageList1
+        ImageIndex = 0
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClick = ButtonStopClick
+      end
+      object Label4: TLabel
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 533.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 102.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Trailing
+        Text = '0 KB/s'
+      end
+      object ProgressBarPart4: TProgressBar
+        Align = Client
+        Orientation = Horizontal
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 488.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Panel5: TPanel
+      Align = Top
+      Position.Y = 66.000000000000000000
+      Size.Width = 640.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      object Button3: TButton
+        Align = Left
+        Enabled = False
+        Images = ImageList1
+        ImageIndex = 0
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClick = ButtonStopClick
+      end
+      object Label3: TLabel
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 533.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 102.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Trailing
+        Text = '0 KB/s'
+      end
+      object ProgressBarPart3: TProgressBar
+        Align = Client
+        Orientation = Horizontal
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 488.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+    object Panel6: TPanel
+      Align = Top
+      Position.Y = 33.000000000000000000
+      Size.Width = 640.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      object Button2: TButton
+        Align = Left
+        Enabled = False
+        Images = ImageList1
+        ImageIndex = 0
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 20.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        OnClick = ButtonStopClick
+      end
+      object Label2: TLabel
+        Align = Right
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 533.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 102.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.HorzAlign = Trailing
+        Text = '0 KB/s'
+      end
+      object ProgressBarPart2: TProgressBar
+        Align = Client
+        Orientation = Horizontal
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 488.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object Panel2: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 137.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object LabelURL: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'URL:'
+    end
+    object LabelFile: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 12.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'File:'
+    end
+    object EditFileName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 3
+      Text = 'ubuntu-15.04-server-ppc64el.template'
+      Position.X = 72.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 561.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object EditURL: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 2
+      Text = 
+        'http://nl.archive.ubuntu.com/ubuntu-cdimages/15.04/release/ubunt' +
+        'u-15.04-server-ppc64el.template'
+      Position.X = 72.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 561.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Panel7: TPanel
+      Position.X = 8.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 625.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      object BStartDownload: TButton
+        Align = Left
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 5.000000000000000000
+        Size.Width = 133.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Start Download'
+        OnClick = BStartDownloadClick
+      end
+      object LabelGlobalSpeed: TLabel
+        Align = Client
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 5.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Margins.Bottom = 5.000000000000000000
+        Size.Width = 472.000000000000000000
+        Size.Height = 31.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'GlobalSpeed: 0 KB/s'
+      end
+    end
+  end
+  object ImageList1: TImageList
+    Source = <
+      item
+        MultiResBitmap.Width = 17
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap.TransparentColor = 536870912
+        MultiResBitmap = <
+          item
+            Width = 17
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000011000000100806000000F03194
+              5F000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              004149444154384F63185E80114A33343434FC8732890240F570BD7000320468
+              0AF11808A05A1998A0344560D4104C30780C414930C8714F0C6004022873F800
+              060600B2E52476D5E8C30D0000000049454E44AE426082}
+            FileName = 'C:\dev\tp\images\MPlayer_CL_MPSTOP.bmp'
+          end>
+        Name = 'MPlayer_CL_MPSTOP'
+      end
+      item
+        MultiResBitmap.Width = 17
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap.TransparentColor = 536870912
+        MultiResBitmap = <
+          item
+            Width = 17
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000011000000100806000000F03194
+              5F000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              006349444154384FD591510E80200C43A717B737D7B0B4515160D31F7D0D2123
+              E9FB18F63D00ACE5704C31F376B0E095CCCB76C823592D5152B2964409C94612
+              45B202AB3B518960CD39FD4E0F5926C2676728E995455312298B8B2453BEA55E
+              D8DF30DB00FF4C8DB7FCBFFBBD0000000049454E44AE426082}
+            FileName = 'C:\dev\tp\images\MPlayer_CL_MPPLAY.bmp'
+          end>
+        Name = 'MPlayer_CL_MPPLAY'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = 'MPlayer_CL_MPSTOP'
+            SourceRect.Right = 17.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'MPlayer_CL_MPPLAY'
+            SourceRect.Right = 17.000000000000000000
+          end>
+      end>
+    Left = 452
+    Top = 76
+  end
+end

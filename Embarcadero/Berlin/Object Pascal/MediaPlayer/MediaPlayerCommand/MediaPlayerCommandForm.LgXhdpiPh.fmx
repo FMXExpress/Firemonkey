@@ -1,0 +1,13 @@
+inherited Form3_LgXhdpiPh: TForm3_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 2
+  inherited lbPlayers: TListBox
+    Size.Width = 480.000000000000000000
+    inherited lbHeader: TListBoxGroupHeader
+      Height = 30.000000000000000000
+      Size.Width = 480.000000000000000000
+      Size.Height = 30.000000000000000000
+    end
+  end
+end

@@ -1,0 +1,140 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 455
+  ClientWidth = 854
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 854.000000000000000000
+    Size.Height = 455.000000000000000000
+    inherited ToolBarPage: TTabItem
+      Size.Width = 142.000000000000000000
+      inherited ToolBar1: TToolBar
+        Size.Width = 854.000000000000000000
+        inherited SpeedButton12: TSpeedButton
+          Position.X = 733.000000000000000000
+        end
+        inherited SpeedButton13: TSpeedButton
+          Position.X = 790.000000000000000000
+        end
+        inherited SpeedButton10: TSpeedButton
+          Position.X = 676.000000000000000000
+        end
+      end
+      inherited ToolBar13: TToolBar
+        Position.Y = 358.000000000000000000
+        Size.Width = 854.000000000000000000
+      end
+      inherited ToolBar2: TToolBar
+        Size.Width = 854.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 586.000000000000000000
+        end
+        inherited SpeedButton79: TSpeedButton
+          Position.X = 677.000000000000000000
+        end
+        inherited SpeedButton80: TSpeedButton
+          Position.X = 766.000000000000000000
+        end
+      end
+      inherited GroupBox1: TGroupBox
+        Size.Width = 854.000000000000000000
+        inherited Layout2: TLayout
+          Size.Width = 840.000000000000000000
+          inherited Edit5: TEdit
+            Size.Width = 651.000000000000000000
+          end
+          inherited SpeedButton3: TSpeedButton
+            Position.X = 792.000000000000000000
+          end
+        end
+      end
+    end
+    inherited ToolButtonPage: TTabItem
+      Size.Width = 143.000000000000000000
+      inherited ToolBar5: TToolBar
+        Size.Width = 854.000000000000000000
+      end
+      inherited ToolBar6: TToolBar
+        Size.Width = 854.000000000000000000
+      end
+      inherited ToolBar7: TToolBar
+        Size.Width = 854.000000000000000000
+      end
+      inherited ToolBar8: TToolBar
+        Size.Width = 854.000000000000000000
+      end
+      inherited ToolBar9: TToolBar
+        Size.Width = 854.000000000000000000
+      end
+    end
+    inherited Tabs: TTabItem
+      Size.Width = 142.000000000000000000
+      inherited TabControl2: TTabControl
+        Size.Width = 854.000000000000000000
+        inherited TabItem1: TTabItem
+          Size.Width = 214.000000000000000000
+        end
+        inherited TabItem10: TTabItem
+          Size.Width = 214.000000000000000000
+        end
+        inherited TabItem11: TTabItem
+          Size.Width = 214.000000000000000000
+        end
+        inherited TabItem12: TTabItem
+          Size.Width = 212.000000000000000000
+        end
+      end
+      inherited TabControl3: TTabControl
+        Size.Width = 854.000000000000000000
+        inherited TabItem5: TTabItem
+          Size.Width = 214.000000000000000000
+        end
+        inherited TabItem6: TTabItem
+          Size.Width = 214.000000000000000000
+        end
+        inherited TabItem7: TTabItem
+          Size.Width = 214.000000000000000000
+        end
+        inherited TabItem8: TTabItem
+          Size.Width = 212.000000000000000000
+        end
+      end
+      inherited TabControl4: TTabControl
+        Size.Width = 854.000000000000000000
+        inherited TabItem2: TTabItem
+          Size.Width = 214.000000000000000000
+        end
+        inherited TabItem3: TTabItem
+          Size.Width = 214.000000000000000000
+        end
+        inherited TabItem4: TTabItem
+          Size.Width = 214.000000000000000000
+        end
+        inherited TabItem9: TTabItem
+          Size.Width = 212.000000000000000000
+        end
+      end
+      inherited TabControl5: TTabControl
+        Size.Width = 854.000000000000000000
+      end
+    end
+    inherited ListBoxPage: TTabItem
+      Size.Width = 142.000000000000000000
+      inherited ListBox2: TListBox
+        Size.Height = 406.000000000000000000
+      end
+      inherited ListBox3: TListBox
+        Size.Width = 621.000000000000000000
+        Size.Height = 406.000000000000000000
+        inherited ListBoxHeader2: TListBoxHeader
+          Size.Width = 621.000000000000000000
+        end
+      end
+    end
+    inherited ControlPage: TTabItem
+      Size.Width = 143.000000000000000000
+    end
+    inherited TabItem18: TTabItem
+      Size.Width = 142.000000000000000000
+    end
+  end
+end

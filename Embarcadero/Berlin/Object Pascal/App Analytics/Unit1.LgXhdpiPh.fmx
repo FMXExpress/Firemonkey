@@ -1,0 +1,26 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited EnableButton: TButton
+    Size.Width = 420.000000000000000000
+  end
+  inherited MainFormEdit1: TEdit
+    Size.Width = 420.000000000000000000
+  end
+  inherited LaunchForm2Button: TButton
+    Size.Width = 420.000000000000000000
+  end
+  inherited RaiseExceptionButton: TButton
+    Size.Width = 420.000000000000000000
+  end
+  inherited ClearSaveStateButton: TButton
+    Size.Width = 420.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+    end
+  end
+end

@@ -1,0 +1,85 @@
+object NotifyDeviceFrame: TNotifyDeviceFrame
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object Layout3: TLayout
+    Align = Client
+    Margins.Left = 3.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 234.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Layout2: TLayout
+      Align = Client
+      Size.Width = 314.000000000000000000
+      Size.Height = 201.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Memo1: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Size.Width = 314.000000000000000000
+        Size.Height = 168.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Viewport.Width = 310.000000000000000000
+        Viewport.Height = 164.000000000000000000
+      end
+      object Layout4: TLayout
+        Align = Bottom
+        Position.Y = 168.000000000000000000
+        Size.Width = 314.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object ButtonClear: TButton
+          Align = Right
+          Margins.Left = 3.000000000000000000
+          Margins.Top = 3.000000000000000000
+          Margins.Right = 3.000000000000000000
+          Margins.Bottom = 3.000000000000000000
+          Position.X = 231.000000000000000000
+          Position.Y = 3.000000000000000000
+          Size.Width = 80.000000000000000000
+          Size.Height = 27.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Clear'
+          OnClick = ButtonClearClick
+        end
+      end
+    end
+    object Layout1: TLayout
+      Align = Top
+      Size.Width = 314.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      object LabelDevice: TLabel
+        Align = Left
+        Size.Width = 120.000000000000000000
+        Size.Height = 33.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object ButtonNotify: TButton
+        Align = Right
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 231.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Notify'
+        OnClick = ActionStartStopExecute
+      end
+    end
+  end
+end

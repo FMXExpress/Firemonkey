@@ -1,0 +1,28 @@
+inherited Form2_LgXhdpiPh: TForm2_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 2
+  inherited ListBox1: TListBox
+    Size.Width = 480.000000000000000000
+    inherited lbOSName: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+    inherited lbDeviceType: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+    inherited lbOSVersion: TListBoxItem
+      Size.Width = 440.000000000000000000
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 480.000000000000000000
+    end
+    inherited btnGetDeviceInfo: TButton
+      Position.X = 431.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+end

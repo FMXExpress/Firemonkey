@@ -1,0 +1,310 @@
+object TestBedForm: TTestBedForm
+  Left = 0
+  Top = 0
+  Caption = 'Box2d TestBed Delphi'
+  ClientHeight = 600
+  ClientWidth = 800
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  OnKeyUp = FormKeyUp
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object MainPanel: TPanel
+    Align = Client
+    ClipChildren = True
+    Size.Width = 800.000000000000000000
+    Size.Height = 600.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object RightPanel: TPanel
+      Align = Right
+      Position.X = 600.000000000000000000
+      Size.Width = 200.000000000000000000
+      Size.Height = 600.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object RightLayout: TLayout
+        Align = Client
+        Size.Width = 200.000000000000000000
+        Size.Height = 600.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object TestLabel: TLabel
+          Align = MostTop
+          Size.Width = 200.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Test:'
+        end
+        object TestList: TComboBox
+          Align = Top
+          CanFocus = False
+          DropDownCount = 24
+          Position.Y = 17.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          OnChange = TestListChange
+        end
+        object Line1: TLine
+          Align = Top
+          LineType = Bottom
+          Position.Y = 39.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 10.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object EnableLayout: TLayout
+          Align = Top
+          Position.Y = 49.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 88.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object Sleep: TCheckBox
+            Align = Top
+            CanFocus = False
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Sleep'
+          end
+          object WarmStarting: TCheckBox
+            Align = Top
+            CanFocus = False
+            IsChecked = True
+            Position.Y = 19.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Warm Starting'
+          end
+          object TimeOfImpact: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 57.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Time of Impact'
+          end
+          object SubStepping: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 38.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Sub-Stepping'
+          end
+        end
+        object DrawLayout: TLayout
+          Align = Top
+          Position.Y = 137.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 200.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          object ShapesChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            IsChecked = True
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 9
+            Text = 'Shapes'
+            OnChange = DrawLayoutChanged
+          end
+          object AABBsChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 38.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 8
+            Text = 'AABBs'
+            OnChange = DrawLayoutChanged
+          end
+          object ContactPointsChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 57.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 7
+            Text = 'Contact Points'
+            OnChange = DrawLayoutChanged
+          end
+          object ContactNormalsChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 76.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 6
+            Text = 'Contact Normals'
+            OnChange = DrawLayoutChanged
+          end
+          object ContactImpulsesChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 95.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 5
+            Text = 'Contact Impulses'
+            OnChange = DrawLayoutChanged
+          end
+          object FrictionImpulsesChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 114.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 4
+            Text = 'Friction Impulses'
+            OnChange = DrawLayoutChanged
+          end
+          object CenterOfMassesChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 133.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Center of Masses'
+            OnChange = DrawLayoutChanged
+          end
+          object ProfileChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 171.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Profile'
+            OnChange = DrawLayoutChanged
+          end
+          object StatisticsChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            Position.Y = 152.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Statistics'
+            OnChange = DrawLayoutChanged
+          end
+          object JointsChk: TCheckBox
+            Align = Top
+            CanFocus = False
+            IsChecked = True
+            Position.Y = 19.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 19.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Joints'
+            OnChange = DrawLayoutChanged
+          end
+        end
+        object ButtonsLayout: TLayout
+          Align = Top
+          Position.Y = 337.000000000000000000
+          Size.Width = 200.000000000000000000
+          Size.Height = 200.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object QuiBtn: TButton
+            Align = Top
+            CanFocus = False
+            Position.Y = 66.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 3
+            Text = 'Quit'
+            OnClick = QuiBtnClick
+          end
+          object RestartBtn: TButton
+            Align = Top
+            CanFocus = False
+            Position.Y = 44.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Restart'
+            OnClick = RestartBtnClick
+          end
+          object SingleStepBtn: TButton
+            Align = Top
+            CanFocus = False
+            Position.Y = 22.000000000000000000
+            Size.Width = 200.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Single Step'
+            OnClick = SingleStepBtnClick
+          end
+          object PauseBtn: TButton
+            Align = Top
+            CanFocus = False
+            Size.Width = 200.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Pause'
+            OnClick = PauseBtnClick
+          end
+        end
+      end
+    end
+    object PaintBox: TPaintBox
+      Align = Client
+      ClipChildren = True
+      Size.Width = 594.000000000000000000
+      Size.Height = 600.000000000000000000
+      Size.PlatformDefault = False
+      OnMouseDown = PaintBoxMouseDown
+      OnMouseMove = PaintBoxMouseMove
+      OnMouseUp = PaintBoxMouseUp
+      OnPaint = PaintBoxPaint
+    end
+    object RightSplitter: TSplitter
+      Align = Right
+      Cursor = crHSplit
+      MinSize = 20.000000000000000000
+      Position.X = 594.000000000000000000
+      ShowGrip = False
+      Size.Width = 6.000000000000000000
+      Size.Height = 600.000000000000000000
+      Size.PlatformDefault = False
+    end
+  end
+  object Timer1: TTimer
+    Interval = 30
+    OnTimer = Timer1Timer
+    Left = 304
+    Top = 224
+  end
+end

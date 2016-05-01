@@ -1,0 +1,287 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 548
+  ClientWidth = 373
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [Desktop]
+  FullScreen = True
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDeactivate = FormDeactivate
+  DesignerMasterStyle = 3
+  object Layout2: TLayout
+    Align = Client
+    Size.Width = 373.000000000000000000
+    Size.Height = 548.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object Layout1: TLayout
+      Align = Client
+      Size.Width = 373.000000000000000000
+      Size.Height = 548.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object bFiveQuestion: TButton
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 30.000000000000000000
+        Position.Y = 186.000000000000000000
+        Size.Width = 313.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = '5 Questions'
+        OnClick = bFiveQuestionClick
+      end
+      object bTenQuestion: TButton
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 30.000000000000000000
+        Position.Y = 241.000000000000000000
+        Size.Width = 313.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = '10 Questions'
+        OnClick = bTenQuestionClick
+      end
+      object bTwentyQuestion: TButton
+        Anchors = [akLeft, akTop, akRight]
+        Position.X = 30.000000000000000000
+        Position.Y = 296.000000000000000000
+        Size.Width = 313.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        Text = '20 Questions'
+        OnClick = bTwentyQuestionClick
+      end
+      object Label1: TLabel
+        Align = Top
+        Size.Width = 373.000000000000000000
+        Size.Height = 97.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'embossedlabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Choose the Number of Questions you want to see:'
+      end
+      object ToolBar1: TToolBar
+        Align = Bottom
+        Position.Y = 500.000000000000000000
+        Size.Width = 373.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object Button4: TButton
+          Align = Right
+          Margins.Right = 6.000000000000000000
+          Position.X = 319.000000000000000000
+          Size.Width = 48.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'infotoolbuttonbordered'
+          TabOrder = 0
+        end
+      end
+    end
+    object MultiView1: TMultiView
+      TargetControl = Layout1
+      MasterButton = Button4
+      OnHidden = MultiView1Hidden
+      Size.Width = 300.000000000000000000
+      Size.Height = 548.000000000000000000
+      Size.PlatformDefault = False
+      Visible = False
+      TabOrder = 1
+      object ListBox1: TListBox
+        Align = Client
+        Size.Width = 299.000000000000000000
+        Size.Height = 500.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        OnItemClick = ListBox1ItemClick
+        Viewport.Width = 299.000000000000000000
+        Viewport.Height = 500.000000000000000000
+        object ListBoxGroupHeader1: TListBoxGroupHeader
+          Size.Width = 299.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 0
+          Text = 'Select region of the country'
+        end
+        object ListBoxItem1: TListBoxItem
+          Selectable = False
+          HitTest = True
+          Position.Y = 56.000000000000000000
+          Size.Width = 299.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Text = 'Eastern'
+          object sEast: TSwitch
+            Align = Right
+            IsChecked = True
+            Margins.Right = 5.000000000000000000
+            Position.X = 250.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnSwitch = sEastSwitch
+          end
+        end
+        object ListBoxItem2: TListBoxItem
+          Selectable = False
+          HitTest = True
+          Position.Y = 100.000000000000000000
+          Size.Width = 299.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Central'
+          object sCentral: TSwitch
+            Align = Right
+            IsChecked = True
+            Margins.Right = 5.000000000000000000
+            Position.X = 250.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnSwitch = sCentralSwitch
+          end
+        end
+        object ListBoxItem3: TListBoxItem
+          Selectable = False
+          Position.Y = 144.000000000000000000
+          Size.Width = 299.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          Text = 'Western'
+          object sWest: TSwitch
+            Align = Right
+            IsChecked = True
+            Margins.Right = 5.000000000000000000
+            Position.X = 250.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnSwitch = sWestSwitch
+          end
+        end
+        object ListBoxItem4: TListBoxItem
+          Position.Y = 188.000000000000000000
+          Size.Width = 299.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 4
+          Text = 'Europe'
+          Visible = False
+          object sEurope: TSwitch
+            Align = Right
+            IsChecked = True
+            Margins.Right = 5.000000000000000000
+            Position.X = 250.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 44.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            OnSwitch = sEuropeSwitch
+          end
+        end
+        object ListBoxGroupHeader2: TListBoxGroupHeader
+          Position.Y = 188.000000000000000000
+          Size.Width = 299.000000000000000000
+          Size.Height = 56.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 5
+          Text = 'Advertising'
+        end
+        object DisableAdsListBoxItem: TListBoxItem
+          ItemData.Detail = 'A small in-app purchase will disable adverts'
+          Position.Y = 244.000000000000000000
+          Size.Width = 299.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitembottomdetail'
+          TabOrder = 6
+          Text = 'Disable in-app adverts'
+        end
+        object EuropeListBoxItem: TListBoxItem
+          ItemData.Detail = 'Purchase the Europe questions set'
+          Position.Y = 288.000000000000000000
+          Size.Width = 299.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitembottomdetail'
+          TabOrder = 9
+          Text = 'Europe Questions'
+        end
+        object ConsumeListBoxItem: TListBoxItem
+          ItemData.Detail = 'Use this in order to re-enable purchasing'
+          Position.Y = 332.000000000000000000
+          Size.Width = 299.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitembottomdetail'
+          TabOrder = 10
+          Text = 'Consume purchased Items'
+        end
+        object RestoreAdsListBoxItem: TListBoxItem
+          ItemData.Detail = 'Use after reinstallation or on a new device'
+          Position.Y = 376.000000000000000000
+          Size.Width = 299.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitembottomdetail'
+          TabOrder = 7
+          Text = 'Restore purchase'
+        end
+      end
+      object ToolBar2: TToolBar
+        Size.Width = 299.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object Label2: TLabel
+          Align = Client
+          StyledSettings = [Family, Style, FontColor]
+          Size.Width = 299.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.Font.Size = 21.000000000000000000
+          TextSettings.HorzAlign = Center
+          Text = 'Option'
+          object Button1: TButton
+            Align = Left
+            Margins.Left = 6.000000000000000000
+            Position.X = 6.000000000000000000
+            Size.Width = 48.000000000000000000
+            Size.Height = 48.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'donetoolbutton'
+            TabOrder = 0
+            Text = 'Done'
+            OnClick = OptionFormButton1Click
+          end
+        end
+      end
+    end
+  end
+end

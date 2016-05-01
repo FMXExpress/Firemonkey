@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{FE45181B-4FB6-4433-A138-457A20196098}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CustomResource\CustomResourcePackage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Thingpoint\ThingpointProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\DesktopClient\ClientProject.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\MobileClient\MobileClientProject.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CustomResourcePackage">
+        <MSBuild Projects="CustomResource\CustomResourcePackage.dproj"/>
+    </Target>
+    <Target Name="CustomResourcePackage:Clean">
+        <MSBuild Projects="CustomResource\CustomResourcePackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomResourcePackage:Make">
+        <MSBuild Projects="CustomResource\CustomResourcePackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ThingpointProject">
+        <MSBuild Projects="Thingpoint\ThingpointProject.dproj"/>
+    </Target>
+    <Target Name="ThingpointProject:Clean">
+        <MSBuild Projects="Thingpoint\ThingpointProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ThingpointProject:Make">
+        <MSBuild Projects="Thingpoint\ThingpointProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientProject">
+        <MSBuild Projects="Client\DesktopClient\ClientProject.dproj"/>
+    </Target>
+    <Target Name="ClientProject:Clean">
+        <MSBuild Projects="Client\DesktopClient\ClientProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientProject:Make">
+        <MSBuild Projects="Client\DesktopClient\ClientProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobileClientProject">
+        <MSBuild Projects="Client\MobileClient\MobileClientProject.dproj"/>
+    </Target>
+    <Target Name="MobileClientProject:Clean">
+        <MSBuild Projects="Client\MobileClient\MobileClientProject.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobileClientProject:Make">
+        <MSBuild Projects="Client\MobileClient\MobileClientProject.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CustomResourcePackage;ThingpointProject;ClientProject;MobileClientProject"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CustomResourcePackage:Clean;ThingpointProject:Clean;ClientProject:Clean;MobileClientProject:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CustomResourcePackage:Make;ThingpointProject:Make;ClientProject:Make;MobileClientProject:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

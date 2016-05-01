@@ -1,0 +1,192 @@
+object FormFmxPhysics: TFormFmxPhysics
+  Left = 0
+  Top = 0
+  Caption = 'FlatBox2D FireMonkey Simple Physics Demo'
+  ClientHeight = 600
+  ClientWidth = 800
+  Fill.Color = claSilver
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnDestroy = FormDestroy
+  OnResize = FormResize
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object CheckBox1: TCheckBox
+    HelpType = htKeyword
+    IsChecked = True
+    Position.X = 15.000000000000000000
+    Position.Y = 71.000000000000000000
+    Size.Width = 119.999992370605500000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'CheckBox'
+  end
+  object Button4: TButton
+    HelpType = htKeyword
+    Position.X = 86.000000000000000000
+    Position.Y = 258.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 26.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Button'
+  end
+  object Panel1: TPanel
+    HelpType = htKeyword
+    Position.X = 436.000000000000000000
+    Position.Y = 56.000000000000000000
+    Size.Width = 138.000000000000000000
+    Size.Height = 145.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object Label19: TLabel
+      HelpType = htKeyword
+      Position.X = 21.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 94.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Center
+      Text = 'Panel'
+    end
+    object SpeedButton2: TSpeedButton
+      HelpType = htKeyword
+      Position.X = 26.000000000000000000
+      Position.Y = 43.000000000000000000
+      Size.Width = 85.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'SpeedButton'
+    end
+    object SpeedButton3: TSpeedButton
+      HelpType = htKeyword
+      Position.X = 26.000000000000000000
+      Position.Y = 107.000000000000000000
+      Size.Width = 85.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'SpeedButton'
+    end
+  end
+  object ProgressBar1: TProgressBar
+    HelpType = htKeyword
+    Orientation = Horizontal
+    Position.X = 391.000000000000000000
+    Position.Y = 267.000000000000000000
+    Size.Width = 384.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+    Value = 33.000000000000000000
+  end
+  object RadioButton1: TRadioButton
+    HelpType = htKeyword
+    Position.X = 89.000000000000000000
+    Position.Y = 103.000000000000000000
+    Size.Width = 98.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = 'RadioButton'
+  end
+  object ScrollBar1: TScrollBar
+    HelpType = htKeyword
+    Value = 33.000000000000000000
+    ViewportSize = 20.000000000000000000
+    SmallChange = 0.050000000745058060
+    Orientation = Horizontal
+    Position.X = 599.000000000000000000
+    Position.Y = 11.000000000000000000
+    Size.Width = 179.000000000000000000
+    Size.Height = 18.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ScrollBar2: TScrollBar
+    HelpType = htKeyword
+    Max = 1.000000000000000000
+    ViewportSize = 0.200000002980232200
+    SmallChange = 0.050000000745058060
+    Orientation = Vertical
+    Position.X = 258.000000000000000000
+    Position.Y = 77.000000000000000000
+    Size.Width = 18.000000000000000000
+    Size.Height = 154.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object StringComboBox1: TComboBox
+    DisableFocusEffect = False
+    HelpType = htKeyword
+    Items.Strings = (
+      'ListBoxItem1'
+      'ListBoxItem2'
+      'ListBoxItem3')
+    ItemIndex = 0
+    ItemHeight = 19.000000000000000000
+    ListBoxResource = 'transparentlistboxstyle'
+    Position.X = 63.000000000000000000
+    Position.Y = 150.000000000000000000
+    Size.Width = 179.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+  end
+  object Text2: TLabel
+    HelpType = htKeyword
+    Position.X = 296.000000000000000000
+    Position.Y = 146.000000000000000000
+    Size.Width = 104.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    Text = 'I'#39'm a label'
+  end
+  object TextBox1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Text = 'some text'
+    Position.X = 240.000000000000000000
+    Position.Y = 40.000000000000000000
+    HelpType = htKeyword
+    Size.Width = 137.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object TrackBar6: TTrackBar
+    Orientation = Horizontal
+    Position.X = 312.000000000000000000
+    Position.Y = 222.000000000000000000
+    Size.Width = 179.000000000000000000
+    Size.Height = 20.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Value = 33.000000000000000000
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 800.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    object ButtonPhysics: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Drop'
+      OnClick = ButtonPhysicsClick
+    end
+    object ResetBtn: TButton
+      Position.X = 144.000000000000000000
+      Position.Y = 7.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Reset'
+      OnClick = ResetBtnClick
+    end
+  end
+end

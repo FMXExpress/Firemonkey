@@ -1,0 +1,35 @@
+inherited TabletSearchForm_LgXhdpiPh: TTabletSearchForm_LgXhdpiPh
+  ClientHeight = 455
+  ClientWidth = 854
+  DesignerMasterStyle = 3
+  inherited LeftLayout: TLayout
+    Size.Height = 455.000000000000000000
+    inherited ListView1: TListView
+      ItemIndex = -1
+      Size.Height = 407.000000000000000000
+    end
+  end
+  inherited RightLayout: TLayout
+    Size.Width = 533.000000000000000000
+    Size.Height = 455.000000000000000000
+    inherited ToolBarDetail: TToolBar
+      Size.Width = 533.000000000000000000
+      inherited lblDetail: TLabel
+        Size.Width = 533.000000000000000000
+      end
+      inherited btnUp: TSpeedButton
+        Position.X = 442.000000000000000000
+      end
+      inherited btnDown: TSpeedButton
+        Position.X = 484.000000000000000000
+      end
+    end
+    inherited DetailMemo: TMemo
+      Size.Width = 533.000000000000000000
+      Size.Height = 455.000000000000000000
+    end
+  end
+  inherited Line1: TLine
+    Size.Height = 455.000000000000000000
+  end
+end

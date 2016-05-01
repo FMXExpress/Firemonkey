@@ -1,0 +1,174 @@
+object FormDownloadDemo: TFormDownloadDemo
+  Left = 0
+  Top = 0
+  Caption = 'HTTP Download Demo'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object PanelTop: TPanel
+    Align = Top
+    Size.Width = 640.000000000000000000
+    Size.Height = 165.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object LabelFile: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 12.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'File:'
+    end
+    object EditFileName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 3
+      Text = 'linux-4.4.tar.xz'
+      Position.X = 72.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 561.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object LabelURL: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'URL:'
+    end
+    object EditURL: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 2
+      Text = 'https://cdn.kernel.org/pub/linux/kernel/v4.x/linux-4.4.tar.xz'
+      Position.X = 72.000000000000000000
+      Position.Y = 44.000000000000000000
+      Size.Width = 561.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object LabelGlobalSpeed: TLabel
+      Position.X = 184.000000000000000000
+      Position.Y = 86.000000000000000000
+      Size.Width = 184.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'GlobalSpeed: 0 KB/s'
+    end
+    object BStartDownload: TButton
+      Position.X = 8.000000000000000000
+      Position.Y = 88.000000000000000000
+      Size.Width = 133.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Start Download'
+      OnClick = BStartDownloadClick
+    end
+    object ProgressBarDownload: TProgressBar
+      Anchors = [akLeft, akTop, akRight]
+      Orientation = Horizontal
+      Position.X = 28.000000000000000000
+      Position.Y = 140.000000000000000000
+      Size.Width = 605.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object BStopDownload: TButton
+      Enabled = False
+      Images = ImageList1
+      ImageIndex = 0
+      Position.X = 4.000000000000000000
+      Position.Y = 140.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      OnClick = ButtonCancelClick
+    end
+  end
+  object PanelCenter: TPanel
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 315.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Anchors = [akLeft, akTop, akRight, akBottom]
+      Position.X = 5.000000000000000000
+      Position.Y = 8.000000000000000000
+      Size.Width = 629.000000000000000000
+      Size.Height = 301.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 625.000000000000000000
+      Viewport.Height = 297.000000000000000000
+    end
+  end
+  object ImageList1: TImageList
+    Source = <
+      item
+        MultiResBitmap.Width = 17
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap.TransparentColor = 536870912
+        MultiResBitmap = <
+          item
+            Width = 17
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000011000000100806000000F03194
+              5F000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              004549444154384F636018568011E69B868686FFA4F80CA81EAE17AE0F6408D0
+              14E2F17F9052086022C5765C6A470DC10C99C1132628090618F52425384620A0
+              46121964660000B2E52476E29D38B50000000049454E44AE426082}
+            FileName = 'C:\dev\tp\images\MPlayer_CL_MPSTOP.bmp'
+          end>
+        Name = 'MPlayer_CL_MPSTOP'
+      end
+      item
+        MultiResBitmap.Width = 17
+        MultiResBitmap.LoadSize = 2
+        MultiResBitmap.TransparentColor = 536870912
+        MultiResBitmap = <
+          item
+            Width = 17
+            Height = 16
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000011000000100806000000F03194
+              5F000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              006649444154384FCDD3D10E8020080550F2C7BB7FAED9622312157C309C6FDE
+              338549F4BB0290EB8E5C2CC9104ED00A768749AC10A611065D9885B8B011A2B1
+              7CD56708B3480D6BE0359DDE78B9E7C753F2EC10E98519329199B08978C2CDE7
+              373B1EF907DB3205FF4C8DB7D46F415F0000000049454E44AE426082}
+            FileName = 'C:\dev\tp\images\MPlayer_CL_MPPLAY.bmp'
+          end>
+        Name = 'MPlayer_CL_MPPLAY'
+      end>
+    Destination = <
+      item
+        Layers = <
+          item
+            Name = 'MPlayer_CL_MPSTOP'
+            SourceRect.Right = 17.000000000000000000
+          end>
+      end
+      item
+        Layers = <
+          item
+            Name = 'MPlayer_CL_MPPLAY'
+            SourceRect.Right = 17.000000000000000000
+          end>
+      end>
+    Left = 452
+    Top = 76
+  end
+end

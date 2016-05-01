@@ -1,0 +1,7 @@
+inherited frmMain_Windows: TfrmMain_Windows
+  DesignerMasterStyle = 0
+  inherited VertScrollBox1: TVertScrollBox
+    Viewport.Width = 855.000000000000000000
+    Viewport.Height = 409.000000000000000000
+  end
+end

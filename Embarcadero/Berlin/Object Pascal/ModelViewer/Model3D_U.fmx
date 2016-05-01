@@ -1,0 +1,300 @@
+object Model3DTest: TModel3DTest
+  Left = 0
+  Top = 0
+  Camera = MainCamera
+  Caption = 'Model3D'
+  ClientHeight = 422
+  ClientWidth = 661
+  UsingDesignCamera = False
+  FormFactor.Width = 1920
+  FormFactor.Height = 1080
+  FormFactor.Devices = [Desktop]
+  OnCreate = Form3DCreate
+  OnClose = Form3DClose
+  OnMouseDown = Form3DMouseDown
+  OnMouseMove = Form3DMouseMove
+  OnMouseUp = Form3DMouseUp
+  OnMouseWheel = Form3DMouseWheel
+  DesignerMasterStyle = 0
+  object theDummy: TDummy
+    Position.X = -3.000000000000000000
+    Width = 10.000000000000000000
+    Height = 10.000000000000000000
+    Depth = 10.000000000000000000
+  end
+  object DummyY: TDummy
+    Width = 1.000000000000000000
+    Height = 1.000000000000000000
+    Depth = 1.000000000000000000
+    object DummyX: TDummy
+      Width = 1.000000000000000000
+      Height = 1.000000000000000000
+      Depth = 1.000000000000000000
+      object MainCamera: TCamera
+        AngleOfView = 45.000000000000000000
+        Position.Z = -30.000000000000000000
+        Width = 1.000000000000000000
+        Height = 1.000000000000000000
+        Depth = 1.000000000000000000
+        object Light: TLight
+          Color = claWhite
+          LightType = Directional
+          SpotCutOff = 60.000000000000000000
+          SpotExponent = 4.000000000000000000
+          Width = 1.000000000000000000
+          Height = 1.000000000000000000
+          Depth = 1.000000000000000000
+        end
+      end
+    end
+  end
+  object GadgetsLayer3D: TLayer3D
+    Height = 90.000000000000000000
+    Position.X = 48.000000000000000000
+    Position.Y = 48.000000000000000000
+    Projection = Screen
+    Resolution = 50
+    StyleBook = mainStyleBook
+    StyleLookup = 'backgroundstyle'
+    Transparency = True
+    Width = 90.000000000000000000
+    object GadgetsCircle: TCircle
+      Fill.Color = xFFA2A9FF
+      Size.Width = 90.000000000000000000
+      Size.Height = 90.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object GadgetsLayout: TLayout
+        Align = Center
+        HitTest = True
+        Size.Width = 80.000000000000000000
+        Size.Height = 80.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object sbArrowDown: TSpeedButton
+          Position.X = 27.000000000000000000
+          Position.Y = 54.000000000000000000
+          Size.Width = 26.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = '26'
+          OnClick = ptArrowDownClick
+          object ptArrowDown: TPath
+            Data.Path = {
+              070000000000000050358AC296DAAE43010000002C6795C2B356B14301000000
+              7763A0C2E4D3AE4301000000E64E9CC272D5AD4301000000644C95C2B945AF43
+              01000000737F8EC272D5AD430300000050358AC296DAAE43}
+            Fill.Color = claWhite
+            HitTest = False
+            Size.Width = 26.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object sbArrowUp: TSpeedButton
+          Position.X = 27.000000000000000000
+          Size.Width = 26.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'sbArrowUp'
+          OnClick = ptArrowUpClick
+          object ptArrowUp: TPath
+            Data.Path = {
+              0700000000000000BCADB8C1A948B343010000004CE68BC18CCCB04301000000
+              43EA3FC15B4FB34301000000C98E60C1CD4DB443010000006E518CC186DDB243
+              010000003485A7C1CD4DB44303000000BCADB8C1A948B343}
+            Fill.Color = claWhite
+            Locked = True
+            HitTest = False
+            Size.Width = 26.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object sbArrowLeft: TSpeedButton
+          Position.Y = 27.000000000000000000
+          Size.Width = 26.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'sbArrowLeft'
+          OnClick = ptArrowLeftClick
+          object ptArrowLeft: TPath
+            Data.Path = {
+              07000000000000004A55ABC2DE3BAF4301000000BE45B5C2676FAC4301000000
+              813AABC254B0A94301000000B840A7C278B5AA4301000000D301ADC21976AC43
+              01000000B840A7C25529AE43030000004A55ABC2DE3BAF43}
+            Fill.Color = claWhite
+            HitTest = False
+            Size.Width = 26.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+        object sbArrowRight: TSpeedButton
+          Position.X = 54.000000000000000000
+          Position.Y = 27.000000000000000000
+          Size.Width = 26.000000000000000000
+          Size.Height = 26.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'sbArrowRight'
+          OnClick = ptArrowRightClick
+          object ptArrowRight: TPath
+            Data.Path = {
+              070000000000000030F879C2F1A2A94301000000471766C2686FAC4301000000
+              C12D7AC27B2EAF4301000000A91081C25729AE43010000001C9F76C2B668AC43
+              01000000A91081C27AB5AA430300000030F879C2F1A2A943}
+            Fill.Color = claWhite
+            HitTest = False
+            Size.Width = 26.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+          end
+        end
+      end
+    end
+    object mainStyleBook: TStyleBook
+      ResourcesBin = {
+        464D585F5354594C4520322E350106105370656564427574746F6E7374796C65
+        038504005450463007544C61796F757400095374796C654E616D650610537065
+        6564427574746F6E7374796C650A506F736974696F6E2E580500000000000000
+        A007400A506F736974696F6E2E590500000000000000A707400A53697A652E57
+        6964746805000000000000009205400B53697A652E4865696768740500000000
+        000000D003401453697A652E506C6174666F726D44656661756C740808546162
+        4F726465720200000A5452656374616E676C6500095374796C654E616D65060A
+        6261636B67726F756E6405416C69676E0706436C69656E740A46696C6C2E436F
+        6C6F720709784646454645464546074869745465737408074F70616369747905
+        000000000017B7D1F13F0A53697A652E57696474680500000000000000920540
+        0B53697A652E4865696768740500000000000000D003401453697A652E506C61
+        74666F726D44656661756C74080B5374726F6B652E4B696E6407044E6F6E6507
+        585261646975730500000000000000D002400759526164697573050000000000
+        0000D00240000F54466C6F6174416E696D6174696F6E00084475726174696F6E
+        050000000000CDCCCCFC3F0C50726F70657274794E616D6506074F7061636974
+        790A537461727456616C756505000000000000000000000953746F7056616C75
+        65050000000000000080FF3F0754726967676572061049734D6F7573654F7665
+        723D747275650E54726967676572496E7665727365061149734D6F7573654F76
+        65723D66616C736500000F54436F6C6F72416E696D6174696F6E000844757261
+        74696F6E050000000000CDCCCCFC3F0C50726F70657274794E616D65060A4669
+        6C6C2E436F6C6F720A537461727456616C756507097846464546454645460953
+        746F7056616C756507097846464646443534310754726967676572062049734D
+        6F7573654F7665723D747275653B4973507265737365643D66616C736500000F
+        54436F6C6F72416E696D6174696F6E00084475726174696F6E050000000000CD
+        CCCCFC3F0C50726F70657274794E616D65060A46696C6C2E436F6C6F720A5374
+        61727456616C756507097846464646443534310953746F7056616C7565070978
+        46464546454645460754726967676572062149734D6F7573654F7665723D6661
+        6C73653B4973507265737365643D66616C736500000F54436F6C6F72416E696D
+        6174696F6E00084475726174696F6E050000000000CDCCCCFC3F07496E766572
+        7365090C50726F70657274794E616D65060A46696C6C2E436F6C6F720A537461
+        727456616C756507097846464443414530440953746F7056616C756507097846
+        464646443534310754726967676572062049734D6F7573654F7665723D66616C
+        73653B4973507265737365643D7472756500000F54436F6C6F72416E696D6174
+        696F6E00084475726174696F6E050000000000CDCCCCFC3F0C50726F70657274
+        794E616D65060A46696C6C2E436F6C6F720A537461727456616C756507097846
+        464443414530440953746F7056616C7565070978464646464435343107547269
+        67676572061F49734D6F7573654F7665723D747275653B497350726573736564
+        3D7472756500000000}
+    end
+  end
+  object MainLayer3D: TLayer3D
+    Align = Right
+    Height = 422.000000000000000000
+    Position.X = 528.000000000000000000
+    Position.Y = 211.000000000000000000
+    Projection = Screen
+    Resolution = 50
+    StyleLookup = 'backgroundstyle'
+    Width = 266.000000000000000000
+    object StatusBar: TStatusBar
+      Position.Y = 400.000000000000000000
+      ShowSizeGrip = True
+      Size.Width = 266.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      object lblStatus: TLabel
+        Size.Width = 177.000000000000000000
+        Size.Height = 23.000000000000000000
+        Size.PlatformDefault = False
+        Text = 'Ready'
+      end
+    end
+    object lblScale: TLabel
+      Position.X = 16.000000000000000000
+      Position.Y = 137.000000000000000000
+      Size.Width = 153.000000000000000000
+      Size.Height = 31.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Scale :'
+    end
+    object spbClear: TSpeedButton
+      Position.X = 8.000000000000000000
+      Position.Y = 48.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Clear'
+      OnClick = spbClearClick
+    end
+    object spbLoadFromFile: TSpeedButton
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Load From File'
+      OnClick = spbLoadFromFileClick
+    end
+    object tbDimension: TTrackBar
+      Max = 4.000000000000000000
+      Min = -4.000000000000000000
+      Orientation = Horizontal
+      Position.X = 16.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 235.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      OnChange = tbDimensionChange
+    end
+    object spbEditMaterial: TSpeedButton
+      Position.X = 8.000000000000000000
+      Position.Y = 72.000000000000000000
+      Size.Width = 245.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Edit Material'
+      OnClick = spbEditMaterialClick
+    end
+    object MaterialDesignerLayout: TLayout
+      Align = Right
+      Position.X = 265.000000000000000000
+      Size.Width = 1.000000000000000000
+      Size.Height = 400.000000000000000000
+      Size.PlatformDefault = False
+      object ToolBarDone: TToolBar
+        Align = Bottom
+        Position.Y = 372.000000000000000000
+        Size.Width = 1.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object btnDone: TButton
+          Align = Left
+          Size.Width = 80.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          Text = 'Done'
+          OnClick = btnDoneClick
+        end
+      end
+      inline FrameMaterialDesigner1: TFrameMaterialDesigner
+        Align = Left
+        Size.Width = 266.000000000000000000
+        Size.Height = 372.000000000000000000
+        Size.PlatformDefault = False
+        inherited PanelOfProperties: TPanel
+          Size.Height = 301.000000000000000000
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,217 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Application Analytics Demo'
+  ClientHeight = 611
+  ClientWidth = 640
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnSaveState = FormSaveState
+  DesignerMasterStyle = 0
+  object ToolBar1: TToolBar
+    Size.Width = 640.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family, Style, FontColor]
+      Size.Width = 640.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.Font.Size = 17.000000000000000000
+      TextSettings.HorzAlign = Center
+      Text = 'AppAnalytics Demo'
+    end
+  end
+  object GroupBoxConnection: TGroupBox
+    Align = Top
+    Margins.Top = 15.000000000000000000
+    Position.Y = 63.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 226.000000000000000000
+    Size.PlatformDefault = False
+    Text = '  CONNECTION  '
+    TabOrder = 12
+    object EnableButton: TButton
+      Anchors = [akTop]
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 25.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Position.X = 196.000000000000000000
+      Position.Y = 32.000000000000000000
+      Size.Width = 249.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Enable Analytics'
+      OnClick = EnableButtonClick
+    end
+    object ClearSaveStateButton: TButton
+      Anchors = [akTop]
+      Margins.Left = 15.000000000000000000
+      Margins.Top = 25.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Position.X = 241.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 157.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 13
+      Text = 'Clear Permission'
+      OnClick = ClearSaveStateButtonClick
+    end
+    object Label2: TLabel
+      Anchors = [akLeft, akBottom]
+      StyledSettings = [Family, Size, FontColor]
+      Position.X = 8.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.HorzAlign = Center
+      Text = 'Status'
+    end
+    object EdStatus: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akBottom]
+      TabOrder = 16
+      ReadOnly = True
+      Text = 'disconnected'
+      TextSettings.HorzAlign = Center
+      Position.X = 8.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 121.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object EdUserID: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akRight, akBottom]
+      TabOrder = 15
+      ReadOnly = True
+      Text = '-'
+      TextSettings.Font.Family = 'Default'
+      TextSettings.HorzAlign = Center
+      Position.X = 456.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      StyledSettings = [Size, Style, FontColor]
+    end
+    object Label3: TLabel
+      Anchors = [akRight, akBottom]
+      StyledSettings = [Size, FontColor]
+      Position.X = 456.000000000000000000
+      Position.Y = 152.000000000000000000
+      Size.Width = 177.000000000000000000
+      Size.Height = 23.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Family = 'Default'
+      TextSettings.Font.Style = [fsBold]
+      TextSettings.HorzAlign = Center
+      Text = 'User ID'
+    end
+    object RefreshButton: TButton
+      Anchors = [akLeft, akBottom]
+      Position.X = 136.000000000000000000
+      Position.Y = 168.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'refreshtoolbutton'
+      TabOrder = 17
+      Text = 'RefreshButton'
+      OnClick = RefreshButtonClick
+    end
+  end
+  object GroupBoxActions: TGroupBox
+    Align = Bottom
+    Position.Y = 306.000000000000000000
+    Size.Width = 640.000000000000000000
+    Size.Height = 305.000000000000000000
+    Size.PlatformDefault = False
+    Text = '  ACTIONS  '
+    TabOrder = 13
+    object MainFormEdit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Bottom
+      TabOrder = 5
+      Position.X = 15.000000000000000000
+      Position.Y = 41.000000000000000000
+      Margins.Left = 15.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 25.000000000000000000
+      Size.Width = 610.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Detects Control Focus'
+    end
+    object LaunchForm2Button: TButton
+      Align = Bottom
+      Margins.Left = 15.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 25.000000000000000000
+      Position.X = 15.000000000000000000
+      Position.Y = 167.000000000000000000
+      Size.Width = 610.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Launch Form 2'
+      OnClick = LaunchForm2ButtonClick
+    end
+    object RaiseExceptionButton: TButton
+      Align = Bottom
+      Margins.Left = 15.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 25.000000000000000000
+      Position.X = 15.000000000000000000
+      Position.Y = 98.000000000000000000
+      Size.Width = 610.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Text = 'Raise and Log Exception '
+      OnClick = RaiseExceptionButtonClick
+    end
+    object CustomEventButton: TButton
+      Align = Bottom
+      Margins.Left = 15.000000000000000000
+      Margins.Right = 15.000000000000000000
+      Margins.Bottom = 25.000000000000000000
+      Position.X = 15.000000000000000000
+      Position.Y = 236.000000000000000000
+      Size.Width = 610.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Record Custom Event'
+      OnClick = CustomEventButtonClick
+    end
+  end
+  object AppAnalytics1: TAppAnalytics
+    UpdateInterval = 10000
+    CacheSize = 10
+    Options = [AppStart, AppExit, ControlFocused, WindowActivated, Exception]
+    PrivacyMessage.Strings = (
+      'Privacy Notice'
+      ''
+      
+        'To help improve this program, this application can collect anony' +
+        'mous usage'
+      
+        'information. No information is collected that can identify an in' +
+        'dividual user.'
+      ''
+      'Do you want to allow this usage data collection?')
+    Left = 40
+    Top = 80
+  end
+end

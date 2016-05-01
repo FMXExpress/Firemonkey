@@ -1,0 +1,56 @@
+inherited SettingsForm_LgXhdpiPh: TSettingsForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited TabItem1: TTabItem
+      inherited ToolBar1: TToolBar
+        Size.Width = 480.000000000000000000
+        inherited SettingsMain: TLabel
+          Size.Width = 480.000000000000000000
+        end
+      end
+      inherited SettingsList1: TListBox
+        Size.Width = 480.000000000000000000
+        Size.Height = 781.000000000000000000
+        inherited AccountInfo: TListBoxGroupHeader
+          Size.Width = 440.000000000000000000
+        end
+        inherited AccountType: TListBoxItem
+          Size.Width = 440.000000000000000000
+        end
+        inherited PaymentType: TListBoxItem
+          Size.Width = 440.000000000000000000
+        end
+        inherited RenewalType: TListBoxItem
+          Size.Width = 440.000000000000000000
+        end
+        inherited SyncSettings: TListBoxGroupHeader
+          Size.Width = 440.000000000000000000
+        end
+        inherited SyncUSB: TListBoxItem
+          Size.Width = 440.000000000000000000
+        end
+        inherited SyncWifi: TListBoxItem
+          Size.Width = 440.000000000000000000
+        end
+        inherited SyncCollections: TListBoxItem
+          Size.Width = 440.000000000000000000
+        end
+      end
+    end
+    inherited TabItem2: TTabItem
+      inherited ToolBar2: TToolBar
+        Size.Width = 480.000000000000000000
+        inherited SettingsDetails: TLabel
+          Size.Width = 480.000000000000000000
+        end
+      end
+      inherited SettingsList2: TListBox
+        Size.Width = 470.000000000000000000
+      end
+    end
+  end
+end

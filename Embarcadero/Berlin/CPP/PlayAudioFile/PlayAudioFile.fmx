@@ -1,0 +1,52 @@
+object AudioPlayBackForm: TAudioPlayBackForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 3
+  object ToolBar1: TToolBar
+    Size.Width = 384.000000000000000000
+    Size.Height = 48.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Title: TLabel
+      Align = Contents
+      Size.Width = 384.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Play Audio'
+    end
+    object btnStop: TSpeedButton
+      Align = Left
+      Margins.Left = 7.000000000000000000
+      Position.X = 7.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'stoptoolbuttonbordered'
+      Text = 'btnStop'
+      OnClick = btnStopClick
+    end
+    object btnPlay: TSpeedButton
+      Align = Right
+      Margins.Right = 7.000000000000000000
+      Position.X = 329.000000000000000000
+      Size.Width = 48.000000000000000000
+      Size.Height = 48.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'playtoolbuttonbordered'
+      Text = 'btnPlay'
+      OnClick = btnPlayClick
+    end
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 160
+    Top = 168
+  end
+end

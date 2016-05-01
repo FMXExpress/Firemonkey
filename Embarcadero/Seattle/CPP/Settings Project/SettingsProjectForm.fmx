@@ -1,0 +1,443 @@
+object SettingsForm: TSettingsForm
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 3
+  object TabControl1: TTabControl
+    Align = Client
+    FullSize = True
+    Size.Width = 384.000000000000000000
+    Size.Height = 567.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 0
+    TabOrder = 0
+    TabPosition = None
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Profile'
+      object ToolBar1: TToolBar
+        Size.Width = 384.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object SettingsMain: TLabel
+          Align = Client
+          Size.Width = 384.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Settings Page'
+        end
+      end
+      object SettingsList1: TListBox
+        Align = Client
+        Size.Width = 384.000000000000000000
+        Size.Height = 519.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        object AccountInfo: TListBoxGroupHeader
+          Height = 30.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 0
+          Text = 'Account Information'
+        end
+        object AccountType: TListBoxItem
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Personal'
+          ItemData.Accessory = aMore
+          Position.Y = 30.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 1
+          Text = 'Account Type'
+          OnClick = ListBoxItemTab1Click
+        end
+        object PaymentType: TListBoxItem
+          StyledSettings = [Family, Size, Style, FontColor]
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Credit Card'
+          ItemData.Accessory = aDetail
+          Position.Y = 74.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 2
+          Text = 'Payment Type  '
+          OnClick = ListBoxItemTab1Click
+        end
+        object RenewalType: TListBoxItem
+          StyledSettings = [Family, Size, Style]
+          Height = 44.000000000000000000
+          ItemData.Detail = 'Monthly'
+          ItemData.Accessory = aMore
+          Position.Y = 118.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemrightdetail'
+          TabOrder = 3
+          Text = 'Renewal Type'
+          OnClick = ListBoxItemTab1Click
+        end
+        object SyncSettings: TListBoxGroupHeader
+          Height = 30.000000000000000000
+          Position.Y = 162.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 4
+          Text = 'Synchronisation Settings'
+        end
+        object SyncUSB: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 192.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 5
+          Text = 'Sync via USB'
+          object Switch1: TSwitch
+            Align = Right
+            IsChecked = False
+            Margins.Right = 10.000000000000000000
+            Position.X = 258.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 76.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            TouchTargetExpansion.Left = 6.000000000000000000
+            TouchTargetExpansion.Top = 6.000000000000000000
+            TouchTargetExpansion.Right = 6.000000000000000000
+            TouchTargetExpansion.Bottom = 6.000000000000000000
+          end
+        end
+        object SyncWifi: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 236.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 6
+          Text = 'Sync over Wifi'
+          object Switch2: TSwitch
+            Align = Right
+            IsChecked = False
+            Margins.Right = 10.000000000000000000
+            Position.X = 258.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 76.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            TouchTargetExpansion.Left = 6.000000000000000000
+            TouchTargetExpansion.Top = 6.000000000000000000
+            TouchTargetExpansion.Right = 6.000000000000000000
+            TouchTargetExpansion.Bottom = 6.000000000000000000
+          end
+        end
+        object SyncCollections: TListBoxItem
+          Selectable = False
+          Height = 44.000000000000000000
+          Position.Y = 280.000000000000000000
+          Size.Width = 344.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 7
+          Text = 'Sync Collections'
+          object Switch3: TSwitch
+            Align = Right
+            IsChecked = False
+            Margins.Right = 10.000000000000000000
+            Position.X = 258.000000000000000000
+            Position.Y = 9.000000000000000000
+            Size.Width = 76.000000000000000000
+            Size.Height = 26.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            TouchTargetExpansion.Left = 6.000000000000000000
+            TouchTargetExpansion.Top = 6.000000000000000000
+            TouchTargetExpansion.Right = 6.000000000000000000
+            TouchTargetExpansion.Bottom = 6.000000000000000000
+          end
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Downloads'
+      object ToolBar2: TToolBar
+        Padding.Left = 7.000000000000000000
+        Padding.Right = 7.000000000000000000
+        Size.Width = 384.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object SettingsDetails: TLabel
+          Align = Contents
+          Size.Width = 384.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Settings Details'
+        end
+        object BackButton: TSpeedButton
+          Action = ChangeTabAction1
+          Align = Left
+          Enabled = True
+          Position.X = 7.000000000000000000
+          Size.Width = 66.000000000000000000
+          Size.Height = 48.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'backtoolbutton'
+          Visible = True
+        end
+      end
+      object SettingsList2: TListBox
+        Align = Top
+        Margins.Left = 5.000000000000000000
+        Margins.Top = 15.000000000000000000
+        Margins.Right = 5.000000000000000000
+        Position.X = 5.000000000000000000
+        Position.Y = 63.000000000000000000
+        Size.Width = 374.000000000000000000
+        Size.Height = 192.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'transparentlistboxstyle'
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        GroupingKind = Grouped
+        object AcctTypes: TListBoxGroupHeader
+          Height = 30.000000000000000000
+          Size.Width = 334.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxgroupheader'
+          TabOrder = 0
+          Text = 'Account Type'
+        end
+        object SelectAcctType: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 30.000000000000000000
+          Size.Width = 334.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 1
+          Text = 'Select Type'
+          object AcctCombo: TComboBox
+            Align = VertCenter
+            DisableFocusEffect = False
+            ItemIndex = 1
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 174.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Business: TListBoxItem
+              Height = 44.000000000000000000
+              Size.Width = 19.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Business'
+            end
+            object Personal: TListBoxItem
+              Height = 44.000000000000000000
+              IsSelected = True
+              Size.Width = 19.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Personal'
+            end
+          end
+        end
+        object SelectPayment: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 74.000000000000000000
+          Size.Width = 334.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 2
+          Text = 'Select Payment'
+          object PaymentCombo: TComboBox
+            Align = VertCenter
+            DisableFocusEffect = False
+            ItemIndex = 0
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 174.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object CreditCard: TListBoxItem
+              Height = 44.000000000000000000
+              IsSelected = True
+              Size.Width = 19.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Credit Card'
+            end
+            object Check: TListBoxItem
+              Height = 44.000000000000000000
+              Size.Width = 19.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Check'
+            end
+          end
+        end
+        object SelectRenewal: TListBoxItem
+          Height = 44.000000000000000000
+          Position.Y = 118.000000000000000000
+          Size.Width = 334.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemnodetail'
+          TabOrder = 3
+          Text = 'Select Renewal'
+          object RenewalCombo: TComboBox
+            Align = VertCenter
+            DisableFocusEffect = False
+            ItemIndex = 0
+            Margins.Left = 150.000000000000000000
+            Margins.Right = 10.000000000000000000
+            Position.X = 150.000000000000000000
+            Position.Y = 6.000000000000000000
+            Size.Width = 174.000000000000000000
+            Size.Height = 32.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object Monthly: TListBoxItem
+              Height = 44.000000000000000000
+              IsSelected = True
+              Size.Width = 19.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Text = 'Monthly'
+            end
+            object Annually: TListBoxItem
+              Height = 44.000000000000000000
+              Size.Width = 19.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Annually'
+            end
+            object Quarterly: TListBoxItem
+              Height = 44.000000000000000000
+              Size.Width = 19.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Text = 'Quarterly'
+            end
+          end
+        end
+      end
+    end
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 164
+    Top = 413
+    object LinkFillControlToPropertyItemDataDetail: TLinkFillControlToProperty
+      Category = 'Quick Bindings'
+      Track = True
+      Control = AcctCombo
+      Component = AccountType
+      ComponentProperty = 'ItemData.Detail'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToPropertyItemDataDetail2: TLinkFillControlToProperty
+      Category = 'Quick Bindings'
+      Track = True
+      Control = PaymentCombo
+      Component = PaymentType
+      ComponentProperty = 'ItemData.Detail'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkFillControlToPropertyItemDataDetail3: TLinkFillControlToProperty
+      Category = 'Quick Bindings'
+      Track = True
+      Control = RenewalCombo
+      Component = RenewalType
+      ComponentProperty = 'ItemData.Detail'
+      AutoFill = True
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+  object ActionList1: TActionList
+    Left = 240
+    Top = 392
+    object ChangeTabAction1: TChangeTabAction
+      CustomText = 'Back'
+      Tab = TabItem1
+    end
+    object ChangeTabAction2: TChangeTabAction
+      Tab = TabItem2
+    end
+  end
+end

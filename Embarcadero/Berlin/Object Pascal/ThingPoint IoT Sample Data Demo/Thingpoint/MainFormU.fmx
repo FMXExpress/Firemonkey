@@ -1,0 +1,179 @@
+object ThingpointForm: TThingpointForm
+  Left = 0
+  Top = 0
+  Caption = 'Thingpoint'
+  ClientHeight = 622
+  ClientWidth = 605
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  ShowHint = False
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  inline EMSServerConnectionFrame1: TEMSServerConnectionFrame
+    Position.X = 7.000000000000000000
+    Position.Y = 13.000000000000000000
+    Size.Width = 255.000000000000000000
+    Size.Height = 196.000000000000000000
+    Size.PlatformDefault = False
+    inherited Layout1: TLayout
+      Size.Width = 249.000000000000000000
+      Size.Height = 190.000000000000000000
+      inherited GroupBox1: TGroupBox
+        Size.Width = 249.000000000000000000
+        Size.Height = 190.000000000000000000
+      end
+    end
+  end
+  inline EMSEdgeModuleListenerFrame1: TEMSEdgeModuleListenerFrame
+    Position.X = 273.000000000000000000
+    Position.Y = 13.000000000000000000
+    Size.Width = 312.000000000000000000
+    Size.Height = 196.000000000000000000
+    Size.PlatformDefault = False
+    inherited Layout1: TLayout
+      Size.Width = 306.000000000000000000
+      Size.Height = 190.000000000000000000
+      inherited GroupBox2: TGroupBox
+        Size.Width = 306.000000000000000000
+        Size.Height = 190.000000000000000000
+        inherited ButtonTestVersion: TButton
+          Position.X = 160.000000000000000000
+          Position.Y = 152.000000000000000000
+        end
+        inherited ButtonGetLocal: TButton
+          Size.Width = 57.000000000000000000
+        end
+      end
+    end
+  end
+  object TabControl1: TTabControl
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 216.000000000000000000
+    Size.Width = 584.000000000000000000
+    Size.Height = 230.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 4
+    TabPosition = PlatformDefault
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 76.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Heart Rate'
+      ExplicitSize.cx = 76.000000000000000000
+      ExplicitSize.cy = 24.000000000000000000
+      inline HeartRateFrame: TStreamingDeviceFrame
+        Align = Client
+        Size.Width = 584.000000000000000000
+        Size.Height = 204.000000000000000000
+        Size.PlatformDefault = False
+        inherited Layout3: TLayout
+          Size.Width = 578.000000000000000000
+          Size.Height = 198.000000000000000000
+          inherited Layout2: TLayout
+            Size.Width = 578.000000000000000000
+            Size.Height = 165.000000000000000000
+            inherited Memo1: TMemo
+              Size.Width = 578.000000000000000000
+              Size.Height = 132.000000000000000000
+              Viewport.Width = 574.000000000000000000
+              Viewport.Height = 128.000000000000000000
+            end
+            inherited Layout4: TLayout
+              Position.Y = 132.000000000000000000
+              Size.Width = 578.000000000000000000
+              inherited ButtonClear: TButton
+                Position.X = 495.000000000000000000
+              end
+            end
+          end
+          inherited Layout1: TLayout
+            Size.Width = 578.000000000000000000
+            inherited ButtonStartStop: TButton
+              Position.X = 495.000000000000000000
+            end
+          end
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 99.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Blood Pressure'
+      ExplicitSize.cx = 99.000000000000000000
+      ExplicitSize.cy = 24.000000000000000000
+      inline BloodPressureFrame: TNotifyDeviceFrame
+        Align = Client
+        Size.Width = 50.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        inherited Layout3: TLayout
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          inherited Layout2: TLayout
+            Size.Width = 44.000000000000000000
+            Size.Height = 11.000000000000000000
+            inherited Memo1: TMemo
+              Size.Width = 44.000000000000000000
+              Size.Height = -22.000000000000000000
+              Viewport.Width = 44.000000000000000000
+              Viewport.Height = 0.000000000000000000
+            end
+            inherited Layout4: TLayout
+              Position.Y = -22.000000000000000000
+              Size.Width = 44.000000000000000000
+              inherited ButtonClear: TButton
+                Position.X = -39.000000000000000000
+              end
+            end
+          end
+          inherited Layout1: TLayout
+            Size.Width = 44.000000000000000000
+            inherited ButtonNotify: TButton
+              Position.X = -39.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+  object Layout1: TLayout
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 456.000000000000000000
+    Size.Width = 585.000000000000000000
+    Size.Height = 159.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    inline EMSEdgeLoggingFrame1: TEMSEdgeLoggingFrame
+      Align = Client
+      Size.Width = 585.000000000000000000
+      Size.Height = 159.000000000000000000
+      Size.PlatformDefault = False
+      inherited Memo1: TMemo
+        Size.Height = 112.000000000000000000
+        Viewport.Width = 575.000000000000000000
+        Viewport.Height = 108.000000000000000000
+      end
+      inherited Layout1: TLayout
+        Position.Y = 121.000000000000000000
+        inherited CheckBoxLogging: TCheckBox
+          IsChecked = True
+        end
+      end
+    end
+  end
+end

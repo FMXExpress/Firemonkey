@@ -1,0 +1,41 @@
+inherited FrDeviceExplorer_NmXhdpiPh: TFrDeviceExplorer_NmXhdpiPh
+  ClientHeight = 375
+  ClientWidth = 640
+  DesignerMasterStyle = 0
+  inherited ScrollBox1: TScrollBox
+    Size.Width = 640.000000000000000000
+    Size.Height = 375.000000000000000000
+    Viewport.Width = 635.000000000000000000
+    Viewport.Height = 370.000000000000000000
+    inherited Panel2: TPanel
+      inherited TvCharacteristics: TTreeView
+        Viewport.Width = 544.000000000000000000
+        Viewport.Height = 380.000000000000000000
+      end
+    end
+    inherited Panel1: TPanel
+      inherited Panel4: TPanel
+        inherited CbDevices: TComboBox
+          Size.Height = 32.000000000000000000
+        end
+      end
+      inherited Panel5: TPanel
+        inherited EdCurrentDevice: TEdit
+          Size.Height = 32.000000000000000000
+        end
+      end
+    end
+    inherited Panel6: TPanel
+      inherited ScrollBox2: TScrollBox
+        Viewport.Width = 386.000000000000000000
+        Viewport.Height = 434.000000000000000000
+        inherited Panel8: TPanel
+          inherited LbCurrentValue: TListBox
+            Viewport.Width = 212.000000000000000000
+            Viewport.Height = 162.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

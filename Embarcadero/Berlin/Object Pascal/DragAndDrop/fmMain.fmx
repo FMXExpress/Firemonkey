@@ -1,0 +1,61 @@
+object Form3: TForm3
+  Left = 0
+  Top = 0
+  ActiveControl = TextEdit
+  Caption = 'Form3'
+  ClientHeight = 241
+  ClientWidth = 282
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = UpdateTextControl
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Client
+    Size.Width = 282.000000000000000000
+    Size.Height = 128.000000000000000000
+    Size.PlatformDefault = False
+    object TextControl: TText
+      Align = Client
+      Size.Width = 282.000000000000000000
+      Size.Height = 128.000000000000000000
+      Size.PlatformDefault = False
+      OnMouseDown = TextControlMouseDown
+    end
+  end
+  object Panel1: TPanel
+    Align = Top
+    Size.Width = 282.000000000000000000
+    Size.Height = 113.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ImageRadioButton: TRadioButton
+      Position.X = 8.000000000000000000
+      Position.Y = 80.000000000000000000
+      TabOrder = 0
+      Text = 'Drag as image'
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'Input text to transfer'
+    end
+    object TextEdit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Position.X = 8.000000000000000000
+      Position.Y = 24.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      OnChangeTracking = UpdateTextControl
+    end
+    object TextRadioButton: TRadioButton
+      IsChecked = True
+      Position.X = 8.000000000000000000
+      Position.Y = 56.000000000000000000
+      TabOrder = 3
+      Text = 'Drag as text'
+    end
+  end
+end

@@ -1,0 +1,68 @@
+inherited Form1_iPhone: TForm1_iPhone
+  ClientHeight = 460
+  ClientWidth = 320
+  DesignerMasterStyle = 0
+  inherited LabelSourceExpressions: TLabel
+    Visible = False
+  end
+  inherited LabelControlExpression: TLabel
+    Visible = False
+  end
+  inherited EditControlExpression: TEdit
+    Text = 'Control Expression:'
+    Position.X = 32.000000000000000000
+    Size.Width = 260.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited LabelControlComponent: TLabel
+    Visible = False
+  end
+  inherited EditControlComponent: TEdit
+    Text = 'Control Component:'
+    Position.X = 32.000000000000000000
+    Size.Width = 260.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited LabelSourceComponent: TLabel
+    Visible = False
+  end
+  inherited EditSourceExpression: TEdit
+    Text = 'Source Expression:'
+    Position.X = 32.000000000000000000
+    Size.Width = 260.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited ButtonEvaluate: TButton
+    Position.Y = 228.000000000000000000
+  end
+  inherited EditSourceComponentName: TEdit
+    Text = 'Source Component:'
+    Position.X = 32.000000000000000000
+    Size.Width = 260.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Viewport.Width = 561.000000000000000000
+    Viewport.Height = 181.000000000000000000
+  end
+  inherited ComboBox1: TComboBox
+    Align = Top
+    Items.Strings = (
+      'Collection:')
+    ItemIndex = 0
+    Size.Width = 320.000000000000000000
+    Size.Height = 30.000000000000000000
+  end
+  inherited CheckBoxAutoFill: TCheckBox
+    Position.Y = 252.000000000000000000
+  end
+  inherited ButtonClear: TButton
+    Position.Y = 228.000000000000000000
+  end
+  inherited Label1: TLabel
+    Visible = False
+  end
+  inherited CheckBoxAutoActivate: TCheckBox
+    Position.Y = 188.000000000000000000
+  end
+end

@@ -1,0 +1,15 @@
+inherited TapHold_LgXhdpiPh: TTapHold_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited Image1: TImage
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+    inherited Title: TLabel
+      Size.Width = 480.000000000000000000
+    end
+  end
+end

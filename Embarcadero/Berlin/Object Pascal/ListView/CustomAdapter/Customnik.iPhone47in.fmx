@@ -1,0 +1,23 @@
+inherited Form3_iPhone47in: TForm3_iPhone47in
+  ClientHeight = 647
+  ClientWidth = 375
+  DesignerMasterStyle = 3
+  inherited Label1: TLabel
+    StyledSettings = [Family, Style, FontColor]
+    Size.Width = 148.000000000000000000
+    Size.Height = 587.000000000000000000
+    TextSettings.Font.Size = 11.000000000000000000
+  end
+  inherited Layout1: TLayout
+    Size.Width = 217.000000000000000000
+    Size.Height = 597.000000000000000000
+  end
+  inherited Layout2: TLayout
+    Position.Y = 597.000000000000000000
+    Size.Width = 375.000000000000000000
+  end
+  inherited BackdropSource: TImage
+    MultiResBitmap.Height = 64
+    MultiResBitmap.Width = 64
+  end
+end

@@ -1,0 +1,118 @@
+object ActiveForm: TActiveForm
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = Single
+  Caption = 'ActiveForm'
+  ClientHeight = 201
+  ClientWidth = 351
+  Padding.Left = 8.000000000000000000
+  Padding.Top = 8.000000000000000000
+  Padding.Right = 8.000000000000000000
+  Padding.Bottom = 8.000000000000000000
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  FormFamily = 'TForm'
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Align = Top
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Screen.ActiveForm.Name'
+  end
+  object Label2: TLabel
+    Align = Top
+    Position.X = 8.000000000000000000
+    Position.Y = 45.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Screen.ActiveForm.Caption'
+  end
+  object Label3: TLabel
+    Align = Top
+    Position.X = 8.000000000000000000
+    Position.Y = 82.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Screen.FocusControl.Name'
+  end
+  object Label4: TLabel
+    Align = Top
+    Position.X = 8.000000000000000000
+    Position.Y = 119.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Screen.FocusControl.ClassName'
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    ReadOnly = True
+    Position.X = 8.000000000000000000
+    Position.Y = 23.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    ReadOnly = True
+    Position.X = 8.000000000000000000
+    Position.Y = 60.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit3: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    ReadOnly = True
+    Position.X = 8.000000000000000000
+    Position.Y = 97.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Edit4: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    Align = Top
+    ReadOnly = True
+    Position.X = 8.000000000000000000
+    Position.Y = 134.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Layout1: TLayout
+    Align = Bottom
+    Position.X = 8.000000000000000000
+    Position.Y = 168.000000000000000000
+    Size.Width = 335.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    object SpeedButton1: TSpeedButton
+      Align = Right
+      Position.X = 255.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Close'
+      OnClick = SpeedButton1Click
+    end
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 272
+    Top = 64
+  end
+end

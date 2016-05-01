@@ -1,0 +1,48 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 532
+  ClientWidth = 321
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Panel1: TPanel
+    Align = Client
+    Size.Width = 321.000000000000000000
+    Size.Height = 532.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Button1: TButton
+      Size.Width = 161.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Start Discovery'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Position.X = 160.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Cancel Discovery'
+      OnClick = Button2Click
+    end
+    object ListBox1: TListBox
+      Position.Y = 40.000000000000000000
+      Size.Width = 326.000000000000000000
+      Size.Height = 492.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      Viewport.Width = 322.000000000000000000
+      Viewport.Height = 488.000000000000000000
+    end
+  end
+end

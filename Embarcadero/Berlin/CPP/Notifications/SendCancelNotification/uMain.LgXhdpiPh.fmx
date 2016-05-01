@@ -1,0 +1,39 @@
+inherited NotificationsForm_LgXhdpiPh: TNotificationsForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited btnSendScheduledNotification: TButton
+    Position.Y = 58.000000000000000000
+    Size.Width = 430.000000000000000000
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 450.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited btnSendNotificationImmediately: TButton
+    Position.Y = 112.000000000000000000
+    Size.Width = 430.000000000000000000
+  end
+  inherited ToolBar2: TToolBar
+    Position.Y = 647.000000000000000000
+    Size.Width = 450.000000000000000000
+    Size.Height = 48.000000000000000000
+    inherited SpeedButton1: TSpeedButton
+      Size.Height = 48.000000000000000000
+    end
+    inherited SpeedButton2: TSpeedButton
+      Position.X = 234.000000000000000000
+      Size.Height = 48.000000000000000000
+    end
+  end
+  inherited Memo1: TMemo
+    Size.Width = 417.000000000000000000
+    Size.Height = 497.000000000000000000
+    Viewport.Width = 409.000000000000000000
+    Viewport.Height = 489.000000000000000000
+  end
+end

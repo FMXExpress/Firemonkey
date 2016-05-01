@@ -1,0 +1,66 @@
+object EMSServerConnectionFrame: TEMSServerConnectionFrame
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Margins.Left = 3.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 234.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    object GroupBox1: TGroupBox
+      Align = Client
+      Size.Width = 314.000000000000000000
+      Size.Height = 234.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Connection to EMS Server'
+      TabOrder = 0
+      object ButtonTestConnection: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 132.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Test'
+        OnClick = ButtonTestConnectionClick
+      end
+      object EditURLHost: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Text = 'localhost'
+        Position.X = 8.000000000000000000
+        Position.Y = 40.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditURLHostChange
+        object LabelURLHost: TLabel
+          Position.Y = -20.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'Host'
+        end
+      end
+      object EditURLPort: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Text = '8080'
+        Position.X = 8.000000000000000000
+        Position.Y = 93.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        OnChange = EditURLPortChange
+        object LabelURLPort: TLabel
+          Position.Y = -20.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'Port'
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,55 @@
+object Form5: TForm5
+  Left = 0
+  Top = 0
+  Caption = 'Form5'
+  ClientHeight = 480
+  ClientWidth = 326
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object BeaconType: TLabel
+    StyledSettings = [Family, Style, FontColor, Other]
+    Position.X = 18.000000000000000000
+    Position.Y = 175.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'BeaconType'
+  end
+  object Button1: TButton
+    Anchors = [akLeft]
+    StyledSettings = [Family, Style, FontColor]
+    Position.X = -19.000000000000000000
+    Size.Width = 344.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'STOP'
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = Button1Click
+  end
+  object Company: TLabel
+    StyledSettings = [Family, Style, FontColor, Other]
+    Position.X = 18.000000000000000000
+    Position.Y = 63.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'Company'
+  end
+  object MajorMinor: TLabel
+    StyledSettings = [Family, Style, FontColor, Other]
+    Position.X = 18.000000000000000000
+    Position.Y = 287.000000000000000000
+    Size.Width = 289.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 20.000000000000000000
+    Text = 'MajorMinor'
+  end
+end

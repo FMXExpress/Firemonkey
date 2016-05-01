@@ -1,0 +1,46 @@
+﻿	<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+		<Import Condition="Exists('$(BDS)\bin\CodeGear.Deployment.targets')" Project="$(BDS)\bin\CodeGear.Deployment.targets"/>
+		<ProjectExtensions>
+			<ProjectFileVersion>12</ProjectFileVersion>
+		</ProjectExtensions>
+		<ItemGroup Condition="'$(Platform)'=='Win64'"/>
+		<ItemGroup Condition="'$(Platform)'=='OSX32'">
+			<DeployFile Condition="'$(Config)'=='Debug'" Include="OSX32\Debug\RegExpressionDemo.icns">
+				<RemoteDir>RegExpressionDemo.app\Contents\Resources\</RemoteDir>
+				<RemoteName>RegExpressionDemo.icns</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+			<DeployFile Include="$(BDS)\Redist\osx32\libcgunwind.1.0.dylib">
+				<RemoteDir>RegExpressionDemo.app\Contents\MacOS\</RemoteDir>
+				<RemoteName>libcgunwind.1.0.dylib</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+			<DeployFile Condition="'$(Config)'=='Debug'" Include="OSX32\Debug\RegExpressionDemo.rsm">
+				<RemoteDir>RegExpressionDemo.app\Contents\MacOS\</RemoteDir>
+				<RemoteName>RegExpressionDemo.rsm</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+			<DeployFile Condition="'$(Config)'=='Debug'" Include="OSX32\Debug\RegExpressionDemo">
+				<RemoteDir>RegExpressionDemo.app\Contents\MacOS\</RemoteDir>
+				<RemoteName>RegExpressionDemo</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+				<Required>True</Required>
+			</DeployFile>
+			<DeployFile Condition="'$(Config)'=='Debug'" Include="OSX32\Debug\RegExpressionDemo.info.plist">
+				<RemoteDir>RegExpressionDemo.app\Contents\</RemoteDir>
+				<RemoteName>Info.plist</RemoteName>
+				<Operation>1</Operation>
+				<LocalCommand/>
+				<RemoteCommand/>
+			</DeployFile>
+		</ItemGroup>
+		<ItemGroup Condition="'$(Platform)'=='Win32'"/>
+	</Project>

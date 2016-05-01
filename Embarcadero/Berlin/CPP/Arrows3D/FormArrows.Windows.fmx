@@ -1,0 +1,13 @@
+inherited FormArrows3d_Windows: TFormArrows3d_Windows
+  DesignerMasterStyle = 0
+  inherited Viewport3D1: TViewport3D
+    inherited Dummy1: TDummy
+      inherited CylY: TCylinder
+        Quanternion = '(0,0,0.70710676908493,0.70710676908493)'
+      end
+      inherited CylZ: TCylinder
+        Quanternion = '(0.707106709480286,0,0,-0.707106828689575)'
+      end
+    end
+  end
+end

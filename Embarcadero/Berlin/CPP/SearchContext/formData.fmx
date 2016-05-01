@@ -1,0 +1,122 @@
+object frmData: TfrmData
+  Left = 0
+  Top = 0
+  Caption = 'Data Entry'
+  ClientHeight = 376
+  ClientWidth = 478
+  FormFactor.Width = 1920
+  FormFactor.Height = 1047
+  FormFactor.Devices = [dkDesktop]
+  object ImageControl1: TImageControl
+    DisableFocusEffect = False
+    Height = 50.000000000000000000
+    Position.X = 352.000000000000000000
+    Position.Y = 152.000000000000000000
+    Width = 50.000000000000000000
+    object Label3: TLabel
+      Height = 15.000000000000000000
+      Position.Y = -16.000000000000000000
+      Text = 'Icon'
+      Width = 120.000000000000000000
+    end
+  end
+  object Edit2: TEdit
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    Position.X = 112.000000000000000000
+    Position.Y = 96.000000000000000000
+    Width = 200.000000000000000000
+    Height = 22.000000000000000000
+    object Label2: TLabel
+      Height = 15.000000000000000000
+      Position.Y = -16.000000000000000000
+      Text = 'Description'
+      Width = 120.000000000000000000
+    end
+  end
+  object Edit1: TEdit
+    DisableFocusEffect = False
+    KeyboardType = vktDefault
+    Password = False
+    Position.X = 112.000000000000000000
+    Position.Y = 41.000000000000000000
+    Width = 200.000000000000000000
+    Height = 22.000000000000000000
+    object Label1: TLabel
+      Height = 15.000000000000000000
+      Position.Y = -17.000000000000000000
+      Text = 'Category'
+      Width = 120.000000000000000000
+    end
+  end
+  object Label4: TLabel
+    Height = 15.000000000000000000
+    Position.X = 112.000000000000000000
+    Position.Y = 136.000000000000000000
+    Text = 'Search Terms'
+    Width = 120.000000000000000000
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [igPan]
+      Height = 153.000000000000000000
+      Position.Y = 16.000000000000000000
+      Width = 201.000000000000000000
+      DisableFocusEffect = False
+      KeyboardType = vktDefault
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 48
+    Top = 168
+  end
+  object NavigatorBindSourceDB1: TBindNavigator
+    Align = alBottom
+    Height = 25.000000000000000000
+    Position.Y = 351.000000000000000000
+    Width = 478.000000000000000000
+    DataSource = BindSourceDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = dtmdlData.cdsIconData
+    ScopeMappings = <>
+    Left = 48
+    Top = 96
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    UseAppManager = True
+    Left = 20
+    Top = 5
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Category'
+      Control = Edit1
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Description'
+      Control = Edit2
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'SearchTerms'
+      Control = Memo1
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'Icon'
+      Control = ImageControl1
+      Track = False
+    end
+  end
+end

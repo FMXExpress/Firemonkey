@@ -1,0 +1,56 @@
+inherited TFMXMusicPlayerFrm_LgXhdpiPh: TTFMXMusicPlayerFrm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited tcUITabs: TTabControl
+    Size.Width = 480.000000000000000000
+    Size.Height = 829.000000000000000000
+    inherited tiAlbums: TTabItem
+      Size.Width = 120.000000000000000000
+      inherited lvAlbums: TListView
+        Size.Width = 480.000000000000000000
+        Size.Height = 780.000000000000000000
+      end
+    end
+    inherited tiSongs: TTabItem
+      Size.Width = 120.000000000000000000
+      inherited lvSongs: TListView
+        Size.Width = 480.000000000000000000
+        Size.Height = 780.000000000000000000
+      end
+    end
+    inherited tiNowPlaying: TTabItem
+      Size.Width = 120.000000000000000000
+      inherited tbNowPlaying: TToolBar
+        Position.Y = 732.000000000000000000
+        Size.Width = 480.000000000000000000
+        inherited btnNext: TButton
+          Position.X = 432.000000000000000000
+        end
+      end
+      inherited lblArtistVal: TLabel
+        Size.Width = 360.000000000000000000
+      end
+      inherited lblTitleVal: TLabel
+        Size.Width = 360.000000000000000000
+      end
+      inherited lblAlbumVal: TLabel
+        Size.Width = 360.000000000000000000
+      end
+      inherited lblDurationVal: TLabel
+        Size.Width = 360.000000000000000000
+      end
+      inherited tbProgress: TTrackBar
+        Position.Y = 690.000000000000000000
+        Size.Width = 460.000000000000000000
+      end
+    end
+    inherited tiSettings: TTabItem
+      Size.Width = 120.000000000000000000
+      inherited SettingsList: TListBox
+        Size.Width = 480.000000000000000000
+        Size.Height = 780.000000000000000000
+      end
+    end
+  end
+end

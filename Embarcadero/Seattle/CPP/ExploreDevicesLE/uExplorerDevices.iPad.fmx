@@ -1,0 +1,69 @@
+inherited FrDeviceExplorer_iPad: TFrDeviceExplorer_iPad
+  ClientHeight = 1004
+  ClientWidth = 768
+  DesignerMasterStyle = 0
+  inherited ScrollBox1: TScrollBox
+    Size.Width = 768.000000000000000000
+    Size.Height = 1004.000000000000000000
+    Viewport.Width = 768.000000000000000000
+    Viewport.Height = 999.000000000000000000
+    inherited Panel2: TPanel
+      inherited PbServices: TProgressBar
+        Size.Height = 4.000000000000000000
+      end
+      inherited TvCharacteristics: TTreeView
+        Size.Height = 386.000000000000000000
+        Viewport.Width = 544.000000000000000000
+        Viewport.Height = 386.000000000000000000
+      end
+      inherited btnGetValues: TButton
+        Position.Y = 53.000000000000000000
+      end
+    end
+    inherited Panel1: TPanel
+      inherited Panel4: TPanel
+        inherited Button1: TButton
+          Size.Height = 51.000000000000000000
+        end
+        inherited Button2: TButton
+          Size.Height = 51.000000000000000000
+        end
+        inherited CbDevices: TComboBox
+          Size.Height = 30.000000000000000000
+        end
+        inherited PbFindDevices: TProgressBar
+          Position.Y = 51.000000000000000000
+          Size.Height = 4.000000000000000000
+        end
+      end
+    end
+    inherited Panel6: TPanel
+      inherited ScrollBox2: TScrollBox
+        Viewport.Width = 386.000000000000000000
+        Viewport.Height = 434.000000000000000000
+        inherited Panel8: TPanel
+          inherited btnRefresh: TSpeedButton
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
+          end
+          inherited EdCharacWrite: TEdit
+            Size.Height = 30.000000000000000000
+          end
+          inherited CbWriteTypes: TComboBox
+            Size.Height = 30.000000000000000000
+          end
+          inherited EdCharacName: TEdit
+            Size.Height = 30.000000000000000000
+          end
+          inherited EdCharacUID: TEdit
+            Size.Height = 30.000000000000000000
+          end
+          inherited LbCurrentValue: TListBox
+            Viewport.Width = 212.000000000000000000
+            Viewport.Height = 162.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,175 @@
+inherited Form1_LgXhdpiPh: TForm1_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited TabControl1: TTabControl
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited ToolBarPage: TTabItem
+      Size.Width = 75.000000000000000000
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ToolBar1: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited SpeedButton12: TSpeedButton
+          Position.X = 329.000000000000000000
+        end
+        inherited SpeedButton13: TSpeedButton
+          Position.X = 386.000000000000000000
+        end
+        inherited SpeedButton10: TSpeedButton
+          Position.X = 272.000000000000000000
+        end
+      end
+      inherited ToolBar13: TToolBar
+        Position.Y = 598.000000000000000000
+        Size.Width = 450.000000000000000000
+      end
+      inherited ToolBar2: TToolBar
+        Size.Width = 450.000000000000000000
+        inherited Label1: TLabel
+          Size.Width = 234.000000000000000000
+        end
+        inherited SpeedButton79: TSpeedButton
+          Position.X = 337.000000000000000000
+        end
+        inherited SpeedButton80: TSpeedButton
+          Position.X = 395.000000000000000000
+        end
+      end
+      inherited GroupBox1: TGroupBox
+        Size.Width = 450.000000000000000000
+        inherited Layout2: TLayout
+          Size.Width = 436.000000000000000000
+          inherited Edit5: TEdit
+            Size.Width = 247.000000000000000000
+          end
+          inherited SpeedButton3: TSpeedButton
+            Position.X = 388.000000000000000000
+          end
+        end
+      end
+    end
+    inherited ToolButtonPage: TTabItem
+      Size.Width = 75.000000000000000000
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited Tabs: TTabItem
+      Size.Width = 75.000000000000000000
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited TabControl2: TTabControl
+        inherited TabItem1: TTabItem
+          ExplicitSize.cx = 150.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem10: TTabItem
+          ExplicitSize.cx = 150.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem11: TTabItem
+          ExplicitSize.cx = 150.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem12: TTabItem
+          ExplicitSize.cx = 146.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+      end
+      inherited TabControl3: TTabControl
+        inherited TabItem5: TTabItem
+          ExplicitSize.cx = 150.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem6: TTabItem
+          ExplicitSize.cx = 150.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem7: TTabItem
+          ExplicitSize.cx = 150.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem8: TTabItem
+          ExplicitSize.cx = 146.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+      end
+      inherited TabControl4: TTabControl
+        inherited TabItem2: TTabItem
+          ExplicitSize.cx = 150.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem3: TTabItem
+          ExplicitSize.cx = 150.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem4: TTabItem
+          ExplicitSize.cx = 150.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+        inherited TabItem9: TTabItem
+          ExplicitSize.cx = 146.000000000000000000
+          ExplicitSize.cy = 49.000000000000000000
+        end
+      end
+      inherited TabControl5: TTabControl
+        inherited TabItem13: TTabItem
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+        end
+        inherited TabItem14: TTabItem
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+        end
+        inherited TabItem16: TTabItem
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+        end
+        inherited TabItem15: TTabItem
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+        end
+        inherited TabItem17: TTabItem
+          ExplicitSize.cx = 8.000000000000000000
+          ExplicitSize.cy = 8.000000000000000000
+        end
+      end
+    end
+    inherited ListBoxPage: TTabItem
+      Size.Width = 75.000000000000000000
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited ListBox2: TListBox
+        Viewport.Width = 233.000000000000000000
+        Viewport.Height = 310.000000000000000000
+      end
+      inherited ListBox3: TListBox
+        Viewport.Width = 365.000000000000000000
+        Viewport.Height = 310.000000000000000000
+        inherited ListBoxItem24: TListBoxItem
+          inherited Switch2: TSwitch
+            Size.Height = 44.000000000000000000
+          end
+        end
+        inherited ListBoxHeader2: TListBoxHeader
+          Size.Width = 621.000000000000000000
+        end
+      end
+    end
+    inherited ControlPage: TTabItem
+      Size.Width = 75.000000000000000000
+      ExplicitSize.cx = 100.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+    end
+    inherited TabItem18: TTabItem
+      Size.Width = 75.000000000000000000
+      ExplicitSize.cx = 98.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      inherited Memo1: TMemo
+        Viewport.Width = 145.000000000000000000
+        Viewport.Height = 129.000000000000000000
+      end
+    end
+  end
+end

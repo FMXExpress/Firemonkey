@@ -1,0 +1,181 @@
+object SimpleListViewDelete: TSimpleListViewDelete
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 567
+  ClientWidth = 384
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMobile = True
+  DesignerWidth = 384
+  DesignerHeight = 592
+  DesignerDeviceName = 'Google Nexus 4'
+  DesignerOrientation = 0
+  DesignerOSVersion = ''
+  object TopToolbar: TToolBar
+    Height = 48.000000000000000000
+    Padding.Left = 7.000000000000000000
+    Padding.Right = 7.000000000000000000
+    TabOrder = 0
+    Width = 384.000000000000000000
+    object TitleLabel: TLabel
+      Align = Contents
+      Height = 48.000000000000000000
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'List'
+      Width = 384.000000000000000000
+    end
+    object EditButton: TSpeedButton
+      Align = MostRight
+      Height = 48.000000000000000000
+      Position.X = 304.000000000000000000
+      Text = 'Edit'
+      Width = 73.000000000000000000
+      OnClick = EditButtonClick
+    end
+    object DoneButton: TSpeedButton
+      Align = MostRight
+      Height = 48.000000000000000000
+      Position.X = 304.000000000000000000
+      StyleLookup = 'donetoolbutton'
+      Text = 'Done'
+      Visible = False
+      Width = 73.000000000000000000
+      OnClick = DoneButtonClick
+    end
+  end
+  object BottomToolbar: TToolBar
+    Align = Bottom
+    Height = 48.000000000000000000
+    Padding.Left = 7.000000000000000000
+    Padding.Right = 7.000000000000000000
+    Position.Y = 519.000000000000000000
+    StyleLookup = 'bottomtoolbar'
+    TabOrder = 1
+    Width = 384.000000000000000000
+    object DeleteButton: TSpeedButton
+      Align = Left
+      Height = 48.000000000000000000
+      Position.X = 7.000000000000000000
+      StyleLookup = 'deletetoolbutton'
+      Text = 'Delete'
+      Visible = False
+      Width = 90.000000000000000000
+      OnClick = DeleteButtonClick
+    end
+  end
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TImageListItemAppearance'
+    ItemEditAppearanceClassName = 'TImageListItemShowCheck'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    ItemIndex = 0
+    Align = Client
+    DisableFocusEffect = False
+    Height = 471.000000000000000000
+    TabOrder = 2
+    Width = 384.000000000000000000
+    ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+    CanSwipeDelete = False
+    object TTimer
+      Interval = 17
+    end
+  end
+  object PrototypeBindSource1: TPrototypeBindSource
+    AutoActivate = True
+    AutoPost = False
+    FieldDefs = <
+      item
+        Name = 'AlphaColor1'
+        FieldType = ftUInteger
+        Generator = 'AlphaColors'
+        ReadOnly = False
+      end
+      item
+        Name = 'BitmapName1'
+        Generator = 'BitmapNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'Bitmap1'
+        FieldType = ftBitmap
+        Generator = 'Bitmaps'
+        ReadOnly = False
+      end
+      item
+        Name = 'BoolField1'
+        FieldType = ftBoolean
+        Generator = 'Booleans'
+        ReadOnly = False
+      end
+      item
+        Name = 'Color1'
+        FieldType = ftUInteger
+        Generator = 'Colors'
+        ReadOnly = False
+      end
+      item
+        Name = 'ColorsName1'
+        Generator = 'ColorsNames'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactBitmap1'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmaps'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactBitmapL1'
+        FieldType = ftBitmap
+        Generator = 'ContactBitmapsL'
+        ReadOnly = False
+      end
+      item
+        Name = 'ContactName1'
+        Generator = 'ContactNames'
+        ReadOnly = False
+      end>
+    ScopeMappings = <>
+    Left = 144
+    Top = 216
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 228
+    Top = 141
+    object LinkFillControlToField1: TLinkFillControlToField
+      Category = 'Quick Bindings'
+      Track = True
+      FillDataSource = PrototypeBindSource1
+      FillDisplayFieldName = 'ColorsName1'
+      AutoFill = True
+      BufferCount = -1
+      AutoBufferCount = False
+      FillExpressions = <
+        item
+          SourceMemberName = 'ContactBitmap1'
+          ControlMemberName = 'Bitmap'
+        end>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = PrototypeBindSource1
+      FieldName = 'ColorsName1'
+      Control = ListView1
+      FillExpressions = <
+        item
+          SourceMemberName = 'ContactBitmap1'
+          ControlMemberName = 'Bitmap'
+        end>
+      AutoBufferCount = False
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+  end
+end

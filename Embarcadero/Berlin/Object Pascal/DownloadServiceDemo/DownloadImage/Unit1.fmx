@@ -1,0 +1,72 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 637
+  ClientWidth = 642
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 3
+  object Panel1: TPanel
+    Align = MostTop
+    Size.Width = 642.000000000000000000
+    Size.Height = 129.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Edit1: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Anchors = [akLeft, akTop, akRight]
+      TabOrder = 0
+      Text = 
+        'https://static.pexels.com/photos/792/wood-landscape-mountains-na' +
+        'ture.jpg'
+      Position.X = 8.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 619.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      Text = 'URL'
+    end
+    object Button1: TButton
+      Position.X = 16.000000000000000000
+      Position.Y = 80.000000000000000000
+      Size.Width = 97.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Download'
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Anchors = [akTop, akRight]
+      Enabled = False
+      Position.X = 498.000000000000000000
+      Position.Y = 77.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Delete File'
+      OnClick = Button2Click
+    end
+  end
+  object Image1: TImage
+    MultiResBitmap = <
+      item
+      end>
+    Align = Client
+    Size.Width = 642.000000000000000000
+    Size.Height = 508.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object NotificationCenter1: TNotificationCenter
+    OnReceiveLocalNotification = NotificationCenter1ReceiveLocalNotification
+    Left = 184
+    Top = 184
+  end
+end

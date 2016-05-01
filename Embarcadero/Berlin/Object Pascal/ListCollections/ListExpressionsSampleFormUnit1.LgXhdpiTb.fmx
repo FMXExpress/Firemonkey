@@ -1,0 +1,65 @@
+inherited Form1_LgXhdpiTb: TForm1_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+  inherited LabelSourceExpressions: TLabel
+    Size.Width = 200.000000000000000000
+  end
+  inherited LabelControlExpression: TLabel
+    Size.Width = 200.000000000000000000
+  end
+  inherited EditControlExpression: TEdit
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 216.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited LabelControlComponent: TLabel
+    Size.Width = 200.000000000000000000
+  end
+  inherited EditControlComponent: TEdit
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 216.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited LabelSourceComponent: TLabel
+    Size.Width = 200.000000000000000000
+  end
+  inherited EditSourceExpression: TEdit
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 216.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited ButtonEvaluate: TButton
+    Position.Y = 204.000000000000000000
+    Size.Height = 37.000000000000000000
+  end
+  inherited EditSourceComponentName: TEdit
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 216.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Anchors = [akLeft, akTop, akBottom]
+    Size.Height = 301.000000000000000000
+    Viewport.Width = 561.000000000000000000
+    Viewport.Height = 301.000000000000000000
+  end
+  inherited ComboBox1: TComboBox
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 216.000000000000000000
+    Size.Width = 220.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited ButtonClear: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 204.000000000000000000
+    Size.Height = 37.000000000000000000
+  end
+  inherited Label1: TLabel
+    Size.Width = 200.000000000000000000
+  end
+end

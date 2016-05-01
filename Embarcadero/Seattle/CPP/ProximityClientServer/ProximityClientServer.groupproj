@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{565B66BB-DA1B-462F-A916-EC9FC59ABB6A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ProximityClient.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ProximityServer.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ProximityClient">
+        <MSBuild Projects="ProximityClient.cbproj"/>
+    </Target>
+    <Target Name="ProximityClient:Clean">
+        <MSBuild Projects="ProximityClient.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProximityClient:Make">
+        <MSBuild Projects="ProximityClient.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ProximityServer">
+        <MSBuild Projects="ProximityServer.cbproj"/>
+    </Target>
+    <Target Name="ProximityServer:Clean">
+        <MSBuild Projects="ProximityServer.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ProximityServer:Make">
+        <MSBuild Projects="ProximityServer.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ProximityClient;ProximityServer"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ProximityClient:Clean;ProximityServer:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ProximityClient:Make;ProximityServer:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

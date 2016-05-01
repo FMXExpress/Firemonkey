@@ -1,0 +1,3674 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>FMX.MultiViewDemo Sample</title>
+    <style type="text/css">
+
+        /* commonElements.css ************************************************/
+
+        /* Links */
+        a {
+            text-decoration: none;
+            color: #0645ad;
+            background: none;
+        }
+        a:visited {
+            color: #0b0080;
+        }
+        a:active {
+            color: #faa700;
+        }
+        a:hover, a:focus {
+            text-decoration: underline;
+        }
+        a.stub {
+            color: #772233;
+        }
+        a.new, #p-personal a.new {
+            color: #ba0000;
+        }
+        a.new:visited, #p-personal a.new:visited {
+            color: #a55858;
+        }
+
+        /* Interwiki Styling */
+        .mw-body a.extiw,
+        .mw-body a.extiw:active {
+            color: #36b;
+        }
+        .mw-body a.extiw:visited {
+            color: #636;
+        }
+        .mw-body a.extiw:active {
+            color: #b63;
+        }
+
+        /* External links */
+        .mw-body a.external {
+            color: #36b;
+        }
+        .mw-body a.external:visited {
+            color: #636; /* bug 3112 */
+        }
+        .mw-body a.external:active {
+            color: #b63;
+        }
+
+        /* Inline Elements */
+        img {
+            border: none;
+            vertical-align: middle;
+        }
+        hr {
+            height: 1px;
+            color: #aaa;
+            background-color: #aaa;
+            border: 0;
+            margin: .2em 0;
+        }
+
+        /* Structural Elements */
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: black;
+            background: none;
+            font-weight: normal;
+            margin: 0;
+            overflow: hidden;
+            padding-top: .5em;
+            padding-bottom: .17em;
+            border-bottom: 1px solid #aaa;
+            width: auto;
+        }
+        h1 {
+            font-size: 188%;
+        }
+        h1 .editsection {
+            font-size: 53%;
+        }
+        h2 {
+            font-size: 150%;
+        }
+        h2 .editsection {
+            font-size: 67%;
+        }
+        h3,
+        h4,
+        h5,
+        h6 {
+            border-bottom: none;
+            font-weight: bold;
+        }
+        h3 {
+            font-size: 132%;
+        }
+        h3 .editsection {
+            font-size: 76%;
+            font-weight: normal;
+        }
+        h4 {
+            font-size: 116%;
+        }
+        h4 .editsection {
+            font-size: 86%;
+            font-weight: normal; }
+        h5 {
+            font-size: 100%;
+        }
+        h5 .editsection {
+            font-weight: normal;
+        }
+        h6 {
+            font-size: 80%;
+        }
+        h6 .editsection {
+            font-size: 125%;
+            font-weight: normal;
+        }
+
+        /* Some space under the headers in the content area */
+        h1,
+        h2 {
+            margin-bottom: .6em;
+        }
+        h3,
+        h4,
+        h5 {
+            margin-bottom: .3em;
+        }
+
+        p {
+            margin: .4em 0 .5em 0;
+            line-height: 1.5em;
+        }
+        p img {
+            margin: 0;
+        }
+
+        ul {
+            line-height: 1.5em;
+            list-style-type: square;
+            margin: .3em 0 0 1.6em;
+            padding: 0;
+        }
+        ol {
+            line-height: 1.5em;
+            margin: .3em 0 0 3.2em;
+            padding: 0;
+            list-style-image: none;
+        }
+        li {
+            margin-bottom: .1em;
+        }
+        dt {
+            font-weight: bold;
+            margin-bottom: .1em;
+        }
+        dl {
+            margin-top: .2em;
+            margin-bottom: .5em;
+        }
+        dd {
+            line-height: 1.5em;
+            margin-left: 1.6em;
+            margin-bottom: .1em;
+        }
+
+        q {
+            font-family: Times, "Times New Roman", serif;
+            font-style: italic;
+        }
+        /* Disabled for now
+        blockquote {
+            font-family: Times, "Times New Roman", serif;
+            font-style: italic;
+        }*/
+        pre, code, tt, kbd, samp {
+            /*
+            * Some browsers will render the monospace text too small, namely Firefox, Chrome and Safari.
+            * Specifying any valid, second value will trigger correct behaviour without forcing a different font.
+            */
+            font-family: monospace, Courier;
+        }
+        code {
+            background-color: #f9f9f9;
+        }
+        pre {
+            padding: 1em;
+            border: 1px dashed #2f6fab;
+            color: black;
+            background-color: #f9f9f9;
+        }
+
+        /* Tables */
+        table {
+            font-size: 100%;
+        }
+
+        /* Forms */
+        fieldset {
+            border: 1px solid #2f6fab;
+            margin: 1em 0 1em 0;
+            padding: 0 1em 1em;
+            line-height: 1.5em;
+        }
+        fieldset.nested {
+            margin: 0 0 0.5em 0;
+            padding: 0 0.5em 0.5em;
+        }
+        legend {
+            padding: .5em;
+            font-size: 95%;
+        }
+        form {
+            border: none;
+            margin: 0;
+        }
+        textarea {
+            width: 100%;
+            padding: .1em;
+        }
+        select {
+            vertical-align: top;
+        }
+
+        /* Emulate Center */
+        .center {
+            width: 100%;
+            text-align: center;
+        }
+        *.center * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* Small for tables and similar */
+        .small {
+            font-size: 94%;
+        }
+        table.small {
+            font-size: 100%;
+        }
+
+        /* commonContent.css *************************************************/
+
+        /* Table of Contents */
+        #toc,
+        .toc,
+        .mw-warning {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+        }
+        #toc h2,
+        .toc h2 {
+            display: inline;
+            border: none;
+            padding: 0;
+            font-size: 100%;
+            font-weight: bold;
+        }
+        #toc #toctitle,
+        .toc #toctitle,
+        #toc .toctitle,
+        .toc .toctitle {
+            text-align: center;
+        }
+        #toc ul,
+        .toc ul {
+            list-style-type: none;
+            list-style-image: none;
+            margin-left: 0;
+            padding: 0;
+            text-align: left;
+        }
+        #toc ul ul,
+        .toc ul ul {
+            margin: 0 0 0 2em;
+        }
+        #toc .toctoggle,
+        .toc .toctoggle {
+            font-size: 94%;
+        }
+
+        .toccolours {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+        }
+
+        /* Warning */
+        .mw-warning {
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+        }
+
+        /* Images */
+        /* @noflip */div.floatright, table.floatright {
+            margin: 0 0 .5em .5em;
+            border: 0;
+        }
+        div.floatright p { font-style: italic; }
+        /* @noflip */div.floatleft, table.floatleft {
+            margin: 0 .5em .5em 0;
+            border: 0;
+        }
+        div.floatleft p { font-style: italic; }
+        /* Thumbnails */
+        div.thumb {
+            margin-bottom: .5em;
+            width: auto;
+            background-color: transparent;
+        }
+        div.thumbinner {
+            border: 1px solid #ccc;
+            padding: 3px !important;
+            background-color: #f9f9f9;
+            font-size: 94%;
+            text-align: center;
+            overflow: hidden;
+        }
+        html .thumbimage {
+            border: 1px solid #ccc;
+        }
+        html .thumbcaption {
+            border: none;
+            text-align: left;
+            line-height: 1.4em;
+            padding: 3px !important;
+            font-size: 94%;
+        }
+        div.magnify {
+            float: right;
+            border: none !important;
+            background: none !important;
+        }
+        div.magnify a, div.magnify img {
+            display: block;
+            border: none !important;
+            background: none !important;
+        }
+        /* @noflip */div.tright {
+            margin: .5em 0 1.3em 1.4em;
+        }
+        /* @noflip */div.tleft {
+            margin: .5em 1.4em 1.3em 0;
+        }
+        img.thumbborder {
+            border: 1px solid #dddddd;
+        }
+
+        /**
+        * Basic styles for the user login and create account forms
+        */
+        #userlogin, #userloginForm {
+            border: solid 1px #cccccc;
+            padding: 1.2em;
+            margin: .5em;
+            float: left;
+        }
+
+        /* commonInterface.css ***********************************************/
+
+        /* Categories */
+        .catlinks {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            margin-top: 1em;
+            clear: both;
+        }
+
+        /* User Message */
+        .usermessage {
+            background-color: #ffce7b;
+            border: 1px solid #ffa500;
+            color: black;
+            font-weight: bold;
+            margin: 2em 0 1em;
+            padding: .5em 1em;
+            vertical-align: middle;
+        }
+
+        /* Site Notice (includes notices from CentralNotice extension) */
+        #siteNotice {
+            position: relative;
+            text-align: center;
+            margin: 0;
+        }
+        #localNotice {
+            margin-bottom: 0.9em;
+        }
+
+        /* First h1 */
+        .firstHeading,
+        #firstHeading {
+            margin-bottom: .1em;
+            /* These two rules hack around bug 2013 (fix for more limited bug 11325).
+            * When bug 2013 is fixed properly, they should be removed. */
+            line-height: 1.2em;
+            padding-bottom: 0;
+        }
+
+        /* Sub-navigation */
+        #siteSub {
+            display: none;
+        }
+        #jump-to-nav {
+            /* Negate #contentSub's margin and replicate it so that the jump to links don't affect the spacing */
+            margin-top: -1.4em;
+            margin-bottom: 1.4em
+        }
+        #contentSub, #contentSub2 {
+            font-size: 84%;
+            line-height: 1.2em;
+            margin: 0 0 1.4em 1em;
+            color: #7d7d7d;
+            width: auto;
+        }
+        span.subpages {
+            display: block;
+        }
+
+        /* shared.css ********************************************************/
+
+        /**
+        * These classes should be used for text depending on the content direction.
+        * Content stuff like editsection, ul/ol and TOC depend on this.
+        */
+        .mw-content-ltr {
+            /* @noflip */
+            direction: ltr;
+        }
+        .mw-content-rtl {
+            /* @noflip */
+            direction: rtl;
+        }
+
+        /* Most input fields should be in site direction */
+        .sitedir-ltr textarea,
+        .sitedir-ltr input {
+            /* @noflip */
+            direction: ltr;
+        }
+        .sitedir-rtl textarea,
+        .sitedir-rtl input {
+            /* @noflip */
+            direction: rtl;
+        }
+
+        /* Input types that should follow user direction, like buttons */
+        /* TODO: What about buttons in wikipage content ? */
+        input[type="submit"],
+        input[type="button"],
+        input[type="reset"],
+        input[type="file"] {
+            direction: ltr;
+        }
+
+        /* Override default values */
+        textarea[dir="ltr"],
+        input[dir="ltr"] {
+            /* @noflip */
+            direction: ltr;
+        }
+        textarea[dir="rtl"],
+        input[dir="rtl"] {
+            /* @noflip */
+            direction: rtl;
+        }
+
+        /* Default style for semantic tags */
+        abbr,
+        acronym,
+        .explain {
+            border-bottom: 1px dotted;
+            cursor: help;
+        }
+
+        /* Colored watchlist and recent changes numbers */
+        .mw-plusminus-pos {
+            color: #006400; /* dark green */
+        }
+        .mw-plusminus-neg {
+            color: #8b0000; /* dark red */
+        }
+        .mw-plusminus-null {
+            color: #aaa; /* gray */
+        }
+
+        /**
+        * Links to redirects appear italicized on [[Special:AllPages]], [[Special:PrefixIndex]],
+        * [[Special:Watchlist/edit]] and in category listings.
+        */
+        .allpagesredirect,
+        .redirect-in-category,
+        .watchlistredir {
+            font-style: italic;
+        }
+
+        /* Comment and username portions of RC entries */
+        span.comment {
+            font-style: italic;
+        }
+
+        span.changedby {
+            font-size: 95%;
+        }
+
+        /* Math */
+        .texvc {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+        img.tex {
+            vertical-align: middle;
+        }
+        span.texhtml {
+            font-family: serif;
+        }
+
+        /**
+        * Add a bit of margin space between the preview and the toolbar.
+        * This replaces the ugly <p><br /></p> we used to insert into the page source
+        */
+        #wikiPreview.ontop {
+            margin-bottom: 1em;
+        }
+
+        /* Stop floats from intruding into edit area in previews */
+        #editform,
+        #toolbar,
+        #wpTextbox1 {
+            clear: both;
+        }
+        #toolbar img {
+            cursor: pointer;
+        }
+        div#mw-js-message {
+            margin: 1em 5%;
+            padding: 0.5em 2.5%;
+            border: solid 1px #ddd;
+            background-color: #fcfcfc;
+        }
+
+        /* Edit section links */
+        .editsection {
+            float: right;
+            margin-left: 5px;
+        }
+        /* Correct directionality when page dir is different from site/user dir */
+        .mw-content-ltr .editsection,
+        .mw-content-rtl .mw-content-ltr .editsection {
+            /* @noflip */
+            float: right;
+        }
+        .mw-content-rtl .editsection,
+        .mw-content-ltr .mw-content-rtl .editsection {
+            /* @noflip */
+            float: left;
+        }
+
+        /**
+        * File description page
+        */
+
+        div.mw-filepage-resolutioninfo {
+            font-size: smaller;
+        }
+
+        /**
+        * File histories
+        */
+        h2#filehistory {
+            clear: both;
+        }
+
+        table.filehistory th,
+        table.filehistory td {
+            vertical-align: top;
+        }
+        table.filehistory th {
+            text-align: left;
+        }
+        table.filehistory td.mw-imagepage-filesize,
+        table.filehistory th.mw-imagepage-filesize {
+            white-space: nowrap;
+        }
+
+        table.filehistory td.filehistory-selected {
+            font-weight: bold;
+        }
+
+        /**
+        * Add a checkered background image on hover for file
+        * description pages. (bug 26470)
+        */
+        .filehistory a img,
+        #file img:hover {
+            /* @embed */
+            background: white url(images/Checker-16x16.png) repeat;
+        }
+
+        /**
+        * rev_deleted stuff
+        */
+        li span.deleted,
+        span.history-deleted {
+            text-decoration: line-through;
+            color: #888;
+            font-style: italic;
+        }
+
+        /**
+        * Patrol stuff
+        */
+        .not-patrolled {
+            background-color: #ffa;
+        }
+
+        .unpatrolled {
+            font-weight: bold;
+            color: red;
+        }
+
+        div.patrollink {
+            font-size: 75%;
+            text-align: right;
+        }
+
+        /**
+        * Forms
+        */
+        td.mw-label {
+            text-align: right;
+        }
+        td.mw-input {
+            text-align: left;
+        }
+        td.mw-submit {
+            text-align: left;
+        }
+
+        td.mw-label {
+            vertical-align: top;
+        }
+        .prefsection td.mw-label {
+            width: 20%;
+        }
+        .prefsection table {
+            width: 100%;
+        }
+        td.mw-submit {
+            white-space: nowrap;
+        }
+
+        table.mw-htmlform-nolabel td.mw-label {
+            width: 1px;
+        }
+
+        tr.mw-htmlform-vertical-label td.mw-label {
+            text-align: left !important;
+        }
+
+        .mw-htmlform-invalid-input td.mw-input input {
+            border-color: red;
+        }
+
+        .mw-htmlform-flatlist div.mw-htmlform-flatlist-item {
+            display: inline;
+            margin-right: 1em;
+            white-space: nowrap;
+        }
+
+        input#wpSummary {
+            width: 80%;
+        }
+
+        /**
+        * Image captions
+        */
+        .thumbcaption {
+            text-align: left;
+        }
+        .magnify {
+            float: right;
+        }
+
+        /**
+        * Categories
+        */
+        #catlinks {
+            /**
+            * Overrides text justification (user preference)
+            * See bug 31990
+            */
+            text-align: left;
+        }
+        .catlinks ul {
+            display: inline;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            list-style-type: none;
+            list-style-image: none;
+            vertical-align: middle !ie;
+        }
+
+        .catlinks li {
+            display: inline-block;
+            line-height: 1.25em;
+            border-left: 1px solid #AAA;
+            margin: 0.125em 0;
+            padding: 0 0.5em;
+            zoom: 1;
+            display: inline !ie;
+        }
+
+        .catlinks li:first-child {
+            padding-left: 0.25em;
+            border-left: none;
+        }
+        /**
+        * Hidden categories
+        */
+        .mw-hidden-cats-hidden {
+            display: none;
+        }
+        .catlinks-allhidden {
+            display: none;
+        }
+
+        /* Convenience links to edit block, delete and protect reasons */
+        p.mw-ipb-conveniencelinks,
+        p.mw-protect-editreasons,
+        p.mw-filedelete-editreasons,
+        p.mw-delete-editreasons,
+        p.mw-revdel-editreasons {
+            font-size: 90%;
+            text-align: right;
+        }
+
+        /**
+        * OpenSearch ajax suggestions
+        */
+        .os-suggest {
+            overflow: auto;
+            overflow-x: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            background-color: white;
+            border-style: solid;
+            border-color: #AAAAAA;
+            border-width: 1px;
+            z-index:99;
+            font-size:95%;
+        }
+
+        table.os-suggest-results {
+            font-size: 95%;
+            cursor: pointer;
+            border: 0;
+            border-collapse: collapse;
+            width: 100%;
+        }
+
+        .os-suggest-result,
+        .os-suggest-result-hl {
+            white-space: nowrap;
+            background-color: white;
+            color: black;
+            padding: 2px;
+        }
+        .os-suggest-result-hl,
+        .os-suggest-result-hl-webkit {
+            background-color: #4C59A6;
+            color: white;
+        }
+
+        .os-suggest-toggle {
+            position: relative;
+            left: 1ex;
+            font-size: 65%;
+        }
+        .os-suggest-toggle-def {
+            position: absolute;
+            top: 0;
+            left: 0;
+            font-size: 65%;
+            visibility: hidden;
+        }
+
+        /* Page history styling */
+
+        /* The auto-generated edit comments */
+        .autocomment {
+            color: gray;
+        }
+        #pagehistory .history-user {
+            margin-left: 0.4em;
+            margin-right: 0.2em;
+        }
+        #pagehistory span.minor {
+            font-weight: bold;
+        }
+        #pagehistory li {
+            border: 1px solid white;
+        }
+        #pagehistory li.selected {
+            background-color: #f9f9f9;
+            border: 1px dashed #aaa;
+        }
+
+        .mw-history-revisiondelete-button, #mw-fileduplicatesearch-icon {
+            float: right;
+        }
+
+        /** Generic minor/bot/newpage styling (recent changes) */
+        .newpage,
+        .minoredit,
+        .botedit {
+            font-weight: bold;
+        }
+
+        #shared-image-dup,
+        #shared-image-conflict {
+            font-style: italic;
+        }
+
+        /**
+        * Recreating deleted page warning
+        * Reupload file warning
+        * Page protection warning
+        * incl. log entries for these warnings
+        */
+        div.mw-warning-with-logexcerpt {
+            padding: 3px;
+            margin-bottom: 3px;
+            border: 2px solid #2F6FAB;
+            clear: both;
+        }
+        div.mw-warning-with-logexcerpt ul li {
+            font-size: 90%;
+        }
+
+        /* (show/hide) revision deletion links */
+        span.mw-revdelundel-link,
+        strong.mw-revdelundel-link {
+            font-size: 90%;
+        }
+        span.mw-revdelundel-hidden,
+        input.mw-revdelundel-hidden {
+            visibility: hidden;
+        }
+
+        td.mw-revdel-checkbox,
+        th.mw-revdel-checkbox {
+            padding-right: 10px;
+            text-align: center;
+        }
+
+        /* feed links */
+        a.feedlink {
+            /* @embed */
+            background: url(images/feed-icon.png) center left no-repeat;
+            padding-left: 16px;
+        }
+
+        /* Plainlinks - this can be used to switch
+        * off special external link styling */
+        .plainlinks a {
+            background: none !important;
+            padding: 0 !important;
+        }
+        /* External URLs should always be treated as LTR (bug 4330) */
+        /* @noflip */ .rtl a.external.free,
+        .rtl a.external.autonumber {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+
+        /**
+        * wikitable class for skinning normal tables
+        * keep in sync with commonPrint.css
+        */
+        table.wikitable {
+            margin: 1em 1em 1em 0;
+            background-color: #f9f9f9;
+            border: 1px #aaa solid;
+            border-collapse: collapse;
+            color: black;
+        }
+        table.wikitable > tr > th,
+        table.wikitable > tr > td,
+        table.wikitable > * > tr > th,
+        table.wikitable > * > tr > td {
+            border: 1px #aaa solid;
+            padding: 0.2em;
+        }
+        table.wikitable > tr > th,
+        table.wikitable > * > tr > th {
+            background-color: #f2f2f2;
+            text-align: center;
+        }
+        table.wikitable > caption {
+            font-weight: bold;
+        }
+
+        /* hide initially collapsed collapsable tables */
+        table.collapsed tr.collapsable {
+            display: none;
+        }
+
+        /* success and error messages */
+        .success {
+            color: green;
+            font-size: larger;
+        }
+        .warning {
+            color: #FFA500; /* orange */
+            font-size: larger;
+        }
+        .error {
+            color: red;
+            font-size: larger;
+        }
+        .errorbox,
+        .warningbox,
+        .successbox {
+            font-size: larger;
+            border: 2px solid;
+            padding: .5em 1em;
+            float: left;
+            margin-bottom: 2em;
+            color: #000;
+        }
+        .errorbox {
+            border-color: red;
+            background-color: #fff2f2;
+        }
+        .warningbox {
+            border-color: #FF8C00; /* darkorange */
+            background-color: #FFFFC0;
+        }
+        .successbox {
+            border-color: green;
+            background-color: #dfd;
+        }
+        .errorbox h2,
+        .warningbox h2,
+        .successbox h2 {
+            font-size: 1em;
+            font-weight: bold;
+            display: inline;
+            margin: 0 .5em 0 0;
+            border: none;
+        }
+
+        /* general info/warning box for SP */
+        .mw-infobox {
+            border: 2px solid #ff7f00;
+            margin: 0.5em;
+            clear: left;
+            overflow: hidden;
+        }
+
+        .mw-infobox-left {
+            margin: 7px;
+            float: left;
+            width: 35px;
+        }
+
+        .mw-infobox-right {
+            margin: 0.5em 0.5em 0.5em 49px;
+        }
+
+        /* Note on preview page */
+        .previewnote {
+            color: #c00;
+            margin-bottom: 1em;
+        }
+
+        .previewnote p {
+            text-indent: 3em;
+            margin: 0.8em 0;
+        }
+
+        .visualClear {
+            clear: both;
+        }
+
+        #mw_trackbacks {
+            border: solid 1px #bbbbff;
+            background-color: #eeeeff;
+            padding: 0.2em;
+        }
+
+        /**
+        * Data table style
+        *
+        * Transparent table with suddle borders
+        * and blue row-highlighting.
+        */
+        .mw-datatable {
+            border-collapse: collapse;
+        }
+        .mw-datatable,
+        .mw-datatable td,
+        .mw-datatable th {
+            border: 1px solid #aaaaaa;
+            padding: 0 0.15em 0 0.15em;
+        }
+        .mw-datatable th {
+            background-color: #ddddff;
+        }
+        .mw-datatable td {
+            background-color: #ffffff;
+        }
+        .mw-datatable tr:hover td {
+            background-color: #eeeeff;
+        }
+
+
+        /**
+        * TablePager tables generated by the TablePager PHP class
+        * in MediaWiki (e.g. Special:ListFiles).
+        */
+        .TablePager {
+            min-width: 80%;
+        }
+        .TablePager_nav {
+            margin: 0 auto;
+        }
+        .TablePager_nav td {
+            padding: 3px;
+            text-align: center;
+        }
+        .TablePager_nav a {
+            text-decoration: none;
+        }
+
+        .imagelist td,
+        .imagelist th {
+            white-space: nowrap;
+        }
+        .imagelist .TablePager_col_links {
+            background-color: #eeeeff;
+        }
+        .imagelist .TablePager_col_img_description {
+            white-space: normal;
+        }
+        .imagelist th.TablePager_sort {
+            background-color: #ccccff;
+        }
+
+        /* filetoc */
+        ul#filetoc {
+            text-align: center;
+            border: 1px solid #aaaaaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+            margin-bottom: 0.5em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #filetoc li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 2em;
+        }
+
+        /* Classes for EXIF data display */
+        table.mw_metadata {
+            font-size: 0.8em;
+            margin-left: 0.5em;
+            margin-bottom: 0.5em;
+            width: 400px;
+        }
+
+        table.mw_metadata caption {
+            font-weight: bold;
+        }
+
+        table.mw_metadata th {
+            font-weight: normal;
+        }
+
+        table.mw_metadata td {
+            padding: 0.1em;
+        }
+
+        table.mw_metadata {
+            border: none;
+            border-collapse: collapse;
+        }
+
+        table.mw_metadata td,
+        table.mw_metadata th {
+            text-align: center;
+            border: 1px solid #aaaaaa;
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+
+        table.mw_metadata th {
+            background-color: #f9f9f9;
+        }
+
+        table.mw_metadata td {
+            background-color: #fcfcfc;
+        }
+
+        table.mw_metadata ul.metadata-langlist {
+            list-style-type: none;
+            list-style-image: none;
+            padding-right: 5px;
+            padding-left: 5px;
+            margin: 0;
+        }
+
+        /* Correct directionality when page dir is different from site/user dir */
+        .mw-content-ltr ul,
+        .mw-content-rtl .mw-content-ltr ul {
+            /* @noflip */
+            margin: 0.3em 0 0 1.6em;
+            padding: 0;
+        }
+        .mw-content-rtl ul,
+        .mw-content-ltr .mw-content-rtl ul {
+            /* @noflip */
+            margin: 0.3em 1.6em 0 0;
+            padding: 0;
+        }
+        .mw-content-ltr ol,
+        .mw-content-rtl .mw-content-ltr ol {
+            /* @noflip */
+            margin: 0.3em 0 0 3.2em;
+            padding: 0;
+        }
+        .mw-content-rtl ol,
+        .mw-content-ltr .mw-content-rtl ol {
+            /* @noflip */
+            margin: 0.3em 3.2em 0 0;
+            padding: 0;
+        }
+        /* @noflip */
+        .mw-content-ltr dd,
+        .mw-content-rtl .mw-content-ltr dd {
+            margin-left: 1.6em;
+            margin-right: 0;
+        }
+        /* @noflip */
+        .mw-content-rtl dd,
+        .mw-content-ltr .mw-content-rtl dd {
+            margin-right: 1.6em;
+            margin-left: 0;
+        }
+
+        /* Galleries */
+        /* These display attributes look nonsensical, but are needed to support IE and FF2 */
+        /* Don't forget to update commonPrint.css */
+        li.gallerybox {
+            vertical-align: top;
+            border: solid 2px white;
+            display: -moz-inline-box;
+            display: inline-block;
+        }
+
+        ul.gallery,
+        li.gallerybox {
+            zoom: 1;
+            *display: inline;
+        }
+
+        ul.gallery {
+            margin: 2px;
+            padding: 2px;
+            display: block;
+        }
+
+        li.gallerycaption {
+            font-weight: bold;
+            text-align: center;
+            display: block;
+            word-wrap: break-word;
+        }
+
+        li.gallerybox div.thumb {
+            text-align: center;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            margin: 2px;
+        }
+
+        li.gallerybox div.thumb img {
+            display: block;
+            margin: 0 auto;
+        }
+
+        div.gallerytext {
+            overflow: hidden;
+            font-size: 94%;
+            padding: 2px 4px;
+            word-wrap: break-word;
+        }
+
+        .mw-ajax-loader {
+            /* @embed */
+            background-image: url(images/ajax-loader.gif);
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding: 16px;
+            position: relative;
+            top: -16px;
+        }
+
+        .mw-small-spinner {
+            padding: 10px !important;
+            margin-right: 0.6em;
+            /* @embed */
+            background-image: url(images/spinner.gif);
+            background-position: center center;
+            background-repeat: no-repeat;
+        }
+
+        /* Language specific height correction for titles. Ref Bug 29405 and Bug 30809 */
+        /* Languages like hi or ml require slightly more vertical space to show diacritics properly */
+        h1:lang(as),
+        h1:lang(bn),
+        h1:lang(gu),
+        h1:lang(hi),
+        h1:lang(kn),
+        h1:lang(ml),
+        h1:lang(mr),
+        h1:lang(or),
+        h1:lang(pa),
+        h1:lang(sa),
+        h1:lang(ta),
+        h1:lang(te) {
+            line-height: 1.5em !important;
+        }
+        h2:lang(as), h3:lang(as), h4:lang(as), h5:lang(as), h6:lang(as),
+        h2:lang(bn), h3:lang(bn), h4:lang(bn), h5:lang(bn), h6:lang(bn),
+        h2:lang(gu), h3:lang(gu), h4:lang(gu), h5:lang(gu), h6:lang(gu),
+        h2:lang(hi), h3:lang(hi), h4:lang(hi), h5:lang(hi), h6:lang(hi),
+        h2:lang(kn), h3:lang(kn), h4:lang(kn), h5:lang(kn), h6:lang(kn),
+        h2:lang(ml), h3:lang(ml), h4:lang(ml), h5:lang(ml), h6:lang(ml),
+        h2:lang(mr), h3:lang(mr), h4:lang(mr), h5:lang(mr), h6:lang(mr),
+        h2:lang(or), h3:lang(or), h4:lang(or), h5:lang(or), h6:lang(or),
+        h2:lang(pa), h3:lang(pa), h4:lang(pa), h5:lang(pa), h6:lang(pa),
+        h2:lang(sa), h3:lang(sa), h4:lang(sa), h5:lang(sa), h6:lang(sa),
+        h2:lang(ta), h3:lang(ta), h4:lang(ta), h5:lang(ta), h6:lang(ta),
+        h2:lang(te), h3:lang(te), h4:lang(te), h5:lang(te), h6:lang(te) {
+            line-height: 1.2em;
+        }
+
+        /* Localised ordered list numbering for some languages */
+        ol:lang(bcc) li,
+        ol:lang(bqi) li,
+        ol:lang(fa) li,
+        ol:lang(glk) li,
+        ol:lang(kk-arab) li,
+        ol:lang(mzn) li {
+            list-style-type: -moz-persian;
+            list-style-type: persian;
+        }
+
+        ol:lang(ckb) li {
+            list-style-type: -moz-arabic-indic;
+            list-style-type: arabic-indic;
+        }
+
+        ol:lang(as) li,
+        ol:lang(bn) li {
+            list-style-type: -moz-bengali;
+            list-style-type: bengali;
+        }
+
+        ol:lang(or) li {
+            list-style-type: -moz-oriya;
+            list-style-type: oriya;
+        }
+
+        #toc ul, .toc ul {
+            margin: .3em 0;
+        }
+
+        /* Correct directionality when page dir is different from site/user dir */
+        /* @noflip */ .mw-content-ltr .toc ul,
+        .mw-content-ltr #toc ul,
+        .mw-content-rtl .mw-content-ltr .toc ul,
+        .mw-content-rtl .mw-content-ltr #toc ul {
+            text-align: left;
+        }
+        /* @noflip */ .mw-content-rtl .toc ul,
+        .mw-content-rtl #toc ul,
+        .mw-content-ltr .mw-content-rtl .toc ul,
+        .mw-content-ltr .mw-content-rtl #toc ul {
+            text-align: right;
+        }
+        /* @noflip */ .mw-content-ltr .toc ul ul,
+        .mw-content-ltr #toc ul ul,
+        .mw-content-rtl .mw-content-ltr .toc ul ul,
+        .mw-content-rtl .mw-content-ltr #toc ul ul {
+            margin: 0 0 0 2em;
+        }
+        /* @noflip */ .mw-content-rtl .toc ul ul,
+        .mw-content-rtl #toc ul ul,
+        .mw-content-ltr .mw-content-rtl .toc ul ul,
+        .mw-content-ltr .mw-content-rtl #toc ul ul {
+            margin: 0 2em 0 0;
+        }
+
+        #toc #toctitle,
+        .toc #toctitle,
+        #toc .toctitle,
+        .toc .toctitle {
+            direction: ltr;
+        }
+
+        /* tooltip styles */
+        .mw-help-field-hint {
+            display: none;
+            margin-left: 2px;
+            margin-bottom: -8px;
+            padding: 0 0 0 15px;
+            /* @embed */
+            background-image: url('images/help-question.gif');
+            background-position: left center;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            font-size: .8em;
+            text-decoration: underline;
+            color: #0645ad;
+        }
+        .mw-help-field-hint:hover {
+            /* @embed */
+            background-image: url('images/help-question-hover.gif');
+        }
+        .mw-help-field-data {
+            display: block;
+            background-color: #d6f3ff;
+            padding:5px 8px 4px 8px;
+            border: 1px solid #5dc9f4;
+            margin-left: 20px;
+        }
+        .tipsy {
+            padding: 5px 5px 10px;
+            font-size: 12px;
+            position: absolute;
+            z-index: 100000;
+            overflow: visible;
+        }
+        .tipsy-inner {
+            padding: 5px 8px 4px 8px;
+            background-color: #d6f3ff;
+            color: black;
+            border: 1px solid #5dc9f4;
+            max-width: 300px;
+            text-align: left;
+        }
+        .tipsy-arrow {
+            position: absolute;
+            /* @embed */
+            background: url(images/tipsy-arrow.gif) no-repeat top left;
+            width: 13px;
+            height: 13px;
+        }
+        .tipsy-se .tipsy-arrow {
+            bottom: -2px;
+            right: 10px;
+            background-position: 0% 100%;
+        }
+
+        #mw-clearyourcache,
+        #mw-sitecsspreview,
+        #mw-sitejspreview,
+        #mw-usercsspreview,
+        #mw-userjspreview {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+
+        /* Correct user & content directionality when viewing a diff */
+        .diff-currentversion-title,
+        .diff {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+        /* @noflip */ .diff-contentalign-right td {
+            direction: rtl;
+            unicode-bidi: embed;
+        }
+        /* @noflip */ .diff-contentalign-left td {
+            direction: ltr;
+            unicode-bidi: embed;
+        }
+        .diff-otitle,
+        .diff-ntitle,
+        .diff-lineno {
+            direction: ltr !important;
+            unicode-bidi: embed;
+        }
+
+        #mw-revision-info,
+        #mw-revision-info-current,
+        #mw-revision-nav {
+            direction: ltr;
+            display: inline;
+        }
+
+        /* Images */
+
+        /* @noflip */ div.tright,
+        div.floatright,
+        table.floatright {
+            clear: right;
+            float: right;
+        }
+        /* @noflip */ div.tleft,
+        div.floatleft,
+        table.floatleft {
+            float: left;
+            clear: left;
+        }
+        div.floatright,
+        table.floatright,
+        div.floatleft,
+        table.floatleft {
+            position: relative;
+        }
+
+        /* bug 12205 */
+        #mw-credits a {
+            unicode-bidi: embed;
+        }
+
+        /* Accessibility */
+        .mw-jump,
+        #jump-to-nav {
+            overflow: hidden;
+            height: 0;
+            zoom: 1; /* http://webaim.org/techniques/skipnav/#iequirk */
+        }
+
+        /* For developpers */
+        .xdebug-error {
+            position: absolute;
+            z-index: 99;
+        }
+
+        /* main.css **********************************************************/
+
+        #column-content {
+            margin: 5px;
+            padding: 0;
+        }
+
+        #content {
+            margin: 0em 0 0 0em;
+            padding: 0 1em 1em 1em;
+            position: relative;
+            z-index: 2;
+            background: white 0 0 no-repeat;
+            color: black;
+            border-right: none;
+            line-height: 1.5em;
+            overflow: visible;
+            min-height:45em;
+
+        }
+        #blackheader {
+            display: block;
+            width: 100%;
+            height: .8em;
+            padding: 0px;
+            margin: 0px;
+            background: #2f2f2f url(bg.gif);
+        }
+
+        #blackfooter {
+            display: block;
+            background: #2f2f2f url(bg.gif);
+            width: 100%;
+            margin: 0px;
+            padding: .6em 0 .6em 0;
+        }
+
+        #column-one {
+            padding-top: 170px;
+        }
+        /* the left column width is specified in class .portlet */
+
+        /* Font size:
+        ** We take advantage of keyword scaling- browsers won't go below 9px
+        ** More at http://www.w3.org/2003/07/30-font-size
+        ** http://style.cleverchimp.com/font_size_intervals/altintervals.html
+        */
+
+        body {
+            font: x-small sans-serif;
+            background: #FFF; /*url(bg.gif);*/
+            color: black;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* scale back up to a sane default */
+        #globalWrapper {
+            font-size: 127%;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+        .visualClear {
+            clear: both;
+        }
+
+        /* general styles */
+
+        table {
+            font-size: 100%;
+            color: black;
+            /* we don't want the bottom borders of <h2>s to be visible through
+            floated tables */
+            background-color: white;
+            border-top: 2px solid #f3f3f3;
+            border-left: 2px solid #f3f3f3;
+            border-right: 1px solid #999;
+            border-bottom: 1px solid #999;
+            border-spacing:0px;
+            border-style:solid;
+        }
+
+        table td {
+            padding: 0 .5em 0 .5em;
+            background-color:#eee;
+            border-left: 1px solid #f3f3f3;
+            border-right: 1px solid #e3e3e3;
+            border-top: 1px solid #f3f3f3;
+            border-bottom: 1px solid #ccc;
+
+        }
+        fieldset table {
+            /* but keep table layouts in forms clean... */
+            background: none;
+        }
+        a {
+            text-decoration: none;
+            color: #002bb8;
+            background: none;
+        }
+        a:visited {
+            color: #5a3696;
+        }
+        a:active {
+            color: #faa700;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        a.stub {
+            color: #772233;
+        }
+        a.new, #p-personal a.new {
+            color: #ba0000;
+        }
+        a.new:visited, #p-personal a.new:visited {
+            color: #a55858;
+        }
+
+        img {
+            border: none;
+            vertical-align: middle;
+        }
+        p {
+            margin: .4em 0 .5em 0;
+            line-height: 1.5em;
+        }
+        p img {
+            margin: 0;
+        }
+
+        hr {
+            height: 1px;
+            color: #aaa;
+            background-color: #aaa;
+            border: 0;
+            margin: .2em 0 .2em 0;
+        }
+
+        .editsection { display: none; }
+
+        h1, h2, h3, h4, h5, h6 {
+            color: black;
+            background: none;
+            font-weight: normal;
+            margin: 0;
+            padding-top: .5em;
+            padding-bottom: .17em;
+            border-bottom: 1px solid #aaa;
+        }
+        h1 { font-size: 188%; }
+        h1 .editsection { font-size: 53%; }
+        h2 { font-size: 150%;
+            padding-left: 10px;}
+        h2 .editsection { font-size: 67%; }
+        h3, h4, h5, h6 {
+            border-bottom: none;
+            font-weight: bold;
+        }
+        h3 { font-size: 132%; }
+        h3 .editsection { font-size: 76%; font-weight: normal; }
+        h4 { font-size: 116%; }
+        h4 .editsection { font-size: 86%; font-weight: normal; }
+        h5 { font-size: 100%; }
+        h5 .editsection { font-weight: normal; }
+        h6 { font-size: 80%;  }
+        h6 .editsection { font-size: 125%; font-weight: normal; }
+
+        ul {
+            line-height: 1.5em;
+            list-style-type: square;
+            margin: .3em 0 0 1.5em;
+            padding: 0;
+            list-style-image: url(bullet.gif);
+        }
+        ol {
+            line-height: 1.5em;
+            margin: .3em 0 0 3.2em;
+            padding: 0;
+            list-style-image: none;
+        }
+        li {
+            margin-bottom: .1em;
+        }
+        dt {
+            font-weight: bold;
+            margin-bottom: .1em;
+        }
+        dl {
+            margin-top: .2em;
+            margin-bottom: .5em;
+        }
+        dd {
+            line-height: 1.5em;
+            margin-left: 2em;
+            margin-bottom: .1em;
+        }
+
+        fieldset {
+            border: 1px solid #2f6fab;
+            margin: 1em 0 1em 0;
+            padding: 0 1em 1em;
+            line-height: 1.5em;
+        }
+        fieldset.nested {
+            margin: 0 0 0.5em 0;
+            padding: 0 0.5em 0.5em;
+        }
+        legend {
+            padding: .5em;
+            font-size: 95%;
+        }
+        form {
+            border: none;
+            margin: 0;
+        }
+
+        textarea {
+            width: 100%;
+            padding: .1em;
+        }
+
+        input.historysubmit {
+            padding: 0 .3em .3em .3em !important;
+            font-size: 94%;
+            cursor: pointer;
+            height: 1.7em !important;
+            margin-left: 1.6em;
+        }
+        select {
+            vertical-align: top;
+        }
+        abbr, acronym, .explain {
+            border-bottom: 1px dotted black;
+            color: black;
+            background: none;
+            cursor: help;
+        }
+        q {
+            font-family: Times, "Times New Roman", serif;
+            font-style: italic;
+        }
+        /* disabled for now
+        blockquote {
+            font-family: Times, "Times New Roman", serif;
+            font-style: italic;
+        }*/
+        code {
+            background-color: #f9f9f9;
+        }
+        source {
+            background-color: #eeeeee;
+        }
+        pre {
+            padding: 1em;
+            border: 1px dashed #2f6fab;
+            color: black;
+            background-color: #f9f9f9;
+            line-height: 1.1em;
+            word-wrap: break-word;
+            white-space: pre-wrap;
+        }
+
+        div.source-delphi, div.source-cpp, div.source-xml {
+        padding: 1em;
+        margin: 1em 0;
+        border: 1px dashed #2f6fab;
+        background-color:  #f9f9f9;
+        line-height: 1.1em;
+        font-size: 1.2em;
+        }
+
+        #codesig div.source-delphi, #codesig div.source-cpp {
+            border:none;
+            background: none;
+            padding: 0;
+            margin: 0;
+            word-wrap: break-word; /* Internet Explorer 5.5+ */
+            white-space: pre-wrap;
+            font-size: 1.1em;
+        }
+
+        /*
+        ** the main content area
+        */
+
+        #siteSub {
+            display: none;
+        }
+        #jump-to-nav {
+            display: none;
+        }
+
+        #contentSub, #contentSub2 {
+            font-size: 84%;
+            line-height: 1.2em;
+            margin: 0 0 1.4em 1em;
+            color: #7d7d7d;
+            width: auto;
+        }
+        span.subpages {
+            display: block;
+        }
+
+        /* Some space under the headers in the content area */
+        #bodyContent h1, #bodyContent h2 {
+            margin-bottom: .6em;
+        }
+        #bodyContent h3, #bodyContent h4, #bodyContent h5 {
+            margin-bottom: .3em;
+        }
+        .firstHeading {
+            margin-bottom: .1em;
+            /* These two rules hack around bug 2013 (fix for more limited bug 11325).
+            When bug 2013 is fixed properly, they should be removed. */
+            padding-top: 0em;
+            display:block;
+            width: 100%;
+            height: 100%;
+            line-height: 1.2em;
+            padding-bottom: 0;
+        }
+
+        /* user notification thing */
+        .usermessage {
+            background-color: #ffce7b;
+            border: 1px solid #ffa500;
+            color: black;
+            font-weight: bold;
+            margin: 2em 0 1em;
+            padding: .5em 1em;
+            vertical-align: middle;
+        }
+        #siteNotice {
+            text-align: center;
+            font-size: 95%;
+            padding: 0 .9em;
+        }
+        #siteNotice p {
+            margin: 0;
+            padding: 0;
+        }
+        .success {
+            color: green;
+            font-size: larger;
+        }
+        .error {
+            color: red;
+            font-size: larger;
+        }
+        .errorbox, .successbox {
+            font-size: larger;
+            border: 2px solid;
+            padding: .5em 1em;
+            float: left;
+            margin-bottom: 2em;
+            color: #000;
+        }
+        .errorbox {
+            border-color: red;
+            background-color: #fff2f2;
+        }
+        .successbox {
+            border-color: green;
+            background-color: #dfd;
+        }
+        .errorbox h2, .successbox h2 {
+            font-size: 1em;
+            font-weight: bold;
+            display: inline;
+            margin: 0 .5em 0 0;
+            border: none;
+        }
+
+        .catlinks {
+            display: none;
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            margin-top: 1em;
+            clear: both;
+        }
+        /* currently unused, intended to be used by a metadata box
+        in the bottom-right corner of the content area */
+        .documentDescription {
+            /* The summary text describing the document */
+            font-weight: bold;
+            display: block;
+            margin: 1em 0;
+            line-height: 1.5em;
+        }
+        .documentByLine {
+            text-align: right;
+            font-size: 90%;
+            clear: both;
+            font-weight: normal;
+            color: #76797c;
+        }
+
+        /* emulate center */
+        .center {
+            width: 100%;
+            text-align: center;
+        }
+        *.center * {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        /* small for tables and similar */
+        .small, .small * {
+            font-size: 94%;
+        }
+        table.small {
+            font-size: 100%;
+        }
+
+        /*
+        ** content styles
+        */
+
+        table#toc.toc {
+            border: none;
+            display: block;
+            position: relative;
+            float: right;
+            max-width: 40%;
+            margin: -5px 0px 10px 10px;
+            z-index: 3;
+        }
+        #toc a:visited {
+            color: #002bb8;
+        }
+
+        #toc,
+        .toc,
+        .mw-warning {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+            z-index:3;
+        }
+        #toc h2,
+        .toc h2 {
+            display: inline;
+            border: none;
+            padding: 0;
+            font-size: 100%;
+            font-weight: bold;
+            z-index:3;
+        }
+        #toc #toctitle,
+        .toc #toctitle,
+        #toc .toctitle,
+        .toc .toctitle {
+            z-index:3;
+        }
+        #toc ul,
+        .toc ul {
+            list-style-type: none;
+            list-style-image: none;
+            margin-left: 0;
+            padding-left: 0;
+            width: 100%;
+            display:block;
+        }
+        #toc ul ul,
+        .toc ul ul {
+            margin: 0 0 0 1em;
+
+        }
+        #toc .toctoggle,
+        .toc .toctoggle {
+            font-size: 94%;
+        }
+
+        #toc table, #toc tbody, #toc tr, #toc td{
+            width: 100%;
+        }
+
+        #toc ul li,
+        .toc ul li {
+            /*display: inline; */
+            margin: 0 1em 0 0;
+        }
+
+        .mw-warning {
+            margin-left: 50px;
+            margin-right: 50px;
+            text-align: center;
+        }
+
+        /* images */
+        div.floatright, table.floatright {
+            clear: right;
+            float: right;
+            position: relative;
+            margin: 0 0 .5em .5em;
+            border: 0;
+        /*
+            border: .5em solid white;
+            border-width: .5em 0 .8em 1.4em;
+        */
+        }
+        div.floatright p { font-style: italic; }
+        div.floatleft, table.floatleft {
+            float: left;
+            clear: left;
+            position: relative;
+            margin: 0 .5em .5em 0;
+            border: 0;
+        /*
+            margin: .3em .5em .5em 0;
+            border: .5em solid white;
+            border-width: .5em 1.4em .8em 0;
+        */
+        }
+        div.floatleft p { font-style: italic; }
+        /* thumbnails */
+        div.thumb {
+            margin-bottom: .5em;
+            border-style: solid;
+            border-color: white;
+            width: auto;
+        }
+        div.thumbinner {
+            border: 1px solid #ccc;
+            padding: 3px !important;
+            background-color: #f9f9f9;
+            font-size: 94%;
+            text-align: center;
+            overflow: hidden;
+        }
+        html .thumbimage {
+            border: 1px solid #ccc;
+        }
+        html .thumbcaption {
+            border: none;
+            text-align: left;
+            line-height: 1.4em;
+            padding: 3px !important;
+            font-size: 94%;
+        }
+        div.magnify {
+            float: right;
+            border: none !important;
+            background: none !important;
+        }
+        div.magnify a, div.magnify img {
+            display: block;
+            border: none !important;
+            background: none !important;
+        }
+        div.tright {
+            clear: right;
+            float: right;
+            border-width: .5em 0 .8em 1.4em;
+        }
+        div.tleft {
+            float: left;
+            clear: left;
+            margin-right: .5em;
+            border-width: .5em 1.4em .8em 0;
+        }
+        img.thumbborder {
+            border: 1px solid #dddddd;
+        }
+        .hiddenStructure {
+            display: none;
+        }
+
+        /*
+        ** classes for special content elements like town boxes
+        ** intended to be referenced directly from the wiki src
+        */
+
+        /*
+        ** User styles
+        */
+        /* table standards */
+        table.rimage {
+            float: right;
+            position: relative;
+            margin-left: 1em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+        .toccolours {
+            border: 1px solid #aaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+        }
+
+        /*
+        ** edit views etc
+        */
+        .special li {
+            line-height: 1.4em;
+            margin: 0;
+            padding: 0;
+        }
+
+        /*
+        ** keep the whitespace in front of the ^=, hides rule from konqueror
+        ** this is css3, the validator doesn't like it when validating as css2
+        */
+        #bodyContent a.external,
+        #bodyContent a[href ^="gopher://"] {
+            background: url(external.png) center right no-repeat;
+            padding-right: 13px;
+        }
+        #bodyContent a[href ^="https://"],
+        .link-https {
+            background: url(lock_icon.gif) center right no-repeat;
+            padding-right: 16px;
+        }
+        #bodyContent a[href ^="mailto:"],
+        .link-mailto {
+            background: url(mail_icon.gif) center right no-repeat;
+            padding-right: 18px;
+        }
+        #bodyContent a[href ^="news://"] {
+            background: url(news_icon.png) center right no-repeat;
+            padding-right: 18px;
+        }
+        #bodyContent a[href ^="ftp://"],
+        .link-ftp {
+            background: url(file_icon.gif) center right no-repeat;
+            padding-right: 18px;
+        }
+        #bodyContent a[href ^="irc://"],
+        #bodyContent a.extiw[href ^="irc://"],
+        .link-irc {
+            background: url(discussionitem_icon.gif) center right no-repeat;
+            padding-right: 18px;
+        }
+        #bodyContent a.external[href $=".ogg"], #bodyContent a.external[href $=".OGG"],
+        #bodyContent a.external[href $=".mid"], #bodyContent a.external[href $=".MID"],
+        #bodyContent a.external[href $=".midi"], #bodyContent a.external[href $=".MIDI"],
+        #bodyContent a.external[href $=".mp3"], #bodyContent a.external[href $=".MP3"],
+        #bodyContent a.external[href $=".wav"], #bodyContent a.external[href $=".WAV"],
+        #bodyContent a.external[href $=".wma"], #bodyContent a.external[href $=".WMA"],
+        .link-audio {
+            background: url("audio.png") center right no-repeat;
+            padding-right: 13px;
+        }
+        #bodyContent a.external[href $=".ogm"], #bodyContent a.external[href $=".OGM"],
+        #bodyContent a.external[href $=".avi"], #bodyContent a.external[href $=".AVI"],
+        #bodyContent a.external[href $=".mpeg"], #bodyContent a.external[href $=".MPEG"],
+        #bodyContent a.external[href $=".mpg"], #bodyContent a.external[href $=".MPG"],
+        .link-video {
+            background: url("video.png") center right no-repeat;
+            padding-right: 13px;
+        }
+        #bodyContent a.external[href $=".pdf"], #bodyContent a.external[href $=".PDF"],
+        #bodyContent a.external[href *=".pdf#"], #bodyContent a.external[href *=".PDF#"],
+        #bodyContent a.external[href *=".pdf?"], #bodyContent a.external[href *=".PDF?"],
+        .link-document {
+            background: url("document.png") center right no-repeat;
+            padding-right: 12px;
+        }
+
+        /* disable interwiki styling */
+        #bodyContent a.extiw,
+        #bodyContent a.extiw:active {
+            color: #36b;
+            background: none;
+            padding: 0;
+        }
+        #bodyContent a.external {
+            color: #36b;
+        }
+        /* this can be used in the content area to switch off
+        special external link styling */
+        #bodyContent .plainlinks a {
+            background: none !important;
+            padding: 0 !important;
+        }
+        /*
+        ** Structural Elements
+        */
+
+        /*
+        ** general portlet styles (elements in the quickbar)
+        */
+        .portlet {
+            position:relative;
+            border: none;
+            margin: 0 0 .5em;
+            padding: 0;
+            padding: .5em 0 0 0;
+            float: none;
+            width: 11.6em;
+            overflow: hidden;
+            background: #777 url(rtcorner.png) no-repeat 10.62em top;
+        }
+        .portlet h4 {
+            font-size: 95%;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+        .portlet h5 {
+            color: #fff;
+            background: transparent;
+            padding: 0 1em 0 .5em;
+            display: inline;
+            height: 1em;
+            text-transform: capitalize;
+            font-size: 91%;
+            font-weight: bold;
+            white-space: nowrap;
+            font-variant: small-caps;
+        }
+        .portlet h6 {
+            background: #ffae2e;
+            border: 1px solid #2f6fab;
+            border-style: solid solid none solid;
+            padding: 0 1em 0 1em;
+            text-transform: lowercase;
+            display: block;
+            font-size: 1em;
+            height: 1.2em;
+            font-weight: normal;
+            white-space: nowrap;
+        }
+        .pBody {
+            font-size: 95%;
+            background: #777 url(rbcorner.png) no-repeat bottom right;
+            color: black;
+            border-collapse: collapse;
+            padding: 0 .8em 1em .5em;
+        }
+        .portlet h1,
+        .portlet h2,
+        .portlet h3,
+        .portlet h4 {
+            margin: 0;
+            padding: 0;
+        }
+        .portlet ul {
+            line-height: 1.5em;
+            list-style-type: none;
+            font-size: 95%;
+            list-style-position: inside;
+            list-style-image: none;
+        }
+        .portlet li {
+            width: 9em;
+            height: auto;
+            display: block;
+            padding: .1em 2em;
+            margin: 0 -2em;
+            background: #777 url(bullet.gif) .5em center no-repeat;
+        }
+
+        .portlet li a {
+            color: #fff;
+            font-weight:bold;
+        }
+
+        .portlet li:hover {
+            background-color: #fff;
+            color: #000;
+            text-decoration:none;
+        }
+
+        .portlet li:hover a {
+            color: #000;
+            text-decoration:none;
+        }
+
+        .portlet li a:hover {
+            color: #000;
+            text-decoration:none;
+        }
+
+        /*
+        ** Logo properties
+        */
+
+        #p-logo {
+            top: 1em;
+            left: 0;
+            position: absolute; /*needed to use z-index */
+            z-index: 3;
+            height: 155px;
+            overflow: visible;
+            padding: 0;
+            background: none;
+        }
+
+        #p-logo h5 {
+            display: none;
+        }
+        #p-logo a,
+        #p-logo a:hover {
+            display: block;
+            height: 155px;
+            width: 12.2em;
+            background-repeat: no-repeat;
+            background-position: 35% 50% !important;
+            text-decoration: none;
+        }
+
+        /*
+        ** Search portlet
+        */
+        #p-search {
+            position: relative;
+            z-index: 3;
+        }
+        input.searchButton {
+            margin-top: 1px;
+            font-size: 95%;
+        }
+        #searchGoButton {
+            padding-left: .5em;
+            padding-right: .5em;
+            font-weight: bold;
+        }
+        #searchInput {
+            width: 7.9em;
+            margin: 0;
+            font-size: 95%;
+        }
+        #p-search .pBody {
+            padding: .5em .4em .4em .4em;
+            text-align: center;
+        }
+
+        /*
+        ** the personal toolbar
+        */
+        #p-personal {
+            position: absolute;
+            left: 0;
+            top: 0;
+            z-index: 4;
+            width: 100%;
+            white-space: nowrap;
+            padding: 0;
+            margin: 0;
+            border: none;
+            background: none;
+            overflow: visible;
+            line-height: 1.2em;
+            /*border-bottom: 1px solid #1d5cc8;*/
+        }
+        #p-personal h5 {
+            display: none;
+        }
+        #p-personal .portlet,
+        #p-personal .pBody {
+            z-index: 2;
+            padding: 0;
+            margin: 0;
+            border: none;
+            overflow: visible;
+            background: none;
+        }
+        /* this is the ul contained in the portlet */
+        #p-personal ul {
+            border: none;
+            line-height: 1.4em;
+            color: #FFF;
+            padding: 0 2em 0 3em;
+            margin: 0;
+            text-align: right;
+            list-style: none;
+            z-index: 0;
+            background: #777;
+            cursor: default;
+        }
+        #p-personal li {
+            z-index: 0;
+            border: none;
+            padding: 0;
+            display: inline;
+            color: #2f6fab;
+            margin: 0 0 0 1em;
+            line-height: 1.2em;
+            background: none;
+        }
+        #p-personal li a {
+            text-decoration: none;
+            color: #fff;
+            padding: 0em 0em .2em 0em;
+            background: none;
+        }
+        #p-personal li a:hover {
+            color: #000;
+            background-color: white;
+            text-decoration: none;
+        }
+        #p-personal li.active a:hover {
+            background-color: transparent;
+        }
+        /* the icon in front of the user name, single quotes
+        in bg url to hide it from iemac */
+        li#pt-userpage,
+        li#pt-anonuserpage,
+        li#pt-login {
+            background: url(user.gif) top left no-repeat;
+            padding-left: 20px;
+            text-transform: none;
+        }
+        #p-personal li.active {
+            font-weight: bold;
+        }
+        /*
+        ** the page-related actions- page/talk, edit etc
+        */
+        #p-cactions {
+            position: absolute;
+            top: 1.3em;
+            left: 11.5em;
+            margin: 0;
+            white-space: nowrap;
+            width: 76%;
+            line-height: 1.1em;
+            overflow: visible;
+            background: none;
+            border-collapse: collapse;
+            padding-top: 0em;
+            padding-left: 1em;
+            list-style: none;
+            font-size: 95%;
+        }
+        #p-cactions ul {
+            list-style: none;
+            list-style-image: none;
+            list-style-position: inside;
+        }
+        #p-cactions li {
+            display: inline;
+            border-bottom: none;
+            padding: 0 0 .3em 0;
+            margin: 0 .3em 0 0;
+            overflow: visible;
+        }
+        #p-cactions li.selected {
+            border-color: #fabd23;
+            padding: 0 0 .2em 0;
+            font-weight: bold;
+        }
+        #p-cactions li a {
+            color: #ddd;
+            border: none;
+            padding: .2em 1em .2em 1em;
+            position: relative;
+            z-index: 0;
+            margin: 0 0em;
+            text-decoration: none;
+            background: #777 url(smcorner.png) no-repeat;
+        }
+        #p-cactions li.selected a {
+            color: #000;
+            z-index: 3;
+            background-color: white;
+        }
+        #p-cactions .new a {
+            color: #ffdddd;
+        }
+        #p-cactions li a:hover {
+            z-index: 3;
+            text-decoration: none;
+            background-color: #b90003;
+            color: #fff;
+            font-weight: bold;
+        }
+        #p-cactions h5 {
+            display: none;
+        }
+        #p-cactions li.istalk {
+            margin-right: 0;
+        }
+        #p-cactions li.istalk a {
+            padding-right: .5em;
+        }
+        #p-cactions #ca-addsection a {
+            padding-left: .4em;
+            padding-right: .4em;
+        }
+        /* offsets to distinguish the tab groups */
+        li#ca-talk {
+            margin-right: 1.6em;
+        }
+        li#ca-watch, li#ca-unwatch, li#ca-varlang-0, li#ca-print {
+            margin-left: 1.6em;
+        }
+        #p-cactions .pBody {
+            font-size: 1em;
+            background-color: transparent;
+            color: inherit;
+            border-collapse: inherit;
+            border: 0;
+            padding: 0;
+            background-image: none;
+        }
+        #p-cactions .hiddenStructure {
+            display: none;
+        }
+        #p-cactions li a {
+            font-variant: small-caps;
+        }
+
+        /*
+        ** the remaining portlets
+        */
+        #p-tbx,
+        #p-lang {
+            position: relative;
+            z-index: 3;
+        }
+
+        /* TODO: #t-iscite is only used by the Cite extension, come up with some
+        * system which allows extensions to add to this file on the fly
+        */
+        #t-ispermalink, #t-iscite {
+            color: #999;
+        }
+        /*
+        ** footer
+        */
+        #footer {
+            background-color: #777;
+            border-top: 1px dashed #555;
+            border-bottom: 1px dashed #555;
+            margin: .6em 0 1em 0;
+            padding: .4em 0 1.2em 0;
+            text-align: center;
+            font-size: 90%;
+        }
+        #footer li {
+            color: #ddd;
+            display: inline;
+            margin: 0 1.3em;
+        }
+
+        #footer a {
+            color: #fff;
+        }
+
+        #f-poweredbyico, #f-copyrightico {
+            margin: 0 8px;
+            position: relative;
+            top: -2px; /* Bump it up just a tad */
+        }
+        #f-poweredbyico {
+            float: right;
+            height: 1%;
+        }
+        #f-copyrightico {
+            float: left;
+            height: 1%;
+        }
+
+        /* js pref toc */
+        #preftoc {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            clear: both;
+        }
+        #preftoc li {
+            background-color: #f0f0f0;
+            color: #000;
+        }
+        #preftoc li {
+            margin: 1px -2px 1px 2px;
+            float: left;
+            padding: 2px 0 3px 0;
+            border: 1px solid #fff;
+            border-right-color: #716f64;
+            border-bottom: 0;
+            position: relative;
+            white-space: nowrap;
+            list-style-type: none;
+            list-style-image: none;
+            z-index: 3;
+        }
+        #preftoc li.selected {
+            font-weight: bold;
+            background-color: #f9f9f9;
+            border: 1px solid #aaa;
+            border-bottom: none;
+            cursor: default;
+            top: 1px;
+            padding-top: 2px;
+            margin-right: -3px;
+        }
+        #preftoc > li.selected {
+            top: 2px;
+        }
+        #preftoc a,
+        #preftoc a:active {
+            display: block;
+            color: #000;
+            padding: 0 .7em;
+            position: relative;
+            text-decoration: none;
+        }
+        #preftoc li.selected a {
+            cursor: default;
+            text-decoration: none;
+        }
+        #prefcontrol {
+            padding-top: 2em;
+            clear: both;
+        }
+        #preferences {
+            margin: 0;
+            border: 1px solid #aaa;
+            clear: both;
+            padding: 1.5em;
+            background-color: #F9F9F9;
+        }
+        .prefsection {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+        .prefsection fieldset {
+            border: 1px solid #aaa;
+            float: left;
+            margin-right: 2em;
+        }
+        .prefsection legend {
+            font-weight: bold;
+        }
+        .prefsection table, .prefsection legend {
+            background-color: #F9F9F9;
+        }
+        .mainLegend {
+            display: none;
+        }
+        div.prefsectiontip {
+            font-size: x-small;
+            padding: .2em 2em;
+            color: #666;
+        }
+        .btnSavePrefs {
+            font-weight: bold;
+            padding-left: .3em;
+            padding-right: .3em;
+        }
+
+        .preferences-login {
+            clear: both;
+            margin-bottom: 1.5em;
+        }
+
+        .prefcache {
+            font-size: 90%;
+            margin-top: 2em;
+        }
+
+        div#userloginForm form,
+        div#userlogin form#userlogin2 {
+            margin: 0 3em 1em 0;
+            border: 1px solid #aaa;
+            clear: both;
+            padding: 1.5em 2em;
+            background-color: #f9f9f9;
+            float: left;
+        }
+        .rtl div#userloginForm form,
+        .rtl div#userlogin form#userlogin2 {
+            float: right;
+        }
+
+        div#userloginForm table,
+        div#userlogin form#userlogin2 table {
+            background-color: #f9f9f9;
+        }
+
+        div#userloginForm h2,
+        div#userlogin form#userlogin2 h2 {
+            padding-top: 0;
+        }
+
+        div#userlogin .captcha,
+        div#userloginForm .captcha {
+            border: 1px solid #bbb;
+            padding: 1.5em 2em;
+            background-color: white;
+        }
+
+        #loginend, #signupend {
+            clear: both;
+        }
+
+        #userloginprompt, #languagelinks {
+            font-size: 85%;
+        }
+
+        #login-sectiontip {
+            font-size: 85%;
+            line-height: 1.2;
+            padding-top: 2em;
+        }
+
+        #userlogin .loginText, #userlogin .loginPassword {
+            width: 12em;
+        }
+
+        #userloginlink a, #wpLoginattempt, #wpCreateaccount {
+            font-weight: bold;
+        }
+
+        /*
+        ** IE/Mac fixes, hope to find a validating way to move this
+        ** to a separate stylesheet. This would work but doesn't validate:
+        ** @import("IEMacFixes.css");
+        */
+        /* tabs: border on the a, not the div */
+        * > html #p-cactions li { border: none; }
+        * > html #p-cactions li a {
+            border: 1px solid #aaa;
+            border-bottom: none;
+        }
+        * > html #p-cactions li.selected a { border-color: #fabd23; }
+        /* footer icons need a fixed width */
+        * > html #f-poweredbyico,
+        * > html #f-copyrightico { width: 88px; }
+        * > html #bodyContent,
+        * > html #bodyContent pre {
+            overflow-x: auto;
+            width: 100%;
+            padding-bottom: 25px;
+        }
+
+        /* more IE fixes */
+        /* float/negative margin brokenness */
+        * html #footer {margin-top: 0;}
+        * html #column-content {
+            display: inline;
+            margin-bottom: 0;
+        }
+        * html div.editsection { font-size: smaller; }
+        #pagehistory li.selected { position: relative; }
+
+        /* Mac IE 5.0 fix; floated content turns invisible */
+        * > html #column-content {
+            float: none;
+        }
+        * > html #column-one {
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        * > html #footer {
+            margin-left: 13.2em;
+        }
+        .redirectText {
+            font-size: 150%;
+            margin: 5px;
+        }
+
+        .printfooter {
+            display: none;
+        }
+
+        .not-patrolled {
+            background-color: #ffa;
+        }
+        div.patrollink {
+            clear: both;
+            font-size: 75%;
+            text-align: right;
+        }
+        span.newpage, span.minor, span.bot {
+            font-weight: bold;
+        }
+        span.unpatrolled {
+            font-weight: bold;
+            color: red;
+        }
+
+        .sharedUploadNotice {
+            font-style: italic;
+        }
+
+        span.updatedmarker {
+            color: black;
+            background-color: #0f0;
+        }
+
+        table.gallery {
+            border: 1px solid #ccc;
+            margin: 2px;
+            padding: 2px;
+            background-color: white;
+        }
+
+        table.gallery tr {
+            vertical-align: top;
+        }
+
+        table.gallery td {
+            vertical-align: top;
+            background-color: #f9f9f9;
+            border: solid 2px white;
+        }
+        /* Keep this temporarily so that cached pages will display right */
+        table.gallery td.galleryheader {
+            text-align: center;
+            font-weight: bold;
+        }
+        table.gallery caption {
+            font-weight: bold;
+        }
+
+        div.gallerybox {
+            margin: 2px;
+        }
+
+        div.gallerybox div.thumb {
+            text-align: center;
+            border: 1px solid #ccc;
+            margin: 2px;
+        }
+
+        div.gallerytext {
+            overflow: hidden;
+            font-size: 94%;
+            padding: 2px 4px;
+        }
+
+        span.comment {
+            font-style: italic;
+        }
+
+        span.changedby {
+            font-size: 95%;
+        }
+
+        .previewnote {
+            text-indent: 3em;
+            color: #c00;
+            border-bottom: 1px solid #aaa;
+            padding-bottom: 1em;
+            margin-bottom: 1em;
+        }
+
+        .previewnote p {
+            margin: 0;
+            padding: 0;
+        }
+
+        .editExternally {
+            border: 1px solid gray;
+            background-color: #ffffff;
+            padding: 3px;
+            margin-top: 0.5em;
+            float: left;
+            font-size: small;
+            text-align: center;
+        }
+        .editExternallyHelp {
+            font-style: italic;
+            color: gray;
+        }
+
+        .toggle {
+            margin-left: 2em;
+            text-indent: -2em;
+        }
+
+        /* Classes for EXIF data display */
+        table.mw_metadata {
+            font-size: 0.8em;
+            margin-left: 0.5em;
+            margin-bottom: 0.5em;
+            width: 300px;
+        }
+
+        table.mw_metadata caption {
+            font-weight: bold;
+        }
+
+        table.mw_metadata th {
+            font-weight: normal;
+        }
+
+        table.mw_metadata td {
+            padding: 0.1em;
+        }
+
+        table.mw_metadata {
+            border: none;
+            border-collapse: collapse;
+        }
+
+        table.mw_metadata td, table.mw_metadata th {
+            text-align: center;
+            border: 1px solid #aaaaaa;
+            padding-left: 0.1em;
+            padding-right: 0.1em;
+        }
+
+        table.mw_metadata th {
+            background-color: #f9f9f9;
+        }
+
+        table.mw_metadata td {
+            background-color: #fcfcfc;
+        }
+
+        table.collapsed tr.collapsable {
+            display: none;
+        }
+
+
+        /* filetoc */
+        ul#filetoc {
+            text-align: center;
+            border: 1px solid #aaaaaa;
+            background-color: #f9f9f9;
+            padding: 5px;
+            font-size: 95%;
+            margin-bottom: 0.5em;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        #filetoc li {
+            display: inline;
+            list-style-type: none;
+            padding-right: 2em;
+        }
+
+        input#wpSummary {
+            width: 80%;
+        }
+
+        /* @bug 1714 */
+        input#wpSave, input#wpDiff {
+            margin-right: 0.33em;
+        }
+
+        #wpSave {
+            font-weight: bold;
+        }
+
+        /* Classes for article validation */
+
+        table.revisionform_default {
+            border: 1px solid #000000;
+        }
+
+        table.revisionform_focus {
+            border: 1px solid #000000;
+            background-color:#00BBFF;
+        }
+
+        tr.revision_tr_default {
+            background-color:#EEEEEE;
+        }
+
+        tr.revision_tr_first {
+            background-color:#DDDDDD;
+        }
+
+        p.revision_saved {
+            color: green;
+            font-weight:bold;
+        }
+
+        #mw_trackbacks {
+            border: solid 1px #bbbbff;
+            background-color: #eeeeff;
+            padding: 0.2em;
+        }
+
+
+        /* Allmessages table */
+
+        #allmessagestable th {
+            background-color: #b2b2ff;
+        }
+
+        #allmessagestable tr.orig {
+            background-color: #ffe2e2;
+        }
+
+        #allmessagestable tr.new {
+            background-color: #e2ffe2;
+        }
+
+        #allmessagestable tr.def {
+            background-color: #f0f0ff;
+        }
+
+
+        /* noarticletext */
+        div.noarticletext {
+            border: 1px solid #ccc;
+            background: #fff;
+            padding: .2em 1em;
+            color: #000;
+        }
+
+        div#searchTargetContainer {
+            left:       10px;
+            top:        10px;
+            width:      90%;
+            background: white;
+        }
+
+        div#searchTarget {
+            padding:    3px;
+            margin:     5px;
+            background: #F0F0F0;
+            border:     solid 1px blue;
+        }
+
+        div#searchTarget ul li {
+            list-style: none;
+        }
+
+        div#searchTarget ul li:before {
+            color: #FFA500;
+            content: "\00BB \0020";
+        }
+
+        div#searchTargetHide {
+            float:right;
+            border:solid 1px black;
+            background:#DCDCDC;
+            padding:2px;
+        }
+
+        div.multipageimagenavbox {
+        border: solid 1px silver;
+        padding: 4px;
+        margin: 1em;
+        background: #f0f0f0;
+        }
+
+        div.multipageimagenavbox div.thumb {
+        border: none;
+        margin-left: 2em;
+        margin-right: 2em;
+        }
+
+        div.multipageimagenavbox hr {
+        margin: 6px;
+        }
+
+        table.multipageimage td {
+        text-align: center;
+        }
+
+        /** Special:Version */
+
+        table#sv-ext, table#sv-hooks, table#sv-software {
+            margin: 1em;
+            padding:0em;
+        }
+
+        #sv-ext td, #sv-hooks td, #sv-software td,
+        #sv-ext th, #sv-hooks th, #sv-software th {
+            border: 1px solid #A0A0A0;
+            padding: 0 0.15em 0 0.15em;
+        }
+        #sv-ext th, #sv-hooks th, #sv-software th {
+            background-color: #F0F0F0;
+            color: black;
+            padding: 0 0.15em 0 0.15em;
+        }
+        tr.sv-space{
+            height: 0.8em;
+            border:none;
+        }
+        tr.sv-space td { display: none; }
+
+        /*
+        Table pager (e.g. Special:Imagelist)
+        - remove underlines from the navigation link
+        - collapse borders
+        - set the borders to outsets (similar to Special:Allmessages)
+        - remove line wrapping for all td and th, set background color
+        - restore line wrapping for the last two table cells (description and size)
+        */
+        .TablePager_nav a { text-decoration: none; }
+        .TablePager { border-collapse: collapse; }
+        .TablePager, .TablePager td, .TablePager th {
+            border: 1px solid #aaaaaa;
+            padding: 0 0.15em 0 0.15em;
+        }
+        .TablePager th { background-color: #eeeeff }
+        .TablePager td { background-color: #ffffff }
+        .TablePager tr:hover td { background-color: #eeeeff }
+
+        .imagelist td, .imagelist th { white-space: nowrap }
+        .imagelist .TablePager_col_links { background-color: #eeeeff }
+        .imagelist .TablePager_col_img_description { white-space: normal }
+        .imagelist th.TablePager_sort { background-color: #ccccff }
+
+        .templatesUsed { margin-top: 1.5em; }
+
+        .mw-summary-preview {
+            margin: 0.1em 0;
+        }
+
+        /* Friendlier slave lag warnings */
+        div.mw-lag-warn-normal,
+        div.mw-lag-warn-high {
+            padding: 3px;
+            text-align: center;
+            margin: 3px auto;
+        }
+        div.mw-lag-warn-normal {
+            border: 1px solid #FFCC66;
+            background-color: #FFFFCC;
+        }
+        div.mw-lag-warn-high {
+            font-weight: bold;
+            border: 2px solid #FF0033;
+            background-color: #FFCCCC;
+        }
+
+        /* Recreating-deleted-page/reupload file warning and log entries */
+        div#mw-upload-deleted-warn,
+        div#mw-recreate-deleted-warn {
+            padding: 3px;
+            margin-bottom: 3px;
+            border: 2px solid #2F6FAB;
+        }
+        div#mw-upload-deleted-warn ul li,
+        div#mw-recreate-deleted-warn ul li {
+            font-size: 90%;
+        }
+        .MediaTransformError {
+            background-color: #ccc;
+            padding: 0.1em;
+        }
+        .MediaTransformError td {
+            text-align: center;
+            vertical-align: middle;
+            font-size: 90%;
+        }
+
+        /** Special:Search stuff */
+        div#mw-search-interwiki-caption {
+            text-align: center;
+            font-weight: bold;
+            font-size: 95%;
+        }
+
+        .mw-search-interwiki-project {
+            font-size: 97%;
+            text-align: left;
+            padding-left: 0.2em;
+            padding-right: 0.15em;
+            padding-bottom: 0.2em;
+            padding-top: 0.15em;
+            background: #cae8ff;
+        }
+
+        span.searchmatch {
+            font-weight: bold;
+            color: red;
+        }
+
+        /* God-damned hack for the crappy layout */
+        .os-suggest {
+            font-size: 127%;
+        }
+
+        span.codeInline {
+            font-family: monospace;
+        }
+
+        ul.h2-navlinks {
+            list-style-image: none;
+            list-style-type: none;
+            background: none;
+            list-style: none;
+            display: none;
+            float: right;
+            padding:0;
+            margin: 0;
+            margin-bottom: -1em;
+        }
+
+        ul.h2-navlinks li {
+            display: none;
+            list-style: none;
+            padding-left: .6em;
+            padding-right: .4em;
+            border-left: 1px solid #999;
+        }
+        ul.h2-navlinks li.first {
+            border: none;
+        }
+
+        span.codeInline {
+            font-family: monospace;
+            white-space: nowrap;
+        }
+
+        span.code {
+            white-space: nowrap;
+            font-family: monospace;
+        }
+
+        table#toc.toc {
+            z-index: 3;
+        }
+
+        pre.de1 {
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            _white-space: pre;
+        }
+
+        span.menuPath {
+            color: #598527;
+        }
+
+        #codesig div.cpp, #codesig div.delphi, #vclinfo div.cpp, #vclinfo div.delphi {
+            display: block;
+            padding: 3px 3px 3px 15px;
+        }
+
+        td div.cpp {
+            background: #f9f9ff url('c.png') no-repeat 3px center;
+            text-align: left;
+        }
+
+        td div.delphi {
+            background: #fff9f9 url('d.png') no-repeat 3px center;
+            text-align: left;
+        }
+
+        table#vclinfo {
+            display: block;
+            border: 0;
+        }
+
+        table#vclinfo tr{
+            width: 100%;
+            background: #fdfdfd;
+            border: 0;
+        }
+        table#vclinfo td{
+            background: #fdfdfd;
+            padding: 5px;
+            margin: 0;
+            border: 0;
+            border-left: 1px solid #888;;
+            text-align: center;
+            vertical-align: top;
+        }
+        table#vclinfo td.wide{
+            width: 25%;
+        }
+        table#vclinfo tr.vclinfot th{
+            border-bottom:1px solid #888;
+        }
+        table#vclinfo td.vclinfol {
+            border-left: 0px;
+        }
+
+        table#vclinfo span.delphi, table#vclinfo
+        span.cpp {
+            display: block;
+            clear: both;
+        }
+
+        #codesig {
+            display: block;
+            background: none;
+        }
+        #codesig .sig{
+            display: block;
+            z-index:2;
+        }
+
+        #codesig .lang{
+            float: left;
+            padding: 5px;
+            z-index:10;
+            position: relative;
+        }
+
+        #codesig .sig .thesig{
+            margin-left: 60px;
+            background: #f3f3f3;
+            padding: 5px;
+        }
+
+        #codesig .sig div.delphi,#codesig .sig div.cpp {
+            margin:0;
+            padding:0;
+        }
+
+        #codesig .sig pre {
+            padding: 0;
+            border: none;
+            background: none;
+        }
+
+        div.delphi span.lang {
+            color: #800;
+            font-weight: bold;
+        }
+
+        div.cpp span.lang {
+            color: #008;
+            font-weight: bold;
+        }
+
+        #toggles {
+            float: right;
+            position: relative;
+            display: block;
+            background: none;
+            color: #fff;
+            font-family: Helvetica, Arial;
+            font-weight: bold;
+            font-size: .85em;
+        }
+
+        #toggles #dtoggle, #toggles #ctoggle {
+            color: #fff;
+            padding: 1px 10px 1px 10px;
+        }
+
+        #displayPrefs, #displayPrefTab {
+            display: block;
+            background: #E13935;
+            padding: 1px 10px 1px 10px;
+            text-align: right;
+        }
+
+        #displayPrefs {
+            display: none;
+            clear: both;
+        }
+
+        #displayPrefTab {
+            width: auto;
+            color: #fff;
+        }
+
+        ul#childlinks {
+        list-style-image: none;
+        list-style-type: none;
+        list-style-position: inside;
+        border-top: 1px solid #777;
+        display: block;
+        background: #FCFCFC;
+        margin: -14px 0 0 0;
+        padding: 0 0 0 10px;
+        text-align: left;
+        }
+
+        ul#childlinks li {
+        display: inline;
+        margin: 0;
+        padding: 0 10px 3px 10px;
+        border-left: 1px solid #eee;
+        }
+
+        ul#childlinks li:hover {
+        background: #fff;
+        }
+
+        ul#childlinks li.first {
+        border: none;
+        }
+
+        ul#childlinks li a {
+        color: #000;
+        font-weight: normal;
+        }
+
+        ul#childlinks li a {
+        color: #000;
+        }
+
+        span#inherits {
+        background: #F2F2FF;
+        color: #222;
+        font-size: .85em;
+        font-style: italic;
+        padding: 3px 10px 3px 10px;
+        }
+
+        table.long {
+        width: 90%;
+        border: none;
+        border-collapse: collapse;
+        }
+
+        table.long tr {
+        background-color: none;
+        height: 1.5em;
+        font-size: 1em;
+        padding: 5px;
+        }
+
+        table.long tr td {
+        background: none;
+        border: none;
+        padding: 3px 5px 3px 20px;
+        }
+
+        table.long tr.alt td {
+        background-color: #f3f3f3;
+        }
+
+        table.long tr.over td {
+        background-color: #696969;
+        color #fff;
+        }
+
+        table.long tr.over code {
+        background-color: #696969;
+        color: #fff;
+        }
+
+        table.long tr.over td a {
+        color: #C6D5FE;
+        }
+
+        table.long tr td:first-child {
+        background: url('dc.png') no-repeat 3px center;
+        width: 220px;
+        }
+
+        table.long tr.alt td:first-child {
+        background: #f3f3f3 url('dc.png') no-repeat 3px center;
+        width: 220px;
+        }
+
+        table.long tr.over td:first-child{
+            background: #696969 url('dc.png') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.delphi td:first-child{
+            background: url('d.png') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.delphi.alt td:first-child{
+            background: #f3f3f3 url('d.png') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.delphi.over td:first-child{
+            background: #696969 url('d.png') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp td:first-child{
+            background: url('c.png') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp.alt td:first-child{
+            background: #f3f3f3 url('c.png') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp.over td:first-child{
+            background: #696969 url('c.png') no-repeat 3px center;
+            width: 220px;
+        }
+
+
+        table.long tr.cpp.delphi td:first-child{
+            background: url('dc.png') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp.delphi.alt td:first-child{
+            background: #f3f3f3 url('dc.png') no-repeat 3px center;
+            width: 220px;
+        }
+
+        table.long tr.cpp.delphi.over td:first-child{
+            background: #696969 url('dc.png') no-repeat 3px center;
+            width: 220px;
+        }
+        span.short {
+        display:none;
+        }
+        div#ex-uses {
+        display: block;
+        padding: 5px;
+        margin: -1.2em 0 0 0;
+        background: #EEF;
+        border-top: 1px solid #DDD;
+        border-bottom: 1px solid #DDD;
+        }
+
+        div#ex-uses h3 {
+        display: inline;
+        font-size:1em;
+        }
+
+        div#ex-uses ul {
+            display: inline;
+            margin: 0 1.5em 0 .5em;
+        }
+
+        div#ex-uses ul li {
+            display: inline;
+            margin: 0 0 0 .5em;
+            padding: 0;
+
+        }
+
+        tr.protected {
+            display:none;
+        }
+        #lstfilter {
+            border: 1px solid #d1d1d1;
+            width: 18.5em;
+            text-align: center;
+            margin: .3em;
+            padding: .3em 1em;
+            color: #666;
+            font-weight: bold;
+            font-size: .8em;
+            background: #fee;
+            border-radius: 3px;
+        }
+        #protecttoggle {
+            display: none;
+            border: 1px solid #d1d1d1;
+            width: 18.5em;
+            text-align: center;
+            margin: .3em;
+            padding: .3em 1em;
+            color: #666;
+            font-weight: bold;
+            font-size: .8em;
+            background: #fee;
+            border-radius: 3px;
+        }
+
+        /* Hide Appmethod-specific content */
+        .appmethod {
+            display: none;
+        }
+
+        /* geshi.css *********************************************************/
+
+        .source-delphi {line-height: normal;}
+        .source-delphi li, .source-delphi pre {
+            line-height: normal; border: 0px none white;
+        }
+        .delphi.source-delphi .de1, .delphi.source-delphi .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+        .delphi.source-delphi  {font-family:monospace;}
+        .delphi.source-delphi .imp {font-weight: bold; color: red;}
+        .delphi.source-delphi li, .delphi.source-delphi .li1 {font-weight: normal; vertical-align:top;}
+        .delphi.source-delphi .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+        .delphi.source-delphi .li2 {font-weight: bold; vertical-align:top;}
+        .delphi.source-delphi .kw1 {color: #000000; font-weight: bold;}
+        .delphi.source-delphi .kw2 {color: #000000; font-weight: bold;}
+        .delphi.source-delphi .kw3 {color: #000066;}
+        .delphi.source-delphi .kw4 {color: #000066; font-weight: bold;}
+        .delphi.source-delphi .co1 {color: #808080; font-style: italic;}
+        .delphi.source-delphi .co2 {color: #008000; font-style: italic;}
+        .delphi.source-delphi .coMULTI {color: #808080; font-style: italic;}
+        .delphi.source-delphi .es0 {color: #ff0000; font-weight: bold;}
+        .delphi.source-delphi .br0 {color: #000066;}
+        .delphi.source-delphi .sy0 {color: #000066;}
+        .delphi.source-delphi .sy1 {color: #000066;}
+        .delphi.source-delphi .sy2 {color: #000066;}
+        .delphi.source-delphi .sy3 {color: #000066;}
+        .delphi.source-delphi .st0 {color: #ff0000;}
+        .delphi.source-delphi .nu0 {color: #0000ff;}
+        .delphi.source-delphi .me1 {color: #006600;}
+        .delphi.source-delphi .re0 {color: #9ac;}
+        .delphi.source-delphi .re1 {color: #ff0000;}
+        .delphi.source-delphi .ln-xtra, .delphi.source-delphi li.ln-xtra, .delphi.source-delphi div.ln-xtra {background-color: #ffc;}
+        .delphi.source-delphi span.xtra { display:block; }
+        .source-cpp {line-height: normal;}
+        .source-cpp li, .source-cpp pre {
+            line-height: normal; border: 0px none white;
+        }
+        .cpp.source-cpp .de1, .cpp.source-cpp .de2 {font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;}
+        .cpp.source-cpp  {font-family:monospace;}
+        .cpp.source-cpp .imp {font-weight: bold; color: red;}
+        .cpp.source-cpp li, .cpp.source-cpp .li1 {font-weight: normal; vertical-align:top;}
+        .cpp.source-cpp .ln {width:1px;text-align:right;margin:0;padding:0 2px;vertical-align:top;}
+        .cpp.source-cpp .li2 {font-weight: bold; vertical-align:top;}
+        .cpp.source-cpp .kw1 {color: #0000ff;}
+        .cpp.source-cpp .kw2 {color: #0000ff;}
+        .cpp.source-cpp .kw3 {color: #0000dd;}
+        .cpp.source-cpp .kw4 {color: #0000ff;}
+        .cpp.source-cpp .co1 {color: #666666;}
+        .cpp.source-cpp .co2 {color: #339900;}
+        .cpp.source-cpp .coMULTI {color: #ff0000; font-style: italic;}
+        .cpp.source-cpp .es0 {color: #000099; font-weight: bold;}
+        .cpp.source-cpp .es1 {color: #000099; font-weight: bold;}
+        .cpp.source-cpp .es2 {color: #660099; font-weight: bold;}
+        .cpp.source-cpp .es3 {color: #660099; font-weight: bold;}
+        .cpp.source-cpp .es4 {color: #660099; font-weight: bold;}
+        .cpp.source-cpp .es5 {color: #006699; font-weight: bold;}
+        .cpp.source-cpp .br0 {color: #008000;}
+        .cpp.source-cpp .sy0 {color: #008000;}
+        .cpp.source-cpp .sy1 {color: #000080;}
+        .cpp.source-cpp .sy2 {color: #000040;}
+        .cpp.source-cpp .sy3 {color: #000040;}
+        .cpp.source-cpp .sy4 {color: #008080;}
+        .cpp.source-cpp .st0 {color: #FF0000;}
+        .cpp.source-cpp .nu0 {color: #0000dd;}
+        .cpp.source-cpp .nu6 {color: #208080;}
+        .cpp.source-cpp .nu8 {color: #208080;}
+        .cpp.source-cpp .nu12 {color: #208080;}
+        .cpp.source-cpp .nu16 {color:#800080;}
+        .cpp.source-cpp .nu17 {color:#800080;}
+        .cpp.source-cpp .nu18 {color:#800080;}
+        .cpp.source-cpp .nu19 {color:#800080;}
+        .cpp.source-cpp .me1 {color: #007788;}
+        .cpp.source-cpp .me2 {color: #007788;}
+        .cpp.source-cpp .ln-xtra, .cpp.source-cpp li.ln-xtra, .cpp.source-cpp div.ln-xtra {background-color: #ffc;}
+        .cpp.source-cpp span.xtra { display:block; }
+    </style>
+  </head>
+  <body>
+    <div id="globalWrapper">
+      <div id="column-content">
+        <div id="content">
+          <a id="top"></a>
+          <h1 id="firstHeading" class="firstHeading"><span dir="ltr">FMX.MultiViewDemo Sample</span></h1>
+          <div id="bodyContent" class="mw-body">
+            <div id="contentSub"></div>
+            <div class="mw-content-ltr" dir="ltr" id="mw-content-text" lang="en"><p>This is a sample that describes how to use <a class="extiw" href="http://docwiki.embarcadero.com/Libraries/Seattle/en/FMX.MultiView.TMultiView" title="lib en:FMX.MultiView.TMultiView">TMultiView</a> component in mobile applications, using <b>FireMonkey</b>.
+</p>
+
+<h2> <span class="mw-headline" id="Location">Location</span></h2>
+<p>You can find the <b>FireMonkeyMobile MultiViewDemo</b> sample project at:
+</p>
+<ul><li> <font color="#598527"><b>Start |  Programs |  Embarcadero RAD Studio XE9 |  Samples</b></font> and navigate to:
+<ul><li> <code>Object Pascal\Multi-Device Samples\User Interface\MultiView</code>
+</li><li> <code>CPP\Multi-Device Samples\User Interface\MultiViewDemo</code>
+</li></ul>
+</li><li> <b>Subversion Repository:</b>
+<ul><li> <a target="_blank" class="external free" href="http://sourceforge.net/p/radstudiodemos/code/HEAD/tree/branches/RadStudio_XE9/Object%20Pascal/Multi-Device%20Samples/User%20Interface/MultiView" rel="nofollow">http://sourceforge.net/p/radstudiodemos/code/HEAD/tree/branches/RadStudio_XE9/Object%20Pascal/Multi-Device%20Samples/User%20Interface/MultiView</a>
+</li><li> <a target="_blank" class="external free" href="http://sourceforge.net/p/radstudiodemos/code/HEAD/tree/branches/RadStudio_XE9/CPP/Multi-Device%20Samples/User%20Interface/MultiViewDemo" rel="nofollow">http://sourceforge.net/p/radstudiodemos/code/HEAD/tree/branches/RadStudio_XE9/CPP/Multi-Device%20Samples/User%20Interface/MultiViewDemo</a>
+</li></ul>
+</li></ul>
+<h2> <span class="mw-headline" id="Description">Description</span></h2>
+<p>The MultiViewDemo sample shows how to create an application that implements the "master-detail" interface and explains how to use the master panel presentation modes.
+</p><p>This sample allows you to change the master panel characteristics, such as mode, placement, sliding mode, shadow properties, etc. It also helps you understand how to implement your master panel in the Custom presentation mode.
+</p>
+<h2> <span class="mw-headline" id="How_to_Run_the_Sample">How to Run the Sample</span></h2>
+<ol><li> Navigate to the location given above and open the project file:
+<ul><li> <div class="cpp"> C++Builder: <b>MultiViewDemoCpp.cbproj</b></div>
+</li><li> <div class="delphi"> Delphi: <b>MultiViewDemo.dproj</b></div>
+</li></ul>
+</li><li> Press <b>F9</b> or choose <font color="#598527"><b>Run &gt; Run</b></font>.
+</li></ol>
+<h2> <span class="mw-headline" id="How_It_Works">How It Works</span></h2>
+<p>After you start this sample application, it displays the following form:
+</p><p><img alt="MultiViewDemo.png" height="469" src="data:image/png;base64,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" width="600"/>
+</p>
+<blockquote>
+<b>Note</b>: This screen displays the 32-bit Windows desktop application form as an example. However, the forms for other target platforms provide similar functionality.
+ </blockquote>
+<p>Using this form you can perform the following basic operations:
+</p>
+<ul><li> Select the <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Seattle/en/Mobile_Tutorial:_Using_a_MultiView_Component_to_Display_Alternate_Views_of_Information_(iOS_and_Android)#Master_Pane_Presentation_Modes" title="rad en:Mobile Tutorial: Using a MultiView Component to Display Alternate Views of Information (iOS and Android)">master panel presentation mode</a> from the <b>Multi View Mode</b> list. The available modes are:
+<ul><li> <code>PlatformBehaviour</code>
+</li><li> <code>Docked Panel</code>
+</li><li> <code>Popover</code>
+</li><li> <code>Drawer</code>
+</li><li> <code>Custom</code>
+</li></ul>
+</li><li> Specify parameters for each presentation mode on the <b>Drawer</b>, <b>Popover</b> and <b>Split View</b> tabs, respectively.
+</li><li> Specify parameters of a shadow that the master pane casts on the detail pane on the <b>Shadow</b> tab.
+</li></ul>
+<h2> <span class="mw-headline" id="See_Also">See Also</span></h2>
+<ul><li> <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Seattle/en/Mobile_Tutorial:_Using_a_MultiView_Component_to_Display_Alternate_Views_of_Information_(iOS_and_Android)" title="rad en:Mobile Tutorial: Using a MultiView Component to Display Alternate Views of Information (iOS and Android)">Mobile Tutorial: Using a MultiView Component to Display Alternate Views of Information (iOS and Android)</a>
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Seattle/en/FireMonkey_Application_Design" title="rad en:FireMonkey Application Design">FireMonkey Application Design</a>
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Seattle/en/FireMonkey_Application_Platform" title="rad en:FireMonkey Application Platform">FireMonkey Application Platform</a>
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Seattle/en/iOS_Mobile_Application_Development" title="rad en:iOS Mobile Application Development">iOS Mobile Application Development</a>
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Seattle/en/RunIOSSimulatorFailedHelpPage" title="rad en:RunIOSSimulatorFailedHelpPage">Troubleshooting: Cannot Deploy to the iOS Simulator</a>
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Seattle/en/RunIOSDeviceFailedHelpPage" title="rad en:RunIOSDeviceFailedHelpPage">Troubleshooting: Cannot Deploy to the iOS Device</a>
+</li><li> <a class="extiw" href="http://docwiki.embarcadero.com/RADStudio/Seattle/en/Mobile_Tutorial:_Using_Location_Sensors_(iOS_and_Android)" title="rad en:Mobile Tutorial: Using Location Sensors (iOS and Android)">Mobile Tutorial: Using Location Sensors (iOS and Android)</a>
+</li></ul>
+
+
+</div>
+            <div class="visualClear"></div>
+          </div>
+        </div>
+      </div>
+      <div class="visualClear"></div>
+    </div>
+  </body>
+</html>

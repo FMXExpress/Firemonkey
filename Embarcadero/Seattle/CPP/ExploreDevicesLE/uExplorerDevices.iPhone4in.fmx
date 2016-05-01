@@ -1,0 +1,72 @@
+inherited FrDeviceExplorer_iPhone4in: TFrDeviceExplorer_iPhone4in
+  ClientHeight = 300
+  ClientWidth = 568
+  DesignerMasterStyle = 0
+  inherited ScrollBox1: TScrollBox
+    Size.Width = 568.000000000000000000
+    Size.Height = 300.000000000000000000
+    Viewport.Width = 563.000000000000000000
+    Viewport.Height = 295.000000000000000000
+    inherited Panel2: TPanel
+      inherited CornerButton3: TCornerButton
+        Position.Y = 27.000000000000000000
+      end
+      inherited PbServices: TProgressBar
+        Size.Height = 4.000000000000000000
+      end
+      inherited TvCharacteristics: TTreeView
+        Size.Height = 386.000000000000000000
+        Viewport.Width = 544.000000000000000000
+        Viewport.Height = 386.000000000000000000
+      end
+      inherited btnGetValues: TButton
+        Position.Y = 53.000000000000000000
+      end
+    end
+    inherited Panel1: TPanel
+      inherited Panel4: TPanel
+        inherited Button1: TButton
+          Size.Height = 51.000000000000000000
+        end
+        inherited Button2: TButton
+          Size.Height = 51.000000000000000000
+        end
+        inherited CbDevices: TComboBox
+          Size.Height = 30.000000000000000000
+        end
+        inherited PbFindDevices: TProgressBar
+          Position.Y = 51.000000000000000000
+          Size.Height = 4.000000000000000000
+        end
+      end
+    end
+    inherited Panel6: TPanel
+      inherited ScrollBox2: TScrollBox
+        Viewport.Width = 386.000000000000000000
+        Viewport.Height = 434.000000000000000000
+        inherited Panel8: TPanel
+          inherited btnRefresh: TSpeedButton
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
+          end
+          inherited EdCharacWrite: TEdit
+            Size.Height = 30.000000000000000000
+          end
+          inherited CbWriteTypes: TComboBox
+            Size.Height = 30.000000000000000000
+          end
+          inherited EdCharacName: TEdit
+            Size.Height = 30.000000000000000000
+          end
+          inherited EdCharacUID: TEdit
+            Size.Height = 30.000000000000000000
+          end
+          inherited LbCurrentValue: TListBox
+            Viewport.Width = 212.000000000000000000
+            Viewport.Height = 162.000000000000000000
+          end
+        end
+      end
+    end
+  end
+end

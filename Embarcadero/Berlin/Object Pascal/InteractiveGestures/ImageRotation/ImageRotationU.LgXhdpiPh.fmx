@@ -1,0 +1,8 @@
+inherited ImageRotationForm_LgXhdpiPh: TImageRotationForm_LgXhdpiPh
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 480.000000000000000000
+  end
+end

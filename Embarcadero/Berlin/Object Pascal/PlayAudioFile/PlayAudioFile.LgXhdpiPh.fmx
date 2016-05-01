@@ -1,0 +1,14 @@
+inherited AudioPlayBackForm_LgXhdpiPh: TAudioPlayBackForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited Title: TLabel
+      Size.Width = 450.000000000000000000
+    end
+    inherited btnPlay: TSpeedButton
+      Position.X = 395.000000000000000000
+    end
+  end
+end

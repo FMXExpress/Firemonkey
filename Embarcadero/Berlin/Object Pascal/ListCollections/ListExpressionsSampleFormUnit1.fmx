@@ -1,0 +1,181 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'List Collections Demo'
+  ClientHeight = 475
+  ClientWidth = 579
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object LabelSourceExpressions: TLabel
+    Position.X = 6.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Source Expression:'
+  end
+  object LabelControlExpression: TLabel
+    Position.X = 5.000000000000000000
+    Position.Y = 87.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Control Expression:'
+  end
+  object EditControlExpression: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Position.X = 128.000000000000000000
+    Position.Y = 84.000000000000000000
+    Enabled = False
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabelControlComponent: TLabel
+    Position.X = 5.000000000000000000
+    Position.Y = 55.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Control Component:'
+  end
+  object EditControlComponent: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 4
+    Position.X = 128.000000000000000000
+    Position.Y = 52.000000000000000000
+    Enabled = False
+    Size.Width = 241.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object LabelSourceComponent: TLabel
+    Position.X = 6.000000000000000000
+    Position.Y = 119.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Source Component:'
+  end
+  object EditSourceExpression: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 6
+    Position.X = 128.000000000000000000
+    Position.Y = 149.000000000000000000
+    Size.Width = 441.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object CheckBoxActive: TCheckBox
+    Position.X = 4.000000000000000000
+    Position.Y = 222.000000000000000000
+    Size.Width = 89.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = 'Active'
+    OnChange = CheckBoxActiveChange
+  end
+  object ButtonEvaluate: TButton
+    Position.X = 128.000000000000000000
+    Position.Y = 180.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = 'Fill'
+    OnClick = ButtonEvaluateClick
+  end
+  object EditSourceComponentName: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 9
+    Position.X = 128.000000000000000000
+    Position.Y = 116.000000000000000000
+    Enabled = False
+    Size.Width = 265.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object ListBox1: TListBox
+    Position.X = 7.000000000000000000
+    Position.Y = 284.000000000000000000
+    Size.Width = 561.000000000000000000
+    Size.Height = 181.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 557.000000000000000000
+    Viewport.Height = 177.000000000000000000
+  end
+  object ComboBox1: TComboBox
+    DisableFocusEffect = False
+    Position.X = 128.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 297.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    OnChange = ComboBox1Change
+  end
+  object CheckBoxAutoFill: TCheckBox
+    Position.X = 4.000000000000000000
+    Position.Y = 244.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = 'Auto Fill'
+    OnChange = CheckBoxAutoFillChange
+  end
+  object ButtonClear: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 180.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = 'Clear'
+    OnClick = ButtonClearClick
+  end
+  object Label1: TLabel
+    Position.X = 5.000000000000000000
+    Position.Y = 11.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Collection:'
+  end
+  object CheckBoxAutoActivate: TCheckBox
+    Position.X = 4.000000000000000000
+    Position.Y = 196.000000000000000000
+    Size.Width = 105.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    Text = 'Auto Activate'
+    OnChange = CheckBoxAutoActivateChange
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 347
+    Top = 186
+    object BindList1: TBindList
+      Category = 'Lists'
+      ControlComponent = ListBox1
+      FormatExpressions = <>
+      FormatControlExpressions = <>
+      ClearControlExpressions = <>
+      AutoFill = False
+      OnEvalError = BindList1EvalError
+      OnActivating = BindList1Activating
+    end
+  end
+end

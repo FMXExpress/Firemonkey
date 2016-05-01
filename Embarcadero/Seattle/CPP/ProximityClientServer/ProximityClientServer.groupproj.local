@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+  <Transactions>
+    <Transaction>2015/01/30 13:53:47.909,C:\Users\Public\Documents\Embarcadero\Studio\16.0\Samples\CPP\Mobile Samples\Device Sensors and Services\Bluetooth\ProximityClientServer\ProximityClientServer.groupproj=C:\Users\testuser\Documents\Embarcadero\Studio\Projects\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
+  <Default.Personality>
+    <Projects ActiveProject="C:\Users\Public\Documents\Embarcadero\Studio\16.0\Samples\CPP\Mobile Samples\Device Sensors and Services\Bluetooth\ProximityClientServer\ProximityServer.cbproj"/>
+  </Default.Personality>
+</BorlandProject>
