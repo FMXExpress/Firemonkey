@@ -53,11 +53,11 @@ uses
 
 procedure TFrameProductList.btnLoadNextDataClick(Sender: TObject);
 begin
-  //ÕıÔÚ¼ÓÔØ
+  //æ­£åœ¨åŠ è½½ - loading
   if not tmrLoading.Enabled then
   begin
     tmrLoading.Enabled:=True;
-    btnLoadNextData.Caption:='ÕıÔÚÔØÈë...';
+    btnLoadNextData.Caption:='æ­£åœ¨è½½å…¥...';
   end;
 end;
 
@@ -66,20 +66,18 @@ begin
   inherited;
 
   tmrLoadingTimer(Self);
-
 end;
 
 procedure TFrameProductList.lbProductListClickItem(Sender: TObject);
 begin
   if TSkinItem(Sender).ItemType=sitDefault then
   begin
-    //²é¿´ÉÌÆ·ĞÅÏ¢
+    //æŸ¥çœ‹å•†å“ä¿¡æ¯ - View product information
     HideFrame(Self);
 
-    //ÏÔÊ¾²úÆ·ĞÅÏ¢½çÃæ
-    ShowFrame(TFrame(GlobalProductInfoFrame),TFrameProductInfo,frmMain,nil,nil,nil,Application);
+    //æ˜¾ç¤ºäº§å“ä¿¡æ¯ç•Œé¢ - Display product information interface
+    ShowFrame(TFrame(GlobalProductInfoFrame), TFrameProductInfo, frmMain, Nil, Nil, Nil, Application);
     GlobalProductInfoFrame.FrameHistroy:=CurrentFrameHistroy;
-
   end;
 end;
 
@@ -90,8 +88,7 @@ var
 begin
   Self.tmrLoading.Enabled:=False;
   btnLoadNextData.Properties.IsPushed:=False;
-  btnLoadNextData.Caption:='ÏÔÊ¾ÏÂ20Ìõ';
-
+  btnLoadNextData.Caption:='æ˜¾ç¤ºä¸‹20æ¡';  // Show the next 20
 
   Self.lbProductList.Properties.Items.BeginUpdate;
   try
@@ -99,10 +96,9 @@ begin
     begin
       AListBoxItem:=Self.lbProductList.Properties.Items.Insert(Self.lbProductList.Properties.Items.Count-1);
 
-      AListBoxItem.Caption:='²âÊÔÊı¾İ'+IntToStr(I);
-      AListBoxItem.Detail:='£¤563($90.00)';
+      AListBoxItem.Caption:='æµ‹è¯•æ•°æ®'+IntToStr(I);  // Test Data
+      AListBoxItem.Detail:='ï¿¥563($90.00)';
       AListBoxItem.Icon.StaticImageIndex:=I Mod 12;
-
     end;
   finally
     Self.lbProductList.Properties.Items.EndUpdate;
