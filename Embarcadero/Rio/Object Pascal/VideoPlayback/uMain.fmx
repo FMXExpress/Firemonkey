@@ -1,0 +1,205 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 705
+  ClientWidth = 600
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object MediaPlayer1: TMediaPlayer
+    Left = 64
+    Top = 120
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 40
+    Top = 56
+  end
+  object Rectangle1: TRectangle
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 24.000000000000000000
+    Position.Y = 24.000000000000000000
+    Size.Width = 337.000000000000000000
+    Size.Height = 625.000000000000000000
+    Size.PlatformDefault = False
+    object MediaPlayerControl1: TMediaPlayerControl
+      Size.Width = 337.000000000000000000
+      Size.Height = 625.000000000000000000
+      Size.PlatformDefault = False
+      Align = Client
+      MediaPlayer = MediaPlayer1
+    end
+  end
+  object ScrollBox1: TScrollBox
+    Anchors = [akTop, akRight, akBottom]
+    Position.X = 387.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 185.000000000000000000
+    Size.Height = 671.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Viewport.Width = 185.000000000000000000
+    Viewport.Height = 671.000000000000000000
+    object ListBox1: TListBox
+      Align = Top
+      Size.Width = 185.000000000000000000
+      Size.Height = 113.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = ''
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnItemClick = ListBox1ItemClick
+      Viewport.Width = 181.000000000000000000
+      Viewport.Height = 109.000000000000000000
+      object ListBoxGroupHeader1: TListBoxGroupHeader
+        TabOrder = 0
+        Text = 'Files list'
+      end
+    end
+    object bToTheStart: TButton
+      Align = Top
+      Position.Y = 241.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'To The Start'
+      OnClick = bToTheStartClick
+    end
+    object Panel1: TPanel
+      Align = Top
+      Position.Y = 113.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      OnClick = Panel1Click
+    end
+    object bPlay: TButton
+      Align = Top
+      Position.Y = 137.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      Text = 'Play'
+      OnClick = bPlayClick
+    end
+    object bStop: TButton
+      Align = Top
+      Position.Y = 177.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Text = 'Stop'
+      OnClick = bStopClick
+    end
+    object bToTheEnd: TButton
+      Align = Top
+      Position.Y = 361.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'To The End'
+      OnClick = bToTheEndClick
+    end
+    object b10SecBackward: TButton
+      Align = Top
+      Position.Y = 281.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Text = '10 Sec Backward'
+      OnClick = b10SecBackwardClick
+    end
+    object b10SecForward: TButton
+      Align = Top
+      Position.Y = 321.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Text = '10 Sec Forward'
+      OnClick = b10SecForwardClick
+    end
+    object Panel2: TPanel
+      Align = Top
+      Position.Y = 217.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+    end
+    object Panel3: TPanel
+      Align = Top
+      Position.Y = 401.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 10
+    end
+    object bMovingParentUp: TButton
+      Align = Top
+      Position.Y = 425.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 6
+      Text = 'Moving Parent Up'
+      OnClick = bMovingParentUpClick
+    end
+    object bMovingParentDown: TButton
+      Align = Top
+      Position.Y = 465.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 11
+      Text = 'Moving Parent Down'
+      OnClick = bMovingParentDownClick
+    end
+    object bChangeParentsVisible: TButton
+      Align = Top
+      Position.Y = 505.000000000000000000
+      Size.Width = 185.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 12
+      Text = 'Change Parents Visible'
+      OnClick = bChangeParentsVisibleClick
+    end
+  end
+  object tbProcess: TTrackBar
+    Anchors = [akLeft, akRight, akBottom]
+    CanParentFocus = True
+    Orientation = Horizontal
+    Position.X = 8.000000000000000000
+    Position.Y = 678.000000000000000000
+    Size.Width = 567.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+  end
+  object tbVolume: TTrackBar
+    Anchors = [akTop, akRight, akBottom]
+    CanParentFocus = True
+    Max = 1.000000000000000000
+    Orientation = Vertical
+    Position.X = 575.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 19.000000000000000000
+    Size.Height = 671.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    OnChange = tbVolumeChange
+  end
+end

@@ -1,0 +1,252 @@
+object DlgItem: TDlgItem
+  Left = 0
+  Top = 0
+  BorderIcons = [biSystemMenu]
+  Caption = 'Item Detail'
+  ClientHeight = 425
+  ClientWidth = 281
+  Position = MainFormCenter
+  FormStyle = StayOnTop
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object GridPanelLayout1: TGridPanelLayout
+    Align = Client
+    Size.Width = 281.000000000000000000
+    Size.Height = 425.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ColumnCollection = <
+      item
+        Value = 5.876628335183000000
+      end
+      item
+        Value = 88.186376453297880000
+      end
+      item
+        Value = 5.936995211519123000
+      end>
+    ControlCollection = <
+      item
+        Column = 1
+        Control = EditBarcode
+        Row = 3
+      end
+      item
+        Column = 1
+        Control = EditItemName
+        Row = 1
+      end
+      item
+        Column = 1
+        Control = Label1
+        Row = 0
+      end
+      item
+        Column = 1
+        Control = Label2
+        Row = 2
+      end
+      item
+        Column = 1
+        Control = Label3
+        Row = 6
+      end
+      item
+        Column = 1
+        Control = MemoDescription
+        Row = 7
+      end
+      item
+        Column = 1
+        Control = ButtonClose
+        Row = 8
+      end
+      item
+        Column = 1
+        Control = Label4
+        Row = 4
+      end
+      item
+        Column = 1
+        Control = SpinBoxQTY
+        Row = 5
+      end>
+    RowCollection = <
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 30.000000000000000000
+      end
+      item
+        Value = 100.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 40.000000000000000000
+      end
+      item
+        SizeStyle = Absolute
+        Value = 20.000000000000000000
+      end>
+    object EditItemName: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      Size.Width = 247.803726196289100000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Label1: TLabel
+      Align = Client
+      Size.Width = 247.803726196289100000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Trailing
+      Text = 'Item Name'
+      TabOrder = 1
+    end
+    object Label2: TLabel
+      Align = Client
+      Size.Width = 247.803726196289100000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Trailing
+      Text = 'Barcode'
+      TabOrder = 2
+    end
+    object Label3: TLabel
+      Align = Client
+      Size.Width = 247.803726196289100000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Trailing
+      Text = 'Description'
+      TabOrder = 4
+    end
+    object MemoDescription: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Align = Client
+      Size.Width = 247.803726196289100000
+      Size.Height = 155.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+      Viewport.Width = 243.800000000000000000
+      Viewport.Height = 151.000000000000000000
+    end
+    object EditBarcode: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      Anchors = []
+      TabOrder = 6
+      Size.Width = 247.803726196289100000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object ButtonClose: TButton
+      Align = Right
+      ModalResult = 1
+      Margins.Top = 10.000000000000000000
+      Position.X = 186.317047119140600000
+      Position.Y = 375.000000000000000000
+      Size.Width = 78.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 7
+      Text = 'Submit'
+    end
+    object Label4: TLabel
+      Align = Client
+      Size.Width = 247.803726196289100000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.VertAlign = Trailing
+      Text = 'Quantity'
+      TabOrder = 3
+    end
+    object SpinBoxQTY: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 8
+      Cursor = crIBeam
+      Min = 1.000000000000000000
+      Value = 1.000000000000000000
+      Size.Width = 247.803726196289100000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      OnChange = SpinBoxQTYChange
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ClientDM.memItems
+    ScopeMappings = <>
+    Left = 160
+    Top = 240
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 44
+    Top = 293
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'ITEMNAME'
+      Control = EditItemName
+      Track = False
+    end
+    object LinkControlToField3: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'DESCRIPTION'
+      Control = MemoDescription
+      Track = False
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'BARCODE'
+      Control = EditBarcode
+      Track = False
+    end
+    object LinkControlToField4: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'QTY'
+      Control = SpinBoxQTY
+      Track = False
+    end
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = ClientDM.memCurrentUser
+    ScopeMappings = <>
+    Left = 104
+    Top = 240
+  end
+end

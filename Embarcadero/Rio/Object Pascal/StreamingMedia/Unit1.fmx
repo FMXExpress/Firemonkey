@@ -1,0 +1,188 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 564
+  ClientWidth = 448
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object MediaPlayer1: TMediaPlayer
+    Left = 144
+    Top = 216
+  end
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 448.000000000000000000
+    Size.Height = 520.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 3
+    TabPosition = PlatformDefault
+    Sizes = (
+      448s
+      471s
+      448s
+      471s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 223.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemmostviewed'
+      TabOrder = 0
+      Text = 'Music'
+      ExplicitSize.cx = 73.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object ListBox1: TListBox
+        Align = Client
+        Size.Width = 448.000000000000000000
+        Size.Height = 423.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 444.000000000000000000
+        Viewport.Height = 419.000000000000000000
+      end
+      object ProgressBar1: TProgressBar
+        Align = Bottom
+        Orientation = Horizontal
+        Position.Y = 467.000000000000000000
+        Size.Width = 448.000000000000000000
+        Size.Height = 4.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object ToolBar2: TToolBar
+        Size.Width = 448.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object Button2: TButton
+          Anchors = [akTop, akRight]
+          Position.X = 368.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listitembutton'
+          TabOrder = 0
+          Text = 'Scan'
+          OnClick = Button2Click
+        end
+        object Edit1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Anchors = [akLeft, akTop, akRight]
+          TabOrder = 1
+          ReadOnly = True
+          Text = 'http://www.stephaniequinn.com/samples.htm'
+          Position.X = 8.000000000000000000
+          Position.Y = 8.000000000000000000
+          Size.Width = 345.000000000000000000
+          Size.Height = 30.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 223.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 0
+      Text = 'Video'
+      ExplicitSize.cx = 73.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object MediaPlayerControl1: TMediaPlayerControl
+        Size.Width = 446.000000000000000000
+        Size.Height = 343.000000000000000000
+        Size.PlatformDefault = False
+        Anchors = [akLeft, akTop, akRight, akBottom]
+        MediaPlayer = MediaPlayer1
+        Position.Y = 128.000000000000000000
+      end
+      object ListBox2: TListBox
+        Anchors = [akLeft, akTop, akRight]
+        Size.Width = 446.000000000000000000
+        Size.Height = 129.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        DisableFocusEffect = True
+        DefaultItemStyles.ItemStyle = ''
+        DefaultItemStyles.GroupHeaderStyle = ''
+        DefaultItemStyles.GroupFooterStyle = ''
+        Viewport.Width = 442.000000000000000000
+        Viewport.Height = 125.000000000000000000
+      end
+    end
+  end
+  object ToolBar1: TToolBar
+    Size.Width = 448.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 448.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Streaming Demo'
+    end
+    object Button3: TButton
+      Align = Right
+      Margins.Left = 5.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Position.X = 345.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'stoptoolbuttonbordered'
+      TabOrder = 2
+      Text = 'Stop'
+      OnClick = Button3Click
+    end
+    object Button1: TButton
+      Align = Right
+      Margins.Right = 5.000000000000000000
+      Position.X = 399.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'playtoolbuttonbordered'
+      TabOrder = 3
+      Text = 'Play'
+      OnClick = Button1Click
+    end
+  end
+  object IdHTTP1: TIdHTTP
+    AllowCookies = True
+    ProxyParams.BasicAuthentication = False
+    ProxyParams.ProxyPort = 0
+    Request.ContentLength = -1
+    Request.ContentRangeEnd = -1
+    Request.ContentRangeStart = -1
+    Request.ContentRangeInstanceLength = -1
+    Request.Accept = 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    Request.BasicAuthentication = False
+    Request.UserAgent = 'Mozilla/3.0 (compatible; Indy Library)'
+    Request.Ranges.Units = 'bytes'
+    Request.Ranges = <>
+    HTTPOptions = [hoForceEncodeParams]
+    Left = 48
+    Top = 250
+  end
+end

@@ -1,0 +1,417 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Demo actions in FireMonkey'
+  ClientHeight = 415
+  ClientWidth = 600
+  FormFactor.Width = 1280
+  FormFactor.Height = 1024
+  FormFactor.Devices = [Desktop]
+  FormFamily = 'TForm'
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object PanelValueRange: TPanel
+    Action = ViewAction1
+    Align = Left
+    Enabled = True
+    Size.Width = 209.000000000000000000
+    Size.Height = 415.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 0
+    object CheckBox2: TCheckBox
+      Enabled = False
+      Position.X = 80.000000000000000000
+      Position.Y = 370.000000000000000000
+      Size.Width = 81.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'no action'
+    end
+    object ProgressBar1: TProgressBar
+      Action = ValueRangeAction1
+      Enabled = True
+      Orientation = Horizontal
+      Position.X = 8.000000000000000000
+      Position.Y = 236.000000000000000000
+      Size.Width = 193.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      Visible = True
+    end
+    object ProgressBar2: TProgressBar
+      Action = ValueRangeAction1
+      Enabled = True
+      Orientation = Vertical
+      Position.X = 176.000000000000000000
+      Position.Y = 104.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 124.000000000000000000
+      Size.PlatformDefault = False
+      Visible = True
+    end
+    object SmallScrollBar1: TSmallScrollBar
+      Action = ValueRangeAction1
+      Enabled = True
+      SmallChange = 0.000000000000000000
+      Orientation = Horizontal
+      Position.X = 8.000000000000000000
+      Position.Y = 296.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      Visible = True
+    end
+    object ScrollBar1: TScrollBar
+      Action = ValueRangeAction1
+      Enabled = True
+      SmallChange = 0.000000000000000000
+      Orientation = Horizontal
+      Position.X = 8.000000000000000000
+      Position.Y = 272.000000000000000000
+      Size.Width = 150.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      Visible = True
+    end
+    object SmallScrollBar2: TSmallScrollBar
+      Action = ValueRangeAction1
+      Enabled = True
+      SmallChange = 0.000000000000000000
+      Orientation = Vertical
+      Position.X = 162.000000000000000000
+      Position.Y = 272.000000000000000000
+      Size.Width = 8.000000000000000000
+      Size.Height = 118.000000000000000000
+      Size.PlatformDefault = False
+      Visible = True
+    end
+    object ScrollBar3: TScrollBar
+      Action = ValueRangeAction1
+      Enabled = True
+      SmallChange = 0.000000000000000000
+      Orientation = Vertical
+      Position.X = 176.000000000000000000
+      Position.Y = 272.000000000000000000
+      Size.Width = 18.000000000000000000
+      Size.Height = 118.000000000000000000
+      Size.PlatformDefault = False
+      Visible = True
+    end
+    object NumberBox1: TNumberBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 7
+      Cursor = crIBeam
+      KeyboardType = Default
+      Position.X = 88.000000000000000000
+      Position.Y = 32.000000000000000000
+      HorzIncrement = 2.000000000000000000
+      PopupMenu = PopupMenu1
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TrackBar1: TTrackBar
+      Action = ValueRangeAction1
+      CanParentFocus = True
+      Enabled = True
+      Orientation = Horizontal
+      Position.X = 8.000000000000000000
+      Position.Y = 216.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 8
+      Tracking = False
+      Visible = True
+    end
+    object TrackBar2: TTrackBar
+      Action = ValueRangeAction1
+      CanParentFocus = True
+      Enabled = True
+      Orientation = Horizontal
+      Position.X = 8.000000000000000000
+      Position.Y = 153.000000000000000000
+      Size.Width = 161.000000000000000000
+      Size.Height = 20.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 9
+      Visible = True
+    end
+    object Label1: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claNull
+      Text = 'Tracking = true'
+    end
+    object Label2: TLabel
+      Position.X = 8.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.FontColor = claNull
+      Text = 'Tracking = False'
+    end
+    object ComboTrackBar2: TComboTrackBar
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 12
+      Cursor = crIBeam
+      ReadOnly = True
+      Max = 100.000000000000000000
+      DecimalDigits = 3
+      Position.X = 88.000000000000000000
+      Position.Y = 8.000000000000000000
+      PopupMenu = PopupMenu1
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object TrackBar3: TTrackBar
+      Action = ValueRangeAction1
+      CanParentFocus = True
+      Enabled = True
+      Orientation = Vertical
+      Position.X = 152.000000000000000000
+      Position.Y = 112.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 41.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 13
+      Visible = True
+    end
+    object TrackBar4: TTrackBar
+      Action = ValueRangeAction1
+      CanParentFocus = True
+      Enabled = True
+      Orientation = Vertical
+      Position.X = 152.000000000000000000
+      Position.Y = 176.000000000000000000
+      Size.Width = 20.000000000000000000
+      Size.Height = 40.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 14
+      Tracking = False
+      Visible = True
+    end
+    object ArcDial1: TArcDial
+      Action = ValueRangeAction1
+      Enabled = True
+      Position.X = 120.000000000000000000
+      Position.Y = 120.000000000000000000
+      Size.Width = 30.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 15
+      Visible = True
+    end
+    object ArcDial2: TArcDial
+      Action = ValueRangeAction1
+      Enabled = True
+      Position.X = 120.000000000000000000
+      Position.Y = 184.000000000000000000
+      Size.Width = 30.000000000000000000
+      Size.Height = 30.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 16
+      Tracking = False
+      Visible = True
+    end
+    object Switch1: TSwitch
+      Action = ValueRangeAction1
+      Enabled = True
+      Position.X = 8.000000000000000000
+      Position.Y = 312.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 17
+      Visible = True
+    end
+    object CheckBox1: TCheckBox
+      Action = ValueRangeAction1
+      Enabled = True
+      Position.X = 8.000000000000000000
+      Position.Y = 344.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 18
+      Visible = True
+    end
+    object ComboTrackBar1: TComboTrackBar
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 19
+      Cursor = crIBeam
+      Max = 100.000000000000000000
+      DecimalDigits = 3
+      Position.X = 8.000000000000000000
+      Position.Y = 8.000000000000000000
+      PopupMenu = PopupMenu1
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object SpinBox1: TSpinBox
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 20
+      Cursor = crIBeam
+      KeyboardType = Default
+      Position.X = 8.000000000000000000
+      Position.Y = 32.000000000000000000
+      PopupMenu = PopupMenu1
+      Size.Width = 73.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object Switch2: TSwitch
+      IsChecked = False
+      Position.X = 8.000000000000000000
+      Position.Y = 368.000000000000000000
+      Size.Width = 64.000000000000000000
+      Size.Height = 24.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 21
+      OnSwitch = Switch2Switch
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 336
+    Top = 80
+    object MenuItem1: TMenuItem
+      Action = MacOSMainMenuItem
+      Enabled = True
+      ImageIndex = -1
+      object MenuItem9: TMenuItem
+        Action = FileHideApp1
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object MenuItem10: TMenuItem
+        Action = FileHideAppOthers1
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object MenuItem12: TMenuItem
+        Locked = True
+        Text = '-'
+      end
+      object MenuItem3: TMenuItem
+        Action = FileExitOSX
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+    end
+    object MenuItem2: TMenuItem
+      Action = FileMainMenuItem
+      Enabled = True
+      ImageIndex = -1
+      object MenuItem4: TMenuItem
+        Action = FileExitWin
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+    end
+    object MenuItem5: TMenuItem
+      Text = 'View'
+      object MenuItem6: TMenuItem
+        Action = ViewAction1
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object MenuItem7: TMenuItem
+        Action = ViewAction2
+        Enabled = True
+        Locked = True
+        ImageIndex = -1
+      end
+      object MenuItem11: TMenuItem
+        Action = WindowClose1
+        Enabled = False
+        Locked = True
+        ImageIndex = -1
+      end
+    end
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 336
+    Top = 128
+    object MenuItem8: TMenuItem
+      Action = EditVirtualKeyboard1
+      Enabled = True
+      ImageIndex = -1
+    end
+  end
+  object FMXActionList1: TActionList
+    Left = 240
+    Top = 80
+    object FileMainMenuItem: TControlAction
+      Text = 'File'
+      UnsupportedPlatforms = [pfMacOS]
+    end
+    object MacOSMainMenuItem: TControlAction
+      Text = 'MacOSMainMenuItem'
+      UnsupportedPlatforms = [pfWindows]
+    end
+    object ValueRangeAction1: TValueRangeAction
+      Text = 'ValueRangeAction1'
+      PopupMenu = PopupMenu1
+      ValueRange.Value = 12.000000000000000000
+      ValueRange.Frequency = 3.000000000000000000
+    end
+    object ViewAction1: TViewAction
+      Category = 'View'
+      Text = 'PanelValueRange'
+      FmxObject = PanelValueRange
+    end
+    object ViewAction2: TViewAction
+      Category = 'View'
+      Text = 'Display Active Form and Focused Control'
+      OnCreateComponent = ViewAction2CreateComponent
+    end
+    object EditVirtualKeyboard1: TVirtualKeyboard
+      Category = 'Edit'
+      Text = 'On-Screen Keyboard'
+    end
+    object WindowClose1: TWindowClose
+      Category = 'Window'
+      Enabled = False
+      Hint = 'Close Window|Close active form'
+      OnCanActionExec = WindowClose1CanActionExec
+    end
+    object FileExitWin: TFileExit
+      Category = 'File'
+      CustomText = 'Exit'
+      Hint = 'Exit|Quits the application'
+      ImageIndex = 43
+      ShortCut = 32856
+      OnCanActionExec = FileExitWinCanActionExec
+      UnsupportedPlatforms = [pfMacOS]
+      ImageIndex = 43
+    end
+    object FileExitOSX: TFileExit
+      Category = 'File'
+      Hint = 'Quit|Quits the application'
+      ImageIndex = 43
+      OnCanActionExec = FileExitWinCanActionExec
+      UnsupportedPlatforms = [pfWindows]
+      ImageIndex = 43
+    end
+    object FileHideApp1: TFileHideApp
+      Category = 'File'
+      Hint = 'Hide|Hide current application'
+    end
+    object FileHideAppOthers1: TFileHideAppOthers
+      Hint = 'Hide Others|Hide all other applications'
+    end
+  end
+end

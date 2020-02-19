@@ -1,0 +1,50 @@
+inherited SurfSpotFinder_LgXhdpiPh: TSurfSpotFinder_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited Panel1: TPanel
+    Size.Width = 450.000000000000000000
+    Size.Height = 695.000000000000000000
+    inherited SurfSpotDetailsToolbar: TToolBar
+      Size.Width = 450.000000000000000000
+      inherited SpotName: TLabel
+        Size.Width = 320.000000000000000000
+      end
+      inherited SaveasFavorite: TSpeedButton
+        Position.X = 399.000000000000000000
+      end
+    end
+    inherited SurfSpotInfoList: TListBox
+      Size.Width = 450.000000000000000000
+      Viewport.Width = 450.000000000000000000
+      Viewport.Height = 142.000000000000000000
+      inherited LatitudeItem: TListBoxItem
+        Size.Width = 450.000000000000000000
+      end
+      inherited LongitudeItem: TListBoxItem
+        Size.Width = 450.000000000000000000
+      end
+      inherited CountyItem: TListBoxItem
+        Size.Width = 450.000000000000000000
+      end
+    end
+    inherited WebBrowser1: TWebBrowser
+      Size.Width = 450.000000000000000000
+      Size.Height = 490.000000000000000000
+    end
+  end
+  inherited MultiView2: TMultiView [1]
+    Size.Height = 695.000000000000000000
+    inherited FavoritesListBox: TListBox
+      Size.Height = 647.000000000000000000
+      Viewport.Width = 250.000000000000000000
+      Viewport.Height = 647.000000000000000000
+    end
+  end
+  inherited MultiView1: TMultiView [2]
+    Size.Height = 695.000000000000000000
+    inherited AllSurfSpotsListView: TListView
+      Size.Height = 647.000000000000000000
+    end
+  end
+end

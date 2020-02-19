@@ -1,0 +1,525 @@
+object EMSClientForm: TEMSClientForm
+  Left = 0
+  Top = 0
+  Caption = 'Form163'
+  ClientHeight = 335
+  ClientWidth = 443
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 443.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    object Label3: TLabel
+      Action = ActionCurrentUserName
+      Enabled = True
+      Position.X = 8.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 137.000000000000000000
+      Size.Height = 17.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object EditLoginResource: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      TabOrder = 2
+      Text = 'ADLogin'
+      Position.X = 216.000000000000000000
+      Position.Y = 40.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+    end
+    object CheckBoxLoginResource: TCheckBox
+      Action = ActionUseCustomResource
+      Enabled = True
+      Position.X = 216.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 217.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+    end
+  end
+  object Layout2: TLayout
+    Align = Client
+    Size.Width = 443.000000000000000000
+    Size.Height = 262.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    object TabControl1: TTabControl
+      Align = Client
+      Margins.Left = 5.000000000000000000
+      Margins.Top = 5.000000000000000000
+      Margins.Right = 5.000000000000000000
+      Margins.Bottom = 5.000000000000000000
+      Size.Width = 433.000000000000000000
+      Size.Height = 252.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 2
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      Sizes = (
+        433s
+        224s
+        433s
+        224s
+        433s
+        224s
+        433s
+        224s)
+      object TabItemLogin: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 55.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Login'
+        ExplicitSize.cx = 49.000000000000000000
+        ExplicitSize.cy = 24.000000000000000000
+        object ButtonLogin: TButton
+          Action = ActionLogin
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 8.000000000000000000
+          Position.Y = 112.000000000000000000
+          TabOrder = 2
+        end
+        object ButtonLogout: TButton
+          Action = ActionLogout
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 98.000000000000000000
+          Position.Y = 112.000000000000000000
+          TabOrder = 3
+        end
+        object EditLoginPassword: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          Position.X = 10.000000000000000000
+          Position.Y = 74.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          object LabelPassword: TLabel
+            Position.Y = -16.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Password'
+          end
+        end
+        object EditLoginUserName: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 10.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          object LabelUserName: TLabel
+            Position.Y = -16.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'UserName'
+          end
+        end
+      end
+      object TabItemSignup: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 63.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'Signup'
+        ExplicitSize.cx = 57.000000000000000000
+        ExplicitSize.cy = 24.000000000000000000
+        object ButtonSignup: TButton
+          Action = ActionSignup
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 10.000000000000000000
+          Position.Y = 112.000000000000000000
+          TabOrder = 2
+        end
+        object EditSignupUserName: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 10.000000000000000000
+          Position.Y = 26.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          object Label1: TLabel
+            Position.Y = -16.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'UserName'
+          end
+        end
+        object EditSignupPassword: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          Position.X = 10.000000000000000000
+          Position.Y = 74.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          object Label2: TLabel
+            Position.Y = -16.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Password'
+          end
+        end
+      end
+      object TabItemUser: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 49.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'User'
+        ExplicitSize.cx = 44.000000000000000000
+        ExplicitSize.cy = 24.000000000000000000
+        object ButtonDeleteUser: TButton
+          Action = ActionDeleteUser
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 216.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+        end
+        object MemoJSONUser: TMemo
+          Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+          DataDetectorTypes = []
+          Anchors = [akLeft, akTop, akRight, akBottom]
+          Cursor = crDefault
+          Position.X = 8.000000000000000000
+          Position.Y = 72.000000000000000000
+          Size.Width = 418.000000000000000000
+          Size.Height = 144.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          Viewport.Width = 414.000000000000000000
+          Viewport.Height = 140.000000000000000000
+        end
+        object ButtonRetrieveFields: TButton
+          Action = ActionRetrieveUserFields
+          Anchors = [akLeft, akBottom]
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 8.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+        end
+        object ButtonUpdateFields: TButton
+          Action = ActionUpdateUserFields
+          Anchors = [akLeft, akBottom]
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 112.000000000000000000
+          Position.Y = 16.000000000000000000
+          Size.Width = 97.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+        end
+        object Label4: TLabel
+          Position.X = 8.000000000000000000
+          Position.Y = 48.000000000000000000
+          Text = 'User Fields'
+          TabOrder = 4
+        end
+      end
+      object TabItemImport: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 41.000000000000000000
+        Size.Height = 28.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = ''
+        TabOrder = 0
+        Text = 'AD'
+        ExplicitSize.cx = 36.000000000000000000
+        ExplicitSize.cy = 24.000000000000000000
+        object EditImportPassword: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 1
+          Position.X = 8.000000000000000000
+          Position.Y = 67.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          object Label5: TLabel
+            Position.Y = -16.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'Password'
+          end
+        end
+        object EditImportUserName: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 0
+          Position.X = 8.000000000000000000
+          Position.Y = 19.000000000000000000
+          Size.Width = 150.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          object Label6: TLabel
+            Position.Y = -16.000000000000000000
+            TextSettings.WordWrap = False
+            Text = 'UserName'
+          end
+        end
+        object ButtonImport: TButton
+          Action = ActionImport
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 16.000000000000000000
+          Position.Y = 120.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          Text = 'Import Users from AD'
+        end
+        object Label7: TLabel
+          Position.X = 232.000000000000000000
+          Position.Y = 6.000000000000000000
+          Text = 'Group'
+          TabOrder = 3
+        end
+        object ComboEditGroup: TComboEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 5
+          ItemHeight = 19.000000000000000000
+          ItemIndex = -1
+          Position.X = 232.000000000000000000
+          Position.Y = 21.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object ButtonShowGroups: TButton
+          Action = ActionShowGroups
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 232.000000000000000000
+          Position.Y = 60.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 7
+        end
+        object ButtonEnumUsers: TButton
+          Action = ActionShowUsers
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 232.000000000000000000
+          Position.Y = 156.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 6
+        end
+        object Label8: TLabel
+          Position.X = 232.000000000000000000
+          Position.Y = 102.000000000000000000
+          Text = 'Users'
+          TabOrder = 8
+        end
+        object ComboEditUsers: TComboEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          TabOrder = 4
+          ItemHeight = 19.000000000000000000
+          ItemIndex = -1
+          Position.X = 232.000000000000000000
+          Position.Y = 117.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+        end
+        object ButtonDeleteNonADUsers: TButton
+          Action = ActionDeleteNonADUsers
+          Enabled = True
+          ImageIndex = -1
+          Position.X = 16.000000000000000000
+          Position.Y = 160.000000000000000000
+          Size.Width = 153.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 9
+        end
+      end
+    end
+  end
+  object EMSProvider1: TEMSProvider
+    ApiVersion = '1'
+    LoginResource = 'ADLogin'
+    URLHost = 'localhost'
+    URLPort = 8080
+    Left = 208
+    Top = 48
+  end
+  object BackendAuth1: TBackendAuth
+    Provider = EMSProvider1
+    LoginPrompt = False
+    UserDetails = <>
+    DefaultAuthentication = Application
+    OnLoggedOut = BackendAuth1LoggedOut
+    Left = 344
+    Top = 48
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 164
+    Top = 109
+    object LinkControlToFieldUserName: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BackendAuth1
+      FieldName = 'UserName'
+      Control = EditLoginUserName
+      Track = False
+    end
+    object LinkControlToFieldPassword: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BackendAuth1
+      FieldName = 'Password'
+      Control = EditLoginPassword
+      Track = False
+    end
+    object LinkControlToField1: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BackendAuth1
+      FieldName = 'UserName'
+      Control = EditSignupUserName
+      Track = False
+    end
+    object LinkControlToField2: TLinkControlToField
+      Category = 'Quick Bindings'
+      DataSource = BackendAuth1
+      FieldName = 'Password'
+      Control = EditSignupPassword
+      Track = False
+    end
+  end
+  object ActionList1: TActionList
+    Left = 280
+    Top = 72
+    object ActionLogin: TAction
+      Text = 'Login'
+      OnExecute = ActionLoginExecute
+      OnUpdate = ActionLoginUpdate
+    end
+    object ActionLogout: TAction
+      Text = 'Logout'
+      OnExecute = ActionLogoutExecute
+      OnUpdate = ActionLogoutUpdate
+    end
+    object ActionSignup: TAction
+      Text = 'Signup'
+      OnExecute = ActionSignupExecute
+      OnUpdate = ActionLoginUpdate
+    end
+    object ActionCurrentUserName: TAction
+      Text = 'ActionCurrentUserName'
+      OnExecute = ActionCurrentUserNameExecute
+      OnUpdate = ActionCurrentUserNameUpdate
+    end
+    object ActionDeleteUser: TAction
+      Text = 'Delete User'
+      OnExecute = ActionDeleteUserExecute
+      OnUpdate = ActionDeleteUserUpdate
+    end
+    object ActionRetrieveUserFields: TAction
+      Text = 'Retrieve Fields'
+      OnExecute = ActionRetrieveUserFieldsExecute
+      OnUpdate = ActionRetrieveUserFieldsUpdate
+    end
+    object ActionUpdateUserFields: TAction
+      Text = 'Update Fields'
+      OnExecute = ActionUpdateUserFieldsExecute
+      OnUpdate = ActionUpdateUserFieldsUpdate
+    end
+    object ActionUseCustomResource: TAction
+      Text = 'Use Custom Resource'
+      OnExecute = ActionUseCustomResourceExecute
+      OnUpdate = ActionUseCustomResourceUpdate
+    end
+    object ActionImport: TAction
+      Text = 'Import'
+      OnExecute = ActionImportExecute
+    end
+    object ActionShowGroups: TAction
+      Text = 'Show AD Groups'
+      OnExecute = ActionShowGroupsExecute
+    end
+    object ActionShowUsers: TAction
+      Text = 'Show AD Users'
+      OnExecute = ActionShowUsersExecute
+    end
+    object ActionDeleteNonADUsers: TAction
+      Text = 'Delete non AD Users'
+      OnExecute = ActionDeleteNonADUsersExecute
+    end
+  end
+  object BackendEndpointImport: TBackendEndpoint
+    Provider = EMSProvider1
+    Auth = BackendAuth1
+    Method = rmPOST
+    Params = <>
+    Resource = 'ADLogin'
+    ResourceSuffix = 'import'
+    Left = 109
+    Top = 166
+  end
+  object BackendEndpointEnumGroups: TBackendEndpoint
+    Provider = EMSProvider1
+    Auth = BackendAuth1
+    Method = rmPOST
+    Params = <>
+    Resource = 'ADLogin'
+    ResourceSuffix = 'enumgroups'
+    Left = 277
+    Top = 118
+  end
+  object BackendEndpointEnumUsers: TBackendEndpoint
+    Provider = EMSProvider1
+    Auth = BackendAuth1
+    Method = rmPOST
+    Params = <>
+    Resource = 'ADLogin'
+    ResourceSuffix = 'enumusers'
+    Left = 269
+    Top = 238
+  end
+  object BackendEndpointDeleteUsers: TBackendEndpoint
+    Provider = EMSProvider1
+    Method = rmPOST
+    Params = <>
+    Resource = 'ADLogin'
+    ResourceSuffix = 'deleteusers'
+    Left = 53
+    Top = 270
+  end
+end

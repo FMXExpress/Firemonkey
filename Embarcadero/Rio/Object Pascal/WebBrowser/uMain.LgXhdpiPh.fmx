@@ -1,0 +1,25 @@
+inherited WebBrowserForm_LgXhdpiPh: TWebBrowserForm_LgXhdpiPh
+  ClientHeight = 695
+  ClientWidth = 450
+  DesignerMasterStyle = 3
+  inherited ToolBar1: TToolBar
+    Size.Width = 450.000000000000000000
+    inherited btnGO: TButton
+      Position.X = 397.000000000000000000
+    end
+    inherited edtURL: TClearingEdit
+      Size.Width = 369.000000000000000000
+    end
+  end
+  inherited StatusBar1: TStatusBar
+    Position.Y = 651.000000000000000000
+    Size.Width = 450.000000000000000000
+    inherited btnForward: TButton
+      Position.X = 397.000000000000000000
+    end
+  end
+  inherited WebBrowser1: TWebBrowser
+    Size.Width = 450.000000000000000000
+    Size.Height = 603.000000000000000000
+  end
+end

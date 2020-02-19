@@ -1,0 +1,27 @@
+inherited frmMain_LgXhdpiTb: TfrmMain_LgXhdpiTb
+  ClientHeight = 829
+  ClientWidth = 480
+  DesignerMasterStyle = 0
+  inherited Dest: TImage
+    Size.Width = 203.000000000000000000
+    Size.Height = 829.000000000000000000
+  end
+  inherited Layout1: TLayout
+    Size.Height = 831.000000000000000000
+    inherited Layout2: TLayout
+      inherited listCat: TListBox
+        Viewport.Width = 100.000000000000000000
+        Viewport.Height = 235.000000000000000000
+      end
+      inherited listFX: TListBox
+        Viewport.Width = 173.000000000000000000
+        Viewport.Height = 235.000000000000000000
+      end
+    end
+    inherited panelSettings: TListBox
+      Size.Height = 556.000000000000000000
+      Viewport.Width = 278.000000000000000000
+      Viewport.Height = 556.000000000000000000
+    end
+  end
+end

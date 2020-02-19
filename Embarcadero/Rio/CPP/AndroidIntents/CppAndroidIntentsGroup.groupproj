@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B35E25AC-4DC5-4B9A-81C1-351AD8FF000D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="SendIntent\CppSendIntent.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ReceiveIntent\CppReceiveIntent.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CppSendIntent">
+        <MSBuild Projects="SendIntent\CppSendIntent.cbproj"/>
+    </Target>
+    <Target Name="CppSendIntent:Clean">
+        <MSBuild Projects="SendIntent\CppSendIntent.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppSendIntent:Make">
+        <MSBuild Projects="SendIntent\CppSendIntent.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="CppReceiveIntent">
+        <MSBuild Projects="ReceiveIntent\CppReceiveIntent.cbproj"/>
+    </Target>
+    <Target Name="CppReceiveIntent:Clean">
+        <MSBuild Projects="ReceiveIntent\CppReceiveIntent.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CppReceiveIntent:Make">
+        <MSBuild Projects="ReceiveIntent\CppReceiveIntent.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CppSendIntent;CppReceiveIntent"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CppSendIntent:Clean;CppReceiveIntent:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CppSendIntent:Make;CppReceiveIntent:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

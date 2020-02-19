@@ -1,0 +1,94 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  ActiveControl = EditText
+  BorderStyle = bsSizeToolWin
+  Caption = 'Regular Expression Delphi Demo'
+  ClientHeight = 285
+  ClientWidth = 600
+  Position = poScreenCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [dkDesktop, dkiPhone, dkiPad]
+  OnCreate = FormCreate
+  DesignerMobile = False
+  DesignerWidth = 0
+  DesignerHeight = 0
+  DesignerDeviceName = ''
+  DesignerOrientation = 0
+  object lbRegExp: TListBox
+    Touch.InteractiveGestures = [igPan]
+    Height = 161.000000000000000000
+    Position.X = 16.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 1
+    Width = 169.000000000000000000
+    ItemIndex = 0
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = lbRegExpChange
+    object TListBoxItem
+      StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+      Height = 19.000000000000000000
+      IsSelected = True
+      Text = 'E-mail'
+      Width = 165.000000000000000000
+    end
+    object TListBoxItem
+      StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+      Height = 19.000000000000000000
+      Position.Y = 19.000000000000000000
+      Text = 'IP Address'
+      Width = 165.000000000000000000
+    end
+    object TListBoxItem
+      StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+      Height = 19.000000000000000000
+      Position.Y = 38.000000000000000000
+      Text = 'Date Interval (mm-dd-yyyy)'
+      Width = 165.000000000000000000
+    end
+    object TListBoxItem
+      StyledSettings = [ssFamily, ssSize, ssStyle, ssFontColor, ssOther]
+      Height = 19.000000000000000000
+      Position.Y = 57.000000000000000000
+      Text = 'Date Interval (dd-mm-yyyy)'
+      Width = 165.000000000000000000
+    end
+  end
+  object MemoRegEx: TMemo
+    Touch.InteractiveGestures = [igPan]
+    Height = 161.000000000000000000
+    Position.X = 192.000000000000000000
+    Position.Y = 24.000000000000000000
+    TabOrder = 2
+    Width = 385.000000000000000000
+    Font.Size = 12.000000000000000000
+    WordWrap = True
+  end
+  object EditText: TEdit
+    TabOrder = 0
+    DisableFocusEffect = True
+    Position.X = 16.000000000000000000
+    Position.Y = 216.000000000000000000
+    Width = 561.000000000000000000
+    Height = 33.000000000000000000
+    OnChangeTracking = EditTextChangeTracking
+    object lbType: TLabel
+      AutoSize = True
+      Height = 18.000000000000000000
+      Position.Y = -24.000000000000000000
+      Text = 'E-mail'
+      Width = 35.000000000000000000
+      WordWrap = False
+    end
+    object SEResult: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 1.000000000000000000
+      ShadowColor = claRed
+    end
+  end
+end

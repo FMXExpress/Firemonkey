@@ -1,0 +1,187 @@
+object Form240: TForm240
+  Left = 0
+  Top = 0
+  Caption = 'FireMonkey MediaPlayer'
+  ClientHeight = 473
+  ClientWidth = 720
+  FormFactor.Width = 1440
+  FormFactor.Height = 900
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = x5DFFFFFF
+    Padding.Left = 6.000000000000000000
+    Padding.Top = 6.000000000000000000
+    Padding.Right = 6.000000000000000000
+    Padding.Bottom = 6.000000000000000000
+    Size.Width = 720.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object PauseButton: TSpeedButton
+      Action = acPlayPause
+      Align = Left
+      Enabled = True
+      ImageIndex = -1
+      Margins.Right = 5.000000000000000000
+      Position.X = 108.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Visible = True
+    end
+    object OpenButton: TSpeedButton
+      Align = Left
+      Margins.Right = 10.000000000000000000
+      Position.X = 6.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 92.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Load...'
+      OnClick = OpenButtonClick
+    end
+    object Label1: TLabel
+      Align = Right
+      Position.X = 594.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.HorzAlign = Trailing
+    end
+    object CheckBox1: TCheckBox
+      IsChecked = True
+      Position.X = 305.000000000000000000
+      Position.Y = 11.000000000000000000
+      Size.Width = 84.000000000000000000
+      Size.Height = 19.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Visible'
+      OnChange = CheckBox1Change
+    end
+    object VolumeTrack: TTrackBar
+      Align = Right
+      CanParentFocus = True
+      Max = 1.000000000000000000
+      Orientation = Vertical
+      Margins.Top = -4.000000000000000000
+      Margins.Bottom = -4.000000000000000000
+      Position.X = 575.000000000000000000
+      Position.Y = 2.000000000000000000
+      Size.Width = 19.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 4
+      OnChange = VolumeTrackChange
+    end
+    object ClearButton: TSpeedButton
+      Action = acClear
+      Align = Left
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 193.000000000000000000
+      Position.Y = 6.000000000000000000
+      Size.Width = 72.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      Visible = True
+    end
+    object CBAdapter: TComboBox
+      Items.Strings = (
+        'Bluetooth'
+        'Network')
+      ItemIndex = 1
+      Position.X = 408.000000000000000000
+      Position.Y = 5.000000000000000000
+      Size.Width = 117.000000000000000000
+      Size.Height = 32.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 5
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 32
+    Top = 218
+  end
+  object TrackBar1: TTrackBar
+    Align = Bottom
+    CanParentFocus = True
+    Orientation = Horizontal
+    Margins.Left = 2.000000000000000000
+    Margins.Top = 2.000000000000000000
+    Margins.Right = 2.000000000000000000
+    Margins.Bottom = 2.000000000000000000
+    Position.X = 2.000000000000000000
+    Position.Y = 452.000000000000000000
+    Size.Width = 716.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Tracking = False
+    OnChange = TrackBar1Change
+  end
+  object Timer1: TTimer
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 32
+    Top = 296
+  end
+  object MediaPlayerControl1: TMediaPlayerControl
+    Size.Width = 720.000000000000000000
+    Size.Height = 409.000000000000000000
+    Size.PlatformDefault = False
+    Align = Client
+    MediaPlayer = MediaPlayer1
+  end
+  object MediaPlayer1: TMediaPlayer
+    Left = 240
+    Top = 294
+  end
+  object ActionList1: TActionList
+    Left = 496
+    Top = 281
+    object acPlayPause: TAction
+      Text = 'PlayPause'
+      OnExecute = acPlayPauseExecute
+    end
+    object acClear: TAction
+      Text = 'Clear'
+      OnExecute = acClearExecute
+    end
+  end
+  object FMXManager: TTetheringManager
+    OnRequestManagerPassword = FMXManagerRequestManagerPassword
+    Password = '1234'
+    Text = 'FMXManager'
+    AllowedAdapters = 'Network_V4'
+    Left = 464
+    Top = 193
+  end
+  object FMXAppProfile: TTetheringAppProfile
+    Manager = FMXManager
+    Text = 'FMXMediaPlayer'
+    Actions = <
+      item
+        Name = 'acPlayPause'
+        IsPublic = True
+        Action = acPlayPause
+        NotifyUpdates = False
+      end
+      item
+        Name = 'acClear'
+        IsPublic = True
+        Action = acClear
+        NotifyUpdates = False
+      end>
+    Resources = <>
+    OnResourceReceived = FMXAppProfileResourceReceived
+    Left = 392
+    Top = 233
+  end
+end

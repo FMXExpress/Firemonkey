@@ -1,0 +1,13 @@
+inherited frmAniDemo_Windows: TfrmAniDemo_Windows
+  DesignerMasterStyle = 0
+  inherited Light1: TLight
+    Quanternion = 
+      '(-0.113392174243927,0.115687474608421,0.073343999683857,0.984062' +
+      '254428864)'
+  end
+  inherited Plane1: TPlane
+    Quanternion = 
+      '(5.01657486893237E-5,0.01813486777246,-0.00276581570506096,0.999' +
+      '831974506378)'
+  end
+end

@@ -1,0 +1,81 @@
+object Form2: TForm2
+  Left = 0
+  Top = 0
+  ActiveControl = EditText
+  Caption = 'Regular Expression C++Builder Demo'
+  ClientHeight = 336
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object lbRegExp: TListBox
+    Position.X = 24.000000000000000000
+    Position.Y = 16.000000000000000000
+    TabOrder = 0
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    OnChange = lbRegExpChange
+    Viewport.Width = 196.000000000000000000
+    Viewport.Height = 196.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      TabOrder = 0
+      Text = 'E-Mail'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 19.000000000000000000
+      TabOrder = 1
+      Text = 'IP Address'
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 38.000000000000000000
+      TabOrder = 2
+      Text = 'Date Interval (dd-mm-yyyy)'
+    end
+    object ListBoxItem4: TListBoxItem
+      Position.Y = 57.000000000000000000
+      TabOrder = 3
+      Text = 'Date Interval (mm-dd-yyyy)'
+    end
+  end
+  object MemoRegEx: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 264.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 353.000000000000000000
+    Size.Height = 201.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 349.000000000000000000
+    Viewport.Height = 197.000000000000000000
+  end
+  object EditText: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 2
+    Text = 'name@company.com'
+    Position.X = 32.000000000000000000
+    Position.Y = 264.000000000000000000
+    Size.Width = 585.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    OnChangeTracking = EditTextChangeTracking
+    object SEResult: TShadowEffect
+      Distance = 3.000000000000000000
+      Direction = 45.000000000000000000
+      Softness = 0.300000011920929000
+      Opacity = 1.000000000000000000
+      ShadowColor = claRed
+    end
+    object lbType: TLabel
+      Position.Y = -24.000000000000000000
+      Size.Width = 585.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'E-Mail'
+    end
+  end
+end

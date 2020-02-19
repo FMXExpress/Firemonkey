@@ -1,0 +1,12 @@
+﻿[EMSProvider1]
+Coordinates=129,142,84,33
+
+[BackendQueryEdgeModules]
+Coordinates=10,10,154,33
+
+[BackendEndpointEdgeMeasurements]
+Coordinates=174,10,199,123
+
+[BackendEndpointMeasurements]
+Coordinates=10,143,174,105
+

@@ -1,0 +1,168 @@
+object frmManageData: TfrmManageData
+  Left = 0
+  Top = 0
+  Caption = 'Manage DataSet'
+  ClientHeight = 400
+  ClientWidth = 464
+  FormFactor.Width = 1632
+  FormFactor.Height = 1043
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  DesignerMasterStyle = 0
+  object BindNavigator1: TBindNavigator
+    Align = Bottom
+    Position.Y = 375.000000000000000000
+    Size.Width = 464.000000000000000000
+    Size.Height = 25.000000000000000000
+    Size.PlatformDefault = False
+    DataSource = BindScopeDB1
+    xRadius = 4.000000000000000000
+    yRadius = 4.000000000000000000
+  end
+  object ImageControl1: TImageControl
+    Position.X = 352.000000000000000000
+    Position.Y = 152.000000000000000000
+    Size.Width = 50.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    OnDblClick = ImageControl1DblClick
+    object Label3: TLabel
+      Position.Y = -16.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Label3'
+    end
+  end
+  object Edit2: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 3
+    Position.X = 112.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    object Label2: TLabel
+      Position.Y = -16.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Label2'
+    end
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 1
+    Position.X = 112.000000000000000000
+    Position.Y = 41.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    object Label1: TLabel
+      Position.Y = -17.000000000000000000
+      Size.Width = 120.000000000000000000
+      Size.Height = 15.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Label1'
+    end
+  end
+  object Label4: TLabel
+    Position.X = 112.000000000000000000
+    Position.Y = 136.000000000000000000
+    Size.Width = 120.000000000000000000
+    Size.Height = 15.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Label4'
+    object Memo1: TMemo
+      Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+      DataDetectorTypes = []
+      Position.Y = 16.000000000000000000
+      Size.Width = 201.000000000000000000
+      Size.Height = 153.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Viewport.Width = 197.000000000000000000
+      Viewport.Height = 149.000000000000000000
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 216
+    Top = 184
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object DBLinkEdit1Category1: TBindDBEditLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Category'
+      EditControl = Edit1
+    end
+    object DBLinkEdit2Description1: TBindDBEditLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Description'
+      EditControl = Edit2
+    end
+    object DBLinkMemo1SearchTerms1: TBindDBMemoLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'SearchTerms'
+      MemoControl = Memo1
+    end
+    object DBLinkImageControl1Icon1: TBindDBImageLink
+      Category = 'DB Links'
+      DataSource = BindScopeDB1
+      FieldName = 'Icon'
+      ImageControl = ImageControl1
+    end
+    object BindExpressionLabel11: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = Label1
+      SourceComponent = BindScopeDB1
+      SourceMemberName = 'Category'
+      SourceExpression = 'DisplayName'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+    object BindExpressionLabel21: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = Label2
+      SourceComponent = BindScopeDB1
+      SourceMemberName = 'Description'
+      SourceExpression = 'DisplayName'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+    object BindExpressionLabel41: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = Label4
+      SourceComponent = BindScopeDB1
+      SourceMemberName = 'SearchTerms'
+      SourceExpression = 'DisplayName'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+    object BindExpressionLabel31: TBindExpression
+      Category = 'Binding Expressions'
+      ControlComponent = Label3
+      SourceComponent = BindScopeDB1
+      SourceMemberName = 'Icon'
+      SourceExpression = 'DisplayName'
+      ControlExpression = 'Text'
+      NotifyOutputs = False
+      Direction = dirSourceToControl
+    end
+  end
+  object BindScopeDB1: TBindScopeDB
+    DataSet = dtmdlData.cdsIconData
+    ScopeMappings = <>
+    Left = 58
+    Top = 50
+  end
+end

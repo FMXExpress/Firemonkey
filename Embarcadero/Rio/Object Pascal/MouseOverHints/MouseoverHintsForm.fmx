@@ -1,0 +1,234 @@
+object MouseoverHintForm: TMouseoverHintForm
+  Left = 0
+  Top = 0
+  Caption = 'Mouseover Hints Demo'
+  ClientHeight = 509
+  ClientWidth = 446
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  ShowHint = False
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Hint = 'Hello|Bye Button'
+    Position.X = 8.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Show Hint'
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object StatusBar1: TStatusBar
+    Position.Y = 487.000000000000000000
+    ShowSizeGrip = True
+    Size.Width = 446.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    AutoHint = True
+    OnHint = StatusBar1Hint
+  end
+  object Label1: TLabel
+    StyledSettings = [Family, Size, FontColor]
+    Position.X = 8.000000000000000000
+    Position.Y = 432.000000000000000000
+    Size.Width = 425.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Style = [fsBold]
+    Text = 'Label1'
+  end
+  object Panel1: TPanel
+    Hint = 'Panel'
+    Position.X = 8.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 425.000000000000000000
+    Size.Height = 57.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    ParentShowHint = False
+    ShowHint = True
+    object Button5: TButton
+      Hint = 'Button5 Hint'
+      Position.X = 56.000000000000000000
+      Position.Y = 16.000000000000000000
+      Size.Width = 281.000000000000000000
+      Size.Height = 22.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'This button should show the hint, and its parent too'
+    end
+  end
+  object MainMenu1: TMainMenu
+    Left = 344
+    Top = 504
+    object MenuItem1: TMenuItem
+      Text = 'MenuItem1'
+      object MenuItem3: TMenuItem
+        Hint = 'Menu3 Hint'
+        Locked = True
+        Text = 'MenuItem3'
+      end
+      object MenuItem4: TMenuItem
+        Hint = 'Menu4 Hint'
+        Locked = True
+        Text = 'MenuItem4'
+      end
+    end
+    object MenuItem2: TMenuItem
+      Text = 'MenuItem2'
+      object MenuItem5: TMenuItem
+        Hint = 'Menu5 Hint'
+        Locked = True
+        Text = 'MenuItem5'
+      end
+      object MenuItem6: TMenuItem
+        Hint = 'Menu6 Hint'
+        Locked = True
+        Text = 'MenuItem6'
+      end
+    end
+  end
+  object Button6: TButton
+    Action = Action1
+    Enabled = True
+    ImageIndex = -1
+    Position.X = 8.000000000000000000
+    Position.Y = 296.000000000000000000
+    Size.Width = 425.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Visible = True
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object HintEdit: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 12
+    Position.X = 40.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 393.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    OnChange = HintEditChange
+  end
+  object Label2: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 240.000000000000000000
+    Size.Width = 33.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Hint'
+  end
+  object ApplicationShowHint: TCheckBox
+    Position.X = 16.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 169.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = 'Application.ShowHint'
+    OnChange = ApplicationShowHintChange
+  end
+  object FormShowHint: TCheckBox
+    Position.X = 16.000000000000000000
+    Position.Y = 40.000000000000000000
+    TabOrder = 15
+    Text = 'Form.ShowHint'
+    OnChange = FormShowHintChange
+  end
+  object StatusBarAutohintCheckBox: TCheckBox
+    Position.X = 8.000000000000000000
+    Position.Y = 392.000000000000000000
+    Size.Width = 217.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Text = 'StatusBarAutohintCheckBox'
+    OnChange = StatusBarAutohintCheckBoxChange
+  end
+  object ApplicationShortCutsInHintsCheckBox: TCheckBox
+    Position.X = 190.000000000000000000
+    Position.Y = 16.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    Text = 'Application.HintShortCuts'
+    OnChange = ApplicationShortCutsInHintsCheckBoxChange
+  end
+  object Button2: TButton
+    Action = Action2
+    Enabled = True
+    ImageIndex = -1
+    Position.X = 8.000000000000000000
+    Position.Y = 328.000000000000000000
+    Size.Width = 425.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+    Visible = True
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object Button3: TButton
+    Action = Action3
+    Enabled = True
+    ImageIndex = -1
+    Position.X = 8.000000000000000000
+    Position.Y = 360.000000000000000000
+    Size.Width = 425.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 21
+    Visible = True
+    ParentShowHint = False
+    ShowHint = True
+  end
+  object Button4: TButton
+    Hint = 'Hello|Bye Button'
+    Position.X = 232.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 201.000000000000000000
+    Size.Height = 41.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Parent Show Hint'
+  end
+  object EnableActionOnHintCheckBox: TCheckBox
+    IsChecked = True
+    Position.X = 190.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 19.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    Text = 'Enable Action OnHint'
+  end
+  object ActionList1: TActionList
+    Left = 280
+    Top = 504
+    object Action1: TAction
+      Text = 'Action1 with Hint value'
+      Hint = 'Action1Hint'
+      ShortCut = 16449
+      OnExecute = Action1Execute
+    end
+    object Action2: TAction
+      Text = 'Action2 with OnHint'
+      OnExecute = Action2Execute
+      OnHint = Action2Hint
+    end
+    object Action3: TAction
+      Text = 'Action3 with hint mixed by code'
+      Hint = 'Action3 Hint'
+      OnExecute = Action3Execute
+      OnHint = Action3Hint
+    end
+  end
+end

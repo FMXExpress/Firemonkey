@@ -1,0 +1,25 @@
+inherited DatePickerForm_NmXhdpiPh: TDatePickerForm_NmXhdpiPh
+  ClientHeight = 615
+  ClientWidth = 400
+  DesignerMasterStyle = 3
+  inherited ListBox1: TListBox
+    Size.Width = 400.000000000000000000
+    Viewport.Width = 400.000000000000000000
+    Viewport.Height = 93.000000000000000000
+    inherited ListBoxItem5: TListBoxItem
+      Size.Width = 400.000000000000000000
+      inherited TimeEdit1: TTimeEdit
+        Position.X = 298.000000000000000000
+      end
+    end
+    inherited ListBoxItem6: TListBoxItem
+      Size.Width = 400.000000000000000000
+    end
+  end
+  inherited ToolBar1: TToolBar
+    Size.Width = 400.000000000000000000
+    inherited Label1: TLabel
+      Size.Width = 400.000000000000000000
+    end
+  end
+end

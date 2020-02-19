@@ -1,0 +1,56 @@
+object EMSEdgeLoggingFrame: TEMSEdgeLoggingFrame
+  Size.Width = 585.000000000000000000
+  Size.Height = 443.000000000000000000
+  Size.PlatformDefault = False
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Margins.Left = 3.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Size.Width = 579.000000000000000000
+    Size.Height = 396.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Viewport.Width = 579.000000000000000000
+    Viewport.Height = 396.000000000000000000
+  end
+  object Layout1: TLayout
+    Align = Bottom
+    Margins.Left = 3.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Position.X = 3.000000000000000000
+    Position.Y = 405.000000000000000000
+    Size.Width = 579.000000000000000000
+    Size.Height = 35.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    object ButtonClear: TButton
+      Align = Right
+      Margins.Left = 3.000000000000000000
+      Margins.Top = 3.000000000000000000
+      Margins.Right = 3.000000000000000000
+      Margins.Bottom = 3.000000000000000000
+      Position.X = 496.000000000000000000
+      Position.Y = 3.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 29.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Clear'
+      OnClick = ButtonClearClick
+    end
+    object CheckBoxLogging: TCheckBox
+      Align = Left
+      Size.Width = 120.000000000000000000
+      Size.Height = 35.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Enable Logging'
+    end
+  end
+end

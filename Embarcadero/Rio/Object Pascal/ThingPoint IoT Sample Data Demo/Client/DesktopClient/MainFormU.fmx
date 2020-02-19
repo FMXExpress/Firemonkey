@@ -1,0 +1,188 @@
+object EMSThingPointForm: TEMSThingPointForm
+  Left = 0
+  Top = 0
+  Caption = 'EMS Client'
+  ClientHeight = 519
+  ClientWidth = 609
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  ShowHint = False
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnDestroy = FormDestroy
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 609.000000000000000000
+    Size.Height = 193.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    inline EMSServerConnectionFrame1: TEMSServerConnectionFrame
+      Position.X = 9.000000000000000000
+      Position.Y = 10.000000000000000000
+      Size.Width = 248.000000000000000000
+      Size.Height = 167.000000000000000000
+      Size.PlatformDefault = False
+      inherited Layout1: TLayout
+        Size.Width = 242.000000000000000000
+        Size.Height = 161.000000000000000000
+        inherited GroupBox1: TGroupBox
+          Size.Width = 242.000000000000000000
+          Size.Height = 161.000000000000000000
+          inherited ButtonTestConnection: TButton
+            Position.Y = 127.000000000000000000
+          end
+          inherited EditURLHost: TEdit
+            Position.Y = 43.000000000000000000
+            inherited LabelURLHost: TLabel
+              Position.Y = -21.000000000000000000
+            end
+          end
+          inherited EditURLPort: TEdit
+            Position.Y = 94.000000000000000000
+            Size.Width = 89.000000000000000000
+            inherited LabelURLPort: TLabel
+              Position.Y = -21.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+  object Layout2: TLayout
+    Align = Client
+    Size.Width = 609.000000000000000000
+    Size.Height = 326.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    object TabControl1: TTabControl
+      Align = Client
+      Size.Width = 609.000000000000000000
+      Size.Height = 326.000000000000000000
+      Size.PlatformDefault = False
+      TabIndex = 1
+      TabOrder = 0
+      TabPosition = PlatformDefault
+      object TabItemServerRequest: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 159.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Custom Resource Request'
+        ExplicitSize.cx = 159.000000000000000000
+        ExplicitSize.cy = 24.000000000000000000
+        inline MeasurementsResultFrame: TEMSEndpointResultFrame
+          Align = Client
+          Size.Width = 609.000000000000000000
+          Size.Height = 300.000000000000000000
+          Size.PlatformDefault = False
+          inherited Layout1: TLayout
+            Size.Width = 603.000000000000000000
+            Size.Height = 294.000000000000000000
+            inherited Layout2: TLayout
+              Size.Width = 603.000000000000000000
+              inherited ButtonExecute: TButton
+                OnClick = MeasurementsResultFrameButtonExecuteClick
+              end
+              inherited ButtonClear: TButton
+                Position.X = 520.000000000000000000
+              end
+            end
+            inherited StringGrid1: TStringGrid
+              Size.Width = 603.000000000000000000
+              Size.Height = 223.000000000000000000
+              Viewport.Width = 599.000000000000000000
+              Viewport.Height = 198.000000000000000000
+            end
+            inherited Layout3: TLayout
+              Position.Y = 256.000000000000000000
+              Size.Width = 603.000000000000000000
+            end
+          end
+          inherited BindingsList1: TBindingsList
+            Left = 92
+            Top = 13
+          end
+        end
+      end
+      object TabItemEdgeRequest: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 93.000000000000000000
+        Size.Height = 26.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Edge Request'
+        OnClick = TabItemEdgeRequestClick
+        ExplicitSize.cx = 93.000000000000000000
+        ExplicitSize.cy = 24.000000000000000000
+        object Layout3: TLayout
+          Align = Top
+          Size.Width = 609.000000000000000000
+          Size.Height = 57.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object ComboBoxEdgeName: TComboBox
+            Position.X = 8.000000000000000000
+            Position.Y = 16.000000000000000000
+            Size.Width = 209.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            OnChange = ComboBoxEdgeNameChange
+          end
+          object ButtonRefreshEdgeNames: TButton
+            Position.X = 232.000000000000000000
+            Position.Y = 16.000000000000000000
+            Size.Width = 137.000000000000000000
+            Size.Height = 22.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Refresh Names'
+            OnClick = ButtonRefreshEdgeNamesClick
+          end
+        end
+        inline EdgeResultsFrame: TEMSEndpointResultFrame
+          Align = Client
+          Size.Width = 609.000000000000000000
+          Size.Height = 243.000000000000000000
+          Size.PlatformDefault = False
+          inherited Layout1: TLayout
+            Size.Width = 603.000000000000000000
+            Size.Height = 237.000000000000000000
+            inherited Layout2: TLayout
+              Size.Width = 603.000000000000000000
+              inherited ButtonExecute: TButton
+                OnClick = EdgeResultsFrameButtonExecuteClick
+              end
+              inherited ButtonClear: TButton
+                Position.X = 520.000000000000000000
+              end
+            end
+            inherited StringGrid1: TStringGrid
+              Size.Width = 603.000000000000000000
+              Size.Height = 166.000000000000000000
+              Viewport.Width = 599.000000000000000000
+              Viewport.Height = 141.000000000000000000
+            end
+            inherited Layout3: TLayout
+              Position.Y = 199.000000000000000000
+              Size.Width = 603.000000000000000000
+            end
+          end
+          inherited BindingsList1: TBindingsList
+            Left = 164
+            Top = 13
+          end
+        end
+      end
+    end
+  end
+end

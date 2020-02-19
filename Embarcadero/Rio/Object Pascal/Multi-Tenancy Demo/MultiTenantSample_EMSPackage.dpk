@@ -1,0 +1,70 @@
+// Copyright (c) 2017 Embarcadero Technologies, Inc. All rights reserved.  
+//
+// This software is the copyrighted property of Embarcadero Technologies, Inc. 
+// ("Embarcadero") and its licensors. You may only use this software if you 
+// are an authorized licensee of Delphi, C++Builder or RAD Studio 
+// (the "Embarcadero Products").  This software is subject to Embarcadero's 
+// standard software license and support agreement that accompanied your 
+// purchase of the Embarcadero Products and is considered a Redistributable, 
+// as such term is defined thereunder. Your use of this software constitutes 
+// your acknowledgement of your agreement to the foregoing software license 
+// and support agreement. 
+//---------------------------------------------------------------------------
+package MultiTenantSample_EMSPackage;
+
+{$R *.res}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$RUNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  emsserverapi,
+  dbrtl,
+  CustomIPTransport,
+  bindengine,
+  bindcomp,
+  FireDACCommonDriver,
+  FireDACCommon,
+  FireDAC,
+  RESTComponents,
+  FireDACIBDriver,
+  vcl,
+  vclFireDAC,
+  emsclient,
+  IndyIPCommon,
+  IndySystem,
+  IndyProtocols,
+  IndyCore,
+  IndyIPClient;
+
+contains
+  StoreDataModule in 'StoreDataModule.pas' {StoreResource: TDataModule},
+  SettingsDataModule in 'SettingsDataModule.pas' {SettingsResource: TDataModule},
+  CommonDataModule in 'CommonDataModule.pas' {CommonDM: TDataModule},
+  SQLScripts in 'SQLScripts.pas';
+
+end.

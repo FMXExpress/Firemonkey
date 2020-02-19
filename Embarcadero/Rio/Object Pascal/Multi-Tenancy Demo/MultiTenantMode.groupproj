@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{85C713BF-84B2-49BB-A011-E3175D9DBFF5}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="MultiTenantSample_Client.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MultiTenantSample_EMSPackage.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="MultiTenantSample_Client">
+        <MSBuild Projects="MultiTenantSample_Client.dproj"/>
+    </Target>
+    <Target Name="MultiTenantSample_Client:Clean">
+        <MSBuild Projects="MultiTenantSample_Client.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MultiTenantSample_Client:Make">
+        <MSBuild Projects="MultiTenantSample_Client.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MultiTenantSample_EMSPackage">
+        <MSBuild Projects="MultiTenantSample_EMSPackage.dproj"/>
+    </Target>
+    <Target Name="MultiTenantSample_EMSPackage:Clean">
+        <MSBuild Projects="MultiTenantSample_EMSPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MultiTenantSample_EMSPackage:Make">
+        <MSBuild Projects="MultiTenantSample_EMSPackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="MultiTenantSample_Client;MultiTenantSample_EMSPackage"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="MultiTenantSample_Client:Clean;MultiTenantSample_EMSPackage:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="MultiTenantSample_Client:Make;MultiTenantSample_EMSPackage:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

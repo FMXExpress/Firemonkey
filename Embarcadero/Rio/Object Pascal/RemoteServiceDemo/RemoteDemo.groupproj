@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0F7A9655-200A-4FA9-B14F-289E32864D98}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="RemoteService\RemoteService.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="AppRemoteHost\AppRemoteHost.dproj">
+            <Dependencies>RemoteService\RemoteService.dproj</Dependencies>
+        </Projects>
+        <Projects Include="AppRemoteExternal\AppRemoteExternal.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="RemoteService">
+        <MSBuild Projects="RemoteService\RemoteService.dproj"/>
+    </Target>
+    <Target Name="RemoteService:Clean">
+        <MSBuild Projects="RemoteService\RemoteService.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RemoteService:Make">
+        <MSBuild Projects="RemoteService\RemoteService.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AppRemoteHost" DependsOnTargets="RemoteService">
+        <MSBuild Projects="AppRemoteHost\AppRemoteHost.dproj"/>
+    </Target>
+    <Target Name="AppRemoteHost:Clean" DependsOnTargets="RemoteService:Clean">
+        <MSBuild Projects="AppRemoteHost\AppRemoteHost.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AppRemoteHost:Make" DependsOnTargets="RemoteService:Make">
+        <MSBuild Projects="AppRemoteHost\AppRemoteHost.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="AppRemoteExternal">
+        <MSBuild Projects="AppRemoteExternal\AppRemoteExternal.dproj"/>
+    </Target>
+    <Target Name="AppRemoteExternal:Clean">
+        <MSBuild Projects="AppRemoteExternal\AppRemoteExternal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="AppRemoteExternal:Make">
+        <MSBuild Projects="AppRemoteExternal\AppRemoteExternal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="RemoteService;AppRemoteHost;AppRemoteExternal"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="RemoteService:Clean;AppRemoteHost:Clean;AppRemoteExternal:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="RemoteService:Make;AppRemoteHost:Make;AppRemoteExternal:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

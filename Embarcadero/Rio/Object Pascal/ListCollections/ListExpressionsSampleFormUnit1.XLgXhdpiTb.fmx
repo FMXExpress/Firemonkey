@@ -1,0 +1,55 @@
+inherited Form1_XLgXhdpiTb: TForm1_XLgXhdpiTb
+  ClientHeight = 1255
+  ClientWidth = 800
+  DesignerMasterStyle = 0
+  inherited LabelSourceExpressions: TLabel
+    Size.Width = 160.000000000000000000
+  end
+  inherited LabelControlExpression: TLabel
+    Size.Width = 160.000000000000000000
+  end
+  inherited EditControlExpression: TEdit
+    Position.X = 184.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited LabelControlComponent: TLabel
+    Size.Width = 160.000000000000000000
+  end
+  inherited EditControlComponent: TEdit
+    Position.X = 184.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited LabelSourceComponent: TLabel
+    Size.Width = 160.000000000000000000
+  end
+  inherited EditSourceExpression: TEdit
+    Position.X = 184.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited ButtonEvaluate: TButton
+    Position.Y = 204.000000000000000000
+  end
+  inherited EditSourceComponentName: TEdit
+    Position.X = 184.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited ListBox1: TListBox
+    Anchors = [akLeft, akTop, akBottom]
+    Position.Y = 280.000000000000000000
+    Size.Width = 800.000000000000000000
+    Size.Height = 577.000000000000000000
+    Viewport.Width = 800.000000000000000000
+    Viewport.Height = 577.000000000000000000
+  end
+  inherited ComboBox1: TComboBox
+    Position.X = 184.000000000000000000
+    Size.Height = 32.000000000000000000
+  end
+  inherited ButtonClear: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 204.000000000000000000
+  end
+  inherited Label1: TLabel
+    Size.Width = 160.000000000000000000
+  end
+end

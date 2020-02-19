@@ -1,0 +1,203 @@
+object EdgeMainForm: TEdgeMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Thingpoint'
+  ClientHeight = 718
+  ClientWidth = 665
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  DesignerMasterStyle = 0
+  inline EMSServerConnectionFrame1: TEMSServerConnectionFrame
+    Position.X = 7.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 222.000000000000000000
+    Size.PlatformDefault = False
+    inherited Layout1: TLayout
+      Size.Height = 216.000000000000000000
+      inherited GroupBox1: TGroupBox
+        Size.Height = 216.000000000000000000
+      end
+    end
+  end
+  inline EMSEdgeModuleListenerFrame1: TEMSEdgeModuleListenerFrame
+    Position.X = 337.000000000000000000
+    Position.Y = 7.000000000000000000
+    Size.Width = 320.000000000000000000
+    Size.Height = 223.000000000000000000
+    Size.PlatformDefault = False
+    inherited Layout1: TLayout
+      Size.Height = 217.000000000000000000
+      inherited GroupBox2: TGroupBox
+        Size.Height = 217.000000000000000000
+      end
+    end
+    inherited ActionList1: TActionList
+      Left = 138
+      Top = 112
+    end
+  end
+  object TabControl1: TTabControl
+    Anchors = [akLeft, akTop, akRight]
+    Position.X = 8.000000000000000000
+    Position.Y = 237.000000000000000000
+    Size.Width = 648.000000000000000000
+    Size.Height = 243.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    Sizes = (
+      648s
+      217s
+      648s
+      217s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 77.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Heart Rate'
+      ExplicitSize.cx = 76.000000000000000000
+      ExplicitSize.cy = 24.000000000000000000
+      inline HeartRateFrame: TStreamingDeviceFrame
+        Align = Client
+        Size.Width = 648.000000000000000000
+        Size.Height = 217.000000000000000000
+        Size.PlatformDefault = False
+        inherited Layout3: TLayout
+          Size.Width = 642.000000000000000000
+          Size.Height = 211.000000000000000000
+          inherited Layout2: TLayout
+            Size.Width = 642.000000000000000000
+            Size.Height = 178.000000000000000000
+            inherited Memo1: TMemo
+              Size.Width = 642.000000000000000000
+              Size.Height = 145.000000000000000000
+              Viewport.Width = 638.000000000000000000
+              Viewport.Height = 141.000000000000000000
+            end
+            inherited Layout4: TLayout
+              Position.Y = 145.000000000000000000
+              Size.Width = 642.000000000000000000
+              inherited ButtonClear: TButton
+                Position.X = 559.000000000000000000
+              end
+            end
+          end
+          inherited Layout1: TLayout
+            Size.Width = 642.000000000000000000
+            inherited ButtonStartStop: TButton
+              Position.X = 559.000000000000000000
+            end
+            inherited ButtonConnect: TButton
+              Position.X = 471.000000000000000000
+              OnClick = HeartRateFrameButtonConnectClick
+            end
+            inherited edDeviceName: TEdit
+              Size.Width = 460.000000000000000000
+            end
+          end
+        end
+        inherited ActionList1: TActionList
+          Left = 80
+          Top = 384
+        end
+        inherited BLEManager: TBluetoothDeviceDiscoveryManager
+          Left = 48
+          Top = 320
+        end
+        inherited GenericHRM: TGenericHeartRateMonitor
+          Left = 128
+          Top = 320
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 99.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Blood Pressure'
+      ExplicitSize.cx = 99.000000000000000000
+      ExplicitSize.cy = 24.000000000000000000
+      inline BloodPressureFrame: TNotifyDeviceFrame
+        Align = Client
+        Size.Width = 648.000000000000000000
+        Size.Height = 217.000000000000000000
+        Size.PlatformDefault = False
+        inherited Layout3: TLayout
+          Size.Width = 642.000000000000000000
+          Size.Height = 211.000000000000000000
+          inherited Layout2: TLayout
+            Size.Width = 642.000000000000000000
+            Size.Height = 178.000000000000000000
+            inherited Memo1: TMemo
+              Size.Width = 642.000000000000000000
+              Size.Height = 145.000000000000000000
+              Viewport.Width = 642.000000000000000000
+              Viewport.Height = 145.000000000000000000
+            end
+            inherited Layout4: TLayout
+              Position.Y = 145.000000000000000000
+              Size.Width = 642.000000000000000000
+              inherited ButtonClear: TButton
+                Position.X = 559.000000000000000000
+              end
+            end
+          end
+          inherited Layout1: TLayout
+            Size.Width = 642.000000000000000000
+            inherited ButtonNotify: TButton
+              Position.X = 559.000000000000000000
+            end
+          end
+        end
+      end
+    end
+  end
+  object Layout1: TLayout
+    Anchors = [akLeft, akTop, akRight, akBottom]
+    Position.X = 8.000000000000000000
+    Position.Y = 488.000000000000000000
+    Size.Width = 648.000000000000000000
+    Size.Height = 218.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    inline EMSEdgeLoggingFrame1: TEMSEdgeLoggingFrame
+      Align = Client
+      Size.Width = 648.000000000000000000
+      Size.Height = 218.000000000000000000
+      Size.PlatformDefault = False
+      inherited Memo1: TMemo
+        Size.Width = 642.000000000000000000
+        Size.Height = 171.000000000000000000
+        Viewport.Width = 638.000000000000000000
+        Viewport.Height = 167.000000000000000000
+      end
+      inherited Layout1: TLayout
+        Position.Y = 180.000000000000000000
+        Size.Width = 642.000000000000000000
+        inherited ButtonClear: TButton
+          Position.X = 559.000000000000000000
+        end
+        inherited CheckBoxLogging: TCheckBox
+          IsChecked = True
+        end
+      end
+    end
+  end
+end

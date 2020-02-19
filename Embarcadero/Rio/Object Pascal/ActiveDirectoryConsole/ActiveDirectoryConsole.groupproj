@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B73F1577-1FCE-433C-813E-7252D660CE5C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ADLoginPackage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ADConsole.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ADLoginPackage">
+        <MSBuild Projects="ADLoginPackage.dproj"/>
+    </Target>
+    <Target Name="ADLoginPackage:Clean">
+        <MSBuild Projects="ADLoginPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ADLoginPackage:Make">
+        <MSBuild Projects="ADLoginPackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ADConsole">
+        <MSBuild Projects="ADConsole.dproj"/>
+    </Target>
+    <Target Name="ADConsole:Clean">
+        <MSBuild Projects="ADConsole.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ADConsole:Make">
+        <MSBuild Projects="ADConsole.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ADLoginPackage;ADConsole"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ADLoginPackage:Clean;ADConsole:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ADLoginPackage:Make;ADConsole:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

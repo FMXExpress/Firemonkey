@@ -1,0 +1,435 @@
+object FormMain: TFormMain
+  Left = 0
+  Top = 0
+  Caption = 'Toy Store'
+  ClientHeight = 667
+  ClientWidth = 401
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object tcStore: TTabControl
+    Align = Client
+    Size.Width = 401.000000000000000000
+    Size.Height = 667.000000000000000000
+    Size.PlatformDefault = False
+    TabHeight = 49.000000000000000000
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = None
+    OnChange = tcStoreChange
+    Sizes = (
+      401s
+      667s
+      401s
+      667s
+      401s
+      667s)
+    object tiSelectStore: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemmostviewed'
+      TabOrder = 0
+      Text = 'Select Store'
+      ExplicitSize.cx = 194.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object btnNext: TButton
+        Action = actNextTabToLogin
+        Align = Top
+        AutoTranslate = False
+        Enabled = True
+        ImageIndex = -1
+        Margins.Left = 200.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 70.000000000000000000
+        Position.X = 200.000000000000000000
+        Position.Y = 174.000000000000000000
+        Size.Width = 171.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listitembutton'
+        TabOrder = 4
+      end
+      object cbStores: TComboBox
+        Align = Top
+        Hint = 'Select'
+        Margins.Left = 30.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Position.X = 30.000000000000000000
+        Position.Y = 64.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        OnChange = cbStoresChange
+      end
+      object edtStorePassword: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 3
+        Password = True
+        Position.X = 30.000000000000000000
+        Position.Y = 114.000000000000000000
+        Margins.Left = 30.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Store password'
+      end
+      object ToolBar1: TToolBar
+        Align = MostTop
+        Size.Width = 401.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object Label1: TLabel
+          Align = Contents
+          Size.Width = 401.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Store Log in'
+          TabOrder = 0
+        end
+        object btnRefresh: TSpeedButton
+          Align = Right
+          Position.X = 328.000000000000000000
+          Size.Width = 73.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'refreshtoolbutton'
+          Text = 'btnRefresh'
+          OnClick = btnRefreshClick
+        end
+      end
+      object EditHost: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Bottom
+        TabOrder = 1
+        Text = 'localhost'
+        Position.X = 30.000000000000000000
+        Position.Y = 537.000000000000000000
+        Margins.Left = 30.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 10.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Host'
+        Visible = False
+      end
+      object EditPort: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Bottom
+        TabOrder = 0
+        Text = '8080'
+        Position.X = 30.000000000000000000
+        Position.Y = 577.000000000000000000
+        Margins.Left = 30.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 60.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Port'
+        Visible = False
+      end
+    end
+    object tiStoreEmployeeLogin: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitemmostviewed'
+      TabOrder = 0
+      Text = 'Select Store'
+      ExplicitSize.cx = 194.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object Button1: TButton
+        Action = actNextTabToItems
+        Align = Top
+        AutoTranslate = False
+        Enabled = True
+        ImageIndex = -1
+        Margins.Left = 200.000000000000000000
+        Margins.Top = 10.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 70.000000000000000000
+        Position.X = 200.000000000000000000
+        Position.Y = 174.000000000000000000
+        Size.Width = 171.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'listitembutton'
+        TabOrder = 2
+      end
+      object edtEmployeeLogin: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 0
+        Position.X = 30.000000000000000000
+        Position.Y = 64.000000000000000000
+        Margins.Left = 30.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Employee login'
+      end
+      object ToolBar3: TToolBar
+        Align = MostTop
+        Size.Width = 401.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Label3: TLabel
+          Align = Contents
+          Size.Width = 401.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Employee Log in'
+          TabOrder = 0
+        end
+        object SpeedButton1: TSpeedButton
+          Action = actBackTab
+          Align = Left
+          Enabled = True
+          ImageIndex = -1
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowlefttoolbutton'
+        end
+      end
+      object edtEmployeePassword: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        Align = Top
+        TabOrder = 1
+        Password = True
+        Position.X = 30.000000000000000000
+        Position.Y = 114.000000000000000000
+        Margins.Left = 30.000000000000000000
+        Margins.Top = 20.000000000000000000
+        Margins.Right = 30.000000000000000000
+        Margins.Bottom = 20.000000000000000000
+        Size.Width = 341.000000000000000000
+        Size.Height = 30.000000000000000000
+        Size.PlatformDefault = False
+        TextPrompt = 'Employee password'
+      end
+    end
+    object tiStoreItems: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'tabitembookmarks'
+      TabOrder = 0
+      Text = 'Manage Items'
+      ExplicitSize.cx = 195.000000000000000000
+      ExplicitSize.cy = 49.000000000000000000
+      object lvItems: TListView
+        ItemAppearanceClassName = 'TListItemAppearance'
+        ItemEditAppearanceClassName = 'TListItemDeleteAppearance'
+        HeaderAppearanceClassName = 'TListHeaderObjects'
+        FooterAppearanceClassName = 'TListHeaderObjects'
+        ItemSpaces.Bottom = 5.000000000000000000
+        Align = Client
+        Size.Width = 401.000000000000000000
+        Size.Height = 623.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        ItemAppearanceObjects.HeaderObjects.Text.Font.StyleExt = {00070000000000000004000000}
+        OnItemClick = lvItemsItemClick
+        OnDeleteItem = lvItemsDeleteItem
+        SelectionCrossfade = True
+      end
+      object ToolBar2: TToolBar
+        Align = MostTop
+        Size.Width = 401.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Label2: TLabel
+          Align = Contents
+          Size.Width = 401.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'toollabel'
+          TextSettings.HorzAlign = Center
+          Text = 'Store Items'
+          TabOrder = 0
+        end
+        object btnAddItem: TSpeedButton
+          Align = Right
+          Margins.Left = 5.000000000000000000
+          Margins.Right = 5.000000000000000000
+          Position.X = 352.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'addtoolbutton'
+          Text = 'Add'
+          Visible = False
+          OnClick = btnAddItemClick
+        end
+        object btnEditList: TSpeedButton
+          Align = Right
+          Margins.Left = 5.000000000000000000
+          Position.X = 357.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'composetoolbuttonbordered'
+          Text = 'Edit'
+          Visible = False
+          OnClick = btnEditListClick
+        end
+        object SpeedButton2: TSpeedButton
+          Action = actBackTab
+          Align = Left
+          Enabled = True
+          ImageIndex = -1
+          Margins.Left = 5.000000000000000000
+          Position.X = 5.000000000000000000
+          Size.Width = 44.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'arrowlefttoolbutton'
+        end
+        object LabelInfo: TLabel
+          Align = Left
+          AutoSize = True
+          StyledSettings = [Family, FontColor]
+          Position.X = 49.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          StyleLookup = 'listboxitemlabel'
+          TextSettings.Font.Size = 9.000000000000000000
+          TextSettings.Font.StyleExt = {00040000000200000004000000}
+          TextSettings.WordWrap = False
+          TextSettings.Trimming = None
+          TabOrder = 1
+        end
+      end
+    end
+  end
+  object ActionList1: TActionList
+    Left = 336
+    Top = 65
+    object actNextTabToLogin: TNextTabAction
+      Category = 'Tab'
+      TabControl = tcStore
+      CustomText = 'Next'
+      OnUpdate = actNextTabToLoginUpdate
+    end
+    object actNextTabToItems: TNextTabAction
+      Category = 'Tab'
+      TabControl = tcStore
+      CustomText = 'Next'
+      OnUpdate = actNextTabToItemsUpdate
+    end
+    object actBackTab: TPreviousTabAction
+      Category = 'Tab'
+      TabControl = tcStore
+    end
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 300
+    Top = 549
+    object LinkListControlToField1: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      FieldName = 'TENANTNAME'
+      Control = cbStores
+      FillExpressions = <>
+      FillHeaderExpressions = <>
+      FillBreakGroups = <>
+    end
+    object LinkListControlToField2: TLinkListControlToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB2
+      FieldName = 'DESCRIPTION'
+      Control = lvItems
+      FillExpressions = <
+        item
+          SourceMemberName = 'BARCODE'
+          ControlMemberName = 'Detail'
+        end>
+      FillHeaderExpressions = <>
+      FillHeaderFieldName = 'ITEMNAME'
+      FillBreakGroups = <>
+    end
+    object LinkPropertyToFieldText: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'DisplayUser'
+      Component = LabelInfo
+      ComponentProperty = 'Text'
+    end
+    object LinkPropertyToFieldVisible: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'HasWriteAccess'
+      Component = btnAddItem
+      ComponentProperty = 'Visible'
+    end
+    object LinkPropertyToFieldVisible2: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'HasWriteAccess'
+      Component = btnEditList
+      ComponentProperty = 'Visible'
+    end
+    object LinkPropertyToFieldEditMode: TLinkPropertyToField
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB3
+      FieldName = 'HasWriteAccess'
+      Component = lvItems
+      ComponentProperty = 'EditMode'
+    end
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = ClientDM.memStores
+    ScopeMappings = <>
+    Left = 296
+    Top = 608
+  end
+  object BindSourceDB2: TBindSourceDB
+    DataSet = ClientDM.memItems
+    ScopeMappings = <>
+    Left = 336
+    Top = 608
+  end
+  object BindSourceDB3: TBindSourceDB
+    DataSet = ClientDM.memCurrentUser
+    ScopeMappings = <>
+    Left = 272
+    Top = 608
+  end
+end

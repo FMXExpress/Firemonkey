@@ -1,0 +1,9 @@
+inherited Form3D4_Windows: TForm3D4_Windows
+  DesignerMasterStyle = 0
+  inherited Cube1: TCube
+    Quanternion = '(0.0770926028490067,0,0,0.99702399969101)'
+  end
+  inherited Rectangle3D1: TRectangle3D
+    Quanternion = '(0,0.644174218177795,0,0.764877438545227)'
+  end
+end

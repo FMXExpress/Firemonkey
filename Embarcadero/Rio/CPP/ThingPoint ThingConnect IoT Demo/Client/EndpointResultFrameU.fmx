@@ -1,0 +1,139 @@
+object EMSEndpointResultFrame: TEMSEndpointResultFrame
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Margins.Left = 3.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 234.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object Layout2: TLayout
+      Align = Top
+      Size.Width = 314.000000000000000000
+      Size.Height = 33.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object ButtonExecute: TButton
+        Align = Left
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Execute'
+        OnClick = ButtonExecuteClick
+      end
+      object ButtonClear: TButton
+        Align = Right
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 231.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 80.000000000000000000
+        Size.Height = 27.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Text = 'Clear'
+        OnClick = ButtonClearClick
+      end
+    end
+    object StringGrid1: TStringGrid
+      Align = Client
+      Size.Width = 314.000000000000000000
+      Size.Height = 163.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      RowCount = 0
+      RowHeight = 21.000000000000000000
+      Viewport.Width = 310.000000000000000000
+      Viewport.Height = 138.000000000000000000
+    end
+    object Layout3: TLayout
+      Align = Bottom
+      Position.Y = 196.000000000000000000
+      Size.Width = 314.000000000000000000
+      Size.Height = 38.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      object CheckBoxAutoRefresh: TCheckBox
+        Action = ActionAutoRefresh
+        Align = Left
+        Enabled = True
+        Margins.Left = 3.000000000000000000
+        Margins.Top = 3.000000000000000000
+        Margins.Right = 3.000000000000000000
+        Margins.Bottom = 3.000000000000000000
+        Position.X = 3.000000000000000000
+        Position.Y = 3.000000000000000000
+        Size.Width = 120.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Visible = True
+      end
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 195
+    Top = 179
+  end
+  object FDMemTable1: TFDMemTable
+    FieldOptions.AutoCreateMode = acCombineAlways
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired]
+    UpdateOptions.CheckRequired = False
+    Left = 80
+    Top = 80
+  end
+  object BindSourceDB1: TBindSourceDB
+    DataSet = FDMemTable1
+    ScopeMappings = <>
+    Left = 144
+    Top = 120
+  end
+  object BindingsList1: TBindingsList
+    Methods = <>
+    OutputConverters = <>
+    Left = 20
+    Top = 5
+    object LinkGridToDataSourceBindSourceDB1: TLinkGridToDataSource
+      Category = 'Quick Bindings'
+      DataSource = BindSourceDB1
+      GridControl = StringGrid1
+      Columns = <>
+    end
+  end
+  object RESTResponseDataSetAdapter1: TRESTResponseDataSetAdapter
+    Dataset = FDMemTable1
+    FieldDefs = <>
+    Left = 219
+    Top = 75
+  end
+  object ActionList1: TActionList
+    Left = 35
+    Top = 139
+    object ActionAutoRefresh: TAction
+      Text = 'Auto Refresh'
+      OnExecute = ActionAutoRefreshExecute
+      OnUpdate = ActionAutoRefreshUpdate
+    end
+  end
+end

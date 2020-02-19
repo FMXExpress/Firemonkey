@@ -1,0 +1,120 @@
+object EMSEdgeModuleListenerFrame: TEMSEdgeModuleListenerFrame
+  Size.Width = 320.000000000000000000
+  Size.Height = 240.000000000000000000
+  Size.PlatformDefault = False
+  object Layout1: TLayout
+    Align = Client
+    Margins.Left = 3.000000000000000000
+    Margins.Top = 3.000000000000000000
+    Margins.Right = 3.000000000000000000
+    Margins.Bottom = 3.000000000000000000
+    Size.Width = 314.000000000000000000
+    Size.Height = 234.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    object GroupBox2: TGroupBox
+      Align = Client
+      Size.Width = 314.000000000000000000
+      Size.Height = 234.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'EdgeModule Registration'
+      TabOrder = 0
+      object CheckBoxEdgepointActive: TCheckBox
+        Action = ActionActivateEdgeModule
+        Enabled = True
+        Position.X = 8.000000000000000000
+        Position.Y = 155.000000000000000000
+        Size.Width = 209.000000000000000000
+        Size.Height = 19.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Visible = True
+      end
+      object EditListenerHost: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 2
+        Position.X = 8.000000000000000000
+        Position.Y = 79.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object Label1: TLabel
+          Position.Y = -16.000000000000000000
+          Size.Width = 169.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.WordWrap = False
+          Text = 'Host'
+        end
+      end
+      object EditListenerPort: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 3
+        Position.X = 8.000000000000000000
+        Position.Y = 122.000000000000000000
+        Size.Width = 124.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object Label2: TLabel
+          Position.Y = -16.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'Port'
+        end
+      end
+      object ButtonTestVersion: TButton
+        Position.X = 8.000000000000000000
+        Position.Y = 184.000000000000000000
+        Size.Width = 73.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Test'
+        OnClick = ButtonTestVersionClick
+      end
+      object EditModuleName: TEdit
+        Touch.InteractiveGestures = [LongTap, DoubleTap]
+        TabOrder = 1
+        Position.X = 8.000000000000000000
+        Position.Y = 38.000000000000000000
+        Size.Width = 225.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        object Label3: TLabel
+          Position.Y = -16.000000000000000000
+          TextSettings.WordWrap = False
+          Text = 'Name'
+        end
+      end
+      object ButtonGetLocal: TButton
+        Position.X = 240.000000000000000000
+        Position.Y = 80.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 22.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        Text = 'Local'
+        OnClick = ButtonGetLocalClick
+      end
+    end
+  end
+  object BackendEndpointVersion: TBackendEndpoint
+    Params = <
+      item
+        Kind = pkURLSEGMENT
+        name = 'module'
+      end>
+    Resource = 'edgemodules'
+    ResourceSuffix = '{module}/version'
+    Left = 237
+    Top = 145
+  end
+  object ActionList1: TActionList
+    Left = 234
+    Top = 27
+    object ActionActivateEdgeModule: TAction
+      Text = 'Activate EdgeModule'
+      OnExecute = ActionActivateEdgeModuleExecute
+      OnUpdate = ActionActivateEdgeModuleUpdate
+    end
+  end
+end

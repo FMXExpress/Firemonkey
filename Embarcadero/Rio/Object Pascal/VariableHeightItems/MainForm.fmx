@@ -1,0 +1,74 @@
+object VariableHeight: TVariableHeight
+  Left = 0
+  Top = 0
+  Caption = 'VariableHeight'
+  ClientHeight = 480
+  ClientWidth = 510
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ListView1: TListView
+    ItemAppearanceClassName = 'TDynamicAppearance'
+    ItemEditAppearanceClassName = 'TDynamicAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    OnUpdateObjects = ListView1UpdateObjects
+    Align = Client
+    Size.Width = 510.000000000000000000
+    Size.Height = 436.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'txtMain'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.TextAlign = Leading
+        Appearance.WordWrap = True
+        Appearance.Height = 44.000000000000000000
+        Appearance.VertAlign = Center
+      end
+      item
+        AppearanceObjectName = 'imgSize'
+        AppearanceClassName = 'TImageObjectAppearance'
+        Appearance.ScalingMode = Original
+        Appearance.Width = 30.000000000000000000
+        Appearance.Align = Trailing
+      end>
+    ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+      end>
+  end
+  object ToolBar1: TToolBar
+    Padding.Top = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Size.Width = 510.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Label1: TLabel
+      Align = Contents
+      Size.Width = 510.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'toollabel'
+      TextSettings.HorzAlign = Center
+      Text = 'Variable Row Height Demo'
+    end
+    object Button1: TButton
+      Align = Right
+      Margins.Right = 5.000000000000000000
+      Position.X = 448.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 57.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'listitembutton'
+      TabOrder = 1
+      Text = 'Fill List'
+      OnClick = Button1Click
+    end
+  end
+end

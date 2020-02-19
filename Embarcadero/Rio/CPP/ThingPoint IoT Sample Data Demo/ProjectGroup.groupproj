@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B5010D1F-737D-4EF8-87CB-7BC1A2984F0A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CustomResource\CustomResourcePackageCpp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Thingpointcpp\ThingpointProjectCpp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\DesktopClient\ClientProjectCpp.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Client\MobileClient\MobileClientProjectCpp.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CustomResourcePackageCpp">
+        <MSBuild Projects="CustomResource\CustomResourcePackageCpp.cbproj"/>
+    </Target>
+    <Target Name="CustomResourcePackageCpp:Clean">
+        <MSBuild Projects="CustomResource\CustomResourcePackageCpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomResourcePackageCpp:Make">
+        <MSBuild Projects="CustomResource\CustomResourcePackageCpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ThingpointProjectCpp">
+        <MSBuild Projects="Thingpointcpp\ThingpointProjectCpp.cbproj"/>
+    </Target>
+    <Target Name="ThingpointProjectCpp:Clean">
+        <MSBuild Projects="Thingpointcpp\ThingpointProjectCpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ThingpointProjectCpp:Make">
+        <MSBuild Projects="Thingpointcpp\ThingpointProjectCpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="ClientProjectCpp">
+        <MSBuild Projects="Client\DesktopClient\ClientProjectCpp.cbproj"/>
+    </Target>
+    <Target Name="ClientProjectCpp:Clean">
+        <MSBuild Projects="Client\DesktopClient\ClientProjectCpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ClientProjectCpp:Make">
+        <MSBuild Projects="Client\DesktopClient\ClientProjectCpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="MobileClientProjectCpp">
+        <MSBuild Projects="Client\MobileClient\MobileClientProjectCpp.cbproj"/>
+    </Target>
+    <Target Name="MobileClientProjectCpp:Clean">
+        <MSBuild Projects="Client\MobileClient\MobileClientProjectCpp.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MobileClientProjectCpp:Make">
+        <MSBuild Projects="Client\MobileClient\MobileClientProjectCpp.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CustomResourcePackageCpp;ThingpointProjectCpp;ClientProjectCpp;MobileClientProjectCpp"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CustomResourcePackageCpp:Clean;ThingpointProjectCpp:Clean;ClientProjectCpp:Clean;MobileClientProjectCpp:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CustomResourcePackageCpp:Make;ThingpointProjectCpp:Make;ClientProjectCpp:Make;MobileClientProjectCpp:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

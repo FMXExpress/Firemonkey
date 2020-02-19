@@ -1,0 +1,301 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'MainForm'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 2
+  object PanelDetail: TPanel
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object ToolBar1: TToolBar
+      Padding.Left = 13.000000000000000000
+      Padding.Right = 15.000000000000000000
+      Size.Width = 640.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Label2: TLabel
+        Align = Contents
+        Size.Width = 390.000000000000000000
+        Size.Height = 48.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Text = 'Detail'
+        Visible = False
+      end
+      object MasterButton: TSpeedButton
+        Align = Left
+        Position.X = 49.000000000000000000
+        Size.Width = 44.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'detailstoolbuttonbordered'
+        Text = 'MasterButton'
+        TouchTargetExpansion.Left = 5.000000000000000000
+        TouchTargetExpansion.Top = 5.000000000000000000
+        TouchTargetExpansion.Right = 5.000000000000000000
+        TouchTargetExpansion.Bottom = 5.000000000000000000
+      end
+      object ButtonBack: TButton
+        Action = ActionBack
+        Align = MostLeft
+        Enabled = True
+        ImageIndex = -1
+        Position.X = 13.000000000000000000
+        Size.Width = 36.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'backtoolbutton'
+        TabOrder = 0
+        Visible = True
+      end
+      object ButtonForward: TButton
+        Action = ActionForward
+        Align = Right
+        Enabled = True
+        ImageIndex = -1
+        Position.X = 560.000000000000000000
+        Size.Width = 65.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toolbutton'
+        TabOrder = 1
+        Visible = True
+      end
+      object Label1: TLabel
+        Action = ActionCaption
+        Align = Contents
+        Enabled = True
+        Size.Width = 640.000000000000000000
+        Size.Height = 44.000000000000000000
+        Size.PlatformDefault = False
+        StyleLookup = 'toollabel'
+        TextSettings.HorzAlign = Center
+        Visible = True
+      end
+    end
+    object TabControl1: TTabControl
+      Align = Client
+      FullSize = True
+      Size.Width = 640.000000000000000000
+      Size.Height = 436.000000000000000000
+      Size.PlatformDefault = False
+      TabHeight = 49.000000000000000000
+      TabIndex = 1
+      TabOrder = 1
+      TabPosition = None
+      object TabItemSettings: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = False
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'TabItemSettings'
+        inline EMSServerConnectionFrame1: TEMSServerConnectionFrame
+          Align = Client
+          Size.Width = 640.000000000000000000
+          Size.Height = 436.000000000000000000
+          Size.PlatformDefault = False
+          inherited Layout1: TLayout
+            Size.Width = 634.000000000000000000
+            Size.Height = 430.000000000000000000
+            inherited GroupBox1: TGroupBox
+              Size.Width = 634.000000000000000000
+              Size.Height = 430.000000000000000000
+              Text = ''
+              inherited EditURLHost: TEdit
+                Size.Height = 30.000000000000000000
+              end
+              inherited EditURLPort: TEdit
+                Size.Height = 30.000000000000000000
+              end
+            end
+          end
+        end
+      end
+      object TabItemThings: TTabItem
+        CustomIcon = <
+          item
+          end>
+        IsSelected = True
+        Size.Width = 8.000000000000000000
+        Size.Height = 8.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'TabItemThings'
+        object ListView1: TListView
+          ItemAppearanceClassName = 'TListItemRightDetailAppearance'
+          ItemEditAppearanceClassName = 'TListItemRightDetailDeleteAppearance'
+          HeaderAppearanceClassName = 'TCustomizeItemObjects'
+          FooterAppearanceClassName = 'TListHeaderObjects'
+          Align = Client
+          Size.Width = 640.000000000000000000
+          Size.Height = 392.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          ItemAppearanceObjects.ItemObjects.Accessory.Visible = False
+          ItemAppearanceObjects.HeaderObjects.Detail.TextAlign = Trailing
+          ItemAppearanceObjects.HeaderObjects.Detail.Visible = True
+        end
+        object ToolBar2: TToolBar
+          Align = Bottom
+          Position.Y = 392.000000000000000000
+          Size.Width = 640.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 1
+          object ButtonRefreshThing: TButton
+            Align = Left
+            Size.Width = 44.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            StyleLookup = 'refreshtoolbuttonbordered'
+            TabOrder = 0
+            Text = 'ButtonRefresh'
+            OnClick = ButtonRefreshThingClick
+          end
+          object Layout1: TLayout
+            Align = Right
+            Position.X = 288.000000000000000000
+            Size.Width = 176.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            object SwitchDetailed: TSwitch
+              Action = ActionDetailed
+              Align = Right
+              Enabled = True
+              Position.X = 121.000000000000000000
+              Position.Y = 4.000000000000000000
+              Size.Width = 55.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              Visible = True
+              OnSwitch = SwitchDetailedSwitch
+            end
+            object Label3: TLabel
+              Action = ActionDetailed
+              Align = Client
+              Enabled = True
+              Size.Width = 121.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Visible = True
+            end
+          end
+          object Layout2: TLayout
+            Align = Right
+            Position.X = 464.000000000000000000
+            Size.Width = 176.000000000000000000
+            Size.Height = 44.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object SwitchAutoRefresh: TSwitch
+              Align = Right
+              IsChecked = False
+              Position.X = 121.000000000000000000
+              Position.Y = 4.000000000000000000
+              Size.Width = 55.000000000000000000
+              Size.Height = 35.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              OnSwitch = SwitchDetailedSwitch
+            end
+            object Label4: TLabel
+              Align = Client
+              Size.Width = 121.000000000000000000
+              Size.Height = 44.000000000000000000
+              Size.PlatformDefault = False
+              TextSettings.HorzAlign = Trailing
+              Text = 'Auto Refresh'
+            end
+          end
+        end
+      end
+    end
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 480
+    Top = 172
+  end
+  object MultiView1: TMultiView
+    MasterButton = MasterButton
+    Mode = Drawer
+    Size.Width = 250.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 0
+    object ListBox1: TListBox
+      Align = Client
+      Size.Width = 249.000000000000000000
+      Size.Height = 436.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      DisableFocusEffect = True
+      DefaultItemStyles.ItemStyle = 'listboxitemnodetail'
+      DefaultItemStyles.GroupHeaderStyle = ''
+      DefaultItemStyles.GroupFooterStyle = ''
+      OnChange = ListBox1Change
+      OnItemClick = ListBox1ItemClick
+      Viewport.Width = 249.000000000000000000
+      Viewport.Height = 436.000000000000000000
+    end
+    object ButtonRefreshNames: TButton
+      Align = Bottom
+      Position.X = 102.000000000000000000
+      Position.Y = 436.000000000000000000
+      Size.Width = 44.000000000000000000
+      Size.Height = 44.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = 'refreshtoolbuttonbordered'
+      TabOrder = 2
+      Text = 'ButtonRefresh'
+      OnClick = ButtonRefreshNamesClick
+    end
+  end
+  object ActionList1: TActionList
+    Left = 368
+    Top = 16
+    object ActionBack: TAction
+      OnExecute = ActionBackExecute
+      OnUpdate = ActionBackUpdate
+    end
+    object ActionForward: TAction
+      Text = 'Things'
+      OnExecute = ActionForwardExecute
+      OnUpdate = ActionForwardUpdate
+    end
+    object ActionCaption: TAction
+      Text = 'Action1'
+      OnUpdate = ActionCaptionUpdate
+    end
+    object ActionAutoRefresh: TAction
+      Text = 'ActionAutoRefresh'
+      OnExecute = ActionAutoRefreshExecute
+      OnUpdate = ActionAutoRefreshUpdate
+    end
+    object ActionDetailed: TAction
+      Text = 'Detailed'
+      OnExecute = ActionDetailedExecute
+      OnUpdate = ActionDetailedUpdate
+    end
+  end
+end

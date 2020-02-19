@@ -1,0 +1,96 @@
+object frmMain: TfrmMain
+  Left = 0
+  Top = 0
+  Caption = 'Search Context C++ w/ Delphi'
+  ClientHeight = 450
+  ClientWidth = 854
+  Fill.Color = claGray
+  Fill.Kind = Solid
+  FormFactor.Width = 1920
+  FormFactor.Height = 1047
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Top
+    Size.Width = 854.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object ReflectionEffect1: TReflectionEffect
+      Opacity = 0.500000000000000000
+      Offset = 0
+      Length = 0.500000000000000000
+    end
+    object Panel1: TPanel
+      Align = Top
+      Size.Width = 854.000000000000000000
+      Size.Height = 37.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      object Layout2: TLayout
+        Align = Right
+        Position.X = 647.000000000000000000
+        Size.Width = 207.000000000000000000
+        Size.Height = 37.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object edtSearch: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Center
+          TabOrder = 0
+          Size.Width = 182.000000000000000000
+          Size.Height = 22.000000000000000000
+          Size.PlatformDefault = False
+          OnChange = edtSearchChange
+          OnKeyUp = edtSearchKeyUp
+          object ClearEditButton1: TClearEditButton
+            CanFocus = False
+            Cursor = crArrow
+            Size.Width = 28.000000000000000000
+            Size.Height = 18.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 112
+    Top = 88
+  end
+  object VertScrollBox1: TVertScrollBox
+    Align = Client
+    Padding.Top = 25.000000000000000000
+    Size.Width = 854.000000000000000000
+    Size.Height = 410.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 854.000000000000000000
+    Viewport.Height = 410.000000000000000000
+  end
+  object MainMenu1: TMainMenu
+    Left = 208
+    Top = 96
+    object MenuItem4: TMenuItem
+      StyleLookup = 'menubaritemstyle'
+      Text = 'Options'
+      object miLoadData: TMenuItem
+        Locked = True
+        Text = 'Load Data'
+        OnClick = LoadData
+      end
+      object miLoadImages: TMenuItem
+        Locked = True
+        Text = 'Load Images'
+        OnClick = LoadImagesClick
+      end
+      object miManageData: TMenuItem
+        Locked = True
+        Text = 'Manage Data'
+        OnClick = ManageDataClick
+      end
+    end
+  end
+end
